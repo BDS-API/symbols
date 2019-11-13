@@ -1,10 +1,9 @@
 cmake_minimum_required(VERSION 3.0)
-project(bdsapi)
+project(bds-symbols CXX)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
-file(GLOB_RECURSE SOURCES includes/*.h)
-add_library(bdsapi SHARED ${SOURCES})
+add_library(bds-symbols INTERFACE)
 
-set_target_properties(bdsapi PROPERTIES LINKER_LANGUAGE CXX)
+include_directories(includes)
