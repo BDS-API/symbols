@@ -5,6 +5,7 @@
 #include "ChunkPos.h"
 
 class Vec3;
+
 class BlockPos {
 
 public:

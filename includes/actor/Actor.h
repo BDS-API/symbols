@@ -6,20 +6,21 @@
 #include "../util/Vec3.h"
 
 class Level;
+
 class Actor {
 
 public:
-    const StateVectorComponent &getPos();
+    StateVectorComponent &getPos() const;
 
-    const float distanceTo(const Actor *);
+    float distanceTo(const Actor *) const;
 
-    const float distanceTo(const Vec3 *);
+    float distanceTo(const Vec3 *) const;
 
-    const float distanceToSqr(const Actor *);
+    float distanceToSqr(const Actor *) const;
 
-    const float distanceToSqr(const Vec3 *);
+    float distanceToSqr(const Vec3 *) const;
 
-    const Level &getLevel();
+    Level &getLevel() const;
 };
 
 #endif //BDSAPI_SYMBOLS_ACTOR_H

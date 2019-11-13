@@ -13,13 +13,13 @@ public:
 
     LevelChunk &getGeneratedChunk(const ChunkPos &);
 
-    const bool isWithinWorldLimit(const ChunkPos &);
+    bool isWithinWorldLimit(const ChunkPos &) const;
 
     bool loadChunk(LevelChunk *, bool);
 
-    const Dimension &getDimension();
+    Dimension &getDimension() const;
 
-    const Level &getLevel();
+    Level &getLevel() const;
 };
 
 #endif //BDSAPI_CHUNKSOURCE_H

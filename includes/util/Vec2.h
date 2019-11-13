@@ -8,15 +8,15 @@ public:
 
     Vec2(void);
 
-    const float distanceToSqr(const Vec2 &);
+    float distanceToSqr(const Vec2 &) const;
 
-    const float dot();
+    float dot() const;
 
-    const float length();
+    float length() const;
 
-    const float lengthSquared();
+    float lengthSquared() const;
 
-    const Vec2 &normalized();
+    Vec2 &normalized() const;
 };
 
 #endif //BDSAPI_VEC2_H

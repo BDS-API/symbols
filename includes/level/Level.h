@@ -11,7 +11,7 @@ public:
 
     std::vector<Player *> &getActivePlayers() const;
 
-    const LevelData &getLevelData();
+    LevelData &getLevelData() const;
 };
 
 #endif //BDSAPI_LEVEL_H

@@ -4,12 +4,10 @@
 #include "Player.h"
 #include <vector>
 
-class ServerPlayer : Player {
+class ServerPlayer : public Player {
 
 public:
-    void displayLocalizableMessage(const std::string &, const std::vector <std::string> &);
-
-    void addLevels(unsigned int);
+    void displayLocalizableMessage(const std::string &, const std::vector<std::string> &);
 
 };
 

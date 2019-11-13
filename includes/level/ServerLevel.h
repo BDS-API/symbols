@@ -3,7 +3,7 @@
 
 #include "Level.h"
 
-class ServerLevel : Level {
+class ServerLevel : public Level {
 
 };
 

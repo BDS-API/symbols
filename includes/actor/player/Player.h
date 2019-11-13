@@ -4,16 +4,18 @@
 #include "../Actor.h"
 #include "../../level/chunk/ChunkViewSource.h"
 
-class Player : Actor {
+class Player : public Actor {
 
 public:
     unsigned int getAttackDamage();
 
-    const bool getAutoJumping();
+    bool getAutoJumping() const;
 
-    const ChunkViewSource &getChunkSource();
+    ChunkViewSource &getChunkSource() const;
 
-    const unsigned int getChunkRadius(); //1905
+    unsigned int getChunkRadius() const; //1905
+
+    void addLevels(int);
 };
 
 #endif //BDSAPI_SYMBOLS_PLAYER_H

@@ -15,43 +15,44 @@ public:
     Vec3(const BlockPos &);
 
     Vec3(float);
+
     Vec3();
 
-    const Vec3 &abs();
+    Vec3 &abs() const;
 
-    const Vec3 &add(float, float, float);
+    Vec3 &add(float, float, float) const;
 
-    const Vec3 &ceil();
+    Vec3 &ceil() const;
 
     Vec3 &clamp(const Vec3 &, const Vec3 &, const Vec3 &);
 
-    const bool clipX(const Vec3 &, float, Vec3 &);
+    bool clipX(const Vec3 &, float, Vec3 &) const;
 
-    const bool clipY(const Vec3 &, float, Vec3 &);
+    bool clipY(const Vec3 &, float, Vec3 &) const;
 
-    const bool clipZ(const Vec3 &, float, Vec3 &);
+    bool clipZ(const Vec3 &, float, Vec3 &) const;
 
-    const float distanceTo(const Vec3 &);
+    float distanceTo(const Vec3 &) const;
 
-    const float distanceToSqr(const Vec3 &);
+    float distanceToSqr(const Vec3 &) const;
 
-    const float dot(const Vec3 &);
+    float dot(const Vec3 &) const;
 
-    const Vec3 &floor(float);
+    Vec3 &floor(float) const;
 
-    const bool isNan();
+    bool isNan() const;
 
-    const float length();
+    float length() const;
 
-    const float lengthSquared();
+    float lengthSquared() const;
 
-    const float lengthXZ();
+    float lengthXZ() const;
 
-    const float lengthXZSquared();
+    float lengthXZSquared() const;
 
-    const Vec3 &negated();
+    Vec3 &negated() const;
 
-    const Vec3 &normalized();
+    Vec3 &normalized() const;
 
     Vec3 &mul(const Vec3 &, const Vec3 &);
 

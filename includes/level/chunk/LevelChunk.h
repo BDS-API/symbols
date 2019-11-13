@@ -6,7 +6,7 @@
 class LevelChunk {
 
 public:
-    const ChunkPos &getPosition();
+    ChunkPos &getPosition() const;
 };
 
 #endif //BDSAPI_LEVELCHUNK_H
