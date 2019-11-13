@@ -3,6 +3,7 @@
 
 #include "Vec3.h"
 
+class Vec3;
 class ChunkPos {
 
 public:

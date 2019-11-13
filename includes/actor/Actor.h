@@ -3,7 +3,9 @@
 
 #include "../level/Level.h"
 #include "../util/StateVectorComponent.h"
+#include "../util/Vec3.h"
 
+class Level;
 class Actor {
 
 public:

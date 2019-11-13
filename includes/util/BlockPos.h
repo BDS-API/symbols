@@ -4,6 +4,7 @@
 #include "Vec3.h"
 #include "ChunkPos.h"
 
+class Vec3;
 class BlockPos {
 
 public:
@@ -13,11 +14,9 @@ public:
 
     BlockPos(int, int, int);
 
-    BlockPos(ChunkPos);
+    BlockPos(const Vec3 &);
 
-    BlockPos(Vec3);
-
-    BlockPos(BlockPos);
+    BlockPos(const BlockPos &);
 
     BlockPos();
 };
