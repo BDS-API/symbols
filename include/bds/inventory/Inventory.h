@@ -2,7 +2,7 @@
 #define BDS_SYMBOLS__INVENTORY_H
 
 #include "../actor/player/Player.h"
-#include "../../../includes/item/ItemStack.h"
+#include "../item/ItemStack.h"
 
 class Inventory {
 

@@ -2,7 +2,7 @@
 #define BDS_SYMBOLS__ITEMINSTANCE_H
 
 #include "../block/Block.h"
-#include "../../../includes/nbt/CompoundTag.h"
+#include "../nbt/CompoundTag.h"
 #include "Item.h"
 #include "ItemStack.h"
 #include "ItemStackBase.h"

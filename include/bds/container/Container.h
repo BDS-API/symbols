@@ -2,7 +2,7 @@
 #define BDS_SYMBOLS__CONTAINER_H
 
 #include <vector>
-#include "../../../includes/item/ItemStack.h"
+#include "../item/ItemStack.h"
 
 class Container {
 

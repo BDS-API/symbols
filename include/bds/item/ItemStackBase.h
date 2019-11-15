@@ -1,7 +1,7 @@
 #ifndef BDS_SYMBOLS__ITEMSTACKBASE_H
 #define BDS_SYMBOLS__ITEMSTACKBASE_H
 
-#include "../../../includes/nbt/CompoundTag.h"
+#include "../nbt/CompoundTag.h"
 #include "../block/Block.h"
 #include "Item.h"
 #include "ItemInstance.h"
