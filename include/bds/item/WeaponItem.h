@@ -1,5 +1,5 @@
-#ifndef BDSAPIIMPL_WEAPONITEM_H
-#define BDSAPIIMPL_WEAPONITEM_H
+#ifndef BDS_SYMBOLS__WEAPONITEM_H
+#define BDS_SYMBOLS__WEAPONITEM_H
 
 #include "Item.h"
 
@@ -37,4 +37,4 @@ public:
     virtual void hurtEnemy(ItemStack &, Mob *, Mob *) const;
 };
 
-#endif //BDSAPIIMPL_WEAPONITEM_H
+#endif //BDS_SYMBOLS__WEAPONITEM_H

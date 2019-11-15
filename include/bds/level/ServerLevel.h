@@ -1,5 +1,5 @@
-#ifndef BDSAPI_SERVERLEVEL_H
-#define BDSAPI_SERVERLEVEL_H
+#ifndef BDS_SYMBOLS_SERVERLEVEL_H
+#define BDS_SYMBOLS_SERVERLEVEL_H
 
 #include "Level.h"
 
@@ -7,4 +7,4 @@ class ServerLevel : public Level {
 
 };
 
-#endif //BDSAPI_SERVERLEVEL_H
+#endif //BDS_SYMBOLS_SERVERLEVEL_H

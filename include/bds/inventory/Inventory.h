@@ -1,8 +1,8 @@
-#ifndef BDSAPIIMPL_INVENTORY_H
-#define BDSAPIIMPL_INVENTORY_H
+#ifndef BDS_SYMBOLS__INVENTORY_H
+#define BDS_SYMBOLS__INVENTORY_H
 
 #include "../actor/player/Player.h"
-#include "../item/ItemStack.h"
+#include "../../../includes/item/ItemStack.h"
 
 class Inventory {
 
@@ -26,4 +26,4 @@ public:
     void tick();
 };
 
-#endif //BDSAPIIMPL_INVENTORY_H
+#endif //BDS_SYMBOLS__INVENTORY_H

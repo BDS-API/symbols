@@ -1,5 +1,5 @@
-#ifndef BDSAPIIMPL_SIMPLECONTAINER_H
-#define BDSAPIIMPL_SIMPLECONTAINER_H
+#ifndef BDS_SYMBOLS__SIMPLECONTAINER_H
+#define BDS_SYMBOLS__SIMPLECONTAINER_H
 
 #include "Container.h"
 #include "../actor/player/Player.h"
@@ -24,4 +24,4 @@ public:
     virtual void stopOpen(Player &);
 };
 
-#endif //BDSAPIIMPL_SIMPLECONTAINER_H
+#endif //BDS_SYMBOLS__SIMPLECONTAINER_H

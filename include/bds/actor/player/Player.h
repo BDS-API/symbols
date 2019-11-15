@@ -1,5 +1,5 @@
-#ifndef BDSAPI_SYMBOLS_PLAYER_H
-#define BDSAPI_SYMBOLS_PLAYER_H
+#ifndef BDS_SYMBOLS_PLAYER_H
+#define BDS_SYMBOLS_PLAYER_H
 
 #include "../Actor.h"
 #include "../../level/chunk/ChunkViewSource.h"
@@ -24,4 +24,4 @@ public:
     PlayerUIContainer &getPlayerUIContainer();
 };
 
-#endif //BDSAPI_SYMBOLS_PLAYER_H
+#endif //BDS_SYMBOLS_PLAYER_H

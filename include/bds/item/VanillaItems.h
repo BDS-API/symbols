@@ -1,5 +1,5 @@
-#ifndef BDSAPIIMPL_VANILLAITEMS_H
-#define BDSAPIIMPL_VANILLAITEMS_H
+#ifndef BDS_SYMBOLS__VANILLAITEMS_H
+#define BDS_SYMBOLS__VANILLAITEMS_H
 
 #include "Item.h"
 
@@ -242,4 +242,4 @@ public:
     static Item *mSuspiciousStew;
 };
 
-#endif //BDSAPIIMPL_VANILLAITEMS_H
+#endif //BDS_SYMBOLS__VANILLAITEMS_H

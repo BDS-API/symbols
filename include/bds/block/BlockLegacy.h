@@ -1,0 +1,8 @@
+#ifndef BDS_SYMBOLS__BLOCKLEGACY_H
+#define BDS_SYMBOLS__BLOCKLEGACY_H
+
+class BlockLegacy {
+
+};
+
+#endif //BDS_SYMBOLS__BLOCKLEGACY_H

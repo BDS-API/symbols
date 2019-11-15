@@ -1,5 +1,5 @@
-#ifndef BDSAPIIMPL_AABB_H
-#define BDSAPIIMPL_AABB_H
+#ifndef BDS_SYMBOLS__AABB_H
+#define BDS_SYMBOLS__AABB_H
 
 #include "Vec3.h"
 
@@ -15,4 +15,4 @@ public:
     AABB();
 };
 
-#endif //BDSAPIIMPL_AABB_H
+#endif //BDS_SYMBOLS__AABB_H

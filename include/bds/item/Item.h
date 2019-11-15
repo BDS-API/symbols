@@ -1,5 +1,5 @@
-#ifndef BDSAPIIMPL_ITEM_H
-#define BDSAPIIMPL_ITEM_H
+#ifndef BDS_SYMBOLS__ITEM_H
+#define BDS_SYMBOLS__ITEM_H
 
 #include <memory>
 #include "../block/Block.h"
@@ -48,4 +48,4 @@ public:
     };
 };
 
-#endif //BDSAPIIMPL_ITEM_H
+#endif //BDS_SYMBOLS__ITEM_H

@@ -1,8 +1,8 @@
-#ifndef BDSAPIIMPL_CONTAINER_H
-#define BDSAPIIMPL_CONTAINER_H
+#ifndef BDS_SYMBOLS__CONTAINER_H
+#define BDS_SYMBOLS__CONTAINER_H
 
 #include <vector>
-#include "../item/ItemStack.h"
+#include "../../../includes/item/ItemStack.h"
 
 class Container {
 
@@ -34,4 +34,4 @@ public:
     void setCustomName(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> &);
 };
 
-#endif //BDSAPIIMPL_CONTAINER_H
+#endif //BDS_SYMBOLS__CONTAINER_H

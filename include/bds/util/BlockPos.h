@@ -1,5 +1,5 @@
-#ifndef BDSAPI_BLOCKPOS_H
-#define BDSAPI_BLOCKPOS_H
+#ifndef BDS_SYMBOLS_BLOCKPOS_H
+#define BDS_SYMBOLS_BLOCKPOS_H
 
 #include "Vec3.h"
 #include "ChunkPos.h"
@@ -22,4 +22,4 @@ public:
     BlockPos();
 };
 
-#endif //BDSAPI_BLOCKPOS_H
+#endif //BDS_SYMBOLS_BLOCKPOS_H

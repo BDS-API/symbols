@@ -1,5 +1,5 @@
-#ifndef BDSAPIIMPL_VANILLAITEMTIERS_H
-#define BDSAPIIMPL_VANILLAITEMTIERS_H
+#ifndef BDS_SYMBOLS__VANILLAITEMTIERS_H
+#define BDS_SYMBOLS__VANILLAITEMTIERS_H
 
 #include "Item.h"
 
@@ -15,4 +15,4 @@ public:
     static ItemStack &getTierItem(const Item::Tier &);
 };
 
-#endif //BDSAPIIMPL_VANILLAITEMTIERS_H
+#endif //BDS_SYMBOLS__VANILLAITEMTIERS_H

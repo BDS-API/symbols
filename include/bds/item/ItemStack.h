@@ -1,8 +1,8 @@
-#ifndef BDSAPIIMPL_ITEMSTACK_H
-#define BDSAPIIMPL_ITEMSTACK_H
+#ifndef BDS_SYMBOLS__ITEMSTACK_H
+#define BDS_SYMBOLS__ITEMSTACK_H
 
 #include "Item.h"
-#include "../nbt/CompoundTag.h"
+#include "../../../includes/nbt/CompoundTag.h"
 #include "../level/Level.h"
 #include "../block/Block.h"
 #include "../actor/Mob.h"
@@ -52,4 +52,4 @@ public:
     unsigned int useTimeDepleted(Level *, Player *);
 };
 
-#endif //BDSAPIIMPL_ITEMSTACK_H
+#endif //BDS_SYMBOLS__ITEMSTACK_H

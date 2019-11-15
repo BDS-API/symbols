@@ -1,7 +1,7 @@
-#ifndef BDSAPIIMPL_ITEMSTACKBASE_H
-#define BDSAPIIMPL_ITEMSTACKBASE_H
+#ifndef BDS_SYMBOLS__ITEMSTACKBASE_H
+#define BDS_SYMBOLS__ITEMSTACKBASE_H
 
-#include "../nbt/CompoundTag.h"
+#include "../../../includes/nbt/CompoundTag.h"
 #include "../block/Block.h"
 #include "Item.h"
 #include "ItemInstance.h"
@@ -166,4 +166,4 @@ public:
     bool wasJustBrewed() const;
 };
 
-#endif //BDSAPIIMPL_ITEMSTACKBASE_H
+#endif //BDS_SYMBOLS__ITEMSTACKBASE_H

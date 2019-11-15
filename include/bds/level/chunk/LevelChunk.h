@@ -1,5 +1,5 @@
-#ifndef BDSAPI_LEVELCHUNK_H
-#define BDSAPI_LEVELCHUNK_H
+#ifndef BDS_SYMBOLS_LEVELCHUNK_H
+#define BDS_SYMBOLS_LEVELCHUNK_H
 
 #include "../../util/ChunkPos.h"
 
@@ -9,4 +9,4 @@ public:
     ChunkPos &getPosition() const;
 };
 
-#endif //BDSAPI_LEVELCHUNK_H
+#endif //BDS_SYMBOLS_LEVELCHUNK_H

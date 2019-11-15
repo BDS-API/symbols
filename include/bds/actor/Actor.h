@@ -1,5 +1,5 @@
-#ifndef BDSAPI_SYMBOLS_ACTOR_H
-#define BDSAPI_SYMBOLS_ACTOR_H
+#ifndef BDS_SYMBOLS_ACTOR_H
+#define BDS_SYMBOLS_ACTOR_H
 
 #include "../level/Level.h"
 #include "../util/StateVectorComponent.h"
@@ -23,4 +23,4 @@ public:
     Level &getLevel() const;
 };
 
-#endif //BDSAPI_SYMBOLS_ACTOR_H
+#endif //BDS_SYMBOLS_ACTOR_H

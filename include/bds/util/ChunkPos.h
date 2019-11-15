@@ -1,5 +1,5 @@
-#ifndef BDSAPI_CHUNKPOS_H
-#define BDSAPI_CHUNKPOS_H
+#ifndef BDS_SYMBOLS_CHUNKPOS_H
+#define BDS_SYMBOLS_CHUNKPOS_H
 
 #include "Vec3.h"
 
@@ -16,4 +16,4 @@ public:
     ChunkPos(const Vec3 &);
 };
 
-#endif //BDSAPI_CHUNKPOS_H
+#endif //BDS_SYMBOLS_CHUNKPOS_H

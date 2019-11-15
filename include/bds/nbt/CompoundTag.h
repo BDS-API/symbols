@@ -1,0 +1,8 @@
+#ifndef BDS_SYMBOLS__COMPOUNDTAG_H
+#define BDS_SYMBOLS__COMPOUNDTAG_H
+
+class CompoundTag {
+
+};
+
+#endif //BDS_SYMBOLS__COMPOUNDTAG_H

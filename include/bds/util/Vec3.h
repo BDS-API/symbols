@@ -1,5 +1,5 @@
-#ifndef BDSAPI_VEC3_H
-#define BDSAPI_VEC3_H
+#ifndef BDS_SYMBOLS_VEC3_H
+#define BDS_SYMBOLS_VEC3_H
 
 #include "BlockPos.h"
 
@@ -63,4 +63,4 @@ public:
     Vec3 &lerp(const Vec3 &, const Vec3 &, float);
 };
 
-#endif //BDSAPI_VEC3_H
+#endif //BDS_SYMBOLS_VEC3_H

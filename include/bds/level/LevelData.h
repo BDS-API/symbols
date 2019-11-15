@@ -1,5 +1,5 @@
-#ifndef BDSAPI_LEVELDATA_H
-#define BDSAPI_LEVELDATA_H
+#ifndef BDS_SYMBOLS_LEVELDATA_H
+#define BDS_SYMBOLS_LEVELDATA_H
 
 class LevelData {
 
@@ -7,4 +7,4 @@ public:
 
 };
 
-#endif //BDSAPI_LEVELDATA_H
+#endif //BDS_SYMBOLS_LEVELDATA_H

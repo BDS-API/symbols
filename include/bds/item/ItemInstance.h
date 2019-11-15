@@ -1,8 +1,8 @@
-#ifndef BDSAPIIMPL_ITEMINSTANCE_H
-#define BDSAPIIMPL_ITEMINSTANCE_H
+#ifndef BDS_SYMBOLS__ITEMINSTANCE_H
+#define BDS_SYMBOLS__ITEMINSTANCE_H
 
 #include "../block/Block.h"
-#include "../nbt/CompoundTag.h"
+#include "../../../includes/nbt/CompoundTag.h"
 #include "Item.h"
 #include "ItemStack.h"
 #include "ItemStackBase.h"
@@ -37,4 +37,4 @@ public:
     ItemInstance &operator=(const ItemInstance &);
 };
 
-#endif //BDSAPIIMPL_ITEMINSTANCE_H
+#endif //BDS_SYMBOLS__ITEMINSTANCE_H

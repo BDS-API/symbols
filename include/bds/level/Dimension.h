@@ -1,8 +1,8 @@
-#ifndef BDSAPI_DIMENSION_H
-#define BDSAPI_DIMENSION_H
+#ifndef BDS_SYMBOLS_DIMENSION_H
+#define BDS_SYMBOLS_DIMENSION_H
 
 class Dimension {
 
 };
 
-#endif //BDSAPI_DIMENSION_H
+#endif //BDS_SYMBOLS_DIMENSION_H

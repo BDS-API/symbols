@@ -1,5 +1,5 @@
-#ifndef BDSAPI_VEC2_H
-#define BDSAPI_VEC2_H
+#ifndef BDS_SYMBOLS_VEC2_H
+#define BDS_SYMBOLS_VEC2_H
 
 class Vec2 {
 
@@ -19,4 +19,4 @@ public:
     Vec2 &normalized() const;
 };
 
-#endif //BDSAPI_VEC2_H
+#endif //BDS_SYMBOLS_VEC2_H

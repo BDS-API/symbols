@@ -1,5 +1,5 @@
-#ifndef BDSAPIIMPL_VANILLABLOCKS_H
-#define BDSAPIIMPL_VANILLABLOCKS_H
+#ifndef BDS_SYMBOLS__VANILLABLOCKS_H
+#define BDS_SYMBOLS__VANILLABLOCKS_H
 
 #include "BlockLegacy.h"
 
@@ -476,4 +476,4 @@ public:
     static BlockLegacy *mWitherRose;
 };
 
-#endif //BDSAPIIMPL_VANILLABLOCKS_H
+#endif //BDS_SYMBOLS__VANILLABLOCKS_H
