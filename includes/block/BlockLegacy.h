@@ -1,0 +1,8 @@
+#ifndef BDSAPIIMPL_BLOCKLEGACY_H
+#define BDSAPIIMPL_BLOCKLEGACY_H
+
+class BlockLegacy {
+
+};
+
+#endif //BDSAPIIMPL_BLOCKLEGACY_H

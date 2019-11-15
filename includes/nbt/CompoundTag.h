@@ -1,0 +1,8 @@
+#ifndef BDSAPIIMPL_COMPOUNDTAG_H
+#define BDSAPIIMPL_COMPOUNDTAG_H
+
+class CompoundTag {
+
+};
+
+#endif //BDSAPIIMPL_COMPOUNDTAG_H
