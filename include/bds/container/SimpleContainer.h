@@ -13,7 +13,7 @@ public:
 
     virtual unsigned int getContainerSize() const;
 
-    virtual ItemStack &getItem() const;
+    virtual ItemStack &getItem(int) const;
 
     virtual unsigned int getMaxStackSize() const;
 

@@ -74,7 +74,7 @@ public:
 
     virtual unsigned int &getMaxDamage() const;
 
-    virtual long getAttackDamage() const; // ???
+    virtual unsigned int getAttackDamage() const; // ???
     virtual bool isHandEquipped() const;
 
     virtual bool isArmor() const;
@@ -107,8 +107,8 @@ public:
                                           bool) const; //???
     virtual bool isValidRepairItem(ItemInstance const &, ItemInstance const &) const;
 
-    virtual long getEnchantSlot() const; //???
-    virtual long getEnchantValue() const; //???
+    virtual unsigned int getEnchantSlot() const; //???
+    virtual unsigned int getEnchantValue() const; //???
     virtual long getArmorValue() const; //???
     virtual bool isComplex() const;
 
