@@ -7,8 +7,25 @@
 #include "../nbt/CompoundTag.h"
 #include "../block/Block.h"
 #include "ItemInstance.h"
+#include "../unassigned/TextureUVCoordinateSet.h"
+#include "../actor/Mob.h"
+#include "../actor/player/Player.h"
 
 class ItemStack;
+
+class Player;
+
+class ItemDescriptor;
+
+class CreativeItemCategory;
+
+class UseAnimation;
+
+class IDataInput;
+
+class IDataOutput;
+
+class ReadOnlyBinaryStream;
 
 class Item {
 
@@ -75,7 +92,7 @@ public:
     virtual bool showsDurabilityInCreative() const;
 
     virtual bool
-    isWearableThroughLootTable(std::unique_ptr <CompoundTag, std::default_delete<CompoundTag>> const &) const;
+    isWearableThroughLootTable(std::unique_ptr<CompoundTag, std::default_delete<CompoundTag>> const &) const;
 
     virtual bool canDestroyInCreative() const;
 
@@ -102,7 +119,7 @@ public:
     virtual long uniqueAuxValues() const; //???
     virtual bool isMultiColorTinted(ItemStack const &) const;
 
-    virtual long getColor(std::unique_ptr <CompoundTag, std::default_delete<CompoundTag>> const &,
+    virtual long getColor(std::unique_ptr<CompoundTag, std::default_delete<CompoundTag>> const &,
                           ItemDescriptor const &) const; //???
     virtual long getBaseColor(ItemStack const &) const;
 
@@ -128,17 +145,14 @@ public:
     virtual void hurtEnemy(ItemStack &, Mob *, Mob *) const; //???
     virtual long mineBlock(ItemInstance &, Block const &, int, int, int, Actor *) const; //???
     virtual long mineBlock(ItemStack &, Block const &, int, int, int, Actor *) const; //???
-    virtual std::string &buildDescriptionId(ItemDescriptor const &, std
-
-    :unique_ptr <CompoundTag, std::default_delete<CompoundTag>> const&) const;
+    virtual std::string &buildDescriptionId(ItemDescriptor const &,
+                                            std::unique_ptr<CompoundTag, std::default_delete<CompoundTag>> const &) const;
 
     virtual std::string &buildEffectDescriptionName(ItemStackBase const &) const;
 
     virtual std::string &buildCategoryDescriptionName() const;
 
-    virtual void readUserData(ItemStackBase &, IDataInput &ReadOnlyBinaryStream &
-
-    ) const;
+    virtual void readUserData(ItemStackBase &, IDataInput &, ReadOnlyBinaryStream &) const;
 
     virtual void writeUserData(ItemStackBase const &, IDataOutput &) const;
 
@@ -156,9 +170,7 @@ public:
 
     virtual void fixupOnLoad(ItemStackBase &, Level &) const;
 
-    virtual short getDamageValue(std
-
-    :unique_ptr <CompoundTag, std::default_delete<CompoundTag>> const&) const;
+    virtual short getDamageValue(std::unique_ptr<CompoundTag, std::default_delete<CompoundTag>> const &) const;
 
     virtual void setDamageValue(ItemStackBase &, short) const;
 
@@ -174,7 +186,8 @@ public:
     virtual long getAnimationFrameFor(Mob *, bool, ItemStack const *, bool) const; //???
     virtual bool isEmissive(int) const;
 
-    virtual std::vector <TextureUVCoodinateSet> *getIcon(ItemStackBase const &, int, bool) const;
+    virtual std::vector<TextureUVCoordinateSet, std::allocator<TextureUVCoordinateSet>> *
+    getIcon(ItemStackBase const &, int, bool) const;
 
     virtual long getIconYOffset(void) const;
 
@@ -204,6 +217,8 @@ public:
 
     virtual bool _useOn(ItemStack &, Actor &, BlockPos &, unsigned char &, float, float, float) const;
 
+    unsigned int getId() const;
+
     // Non-virtual
 
     Item(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> &, short);
@@ -217,10 +232,6 @@ public:
 //    void addCreativeItem(const ItemStack &);
 //
 //    void addCreativeItem(short, short);
-
-    unsigned int getId() const;
-
-    virtual unsigned int getAttackDamage() const;
 
     class Tier {
         int level;

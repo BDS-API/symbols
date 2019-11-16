@@ -14,7 +14,7 @@ public:
 
     virtual bool canDestroySpecial(const Block &) const;
 
-    virtual unsigned int getAttackDamage() const;
+    virtual long getAttackDamage() const;
 
     virtual bool isHandEquipped() const;
 
@@ -26,9 +26,9 @@ public:
 
     virtual bool isValidRepairItem(const ItemInstance &, const ItemInstance &) const;
 
-    virtual unsigned int getEnchantSlot() const;
+    virtual long getEnchantSlot() const;
 
-    virtual unsigned int getEnchantValue() const;
+    virtual long getEnchantValue() const;
 
     virtual ItemStack &use(ItemStack &, Player &) const;
 
