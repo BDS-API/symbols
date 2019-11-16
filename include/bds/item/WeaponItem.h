@@ -20,8 +20,8 @@ public:
 
     virtual bool canDestroyInCreative() const;
 
-    virtual void appendFormattedHovertext(const ItemStackBase &, Level &,
-                                          const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> &,
+    virtual long appendFormattedHovertext(const ItemStackBase &, Level &,
+                                          std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> &,
                                           bool) const;
 
     virtual bool isValidRepairItem(const ItemInstance &, const ItemInstance &) const;

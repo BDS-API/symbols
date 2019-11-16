@@ -217,11 +217,11 @@ public:
 
     virtual bool _useOn(ItemStack &, Actor &, BlockPos &, unsigned char &, float, float, float) const;
 
-    unsigned int getId() const;
-
     // Non-virtual
 
     Item(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> &, short);
+
+    unsigned int getId() const;
 
 //    void addCreativeItem(const Block &);
 //
