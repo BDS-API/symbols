@@ -1,0 +1,8 @@
+#ifndef BDSAPIIMPL_ITEMSTATE_H
+#define BDSAPIIMPL_ITEMSTATE_H
+
+class ItemState {
+
+};
+
+#endif //BDSAPIIMPL_ITEMSTATE_H
