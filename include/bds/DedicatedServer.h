@@ -1,8 +1,0 @@
-#ifndef BDS_SYMBOLS_DEDICATEDSERVER_H
-#define BDS_SYMBOLS_DEDICATEDSERVER_H
-
-class DedicatedServer {
-
-};
-
-#endif //BDS_SYMBOLS_DEDICATEDSERVER_H

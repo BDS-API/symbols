@@ -1,8 +1,0 @@
-#ifndef BDSAPIIMPL_BLOCKSOURCE_H
-#define BDSAPIIMPL_BLOCKSOURCE_H
-
-class BlockSource {
-
-};
-
-#endif //BDSAPIIMPL_BLOCKSOURCE_H

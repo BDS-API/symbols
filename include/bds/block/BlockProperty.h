@@ -1,8 +1,0 @@
-#ifndef BDSAPIIMPL_BLOCKPROPERTY_H
-#define BDSAPIIMPL_BLOCKPROPERTY_H
-
-class BlockProperty {
-
-};
-
-#endif //BDSAPIIMPL_BLOCKPROPERTY_H

@@ -1,8 +1,0 @@
-#ifndef BDSAPIIMPL_BRIGHTNESS_H
-#define BDSAPIIMPL_BRIGHTNESS_H
-
-class Brightness {
-
-};
-
-#endif //BDSAPIIMPL_BRIGHTNESS_H

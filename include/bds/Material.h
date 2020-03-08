@@ -1,8 +1,0 @@
-#ifndef BDSAPIIMPL_MATERIAL_H
-#define BDSAPIIMPL_MATERIAL_H
-
-class Material {
-
-};
-
-#endif //BDSAPIIMPL_MATERIAL_H
