@@ -1,20 +1,15 @@
 #pragma once
 
-#include "../../mce/UUID.h"
-#include "../../unmapped/WorldTemplateManager.h"
-#include "../../unmapped/IContentKeyProvider.h"
-#include "../../unmapped/PackManifestFactory.h"
-#include "./DirectoryPackSource.h"
 #include <string>
+#include "DirectoryPackSource.h"
 
 
 class WorldTemplatePackSource : DirectoryPackSource {
 
 public:
-    virtual ~WorldTemplatePackSource();
-    virtual void load(PackManifestFactory &, IContentKeyProvider const&);
-
-//  WorldTemplatePackSource(WorldTemplateManager const&, mce::UUID const&, PackType, PackOrigin); //TODO: incomplete function definition
-    std::string _getFolderPathForPackType()const;
-    void getWorldTemplateId()const;
+    ~WorldTemplatePackSource(); // _ZN23WorldTemplatePackSourceD2Ev
+    virtual void load(PackManifestFactory &, IContentKeyProvider const&); // _ZN23WorldTemplatePackSource4loadER19PackManifestFactoryRK19IContentKeyProvider
+//  WorldTemplatePackSource(WorldTemplateManager const&, mce::UUID const&, PackType, PackOrigin); //TODO: incomplete function definition // _ZN23WorldTemplatePackSourceC2ERK20WorldTemplateManagerRKN3mce4UUIDE8PackType10PackOrigin
+    std::string _getFolderPathForPackType()const; // _ZNK23WorldTemplatePackSource25_getFolderPathForPackTypeB5cxx11Ev
+    void getWorldTemplateId()const; // _ZNK23WorldTemplatePackSource18getWorldTemplateIdEv
 };

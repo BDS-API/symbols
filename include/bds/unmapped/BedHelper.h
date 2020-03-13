@@ -1,14 +1,12 @@
 #pragma once
 
-#include "../bedrock/util/Vec3.h"
 
 
 class BedHelper {
 
 public:
-
-    BedHelper(int, int, int, int, float, float, float, float);
-    BedHelper(int, int, int, int, float, float, float, float, float, float);
-    void getBedRotation(int)const;
-    void setBedPositionOffsets(int, float &, float &, Vec3 &);
+    BedHelper(int, int, int, int, float, float, float, float); // _ZN9BedHelperC2Eiiiiffff
+    BedHelper(int, int, int, int, float, float, float, float, float, float); // _ZN9BedHelperC2Eiiiiffffff
+    void getBedRotation(int)const; // _ZNK9BedHelper14getBedRotationEi
+    void setBedPositionOffsets(int, float &, float &, Vec3 &); // _ZN9BedHelper21setBedPositionOffsetsEiRfS0_R4Vec3
 };

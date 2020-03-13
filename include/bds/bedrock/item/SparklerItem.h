@@ -1,14 +1,8 @@
 #pragma once
 
 #include <string>
-#include "./ItemStackBase.h"
+#include "ChemistryStickItem.h"
 #include <memory>
-#include "../level/Level.h"
-#include "../actor/Actor.h"
-#include "./ChemistryStickItem.h"
-#include "../nbt/CompoundTag.h"
-#include "./ItemStack.h"
-#include "unmapped/ItemDescriptor.h"
 
 
 class SparklerItem : ChemistryStickItem {
@@ -17,15 +11,14 @@ public:
     static long MAX_ACTIVE_TICKS;
     static long COLORS;
 
-    virtual ~SparklerItem();
-    virtual bool isHandEquipped()const;
-    virtual std::string buildDescriptionId(ItemDescriptor const&, std::unique_ptr<CompoundTag, std::default_delete<CompoundTag>> const&)const;
-    virtual void inventoryTick(ItemStack &, Level &, Actor &, int, bool)const;
-    virtual bool isEmissive(int)const;
-    virtual void getIcon(ItemStackBase const&, int, bool)const;
-    virtual void setIcon(std::string const&, int);
-
-    SparklerItem(std::string const&, int);
-    void _getColorFromData(int);
-    void getColor(int);
+    ~SparklerItem(); // _ZN12SparklerItemD2Ev
+    virtual bool isHandEquipped()const; // _ZNK12SparklerItem14isHandEquippedEv
+    virtual std::string buildDescriptionId(ItemDescriptor const&, std::unique_ptr<CompoundTag> const&)const; // _ZNK12SparklerItem18buildDescriptionIdB5cxx11ERK14ItemDescriptorRKSt10unique_ptrI11CompoundTagSt14default_deleteIS4_EE
+    virtual void inventoryTick(ItemStack &, Level &, Actor &, int, bool)const; // _ZNK12SparklerItem13inventoryTickER9ItemStackR5LevelR5Actorib
+    virtual bool isEmissive(int)const; // _ZNK12SparklerItem10isEmissiveEi
+    virtual void getIcon(ItemStackBase const&, int, bool)const; // _ZNK12SparklerItem7getIconERK13ItemStackBaseib
+    virtual void setIcon(std::string const&, int); // _ZN12SparklerItem7setIconERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
+    SparklerItem(std::string const&, int); // _ZN12SparklerItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
+    void _getColorFromData(int); // _ZN12SparklerItem17_getColorFromDataEi
+    void getColor(int); // _ZN12SparklerItem8getColorEi
 };

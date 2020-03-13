@@ -1,16 +1,12 @@
 #pragma once
 
-#include "../../block/unmapped/BlockSource.h"
-#include "../../../unmapped/LabTableReaction.h"
 #include "../../../unmapped/LabTableReactionComponent.h"
-#include "../ItemStack.h"
 
 
 class ItemReactionComponent : LabTableReactionComponent {
 
 public:
-    virtual ~ItemReactionComponent();
-    virtual void _onEnd(LabTableReaction &, BlockSource &);
-
-    ItemReactionComponent(ItemStack const&);
+    ~ItemReactionComponent(); // _ZN21ItemReactionComponentD2Ev
+    virtual void _onEnd(LabTableReaction &, BlockSource &); // _ZN21ItemReactionComponent6_onEndER16LabTableReactionR11BlockSource
+    ItemReactionComponent(ItemStack const&); // _ZN21ItemReactionComponentC2ERK9ItemStack
 };

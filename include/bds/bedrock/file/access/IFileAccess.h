@@ -5,7 +5,6 @@
 class IFileAccess {
 
 public:
-    virtual ~IFileAccess();
-
-    IFileAccess();
+    ~IFileAccess(); // _ZN11IFileAccessD2Ev
+    IFileAccess(); // _ZN11IFileAccessC2Ev
 };

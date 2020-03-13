@@ -1,25 +1,19 @@
 #pragma once
 
 #include <string>
-#include "../../io/BinaryStream.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include <memory>
-#include "./Packet.h"
-#include "../../item/ItemStack.h"
+#include "Packet.h"
 #include <vector>
-#include "../../actor/Player.h"
 
 
 class InventoryContentPacket : Packet {
 
 public:
-    virtual ~InventoryContentPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    InventoryContentPacket();
-//  InventoryContentPacket(ContainerID, std::vector<ItemStack, std::allocator<ItemStack>> const&); //TODO: incomplete function definition
-//  void fromPlayerInventoryId(ContainerID, Player &); //TODO: incomplete function definition
+    ~InventoryContentPacket(); // _ZN22InventoryContentPacketD2Ev
+    virtual void getId()const; // _ZNK22InventoryContentPacket5getIdEv
+    virtual std::string getName()const; // _ZNK22InventoryContentPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK22InventoryContentPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN22InventoryContentPacket4readER20ReadOnlyBinaryStream
+    InventoryContentPacket(); // _ZN22InventoryContentPacketC2Ev
+//  InventoryContentPacket(ContainerID, std::vector<ItemStack> const&); //TODO: incomplete function definition // _ZN22InventoryContentPacketC2E11ContainerIDRKSt6vectorI9ItemStackSaIS2_EE
+//  void fromPlayerInventoryId(ContainerID, Player &); //TODO: incomplete function definition // _ZN22InventoryContentPacket21fromPlayerInventoryIdE11ContainerIDR6Player
 };

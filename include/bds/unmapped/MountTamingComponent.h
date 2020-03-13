@@ -1,26 +1,19 @@
 #pragma once
 
-#include "./MountTamingComponent.h"
-#include "./DataLoadHelper.h"
-#include "../bedrock/nbt/CompoundTag.h"
-#include "../bedrock/actor/Actor.h"
-#include "../bedrock/actor/Player.h"
-#include "../bedrock/actor/unmapped/ActorInteraction.h"
 
 
 class MountTamingComponent {
 
 public:
-
-    MountTamingComponent(MountTamingComponent &&);
-    void getTemper();
-    void getCounter();
-    void getWaitCount()const;
-    void getTemperMod()const;
-    void getInteraction(Actor &, Player &, ActorInteraction &);
-    void addAdditionalSaveData(CompoundTag &);
-    void readAdditionalSaveData(Actor &, CompoundTag const&, DataLoadHelper &);
-    void tameToPlayer(Actor &, Player *, bool);
-    void _sendTameEvents(Actor &, Player *)const;
-    void becomeTame(Actor &, bool);
+    MountTamingComponent(MountTamingComponent &&); // _ZN20MountTamingComponentC2EOS_
+    void getTemper(); // _ZN20MountTamingComponent9getTemperEv
+    void getCounter(); // _ZN20MountTamingComponent10getCounterEv
+    void getWaitCount()const; // _ZNK20MountTamingComponent12getWaitCountEv
+    void getTemperMod()const; // _ZNK20MountTamingComponent12getTemperModEv
+    void getInteraction(Actor &, Player &, ActorInteraction &); // _ZN20MountTamingComponent14getInteractionER5ActorR6PlayerR16ActorInteraction
+    void addAdditionalSaveData(CompoundTag &); // _ZN20MountTamingComponent21addAdditionalSaveDataER11CompoundTag
+    void readAdditionalSaveData(Actor &, CompoundTag const&, DataLoadHelper &); // _ZN20MountTamingComponent22readAdditionalSaveDataER5ActorRK11CompoundTagR14DataLoadHelper
+    void tameToPlayer(Actor &, Player *, bool); // _ZN20MountTamingComponent12tameToPlayerER5ActorP6Playerb
+    void _sendTameEvents(Actor &, Player *)const; // _ZNK20MountTamingComponent15_sendTameEventsER5ActorP6Player
+    void becomeTame(Actor &, bool); // _ZN20MountTamingComponent10becomeTameER5Actorb
 };

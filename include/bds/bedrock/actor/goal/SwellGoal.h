@@ -1,19 +1,17 @@
 #pragma once
 
-#include "./Goal.h"
-#include "../Creeper.h"
 #include <string>
+#include "Goal.h"
 
 
 class SwellGoal : Goal {
 
 public:
-    virtual ~SwellGoal();
-    virtual bool canUse();
-    virtual void start();
-    virtual void stop();
-    virtual void tick();
-    virtual void appendDebugInfo(std::string &)const;
-
-    SwellGoal(Creeper *, float, float);
+    ~SwellGoal(); // _ZN9SwellGoalD2Ev
+    virtual bool canUse(); // _ZN9SwellGoal6canUseEv
+    virtual void start(); // _ZN9SwellGoal5startEv
+    virtual void stop(); // _ZN9SwellGoal4stopEv
+    virtual void tick(); // _ZN9SwellGoal4tickEv
+    virtual void appendDebugInfo(std::string &)const; // _ZNK9SwellGoal15appendDebugInfoERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    SwellGoal(Creeper *, float, float); // _ZN9SwellGoalC2EP7Creeperff
 };

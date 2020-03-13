@@ -1,69 +1,67 @@
 #pragma once
 
-#include "./SemVersion.h"
-#include "./ContainerContentChangeListener.h"
 #include <memory>
-#include "../bedrock/nbt/ListTag.h"
-#include "../bedrock/item/unmapped/ItemDescriptor.h"
-#include "../bedrock/item/ItemStack.h"
-#include "../bedrock/container/Container.h"
-#include "../bedrock/level/Level.h"
-#include "./ContainerSizeChangeListener.h"
-#include "../bedrock/container/Inventory.h"
 #include <functional>
-#include "../bedrock/container/manager/HudContainerManagerModel.h"
+#include "ContainerSizeChangeListener.h"
+#include "ContainerContentChangeListener.h"
 
 
 class PlayerInventoryProxy : ContainerSizeChangeListener, ContainerContentChangeListener {
 
 public:
-    virtual void containerSizeChanged(int);
-    virtual ~PlayerInventoryProxy();
-    virtual void containerContentChanged(int);
-//  virtual void createTransactionContext(std::function<void (Container &, int, ItemStack const&, ItemStack const&)>, std::function<void (void)>); //TODO: incomplete function definition
+    class SlotData;
 
-    PlayerInventoryProxy(std::unique_ptr<Inventory, std::default_delete<Inventory>>);
-    void init(std::weak_ptr<HudContainerManagerModel>);
-    void addListener(ContainerContentChangeListener *);
-    void removeListener(ContainerContentChangeListener *);
-    void setContainerChanged(int);
-    void add(ItemStack &, bool);
-    bool canAdd(ItemStack const&)const;
-    void getSlotWithItem(ItemStack const&, bool, bool)const;
-    void getFirstEmptySlot()const;
-    void getEmptySlotsCount()const;
-    void getSlots()const;
-//  void getComplexItems(ContainerID)const; //TODO: incomplete function definition
-//  void getSlotCopies(ContainerID)const; //TODO: incomplete function definition
-    void _getHudContainer()const;
-//  void setContainerSize(int, ContainerID); //TODO: incomplete function definition
-//  void getContainerSize(ContainerID)const; //TODO: incomplete function definition
-    void getHotbarSize()const;
-    void getItemCount(ItemDescriptor const&);
-    bool hasResource(int);
-    void getAndRemoveResource(ItemStack &, bool, bool);
-    void removeResource(int);
-    void removeResource(ItemStack const&);
-    void removeResource(ItemStack const&, bool, bool, int);
-    void swapSlots(int, int);
-//  void clearSlot(int, ContainerID); //TODO: incomplete function definition
-    void clearInventory(int);
-    void clearInventoryWithDefault(bool);
-    void load(ListTag const&, SemVersion const&, Level &);
-    void save();
-//  void dropSlot(int, bool, bool, ContainerID, bool); //TODO: incomplete function definition
-    void dropAll(bool);
-    void tick();
-//  void setItem(int, ItemStack const&, ContainerID); //TODO: incomplete function definition
-//  void setItemWithoutSlotLinking(int, ItemStack const&, ContainerID); //TODO: incomplete function definition
-//  void getItem(int, ContainerID)const; //TODO: incomplete function definition
-//  void removeItem(int, int, ContainerID); //TODO: incomplete function definition
-    void _getHudContainerManagerModel();
-    void _getInventoryContainer();
-    void getSelectedSlot()const;
-    void getSelectedContainerId();
-//  void selectSlot(int, ContainerID); //TODO: incomplete function definition
-    void getSelectedItem();
-    void setSelectedItem(ItemStack const&);
-    void getAllContainerIds();
+    virtual void containerSizeChanged(int); // _ZN20PlayerInventoryProxy20containerSizeChangedEi
+    ~PlayerInventoryProxy(); // _ZN20PlayerInventoryProxyD2Ev
+    virtual void containerContentChanged(int); // _ZN20PlayerInventoryProxy23containerContentChangedEi
+    virtual void createTransactionContext(std::function<void (Container &, int, ItemStack const&, ItemStack const&)>, std::function<void (void)>); // _ZN20PlayerInventoryProxy24createTransactionContextESt8functionIFvR9ContaineriRK9ItemStackS5_EES0_IFvvEE
+    PlayerInventoryProxy(std::unique_ptr<Inventory>); // _ZN20PlayerInventoryProxyC2ESt10unique_ptrI9InventorySt14default_deleteIS1_EE
+    void init(std::weak_ptr<HudContainerManagerModel>); // _ZN20PlayerInventoryProxy4initESt8weak_ptrI24HudContainerManagerModelE
+    void addListener(ContainerContentChangeListener *); // _ZN20PlayerInventoryProxy11addListenerEP30ContainerContentChangeListener
+    void removeListener(ContainerContentChangeListener *); // _ZN20PlayerInventoryProxy14removeListenerEP30ContainerContentChangeListener
+    void setContainerChanged(int); // _ZN20PlayerInventoryProxy19setContainerChangedEi
+    void add(ItemStack &, bool); // _ZN20PlayerInventoryProxy3addER9ItemStackb
+    bool canAdd(ItemStack const&)const; // _ZNK20PlayerInventoryProxy6canAddERK9ItemStack
+    void getSlotWithItem(ItemStack const&, bool, bool)const; // _ZNK20PlayerInventoryProxy15getSlotWithItemERK9ItemStackbb
+    void getFirstEmptySlot()const; // _ZNK20PlayerInventoryProxy17getFirstEmptySlotEv
+    void getEmptySlotsCount()const; // _ZNK20PlayerInventoryProxy18getEmptySlotsCountEv
+    void getSlots()const; // _ZNK20PlayerInventoryProxy8getSlotsEv
+//  void getComplexItems(ContainerID)const; //TODO: incomplete function definition // _ZNK20PlayerInventoryProxy15getComplexItemsE11ContainerID
+//  void getSlotCopies(ContainerID)const; //TODO: incomplete function definition // _ZNK20PlayerInventoryProxy13getSlotCopiesE11ContainerID
+    void _getHudContainer()const; // _ZNK20PlayerInventoryProxy16_getHudContainerEv
+//  void setContainerSize(int, ContainerID); //TODO: incomplete function definition // _ZN20PlayerInventoryProxy16setContainerSizeEi11ContainerID
+//  void getContainerSize(ContainerID)const; //TODO: incomplete function definition // _ZNK20PlayerInventoryProxy16getContainerSizeE11ContainerID
+    void getHotbarSize()const; // _ZNK20PlayerInventoryProxy13getHotbarSizeEv
+    void getItemCount(ItemDescriptor const&); // _ZN20PlayerInventoryProxy12getItemCountERK14ItemDescriptor
+    bool hasResource(int); // _ZN20PlayerInventoryProxy11hasResourceEi
+    void getAndRemoveResource(ItemStack &, bool, bool); // _ZN20PlayerInventoryProxy20getAndRemoveResourceER9ItemStackbb
+    void removeResource(int); // _ZN20PlayerInventoryProxy14removeResourceEi
+    void removeResource(ItemStack const&); // _ZN20PlayerInventoryProxy14removeResourceERK9ItemStack
+    void removeResource(ItemStack const&, bool, bool, int); // _ZN20PlayerInventoryProxy14removeResourceERK9ItemStackbbi
+    void swapSlots(int, int); // _ZN20PlayerInventoryProxy9swapSlotsEii
+//  void clearSlot(int, ContainerID); //TODO: incomplete function definition // _ZN20PlayerInventoryProxy9clearSlotEi11ContainerID
+    void clearInventory(int); // _ZN20PlayerInventoryProxy14clearInventoryEi
+    void clearInventoryWithDefault(bool); // _ZN20PlayerInventoryProxy25clearInventoryWithDefaultEb
+    void load(ListTag const&, SemVersion const&, Level &); // _ZN20PlayerInventoryProxy4loadERK7ListTagRK10SemVersionR5Level
+    void save(); // _ZN20PlayerInventoryProxy4saveEv
+//  void dropSlot(int, bool, bool, ContainerID, bool); //TODO: incomplete function definition // _ZN20PlayerInventoryProxy8dropSlotEibb11ContainerIDb
+    void dropAll(bool); // _ZN20PlayerInventoryProxy7dropAllEb
+    void tick(); // _ZN20PlayerInventoryProxy4tickEv
+//  void setItem(int, ItemStack const&, ContainerID); //TODO: incomplete function definition // _ZN20PlayerInventoryProxy7setItemEiRK9ItemStack11ContainerID
+//  void setItemWithoutSlotLinking(int, ItemStack const&, ContainerID); //TODO: incomplete function definition // _ZN20PlayerInventoryProxy25setItemWithoutSlotLinkingEiRK9ItemStack11ContainerID
+//  void getItem(int, ContainerID)const; //TODO: incomplete function definition // _ZNK20PlayerInventoryProxy7getItemEi11ContainerID
+//  void removeItem(int, int, ContainerID); //TODO: incomplete function definition // _ZN20PlayerInventoryProxy10removeItemEii11ContainerID
+    void _getHudContainerManagerModel(); // _ZN20PlayerInventoryProxy28_getHudContainerManagerModelEv
+    void _getInventoryContainer(); // _ZN20PlayerInventoryProxy22_getInventoryContainerEv
+    void getSelectedSlot()const; // _ZNK20PlayerInventoryProxy15getSelectedSlotEv
+    void getSelectedContainerId(); // _ZN20PlayerInventoryProxy22getSelectedContainerIdEv
+//  void selectSlot(int, ContainerID); //TODO: incomplete function definition // _ZN20PlayerInventoryProxy10selectSlotEi11ContainerID
+    void getSelectedItem(); // _ZN20PlayerInventoryProxy15getSelectedItemEv
+    void setSelectedItem(ItemStack const&); // _ZN20PlayerInventoryProxy15setSelectedItemERK9ItemStack
+    void getAllContainerIds(); // _ZN20PlayerInventoryProxy18getAllContainerIdsEv
+    class SlotData {
+
+    public:
+//      SlotData(int, ContainerID); //TODO: incomplete function definition // _ZN20PlayerInventoryProxy8SlotDataC2Ei11ContainerID
+    };
 };

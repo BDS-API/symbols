@@ -1,21 +1,16 @@
 #pragma once
 
-#include "./Item.h"
-#include "../level/Level.h"
-#include "../actor/Actor.h"
-#include "../actor/Player.h"
-#include "./ItemStack.h"
 #include <string>
+#include "Item.h"
 
 
 class SuspiciousStewItem : Item {
 
 public:
-    virtual ~SuspiciousStewItem();
-    virtual void uniqueAuxValues()const;
-    virtual void useTimeDepleted(ItemStack &, Level *, Player *)const;
-
-    void _getStewEffects();
-    SuspiciousStewItem(std::string const&, short);
-    void applyStewEffect(ItemStack const&, Actor &);
+    ~SuspiciousStewItem(); // _ZN18SuspiciousStewItemD2Ev
+    virtual void uniqueAuxValues()const; // _ZNK18SuspiciousStewItem15uniqueAuxValuesEv
+    virtual void useTimeDepleted(ItemStack &, Level *, Player *)const; // _ZNK18SuspiciousStewItem15useTimeDepletedER9ItemStackP5LevelP6Player
+    void _getStewEffects(); // _ZN18SuspiciousStewItem15_getStewEffectsEv
+    SuspiciousStewItem(std::string const&, short); // _ZN18SuspiciousStewItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEs
+    void applyStewEffect(ItemStack const&, Actor &); // _ZN18SuspiciousStewItem15applyStewEffectERK9ItemStackR5Actor
 };

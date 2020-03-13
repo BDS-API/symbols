@@ -1,12 +1,9 @@
 #pragma once
 
-#include "../bedrock/actor/Actor.h"
 
 
-class ManagedWanderingTraderComponent {
+namespace ManagedWanderingTraderComponent {
 
-public:
-
-    void initFromDefinition(Actor &);
-    void reloadComponent(Actor &);
+    void initFromDefinition(Actor &); // _ZN31ManagedWanderingTraderComponent18initFromDefinitionER5Actor
+    void reloadComponent(Actor &); // _ZN31ManagedWanderingTraderComponent15reloadComponentER5Actor
 };

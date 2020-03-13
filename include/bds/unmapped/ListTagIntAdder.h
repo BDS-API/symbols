@@ -5,9 +5,8 @@
 class ListTagIntAdder {
 
 public:
-
-    void operator()(int);
-    ListTagIntAdder(int);
-    void done();
-    ~ListTagIntAdder();
+    void operator()(int); // _ZN15ListTagIntAdderclEi
+    ListTagIntAdder(int); // _ZN15ListTagIntAdderC2Ei
+    void done(); // _ZN15ListTagIntAdder4doneEv
+    ~ListTagIntAdder(); // _ZN15ListTagIntAdderD2Ev
 };

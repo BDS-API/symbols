@@ -5,7 +5,6 @@
 class ServerLocator {
 
 public:
-    virtual ~ServerLocator();
-
-    ServerLocator();
+    ~ServerLocator(); // _ZN13ServerLocatorD2Ev
+    ServerLocator(); // _ZN13ServerLocatorC2Ev
 };

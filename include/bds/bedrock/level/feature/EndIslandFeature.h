@@ -1,16 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
+#include "Feature.h"
 
 
 class EndIslandFeature : Feature {
 
 public:
-    virtual ~EndIslandFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    EndIslandFeature();
+    ~EndIslandFeature(); // _ZN16EndIslandFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK16EndIslandFeature5placeER11BlockSourceRK8BlockPosR6Random
+    EndIslandFeature(); // _ZN16EndIslandFeatureC2Ev
 };

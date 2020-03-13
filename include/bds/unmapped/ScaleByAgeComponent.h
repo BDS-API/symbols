@@ -1,13 +1,10 @@
 #pragma once
 
-#include "./ScaleByAgeComponent.h"
-#include "./EntityContext.h"
 
 
 class ScaleByAgeComponent {
 
 public:
-
-    ScaleByAgeComponent(ScaleByAgeComponent &&);
-    void _initializeScale(EntityContext &);
+    ScaleByAgeComponent(ScaleByAgeComponent &&); // _ZN19ScaleByAgeComponentC2EOS_
+    void _initializeScale(EntityContext &); // _ZN19ScaleByAgeComponent16_initializeScaleER13EntityContext
 };

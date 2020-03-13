@@ -1,10 +1,5 @@
 #pragma once
 
-#include "../../actor/Actor.h"
-#include "../unmapped/ScriptEngine.h"
-#include "../ScriptObjectHandle.h"
-#include "../ScriptVersionInfo.h"
-#include "../unmapped/ScriptServerContext.h"
 #include <string>
 
 
@@ -13,12 +8,11 @@ class ScriptCollisionBoxComponent /*ScriptTemplateFactory<ScriptServerContext>::
 public:
     static long mHash;
 
-    virtual ~ScriptCollisionBoxComponent();
-    virtual void applyComponentTo(ScriptApi::ScriptVersionInfo const&, ScriptEngine &, ScriptServerContext &, Actor &, ScriptApi::ScriptObjectHandle const&)const;
-    virtual void retrieveComponentFrom(ScriptApi::ScriptVersionInfo const&, ScriptEngine &, ScriptServerContext &, Actor &, ScriptApi::ScriptObjectHandle &)const;
-    virtual bool hasComponent(ScriptApi::ScriptVersionInfo const&, ScriptEngine &, ScriptServerContext &, Actor &, bool &)const;
-
-    void getHash();
-    ScriptCollisionBoxComponent();
-    std::string getName();
+    ~ScriptCollisionBoxComponent(); // _ZN27ScriptCollisionBoxComponentD2Ev
+    virtual void applyComponentTo(ScriptApi::ScriptVersionInfo const&, ScriptEngine &, ScriptServerContext &, Actor &, ScriptApi::ScriptObjectHandle const&)const; // _ZNK27ScriptCollisionBoxComponent16applyComponentToERKN9ScriptApi17ScriptVersionInfoER12ScriptEngineR19ScriptServerContextR5ActorRKNS0_18ScriptObjectHandleE
+    virtual void retrieveComponentFrom(ScriptApi::ScriptVersionInfo const&, ScriptEngine &, ScriptServerContext &, Actor &, ScriptApi::ScriptObjectHandle &)const; // _ZNK27ScriptCollisionBoxComponent21retrieveComponentFromERKN9ScriptApi17ScriptVersionInfoER12ScriptEngineR19ScriptServerContextR5ActorRNS0_18ScriptObjectHandleE
+    virtual bool hasComponent(ScriptApi::ScriptVersionInfo const&, ScriptEngine &, ScriptServerContext &, Actor &, bool &)const; // _ZNK27ScriptCollisionBoxComponent12hasComponentERKN9ScriptApi17ScriptVersionInfoER12ScriptEngineR19ScriptServerContextR5ActorRb
+    void getHash(); // _ZN27ScriptCollisionBoxComponent7getHashEv
+    ScriptCollisionBoxComponent(); // _ZN27ScriptCollisionBoxComponentC2Ev
+    std::string getName(); // _ZN27ScriptCollisionBoxComponent7getNameB5cxx11Ev
 };

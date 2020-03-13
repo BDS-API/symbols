@@ -1,17 +1,12 @@
 #pragma once
 
-#include "./GrowsCropComponent.h"
-#include "../bedrock/actor/Actor.h"
-#include "./DataLoadHelper.h"
-#include "../bedrock/nbt/CompoundTag.h"
 
 
 class GrowsCropComponent {
 
 public:
-
-    GrowsCropComponent(GrowsCropComponent &&);
-    void addAdditionalSaveData(CompoundTag &);
-    void readAdditionalSaveData(Actor &, CompoundTag const&, DataLoadHelper &);
-    GrowsCropComponent();
+    GrowsCropComponent(GrowsCropComponent &&); // _ZN18GrowsCropComponentC2EOS_
+    void addAdditionalSaveData(CompoundTag &); // _ZN18GrowsCropComponent21addAdditionalSaveDataER11CompoundTag
+    void readAdditionalSaveData(Actor &, CompoundTag const&, DataLoadHelper &); // _ZN18GrowsCropComponent22readAdditionalSaveDataER5ActorRK11CompoundTagR14DataLoadHelper
+    GrowsCropComponent(); // _ZN18GrowsCropComponentC2Ev
 };

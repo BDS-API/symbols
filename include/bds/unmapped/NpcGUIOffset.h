@@ -1,12 +1,10 @@
 #pragma once
 
-#include "../json/Value.h"
 
 
 class NpcGUIOffset {
 
 public:
-
-    NpcGUIOffset();
-    NpcGUIOffset(Json::Value const&);
+    NpcGUIOffset(); // _ZN12NpcGUIOffsetC2Ev
+    NpcGUIOffset(Json::Value const&); // _ZN12NpcGUIOffsetC2ERKN4Json5ValueE
 };

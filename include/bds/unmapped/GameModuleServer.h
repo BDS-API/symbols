@@ -5,7 +5,6 @@
 class GameModuleServer {
 
 public:
-    virtual ~GameModuleServer();
-
-    GameModuleServer();
+    ~GameModuleServer(); // _ZN16GameModuleServerD2Ev
+    GameModuleServer(); // _ZN16GameModuleServerC2Ev
 };

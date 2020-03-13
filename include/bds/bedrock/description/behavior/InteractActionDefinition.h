@@ -1,15 +1,13 @@
 #pragma once
 
-#include "../../../unmapped/BehaviorFactory.h"
-#include "./BehaviorDefinition.h"
 #include "../../../json/Value.h"
+#include "BehaviorDefinition.h"
 
 
 class InteractActionDefinition : BehaviorDefinition {
 
 public:
-    virtual ~InteractActionDefinition();
-    virtual void load(Json::Value, BehaviorFactory const&);
-
-    InteractActionDefinition();
+    ~InteractActionDefinition(); // _ZN24InteractActionDefinitionD2Ev
+    virtual void load(Json::Value, BehaviorFactory const&); // _ZN24InteractActionDefinition4loadEN4Json5ValueERK15BehaviorFactory
+    InteractActionDefinition(); // _ZN24InteractActionDefinitionC2Ev
 };

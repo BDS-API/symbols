@@ -1,19 +1,14 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../../unmapped/Block.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
-#include "../../block/unmapped/BlockSource.h"
+#include "Feature.h"
 
 
 class BlockPileFeature : Feature {
 
 public:
-    virtual ~BlockPileFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-    virtual void getBlockToPlace(Random &)const;
-
-    BlockPileFeature(Block const&);
-    void tryPlaceBlock(BlockSource &, BlockPos const&, Random &)const;
+    ~BlockPileFeature(); // _ZN16BlockPileFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK16BlockPileFeature5placeER11BlockSourceRK8BlockPosR6Random
+    virtual void getBlockToPlace(Random &)const; // _ZNK16BlockPileFeature15getBlockToPlaceER6Random
+    BlockPileFeature(Block const&); // _ZN16BlockPileFeatureC2ERK5Block
+    void tryPlaceBlock(BlockSource &, BlockPos const&, Random &)const; // _ZNK16BlockPileFeature13tryPlaceBlockER11BlockSourceRK8BlockPosR6Random
 };

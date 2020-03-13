@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class VideoStreamServerCommand : Command {
 
 public:
-    virtual ~VideoStreamServerCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    VideoStreamServerCommand();
+    ~VideoStreamServerCommand(); // _ZN24VideoStreamServerCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK24VideoStreamServerCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN24VideoStreamServerCommand5setupER15CommandRegistry
+    VideoStreamServerCommand(); // _ZN24VideoStreamServerCommandC2Ev
 };

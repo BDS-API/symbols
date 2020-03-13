@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./NameAction.h"
 
 
 class NameAction {
 
 public:
-
-    ~NameAction();
-    NameAction();
-    NameAction(NameAction const&);
+    ~NameAction(); // _ZN10NameActionD2Ev
+    NameAction(); // _ZN10NameActionC2Ev
+    NameAction(NameAction const&); // _ZN10NameActionC2ERKS_
 };

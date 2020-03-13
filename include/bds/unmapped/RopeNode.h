@@ -1,12 +1,10 @@
 #pragma once
 
-#include "../bedrock/util/Vec3.h"
 
 
 class RopeNode {
 
 public:
-
-    RopeNode(Vec3 const&);
-    RopeNode();
+    RopeNode(Vec3 const&); // _ZN8RopeNodeC2ERK4Vec3
+    RopeNode(); // _ZN8RopeNodeC2Ev
 };

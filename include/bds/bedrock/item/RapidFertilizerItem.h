@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./FertilizerItem.h"
-#include "./ItemStackBase.h"
+#include "FertilizerItem.h"
 
 
 class RapidFertilizerItem : FertilizerItem {
 
 public:
-    virtual ~RapidFertilizerItem();
-    virtual void fixupOnLoad(ItemStackBase &)const;
-
+    ~RapidFertilizerItem(); // _ZN19RapidFertilizerItemD2Ev
+    virtual void fixupOnLoad(ItemStackBase &)const; // _ZNK19RapidFertilizerItem11fixupOnLoadER13ItemStackBase
 };

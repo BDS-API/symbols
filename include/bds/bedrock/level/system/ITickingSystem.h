@@ -5,7 +5,6 @@
 class ITickingSystem {
 
 public:
-    virtual ~ITickingSystem();
-
-    ITickingSystem();
+    ~ITickingSystem(); // _ZN14ITickingSystemD2Ev
+    ITickingSystem(); // _ZN14ITickingSystemC2Ev
 };

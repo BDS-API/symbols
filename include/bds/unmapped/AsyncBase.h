@@ -2,14 +2,15 @@
 
 
 
-namespace Bedrock::Threading {
+namespace Bedrock {
 
-class AsyncBase {
+    namespace Threading {
 
-public:
+        class AsyncBase {
 
-    AsyncBase();
-    ~AsyncBase();
-};
-
+        public:
+            AsyncBase(); // _ZN7Bedrock9Threading9AsyncBaseC2Ev
+            ~AsyncBase(); // _ZN7Bedrock9Threading9AsyncBaseD2Ev
+        };
+    }
 }

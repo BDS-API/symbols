@@ -1,22 +1,17 @@
 #pragma once
 
-#include "../../io/BinaryStream.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "../../util/BlockPos.h"
-#include "./Packet.h"
-#include "../../actor/unmapped/ActorUniqueID.h"
 #include <string>
+#include "Packet.h"
 
 
 class ContainerOpenPacket : Packet {
 
 public:
-    virtual ~ContainerOpenPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-//  ContainerOpenPacket(ContainerID, ContainerType, BlockPos const&, ActorUniqueID const&); //TODO: incomplete function definition
-    ContainerOpenPacket();
+    ~ContainerOpenPacket(); // _ZN19ContainerOpenPacketD2Ev
+    virtual void getId()const; // _ZNK19ContainerOpenPacket5getIdEv
+    virtual std::string getName()const; // _ZNK19ContainerOpenPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK19ContainerOpenPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN19ContainerOpenPacket4readER20ReadOnlyBinaryStream
+//  ContainerOpenPacket(ContainerID, ContainerType, BlockPos const&, ActorUniqueID const&); //TODO: incomplete function definition // _ZN19ContainerOpenPacketC2E11ContainerID13ContainerTypeRK8BlockPosRK13ActorUniqueID
+    ContainerOpenPacket(); // _ZN19ContainerOpenPacketC2Ev
 };

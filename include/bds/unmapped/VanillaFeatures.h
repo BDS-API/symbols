@@ -1,13 +1,9 @@
 #pragma once
 
-#include "./FeatureRegistry.h"
-#include "./FeatureTypeFactory.h"
 
 
-class VanillaFeatures {
+namespace VanillaFeatures {
 
-public:
-
-    void registerFeatureTypes(FeatureTypeFactory &);
-    void registerFeatures(FeatureRegistry &);
+    void registerFeatureTypes(FeatureTypeFactory &); // _ZN15VanillaFeatures20registerFeatureTypesER18FeatureTypeFactory
+    void registerFeatures(FeatureRegistry &); // _ZN15VanillaFeatures16registerFeaturesER15FeatureRegistry
 };

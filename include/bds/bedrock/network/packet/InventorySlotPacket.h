@@ -1,21 +1,17 @@
 #pragma once
 
-#include "../../io/BinaryStream.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "./Packet.h"
-#include "../../item/ItemStack.h"
 #include <string>
+#include "Packet.h"
 
 
 class InventorySlotPacket : Packet {
 
 public:
-    virtual ~InventorySlotPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    InventorySlotPacket();
-//  InventorySlotPacket(ContainerID, unsigned int, ItemStack const&); //TODO: incomplete function definition
+    ~InventorySlotPacket(); // _ZN19InventorySlotPacketD2Ev
+    virtual void getId()const; // _ZNK19InventorySlotPacket5getIdEv
+    virtual std::string getName()const; // _ZNK19InventorySlotPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK19InventorySlotPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN19InventorySlotPacket4readER20ReadOnlyBinaryStream
+    InventorySlotPacket(); // _ZN19InventorySlotPacketC2Ev
+//  InventorySlotPacket(ContainerID, unsigned int, ItemStack const&); //TODO: incomplete function definition // _ZN19InventorySlotPacketC2E11ContainerIDjRK9ItemStack
 };

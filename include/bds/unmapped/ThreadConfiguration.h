@@ -1,12 +1,10 @@
 #pragma once
 
-#include "./ThreadConfiguration.h"
 
 
 class ThreadConfiguration {
 
 public:
-
-    ThreadConfiguration();
-    ThreadConfiguration(ThreadConfiguration const&);
+    ThreadConfiguration(); // _ZN19ThreadConfigurationC2Ev
+    ThreadConfiguration(ThreadConfiguration const&); // _ZN19ThreadConfigurationC2ERKS_
 };

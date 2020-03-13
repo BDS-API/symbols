@@ -5,7 +5,6 @@
 class GameCallbacks {
 
 public:
-    virtual ~GameCallbacks();
-
-    GameCallbacks();
+    ~GameCallbacks(); // _ZN13GameCallbacksD2Ev
+    GameCallbacks(); // _ZN13GameCallbacksC2Ev
 };

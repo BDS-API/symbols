@@ -1,23 +1,17 @@
 #pragma once
 
-#include "../../definition/DefinitionTrigger.h"
-#include "./NearestAttackableTargetGoal.h"
-#include <memory>
-#include "../../../unmapped/MobDescriptor.h"
-#include "../../../unmapped/TrustComponent.h"
-#include <vector>
-#include "../Mob.h"
 #include <string>
+#include "NearestAttackableTargetGoal.h"
+#include <vector>
 
 
 class DefendTrustedTargetGoal : NearestAttackableTargetGoal {
 
 public:
-    virtual ~DefendTrustedTargetGoal();
-    virtual bool canUse();
-    virtual void start();
-    virtual void appendDebugInfo(std::string &)const;
-
-//  DefendTrustedTargetGoal(Mob &, std::vector<MobDescriptor, std::allocator<MobDescriptor>> const&, float, int, bool, int, LevelSoundEvent, DefinitionTrigger const&); //TODO: incomplete function definition
-    void _findTrustedTarget(TrustComponent const&);
+    ~DefendTrustedTargetGoal(); // _ZN23DefendTrustedTargetGoalD2Ev
+    virtual bool canUse(); // _ZN23DefendTrustedTargetGoal6canUseEv
+    virtual void start(); // _ZN23DefendTrustedTargetGoal5startEv
+    virtual void appendDebugInfo(std::string &)const; // _ZNK23DefendTrustedTargetGoal15appendDebugInfoERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+//  DefendTrustedTargetGoal(Mob &, std::vector<MobDescriptor> const&, float, int, bool, int, LevelSoundEvent, DefinitionTrigger const&); //TODO: incomplete function definition // _ZN23DefendTrustedTargetGoalC2ER3MobRKSt6vectorI13MobDescriptorSaIS3_EEfibi15LevelSoundEventRK17DefinitionTrigger
+    void _findTrustedTarget(TrustComponent const&); // _ZN23DefendTrustedTargetGoal18_findTrustedTargetERK14TrustComponent
 };

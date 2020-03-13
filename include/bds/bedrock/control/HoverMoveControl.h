@@ -1,15 +1,12 @@
 #pragma once
 
-#include "../actor/Mob.h"
-#include "../../unmapped/MoveControlComponent.h"
-#include "./MoveControl.h"
+#include "MoveControl.h"
 
 
 class HoverMoveControl : MoveControl {
 
 public:
-    virtual ~HoverMoveControl();
-    virtual void tick(MoveControlComponent &, Mob &);
-
-    HoverMoveControl();
+    ~HoverMoveControl(); // _ZN16HoverMoveControlD2Ev
+    virtual void tick(MoveControlComponent &, Mob &); // _ZN16HoverMoveControl4tickER20MoveControlComponentR3Mob
+    HoverMoveControl(); // _ZN16HoverMoveControlC2Ev
 };

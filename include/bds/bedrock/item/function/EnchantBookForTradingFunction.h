@@ -1,26 +1,18 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../condition/LootItemCondition.h"
-#include "../../../unmapped/LootTableContext.h"
-#include <memory>
-#include "./LootItemFunction.h"
 #include "../../../json/Value.h"
+#include "LootItemFunction.h"
 #include <vector>
-#include "../ItemInstance.h"
-#include "../../../unmapped/Trade.h"
-#include "../ItemStack.h"
 
 
 class EnchantBookForTradingFunction : LootItemFunction {
 
 public:
-    virtual ~EnchantBookForTradingFunction();
-    virtual void apply(ItemStack &, Random &, LootTableContext &);
-    virtual void apply(ItemStack &, Random &, Trade const&, LootTableContext &);
-    virtual void apply(ItemInstance &, Random &, LootTableContext &);
-    virtual void apply(ItemInstance &, Random &, Trade const&, LootTableContext &);
-
-    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &);
-    EnchantBookForTradingFunction(std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &);
+    ~EnchantBookForTradingFunction(); // _ZN29EnchantBookForTradingFunctionD2Ev
+    virtual void apply(ItemStack &, Random &, LootTableContext &); // _ZN29EnchantBookForTradingFunction5applyER9ItemStackR6RandomR16LootTableContext
+    virtual void apply(ItemStack &, Random &, Trade const&, LootTableContext &); // _ZN29EnchantBookForTradingFunction5applyER9ItemStackR6RandomRK5TradeR16LootTableContext
+    virtual void apply(ItemInstance &, Random &, LootTableContext &); // _ZN29EnchantBookForTradingFunction5applyER12ItemInstanceR6RandomR16LootTableContext
+    virtual void apply(ItemInstance &, Random &, Trade const&, LootTableContext &); // _ZN29EnchantBookForTradingFunction5applyER12ItemInstanceR6RandomRK5TradeR16LootTableContext
+    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition>> &); // _ZN29EnchantBookForTradingFunction11deserializeEN4Json5ValueERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS4_EESaIS7_EE
+    EnchantBookForTradingFunction(std::vector<std::unique_ptr<LootItemCondition>> &); // _ZN29EnchantBookForTradingFunctionC2ERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS2_EESaIS5_EE
 };

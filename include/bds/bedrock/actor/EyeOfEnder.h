@@ -1,23 +1,16 @@
 #pragma once
 
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "./Actor.h"
-#include "../../unmapped/VariantParameterList.h"
-#include "../util/BlockPos.h"
-#include "../util/Vec3.h"
-#include "unmapped/ActorDefinitionGroup.h"
-#include "./Player.h"
+#include "Actor.h"
 
 
 class EyeOfEnder : Actor {
 
 public:
-//  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition
-    virtual ~EyeOfEnder();
-    virtual void lerpMotion(Vec3 const&);
-    virtual void normalTick();
-    virtual void getShadowRadius()const;
-
-    EyeOfEnder(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
-    void signalTo(Player const&, BlockPos &);
+//  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN10EyeOfEnder15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList
+    ~EyeOfEnder(); // _ZN10EyeOfEnderD2Ev
+    virtual void lerpMotion(Vec3 const&); // _ZN10EyeOfEnder10lerpMotionERK4Vec3
+    virtual void normalTick(); // _ZN10EyeOfEnder10normalTickEv
+    virtual void getShadowRadius()const; // _ZNK10EyeOfEnder15getShadowRadiusEv
+    EyeOfEnder(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN10EyeOfEnderC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
+    void signalTo(Player const&, BlockPos &); // _ZN10EyeOfEnder8signalToERK6PlayerR8BlockPos
 };

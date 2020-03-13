@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../actor/Mob.h"
-#include "../../unmapped/MoveControlComponent.h"
-#include "../description/component/MoveControlDescription.h"
-#include "./MoveControl.h"
+#include "MoveControl.h"
 
 
 class SwimMoveControl : MoveControl {
 
 public:
-    virtual ~SwimMoveControl();
-    virtual void initializeInternal(Mob &, MoveControlDescription *);
-    virtual void tick(MoveControlComponent &, Mob &);
-
-    SwimMoveControl();
+    ~SwimMoveControl(); // _ZN15SwimMoveControlD2Ev
+    virtual void initializeInternal(Mob &, MoveControlDescription *); // _ZN15SwimMoveControl18initializeInternalER3MobP22MoveControlDescription
+    virtual void tick(MoveControlComponent &, Mob &); // _ZN15SwimMoveControl4tickER20MoveControlComponentR3Mob
+    SwimMoveControl(); // _ZN15SwimMoveControlC2Ev
 };

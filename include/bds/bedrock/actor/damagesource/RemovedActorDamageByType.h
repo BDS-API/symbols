@@ -1,17 +1,15 @@
 #pragma once
 
-#include "./ActorDamageSource.h"
-#include "../Actor.h"
 #include <string>
+#include "ActorDamageSource.h"
 
 
 class RemovedActorDamageByType : ActorDamageSource {
 
 public:
-    virtual ~RemovedActorDamageByType();
-    virtual void getDeathMessage(std::string, Actor *)const;
-    virtual void getEntityType()const;
-    virtual void clone()const;
-
-//  RemovedActorDamageByType(ActorDamageCause, ActorType); //TODO: incomplete function definition
+    ~RemovedActorDamageByType(); // _ZN24RemovedActorDamageByTypeD2Ev
+    virtual void getDeathMessage(std::string, Actor *)const; // _ZNK24RemovedActorDamageByType15getDeathMessageENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEP5Actor
+    virtual void getEntityType()const; // _ZNK24RemovedActorDamageByType13getEntityTypeEv
+    virtual void clone()const; // _ZNK24RemovedActorDamageByType5cloneEv
+//  RemovedActorDamageByType(ActorDamageCause, ActorType); //TODO: incomplete function definition // _ZN24RemovedActorDamageByTypeC2E16ActorDamageCause9ActorType
 };

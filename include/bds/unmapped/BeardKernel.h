@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../bedrock/util/BlockPos.h"
-#include <memory>
-#include "../bedrock/level/structure/piece/PoolElementStructurePiece.h"
 #include <vector>
 
 
 class BeardKernel {
 
 public:
-
-    void createBeardKernel();
-    BeardKernel();
-    void getContribution(int, int, int);
-    void calculateBeardAndShaverContributions(std::vector<PoolElementStructurePiece, std::allocator<PoolElementStructurePiece>> const&, BlockPos const&);
+    void createBeardKernel(); // _ZN11BeardKernel17createBeardKernelEv
+    BeardKernel(); // _ZN11BeardKernelC2Ev
+    void getContribution(int, int, int); // _ZN11BeardKernel15getContributionEiii
+    void calculateBeardAndShaverContributions(std::vector<PoolElementStructurePiece> const&, BlockPos const&); // _ZN11BeardKernel36calculateBeardAndShaverContributionsERKSt6vectorI25PoolElementStructurePieceSaIS1_EERK8BlockPos
 };

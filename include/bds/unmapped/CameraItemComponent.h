@@ -1,26 +1,18 @@
 #pragma once
 
-#include "../bedrock/util/Vec3.h"
-#include "../json/Value.h"
-#include "../bedrock/item/ItemStack.h"
-#include "../bedrock/actor/Actor.h"
-#include "../bedrock/actor/Player.h"
-#include "../bedrock/util/BlockPos.h"
-#include "../bedrock/item/Item.h"
 
 
 class CameraItemComponent {
 
 public:
-    virtual ~CameraItemComponent();
-
-    CameraItemComponent(Item &);
-    void init(Json::Value &);
-    void takePictureNow(Player &, Actor *, Actor *);
-    void use(ItemStack &, Player &);
-    void _shouldTakePicture(Player &);
-    void releaseUsing(ItemStack &, Player &, int);
-    void _tryPlace(ItemStack const&, Actor &, BlockPos const&, unsigned char, Vec3 &)const;
-    void useOn(ItemStack &, Actor &, BlockPos const&, unsigned char, Vec3 const&);
-    bool canPlace(ItemStack const&, Actor &, BlockPos const&, unsigned char)const;
+    ~CameraItemComponent(); // _ZN19CameraItemComponentD2Ev
+    CameraItemComponent(Item &); // _ZN19CameraItemComponentC2ER4Item
+    void init(Json::Value &); // _ZN19CameraItemComponent4initERN4Json5ValueE
+    void takePictureNow(Player &, Actor *, Actor *); // _ZN19CameraItemComponent14takePictureNowER6PlayerP5ActorS3_
+    void use(ItemStack &, Player &); // _ZN19CameraItemComponent3useER9ItemStackR6Player
+    void _shouldTakePicture(Player &); // _ZN19CameraItemComponent18_shouldTakePictureER6Player
+    void releaseUsing(ItemStack &, Player &, int); // _ZN19CameraItemComponent12releaseUsingER9ItemStackR6Playeri
+    void _tryPlace(ItemStack const&, Actor &, BlockPos const&, unsigned char, Vec3 &)const; // _ZNK19CameraItemComponent9_tryPlaceERK9ItemStackR5ActorRK8BlockPoshR4Vec3
+    void useOn(ItemStack &, Actor &, BlockPos const&, unsigned char, Vec3 const&); // _ZN19CameraItemComponent5useOnER9ItemStackR5ActorRK8BlockPoshRK4Vec3
+    bool canPlace(ItemStack const&, Actor &, BlockPos const&, unsigned char)const; // _ZNK19CameraItemComponent8canPlaceERK9ItemStackR5ActorRK8BlockPosh
 };

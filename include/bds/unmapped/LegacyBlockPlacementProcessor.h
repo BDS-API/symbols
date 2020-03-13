@@ -1,17 +1,12 @@
 #pragma once
 
-#include "../bedrock/util/BlockPos.h"
-#include "./Block.h"
-#include "./LegacyStructureSettings.h"
-#include "../bedrock/block/unmapped/BlockSource.h"
 
 
 class LegacyBlockPlacementProcessor {
 
 public:
-
-    LegacyBlockPlacementProcessor(LegacyStructureSettings const&);
-    bool canPlace();
-    void applyGravity(BlockSource &, int, BlockPos &)const;
-    void applyBlockRules(BlockSource &, BlockPos &, Block const*);
+    LegacyBlockPlacementProcessor(LegacyStructureSettings const&); // _ZN29LegacyBlockPlacementProcessorC2ERK23LegacyStructureSettings
+    bool canPlace(); // _ZN29LegacyBlockPlacementProcessor8canPlaceEv
+    void applyGravity(BlockSource &, int, BlockPos &)const; // _ZNK29LegacyBlockPlacementProcessor12applyGravityER11BlockSourceiR8BlockPos
+    void applyBlockRules(BlockSource &, BlockPos &, Block const*); // _ZN29LegacyBlockPlacementProcessor15applyBlockRulesER11BlockSourceR8BlockPosPK5Block
 };

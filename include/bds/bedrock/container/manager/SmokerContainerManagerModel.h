@@ -1,14 +1,11 @@
 #pragma once
 
-#include "./FurnaceContainerManagerModel.h"
-#include "../../util/BlockPos.h"
-#include "../../actor/Player.h"
+#include "FurnaceContainerManagerModel.h"
 
 
 class SmokerContainerManagerModel : FurnaceContainerManagerModel {
 
 public:
-    virtual ~SmokerContainerManagerModel();
-
-//  SmokerContainerManagerModel(ContainerID, Player &, BlockPos const&); //TODO: incomplete function definition
+    ~SmokerContainerManagerModel(); // _ZN27SmokerContainerManagerModelD2Ev
+//  SmokerContainerManagerModel(ContainerID, Player &, BlockPos const&); //TODO: incomplete function definition // _ZN27SmokerContainerManagerModelC2E11ContainerIDR6PlayerRK8BlockPos
 };

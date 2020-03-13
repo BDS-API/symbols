@@ -1,12 +1,7 @@
 #pragma once
 
+#include "MolangScriptArg.h"
 #include <functional>
-#include "./MolangScriptArg.h"
-#include "./HashedString.h"
-#include <memory>
-#include "./MolangGenericQueryFunctionPtr.h"
-#include <vector>
-#include "./RenderParams.h"
 
 
 class MolangGenericQueryFunctionPtr {
@@ -14,11 +9,10 @@ class MolangGenericQueryFunctionPtr {
 public:
     static long defaultErrorValue;
 
-
-    ~MolangGenericQueryFunctionPtr();
-    MolangGenericQueryFunctionPtr(MolangGenericQueryFunctionPtr const&);
-    MolangGenericQueryFunctionPtr(std::function<MolangScriptArg (RenderParams &, std::vector<MolangScriptArg, std::allocator<MolangScriptArg>> const&)> const*, HashedString const&);
-    void getGenericQueryFunctionPtr()const;
-    MolangGenericQueryFunctionPtr(MolangGenericQueryFunctionPtr &&);
-    void operator==(MolangGenericQueryFunctionPtr const&)const;
+    ~MolangGenericQueryFunctionPtr(); // _ZN29MolangGenericQueryFunctionPtrD2Ev
+    MolangGenericQueryFunctionPtr(MolangGenericQueryFunctionPtr const&); // _ZN29MolangGenericQueryFunctionPtrC2ERKS_
+    MolangGenericQueryFunctionPtr(std::function<MolangScriptArg (RenderParams &, std::vector<MolangScriptArg> const&)> const*, HashedString const&); // _ZN29MolangGenericQueryFunctionPtrC2EPKSt8functionIF15MolangScriptArgR12RenderParamsRKSt6vectorIS1_SaIS1_EEEERK12HashedString
+    void getGenericQueryFunctionPtr()const; // _ZNK29MolangGenericQueryFunctionPtr26getGenericQueryFunctionPtrEv
+    MolangGenericQueryFunctionPtr(MolangGenericQueryFunctionPtr &&); // _ZN29MolangGenericQueryFunctionPtrC2EOS_
+    void operator==(MolangGenericQueryFunctionPtr const&)const; // _ZNK29MolangGenericQueryFunctionPtreqERKS_
 };

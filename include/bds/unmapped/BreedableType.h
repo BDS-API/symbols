@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./BreedableType.h"
 
 
 class BreedableType {
 
 public:
-
-    BreedableType();
-    ~BreedableType();
-    BreedableType(BreedableType const&);
+    BreedableType(); // _ZN13BreedableTypeC2Ev
+    ~BreedableType(); // _ZN13BreedableTypeD2Ev
+    BreedableType(BreedableType const&); // _ZN13BreedableTypeC2ERKS_
 };

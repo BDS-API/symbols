@@ -1,18 +1,10 @@
 #pragma once
 
-#include "../../unmapped/WhitelistFile.h"
-#include "../Minecraft.h"
-#include "../IMinecraftApp.h"
-#include "../level/Level.h"
-#include "../level/storage/LevelStorage.h"
-#include "../DedicatedServer.h"
 
 
-class DedicatedServerCommands {
+namespace DedicatedServerCommands {
 
-public:
     static std::string mSaveAllFileList;
 
-
-    void setupStandaloneServer(Minecraft &, IMinecraftApp &, Level &, LevelStorage &, DedicatedServer &, WhitelistFile &);
+    void setupStandaloneServer(Minecraft &, IMinecraftApp &, Level &, LevelStorage &, DedicatedServer &, WhitelistFile &); // _ZN23DedicatedServerCommands21setupStandaloneServerER9MinecraftR13IMinecraftAppR5LevelR12LevelStorageR15DedicatedServerR13WhitelistFile
 };

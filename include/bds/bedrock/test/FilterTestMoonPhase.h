@@ -1,15 +1,13 @@
 #pragma once
 
-#include "./SimpleFloatFilterTest.h"
-#include "../../unmapped/FilterContext.h"
+#include "SimpleFloatFilterTest.h"
 
 
 class FilterTestMoonPhase : SimpleFloatFilterTest {
 
 public:
-    virtual ~FilterTestMoonPhase();
-    virtual void evaluate(FilterContext const&)const;
-    virtual void getName()const;
-
-    FilterTestMoonPhase();
+    ~FilterTestMoonPhase(); // _ZN19FilterTestMoonPhaseD2Ev
+    virtual void evaluate(FilterContext const&)const; // _ZNK19FilterTestMoonPhase8evaluateERK13FilterContext
+    virtual void getName()const; // _ZNK19FilterTestMoonPhase7getNameEv
+    FilterTestMoonPhase(); // _ZN19FilterTestMoonPhaseC2Ev
 };

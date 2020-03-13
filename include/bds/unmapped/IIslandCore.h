@@ -4,12 +4,10 @@
 
 namespace BedrockEngine {
 
-class IIslandCore {
+    class IIslandCore {
 
-public:
-    virtual ~IIslandCore();
-
-    IIslandCore();
-};
-
+    public:
+        ~IIslandCore(); // _ZN13BedrockEngine11IIslandCoreD2Ev
+        IIslandCore(); // _ZN13BedrockEngine11IIslandCoreC2Ev
+    };
 }

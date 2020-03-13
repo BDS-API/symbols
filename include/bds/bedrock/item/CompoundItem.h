@@ -1,12 +1,8 @@
 #pragma once
 
-#include "./ChemistryItem.h"
-#include "./ItemStackBase.h"
-#include <memory>
-#include "./ItemInstance.h"
-#include "unmapped/ItemDescriptor.h"
-#include "../nbt/CompoundTag.h"
 #include <string>
+#include <memory>
+#include "ChemistryItem.h"
 
 
 class CompoundItem : ChemistryItem {
@@ -15,21 +11,20 @@ public:
     static long mIdToSpecialCompound;
     static long mTypeToSpecialCompound;
 
-    virtual ~CompoundItem();
-    virtual std::string buildDescriptionId(ItemDescriptor const&, std::unique_ptr<CompoundTag, std::default_delete<CompoundTag>> const&)const;
-    virtual void getIcon(ItemStackBase const&, int, bool)const;
-    virtual void setIcon(std::string const&, int);
-
-    CompoundItem(std::string const&, int);
-    void _registerSpecialCompounds();
-//  void _registerSpecialCompound(ItemInstance const&, CompoundType); //TODO: incomplete function definition
-    void unregisterSpecialCompounds();
-//  std::string _getName(CompoundType); //TODO: incomplete function definition
-    void getCompoundType(ItemDescriptor const&);
-//  void getItemForCompound(CompoundType, int); //TODO: incomplete function definition
-//  void getIngredientForCompound(CompoundType); //TODO: incomplete function definition
-    bool isCompoundItem(ItemInstance const&);
-//  void getCompoundContainer(CompoundType); //TODO: incomplete function definition
-    void getCompoundContainer(ItemInstance const&);
-    std::string getCompoundFormula(ItemInstance const&);
+    ~CompoundItem(); // _ZN12CompoundItemD2Ev
+    virtual std::string buildDescriptionId(ItemDescriptor const&, std::unique_ptr<CompoundTag> const&)const; // _ZNK12CompoundItem18buildDescriptionIdB5cxx11ERK14ItemDescriptorRKSt10unique_ptrI11CompoundTagSt14default_deleteIS4_EE
+    virtual void getIcon(ItemStackBase const&, int, bool)const; // _ZNK12CompoundItem7getIconERK13ItemStackBaseib
+    virtual void setIcon(std::string const&, int); // _ZN12CompoundItem7setIconERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
+    CompoundItem(std::string const&, int); // _ZN12CompoundItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
+    void _registerSpecialCompounds(); // _ZN12CompoundItem25_registerSpecialCompoundsEv
+//  void _registerSpecialCompound(ItemInstance const&, CompoundType); //TODO: incomplete function definition // _ZN12CompoundItem24_registerSpecialCompoundERK12ItemInstance12CompoundType
+    void unregisterSpecialCompounds(); // _ZN12CompoundItem26unregisterSpecialCompoundsEv
+//  std::string _getName(CompoundType); //TODO: incomplete function definition // _ZN12CompoundItem8_getNameB5cxx11E12CompoundType
+    void getCompoundType(ItemDescriptor const&); // _ZN12CompoundItem15getCompoundTypeERK14ItemDescriptor
+//  void getItemForCompound(CompoundType, int); //TODO: incomplete function definition // _ZN12CompoundItem18getItemForCompoundE12CompoundTypei
+//  void getIngredientForCompound(CompoundType); //TODO: incomplete function definition // _ZN12CompoundItem24getIngredientForCompoundE12CompoundType
+    bool isCompoundItem(ItemInstance const&); // _ZN12CompoundItem14isCompoundItemERK12ItemInstance
+//  void getCompoundContainer(CompoundType); //TODO: incomplete function definition // _ZN12CompoundItem20getCompoundContainerE12CompoundType
+    void getCompoundContainer(ItemInstance const&); // _ZN12CompoundItem20getCompoundContainerERK12ItemInstance
+    std::string getCompoundFormula(ItemInstance const&); // _ZN12CompoundItem18getCompoundFormulaB5cxx11ERK12ItemInstance
 };

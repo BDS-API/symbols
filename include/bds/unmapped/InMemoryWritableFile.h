@@ -1,17 +1,15 @@
 #pragma once
 
 #include <memory>
-#include "./InMemoryFile.h"
 
 
 class InMemoryWritableFile /*leveldb::WritableFile*/ { //TODO: incomplete class definition
 
 public:
-    virtual ~InMemoryWritableFile();
-//  virtual void Append(leveldb::Slice const&); //TODO: incomplete function definition
-    virtual void Close();
-    virtual void Flush();
-    virtual void Sync();
-
-    InMemoryWritableFile(std::shared_ptr<InMemoryFile>);
+    ~InMemoryWritableFile(); // _ZN20InMemoryWritableFileD2Ev
+//  virtual void Append(leveldb::Slice const&); //TODO: incomplete function definition // _ZN20InMemoryWritableFile6AppendERKN7leveldb5SliceE
+    virtual void Close(); // _ZN20InMemoryWritableFile5CloseEv
+    virtual void Flush(); // _ZN20InMemoryWritableFile5FlushEv
+    virtual void Sync(); // _ZN20InMemoryWritableFile4SyncEv
+    InMemoryWritableFile(std::shared_ptr<InMemoryFile>); // _ZN20InMemoryWritableFileC2ESt10shared_ptrI12InMemoryFileE
 };

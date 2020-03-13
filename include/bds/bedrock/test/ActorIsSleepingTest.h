@@ -1,15 +1,13 @@
 #pragma once
 
-#include "./SimpleBoolFilterTest.h"
-#include "../../unmapped/FilterContext.h"
+#include "SimpleBoolFilterTest.h"
 
 
 class ActorIsSleepingTest : SimpleBoolFilterTest {
 
 public:
-    virtual ~ActorIsSleepingTest();
-    virtual void evaluate(FilterContext const&)const;
-    virtual void getName()const;
-
-    ActorIsSleepingTest();
+    ~ActorIsSleepingTest(); // _ZN19ActorIsSleepingTestD2Ev
+    virtual void evaluate(FilterContext const&)const; // _ZNK19ActorIsSleepingTest8evaluateERK13FilterContext
+    virtual void getName()const; // _ZNK19ActorIsSleepingTest7getNameEv
+    ActorIsSleepingTest(); // _ZN19ActorIsSleepingTestC2Ev
 };

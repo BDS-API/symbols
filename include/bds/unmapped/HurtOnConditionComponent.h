@@ -1,11 +1,9 @@
 #pragma once
 
-#include "./HurtOnConditionComponent.h"
 
 
 class HurtOnConditionComponent {
 
 public:
-
-    HurtOnConditionComponent(HurtOnConditionComponent &&);
+    HurtOnConditionComponent(HurtOnConditionComponent &&); // _ZN24HurtOnConditionComponentC2EOS_
 };

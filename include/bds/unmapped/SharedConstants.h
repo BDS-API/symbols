@@ -2,9 +2,8 @@
 
 
 
-class SharedConstants {
+namespace SharedConstants {
 
-public:
     static long MajorVersion;
     static long MinorVersion;
     static long PatchVersion;
@@ -25,8 +24,7 @@ public:
     static long NetworkDefaultMaxConnections;
     static long MinimumCompatibleGameVersionForLevelData;
 
-
-    bool isVersion(int, int, int, int);
-    void getVersionCode();
-    void getVersionCode(int, int, int, int);
+    bool isVersion(int, int, int, int); // _ZN15SharedConstants9isVersionEiiii
+    void getVersionCode(); // _ZN15SharedConstants14getVersionCodeEv
+    void getVersionCode(int, int, int, int); // _ZN15SharedConstants14getVersionCodeEiiii
 };

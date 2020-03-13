@@ -1,16 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "../../util/BlockPos.h"
-#include "./TreeFeature.h"
+#include "TreeFeature.h"
 
 
 class GroundBushFeature : TreeFeature {
 
 public:
-    virtual ~GroundBushFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    GroundBushFeature(int, int);
+    ~GroundBushFeature(); // _ZN17GroundBushFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK17GroundBushFeature5placeER11BlockSourceRK8BlockPosR6Random
+    GroundBushFeature(int, int); // _ZN17GroundBushFeatureC2Eii
 };

@@ -1,21 +1,15 @@
 #pragma once
 
-#include "../../../../unmapped/HardcodedSpawnAreaRegistry.h"
-#include "./StructureFeature.h"
-#include "../../../../unmapped/Dimension.h"
-#include "../../../util/Random.h"
-#include "../../../../unmapped/BiomeSource.h"
-#include "../../../util/ChunkPos.h"
+#include "StructureFeature.h"
 
 
 class NetherFortressFeature : StructureFeature {
 
 public:
-    virtual ~NetherFortressFeature();
-    virtual void initMobSpawnTypes(HardcodedSpawnAreaRegistry &);
-    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int);
-    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&);
-
-    NetherFortressFeature(unsigned int &);
-    void clearCachedBuildings();
+    ~NetherFortressFeature(); // _ZN21NetherFortressFeatureD2Ev
+    virtual void initMobSpawnTypes(HardcodedSpawnAreaRegistry &); // _ZN21NetherFortressFeature17initMobSpawnTypesER26HardcodedSpawnAreaRegistry
+    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int); // _ZN21NetherFortressFeature14isFeatureChunkERK11BiomeSourceR6RandomRK8ChunkPosj
+    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&); // _ZN21NetherFortressFeature20createStructureStartER9DimensionR11BiomeSourceR6RandomRK8ChunkPos
+    NetherFortressFeature(unsigned int &); // _ZN21NetherFortressFeatureC2ERj
+    void clearCachedBuildings(); // _ZN21NetherFortressFeature20clearCachedBuildingsEv
 };

@@ -1,18 +1,14 @@
 #pragma once
 
-#include "./ProjectileComponent.h"
-#include "../bedrock/actor/Actor.h"
-#include "./SplashPotionEffectSubcomponent.h"
-#include "../json/Value.h"
+#include "SplashPotionEffectSubcomponent.h"
 
 
 class ThrownPotionEffectSubcomponent : SplashPotionEffectSubcomponent {
 
 public:
-    virtual ~ThrownPotionEffectSubcomponent();
-    virtual void writetoJSON(Json::Value &)const;
-    virtual void doOnHitEffect(Actor &, ProjectileComponent &);
-
-    void getSubcomponentName();
-    ThrownPotionEffectSubcomponent();
+    ~ThrownPotionEffectSubcomponent(); // _ZN30ThrownPotionEffectSubcomponentD2Ev
+    virtual void writetoJSON(Json::Value &)const; // _ZNK30ThrownPotionEffectSubcomponent11writetoJSONERN4Json5ValueE
+    virtual void doOnHitEffect(Actor &, ProjectileComponent &); // _ZN30ThrownPotionEffectSubcomponent13doOnHitEffectER5ActorR19ProjectileComponent
+    void getSubcomponentName(); // _ZN30ThrownPotionEffectSubcomponent19getSubcomponentNameEv
+    ThrownPotionEffectSubcomponent(); // _ZN30ThrownPotionEffectSubcomponentC2Ev
 };

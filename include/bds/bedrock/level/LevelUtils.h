@@ -1,12 +1,9 @@
 #pragma once
 
-#include "../../core/Path.h"
 
 
-class LevelUtils {
+namespace LevelUtils {
 
-public:
-
-    void createNewLevelDirectory(Core::Path const&);
-    void projectToTimeOfDay(int, int);
+    void createNewLevelDirectory(Core::Path const&); // _ZN10LevelUtils23createNewLevelDirectoryERKN4Core4PathE
+    void projectToTimeOfDay(int, int); // _ZN10LevelUtils18projectToTimeOfDayEii
 };

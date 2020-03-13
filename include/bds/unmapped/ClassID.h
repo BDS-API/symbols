@@ -2,9 +2,7 @@
 
 
 
-class ClassID {
+namespace ClassID {
 
-public:
-
-    void getNextID();
+    void getNextID(); // _ZN7ClassID9getNextIDEv
 };

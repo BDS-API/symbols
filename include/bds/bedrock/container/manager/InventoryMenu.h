@@ -1,20 +1,16 @@
 #pragma once
 
-#include "../../../unmapped/ContainerItemStack.h"
-#include "../Container.h"
-#include "./BaseContainerMenu.h"
-#include "../../actor/Player.h"
+#include "BaseContainerMenu.h"
 
 
 class InventoryMenu : BaseContainerMenu {
 
 public:
-    virtual ~InventoryMenu();
-    virtual void removeSlot(int, int);
-    virtual void getItems();
-    virtual void setSlot(int, ContainerItemStack const&, bool);
-    virtual void getSlot(int);
-    virtual void _getContainer()const;
-
-    InventoryMenu(Player &, Container *);
+    ~InventoryMenu(); // _ZN13InventoryMenuD2Ev
+    virtual void removeSlot(int, int); // _ZN13InventoryMenu10removeSlotEii
+    virtual void getItems(); // _ZN13InventoryMenu8getItemsEv
+    virtual void setSlot(int, ContainerItemStack const&, bool); // _ZN13InventoryMenu7setSlotEiRK18ContainerItemStackb
+    virtual void getSlot(int); // _ZN13InventoryMenu7getSlotEi
+    virtual void _getContainer()const; // _ZNK13InventoryMenu13_getContainerEv
+    InventoryMenu(Player &, Container *); // _ZN13InventoryMenuC2ER6PlayerP9Container
 };

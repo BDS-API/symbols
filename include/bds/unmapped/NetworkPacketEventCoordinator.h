@@ -1,14 +1,11 @@
 #pragma once
 
-#include "../bedrock/network/packet/Packet.h"
-#include "./PacketHeader.h"
 
 
 class NetworkPacketEventCoordinator {
 
 public:
-
-    ~NetworkPacketEventCoordinator();
-    NetworkPacketEventCoordinator();
-    void sendPacketReceivedFrom(PacketHeader const&, Packet const&);
+    ~NetworkPacketEventCoordinator(); // _ZN29NetworkPacketEventCoordinatorD2Ev
+    NetworkPacketEventCoordinator(); // _ZN29NetworkPacketEventCoordinatorC2Ev
+    void sendPacketReceivedFrom(PacketHeader const&, Packet const&); // _ZN29NetworkPacketEventCoordinator22sendPacketReceivedFromERK12PacketHeaderRK6Packet
 };

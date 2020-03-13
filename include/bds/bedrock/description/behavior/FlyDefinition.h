@@ -1,15 +1,13 @@
 #pragma once
 
-#include "../../../unmapped/BehaviorFactory.h"
-#include "./BehaviorDefinition.h"
 #include "../../../json/Value.h"
+#include "BehaviorDefinition.h"
 
 
 class FlyDefinition : BehaviorDefinition {
 
 public:
-    virtual ~FlyDefinition();
-    virtual void load(Json::Value, BehaviorFactory const&);
-
-    FlyDefinition();
+    ~FlyDefinition(); // _ZN13FlyDefinitionD2Ev
+    virtual void load(Json::Value, BehaviorFactory const&); // _ZN13FlyDefinition4loadEN4Json5ValueERK15BehaviorFactory
+    FlyDefinition(); // _ZN13FlyDefinitionC2Ev
 };

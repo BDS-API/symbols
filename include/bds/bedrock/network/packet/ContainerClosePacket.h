@@ -1,20 +1,17 @@
 #pragma once
 
-#include "../../io/ReadOnlyBinaryStream.h"
 #include <string>
-#include "../../io/BinaryStream.h"
-#include "./Packet.h"
+#include "Packet.h"
 
 
 class ContainerClosePacket : Packet {
 
 public:
-    virtual ~ContainerClosePacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    ContainerClosePacket();
-//  ContainerClosePacket(ContainerID); //TODO: incomplete function definition
+    ~ContainerClosePacket(); // _ZN20ContainerClosePacketD2Ev
+    virtual void getId()const; // _ZNK20ContainerClosePacket5getIdEv
+    virtual std::string getName()const; // _ZNK20ContainerClosePacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK20ContainerClosePacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN20ContainerClosePacket4readER20ReadOnlyBinaryStream
+    ContainerClosePacket(); // _ZN20ContainerClosePacketC2Ev
+//  ContainerClosePacket(ContainerID); //TODO: incomplete function definition // _ZN20ContainerClosePacketC2E11ContainerID
 };

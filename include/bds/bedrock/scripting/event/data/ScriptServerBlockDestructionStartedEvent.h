@@ -1,11 +1,7 @@
 #pragma once
 
-#include "../../../util/BlockPos.h"
-#include "../../unmapped/ScriptEngine.h"
-#include "./ScriptEventData.h"
-#include "../../../actor/unmapped/ActorUniqueID.h"
-#include "../../ScriptObjectHandle.h"
 #include <string>
+#include "ScriptEventData.h"
 
 
 class ScriptServerBlockDestructionStartedEvent : ScriptEventData {
@@ -13,12 +9,11 @@ class ScriptServerBlockDestructionStartedEvent : ScriptEventData {
 public:
     static long mHash;
 
-    virtual ~ScriptServerBlockDestructionStartedEvent();
-    virtual void _serialize(ScriptEngine &, ScriptApi::ScriptObjectHandle &)const;
-
-    void getHash();
-    ScriptServerBlockDestructionStartedEvent();
-    void setActorId(ActorUniqueID const&);
-    void setBlockPos(BlockPos const&);
-    std::string getName();
+    ~ScriptServerBlockDestructionStartedEvent(); // _ZN40ScriptServerBlockDestructionStartedEventD2Ev
+    virtual void _serialize(ScriptEngine &, ScriptApi::ScriptObjectHandle &)const; // _ZNK40ScriptServerBlockDestructionStartedEvent10_serializeER12ScriptEngineRN9ScriptApi18ScriptObjectHandleE
+    void getHash(); // _ZN40ScriptServerBlockDestructionStartedEvent7getHashEv
+    ScriptServerBlockDestructionStartedEvent(); // _ZN40ScriptServerBlockDestructionStartedEventC2Ev
+    void setActorId(ActorUniqueID const&); // _ZN40ScriptServerBlockDestructionStartedEvent10setActorIdERK13ActorUniqueID
+    void setBlockPos(BlockPos const&); // _ZN40ScriptServerBlockDestructionStartedEvent11setBlockPosERK8BlockPos
+    std::string getName(); // _ZN40ScriptServerBlockDestructionStartedEvent7getNameB5cxx11Ev
 };

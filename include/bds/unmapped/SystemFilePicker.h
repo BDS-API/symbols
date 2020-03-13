@@ -1,22 +1,18 @@
 #pragma once
 
-#include "../core/Path.h"
-#include "./SystemFilePicker.h"
 #include <memory>
-#include "./IFilePicker.h"
-#include <vector>
 #include <functional>
-#include "./FileInfo.h"
+#include "IFilePicker.h"
+#include <vector>
 
 
 class SystemFilePicker : IFilePicker, std::enable_shared_from_this<SystemFilePicker> {
 
 public:
-    virtual ~SystemFilePicker();
-//  virtual void initFilePick(Core::Path const&, std::function<void (bool, FileInfo)>); //TODO: incomplete function definition
-    virtual void readBytes(FileInfo const&, unsigned long, unsigned long, std::vector<unsigned char, std::allocator<unsigned char>> &);
-    virtual void writeBytes(FileInfo const&, unsigned long, unsigned long, std::vector<unsigned char, std::allocator<unsigned char>> const&);
-
-    SystemFilePicker();
-    void _fillFileInfo(Core::Path const&);
+    ~SystemFilePicker(); // _ZN16SystemFilePickerD2Ev
+    virtual void initFilePick(Core::Path const&, std::function<void (bool, FileInfo)>); // _ZN16SystemFilePicker12initFilePickERKN4Core4PathESt8functionIFvb8FileInfoEE
+    virtual void readBytes(FileInfo const&, unsigned long, unsigned long, std::vector<unsigned char> &); // _ZN16SystemFilePicker9readBytesERK8FileInfommRSt6vectorIhSaIhEE
+    virtual void writeBytes(FileInfo const&, unsigned long, unsigned long, std::vector<unsigned char> const&); // _ZN16SystemFilePicker10writeBytesERK8FileInfommRKSt6vectorIhSaIhEE
+    SystemFilePicker(); // _ZN16SystemFilePickerC2Ev
+    void _fillFileInfo(Core::Path const&); // _ZN16SystemFilePicker13_fillFileInfoERKN4Core4PathE
 };

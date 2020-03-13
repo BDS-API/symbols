@@ -1,10 +1,7 @@
 #pragma once
 
-#include "../../../mce/UUID.h"
-#include "./MultiRecipe.h"
-#include "../../container/CraftingContainer.h"
-#include "../../level/Level.h"
 #include <string>
+#include "MultiRecipe.h"
 
 
 class BannerAddPatternRecipe : MultiRecipe {
@@ -12,16 +9,15 @@ class BannerAddPatternRecipe : MultiRecipe {
 public:
     static long ID;
 
-    virtual ~BannerAddPatternRecipe();
-    virtual void assemble(CraftingContainer &)const;
-    virtual void getCraftingSize()const;
-    virtual void getIngredient(int, int)const;
-    virtual void getResultItem()const;
-    virtual void matches(CraftingContainer &, Level &)const;
-    virtual void size()const;
-    virtual bool isExperimental()const;
-
-    BannerAddPatternRecipe(std::string);
-    BannerAddPatternRecipe(std::string, mce::UUID const&);
-    void matchPatterns(CraftingContainer &)const;
+    ~BannerAddPatternRecipe(); // _ZN22BannerAddPatternRecipeD2Ev
+    virtual void assemble(CraftingContainer &)const; // _ZNK22BannerAddPatternRecipe8assembleER17CraftingContainer
+    virtual void getCraftingSize()const; // _ZNK22BannerAddPatternRecipe15getCraftingSizeEv
+    virtual void getIngredient(int, int)const; // _ZNK22BannerAddPatternRecipe13getIngredientEii
+    virtual void getResultItem()const; // _ZNK22BannerAddPatternRecipe13getResultItemEv
+    virtual void matches(CraftingContainer &, Level &)const; // _ZNK22BannerAddPatternRecipe7matchesER17CraftingContainerR5Level
+    virtual void size()const; // _ZNK22BannerAddPatternRecipe4sizeEv
+    virtual bool isExperimental()const; // _ZNK22BannerAddPatternRecipe14isExperimentalEv
+    BannerAddPatternRecipe(std::string); // _ZN22BannerAddPatternRecipeC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    BannerAddPatternRecipe(std::string, mce::UUID const&); // _ZN22BannerAddPatternRecipeC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN3mce4UUIDE
+    void matchPatterns(CraftingContainer &)const; // _ZNK22BannerAddPatternRecipe13matchPatternsER17CraftingContainer
 };

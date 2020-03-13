@@ -1,15 +1,13 @@
 #pragma once
 
-#include "../../../unmapped/BehaviorFactory.h"
-#include "./DecoratorDefinition.h"
 #include "../../../json/Value.h"
+#include "DecoratorDefinition.h"
 
 
 class RepeatUntilSuccessDefinition : DecoratorDefinition {
 
 public:
-    virtual ~RepeatUntilSuccessDefinition();
-    virtual void load(Json::Value, BehaviorFactory const&);
-
-    RepeatUntilSuccessDefinition();
+    ~RepeatUntilSuccessDefinition(); // _ZN28RepeatUntilSuccessDefinitionD2Ev
+    virtual void load(Json::Value, BehaviorFactory const&); // _ZN28RepeatUntilSuccessDefinition4loadEN4Json5ValueERK15BehaviorFactory
+    RepeatUntilSuccessDefinition(); // _ZN28RepeatUntilSuccessDefinitionC2Ev
 };

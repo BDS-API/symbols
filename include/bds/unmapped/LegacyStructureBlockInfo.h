@@ -1,19 +1,14 @@
 #pragma once
 
 #include <memory>
-#include "../bedrock/nbt/CompoundTag.h"
-#include "./LegacyStructureBlockInfo.h"
-#include "./Block.h"
-#include "../bedrock/util/BlockPos.h"
 
 
 class LegacyStructureBlockInfo {
 
 public:
-
-    void getNonEmptyTag()const;
-    void getNonEmptyTag();
-    ~LegacyStructureBlockInfo();
-    LegacyStructureBlockInfo(LegacyStructureBlockInfo &&);
-    LegacyStructureBlockInfo(BlockPos const&, std::unique_ptr<CompoundTag, std::default_delete<CompoundTag>>, Block const&, Block const&);
+    void getNonEmptyTag()const; // _ZNK24LegacyStructureBlockInfo14getNonEmptyTagEv
+    void getNonEmptyTag(); // _ZN24LegacyStructureBlockInfo14getNonEmptyTagEv
+    ~LegacyStructureBlockInfo(); // _ZN24LegacyStructureBlockInfoD2Ev
+    LegacyStructureBlockInfo(LegacyStructureBlockInfo &&); // _ZN24LegacyStructureBlockInfoC2EOS_
+    LegacyStructureBlockInfo(BlockPos const&, std::unique_ptr<CompoundTag>, Block const&, Block const&); // _ZN24LegacyStructureBlockInfoC2ERK8BlockPosSt10unique_ptrI11CompoundTagSt14default_deleteIS4_EERK5BlockSA_
 };

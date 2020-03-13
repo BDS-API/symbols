@@ -1,18 +1,14 @@
 #pragma once
 
-#include "../../item/unmapped/ItemDescriptor.h"
 #include <memory>
-#include "../model/ContainerModel.h"
-#include "../../item/ItemInstance.h"
-#include "./ContainerController.h"
+#include "ContainerController.h"
 
 
 class EnchantingMaterialContainerController : ContainerController {
 
 public:
-    virtual ~EnchantingMaterialContainerController();
-    virtual bool isItemAllowed(ItemInstance const&)const;
-
-    EnchantingMaterialContainerController(std::shared_ptr<ContainerModel>);
-    bool isEnchantMaterialItem(ItemDescriptor const&);
+    ~EnchantingMaterialContainerController(); // _ZN37EnchantingMaterialContainerControllerD2Ev
+    virtual bool isItemAllowed(ItemInstance const&)const; // _ZNK37EnchantingMaterialContainerController13isItemAllowedERK12ItemInstance
+    EnchantingMaterialContainerController(std::shared_ptr<ContainerModel>); // _ZN37EnchantingMaterialContainerControllerC2ESt10shared_ptrI14ContainerModelE
+    bool isEnchantMaterialItem(ItemDescriptor const&); // _ZN37EnchantingMaterialContainerController21isEnchantMaterialItemERK14ItemDescriptor
 };

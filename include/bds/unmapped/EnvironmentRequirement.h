@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./EnvironmentRequirement.h"
 
 
 class EnvironmentRequirement {
 
 public:
-
-    EnvironmentRequirement();
-    ~EnvironmentRequirement();
-    EnvironmentRequirement(EnvironmentRequirement const&);
-    EnvironmentRequirement(EnvironmentRequirement &&);
+    EnvironmentRequirement(); // _ZN22EnvironmentRequirementC2Ev
+    ~EnvironmentRequirement(); // _ZN22EnvironmentRequirementD2Ev
+    EnvironmentRequirement(EnvironmentRequirement const&); // _ZN22EnvironmentRequirementC2ERKS_
+    EnvironmentRequirement(EnvironmentRequirement &&); // _ZN22EnvironmentRequirementC2EOS_
 };

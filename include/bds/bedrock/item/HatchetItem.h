@@ -1,22 +1,17 @@
 #pragma once
 
-#include "./DiggerItem.h"
 #include <string>
-#include "../../unmapped/Tier.h"
-#include "./ItemInstance.h"
 #include "../util/BlockPos.h"
-#include "../actor/Actor.h"
-#include "./ItemStack.h"
-#include "../../unmapped/Block.h"
+#include "DiggerItem.h"
+#include "Item.h"
 
 
 class HatchetItem : DiggerItem {
 
 public:
-    virtual ~HatchetItem();
-    virtual void getEnchantSlot()const;
-    virtual void getDestroySpeed(ItemInstance const&, Block const&)const;
-    virtual void _useOn(ItemStack &, Actor &, BlockPos, unsigned char, float, float, float)const;
-
-    HatchetItem(std::string const&, int, Item::Tier const&);
+    ~HatchetItem(); // _ZN11HatchetItemD2Ev
+    virtual void getEnchantSlot()const; // _ZNK11HatchetItem14getEnchantSlotEv
+    virtual void getDestroySpeed(ItemInstance const&, Block const&)const; // _ZNK11HatchetItem15getDestroySpeedERK12ItemInstanceRK5Block
+    virtual void _useOn(ItemStack &, Actor &, BlockPos, unsigned char, float, float, float)const; // _ZNK11HatchetItem6_useOnER9ItemStackR5Actor8BlockPoshfff
+    HatchetItem(std::string const&, int, Item::Tier const&); // _ZN11HatchetItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRKN4Item4TierE
 };

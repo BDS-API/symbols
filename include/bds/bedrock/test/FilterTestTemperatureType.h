@@ -1,15 +1,13 @@
 #pragma once
 
-#include "./SimpleIntFilterTest.h"
-#include "../../unmapped/FilterContext.h"
+#include "SimpleIntFilterTest.h"
 
 
 class FilterTestTemperatureType : SimpleIntFilterTest {
 
 public:
-    virtual ~FilterTestTemperatureType();
-    virtual void evaluate(FilterContext const&)const;
-    virtual void getName()const;
-
-    FilterTestTemperatureType();
+    ~FilterTestTemperatureType(); // _ZN25FilterTestTemperatureTypeD2Ev
+    virtual void evaluate(FilterContext const&)const; // _ZNK25FilterTestTemperatureType8evaluateERK13FilterContext
+    virtual void getName()const; // _ZNK25FilterTestTemperatureType7getNameEv
+    FilterTestTemperatureType(); // _ZN25FilterTestTemperatureTypeC2Ev
 };

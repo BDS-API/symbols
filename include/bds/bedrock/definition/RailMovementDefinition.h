@@ -1,18 +1,12 @@
 #pragma once
 
 #include <memory>
-#include "../../unmapped/RailMovementComponent.h"
-#include "../../unmapped/EntityContext.h"
-#include "./RailMovementDefinition.h"
-#include "../../json/Value.h"
 
 
-class RailMovementDefinition {
+namespace RailMovementDefinition {
 
-public:
-
-//  void buildSchema(std::shared_ptr<JsonUtil::JsonSchemaObjectNode<JsonUtil::EmptyClass, RailMovementDefinition>> &); //TODO: incomplete function definition
-    void initialize(EntityContext &, RailMovementComponent &);
-    void deserializeData(Json::Value &);
-    void serializeData(Json::Value &)const;
+    void buildSchema(std::shared_ptr<JsonUtil::JsonSchemaObjectNode<JsonUtil::EmptyClass, RailMovementDefinition>> &); // _ZN22RailMovementDefinition11buildSchemaERSt10shared_ptrIN8JsonUtil20JsonSchemaObjectNodeINS1_10EmptyClassES_EEE
+    void initialize(EntityContext &, RailMovementComponent &); // _ZN22RailMovementDefinition10initializeER13EntityContextR21RailMovementComponent
+    void deserializeData(Json::Value &); // _ZN22RailMovementDefinition15deserializeDataERN4Json5ValueE
+    void serializeData(Json::Value &)const; // _ZNK22RailMovementDefinition13serializeDataERN4Json5ValueE
 };

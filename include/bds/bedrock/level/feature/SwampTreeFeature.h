@@ -1,17 +1,14 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
+#include "TreeFeature.h"
 #include "../../util/BlockPos.h"
-#include "./TreeFeature.h"
 
 
 class SwampTreeFeature : TreeFeature {
 
 public:
-    virtual ~SwampTreeFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    SwampTreeFeature();
-    void _addVine(BlockSource &, BlockPos, int)const;
+    ~SwampTreeFeature(); // _ZN16SwampTreeFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK16SwampTreeFeature5placeER11BlockSourceRK8BlockPosR6Random
+    SwampTreeFeature(); // _ZN16SwampTreeFeatureC2Ev
+    void _addVine(BlockSource &, BlockPos, int)const; // _ZNK16SwampTreeFeature8_addVineER11BlockSource8BlockPosi
 };

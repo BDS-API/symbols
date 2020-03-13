@@ -1,24 +1,20 @@
 #pragma once
 
-#include "../../util/BlockPos.h"
-#include "./BaseMoveToBlockGoal.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "../Mob.h"
 #include <string>
+#include "BaseMoveToBlockGoal.h"
 
 
 class HarvestFarmBlockGoal : BaseMoveToBlockGoal {
 
 public:
-    virtual ~HarvestFarmBlockGoal();
-    virtual bool canUse();
-    virtual bool canContinueToUse();
-    virtual void start();
-    virtual void stop();
-    virtual void tick();
-    virtual void appendDebugInfo(std::string &)const;
-    virtual bool isValidTarget(BlockSource &, BlockPos const&);
-
-    HarvestFarmBlockGoal(Mob &, float);
-    void findInventorySlotForFarmSeeds();
+    ~HarvestFarmBlockGoal(); // _ZN20HarvestFarmBlockGoalD2Ev
+    virtual bool canUse(); // _ZN20HarvestFarmBlockGoal6canUseEv
+    virtual bool canContinueToUse(); // _ZN20HarvestFarmBlockGoal16canContinueToUseEv
+    virtual void start(); // _ZN20HarvestFarmBlockGoal5startEv
+    virtual void stop(); // _ZN20HarvestFarmBlockGoal4stopEv
+    virtual void tick(); // _ZN20HarvestFarmBlockGoal4tickEv
+    virtual void appendDebugInfo(std::string &)const; // _ZNK20HarvestFarmBlockGoal15appendDebugInfoERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    virtual bool isValidTarget(BlockSource &, BlockPos const&); // _ZN20HarvestFarmBlockGoal13isValidTargetER11BlockSourceRK8BlockPos
+    HarvestFarmBlockGoal(Mob &, float); // _ZN20HarvestFarmBlockGoalC2ER3Mobf
+    void findInventorySlotForFarmSeeds(); // _ZN20HarvestFarmBlockGoal29findInventorySlotForFarmSeedsEv
 };

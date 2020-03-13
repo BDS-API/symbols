@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
-#include "./ServerCommand.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
+#include "ServerCommand.h"
 
 
 class SetMaxPlayersCommand : ServerCommand {
 
 public:
-    virtual ~SetMaxPlayersCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    SetMaxPlayersCommand();
+    ~SetMaxPlayersCommand(); // _ZN20SetMaxPlayersCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK20SetMaxPlayersCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN20SetMaxPlayersCommand5setupER15CommandRegistry
+    SetMaxPlayersCommand(); // _ZN20SetMaxPlayersCommandC2Ev
 };

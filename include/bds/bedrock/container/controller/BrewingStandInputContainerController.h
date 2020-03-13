@@ -1,16 +1,13 @@
 #pragma once
 
-#include "../../item/ItemInstance.h"
 #include <memory>
-#include "../model/ContainerModel.h"
-#include "./ContainerController.h"
+#include "ContainerController.h"
 
 
 class BrewingStandInputContainerController : ContainerController {
 
 public:
-    virtual ~BrewingStandInputContainerController();
-    virtual bool isItemAllowed(ItemInstance const&)const;
-
-    BrewingStandInputContainerController(std::shared_ptr<ContainerModel>);
+    ~BrewingStandInputContainerController(); // _ZN36BrewingStandInputContainerControllerD2Ev
+    virtual bool isItemAllowed(ItemInstance const&)const; // _ZNK36BrewingStandInputContainerController13isItemAllowedERK12ItemInstance
+    BrewingStandInputContainerController(std::shared_ptr<ContainerModel>); // _ZN36BrewingStandInputContainerControllerC2ESt10shared_ptrI14ContainerModelE
 };

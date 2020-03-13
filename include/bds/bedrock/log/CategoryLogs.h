@@ -4,12 +4,10 @@
 
 namespace BedrockLog {
 
-class CategoryLogs {
+    class CategoryLogs {
 
-public:
-
-    CategoryLogs();
-    ~CategoryLogs();
-};
-
+    public:
+        CategoryLogs(); // _ZN10BedrockLog12CategoryLogsC2Ev
+        ~CategoryLogs(); // _ZN10BedrockLog12CategoryLogsD2Ev
+    };
 }

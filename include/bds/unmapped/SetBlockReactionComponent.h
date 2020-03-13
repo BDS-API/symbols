@@ -1,17 +1,12 @@
 #pragma once
 
-#include "./LabTableReactionComponent.h"
-#include "../bedrock/block/unmapped/BlockSource.h"
-#include "./LabTableReaction.h"
-#include "./Block.h"
-#include "../bedrock/util/BlockPos.h"
+#include "LabTableReactionComponent.h"
 
 
 class SetBlockReactionComponent : LabTableReactionComponent {
 
 public:
-    virtual ~SetBlockReactionComponent();
-    virtual void _onEnd(LabTableReaction &, BlockSource &);
-
-    SetBlockReactionComponent(BlockPos const&, Block const&);
+    ~SetBlockReactionComponent(); // _ZN25SetBlockReactionComponentD2Ev
+    virtual void _onEnd(LabTableReaction &, BlockSource &); // _ZN25SetBlockReactionComponent6_onEndER16LabTableReactionR11BlockSource
+    SetBlockReactionComponent(BlockPos const&, Block const&); // _ZN25SetBlockReactionComponentC2ERK8BlockPosRK5Block
 };

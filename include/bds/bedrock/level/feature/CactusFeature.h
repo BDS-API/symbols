@@ -1,16 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
+#include "Feature.h"
 
 
 class CactusFeature : Feature {
 
 public:
-    virtual ~CactusFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    CactusFeature();
+    ~CactusFeature(); // _ZN13CactusFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK13CactusFeature5placeER11BlockSourceRK8BlockPosR6Random
+    CactusFeature(); // _ZN13CactusFeatureC2Ev
 };

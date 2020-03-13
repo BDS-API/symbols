@@ -1,20 +1,16 @@
 #pragma once
 
-#include "./ActorBlock.h"
-#include "../util/BlockPos.h"
-#include "../actor/Actor.h"
-#include "../actor/Player.h"
 #include <string>
+#include "ActorBlock.h"
 
 
 class EnchantingTableBlock : ActorBlock {
 
 public:
-    virtual ~EnchantingTableBlock();
-    virtual bool isCraftingBlock()const;
-    virtual bool isInteractiveBlock()const;
-    virtual void checkIsPathable(Actor &, BlockPos const&, BlockPos const&)const;
-    virtual void use(Player &, BlockPos const&)const;
-
-    EnchantingTableBlock(std::string const&, int);
+    ~EnchantingTableBlock(); // _ZN20EnchantingTableBlockD2Ev
+    virtual bool isCraftingBlock()const; // _ZNK20EnchantingTableBlock15isCraftingBlockEv
+    virtual bool isInteractiveBlock()const; // _ZNK20EnchantingTableBlock18isInteractiveBlockEv
+    virtual void checkIsPathable(Actor &, BlockPos const&, BlockPos const&)const; // _ZNK20EnchantingTableBlock15checkIsPathableER5ActorRK8BlockPosS4_
+    virtual void use(Player &, BlockPos const&)const; // _ZNK20EnchantingTableBlock3useER6PlayerRK8BlockPos
+    EnchantingTableBlock(std::string const&, int); // _ZN20EnchantingTableBlockC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
 };

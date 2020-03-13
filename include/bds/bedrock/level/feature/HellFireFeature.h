@@ -1,16 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
+#include "Feature.h"
 
 
 class HellFireFeature : Feature {
 
 public:
-    virtual ~HellFireFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    HellFireFeature();
+    ~HellFireFeature(); // _ZN15HellFireFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK15HellFireFeature5placeER11BlockSourceRK8BlockPosR6Random
+    HellFireFeature(); // _ZN15HellFireFeatureC2Ev
 };

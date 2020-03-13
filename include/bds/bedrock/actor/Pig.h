@@ -1,21 +1,15 @@
 #pragma once
 
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "./Animal.h"
-#include "../util/BlockPos.h"
-#include "damagesource/ActorDamageSource.h"
-#include "unmapped/ActorDefinitionGroup.h"
-#include "../../unmapped/Block.h"
+#include "Animal.h"
 
 
 class Pig : Animal {
 
 public:
-    virtual ~Pig();
-    virtual void normalTick();
-    virtual void _hurt(ActorDamageSource const&, int, bool, bool);
-    virtual void _playStepSound(BlockPos const&, Block const&);
-    virtual void useNewAi()const;
-
-    Pig(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
+    ~Pig(); // _ZN3PigD2Ev
+    virtual void normalTick(); // _ZN3Pig10normalTickEv
+    virtual void _hurt(ActorDamageSource const&, int, bool, bool); // _ZN3Pig5_hurtERK17ActorDamageSourceibb
+    virtual void _playStepSound(BlockPos const&, Block const&); // _ZN3Pig14_playStepSoundERK8BlockPosRK5Block
+    virtual void useNewAi()const; // _ZNK3Pig8useNewAiEv
+    Pig(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN3PigC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
 };

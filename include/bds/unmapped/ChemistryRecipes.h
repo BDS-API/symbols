@@ -1,11 +1,8 @@
 #pragma once
 
-#include "./Recipes.h"
 
 
-class ChemistryRecipes {
+namespace ChemistryRecipes {
 
-public:
-
-    void addRecipes(Recipes &);
+    void addRecipes(Recipes &); // _ZN16ChemistryRecipes10addRecipesER7Recipes
 };

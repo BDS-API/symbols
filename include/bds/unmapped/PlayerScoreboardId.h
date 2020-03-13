@@ -1,6 +1,5 @@
 #pragma once
 
-#include "./PlayerScoreboardId.h"
 
 
 class PlayerScoreboardId {
@@ -8,10 +7,9 @@ class PlayerScoreboardId {
 public:
     static long INVALID;
 
-
-    PlayerScoreboardId();
-    PlayerScoreboardId(long);
-    void operator==(PlayerScoreboardId const&)const;
-    void operator!=(PlayerScoreboardId const&)const;
-    void getHash()const;
+    PlayerScoreboardId(); // _ZN18PlayerScoreboardIdC2Ev
+    PlayerScoreboardId(long); // _ZN18PlayerScoreboardIdC2El
+    void operator==(PlayerScoreboardId const&)const; // _ZNK18PlayerScoreboardIdeqERKS_
+    void operator!=(PlayerScoreboardId const&)const; // _ZNK18PlayerScoreboardIdneERKS_
+    void getHash()const; // _ZNK18PlayerScoreboardId7getHashEv
 };

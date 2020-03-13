@@ -6,8 +6,7 @@
 class LootItemCondition {
 
 public:
-    virtual ~LootItemCondition();
-
-    void deserialize(Json::Value);
-    LootItemCondition();
+    ~LootItemCondition(); // _ZN17LootItemConditionD2Ev
+    void deserialize(Json::Value); // _ZN17LootItemCondition11deserializeEN4Json5ValueE
+    LootItemCondition(); // _ZN17LootItemConditionC2Ev
 };

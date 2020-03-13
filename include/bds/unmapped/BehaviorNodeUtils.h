@@ -1,12 +1,8 @@
 #pragma once
 
-#include "../bedrock/util/Vec3.h"
-#include "../bedrock/actor/Actor.h"
 
 
-class BehaviorNodeUtils {
+namespace BehaviorNodeUtils {
 
-public:
-
-    void lookAt(Actor &, Vec3 const&, float, float);
+    void lookAt(Actor &, Vec3 const&, float, float); // _ZN17BehaviorNodeUtils6lookAtER5ActorRK4Vec3ff
 };

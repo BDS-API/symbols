@@ -2,9 +2,8 @@
 
 
 
-class Direction {
+namespace Direction {
 
-public:
     static long DIRECTION_FACING;
     static long FACING_DIRECTION;
     static long DIRECTION_OPPOSITE;
@@ -14,7 +13,6 @@ public:
     static long STEP_X;
     static long STEP_Z;
 
-
-    void getDirection(float, float);
-    void getDirection(int, int, int, int);
+    void getDirection(float, float); // _ZN9Direction12getDirectionEff
+    void getDirection(int, int, int, int); // _ZN9Direction12getDirectionEiiii
 };

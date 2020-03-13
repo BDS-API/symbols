@@ -1,15 +1,11 @@
 #pragma once
 
-#include "./PackIdVersion.h"
-#include "./ResourceLocationPair.h"
-#include "./ResourceLocation.h"
 
 
 class ResourceLocationPair {
 
 public:
-
-    ~ResourceLocationPair();
-    ResourceLocationPair(ResourceLocation const&, PackIdVersion const&, int);
-    ResourceLocationPair(ResourceLocationPair const&);
+    ~ResourceLocationPair(); // _ZN20ResourceLocationPairD2Ev
+    ResourceLocationPair(ResourceLocation const&, PackIdVersion const&, int); // _ZN20ResourceLocationPairC2ERK16ResourceLocationRK13PackIdVersioni
+    ResourceLocationPair(ResourceLocationPair const&); // _ZN20ResourceLocationPairC2ERKS_
 };

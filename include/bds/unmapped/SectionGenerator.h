@@ -4,12 +4,10 @@
 
 namespace EndCityPieces {
 
-class SectionGenerator {
+    class SectionGenerator {
 
-public:
-    virtual ~SectionGenerator();
-
-    SectionGenerator();
-};
-
+    public:
+        ~SectionGenerator(); // _ZN13EndCityPieces16SectionGeneratorD2Ev
+        SectionGenerator(); // _ZN13EndCityPieces16SectionGeneratorC2Ev
+    };
 }

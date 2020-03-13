@@ -1,19 +1,14 @@
 #pragma once
 
 #include <string>
-#include "unmapped/BlockSource.h"
-#include "./BlockLegacy.h"
-#include "../util/BlockPos.h"
-#include "../util/Random.h"
-#include "../../unmapped/Block.h"
+#include "BlockLegacy.h"
 
 
 class PodzolBlock : BlockLegacy {
 
 public:
-    virtual ~PodzolBlock();
-    virtual void neighborChanged(BlockSource &, BlockPos const&, BlockPos const&)const;
-    virtual void getResourceItem(Random &, Block const&, int)const;
-
-    PodzolBlock(std::string const&, int);
+    ~PodzolBlock(); // _ZN11PodzolBlockD2Ev
+    virtual void neighborChanged(BlockSource &, BlockPos const&, BlockPos const&)const; // _ZNK11PodzolBlock15neighborChangedER11BlockSourceRK8BlockPosS4_
+    virtual void getResourceItem(Random &, Block const&, int)const; // _ZNK11PodzolBlock15getResourceItemER6RandomRK5Blocki
+    PodzolBlock(std::string const&, int); // _ZN11PodzolBlockC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
 };

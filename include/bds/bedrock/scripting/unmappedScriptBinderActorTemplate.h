@@ -1,18 +1,15 @@
 #pragma once
 
-#include "./ScriptBinderTemplate.h"
 #include <string>
-#include "./ScriptObjectBinder.h"
-#include "../../actor/Actor.h"
+#include "ScriptBinderTemplate.h"
 
 
 class ScriptBinderActorTemplate : ScriptBinderTemplate {
 
 public:
-    virtual ~ScriptBinderActorTemplate();
-    virtual std::string getTemplateIdentifier()const;
-    virtual void applyTemplate(ScriptObjectBinder &)const;
-
-//  void build(entt::Registry<unsigned int> &, Actor const&); //TODO: incomplete function definition
-    ScriptBinderActorTemplate();
+    ~ScriptBinderActorTemplate(); // _ZN25ScriptBinderActorTemplateD2Ev
+    virtual std::string getTemplateIdentifier()const; // _ZNK25ScriptBinderActorTemplate21getTemplateIdentifierB5cxx11Ev
+    virtual void applyTemplate(ScriptObjectBinder &)const; // _ZNK25ScriptBinderActorTemplate13applyTemplateER18ScriptObjectBinder
+//  void build(entt::Registry<unsigned int> &, Actor const&); //TODO: incomplete function definition // _ZN25ScriptBinderActorTemplate5buildERN4entt8RegistryIjEERK5Actor
+    ScriptBinderActorTemplate(); // _ZN25ScriptBinderActorTemplateC2Ev
 };

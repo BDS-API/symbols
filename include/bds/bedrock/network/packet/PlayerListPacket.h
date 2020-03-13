@@ -1,23 +1,18 @@
 #pragma once
 
-#include "../../../mce/UUID.h"
-#include "../../io/BinaryStream.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "./Packet.h"
-#include "../../../unmapped/PlayerListEntry.h"
 #include <string>
+#include "Packet.h"
 
 
 class PlayerListPacket : Packet {
 
 public:
-    virtual ~PlayerListPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    PlayerListPacket();
-    PlayerListPacket(mce::UUID const&);
-    void add(PlayerListEntry const&);
+    ~PlayerListPacket(); // _ZN16PlayerListPacketD2Ev
+    virtual void getId()const; // _ZNK16PlayerListPacket5getIdEv
+    virtual std::string getName()const; // _ZNK16PlayerListPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK16PlayerListPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN16PlayerListPacket4readER20ReadOnlyBinaryStream
+    PlayerListPacket(); // _ZN16PlayerListPacketC2Ev
+    PlayerListPacket(mce::UUID const&); // _ZN16PlayerListPacketC2ERKN3mce4UUIDE
+    void add(PlayerListEntry const&); // _ZN16PlayerListPacket3addERK15PlayerListEntry
 };

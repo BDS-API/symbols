@@ -2,10 +2,8 @@
 
 
 
-class PacketUtil {
+namespace PacketUtil {
 
-public:
-
-    bool degreesToByte(float);
-//  void byteToDegrees(signed const); //TODO: incomplete function definition
+    bool degreesToByte(float); // _ZN10PacketUtil13degreesToByteEf
+//  void byteToDegrees(signed const); //TODO: incomplete function definition // _ZN10PacketUtil13byteToDegreesEa
 };

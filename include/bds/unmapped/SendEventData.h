@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./SendEventData.h"
 
 
 class SendEventData {
 
 public:
-
-    ~SendEventData();
-    SendEventData(SendEventData const&);
-    SendEventData();
+    ~SendEventData(); // _ZN13SendEventDataD2Ev
+    SendEventData(SendEventData const&); // _ZN13SendEventDataC2ERKS_
+    SendEventData(); // _ZN13SendEventDataC2Ev
 };

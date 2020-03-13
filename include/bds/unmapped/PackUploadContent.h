@@ -3,9 +3,7 @@
 #include <string>
 
 
-class PackUploadContent {
+namespace PackUploadContent {
 
-public:
-
-    std::string getClientDataPaths();
+    std::string getClientDataPaths(); // _ZN17PackUploadContent18getClientDataPathsB5cxx11Ev
 };

@@ -1,11 +1,8 @@
 #pragma once
 
-#include "../bedrock/util/AABB.h"
 
 
-class AABBPred {
+namespace AABBPred {
 
-public:
-
-    void operator()(AABB const&, AABB const&)const;
+    void operator()(AABB const&, AABB const&)const; // _ZNK8AABBPredclERK4AABBS2_
 };

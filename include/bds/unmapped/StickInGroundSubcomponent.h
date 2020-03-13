@@ -1,19 +1,15 @@
 #pragma once
 
-#include "./ProjectileComponent.h"
-#include "../bedrock/actor/Actor.h"
-#include "../json/Value.h"
-#include "./OnHitSubcomponent.h"
+#include "OnHitSubcomponent.h"
 
 
 class StickInGroundSubcomponent : OnHitSubcomponent {
 
 public:
-    virtual ~StickInGroundSubcomponent();
-    virtual void readfromJSON(Json::Value &);
-    virtual void writetoJSON(Json::Value &)const;
-    virtual void doOnHitEffect(Actor &, ProjectileComponent &);
-
-    void getSubcomponentName();
-    StickInGroundSubcomponent();
+    ~StickInGroundSubcomponent(); // _ZN25StickInGroundSubcomponentD2Ev
+    virtual void readfromJSON(Json::Value &); // _ZN25StickInGroundSubcomponent12readfromJSONERN4Json5ValueE
+    virtual void writetoJSON(Json::Value &)const; // _ZNK25StickInGroundSubcomponent11writetoJSONERN4Json5ValueE
+    virtual void doOnHitEffect(Actor &, ProjectileComponent &); // _ZN25StickInGroundSubcomponent13doOnHitEffectER5ActorR19ProjectileComponent
+    void getSubcomponentName(); // _ZN25StickInGroundSubcomponent19getSubcomponentNameEv
+    StickInGroundSubcomponent(); // _ZN25StickInGroundSubcomponentC2Ev
 };

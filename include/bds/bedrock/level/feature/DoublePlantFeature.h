@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
+#include "Feature.h"
 
 
 class DoublePlantFeature : Feature {
 
 public:
-    virtual ~DoublePlantFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    DoublePlantFeature();
-//  void place(BlockSource &, BlockPos const&, Random &, DoublePlantType)const; //TODO: incomplete function definition
+    ~DoublePlantFeature(); // _ZN18DoublePlantFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK18DoublePlantFeature5placeER11BlockSourceRK8BlockPosR6Random
+    DoublePlantFeature(); // _ZN18DoublePlantFeatureC2Ev
+//  void place(BlockSource &, BlockPos const&, Random &, DoublePlantType)const; //TODO: incomplete function definition // _ZNK18DoublePlantFeature5placeER11BlockSourceRK8BlockPosR6Random15DoublePlantType
 };

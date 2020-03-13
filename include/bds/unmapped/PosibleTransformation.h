@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./PosibleTransformation.h"
 
 
 class PosibleTransformation {
 
 public:
-
-    ~PosibleTransformation();
-    PosibleTransformation(PosibleTransformation const&);
-    PosibleTransformation();
+    ~PosibleTransformation(); // _ZN21PosibleTransformationD2Ev
+    PosibleTransformation(PosibleTransformation const&); // _ZN21PosibleTransformationC2ERKS_
+    PosibleTransformation(); // _ZN21PosibleTransformationC2Ev
 };

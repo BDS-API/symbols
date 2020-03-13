@@ -1,17 +1,14 @@
 #pragma once
 
-#include "../bedrock/definition/RoomDefinition.h"
 #include <memory>
-#include "../bedrock/util/Random.h"
-#include "./MonumentRoomFitter.h"
+#include "MonumentRoomFitter.h"
 
 
 class FitDoubleZRoom : MonumentRoomFitter {
 
 public:
-    virtual ~FitDoubleZRoom();
-    virtual void fits(std::shared_ptr<RoomDefinition> &);
-    virtual void create(int &, std::shared_ptr<RoomDefinition> &, Random &);
-
-    FitDoubleZRoom();
+    ~FitDoubleZRoom(); // _ZN14FitDoubleZRoomD2Ev
+    virtual void fits(std::shared_ptr<RoomDefinition> &); // _ZN14FitDoubleZRoom4fitsERSt10shared_ptrI14RoomDefinitionE
+    virtual void create(int &, std::shared_ptr<RoomDefinition> &, Random &); // _ZN14FitDoubleZRoom6createERiRSt10shared_ptrI14RoomDefinitionER6Random
+    FitDoubleZRoom(); // _ZN14FitDoubleZRoomC2Ev
 };

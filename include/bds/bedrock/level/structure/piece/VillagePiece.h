@@ -1,23 +1,15 @@
 #pragma once
 
+#include "PoolElementStructurePiece.h"
 #include "../../../util/BlockPos.h"
-#include "./PoolElementStructurePiece.h"
-#include "../../../../unmapped/StructurePoolElement.h"
-#include "../../../../unmapped/Dimension.h"
-#include <memory>
-#include "../../../util/Random.h"
-#include "../../../../unmapped/JigsawJunction.h"
-#include "./StructurePiece.h"
-#include <vector>
-#include "../../../../unmapped/JigsawStructureRegistry.h"
 #include "../../../../unmapped/BoundingBox.h"
+#include <vector>
 
 
 class VillagePiece : PoolElementStructurePiece {
 
 public:
-    virtual ~VillagePiece();
-
-//  VillagePiece(StructurePoolElement const&, BlockPos, Rotation, JigsawJunction &, BoundingBox); //TODO: incomplete function definition
-//  void addPieces(BlockPos, std::vector<std::unique_ptr<StructurePiece, std::default_delete<StructurePiece>>, std::allocator<std::unique_ptr<StructurePiece, std::default_delete<StructurePiece>>>> &, Random &, JigsawStructureRegistry &, VanillaBiomeTypes, Dimension &); //TODO: incomplete function definition
+    ~VillagePiece(); // _ZN12VillagePieceD2Ev
+//  VillagePiece(StructurePoolElement const&, BlockPos, Rotation, JigsawJunction &, BoundingBox); //TODO: incomplete function definition // _ZN12VillagePieceC2ERK20StructurePoolElement8BlockPos8RotationR14JigsawJunction11BoundingBox
+//  void addPieces(BlockPos, std::vector<std::unique_ptr<StructurePiece>> &, Random &, JigsawStructureRegistry &, VanillaBiomeTypes, Dimension &); //TODO: incomplete function definition // _ZN12VillagePiece9addPiecesE8BlockPosRSt6vectorISt10unique_ptrI14StructurePieceSt14default_deleteIS3_EESaIS6_EER6RandomR23JigsawStructureRegistry17VanillaBiomeTypesR9Dimension
 };

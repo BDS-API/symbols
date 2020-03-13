@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class XPCommand : Command {
 
 public:
-    virtual ~XPCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    XPCommand();
+    ~XPCommand(); // _ZN9XPCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK9XPCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN9XPCommand5setupER15CommandRegistry
+    XPCommand(); // _ZN9XPCommandC2Ev
 };

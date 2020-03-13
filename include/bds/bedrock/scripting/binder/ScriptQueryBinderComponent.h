@@ -1,8 +1,6 @@
 #pragma once
 
-#include "../unmapped/ScriptEngine.h"
-#include "../ScriptObjectHandle.h"
-#include "./ScriptBinderComponent.h"
+#include "ScriptBinderComponent.h"
 
 
 class ScriptQueryBinderComponent : ScriptBinderComponent {
@@ -10,11 +8,10 @@ class ScriptQueryBinderComponent : ScriptBinderComponent {
 public:
     static std::string TAG;
 
-    virtual ~ScriptQueryBinderComponent();
-    virtual void serialize(ScriptEngine &, ScriptApi::ScriptObjectHandle const&)const;
-    virtual void deserialize(ScriptEngine &, ScriptApi::ScriptObjectHandle const&);
-
-    ScriptQueryBinderComponent();
-    ScriptQueryBinderComponent(unsigned int);
-    void getIdentifier()const;
+    ~ScriptQueryBinderComponent(); // _ZN26ScriptQueryBinderComponentD2Ev
+    virtual void serialize(ScriptEngine &, ScriptApi::ScriptObjectHandle const&)const; // _ZNK26ScriptQueryBinderComponent9serializeER12ScriptEngineRKN9ScriptApi18ScriptObjectHandleE
+    virtual void deserialize(ScriptEngine &, ScriptApi::ScriptObjectHandle const&); // _ZN26ScriptQueryBinderComponent11deserializeER12ScriptEngineRKN9ScriptApi18ScriptObjectHandleE
+    ScriptQueryBinderComponent(); // _ZN26ScriptQueryBinderComponentC2Ev
+    ScriptQueryBinderComponent(unsigned int); // _ZN26ScriptQueryBinderComponentC2Ej
+    void getIdentifier()const; // _ZNK26ScriptQueryBinderComponent13getIdentifierEv
 };

@@ -2,17 +2,16 @@
 
 
 
-namespace Crypto::Asymmetric {
+namespace Crypto {
 
-class Asymmetric {
+    namespace Asymmetric {
 
-public:
+        class Asymmetric {
 
-//  Asymmetric(Crypto::Asymmetric::System); //TODO: incomplete function definition
-    bool canComputeSecret();
-    void getSystemType()const;
-//  Asymmetric(Crypto::Asymmetric::System); //TODO: incomplete function definition
-    bool canComputeSecret();
-};
-
+        public:
+//          Asymmetric(Crypto::Asymmetric::System); //TODO: incomplete function definition // ._ZN6Crypto10Asymmetric10AsymmetricC1ENS0_6SystemE
+            bool canComputeSecret(); // ._ZN6Crypto10Asymmetric10Asymmetric16canComputeSecretEv
+            void getSystemType()const; // _ZNK6Crypto10Asymmetric10Asymmetric13getSystemTypeEv
+        };
+    }
 }

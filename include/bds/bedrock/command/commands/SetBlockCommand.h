@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class SetBlockCommand : Command {
 
 public:
-    virtual ~SetBlockCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    SetBlockCommand();
+    ~SetBlockCommand(); // _ZN15SetBlockCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK15SetBlockCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN15SetBlockCommand5setupER15CommandRegistry
+    SetBlockCommand(); // _ZN15SetBlockCommandC2Ev
 };

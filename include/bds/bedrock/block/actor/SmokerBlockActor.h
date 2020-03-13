@@ -1,15 +1,13 @@
 #pragma once
 
-#include "./FurnaceBlockActor.h"
-#include "../../util/BlockPos.h"
 #include <string>
+#include "FurnaceBlockActor.h"
 
 
 class SmokerBlockActor : FurnaceBlockActor {
 
 public:
-    virtual ~SmokerBlockActor();
-    virtual std::string getName()const;
-
-    SmokerBlockActor(BlockPos const&);
+    ~SmokerBlockActor(); // _ZN16SmokerBlockActorD2Ev
+    virtual std::string getName()const; // _ZNK16SmokerBlockActor7getNameB5cxx11Ev
+    SmokerBlockActor(BlockPos const&); // _ZN16SmokerBlockActorC2ERK8BlockPos
 };

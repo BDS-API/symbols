@@ -2,9 +2,7 @@
 
 
 
-class AppConfigsFactory {
+namespace AppConfigsFactory {
 
-public:
-
-    void createAppConfigs();
+    void createAppConfigs(); // _ZN17AppConfigsFactory16createAppConfigsEv
 };

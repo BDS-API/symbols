@@ -1,18 +1,13 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../../unmapped/FeatureRegistry.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
-#include "../../block/unmapped/BlockSource.h"
+#include "Feature.h"
 
 
 class LegacySmallMushroomsFeature : Feature {
 
 public:
-    virtual ~LegacySmallMushroomsFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    LegacySmallMushroomsFeature(FeatureRegistry const&);
-    void _getRandomHeight(int, int, BlockSource &, Random &, BlockPos const&)const;
+    ~LegacySmallMushroomsFeature(); // _ZN27LegacySmallMushroomsFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK27LegacySmallMushroomsFeature5placeER11BlockSourceRK8BlockPosR6Random
+    LegacySmallMushroomsFeature(FeatureRegistry const&); // _ZN27LegacySmallMushroomsFeatureC2ERK15FeatureRegistry
+    void _getRandomHeight(int, int, BlockSource &, Random &, BlockPos const&)const; // _ZNK27LegacySmallMushroomsFeature16_getRandomHeightEiiR11BlockSourceR6RandomRK8BlockPos
 };

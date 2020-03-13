@@ -1,25 +1,20 @@
 #pragma once
 
-#include "../../../unmapped/BossComponent.h"
-#include "../../io/BinaryStream.h"
-#include "../../../unmapped/RaidBossComponent.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "./Packet.h"
-#include "../../actor/unmapped/ActorUniqueID.h"
 #include <string>
+#include "../../actor/unmapped/ActorUniqueID.h"
+#include "Packet.h"
 
 
 class BossEventPacket : Packet {
 
 public:
-    virtual ~BossEventPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    BossEventPacket();
-//  BossEventPacket(BossEventUpdateType, RaidBossComponent &); //TODO: incomplete function definition
-//  BossEventPacket(BossEventUpdateType, ActorUniqueID, BossComponent &); //TODO: incomplete function definition
-//  BossEventPacket(BossEventUpdateType, ActorUniqueID, ActorUniqueID); //TODO: incomplete function definition
+    ~BossEventPacket(); // _ZN15BossEventPacketD2Ev
+    virtual void getId()const; // _ZNK15BossEventPacket5getIdEv
+    virtual std::string getName()const; // _ZNK15BossEventPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK15BossEventPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN15BossEventPacket4readER20ReadOnlyBinaryStream
+    BossEventPacket(); // _ZN15BossEventPacketC2Ev
+//  BossEventPacket(BossEventUpdateType, RaidBossComponent &); //TODO: incomplete function definition // _ZN15BossEventPacketC2E19BossEventUpdateTypeR17RaidBossComponent
+//  BossEventPacket(BossEventUpdateType, ActorUniqueID, BossComponent &); //TODO: incomplete function definition // _ZN15BossEventPacketC2E19BossEventUpdateType13ActorUniqueIDR13BossComponent
+//  BossEventPacket(BossEventUpdateType, ActorUniqueID, ActorUniqueID); //TODO: incomplete function definition // _ZN15BossEventPacketC2E19BossEventUpdateType13ActorUniqueIDS1_
 };

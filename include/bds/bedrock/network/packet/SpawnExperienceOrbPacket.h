@@ -1,21 +1,17 @@
 #pragma once
 
-#include "../../io/BinaryStream.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "../../util/Vec3.h"
-#include "./Packet.h"
 #include <string>
+#include "Packet.h"
 
 
 class SpawnExperienceOrbPacket : Packet {
 
 public:
-    virtual ~SpawnExperienceOrbPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    SpawnExperienceOrbPacket();
-    SpawnExperienceOrbPacket(Vec3 const&, int);
+    ~SpawnExperienceOrbPacket(); // _ZN24SpawnExperienceOrbPacketD2Ev
+    virtual void getId()const; // _ZNK24SpawnExperienceOrbPacket5getIdEv
+    virtual std::string getName()const; // _ZNK24SpawnExperienceOrbPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK24SpawnExperienceOrbPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN24SpawnExperienceOrbPacket4readER20ReadOnlyBinaryStream
+    SpawnExperienceOrbPacket(); // _ZN24SpawnExperienceOrbPacketC2Ev
+    SpawnExperienceOrbPacket(Vec3 const&, int); // _ZN24SpawnExperienceOrbPacketC2ERK4Vec3i
 };

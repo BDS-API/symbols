@@ -4,13 +4,11 @@
 
 namespace Json {
 
-class Features {
+    class Features {
 
-public:
-
-    Features();
-    void all();
-    void strictMode();
-};
-
+    public:
+        Features(); // _ZN4Json8FeaturesC2Ev
+        void all(); // _ZN4Json8Features3allEv
+        void strictMode(); // _ZN4Json8Features10strictModeEv
+    };
 }

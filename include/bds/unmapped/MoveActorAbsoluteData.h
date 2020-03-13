@@ -1,23 +1,25 @@
 #pragma once
 
-#include "../bedrock/util/Vec3.h"
-#include "../bedrock/actor/Actor.h"
-#include "./MoveActorAbsoluteData.h"
-#include "../bedrock/util/Vec2.h"
 
 
 class MoveActorAbsoluteData {
 
 public:
+    class Header;
 
-    MoveActorAbsoluteData();
-    MoveActorAbsoluteData(Actor const&);
-    void setRot(Vec2 const&);
-    void setYHeadRot(float);
-    void operator==(MoveActorAbsoluteData const&)const;
-    bool isDifferenceSignificant(MoveActorAbsoluteData const&, Vec3 const&)const;
-    void getRot()const;
-    void getYHeadRot()const;
-    void calculateDelta(MoveActorAbsoluteData const&)const;
-    void getIntDelta(float, float);
+    MoveActorAbsoluteData(); // _ZN21MoveActorAbsoluteDataC2Ev
+    MoveActorAbsoluteData(Actor const&); // _ZN21MoveActorAbsoluteDataC2ERK5Actor
+    void setRot(Vec2 const&); // _ZN21MoveActorAbsoluteData6setRotERK4Vec2
+    void setYHeadRot(float); // _ZN21MoveActorAbsoluteData11setYHeadRotEf
+    void operator==(MoveActorAbsoluteData const&)const; // _ZNK21MoveActorAbsoluteDataeqERKS_
+    bool isDifferenceSignificant(MoveActorAbsoluteData const&, Vec3 const&)const; // _ZNK21MoveActorAbsoluteData23isDifferenceSignificantERKS_RK4Vec3
+    void getRot()const; // _ZNK21MoveActorAbsoluteData6getRotEv
+    void getYHeadRot()const; // _ZNK21MoveActorAbsoluteData11getYHeadRotEv
+    void calculateDelta(MoveActorAbsoluteData const&)const; // _ZNK21MoveActorAbsoluteData14calculateDeltaERKS_
+    void getIntDelta(float, float); // _ZN21MoveActorAbsoluteData11getIntDeltaEff
+    class Header {
+
+    public:
+        Header(); // _ZN21MoveActorAbsoluteData6HeaderC2Ev
+    };
 };

@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class WeatherCommand : Command {
 
 public:
-    virtual ~WeatherCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    WeatherCommand();
+    ~WeatherCommand(); // _ZN14WeatherCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK14WeatherCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN14WeatherCommand5setupER15CommandRegistry
+    WeatherCommand(); // _ZN14WeatherCommandC2Ev
 };

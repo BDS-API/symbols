@@ -2,13 +2,11 @@
 
 
 
-namespace SurfaceMaterialAdjustmentAttributes {
+namespace BlockGeometry {
 
-class Element {
+    class Element {
 
-public:
-
-    Element();
-};
-
+    public:
+        ~Element(); // _ZN13BlockGeometry7ElementD2Ev
+    };
 }

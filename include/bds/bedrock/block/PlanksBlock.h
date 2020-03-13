@@ -1,9 +1,7 @@
 #pragma once
 
-#include "../../unmapped/Block.h"
 #include <string>
-#include "../util/Random.h"
-#include "./BlockLegacy.h"
+#include "BlockLegacy.h"
 
 
 class PlanksBlock : BlockLegacy {
@@ -11,13 +9,12 @@ class PlanksBlock : BlockLegacy {
 public:
     static std::string WOOD_NAMES;
 
-    virtual ~PlanksBlock();
-    virtual void getResourceItem(Random &, Block const&, int)const;
-    virtual std::string buildDescriptionId(Block const&)const;
-    virtual bool isAuxValueRelevantForPicking()const;
-    virtual void getSilkTouchItemInstance(Block const&)const;
-
-    PlanksBlock(std::string const&, int);
-//  void getWoodMaterialColor(WoodType); //TODO: incomplete function definition
-    bool isValidWoodMaterial(int);
+    ~PlanksBlock(); // _ZN11PlanksBlockD2Ev
+    virtual void getResourceItem(Random &, Block const&, int)const; // _ZNK11PlanksBlock15getResourceItemER6RandomRK5Blocki
+    virtual std::string buildDescriptionId(Block const&)const; // _ZNK11PlanksBlock18buildDescriptionIdB5cxx11ERK5Block
+    virtual bool isAuxValueRelevantForPicking()const; // _ZNK11PlanksBlock28isAuxValueRelevantForPickingEv
+    virtual void getSilkTouchItemInstance(Block const&)const; // _ZNK11PlanksBlock24getSilkTouchItemInstanceERK5Block
+    PlanksBlock(std::string const&, int); // _ZN11PlanksBlockC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
+//  void getWoodMaterialColor(WoodType); //TODO: incomplete function definition // _ZN11PlanksBlock20getWoodMaterialColorE8WoodType
+    bool isValidWoodMaterial(int); // _ZN11PlanksBlock19isValidWoodMaterialEi
 };

@@ -1,11 +1,7 @@
 #pragma once
 
-#include "../bedrock/util/Vec3.h"
-#include "../json/Value.h"
-#include "../bedrock/actor/unmapped/ActorDefinitionIdentifier.h"
-#include "../bedrock/actor/Mob.h"
-#include "../bedrock/level/Level.h"
 #include <string>
+#include "../bedrock/util/Vec3.h"
 
 
 class ProjectileFactory {
@@ -13,10 +9,9 @@ class ProjectileFactory {
 public:
     static std::string mSubcomponentMap;
 
-
-    ProjectileFactory(Level &);
-    void initFactory();
-    void shutdown();
-    void shootProjectileFromDefinition(ActorDefinitionIdentifier const&, Mob *, Vec3);
-    void createSubcomponent(Json::Value &, std::string const&);
+    ProjectileFactory(Level &); // _ZN17ProjectileFactoryC2ER5Level
+    void initFactory(); // _ZN17ProjectileFactory11initFactoryEv
+    void shutdown(); // _ZN17ProjectileFactory8shutdownEv
+    void shootProjectileFromDefinition(ActorDefinitionIdentifier const&, Mob *, Vec3); // _ZN17ProjectileFactory29shootProjectileFromDefinitionERK25ActorDefinitionIdentifierP3Mob4Vec3
+    void createSubcomponent(Json::Value &, std::string const&); // _ZN17ProjectileFactory18createSubcomponentERN4Json5ValueERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 };

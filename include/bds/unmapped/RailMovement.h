@@ -1,15 +1,12 @@
 #pragma once
 
 #include "../bedrock/util/Vec3.h"
-#include "../bedrock/actor/Actor.h"
 
 
-class RailMovement {
+namespace RailMovement {
 
-public:
     static long EXITS;
 
-
-    void getPosOffs(Actor &, Vec3 &, Vec3, float);
-    void getPos(Actor &, Vec3 &, Vec3);
+    void getPosOffs(Actor &, Vec3 &, Vec3, float); // _ZN12RailMovement10getPosOffsER5ActorR4Vec3S2_f
+    void getPos(Actor &, Vec3 &, Vec3); // _ZN12RailMovement6getPosER5ActorR4Vec3S2_
 };

@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../bedrock/util/Vec3.h"
-#include "../bedrock/Scheduler.h"
-#include "./Dimension.h"
-#include "../bedrock/level/Level.h"
+#include "Dimension.h"
 
 
 class OverworldDimension : Dimension {
 
 public:
-    virtual ~OverworldDimension();
-    virtual void createGenerator();
-//  virtual void translatePosAcrossDimension(Vec3 const&, AutomaticID<Dimension, int>)const; //TODO: incomplete function definition
-
-    OverworldDimension(Level &, Scheduler &);
+    ~OverworldDimension(); // _ZN18OverworldDimensionD2Ev
+    virtual void createGenerator(); // _ZN18OverworldDimension15createGeneratorEv
+//  virtual void translatePosAcrossDimension(Vec3 const&, AutomaticID<Dimension, int>)const; //TODO: incomplete function definition // _ZNK18OverworldDimension27translatePosAcrossDimensionERK4Vec311AutomaticIDI9DimensioniE
+    OverworldDimension(Level &, Scheduler &); // _ZN18OverworldDimensionC2ER5LevelR9Scheduler
 };

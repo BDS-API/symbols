@@ -1,9 +1,6 @@
 #pragma once
 
-#include "../../../../unmapped/BoundingBox.h"
-#include "../../../block/unmapped/BlockSource.h"
-#include "./StructurePiece.h"
-#include "../../../util/Random.h"
+#include "StructurePiece.h"
 
 
 class ShipwreckPiece : StructurePiece {
@@ -11,9 +8,8 @@ class ShipwreckPiece : StructurePiece {
 public:
     static std::string STRUCTURE_SHIPWRECK_TYPES;
 
-    virtual ~ShipwreckPiece();
-    virtual void getType()const;
-    virtual void postProcess(BlockSource *, Random &, BoundingBox const&);
-
-    ShipwreckPiece(int, int, bool);
+    ~ShipwreckPiece(); // _ZN14ShipwreckPieceD2Ev
+    virtual void getType()const; // _ZNK14ShipwreckPiece7getTypeEv
+    virtual void postProcess(BlockSource *, Random &, BoundingBox const&); // _ZN14ShipwreckPiece11postProcessEP11BlockSourceR6RandomRK11BoundingBox
+    ShipwreckPiece(int, int, bool); // _ZN14ShipwreckPieceC2Eiib
 };

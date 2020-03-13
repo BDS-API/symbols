@@ -1,14 +1,9 @@
 #pragma once
 
-#include "../../../unmapped/SurfaceBuilderRegistry.h"
-#include "../../../unmapped/IWorldRegistriesProvider.h"
-#include "../../../unmapped/BiomeComponentFactory.h"
-#include "../../../unmapped/BiomeRegistry.h"
 
 
-class VanillaBiomes {
+namespace VanillaBiomes {
 
-public:
     static long SWAMP_WATER_COLOR;
     static long WATER_FOG_COLOR_SWAMP;
     static long HEIGHTS_RIVER;
@@ -81,13 +76,12 @@ public:
     static long mSavannaRockMutated;
     static long mRoofedForestMutated;
 
-
-    void initBiomes(BiomeRegistry &);
-    void initBiomeComponents(BiomeComponentFactory &);
-    void initSurfaceBuilders(SurfaceBuilderRegistry &);
-    void initDefaultWorldGenComponents(IWorldRegistriesProvider &);
-    void initClientOnlyComponents(BiomeRegistry &);
-    void initVanillaBiomeTypeComponent(BiomeRegistry &);
-    void shutdownBiomes();
-    bool isValidSpawn(int);
+    void initBiomes(BiomeRegistry &); // _ZN13VanillaBiomes10initBiomesER13BiomeRegistry
+    void initBiomeComponents(BiomeComponentFactory &); // _ZN13VanillaBiomes19initBiomeComponentsER21BiomeComponentFactory
+    void initSurfaceBuilders(SurfaceBuilderRegistry &); // _ZN13VanillaBiomes19initSurfaceBuildersER22SurfaceBuilderRegistry
+    void initDefaultWorldGenComponents(IWorldRegistriesProvider &); // _ZN13VanillaBiomes29initDefaultWorldGenComponentsER24IWorldRegistriesProvider
+    void initClientOnlyComponents(BiomeRegistry &); // _ZN13VanillaBiomes24initClientOnlyComponentsER13BiomeRegistry
+    void initVanillaBiomeTypeComponent(BiomeRegistry &); // _ZN13VanillaBiomes29initVanillaBiomeTypeComponentER13BiomeRegistry
+    void shutdownBiomes(); // _ZN13VanillaBiomes14shutdownBiomesEv
+    bool isValidSpawn(int); // _ZN13VanillaBiomes12isValidSpawnEi
 };

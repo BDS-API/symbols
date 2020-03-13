@@ -4,12 +4,10 @@
 
 namespace BedrockEngine {
 
-class PlatformBuildInfo {
+    class PlatformBuildInfo {
 
-public:
-
-    PlatformBuildInfo();
-    ~PlatformBuildInfo();
-};
-
+    public:
+        PlatformBuildInfo(); // _ZN13BedrockEngine17PlatformBuildInfoC2Ev
+        ~PlatformBuildInfo(); // _ZN13BedrockEngine17PlatformBuildInfoD2Ev
+    };
 }

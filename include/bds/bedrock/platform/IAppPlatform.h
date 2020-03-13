@@ -5,7 +5,6 @@
 class IAppPlatform {
 
 public:
-    virtual ~IAppPlatform();
-
-    IAppPlatform();
+    ~IAppPlatform(); // _ZN12IAppPlatformD2Ev
+    IAppPlatform(); // _ZN12IAppPlatformC2Ev
 };

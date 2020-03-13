@@ -1,16 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
+#include "Feature.h"
 
 
 class PodzolAreaFeature : Feature {
 
 public:
-    virtual ~PodzolAreaFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    PodzolAreaFeature();
+    ~PodzolAreaFeature(); // _ZN17PodzolAreaFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK17PodzolAreaFeature5placeER11BlockSourceRK8BlockPosR6Random
+    PodzolAreaFeature(); // _ZN17PodzolAreaFeatureC2Ev
 };

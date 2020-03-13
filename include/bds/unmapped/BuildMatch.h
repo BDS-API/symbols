@@ -1,12 +1,10 @@
 #pragma once
 
-#include "./BuildMatch.h"
 
 
 class BuildMatch {
 
 public:
-
-    BuildMatch();
-    BuildMatch(BuildMatch const&);
+    BuildMatch(); // _ZN10BuildMatchC2Ev
+    BuildMatch(BuildMatch const&); // _ZN10BuildMatchC2ERKS_
 };

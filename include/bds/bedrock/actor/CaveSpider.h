@@ -1,20 +1,15 @@
 #pragma once
 
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "./Spider.h"
-#include <memory>
 #include <vector>
-#include "unmapped/ActorDefinitionGroup.h"
-#include <string>
+#include "Spider.h"
 
 
 class CaveSpider : Spider {
 
 public:
-    virtual ~CaveSpider();
-    virtual void getDebugText(std::vector<std::string, std::allocator<std::string>> &);
-    virtual void getModelScale()const;
-    virtual void getSpiderType()const;
-
-    CaveSpider(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
+    ~CaveSpider(); // _ZN10CaveSpiderD2Ev
+    virtual void getDebugText(std::vector<std::string> &); // _ZN10CaveSpider12getDebugTextERSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EE
+    virtual void getModelScale()const; // _ZNK10CaveSpider13getModelScaleEv
+    virtual void getSpiderType()const; // _ZNK10CaveSpider13getSpiderTypeEv
+    CaveSpider(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN10CaveSpiderC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
 };

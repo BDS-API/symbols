@@ -1,21 +1,18 @@
 #pragma once
 
-#include "../../io/BinaryStream.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "./Packet.h"
-#include "../../actor/unmapped/ActorUniqueID.h"
 #include <string>
+#include "../../actor/unmapped/ActorUniqueID.h"
+#include "Packet.h"
 
 
 class RemoveActorPacket : Packet {
 
 public:
-    virtual ~RemoveActorPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    RemoveActorPacket();
-    RemoveActorPacket(ActorUniqueID);
+    ~RemoveActorPacket(); // _ZN17RemoveActorPacketD2Ev
+    virtual void getId()const; // _ZNK17RemoveActorPacket5getIdEv
+    virtual std::string getName()const; // _ZNK17RemoveActorPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK17RemoveActorPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN17RemoveActorPacket4readER20ReadOnlyBinaryStream
+    RemoveActorPacket(); // _ZN17RemoveActorPacketC2Ev
+    RemoveActorPacket(ActorUniqueID); // _ZN17RemoveActorPacketC2E13ActorUniqueID
 };

@@ -5,6 +5,5 @@
 class zone {
 
 public:
-
-    zone();
+    zone(); // _ZN4zoneC2Ev
 };

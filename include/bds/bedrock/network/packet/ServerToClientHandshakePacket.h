@@ -1,21 +1,18 @@
 #pragma once
 
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "./Packet.h"
-#include "../../io/BinaryStream.h"
 #include <string>
+#include "Packet.h"
 
 
 class ServerToClientHandshakePacket : Packet {
 
 public:
-    virtual ~ServerToClientHandshakePacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    ServerToClientHandshakePacket();
-    ServerToClientHandshakePacket(std::string const&);
-    std::string getData()const;
+    ~ServerToClientHandshakePacket(); // _ZN29ServerToClientHandshakePacketD2Ev
+    virtual void getId()const; // _ZNK29ServerToClientHandshakePacket5getIdEv
+    virtual std::string getName()const; // _ZNK29ServerToClientHandshakePacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK29ServerToClientHandshakePacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN29ServerToClientHandshakePacket4readER20ReadOnlyBinaryStream
+    ServerToClientHandshakePacket(); // _ZN29ServerToClientHandshakePacketC2Ev
+    ServerToClientHandshakePacket(std::string const&); // _ZN29ServerToClientHandshakePacketC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    std::string getData()const; // _ZNK29ServerToClientHandshakePacket7getDataB5cxx11Ev
 };

@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class GameModeCommand : Command {
 
 public:
-    virtual ~GameModeCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    GameModeCommand();
+    ~GameModeCommand(); // _ZN15GameModeCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK15GameModeCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN15GameModeCommand5setupER15CommandRegistry
+    GameModeCommand(); // _ZN15GameModeCommandC2Ev
 };

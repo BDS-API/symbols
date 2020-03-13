@@ -1,19 +1,14 @@
 #pragma once
 
-#include "../../unmapped/ContentIdentity.h"
-#include "../../mce/UUID.h"
-#include "../../unmapped/SemVersion.h"
-#include "./ResourcePackInfoData.h"
 #include <string>
 
 
 class ResourcePackInfoData {
 
 public:
-
-    ~ResourcePackInfoData();
-    ResourcePackInfoData(ResourcePackInfoData &&);
-    ResourcePackInfoData(ResourcePackInfoData const&);
-    ResourcePackInfoData(mce::UUID const&, SemVersion const&, unsigned long, std::string const&, std::string const&, ContentIdentity const&, bool);
-    ResourcePackInfoData();
+    ~ResourcePackInfoData(); // _ZN20ResourcePackInfoDataD2Ev
+    ResourcePackInfoData(ResourcePackInfoData &&); // _ZN20ResourcePackInfoDataC2EOS_
+    ResourcePackInfoData(ResourcePackInfoData const&); // _ZN20ResourcePackInfoDataC2ERKS_
+    ResourcePackInfoData(mce::UUID const&, SemVersion const&, unsigned long, std::string const&, std::string const&, ContentIdentity const&, bool); // _ZN20ResourcePackInfoDataC2ERKN3mce4UUIDERK10SemVersionmRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESE_RK15ContentIdentityb
+    ResourcePackInfoData(); // _ZN20ResourcePackInfoDataC2Ev
 };

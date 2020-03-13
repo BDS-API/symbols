@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./BytesDataOutput.h"
-#include "../../raknet/BitStream.h"
+#include "BytesDataOutput.h"
 
 
 class RakDataOutput : BytesDataOutput {
 
 public:
-    virtual ~RakDataOutput();
-//  virtual void writeBytes(void const*, unsigned long); //TODO: incomplete function definition
-
-    RakDataOutput(RakNet::BitStream &);
+    ~RakDataOutput(); // _ZN13RakDataOutputD2Ev
+    virtual void writeBytes(void const*, unsigned long); // _ZN13RakDataOutput10writeBytesEPKvm
+    RakDataOutput(RakNet::BitStream &); // _ZN13RakDataOutputC2ERN6RakNet9BitStreamE
 };

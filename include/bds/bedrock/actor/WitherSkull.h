@@ -1,25 +1,19 @@
 #pragma once
 
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "../../unmapped/VariantParameterList.h"
-#include "damagesource/ActorDamageSource.h"
-#include "./Fireball.h"
-#include "unmapped/ActorDefinitionGroup.h"
-#include "../../unmapped/Block.h"
+#include "Fireball.h"
 
 
 class WitherSkull : Fireball {
 
 public:
-//  virtual void initializeComponents(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition
-    virtual ~WitherSkull();
-    virtual bool isPickable();
-    virtual bool isOnFire()const;
-    virtual bool canDestroyBlock(Block const&)const;
-    virtual void _hurt(ActorDamageSource const&, int, bool, bool);
-    virtual void getInertia();
-
-    WitherSkull(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
-    void setDangerous(bool);
-    bool isDangerous();
+//  virtual void initializeComponents(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN11WitherSkull20initializeComponentsEN5Actor20InitializationMethodERK20VariantParameterList
+    ~WitherSkull(); // _ZN11WitherSkullD2Ev
+    virtual bool isPickable(); // _ZN11WitherSkull10isPickableEv
+    virtual bool isOnFire()const; // _ZNK11WitherSkull8isOnFireEv
+    virtual bool canDestroyBlock(Block const&)const; // _ZNK11WitherSkull15canDestroyBlockERK5Block
+    virtual void _hurt(ActorDamageSource const&, int, bool, bool); // _ZN11WitherSkull5_hurtERK17ActorDamageSourceibb
+    virtual void getInertia(); // _ZN11WitherSkull10getInertiaEv
+    WitherSkull(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN11WitherSkullC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
+    void setDangerous(bool); // _ZN11WitherSkull12setDangerousEb
+    bool isDangerous(); // _ZN11WitherSkull11isDangerousEv
 };

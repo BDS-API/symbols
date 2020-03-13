@@ -1,15 +1,13 @@
 #pragma once
 
-#include "./ItemTransferAmount.h"
 
 
 class ItemTransferAmount {
 
 public:
-
-    ItemTransferAmount(int);
-//  ItemTransferAmount(ItemTakeType); //TODO: incomplete function definition
-//  ItemTransferAmount(ItemPlaceType); //TODO: incomplete function definition
-    ItemTransferAmount(ItemTransferAmount const&, bool);
-    void fromMaxStackSize()const;
+    ItemTransferAmount(int); // _ZN18ItemTransferAmountC2Ei
+//  ItemTransferAmount(ItemTakeType); //TODO: incomplete function definition // _ZN18ItemTransferAmountC2E12ItemTakeType
+//  ItemTransferAmount(ItemPlaceType); //TODO: incomplete function definition // _ZN18ItemTransferAmountC2E13ItemPlaceType
+    ItemTransferAmount(ItemTransferAmount const&, bool); // _ZN18ItemTransferAmountC2ERKS_b
+    void fromMaxStackSize()const; // _ZNK18ItemTransferAmount16fromMaxStackSizeEv
 };

@@ -1,16 +1,13 @@
 #pragma once
 
-#include "./MobSpawnerData.h"
-#include <memory>
 #include <vector>
 
 
 class HardcodedSpawnAreaRegistry {
 
 public:
-
-    ~HardcodedSpawnAreaRegistry();
-    HardcodedSpawnAreaRegistry();
-//  void initMobSpawnsForType(HardcodedSpawnAreaType, std::vector<MobSpawnerData, std::allocator<MobSpawnerData>> &&); //TODO: incomplete function definition
-//  void getMobSpawnsForType(HardcodedSpawnAreaType)const; //TODO: incomplete function definition
+    ~HardcodedSpawnAreaRegistry(); // _ZN26HardcodedSpawnAreaRegistryD2Ev
+    HardcodedSpawnAreaRegistry(); // _ZN26HardcodedSpawnAreaRegistryC2Ev
+//  void initMobSpawnsForType(HardcodedSpawnAreaType, std::vector<MobSpawnerData> &&); //TODO: incomplete function definition // _ZN26HardcodedSpawnAreaRegistry20initMobSpawnsForTypeE22HardcodedSpawnAreaTypeOSt6vectorI14MobSpawnerDataSaIS2_EE
+//  void getMobSpawnsForType(HardcodedSpawnAreaType)const; //TODO: incomplete function definition // _ZNK26HardcodedSpawnAreaRegistry19getMobSpawnsForTypeE22HardcodedSpawnAreaType
 };

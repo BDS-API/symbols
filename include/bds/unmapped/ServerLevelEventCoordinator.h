@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../bedrock/nbt/CompoundTag.h"
-#include "../bedrock/actor/Player.h"
-#include "../bedrock/level/Level.h"
 
 
 class ServerLevelEventCoordinator {
 
 public:
-
-    ~ServerLevelEventCoordinator();
-    ServerLevelEventCoordinator();
-    void sendLevelSaveData(Level &, CompoundTag &);
-    void sendLevelAddedPlayer(Level &, Player &);
-    void sendLevelRemovedPlayer(Level &, Player &);
+    ~ServerLevelEventCoordinator(); // _ZN27ServerLevelEventCoordinatorD2Ev
+    ServerLevelEventCoordinator(); // _ZN27ServerLevelEventCoordinatorC2Ev
+    void sendLevelSaveData(Level &, CompoundTag &); // _ZN27ServerLevelEventCoordinator17sendLevelSaveDataER5LevelR11CompoundTag
+    void sendLevelAddedPlayer(Level &, Player &); // _ZN27ServerLevelEventCoordinator20sendLevelAddedPlayerER5LevelR6Player
+    void sendLevelRemovedPlayer(Level &, Player &); // _ZN27ServerLevelEventCoordinator22sendLevelRemovedPlayerER5LevelR6Player
 };

@@ -1,21 +1,19 @@
 #pragma once
 
-#include "../Mob.h"
-#include "./MoveTowardsTargetGoal.h"
 #include <string>
+#include "MoveTowardsTargetGoal.h"
 
 
 class FollowTargetCaptainGoal : MoveTowardsTargetGoal {
 
 public:
-    virtual ~FollowTargetCaptainGoal();
-    virtual bool canUse();
-    virtual bool canContinueToUse();
-    virtual void start();
-    virtual void stop();
-    virtual void tick();
-    virtual void appendDebugInfo(std::string &)const;
-
-    FollowTargetCaptainGoal(Mob &, float, float, float);
-    void _determineMovePos();
+    ~FollowTargetCaptainGoal(); // _ZN23FollowTargetCaptainGoalD2Ev
+    virtual bool canUse(); // _ZN23FollowTargetCaptainGoal6canUseEv
+    virtual bool canContinueToUse(); // _ZN23FollowTargetCaptainGoal16canContinueToUseEv
+    virtual void start(); // _ZN23FollowTargetCaptainGoal5startEv
+    virtual void stop(); // _ZN23FollowTargetCaptainGoal4stopEv
+    virtual void tick(); // _ZN23FollowTargetCaptainGoal4tickEv
+    virtual void appendDebugInfo(std::string &)const; // _ZNK23FollowTargetCaptainGoal15appendDebugInfoERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    FollowTargetCaptainGoal(Mob &, float, float, float); // _ZN23FollowTargetCaptainGoalC2ER3Mobfff
+    void _determineMovePos(); // _ZN23FollowTargetCaptainGoal17_determineMovePosEv
 };

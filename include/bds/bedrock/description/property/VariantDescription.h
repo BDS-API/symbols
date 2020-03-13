@@ -1,16 +1,14 @@
 #pragma once
 
-#include "./PropertyDescription.h"
-#include "../../../json/Value.h"
+#include "PropertyDescription.h"
 
 
 class VariantDescription : PropertyDescription {
 
 public:
-    virtual void getJsonName()const;
-    virtual ~VariantDescription();
-    virtual void deserializeData(Json::Value &);
-    virtual void serializeData(Json::Value &)const;
-
-    VariantDescription();
+    virtual void getJsonName()const; // _ZNK18VariantDescription11getJsonNameEv
+    ~VariantDescription(); // _ZN18VariantDescriptionD2Ev
+    virtual void deserializeData(Json::Value &); // _ZN18VariantDescription15deserializeDataERN4Json5ValueE
+    virtual void serializeData(Json::Value &)const; // _ZNK18VariantDescription13serializeDataERN4Json5ValueE
+    VariantDescription(); // _ZN18VariantDescriptionC2Ev
 };

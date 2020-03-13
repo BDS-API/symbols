@@ -1,18 +1,13 @@
 #pragma once
 
-#include "../bedrock/block/unmapped/BlockSource.h"
-#include "./PatternEntry.h"
-#include "./Block.h"
 #include <functional>
-#include "../bedrock/util/BlockPos.h"
 
 
 class PatternEntry {
 
 public:
-
-    ~PatternEntry();
-    PatternEntry(Block const&, std::function<bool (BlockSource &, BlockPos const&, Block const&)>);
-    PatternEntry(PatternEntry const&);
-    PatternEntry(PatternEntry &&);
+    ~PatternEntry(); // _ZN12PatternEntryD2Ev
+    PatternEntry(Block const&, std::function<bool (BlockSource &, BlockPos const&, Block const&)>); // _ZN12PatternEntryC2ERK5BlockSt8functionIFbR11BlockSourceRK8BlockPosS2_EE
+    PatternEntry(PatternEntry const&); // _ZN12PatternEntryC2ERKS_
+    PatternEntry(PatternEntry &&); // _ZN12PatternEntryC2EOS_
 };

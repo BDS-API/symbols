@@ -1,7 +1,5 @@
 #pragma once
 
-#include "../bedrock/actor/Actor.h"
-#include "./WaterMovementComponent.h"
 
 
 class WaterMovementComponent {
@@ -9,8 +7,7 @@ class WaterMovementComponent {
 public:
     static long DefaultDragFactor;
 
-
-    WaterMovementComponent(WaterMovementComponent &&);
-    void initFromDefinition(Actor &);
-    void getDragFactor();
+    WaterMovementComponent(WaterMovementComponent &&); // _ZN22WaterMovementComponentC2EOS_
+    void initFromDefinition(Actor &); // _ZN22WaterMovementComponent18initFromDefinitionER5Actor
+    void getDragFactor(); // _ZN22WaterMovementComponent13getDragFactorEv
 };

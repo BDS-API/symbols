@@ -1,9 +1,6 @@
 #pragma once
 
-#include "../../../unmapped/ContainerItemStack.h"
-#include "./LevelContainerManagerModel.h"
-#include "../../util/BlockPos.h"
-#include "../../actor/Player.h"
+#include "LevelContainerManagerModel.h"
 
 
 class LabTableContainerManagerModel : LevelContainerManagerModel {
@@ -11,14 +8,13 @@ class LabTableContainerManagerModel : LevelContainerManagerModel {
 public:
     static long INPUT_SLOTS;
 
-    virtual ~LabTableContainerManagerModel();
-    virtual void getItems();
-    virtual void setSlot(int, ContainerItemStack const&, bool);
-    virtual void getSlot(int);
-    virtual void setData(int, int);
-    virtual void broadcastChanges();
-    virtual void init();
-    virtual bool isValid(float);
-
-//  LabTableContainerManagerModel(ContainerID, Player &, BlockPos const&); //TODO: incomplete function definition
+    ~LabTableContainerManagerModel(); // _ZN29LabTableContainerManagerModelD2Ev
+    virtual void getItems(); // _ZN29LabTableContainerManagerModel8getItemsEv
+    virtual void setSlot(int, ContainerItemStack const&, bool); // _ZN29LabTableContainerManagerModel7setSlotEiRK18ContainerItemStackb
+    virtual void getSlot(int); // _ZN29LabTableContainerManagerModel7getSlotEi
+    virtual void setData(int, int); // _ZN29LabTableContainerManagerModel7setDataEii
+    virtual void broadcastChanges(); // _ZN29LabTableContainerManagerModel16broadcastChangesEv
+    virtual void init(); // _ZN29LabTableContainerManagerModel4initEv
+    virtual bool isValid(float); // _ZN29LabTableContainerManagerModel7isValidEf
+//  LabTableContainerManagerModel(ContainerID, Player &, BlockPos const&); //TODO: incomplete function definition // _ZN29LabTableContainerManagerModelC2E11ContainerIDR6PlayerRK8BlockPos
 };

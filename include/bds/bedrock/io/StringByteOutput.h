@@ -1,14 +1,13 @@
 #pragma once
 
-#include "./BytesDataOutput.h"
 #include <string>
+#include "BytesDataOutput.h"
 
 
 class StringByteOutput : BytesDataOutput {
 
 public:
-    virtual ~StringByteOutput();
-//  virtual void writeBytes(void const*, unsigned long); //TODO: incomplete function definition
-
-    StringByteOutput(std::string &);
+    ~StringByteOutput(); // _ZN16StringByteOutputD2Ev
+    virtual void writeBytes(void const*, unsigned long); // _ZN16StringByteOutput10writeBytesEPKvm
+    StringByteOutput(std::string &); // _ZN16StringByteOutputC2ERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 };

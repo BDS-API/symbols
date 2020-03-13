@@ -4,12 +4,9 @@
 
 namespace Core {
 
-class SingleThreadedLock {
+    namespace SingleThreadedLock {
 
-public:
-
-    void lock();
-    void unlock();
-};
-
+        void lock(); // _ZN4Core18SingleThreadedLock4lockEv
+        void unlock(); // _ZN4Core18SingleThreadedLock6unlockEv
+    };
 }

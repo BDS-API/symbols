@@ -1,12 +1,10 @@
 #pragma once
 
-#include "./BlockSet.h"
 
 
 class BlockSet {
 
 public:
-
-    ~BlockSet();
-    BlockSet(BlockSet &&);
+    ~BlockSet(); // _ZN8BlockSetD2Ev
+    BlockSet(BlockSet &&); // _ZN8BlockSetC2EOS_
 };

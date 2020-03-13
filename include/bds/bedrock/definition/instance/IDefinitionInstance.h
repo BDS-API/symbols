@@ -5,7 +5,6 @@
 class IDefinitionInstance {
 
 public:
-    virtual ~IDefinitionInstance();
-
-    IDefinitionInstance();
+    ~IDefinitionInstance(); // _ZN19IDefinitionInstanceD2Ev
+    IDefinitionInstance(); // _ZN19IDefinitionInstanceC2Ev
 };

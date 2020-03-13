@@ -2,9 +2,7 @@
 
 
 
-class VanillaActors {
+namespace VanillaActors {
 
-public:
-
-    void registerVanillaActorData();
+    void registerVanillaActorData(); // _ZN13VanillaActors24registerVanillaActorDataEv
 };

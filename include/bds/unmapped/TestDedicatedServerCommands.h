@@ -1,11 +1,8 @@
 #pragma once
 
-#include "../bedrock/Minecraft.h"
 
 
-class TestDedicatedServerCommands {
+namespace TestDedicatedServerCommands {
 
-public:
-
-    void setupStandaloneServer(Minecraft &);
+    void setupStandaloneServer(Minecraft &); // _ZN27TestDedicatedServerCommands21setupStandaloneServerER9Minecraft
 };

@@ -1,16 +1,14 @@
 #pragma once
 
-#include "../Mob.h"
-#include "./FindCoverGoal.h"
 #include <string>
+#include "FindCoverGoal.h"
 
 
 class FleeSunGoal : FindCoverGoal {
 
 public:
-    virtual ~FleeSunGoal();
-    virtual bool canUse();
-    virtual void appendDebugInfo(std::string &)const;
-
-    FleeSunGoal(Mob &, float);
+    ~FleeSunGoal(); // _ZN11FleeSunGoalD2Ev
+    virtual bool canUse(); // _ZN11FleeSunGoal6canUseEv
+    virtual void appendDebugInfo(std::string &)const; // _ZNK11FleeSunGoal15appendDebugInfoERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    FleeSunGoal(Mob &, float); // _ZN11FleeSunGoalC2ER3Mobf
 };

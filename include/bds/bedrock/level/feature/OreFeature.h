@@ -1,21 +1,15 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../../unmapped/Block.h"
-#include "../../../unmapped/IBlockPlacementTarget.h"
-#include "./IFeature.h"
-#include <memory>
-#include "../../util/BlockPos.h"
+#include "IFeature.h"
 #include <vector>
 
 
 class OreFeature : IFeature {
 
 public:
-    virtual ~OreFeature();
-    virtual void place(IBlockPlacementTarget &, BlockPos const&, Random &)const;
-
-    OreFeature();
-    OreFeature(int, Block const*, std::vector<Block const*, std::allocator<Block const*>> &&);
-    void _isReplaceable(Block const&)const;
+    ~OreFeature(); // _ZN10OreFeatureD2Ev
+    virtual void place(IBlockPlacementTarget &, BlockPos const&, Random &)const; // _ZNK10OreFeature5placeER21IBlockPlacementTargetRK8BlockPosR6Random
+    OreFeature(); // _ZN10OreFeatureC2Ev
+    OreFeature(int, Block const*, std::vector<Block const*> &&); // _ZN10OreFeatureC2EiPK5BlockOSt6vectorIS2_SaIS2_EE
+    void _isReplaceable(Block const&)const; // _ZNK10OreFeature14_isReplaceableERK5Block
 };

@@ -5,7 +5,6 @@
 class DataLoadHelper {
 
 public:
-    virtual ~DataLoadHelper();
-
-    DataLoadHelper();
+    ~DataLoadHelper(); // _ZN14DataLoadHelperD2Ev
+    DataLoadHelper(); // _ZN14DataLoadHelperC2Ev
 };

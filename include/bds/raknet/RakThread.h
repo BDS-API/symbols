@@ -4,11 +4,8 @@
 
 namespace RakNet {
 
-class RakThread {
+    namespace RakThread {
 
-public:
-
-//  void Create(void * ((void *), , void *, int); //TODO: incomplete function definition
-};
-
+//      void Create(void * ((void *), , void *, int); //TODO: incomplete function definition // _ZN6RakNet9RakThread6CreateEPFPvS1_ES1_i
+    };
 }

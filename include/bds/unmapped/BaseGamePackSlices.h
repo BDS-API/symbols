@@ -1,23 +1,24 @@
 #pragma once
 
-#include "../mce/UUID.h"
-#include "../bedrock/resourcepack/ResourcePackRepository.h"
-#include "../bedrock/resourcepack/ResourcePackStack.h"
-#include "./BaseGameVersionPack.h"
-#include <memory>
-#include "../bedrock/resourcepack/ResourcePack.h"
 #include <vector>
-#include "./BaseGameVersion.h"
 
 
 class BaseGamePackSlices {
 
 public:
+    class BaseGameVersionPack;
 
-    ~BaseGamePackSlices();
-    BaseGamePackSlices();
-    void addFromVersions(std::vector<BaseGameVersion, std::allocator<BaseGameVersion>> const&, ResourcePackRepository const&, mce::UUID const&);
-    void _add(std::vector<BaseGamePackSlices::BaseGameVersionPack, std::allocator<BaseGamePackSlices::BaseGameVersionPack>> &, BaseGameVersion const&, ResourcePack &);
-    void applyPackSlices(BaseGameVersion const&, ResourcePackRepository const&, ResourcePackStack &)const;
-    void clear();
+    ~BaseGamePackSlices(); // _ZN18BaseGamePackSlicesD2Ev
+    BaseGamePackSlices(); // _ZN18BaseGamePackSlicesC2Ev
+    void addFromVersions(std::vector<BaseGameVersion> const&, ResourcePackRepository const&, mce::UUID const&); // _ZN18BaseGamePackSlices15addFromVersionsERKSt6vectorI15BaseGameVersionSaIS1_EERK22ResourcePackRepositoryRKN3mce4UUIDE
+    void _add(std::vector<BaseGamePackSlices::BaseGameVersionPack> &, BaseGameVersion const&, ResourcePack &); // _ZN18BaseGamePackSlices4_addERSt6vectorINS_19BaseGameVersionPackESaIS1_EERK15BaseGameVersionR12ResourcePack
+    void applyPackSlices(BaseGameVersion const&, ResourcePackRepository const&, ResourcePackStack &)const; // _ZNK18BaseGamePackSlices15applyPackSlicesERK15BaseGameVersionRK22ResourcePackRepositoryR17ResourcePackStack
+    void clear(); // _ZN18BaseGamePackSlices5clearEv
+    class BaseGameVersionPack {
+
+    public:
+        ~BaseGameVersionPack(); // _ZN18BaseGamePackSlices19BaseGameVersionPackD2Ev
+        BaseGameVersionPack(BaseGamePackSlices::BaseGameVersionPack &&); // _ZN18BaseGamePackSlices19BaseGameVersionPackC2EOS0_
+        BaseGameVersionPack(BaseGamePackSlices::BaseGameVersionPack const&); // _ZN18BaseGamePackSlices19BaseGameVersionPackC2ERKS0_
+    };
 };

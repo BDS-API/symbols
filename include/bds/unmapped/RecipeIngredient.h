@@ -1,10 +1,5 @@
 #pragma once
 
-#include "./RecipeIngredient.h"
-#include "../bedrock/block/BlockLegacy.h"
-#include "../bedrock/item/unmapped/ItemDescriptor.h"
-#include "./Block.h"
-#include "../bedrock/item/Item.h"
 
 
 class RecipeIngredient {
@@ -12,13 +7,12 @@ class RecipeIngredient {
 public:
     static long EMPTY_INGREDIENT;
 
-
-    ~RecipeIngredient();
-    RecipeIngredient(RecipeIngredient const&);
-    RecipeIngredient(RecipeIngredient &&);
-    RecipeIngredient();
-    RecipeIngredient(ItemDescriptor const&, unsigned short);
-    RecipeIngredient(Block const&, unsigned short);
-    RecipeIngredient(BlockLegacy const&, unsigned short);
-    RecipeIngredient(Item const&, int, unsigned short);
+    ~RecipeIngredient(); // _ZN16RecipeIngredientD2Ev
+    RecipeIngredient(RecipeIngredient const&); // _ZN16RecipeIngredientC2ERKS_
+    RecipeIngredient(RecipeIngredient &&); // _ZN16RecipeIngredientC2EOS_
+    RecipeIngredient(); // _ZN16RecipeIngredientC2Ev
+    RecipeIngredient(ItemDescriptor const&, unsigned short); // _ZN16RecipeIngredientC2ERK14ItemDescriptort
+    RecipeIngredient(Block const&, unsigned short); // _ZN16RecipeIngredientC2ERK5Blockt
+    RecipeIngredient(BlockLegacy const&, unsigned short); // _ZN16RecipeIngredientC2ERK11BlockLegacyt
+    RecipeIngredient(Item const&, int, unsigned short); // _ZN16RecipeIngredientC2ERK4Itemit
 };

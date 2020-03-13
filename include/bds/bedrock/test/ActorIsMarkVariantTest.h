@@ -1,15 +1,13 @@
 #pragma once
 
-#include "./SimpleIntFilterTest.h"
-#include "../../unmapped/FilterContext.h"
+#include "SimpleIntFilterTest.h"
 
 
 class ActorIsMarkVariantTest : SimpleIntFilterTest {
 
 public:
-    virtual ~ActorIsMarkVariantTest();
-    virtual void evaluate(FilterContext const&)const;
-    virtual void getName()const;
-
-    ActorIsMarkVariantTest();
+    ~ActorIsMarkVariantTest(); // _ZN22ActorIsMarkVariantTestD2Ev
+    virtual void evaluate(FilterContext const&)const; // _ZNK22ActorIsMarkVariantTest8evaluateERK13FilterContext
+    virtual void getName()const; // _ZNK22ActorIsMarkVariantTest7getNameEv
+    ActorIsMarkVariantTest(); // _ZN22ActorIsMarkVariantTestC2Ev
 };

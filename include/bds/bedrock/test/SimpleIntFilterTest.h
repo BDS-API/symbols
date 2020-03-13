@@ -1,16 +1,13 @@
 #pragma once
 
-#include "./FilterTest.h"
-#include "../../unmapped/Definition.h"
-#include "../../unmapped/FilterInputs.h"
+#include "FilterTest.h"
 
 
 class SimpleIntFilterTest : FilterTest {
 
 public:
-    virtual ~SimpleIntFilterTest();
-    virtual void setup(FilterTest::Definition const&, FilterInputs const&);
-    virtual void _serializeValue()const;
-
-    SimpleIntFilterTest();
+    ~SimpleIntFilterTest(); // _ZN19SimpleIntFilterTestD2Ev
+    virtual void setup(FilterTest::Definition const&, FilterInputs const&); // _ZN19SimpleIntFilterTest5setupERKN10FilterTest10DefinitionERK12FilterInputs
+    virtual void _serializeValue()const; // _ZNK19SimpleIntFilterTest15_serializeValueEv
+    SimpleIntFilterTest(); // _ZN19SimpleIntFilterTestC2Ev
 };

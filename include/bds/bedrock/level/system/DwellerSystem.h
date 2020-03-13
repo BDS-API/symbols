@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./ITickingSystem.h"
-#include "../../../unmapped/EntityRegistry.h"
+#include "ITickingSystem.h"
 
 
 class DwellerSystem : ITickingSystem {
 
 public:
-    virtual ~DwellerSystem();
-    virtual void tick(EntityRegistry &);
-
-    DwellerSystem();
+    ~DwellerSystem(); // _ZN13DwellerSystemD2Ev
+    virtual void tick(EntityRegistry &); // _ZN13DwellerSystem4tickER14EntityRegistry
+    DwellerSystem(); // _ZN13DwellerSystemC2Ev
 };

@@ -1,25 +1,22 @@
 #pragma once
 
-#include "./RakNetGUID.h"
 
 
 namespace RakNet {
 
-class RakNetGUID {
+    class RakNetGUID {
 
-public:
-
-    void operator!=(RakNet::RakNetGUID const&)const;
-    void ToUint32(RakNet::RakNetGUID const&);
-    void ToString()const;
-    void ToString(char *)const;
-    RakNetGUID();
-    void operator==(RakNet::RakNetGUID const&)const;
-    void operator>(RakNet::RakNetGUID const&)const;
-    void operator<(RakNet::RakNetGUID const&)const;
-    void FromString(char const*);
-    RakNetGUID(unsigned long);
-    void size();
-};
-
+    public:
+        void operator!=(RakNet::RakNetGUID const&)const; // _ZNK6RakNet10RakNetGUIDneERKS0_
+        void ToUint32(RakNet::RakNetGUID const&); // _ZN6RakNet10RakNetGUID8ToUint32ERKS0_
+        void ToString()const; // _ZNK6RakNet10RakNetGUID8ToStringEv
+        void ToString(char *)const; // _ZNK6RakNet10RakNetGUID8ToStringEPc
+        RakNetGUID(); // _ZN6RakNet10RakNetGUIDC2Ev
+        void operator==(RakNet::RakNetGUID const&)const; // _ZNK6RakNet10RakNetGUIDeqERKS0_
+        void operator>(RakNet::RakNetGUID const&)const; // _ZNK6RakNet10RakNetGUIDgtERKS0_
+        void operator<(RakNet::RakNetGUID const&)const; // _ZNK6RakNet10RakNetGUIDltERKS0_
+        void FromString(char const*); // _ZN6RakNet10RakNetGUID10FromStringEPKc
+        RakNetGUID(unsigned long); // _ZN6RakNet10RakNetGUIDC2Em
+        void size(); // _ZN6RakNet10RakNetGUID4sizeEv
+    };
 }

@@ -1,15 +1,12 @@
 #pragma once
 
-#include "./Block.h"
-#include "../bedrock/util/Random.h"
-#include "./IStructurePoolBlockPredicate.h"
+#include "IStructurePoolBlockPredicate.h"
 
 
 class StructurePoolBlockPredicateAlwaysTrue : IStructurePoolBlockPredicate {
 
 public:
-    virtual ~StructurePoolBlockPredicateAlwaysTrue();
-    virtual void test(Block const&, Random &)const;
-
-    StructurePoolBlockPredicateAlwaysTrue();
+    ~StructurePoolBlockPredicateAlwaysTrue(); // _ZN37StructurePoolBlockPredicateAlwaysTrueD2Ev
+    virtual void test(Block const&, Random &)const; // _ZNK37StructurePoolBlockPredicateAlwaysTrue4testERK5BlockR6Random
+    StructurePoolBlockPredicateAlwaysTrue(); // _ZN37StructurePoolBlockPredicateAlwaysTrueC2Ev
 };

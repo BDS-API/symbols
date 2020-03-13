@@ -1,17 +1,13 @@
 #pragma once
 
-#include "damagesource/ActorDamageSource.h"
-#include "unmapped/ActorDefinitionGroup.h"
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "./Fireball.h"
+#include "Fireball.h"
 
 
 class SmallFireball : Fireball {
 
 public:
-    virtual ~SmallFireball();
-    virtual bool isPickable();
-    virtual void _hurt(ActorDamageSource const&, int, bool, bool);
-
-    SmallFireball(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
+    ~SmallFireball(); // _ZN13SmallFireballD2Ev
+    virtual bool isPickable(); // _ZN13SmallFireball10isPickableEv
+    virtual void _hurt(ActorDamageSource const&, int, bool, bool); // _ZN13SmallFireball5_hurtERK17ActorDamageSourceibb
+    SmallFireball(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN13SmallFireballC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
 };

@@ -5,7 +5,6 @@
 class LevelStorageSource {
 
 public:
-    virtual ~LevelStorageSource();
-
-    LevelStorageSource();
+    ~LevelStorageSource(); // _ZN18LevelStorageSourceD2Ev
+    LevelStorageSource(); // _ZN18LevelStorageSourceC2Ev
 };

@@ -1,17 +1,15 @@
 #pragma once
 
-#include "./MCRESULT.h"
 
 
 class MCRESULT {
 
 public:
-
-//  MCRESULT(bool, MCCATEGORY, unsigned short); //TODO: incomplete function definition
-    MCRESULT(int);
-    void operator==(MCRESULT const&)const;
-    void operator!=(MCRESULT const&)const;
-    bool isSuccess()const;
-    bool isSuccess(int);
-    void getFullCode()const;
+//  MCRESULT(bool, MCCATEGORY, unsigned short); //TODO: incomplete function definition // _ZN8MCRESULTC2Eb10MCCATEGORYt
+    MCRESULT(int); // _ZN8MCRESULTC2Ei
+    void operator==(MCRESULT const&)const; // _ZNK8MCRESULTeqERKS_
+    void operator!=(MCRESULT const&)const; // _ZNK8MCRESULTneERKS_
+    bool isSuccess()const; // _ZNK8MCRESULT9isSuccessEv
+    bool isSuccess(int); // _ZN8MCRESULT9isSuccessEi
+    void getFullCode()const; // _ZNK8MCRESULT11getFullCodeEv
 };

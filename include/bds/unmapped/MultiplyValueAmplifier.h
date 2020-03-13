@@ -1,13 +1,12 @@
 #pragma once
 
-#include "./Amplifier.h"
+#include "Amplifier.h"
 
 
 class MultiplyValueAmplifier : Amplifier {
 
 public:
-    virtual ~MultiplyValueAmplifier();
-    virtual void getAmount(int, float)const;
-
-    MultiplyValueAmplifier(float);
+    ~MultiplyValueAmplifier(); // _ZN22MultiplyValueAmplifierD2Ev
+    virtual void getAmount(int, float)const; // _ZNK22MultiplyValueAmplifier9getAmountEif
+    MultiplyValueAmplifier(float); // _ZN22MultiplyValueAmplifierC2Ef
 };

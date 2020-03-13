@@ -1,31 +1,21 @@
 #pragma once
 
-#include "../../../unmapped/FlatWorldGeneratorOptions.h"
-#include "./ChunkSource.h"
-#include "../../../unmapped/Dimension.h"
-#include "../../util/BlockPos.h"
-#include "./ChunkViewSource.h"
-#include "../../block/unmapped/BlockVolume.h"
-#include "../../util/ChunkPos.h"
-#include "../../../unmapped/BoundingBox.h"
-#include "../../../json/Value.h"
+#include "ChunkSource.h"
 #include "../generator/WorldGenerator.h"
-#include "../LevelChunk.h"
 
 
 class FlatWorldGenerator : ChunkSource, WorldGenerator {
 
 public:
-    virtual ~FlatWorldGenerator();
-    virtual void postProcess(ChunkViewSource &);
-    virtual void loadChunk(LevelChunk &, bool);
-    virtual void getFeatureTypeAt(BlockPos const&);
-//  virtual void findNearestFeature(StructureFeatureType, BlockPos const&, BlockPos &); //TODO: incomplete function definition
-    virtual void prepareHeights(BlockVolume &, ChunkPos const&, bool);
-//  virtual void garbageCollectBlueprints(buffer_span<ChunkPos>); //TODO: incomplete function definition
-    virtual void getBiomeArea(BoundingBox const&, unsigned int)const;
-    virtual void findSpawnPosition()const;
-
-    FlatWorldGenerator(Dimension &, unsigned int, Json::Value const&);
-    void _generatePrototypeBlockValues(FlatWorldGeneratorOptions const&);
+    ~FlatWorldGenerator(); // _ZN18FlatWorldGeneratorD2Ev
+    virtual void postProcess(ChunkViewSource &); // _ZN18FlatWorldGenerator11postProcessER15ChunkViewSource
+    virtual void loadChunk(LevelChunk &, bool); // _ZN18FlatWorldGenerator9loadChunkER10LevelChunkb
+    virtual void getFeatureTypeAt(BlockPos const&); // _ZN18FlatWorldGenerator16getFeatureTypeAtERK8BlockPos
+//  virtual void findNearestFeature(StructureFeatureType, BlockPos const&, BlockPos &); //TODO: incomplete function definition // _ZN18FlatWorldGenerator18findNearestFeatureE20StructureFeatureTypeRK8BlockPosRS1_
+    virtual void prepareHeights(BlockVolume &, ChunkPos const&, bool); // _ZN18FlatWorldGenerator14prepareHeightsER11BlockVolumeRK8ChunkPosb
+//  virtual void garbageCollectBlueprints(buffer_span<ChunkPos>); //TODO: incomplete function definition // _ZN18FlatWorldGenerator24garbageCollectBlueprintsE11buffer_spanI8ChunkPosE
+    virtual void getBiomeArea(BoundingBox const&, unsigned int)const; // _ZNK18FlatWorldGenerator12getBiomeAreaERK11BoundingBoxj
+    virtual void findSpawnPosition()const; // _ZNK18FlatWorldGenerator17findSpawnPositionEv
+    FlatWorldGenerator(Dimension &, unsigned int, Json::Value const&); // _ZN18FlatWorldGeneratorC2ER9DimensionjRKN4Json5ValueE
+    void _generatePrototypeBlockValues(FlatWorldGeneratorOptions const&); // _ZN18FlatWorldGenerator29_generatePrototypeBlockValuesERK25FlatWorldGeneratorOptions
 };

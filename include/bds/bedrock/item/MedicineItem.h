@@ -1,26 +1,20 @@
 #pragma once
 
 #include <string>
-#include "./ChemistryItem.h"
 #include <memory>
-#include "../level/Level.h"
-#include "../actor/Player.h"
-#include "../nbt/CompoundTag.h"
-#include "./ItemStack.h"
-#include "unmapped/ItemDescriptor.h"
+#include "ChemistryItem.h"
 
 
 class MedicineItem : ChemistryItem {
 
 public:
-    virtual ~MedicineItem();
-    virtual bool isValidAuxValue(int)const;
-    virtual void use(ItemStack &, Player &)const;
-    virtual void useTimeDepleted(ItemStack &, Level *, Player *)const;
-    virtual std::string buildDescriptionId(ItemDescriptor const&, std::unique_ptr<CompoundTag, std::default_delete<CompoundTag>> const&)const;
-    virtual void setIcon(std::string const&, int);
-
-    MedicineItem(std::string const&, int);
-    void getMobEffect(ItemStack const&);
-    bool canPlayerDrink(ItemStack const&, Player const&);
+    ~MedicineItem(); // _ZN12MedicineItemD2Ev
+    virtual bool isValidAuxValue(int)const; // _ZNK12MedicineItem15isValidAuxValueEi
+    virtual void use(ItemStack &, Player &)const; // _ZNK12MedicineItem3useER9ItemStackR6Player
+    virtual void useTimeDepleted(ItemStack &, Level *, Player *)const; // _ZNK12MedicineItem15useTimeDepletedER9ItemStackP5LevelP6Player
+    virtual std::string buildDescriptionId(ItemDescriptor const&, std::unique_ptr<CompoundTag> const&)const; // _ZNK12MedicineItem18buildDescriptionIdB5cxx11ERK14ItemDescriptorRKSt10unique_ptrI11CompoundTagSt14default_deleteIS4_EE
+    virtual void setIcon(std::string const&, int); // _ZN12MedicineItem7setIconERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
+    MedicineItem(std::string const&, int); // _ZN12MedicineItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
+    void getMobEffect(ItemStack const&); // _ZN12MedicineItem12getMobEffectERK9ItemStack
+    bool canPlayerDrink(ItemStack const&, Player const&); // _ZN12MedicineItem14canPlayerDrinkERK9ItemStackRK6Player
 };

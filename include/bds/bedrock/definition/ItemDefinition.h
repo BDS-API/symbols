@@ -5,6 +5,5 @@
 class ItemDefinition {
 
 public:
-
-    ItemDefinition();
+    ItemDefinition(); // _ZN14ItemDefinitionC2Ev
 };

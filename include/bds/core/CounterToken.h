@@ -2,14 +2,15 @@
 
 
 
-namespace Core::Profile {
+namespace Core {
 
-class CounterToken {
+    namespace Profile {
 
-public:
+        class CounterToken {
 
-    CounterToken();
-    CounterToken(unsigned long);
-};
-
+        public:
+            CounterToken(); // _ZN4Core7Profile12CounterTokenC2Ev
+            CounterToken(unsigned long); // _ZN4Core7Profile12CounterTokenC2Em
+        };
+    }
 }

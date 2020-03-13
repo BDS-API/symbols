@@ -1,15 +1,7 @@
 #pragma once
 
-#include "../actor/Mob.h"
 #include <string>
-#include "./ChemistryItem.h"
-#include "./ItemStackBase.h"
-#include "./ItemInstance.h"
-#include "../level/Level.h"
-#include "../actor/Actor.h"
-#include "../actor/Player.h"
-#include "./ItemStack.h"
-#include "../../unmapped/Block.h"
+#include "ChemistryItem.h"
 
 
 class ChemistryStickItem : ChemistryItem {
@@ -23,25 +15,24 @@ public:
     static long DAMAGE_MASK;
     static std::string ACTIVATION_TIMESTAMP_TAG;
 
-    virtual ~ChemistryStickItem();
-    virtual void setMaxDamage(int);
-    virtual bool showsDurabilityInCreative()const;
-    virtual bool isValidRepairItem(ItemInstance const&, ItemInstance const&)const;
-    virtual void uniqueAuxValues()const;
-    virtual void use(ItemStack &, Player &)const;
-    virtual void useTimeDepleted(ItemStack &, Level *, Player *)const;
-    virtual void hurtEnemy(ItemStack &, Mob *, Mob *)const;
-    virtual void mineBlock(ItemStack &, Block const&, int, int, int, Actor *)const;
-    virtual void inventoryTick(ItemStack &, Level &, Actor &, int, bool)const;
-    virtual void fixupOnLoad(ItemStackBase &)const;
-
-    ChemistryStickItem(std::string const&, int);
-    bool isActive(int);
-    void getColorType(int);
-    bool isChemistryStick(ItemInstance const&);
-    std::string _getColorName(int)const;
-    void _activateItem(ItemStack &, unsigned long)const;
-    void _tick(ItemStack &, unsigned long)const;
-    void _storeActivationTimestamp(ItemStack &, unsigned long, int)const;
-    void _getDamagePercent(ItemStack const&, unsigned long)const;
+    ~ChemistryStickItem(); // _ZN18ChemistryStickItemD2Ev
+    virtual void setMaxDamage(int); // _ZN18ChemistryStickItem12setMaxDamageEi
+    virtual bool showsDurabilityInCreative()const; // _ZNK18ChemistryStickItem25showsDurabilityInCreativeEv
+    virtual bool isValidRepairItem(ItemInstance const&, ItemInstance const&)const; // _ZNK18ChemistryStickItem17isValidRepairItemERK12ItemInstanceS2_
+    virtual void uniqueAuxValues()const; // _ZNK18ChemistryStickItem15uniqueAuxValuesEv
+    virtual void use(ItemStack &, Player &)const; // _ZNK18ChemistryStickItem3useER9ItemStackR6Player
+    virtual void useTimeDepleted(ItemStack &, Level *, Player *)const; // _ZNK18ChemistryStickItem15useTimeDepletedER9ItemStackP5LevelP6Player
+    virtual void hurtEnemy(ItemStack &, Mob *, Mob *)const; // _ZNK18ChemistryStickItem9hurtEnemyER9ItemStackP3MobS3_
+    virtual void mineBlock(ItemStack &, Block const&, int, int, int, Actor *)const; // _ZNK18ChemistryStickItem9mineBlockER9ItemStackRK5BlockiiiP5Actor
+    virtual void inventoryTick(ItemStack &, Level &, Actor &, int, bool)const; // _ZNK18ChemistryStickItem13inventoryTickER9ItemStackR5LevelR5Actorib
+    virtual void fixupOnLoad(ItemStackBase &)const; // _ZNK18ChemistryStickItem11fixupOnLoadER13ItemStackBase
+    ChemistryStickItem(std::string const&, int); // _ZN18ChemistryStickItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
+    bool isActive(int); // _ZN18ChemistryStickItem8isActiveEi
+    void getColorType(int); // _ZN18ChemistryStickItem12getColorTypeEi
+    bool isChemistryStick(ItemInstance const&); // _ZN18ChemistryStickItem16isChemistryStickERK12ItemInstance
+    std::string _getColorName(int)const; // _ZNK18ChemistryStickItem13_getColorNameB5cxx11Ei
+    void _activateItem(ItemStack &, unsigned long)const; // _ZNK18ChemistryStickItem13_activateItemER9ItemStackm
+    void _tick(ItemStack &, unsigned long)const; // _ZNK18ChemistryStickItem5_tickER9ItemStackm
+    void _storeActivationTimestamp(ItemStack &, unsigned long, int)const; // _ZNK18ChemistryStickItem25_storeActivationTimestampER9ItemStackmi
+    void _getDamagePercent(ItemStack const&, unsigned long)const; // _ZNK18ChemistryStickItem17_getDamagePercentERK9ItemStackm
 };

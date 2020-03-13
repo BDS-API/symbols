@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class ReloadCommand : Command {
 
 public:
-    virtual ~ReloadCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    ReloadCommand();
+    ~ReloadCommand(); // _ZN13ReloadCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK13ReloadCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN13ReloadCommand5setupER15CommandRegistry
+    ReloadCommand(); // _ZN13ReloadCommandC2Ev
 };

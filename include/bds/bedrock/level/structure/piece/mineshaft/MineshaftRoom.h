@@ -1,24 +1,17 @@
 #pragma once
 
-#include "../../../../../unmapped/BoundingBox.h"
-#include "../../../../../unmapped/MineshaftData.h"
-#include "../../../../util/Random.h"
-#include <memory>
 #include "../MineshaftPiece.h"
-#include "../../../../block/unmapped/BlockSource.h"
-#include "../StructurePiece.h"
 #include <vector>
 
 
 class MineshaftRoom : MineshaftPiece {
 
 public:
-    virtual ~MineshaftRoom();
-    virtual void moveBoundingBox(int, int, int);
-    virtual void getType()const;
-    virtual void addChildren(StructurePiece *, std::vector<std::unique_ptr<StructurePiece, std::default_delete<StructurePiece>>, std::allocator<std::unique_ptr<StructurePiece, std::default_delete<StructurePiece>>>> &, Random &);
-    virtual void postProcess(BlockSource *, Random &, BoundingBox const&);
-
-    MineshaftRoom(MineshaftData &);
-    MineshaftRoom(MineshaftData &, int, Random &, int, int);
+    ~MineshaftRoom(); // _ZN13MineshaftRoomD2Ev
+    virtual void moveBoundingBox(int, int, int); // _ZN13MineshaftRoom15moveBoundingBoxEiii
+    virtual void getType()const; // _ZNK13MineshaftRoom7getTypeEv
+    virtual void addChildren(StructurePiece *, std::vector<std::unique_ptr<StructurePiece>> &, Random &); // _ZN13MineshaftRoom11addChildrenEP14StructurePieceRSt6vectorISt10unique_ptrIS0_St14default_deleteIS0_EESaIS6_EER6Random
+    virtual void postProcess(BlockSource *, Random &, BoundingBox const&); // _ZN13MineshaftRoom11postProcessEP11BlockSourceR6RandomRK11BoundingBox
+    MineshaftRoom(MineshaftData &); // _ZN13MineshaftRoomC2ER13MineshaftData
+    MineshaftRoom(MineshaftData &, int, Random &, int, int); // _ZN13MineshaftRoomC2ER13MineshaftDataiR6Randomii
 };

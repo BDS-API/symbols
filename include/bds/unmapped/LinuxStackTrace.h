@@ -3,9 +3,7 @@
 #include <string>
 
 
-class LinuxStackTrace {
+namespace LinuxStackTrace {
 
-public:
-
-    std::string getStackTrace();
+    std::string getStackTrace(); // _ZN15LinuxStackTrace13getStackTraceB5cxx11Ev
 };

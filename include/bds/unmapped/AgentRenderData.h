@@ -5,6 +5,5 @@
 class AgentRenderData {
 
 public:
-
-    AgentRenderData();
+    AgentRenderData(); // _ZN15AgentRenderDataC2Ev
 };

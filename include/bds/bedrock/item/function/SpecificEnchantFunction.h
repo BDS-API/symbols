@@ -1,23 +1,17 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../condition/LootItemCondition.h"
-#include "../../../unmapped/LootTableContext.h"
-#include <memory>
-#include "./LootItemFunction.h"
 #include "../../../json/Value.h"
+#include <memory>
+#include "LootItemFunction.h"
 #include <vector>
-#include "../ItemInstance.h"
-#include "../ItemStack.h"
 
 
 class SpecificEnchantFunction : LootItemFunction {
 
 public:
-    virtual ~SpecificEnchantFunction();
-    virtual void apply(ItemStack &, Random &, LootTableContext &);
-    virtual void apply(ItemInstance &, Random &, LootTableContext &);
-
-    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &);
-    SpecificEnchantFunction(std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &, std::vector const&, std::allocator<std::vector const>);
+    ~SpecificEnchantFunction(); // _ZN23SpecificEnchantFunctionD2Ev
+    virtual void apply(ItemStack &, Random &, LootTableContext &); // _ZN23SpecificEnchantFunction5applyER9ItemStackR6RandomR16LootTableContext
+    virtual void apply(ItemInstance &, Random &, LootTableContext &); // _ZN23SpecificEnchantFunction5applyER12ItemInstanceR6RandomR16LootTableContext
+    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition>> &); // _ZN23SpecificEnchantFunction11deserializeEN4Json5ValueERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS4_EESaIS7_EE
+    SpecificEnchantFunction(std::vector<std::unique_ptr<LootItemCondition>> &, std::vector const&, std::allocator<std::vector const>); // _ZN23SpecificEnchantFunctionC2ERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS2_EESaIS5_EERKS0_INS_11EnchantInfoESaIS9_EE
 };

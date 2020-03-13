@@ -5,6 +5,5 @@
 class FriendlySize {
 
 public:
-
-    FriendlySize(unsigned long);
+    FriendlySize(unsigned long); // _ZN12FriendlySizeC2Em
 };

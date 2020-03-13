@@ -5,7 +5,6 @@
 class ResourcePackMergeStrategy {
 
 public:
-    virtual ~ResourcePackMergeStrategy();
-
-    ResourcePackMergeStrategy();
+    ~ResourcePackMergeStrategy(); // _ZN25ResourcePackMergeStrategyD2Ev
+    ResourcePackMergeStrategy(); // _ZN25ResourcePackMergeStrategyC2Ev
 };

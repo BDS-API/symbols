@@ -2,9 +2,7 @@
 
 
 
-class DyeColorUtil {
+namespace DyeColorUtil {
 
-public:
-
-    void getItemColor(int);
+    void getItemColor(int); // _ZN12DyeColorUtil12getItemColorEi
 };

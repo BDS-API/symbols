@@ -1,13 +1,12 @@
 #pragma once
 
-#include "./ButtonBlock.h"
 #include <string>
+#include "ButtonBlock.h"
 
 
 class WoodButtonBlock : ButtonBlock {
 
 public:
-    virtual ~WoodButtonBlock();
-
-    WoodButtonBlock(std::string const&, int);
+    ~WoodButtonBlock(); // _ZN15WoodButtonBlockD2Ev
+    WoodButtonBlock(std::string const&, int); // _ZN15WoodButtonBlockC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
 };

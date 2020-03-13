@@ -1,16 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
+#include "Feature.h"
 
 
 class IcePatchFeature : Feature {
 
 public:
-    virtual ~IcePatchFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    IcePatchFeature(int);
+    ~IcePatchFeature(); // _ZN15IcePatchFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK15IcePatchFeature5placeER11BlockSourceRK8BlockPosR6Random
+    IcePatchFeature(int); // _ZN15IcePatchFeatureC2Ei
 };

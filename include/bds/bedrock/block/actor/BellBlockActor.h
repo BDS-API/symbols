@@ -1,26 +1,19 @@
 #pragma once
 
-#include "../../nbt/CompoundTag.h"
-#include "./BlockActor.h"
-#include "../../actor/Actor.h"
-#include "../../../unmapped/DataLoadHelper.h"
-#include "../../level/Level.h"
-#include "../../util/BlockPos.h"
-#include "../unmapped/BlockSource.h"
+#include "BlockActor.h"
 
 
 class BellBlockActor : BlockActor {
 
 public:
-    virtual ~BellBlockActor();
-    virtual void load(Level &, CompoundTag const&, DataLoadHelper &);
-    virtual void save(CompoundTag &)const;
-    virtual void tick(BlockSource &);
-    virtual void getUpdatePacket(BlockSource &);
-    virtual void _onUpdatePacket(CompoundTag const&, BlockSource &);
-
-    BellBlockActor(BlockPos const&);
-//  void ring(Direction::Type, BlockSource &, bool); //TODO: incomplete function definition
-    void ejectItem(BlockPos const&, Actor &)const;
-    bool isRinging()const;
+    ~BellBlockActor(); // _ZN14BellBlockActorD2Ev
+    virtual void load(Level &, CompoundTag const&, DataLoadHelper &); // _ZN14BellBlockActor4loadER5LevelRK11CompoundTagR14DataLoadHelper
+    virtual void save(CompoundTag &)const; // _ZNK14BellBlockActor4saveER11CompoundTag
+    virtual void tick(BlockSource &); // _ZN14BellBlockActor4tickER11BlockSource
+    virtual void getUpdatePacket(BlockSource &); // _ZN14BellBlockActor15getUpdatePacketER11BlockSource
+    virtual void _onUpdatePacket(CompoundTag const&, BlockSource &); // _ZN14BellBlockActor15_onUpdatePacketERK11CompoundTagR11BlockSource
+    BellBlockActor(BlockPos const&); // _ZN14BellBlockActorC2ERK8BlockPos
+//  void ring(Direction::Type, BlockSource &, bool); //TODO: incomplete function definition // _ZN14BellBlockActor4ringEN9Direction4TypeER11BlockSourceb
+    void ejectItem(BlockPos const&, Actor &)const; // _ZNK14BellBlockActor9ejectItemERK8BlockPosR5Actor
+    bool isRinging()const; // _ZNK14BellBlockActor9isRingingEv
 };

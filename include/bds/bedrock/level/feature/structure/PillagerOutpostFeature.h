@@ -1,22 +1,15 @@
 #pragma once
 
-#include "../../../../unmapped/HardcodedSpawnAreaRegistry.h"
-#include "./StructureFeature.h"
-#include "../../../util/BlockPos.h"
-#include "../../../../unmapped/Dimension.h"
-#include "../../../util/Random.h"
-#include "../../../../unmapped/BiomeSource.h"
-#include "../../../util/ChunkPos.h"
+#include "StructureFeature.h"
 
 
 class PillagerOutpostFeature : StructureFeature {
 
 public:
-    virtual ~PillagerOutpostFeature();
-    virtual void initMobSpawnTypes(HardcodedSpawnAreaRegistry &);
-    virtual void getNearestGeneratedFeature(Dimension &, BiomeSource &, BlockPos const&, BlockPos &);
-    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int);
-    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&);
-
-    PillagerOutpostFeature(unsigned int);
+    ~PillagerOutpostFeature(); // _ZN22PillagerOutpostFeatureD2Ev
+    virtual void initMobSpawnTypes(HardcodedSpawnAreaRegistry &); // _ZN22PillagerOutpostFeature17initMobSpawnTypesER26HardcodedSpawnAreaRegistry
+    virtual void getNearestGeneratedFeature(Dimension &, BiomeSource &, BlockPos const&, BlockPos &); // _ZN22PillagerOutpostFeature26getNearestGeneratedFeatureER9DimensionR11BiomeSourceRK8BlockPosRS4_
+    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int); // _ZN22PillagerOutpostFeature14isFeatureChunkERK11BiomeSourceR6RandomRK8ChunkPosj
+    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&); // _ZN22PillagerOutpostFeature20createStructureStartER9DimensionR11BiomeSourceR6RandomRK8ChunkPos
+    PillagerOutpostFeature(unsigned int); // _ZN22PillagerOutpostFeatureC2Ej
 };

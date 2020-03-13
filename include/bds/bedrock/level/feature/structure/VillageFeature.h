@@ -1,20 +1,14 @@
 #pragma once
 
-#include "./StructureFeature.h"
-#include "../../../util/BlockPos.h"
-#include "../../../../unmapped/Dimension.h"
-#include "../../../util/Random.h"
-#include "../../../../unmapped/BiomeSource.h"
-#include "../../../util/ChunkPos.h"
+#include "StructureFeature.h"
 
 
 class VillageFeature : StructureFeature {
 
 public:
-    virtual ~VillageFeature();
-    virtual void getNearestGeneratedFeature(Dimension &, BiomeSource &, BlockPos const&, BlockPos &);
-    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int);
-    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&);
-
-    VillageFeature(unsigned int);
+    ~VillageFeature(); // _ZN14VillageFeatureD2Ev
+    virtual void getNearestGeneratedFeature(Dimension &, BiomeSource &, BlockPos const&, BlockPos &); // _ZN14VillageFeature26getNearestGeneratedFeatureER9DimensionR11BiomeSourceRK8BlockPosRS4_
+    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int); // _ZN14VillageFeature14isFeatureChunkERK11BiomeSourceR6RandomRK8ChunkPosj
+    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&); // _ZN14VillageFeature20createStructureStartER9DimensionR11BiomeSourceR6RandomRK8ChunkPos
+    VillageFeature(unsigned int); // _ZN14VillageFeatureC2Ej
 };

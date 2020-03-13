@@ -1,18 +1,13 @@
 #pragma once
 
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "./Actor.h"
-#include "damagesource/ActorDamageSource.h"
-#include "./Monster.h"
-#include "unmapped/ActorDefinitionGroup.h"
+#include "Monster.h"
 
 
 class IllagerBeast : Monster {
 
 public:
-    virtual ~IllagerBeast();
-    virtual void blockedByShield(ActorDamageSource const&, Actor &);
-    virtual void aiStep();
-
-    IllagerBeast(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
+    ~IllagerBeast(); // _ZN12IllagerBeastD2Ev
+    virtual void blockedByShield(ActorDamageSource const&, Actor &); // _ZN12IllagerBeast15blockedByShieldERK17ActorDamageSourceR5Actor
+    virtual void aiStep(); // _ZN12IllagerBeast6aiStepEv
+    IllagerBeast(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN12IllagerBeastC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
 };

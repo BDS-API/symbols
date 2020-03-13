@@ -1,11 +1,9 @@
 #pragma once
 
-#include "./NetworkComponent.h"
 
 
 class NetworkComponent {
 
 public:
-
-    NetworkComponent(NetworkComponent &&);
+    NetworkComponent(NetworkComponent &&); // _ZN16NetworkComponentC2EOS_
 };

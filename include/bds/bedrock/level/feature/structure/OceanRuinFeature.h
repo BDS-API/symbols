@@ -1,22 +1,14 @@
 #pragma once
 
-#include "./OceanMonumentFeature.h"
-#include "./StructureFeature.h"
-#include "../../chunksource/OverworldGenerator.h"
-#include "../../../util/BlockPos.h"
-#include "../../../../unmapped/Dimension.h"
-#include "../../../util/Random.h"
-#include "../../../../unmapped/BiomeSource.h"
-#include "../../../util/ChunkPos.h"
+#include "StructureFeature.h"
 
 
 class OceanRuinFeature : StructureFeature {
 
 public:
-    virtual ~OceanRuinFeature();
-    virtual void getNearestGeneratedFeature(Dimension &, BiomeSource &, BlockPos const&, BlockPos &);
-    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int);
-    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&);
-
-    OceanRuinFeature(OverworldGenerator &, OceanMonumentFeature &, unsigned int);
+    ~OceanRuinFeature(); // _ZN16OceanRuinFeatureD2Ev
+    virtual void getNearestGeneratedFeature(Dimension &, BiomeSource &, BlockPos const&, BlockPos &); // _ZN16OceanRuinFeature26getNearestGeneratedFeatureER9DimensionR11BiomeSourceRK8BlockPosRS4_
+    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int); // _ZN16OceanRuinFeature14isFeatureChunkERK11BiomeSourceR6RandomRK8ChunkPosj
+    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&); // _ZN16OceanRuinFeature20createStructureStartER9DimensionR11BiomeSourceR6RandomRK8ChunkPos
+    OceanRuinFeature(OverworldGenerator &, OceanMonumentFeature &, unsigned int); // _ZN16OceanRuinFeatureC2ER18OverworldGeneratorR20OceanMonumentFeaturej
 };

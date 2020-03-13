@@ -1,20 +1,14 @@
 #pragma once
 
-#include "../../../../unmapped/Dimension.h"
-#include "./StructureStart.h"
-#include "../../../util/Random.h"
-#include "../../../block/unmapped/BlockSource.h"
-#include "../../../../unmapped/BoundingBox.h"
-#include "../../../../unmapped/BiomeSource.h"
+#include "StructureStart.h"
 
 
 class VillageStart : StructureStart {
 
 public:
-    virtual ~VillageStart();
-    virtual void postProcess(BlockSource *, Random &, BoundingBox const&);
-    virtual bool isValid()const;
-    virtual void getType()const;
-
-    VillageStart(Dimension &, BiomeSource &, Random &, int, int);
+    ~VillageStart(); // _ZN12VillageStartD2Ev
+    virtual void postProcess(BlockSource *, Random &, BoundingBox const&); // _ZN12VillageStart11postProcessEP11BlockSourceR6RandomRK11BoundingBox
+    virtual bool isValid()const; // _ZNK12VillageStart7isValidEv
+    virtual void getType()const; // _ZNK12VillageStart7getTypeEv
+    VillageStart(Dimension &, BiomeSource &, Random &, int, int); // _ZN12VillageStartC2ER9DimensionR11BiomeSourceR6Randomii
 };

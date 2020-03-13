@@ -1,20 +1,15 @@
 #pragma once
 
-#include "../../container/Container.h"
-#include "../../util/Vec3.h"
-#include "../../actor/Player.h"
-#include "../../util/BlockPos.h"
-#include "./RandomizableBlockActorContainerBase.h"
-#include "../unmapped/BlockSource.h"
 #include <string>
+#include "RandomizableBlockActorContainerBase.h"
+#include "../../container/Container.h"
 
 
 class RandomizableBlockActorContainer : RandomizableBlockActorContainerBase, Container {
 
 public:
-    virtual ~RandomizableBlockActorContainer();
-    virtual void startOpen(Player &);
-    virtual void dropContents(BlockSource &, Vec3 const&, bool);
-
-//  RandomizableBlockActorContainer(BlockActorType, std::string const&, BlockPos const&, ContainerType); //TODO: incomplete function definition
+    ~RandomizableBlockActorContainer(); // _ZN31RandomizableBlockActorContainerD2Ev
+    virtual void startOpen(Player &); // _ZN31RandomizableBlockActorContainer9startOpenER6Player
+    virtual void dropContents(BlockSource &, Vec3 const&, bool); // _ZN31RandomizableBlockActorContainer12dropContentsER11BlockSourceRK4Vec3b
+//  RandomizableBlockActorContainer(BlockActorType, std::string const&, BlockPos const&, ContainerType); //TODO: incomplete function definition // _ZN31RandomizableBlockActorContainerC2E14BlockActorTypeRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERK8BlockPos13ContainerType
 };

@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./FileChunk.h"
 
 
 class FileChunk {
 
 public:
-
-    ~FileChunk();
-    FileChunk(FileChunk &&);
-    void operator<(FileChunk const&)const;
+    ~FileChunk(); // _ZN9FileChunkD2Ev
+    FileChunk(FileChunk &&); // _ZN9FileChunkC2EOS_
+    void operator<(FileChunk const&)const; // _ZNK9FileChunkltERKS_
 };

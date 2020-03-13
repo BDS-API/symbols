@@ -1,24 +1,16 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../condition/LootItemCondition.h"
-#include "../../../unmapped/RandomValueBounds.h"
-#include "../../../unmapped/LootTableContext.h"
-#include <memory>
-#include "./LootItemFunction.h"
 #include "../../../json/Value.h"
+#include "LootItemFunction.h"
 #include <vector>
-#include "../ItemInstance.h"
-#include "../ItemStack.h"
 
 
 class SetItemDamageFunction : LootItemFunction {
 
 public:
-    virtual ~SetItemDamageFunction();
-    virtual void apply(ItemStack &, Random &, LootTableContext &);
-    virtual void apply(ItemInstance &, Random &, LootTableContext &);
-
-    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &);
-    SetItemDamageFunction(std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &, RandomValueBounds &);
+    ~SetItemDamageFunction(); // _ZN21SetItemDamageFunctionD2Ev
+    virtual void apply(ItemStack &, Random &, LootTableContext &); // _ZN21SetItemDamageFunction5applyER9ItemStackR6RandomR16LootTableContext
+    virtual void apply(ItemInstance &, Random &, LootTableContext &); // _ZN21SetItemDamageFunction5applyER12ItemInstanceR6RandomR16LootTableContext
+    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition>> &); // _ZN21SetItemDamageFunction11deserializeEN4Json5ValueERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS4_EESaIS7_EE
+    SetItemDamageFunction(std::vector<std::unique_ptr<LootItemCondition>> &, RandomValueBounds &); // _ZN21SetItemDamageFunctionC2ERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS2_EESaIS5_EER17RandomValueBounds
 };

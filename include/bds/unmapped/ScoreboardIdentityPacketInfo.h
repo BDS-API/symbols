@@ -1,12 +1,10 @@
 #pragma once
 
-#include "./ScoreboardIdentityPacketInfo.h"
 
 
 class ScoreboardIdentityPacketInfo {
 
 public:
-
-    ScoreboardIdentityPacketInfo(ScoreboardIdentityPacketInfo const&);
-    ScoreboardIdentityPacketInfo(ScoreboardIdentityPacketInfo &&);
+    ScoreboardIdentityPacketInfo(ScoreboardIdentityPacketInfo const&); // _ZN28ScoreboardIdentityPacketInfoC2ERKS_
+    ScoreboardIdentityPacketInfo(ScoreboardIdentityPacketInfo &&); // _ZN28ScoreboardIdentityPacketInfoC2EOS_
 };

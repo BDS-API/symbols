@@ -1,24 +1,18 @@
 #pragma once
 
-#include "../../nbt/CompoundTag.h"
-#include "./BlockActor.h"
-#include "../../../unmapped/DataLoadHelper.h"
-#include "../../level/Level.h"
-#include "../../util/BlockPos.h"
-#include "../unmapped/BlockSource.h"
 #include <string>
+#include "BlockActor.h"
 
 
 class EnchantingTableBlockActor : BlockActor {
 
 public:
-    virtual ~EnchantingTableBlockActor();
-    virtual void load(Level &, CompoundTag const&, DataLoadHelper &);
-    virtual void save(CompoundTag &)const;
-    virtual void tick(BlockSource &);
-    virtual void getUpdatePacket(BlockSource &);
-    virtual std::string getName()const;
-    virtual void _onUpdatePacket(CompoundTag const&, BlockSource &);
-
-    EnchantingTableBlockActor(BlockPos const&);
+    ~EnchantingTableBlockActor(); // _ZN25EnchantingTableBlockActorD2Ev
+    virtual void load(Level &, CompoundTag const&, DataLoadHelper &); // _ZN25EnchantingTableBlockActor4loadER5LevelRK11CompoundTagR14DataLoadHelper
+    virtual void save(CompoundTag &)const; // _ZNK25EnchantingTableBlockActor4saveER11CompoundTag
+    virtual void tick(BlockSource &); // _ZN25EnchantingTableBlockActor4tickER11BlockSource
+    virtual void getUpdatePacket(BlockSource &); // _ZN25EnchantingTableBlockActor15getUpdatePacketER11BlockSource
+    virtual std::string getName()const; // _ZNK25EnchantingTableBlockActor7getNameB5cxx11Ev
+    virtual void _onUpdatePacket(CompoundTag const&, BlockSource &); // _ZN25EnchantingTableBlockActor15_onUpdatePacketERK11CompoundTagR11BlockSource
+    EnchantingTableBlockActor(BlockPos const&); // _ZN25EnchantingTableBlockActorC2ERK8BlockPos
 };

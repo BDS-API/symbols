@@ -1,21 +1,16 @@
 #pragma once
 
-#include "../Actor.h"
-#include "./PathNavigation.h"
-#include "../../util/Vec3.h"
-#include "../../../unmapped/NavigationComponent.h"
-#include "../Mob.h"
+#include "PathNavigation.h"
 
 
 class WallClimberPathNavigation : PathNavigation {
 
 public:
-    virtual ~WallClimberPathNavigation();
-    virtual void tick(NavigationComponent &, Mob &);
-    virtual void createPath(NavigationComponent &, Mob &, Vec3 const&);
-    virtual void createPath(NavigationComponent &, Mob &, Actor &);
-    virtual void moveTo(NavigationComponent &, Mob &, Actor &, float);
-    virtual bool canUpdatePath(Mob const&)const;
-
-    WallClimberPathNavigation();
+    ~WallClimberPathNavigation(); // _ZN25WallClimberPathNavigationD2Ev
+    virtual void tick(NavigationComponent &, Mob &); // _ZN25WallClimberPathNavigation4tickER19NavigationComponentR3Mob
+    virtual void createPath(NavigationComponent &, Mob &, Vec3 const&); // _ZN25WallClimberPathNavigation10createPathER19NavigationComponentR3MobRK4Vec3
+    virtual void createPath(NavigationComponent &, Mob &, Actor &); // _ZN25WallClimberPathNavigation10createPathER19NavigationComponentR3MobR5Actor
+    virtual void moveTo(NavigationComponent &, Mob &, Actor &, float); // _ZN25WallClimberPathNavigation6moveToER19NavigationComponentR3MobR5Actorf
+    virtual bool canUpdatePath(Mob const&)const; // _ZNK25WallClimberPathNavigation13canUpdatePathERK3Mob
+    WallClimberPathNavigation(); // _ZN25WallClimberPathNavigationC2Ev
 };

@@ -1,20 +1,15 @@
 #pragma once
 
-#include "../block/unmapped/BlockSource.h"
 #include <string>
 #include "../util/BlockPos.h"
-#include "./Item.h"
-#include "../actor/Actor.h"
-#include "./ItemStack.h"
-#include "../../unmapped/Block.h"
+#include "Item.h"
 
 
 class DoorItem : Item {
 
 public:
-    virtual ~DoorItem();
-    virtual void _useOn(ItemStack &, Actor &, BlockPos, unsigned char, float, float, float)const;
-
-//  DoorItem(std::string const&, int, DoorBlock::DoorType); //TODO: incomplete function definition
-    void place(BlockSource *, int, int, int, int, Block const*);
+    ~DoorItem(); // _ZN8DoorItemD2Ev
+    virtual void _useOn(ItemStack &, Actor &, BlockPos, unsigned char, float, float, float)const; // _ZNK8DoorItem6_useOnER9ItemStackR5Actor8BlockPoshfff
+//  DoorItem(std::string const&, int, DoorBlock::DoorType); //TODO: incomplete function definition // _ZN8DoorItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiN9DoorBlock8DoorTypeE
+    void place(BlockSource *, int, int, int, int, Block const*); // _ZN8DoorItem5placeEP11BlockSourceiiiiPK5Block
 };

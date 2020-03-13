@@ -1,10 +1,7 @@
 #pragma once
 
-#include "../../unmapped/ScriptEngine.h"
-#include "./ScriptEventData.h"
-#include "../../../actor/unmapped/ActorUniqueID.h"
-#include "../../ScriptObjectHandle.h"
 #include <string>
+#include "ScriptEventData.h"
 
 
 class ScriptServerActorTickEvent : ScriptEventData {
@@ -12,11 +9,10 @@ class ScriptServerActorTickEvent : ScriptEventData {
 public:
     static long mHash;
 
-    virtual ~ScriptServerActorTickEvent();
-    virtual void _serialize(ScriptEngine &, ScriptApi::ScriptObjectHandle &)const;
-
-    void getHash();
-    ScriptServerActorTickEvent();
-    void setActorId(ActorUniqueID const&);
-    std::string getName();
+    ~ScriptServerActorTickEvent(); // _ZN26ScriptServerActorTickEventD2Ev
+    virtual void _serialize(ScriptEngine &, ScriptApi::ScriptObjectHandle &)const; // _ZNK26ScriptServerActorTickEvent10_serializeER12ScriptEngineRN9ScriptApi18ScriptObjectHandleE
+    void getHash(); // _ZN26ScriptServerActorTickEvent7getHashEv
+    ScriptServerActorTickEvent(); // _ZN26ScriptServerActorTickEventC2Ev
+    void setActorId(ActorUniqueID const&); // _ZN26ScriptServerActorTickEvent10setActorIdERK13ActorUniqueID
+    std::string getName(); // _ZN26ScriptServerActorTickEvent7getNameB5cxx11Ev
 };

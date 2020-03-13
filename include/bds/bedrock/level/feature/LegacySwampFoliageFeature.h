@@ -1,17 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../../unmapped/FeatureRegistry.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
-#include "../../block/unmapped/BlockSource.h"
+#include "Feature.h"
 
 
 class LegacySwampFoliageFeature : Feature {
 
 public:
-    virtual ~LegacySwampFoliageFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    LegacySwampFoliageFeature(FeatureRegistry const&);
+    ~LegacySwampFoliageFeature(); // _ZN25LegacySwampFoliageFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK25LegacySwampFoliageFeature5placeER11BlockSourceRK8BlockPosR6Random
+    LegacySwampFoliageFeature(FeatureRegistry const&); // _ZN25LegacySwampFoliageFeatureC2ERK15FeatureRegistry
 };

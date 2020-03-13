@@ -1,18 +1,13 @@
 #pragma once
 
-#include "./LeashableComponent.h"
-#include "../bedrock/actor/Actor.h"
-#include "../bedrock/actor/unmapped/ActorInteraction.h"
-#include "../bedrock/actor/Player.h"
 
 
 class LeashableComponent {
 
 public:
-
-    LeashableComponent(LeashableComponent &&);
-    void getInteraction(Actor &, Player &, ActorInteraction &);
-    void _canStealLeash(Actor &)const;
-    void leash(Actor &, Actor *);
-    void _unleash(Actor &);
+    LeashableComponent(LeashableComponent &&); // _ZN18LeashableComponentC2EOS_
+    void getInteraction(Actor &, Player &, ActorInteraction &); // _ZN18LeashableComponent14getInteractionER5ActorR6PlayerR16ActorInteraction
+    void _canStealLeash(Actor &)const; // _ZNK18LeashableComponent14_canStealLeashER5Actor
+    void leash(Actor &, Actor *); // _ZN18LeashableComponent5leashER5ActorPS0_
+    void _unleash(Actor &); // _ZN18LeashableComponent8_unleashER5Actor
 };

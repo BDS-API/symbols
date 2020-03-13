@@ -1,21 +1,15 @@
 #pragma once
 
-#include "../../nbt/CompoundTag.h"
-#include "./BlockActor.h"
-#include "../../util/BlockPos.h"
-#include "../../../unmapped/DataLoadHelper.h"
-#include "../../level/Level.h"
-#include "../unmapped/BlockSource.h"
+#include "BlockActor.h"
 
 
 class MusicBlockActor : BlockActor {
 
 public:
-    virtual ~MusicBlockActor();
-    virtual void load(Level &, CompoundTag const&, DataLoadHelper &);
-    virtual void save(CompoundTag &)const;
-
-    MusicBlockActor(BlockPos const&);
-    void tune();
-    void playNote(BlockSource &, BlockPos const&);
+    ~MusicBlockActor(); // _ZN15MusicBlockActorD2Ev
+    virtual void load(Level &, CompoundTag const&, DataLoadHelper &); // _ZN15MusicBlockActor4loadER5LevelRK11CompoundTagR14DataLoadHelper
+    virtual void save(CompoundTag &)const; // _ZNK15MusicBlockActor4saveER11CompoundTag
+    MusicBlockActor(BlockPos const&); // _ZN15MusicBlockActorC2ERK8BlockPos
+    void tune(); // _ZN15MusicBlockActor4tuneEv
+    void playNote(BlockSource &, BlockPos const&); // _ZN15MusicBlockActor8playNoteER11BlockSourceRK8BlockPos
 };

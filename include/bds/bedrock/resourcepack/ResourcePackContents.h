@@ -5,6 +5,5 @@
 class ResourcePackContents {
 
 public:
-
-    ResourcePackContents();
+    ResourcePackContents(); // _ZN20ResourcePackContentsC2Ev
 };

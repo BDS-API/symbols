@@ -5,6 +5,5 @@
 class BehaviorPackContents {
 
 public:
-
-    BehaviorPackContents();
+    BehaviorPackContents(); // _ZN20BehaviorPackContentsC2Ev
 };

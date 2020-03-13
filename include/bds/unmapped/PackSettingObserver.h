@@ -1,15 +1,12 @@
 #pragma once
 
 #include <functional>
-#include "./PackSettingObserver.h"
-#include "../json/Value.h"
 
 
 class PackSettingObserver {
 
 public:
-
-//  PackSettingObserver(void *, std::function<void (Json::Value const&)> const&); //TODO: incomplete function definition
-    ~PackSettingObserver();
-    PackSettingObserver(PackSettingObserver &&);
+    PackSettingObserver(void *, std::function<void (Json::Value const&)> const&); // _ZN19PackSettingObserverC2EPvRKSt8functionIFvRKN4Json5ValueEEE
+    ~PackSettingObserver(); // _ZN19PackSettingObserverD2Ev
+    PackSettingObserver(PackSettingObserver &&); // _ZN19PackSettingObserverC2EOS_
 };

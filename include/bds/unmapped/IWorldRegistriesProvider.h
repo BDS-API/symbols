@@ -5,7 +5,6 @@
 class IWorldRegistriesProvider {
 
 public:
-    virtual ~IWorldRegistriesProvider();
-
-    IWorldRegistriesProvider();
+    ~IWorldRegistriesProvider(); // _ZN24IWorldRegistriesProviderD2Ev
+    IWorldRegistriesProvider(); // _ZN24IWorldRegistriesProviderC2Ev
 };

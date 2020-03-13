@@ -4,12 +4,10 @@
 
 namespace RakNet {
 
-class NetworkAdapter {
+    class NetworkAdapter {
 
-public:
-
-    NetworkAdapter();
-    void GetNumberOfAddresses();
-};
-
+    public:
+        NetworkAdapter(); // _ZN6RakNet14NetworkAdapterC2Ev
+        void GetNumberOfAddresses(); // _ZN6RakNet14NetworkAdapter20GetNumberOfAddressesEv
+    };
 }

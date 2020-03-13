@@ -2,12 +2,10 @@
 
 
 
-class MinecraftScheduler {
+namespace MinecraftScheduler {
 
-public:
     static long mInstance;
 
-
-    void client();
-    void destroyClientSingleton();
+    void client(); // _ZN18MinecraftScheduler6clientEv
+    void destroyClientSingleton(); // _ZN18MinecraftScheduler22destroyClientSingletonEv
 };

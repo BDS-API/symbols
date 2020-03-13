@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
-#include "./ServerCommand.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
+#include "ServerCommand.h"
 
 
 class ListDCommand : ServerCommand {
 
 public:
-    virtual ~ListDCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    ListDCommand();
+    ~ListDCommand(); // _ZN12ListDCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK12ListDCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN12ListDCommand5setupER15CommandRegistry
+    ListDCommand(); // _ZN12ListDCommandC2Ev
 };

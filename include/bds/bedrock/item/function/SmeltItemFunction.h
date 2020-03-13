@@ -1,23 +1,16 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../condition/LootItemCondition.h"
-#include "../../../unmapped/LootTableContext.h"
-#include <memory>
-#include "./LootItemFunction.h"
 #include "../../../json/Value.h"
+#include "LootItemFunction.h"
 #include <vector>
-#include "../ItemInstance.h"
-#include "../ItemStack.h"
 
 
 class SmeltItemFunction : LootItemFunction {
 
 public:
-    virtual ~SmeltItemFunction();
-    virtual void apply(ItemStack &, Random &, LootTableContext &);
-    virtual void apply(ItemInstance &, Random &, LootTableContext &);
-
-    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &);
-    SmeltItemFunction(std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &);
+    ~SmeltItemFunction(); // _ZN17SmeltItemFunctionD2Ev
+    virtual void apply(ItemStack &, Random &, LootTableContext &); // _ZN17SmeltItemFunction5applyER9ItemStackR6RandomR16LootTableContext
+    virtual void apply(ItemInstance &, Random &, LootTableContext &); // _ZN17SmeltItemFunction5applyER12ItemInstanceR6RandomR16LootTableContext
+    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition>> &); // _ZN17SmeltItemFunction11deserializeEN4Json5ValueERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS4_EESaIS7_EE
+    SmeltItemFunction(std::vector<std::unique_ptr<LootItemCondition>> &); // _ZN17SmeltItemFunctionC2ERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS2_EESaIS5_EE
 };

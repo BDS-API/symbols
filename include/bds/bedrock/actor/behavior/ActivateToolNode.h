@@ -1,15 +1,13 @@
 #pragma once
 
-#include "../Actor.h"
-#include "./BehaviorNode.h"
+#include "BehaviorNode.h"
 
 
 class ActivateToolNode : BehaviorNode {
 
 public:
-    virtual ~ActivateToolNode();
-    virtual void tick(Actor &);
-    virtual void initializeFromDefinition(Actor &);
-
-    ActivateToolNode();
+    ~ActivateToolNode(); // _ZN16ActivateToolNodeD2Ev
+    virtual void tick(Actor &); // _ZN16ActivateToolNode4tickER5Actor
+    virtual void initializeFromDefinition(Actor &); // _ZN16ActivateToolNode24initializeFromDefinitionER5Actor
+    ActivateToolNode(); // _ZN16ActivateToolNodeC2Ev
 };

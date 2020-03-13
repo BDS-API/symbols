@@ -1,26 +1,21 @@
 #pragma once
 
-#include "../bedrock/item/unmapped/ItemDescriptor.h"
-#include <memory>
-#include "../bedrock/item/ItemStack.h"
-#include "./ChemistryIngredient.h"
-#include <vector>
 #include <string>
+#include <vector>
 
 
 class CraftableCompounds {
 
 public:
-    virtual ~CraftableCompounds();
-//  virtual void _registerCompound(std::vector<ItemStack, std::allocator<ItemStack>> const&, ItemStack const&, LabTableReactionType, CompoundContainerType); //TODO: incomplete function definition
-
-    void getCompound(std::vector<ItemStack, std::allocator<ItemStack>> const&);
-    std::string _getCompoundId(std::vector<ItemStack, std::allocator<ItemStack>> const&);
-    void getComponents(ItemDescriptor const&);
-    void getReaction(std::vector<ItemStack, std::allocator<ItemStack>> const&);
-    void getContainerType(std::vector<ItemStack, std::allocator<ItemStack>> const&);
-    CraftableCompounds();
-    void registerCompounds();
-//  void _registerCompound(std::vector<ChemistryIngredient, std::allocator<ChemistryIngredient>> const&, CompoundType, LabTableReactionType, CompoundContainerType, int); //TODO: incomplete function definition
-//  void _registerCompound(std::vector<ChemistryIngredient, std::allocator<ChemistryIngredient>> const&, ItemStack const&, LabTableReactionType, CompoundContainerType); //TODO: incomplete function definition
+    ~CraftableCompounds(); // _ZN18CraftableCompoundsD2Ev
+//  virtual void _registerCompound(std::vector<ItemStack> const&, ItemStack const&, LabTableReactionType, CompoundContainerType); //TODO: incomplete function definition // _ZN18CraftableCompounds17_registerCompoundERKSt6vectorI9ItemStackSaIS1_EERKS1_20LabTableReactionType21CompoundContainerType
+    void getCompound(std::vector<ItemStack> const&); // _ZN18CraftableCompounds11getCompoundERKSt6vectorI9ItemStackSaIS1_EE
+    std::string _getCompoundId(std::vector<ItemStack> const&); // _ZN18CraftableCompounds14_getCompoundIdB5cxx11ERKSt6vectorI9ItemStackSaIS1_EE
+    void getComponents(ItemDescriptor const&); // _ZN18CraftableCompounds13getComponentsERK14ItemDescriptor
+    void getReaction(std::vector<ItemStack> const&); // _ZN18CraftableCompounds11getReactionERKSt6vectorI9ItemStackSaIS1_EE
+    void getContainerType(std::vector<ItemStack> const&); // _ZN18CraftableCompounds16getContainerTypeERKSt6vectorI9ItemStackSaIS1_EE
+    CraftableCompounds(); // _ZN18CraftableCompoundsC2Ev
+    void registerCompounds(); // _ZN18CraftableCompounds17registerCompoundsEv
+//  void _registerCompound(std::vector<ChemistryIngredient> const&, CompoundType, LabTableReactionType, CompoundContainerType, int); //TODO: incomplete function definition // _ZN18CraftableCompounds17_registerCompoundERKSt6vectorI19ChemistryIngredientSaIS1_EE12CompoundType20LabTableReactionType21CompoundContainerTypei
+//  void _registerCompound(std::vector<ChemistryIngredient> const&, ItemStack const&, LabTableReactionType, CompoundContainerType); //TODO: incomplete function definition // _ZN18CraftableCompounds17_registerCompoundERKSt6vectorI19ChemistryIngredientSaIS1_EERK9ItemStack20LabTableReactionType21CompoundContainerType
 };

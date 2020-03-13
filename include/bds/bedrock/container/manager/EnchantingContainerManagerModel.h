@@ -1,11 +1,7 @@
 #pragma once
 
-#include "../../../unmapped/ContainerItemStack.h"
-#include "../../actor/Player.h"
-#include "./ContainerManagerModel.h"
-#include "../../util/BlockPos.h"
-#include "../../item/ItemInstance.h"
 #include <string>
+#include "ContainerManagerModel.h"
 
 
 class EnchantingContainerManagerModel : ContainerManagerModel {
@@ -13,24 +9,23 @@ class EnchantingContainerManagerModel : ContainerManagerModel {
 public:
     static long NUM_OPTIONS;
 
-    virtual ~EnchantingContainerManagerModel();
-    virtual void getItems();
-    virtual void setSlot(int, ContainerItemStack const&, bool);
-    virtual void getSlot(int);
-    virtual void setData(int, int);
-    virtual void broadcastChanges();
-    virtual void init();
-
-//  EnchantingContainerManagerModel(ContainerID, Player &, BlockPos const&); //TODO: incomplete function definition
-    void recalculateOptions();
-    bool isTableValid(float);
-    void getLapisCount();
-    void getNewEnchantmentSeed();
-    void clearOptions();
-    void _getEnchantmentCost(ItemInstance const&);
-    void getShouldBookBeOpen()const;
-    void setShouldBookBeOpen(bool);
-    void getEnchantmentCosts()const;
-    void getEnchants()const;
-    std::string getEnchantNames()const;
+    ~EnchantingContainerManagerModel(); // _ZN31EnchantingContainerManagerModelD2Ev
+    virtual void getItems(); // _ZN31EnchantingContainerManagerModel8getItemsEv
+    virtual void setSlot(int, ContainerItemStack const&, bool); // _ZN31EnchantingContainerManagerModel7setSlotEiRK18ContainerItemStackb
+    virtual void getSlot(int); // _ZN31EnchantingContainerManagerModel7getSlotEi
+    virtual void setData(int, int); // _ZN31EnchantingContainerManagerModel7setDataEii
+    virtual void broadcastChanges(); // _ZN31EnchantingContainerManagerModel16broadcastChangesEv
+    virtual void init(); // _ZN31EnchantingContainerManagerModel4initEv
+//  EnchantingContainerManagerModel(ContainerID, Player &, BlockPos const&); //TODO: incomplete function definition // _ZN31EnchantingContainerManagerModelC2E11ContainerIDR6PlayerRK8BlockPos
+    void recalculateOptions(); // _ZN31EnchantingContainerManagerModel18recalculateOptionsEv
+    bool isTableValid(float); // _ZN31EnchantingContainerManagerModel12isTableValidEf
+    void getLapisCount(); // _ZN31EnchantingContainerManagerModel13getLapisCountEv
+    void getNewEnchantmentSeed(); // _ZN31EnchantingContainerManagerModel21getNewEnchantmentSeedEv
+    void clearOptions(); // _ZN31EnchantingContainerManagerModel12clearOptionsEv
+    void _getEnchantmentCost(ItemInstance const&); // _ZN31EnchantingContainerManagerModel19_getEnchantmentCostERK12ItemInstance
+    void getShouldBookBeOpen()const; // _ZNK31EnchantingContainerManagerModel19getShouldBookBeOpenEv
+    void setShouldBookBeOpen(bool); // _ZN31EnchantingContainerManagerModel19setShouldBookBeOpenEb
+    void getEnchantmentCosts()const; // _ZNK31EnchantingContainerManagerModel19getEnchantmentCostsEv
+    void getEnchants()const; // _ZNK31EnchantingContainerManagerModel11getEnchantsEv
+    std::string getEnchantNames()const; // _ZNK31EnchantingContainerManagerModel15getEnchantNamesB5cxx11Ev
 };

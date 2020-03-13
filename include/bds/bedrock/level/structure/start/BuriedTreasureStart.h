@@ -1,16 +1,13 @@
 #pragma once
 
-#include "../../../../unmapped/Dimension.h"
-#include "./StructureStart.h"
-#include "../../../util/Random.h"
+#include "StructureStart.h"
 
 
 class BuriedTreasureStart : StructureStart {
 
 public:
-    virtual ~BuriedTreasureStart();
-    virtual void getType()const;
-
-    BuriedTreasureStart();
-    BuriedTreasureStart(Dimension &, Random &, int, int);
+    ~BuriedTreasureStart(); // _ZN19BuriedTreasureStartD2Ev
+    virtual void getType()const; // _ZNK19BuriedTreasureStart7getTypeEv
+    BuriedTreasureStart(); // _ZN19BuriedTreasureStartC2Ev
+    BuriedTreasureStart(Dimension &, Random &, int, int); // _ZN19BuriedTreasureStartC2ER9DimensionR6Randomii
 };

@@ -1,12 +1,10 @@
 #pragma once
 
-#include "./AllWorkerConfigurations.h"
 
 
 class AllWorkerConfigurations {
 
 public:
-
-    AllWorkerConfigurations();
-    AllWorkerConfigurations(AllWorkerConfigurations const&);
+    AllWorkerConfigurations(); // _ZN23AllWorkerConfigurationsC2Ev
+    AllWorkerConfigurations(AllWorkerConfigurations const&); // _ZN23AllWorkerConfigurationsC2ERKS_
 };

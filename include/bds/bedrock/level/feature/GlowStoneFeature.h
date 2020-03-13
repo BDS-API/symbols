@@ -1,16 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
+#include "Feature.h"
 
 
 class GlowStoneFeature : Feature {
 
 public:
-    virtual ~GlowStoneFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    GlowStoneFeature();
+    ~GlowStoneFeature(); // _ZN16GlowStoneFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK16GlowStoneFeature5placeER11BlockSourceRK8BlockPosR6Random
+    GlowStoneFeature(); // _ZN16GlowStoneFeatureC2Ev
 };

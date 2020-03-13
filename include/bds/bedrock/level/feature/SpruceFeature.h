@@ -1,17 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../actor/Actor.h"
-#include "../../util/BlockPos.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./TreeFeature.h"
+#include "TreeFeature.h"
 
 
 class SpruceFeature : TreeFeature {
 
 public:
-    virtual ~SpruceFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    SpruceFeature(Actor *);
+    ~SpruceFeature(); // _ZN13SpruceFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK13SpruceFeature5placeER11BlockSourceRK8BlockPosR6Random
+    SpruceFeature(Actor *); // _ZN13SpruceFeatureC2EP5Actor
 };

@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./ScriptCommand.h"
 #include <string>
 
 
 class ScriptCommand {
 
 public:
-
-    ScriptCommand(ScriptCommand &&);
-    ~ScriptCommand();
-    ScriptCommand(std::string const&, unsigned int);
+    ScriptCommand(ScriptCommand &&); // _ZN13ScriptCommandC2EOS_
+    ~ScriptCommand(); // _ZN13ScriptCommandD2Ev
+    ScriptCommand(std::string const&, unsigned int); // _ZN13ScriptCommandC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj
 };

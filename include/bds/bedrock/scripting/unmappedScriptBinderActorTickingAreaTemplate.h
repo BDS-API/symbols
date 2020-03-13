@@ -1,20 +1,16 @@
 #pragma once
 
-#include "./ScriptBinderTemplate.h"
-#include "../../level/tickingarea/ITickingArea.h"
-#include "../../actor/unmapped/ActorUniqueID.h"
-#include "./ScriptObjectBinder.h"
 #include <string>
+#include "ScriptBinderTemplate.h"
 
 
 class ScriptBinderActorTickingAreaTemplate : ScriptBinderTemplate {
 
 public:
-    virtual ~ScriptBinderActorTickingAreaTemplate();
-    virtual std::string getTemplateIdentifier()const;
-    virtual void applyTemplate(ScriptObjectBinder &)const;
-
-    void build(ITickingArea const&);
-    void build(ActorUniqueID const&);
-    ScriptBinderActorTickingAreaTemplate();
+    ~ScriptBinderActorTickingAreaTemplate(); // _ZN36ScriptBinderActorTickingAreaTemplateD2Ev
+    virtual std::string getTemplateIdentifier()const; // _ZNK36ScriptBinderActorTickingAreaTemplate21getTemplateIdentifierB5cxx11Ev
+    virtual void applyTemplate(ScriptObjectBinder &)const; // _ZNK36ScriptBinderActorTickingAreaTemplate13applyTemplateER18ScriptObjectBinder
+    void build(ITickingArea const&); // _ZN36ScriptBinderActorTickingAreaTemplate5buildERK12ITickingArea
+    void build(ActorUniqueID const&); // _ZN36ScriptBinderActorTickingAreaTemplate5buildERK13ActorUniqueID
+    ScriptBinderActorTickingAreaTemplate(); // _ZN36ScriptBinderActorTickingAreaTemplateC2Ev
 };

@@ -1,14 +1,13 @@
 #pragma once
 
-#include "./Amplifier.h"
+#include "Amplifier.h"
 
 
 class ShiftedDurationAmplifier : Amplifier {
 
 public:
-    virtual ~ShiftedDurationAmplifier();
-    virtual void shouldBuff(int, int)const;
-    virtual void getTickInterval(int)const;
-
-    ShiftedDurationAmplifier(int);
+    ~ShiftedDurationAmplifier(); // _ZN24ShiftedDurationAmplifierD2Ev
+    virtual void shouldBuff(int, int)const; // _ZNK24ShiftedDurationAmplifier10shouldBuffEii
+    virtual void getTickInterval(int)const; // _ZNK24ShiftedDurationAmplifier15getTickIntervalEi
+    ShiftedDurationAmplifier(int); // _ZN24ShiftedDurationAmplifierC2Ei
 };

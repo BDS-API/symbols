@@ -1,20 +1,15 @@
 #pragma once
 
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "./Animal.h"
-#include "../util/BlockPos.h"
-#include "damagesource/ActorDamageSource.h"
-#include "unmapped/ActorDefinitionGroup.h"
+#include "Animal.h"
 
 
 class Turtle : Animal {
 
 public:
-    virtual ~Turtle();
-    virtual void normalTick();
-    virtual void getShadowRadius()const;
-    virtual void die(ActorDamageSource const&);
-    virtual void _getWalkTargetValue(BlockPos const&);
-
-    Turtle(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
+    ~Turtle(); // _ZN6TurtleD2Ev
+    virtual void normalTick(); // _ZN6Turtle10normalTickEv
+    virtual void getShadowRadius()const; // _ZNK6Turtle15getShadowRadiusEv
+    virtual void die(ActorDamageSource const&); // _ZN6Turtle3dieERK17ActorDamageSource
+    virtual void _getWalkTargetValue(BlockPos const&); // _ZN6Turtle19_getWalkTargetValueERK8BlockPos
+    Turtle(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN6TurtleC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
 };

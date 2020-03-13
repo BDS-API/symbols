@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./ITickingSystem.h"
-#include "../../../unmapped/EntityRegistry.h"
+#include "ITickingSystem.h"
 
 
 class MountTamingSystem : ITickingSystem {
 
 public:
-    virtual ~MountTamingSystem();
-    virtual void tick(EntityRegistry &);
-
-    MountTamingSystem();
+    ~MountTamingSystem(); // _ZN17MountTamingSystemD2Ev
+    virtual void tick(EntityRegistry &); // _ZN17MountTamingSystem4tickER14EntityRegistry
+    MountTamingSystem(); // _ZN17MountTamingSystemC2Ev
 };

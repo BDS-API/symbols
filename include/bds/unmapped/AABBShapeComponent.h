@@ -1,16 +1,13 @@
 #pragma once
 
-#include "../bedrock/util/Vec2.h"
-#include "../bedrock/util/AABB.h"
 
 
 class AABBShapeComponent {
 
 public:
-
-    void getAABB()const;
-    void getAABBDim()const;
-    AABBShapeComponent();
-    void setAABB(AABB const&);
-    void setAABBDim(Vec2 const&);
+    void getAABB()const; // _ZNK18AABBShapeComponent7getAABBEv
+    void getAABBDim()const; // _ZNK18AABBShapeComponent10getAABBDimEv
+    AABBShapeComponent(); // _ZN18AABBShapeComponentC2Ev
+    void setAABB(AABB const&); // _ZN18AABBShapeComponent7setAABBERK4AABB
+    void setAABBDim(Vec2 const&); // _ZN18AABBShapeComponent10setAABBDimERK4Vec2
 };

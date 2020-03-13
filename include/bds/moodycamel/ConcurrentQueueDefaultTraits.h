@@ -4,12 +4,9 @@
 
 namespace moodycamel {
 
-class ConcurrentQueueDefaultTraits {
+    namespace ConcurrentQueueDefaultTraits {
 
-public:
-
-    void malloc(unsigned long);
-//  void free(void *); //TODO: incomplete function definition
-};
-
+        void malloc(unsigned long); // _ZN10moodycamel28ConcurrentQueueDefaultTraits6mallocEm
+        void free(void *); // _ZN10moodycamel28ConcurrentQueueDefaultTraits4freeEPv
+    };
 }

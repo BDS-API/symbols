@@ -1,12 +1,8 @@
 #pragma once
 
-#include "../core/Path.h"
-#include "../bedrock/level/LevelData.h"
 
 
-class ExternalFileLevelStorageMetadata {
+namespace ExternalFileLevelStorageMetadata {
 
-public:
-
-    void saveLevelMetadata(Core::Path const&, LevelData const&);
+    void saveLevelMetadata(Core::Path const&, LevelData const&); // _ZN32ExternalFileLevelStorageMetadata17saveLevelMetadataERKN4Core4PathERK9LevelData
 };

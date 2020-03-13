@@ -1,16 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
+#include "Feature.h"
 
 
 class SeaPickleFeature : Feature {
 
 public:
-    virtual ~SeaPickleFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    SeaPickleFeature();
+    ~SeaPickleFeature(); // _ZN16SeaPickleFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK16SeaPickleFeature5placeER11BlockSourceRK8BlockPosR6Random
+    SeaPickleFeature(); // _ZN16SeaPickleFeatureC2Ev
 };

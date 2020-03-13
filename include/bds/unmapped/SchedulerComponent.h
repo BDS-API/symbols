@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./SchedulerComponent.h"
 
 
 class SchedulerComponent {
 
 public:
-
-    SchedulerComponent(SchedulerComponent &&);
-    void setCurrentEventIndex(int);
-    void getCurrentEventIndex()const;
+    SchedulerComponent(SchedulerComponent &&); // _ZN18SchedulerComponentC2EOS_
+    void setCurrentEventIndex(int); // _ZN18SchedulerComponent20setCurrentEventIndexEi
+    void getCurrentEventIndex()const; // _ZNK18SchedulerComponent20getCurrentEventIndexEv
 };

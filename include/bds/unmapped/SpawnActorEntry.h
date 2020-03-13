@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./SpawnActorEntry.h"
 
 
 class SpawnActorEntry {
 
 public:
-
-    ~SpawnActorEntry();
-    SpawnActorEntry(SpawnActorEntry &&);
-    SpawnActorEntry(SpawnActorEntry const&);
+    ~SpawnActorEntry(); // _ZN15SpawnActorEntryD2Ev
+    SpawnActorEntry(SpawnActorEntry &&); // _ZN15SpawnActorEntryC2EOS_
+    SpawnActorEntry(SpawnActorEntry const&); // _ZN15SpawnActorEntryC2ERKS_
 };

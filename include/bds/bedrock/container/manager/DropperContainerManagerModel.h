@@ -1,15 +1,12 @@
 #pragma once
 
-#include "./LevelContainerManagerModel.h"
-#include "../../util/BlockPos.h"
-#include "../../actor/Player.h"
+#include "LevelContainerManagerModel.h"
 
 
 class DropperContainerManagerModel : LevelContainerManagerModel {
 
 public:
-    virtual ~DropperContainerManagerModel();
-    virtual void init();
-
-//  DropperContainerManagerModel(ContainerID, Player &, BlockPos const&); //TODO: incomplete function definition
+    ~DropperContainerManagerModel(); // _ZN28DropperContainerManagerModelD2Ev
+    virtual void init(); // _ZN28DropperContainerManagerModel4initEv
+//  DropperContainerManagerModel(ContainerID, Player &, BlockPos const&); //TODO: incomplete function definition // _ZN28DropperContainerManagerModelC2E11ContainerIDR6PlayerRK8BlockPos
 };

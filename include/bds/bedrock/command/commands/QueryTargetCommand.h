@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class QueryTargetCommand : Command {
 
 public:
-    virtual ~QueryTargetCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    QueryTargetCommand();
+    ~QueryTargetCommand(); // _ZN18QueryTargetCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK18QueryTargetCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN18QueryTargetCommand5setupER15CommandRegistry
+    QueryTargetCommand(); // _ZN18QueryTargetCommandC2Ev
 };

@@ -1,16 +1,13 @@
 #pragma once
 
-#include "./ScoreboardId.h"
-#include "./PlayerScore.h"
 
 
 class PlayerScore {
 
 public:
-
-    PlayerScore(ScoreboardId const&, int);
-    void getId()const;
-    void getScore()const;
-    PlayerScore(PlayerScore &&);
-    PlayerScore(PlayerScore const&);
+    PlayerScore(ScoreboardId const&, int); // _ZN11PlayerScoreC2ERK12ScoreboardIdi
+    void getId()const; // _ZNK11PlayerScore5getIdEv
+    void getScore()const; // _ZNK11PlayerScore8getScoreEv
+    PlayerScore(PlayerScore &&); // _ZN11PlayerScoreC2EOS_
+    PlayerScore(PlayerScore const&); // _ZN11PlayerScoreC2ERKS_
 };

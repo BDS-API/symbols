@@ -1,25 +1,19 @@
 #pragma once
 
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "../../unmapped/VariantParameterList.h"
-#include "../../unmapped/DataLoadHelper.h"
-#include "unmapped/ActorDefinitionGroup.h"
-#include "../nbt/CompoundTag.h"
-#include "./Minecart.h"
+#include "Minecart.h"
 
 
 class MinecartCommandBlock : Minecart {
 
 public:
-//  virtual void initializeComponents(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition
-    virtual ~MinecartCommandBlock();
-    virtual bool canShowNameTag()const;
-    virtual void readAdditionalSaveData(CompoundTag const&, DataLoadHelper &);
-    virtual void addAdditionalSaveData(CompoundTag &);
-    virtual void getType();
-    virtual void getDefaultDisplayBlock()const;
-    virtual void applyNaturalSlowdown();
-    virtual void lazyInitDisplayBlock();
-
-    MinecartCommandBlock(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
+//  virtual void initializeComponents(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN20MinecartCommandBlock20initializeComponentsEN5Actor20InitializationMethodERK20VariantParameterList
+    ~MinecartCommandBlock(); // _ZN20MinecartCommandBlockD2Ev
+    virtual bool canShowNameTag()const; // _ZNK20MinecartCommandBlock14canShowNameTagEv
+    virtual void readAdditionalSaveData(CompoundTag const&, DataLoadHelper &); // _ZN20MinecartCommandBlock22readAdditionalSaveDataERK11CompoundTagR14DataLoadHelper
+    virtual void addAdditionalSaveData(CompoundTag &); // _ZN20MinecartCommandBlock21addAdditionalSaveDataER11CompoundTag
+    virtual void getType(); // _ZN20MinecartCommandBlock7getTypeEv
+    virtual void getDefaultDisplayBlock()const; // _ZNK20MinecartCommandBlock22getDefaultDisplayBlockEv
+    virtual void applyNaturalSlowdown(); // _ZN20MinecartCommandBlock20applyNaturalSlowdownEv
+    virtual void lazyInitDisplayBlock(); // _ZN20MinecartCommandBlock20lazyInitDisplayBlockEv
+    MinecartCommandBlock(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN20MinecartCommandBlockC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
 };

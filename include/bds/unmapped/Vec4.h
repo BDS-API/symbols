@@ -2,9 +2,7 @@
 
 
 
-class Vec4 {
+namespace Vec4 {
 
-public:
-
-    void operator[](int);
+    void operator[](int); // _ZN4Vec4ixEi
 };

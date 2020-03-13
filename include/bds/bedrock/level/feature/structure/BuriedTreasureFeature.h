@@ -1,20 +1,14 @@
 #pragma once
 
-#include "./StructureFeature.h"
-#include "../../../util/BlockPos.h"
-#include "../../../../unmapped/Dimension.h"
-#include "../../../util/Random.h"
-#include "../../../../unmapped/BiomeSource.h"
-#include "../../../util/ChunkPos.h"
+#include "StructureFeature.h"
 
 
 class BuriedTreasureFeature : StructureFeature {
 
 public:
-    virtual ~BuriedTreasureFeature();
-    virtual void getNearestGeneratedFeature(Dimension &, BiomeSource &, BlockPos const&, BlockPos &);
-    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int);
-    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&);
-
-    BuriedTreasureFeature(unsigned int);
+    ~BuriedTreasureFeature(); // _ZN21BuriedTreasureFeatureD2Ev
+    virtual void getNearestGeneratedFeature(Dimension &, BiomeSource &, BlockPos const&, BlockPos &); // _ZN21BuriedTreasureFeature26getNearestGeneratedFeatureER9DimensionR11BiomeSourceRK8BlockPosRS4_
+    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int); // _ZN21BuriedTreasureFeature14isFeatureChunkERK11BiomeSourceR6RandomRK8ChunkPosj
+    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&); // _ZN21BuriedTreasureFeature20createStructureStartER9DimensionR11BiomeSourceR6RandomRK8ChunkPos
+    BuriedTreasureFeature(unsigned int); // _ZN21BuriedTreasureFeatureC2Ej
 };

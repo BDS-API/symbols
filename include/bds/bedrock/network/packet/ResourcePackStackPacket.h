@@ -1,29 +1,23 @@
 #pragma once
 
-#include "../../../unmapped/PackInstanceId.h"
-#include "../../../unmapped/BaseGameVersion.h"
-#include "../../io/BinaryStream.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include <memory>
-#include "./Packet.h"
-#include <vector>
 #include <string>
+#include "Packet.h"
+#include <vector>
 
 
 class ResourcePackStackPacket : Packet {
 
 public:
-    virtual ~ResourcePackStackPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    ResourcePackStackPacket();
-    ResourcePackStackPacket(std::vector<PackInstanceId, std::allocator<PackInstanceId>>, std::vector<PackInstanceId, std::allocator<PackInstanceId>>, BaseGameVersion const&, bool, bool);
-    void getAddOnIdsAndVersions()const;
-    void getTexturePackIdsAndVersions()const;
-    bool isTexturePackRequired()const;
-    bool isExperimental()const;
-    void getBaseGameVersion()const;
+    ~ResourcePackStackPacket(); // _ZN23ResourcePackStackPacketD2Ev
+    virtual void getId()const; // _ZNK23ResourcePackStackPacket5getIdEv
+    virtual std::string getName()const; // _ZNK23ResourcePackStackPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK23ResourcePackStackPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN23ResourcePackStackPacket4readER20ReadOnlyBinaryStream
+    ResourcePackStackPacket(); // _ZN23ResourcePackStackPacketC2Ev
+    ResourcePackStackPacket(std::vector<PackInstanceId>, std::vector<PackInstanceId>, BaseGameVersion const&, bool, bool); // _ZN23ResourcePackStackPacketC2ESt6vectorI14PackInstanceIdSaIS1_EES3_RK15BaseGameVersionbb
+    void getAddOnIdsAndVersions()const; // _ZNK23ResourcePackStackPacket22getAddOnIdsAndVersionsEv
+    void getTexturePackIdsAndVersions()const; // _ZNK23ResourcePackStackPacket28getTexturePackIdsAndVersionsEv
+    bool isTexturePackRequired()const; // _ZNK23ResourcePackStackPacket21isTexturePackRequiredEv
+    bool isExperimental()const; // _ZNK23ResourcePackStackPacket14isExperimentalEv
+    void getBaseGameVersion()const; // _ZNK23ResourcePackStackPacket18getBaseGameVersionEv
 };

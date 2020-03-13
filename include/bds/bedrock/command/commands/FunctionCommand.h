@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class FunctionCommand : Command {
 
 public:
-    virtual ~FunctionCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    FunctionCommand();
-    void setup(CommandRegistry &);
+    ~FunctionCommand(); // _ZN15FunctionCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK15FunctionCommand7executeERK13CommandOriginR13CommandOutput
+    FunctionCommand(); // _ZN15FunctionCommandC2Ev
+    void setup(CommandRegistry &); // _ZN15FunctionCommand5setupER15CommandRegistry
 };

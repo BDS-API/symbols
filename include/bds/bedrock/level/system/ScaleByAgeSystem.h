@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./ITickingSystem.h"
-#include "../../../unmapped/EntityRegistry.h"
+#include "ITickingSystem.h"
 
 
 class ScaleByAgeSystem : ITickingSystem {
 
 public:
-    virtual ~ScaleByAgeSystem();
-    virtual void tick(EntityRegistry &);
-
-    ScaleByAgeSystem();
+    ~ScaleByAgeSystem(); // _ZN16ScaleByAgeSystemD2Ev
+    virtual void tick(EntityRegistry &); // _ZN16ScaleByAgeSystem4tickER14EntityRegistry
+    ScaleByAgeSystem(); // _ZN16ScaleByAgeSystemC2Ev
 };

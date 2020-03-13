@@ -1,21 +1,16 @@
 #pragma once
 
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "./Mob.h"
-#include "../util/BlockPos.h"
-#include "damagesource/ActorDamageSource.h"
-#include "unmapped/ActorDefinitionGroup.h"
+#include "Mob.h"
 
 
 class Animal : Mob {
 
 public:
-    virtual ~Animal();
-    virtual bool isInvulnerableTo(ActorDamageSource const&)const;
-    virtual void _hurt(ActorDamageSource const&, int, bool, bool);
-    virtual void _onSizeUpdated();
-    virtual void getAmbientSoundPostponeTicks();
-    virtual void _getWalkTargetValue(BlockPos const&);
-
-    Animal(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
+    ~Animal(); // _ZN6AnimalD2Ev
+    virtual bool isInvulnerableTo(ActorDamageSource const&)const; // _ZNK6Animal16isInvulnerableToERK17ActorDamageSource
+    virtual void _hurt(ActorDamageSource const&, int, bool, bool); // _ZN6Animal5_hurtERK17ActorDamageSourceibb
+    virtual void _onSizeUpdated(); // _ZN6Animal14_onSizeUpdatedEv
+    virtual void getAmbientSoundPostponeTicks(); // _ZN6Animal28getAmbientSoundPostponeTicksEv
+    virtual void _getWalkTargetValue(BlockPos const&); // _ZN6Animal19_getWalkTargetValueERK8BlockPos
+    Animal(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN6AnimalC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
 };

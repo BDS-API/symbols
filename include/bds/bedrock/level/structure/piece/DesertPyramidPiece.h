@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../../../../unmapped/BoundingBox.h"
-#include "../../../block/unmapped/BlockSource.h"
-#include "../../../util/Random.h"
-#include "./ScatteredFeaturePiece.h"
+#include "ScatteredFeaturePiece.h"
 
 
 class DesertPyramidPiece : ScatteredFeaturePiece {
 
 public:
-    virtual ~DesertPyramidPiece();
-    virtual void getType()const;
-    virtual void postProcess(BlockSource *, Random &, BoundingBox const&);
-
-    DesertPyramidPiece(int, int);
+    ~DesertPyramidPiece(); // _ZN18DesertPyramidPieceD2Ev
+    virtual void getType()const; // _ZNK18DesertPyramidPiece7getTypeEv
+    virtual void postProcess(BlockSource *, Random &, BoundingBox const&); // _ZN18DesertPyramidPiece11postProcessEP11BlockSourceR6RandomRK11BoundingBox
+    DesertPyramidPiece(int, int); // _ZN18DesertPyramidPieceC2Eii
 };

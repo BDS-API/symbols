@@ -1,30 +1,19 @@
 #pragma once
 
-#include "./TransferBuilder.h"
-#include "./ActiveTransfersManager.h"
-#include "../bedrock/io/BinaryDataOutput.h"
-#include "../bedrock/level/chunksource/ChunkSource.h"
-#include "../bedrock/util/ChunkPos.h"
-#include "../bedrock/level/Level.h"
-#include "../bedrock/network/packet/LevelChunkPacket.h"
-#include "./NetworkIdentifier.h"
 #include <functional>
-#include "../bedrock/util/BlockPos.h"
-#include "./NetworkHandler.h"
 
 
 class NetworkChunkPublisher {
 
 public:
-    virtual ~NetworkChunkPublisher();
-
-    NetworkChunkPublisher(Level &, NetworkHandler &, ClientBlobCache::Server::ActiveTransfersManager &, NetworkIdentifier const&, unsigned char);
-    void prepareRegion(ChunkSource &, ChunkPos &);
-    void destroyRegion();
-    void clearRegion();
-    void moveRegion(BlockPos const&, unsigned int, float);
-    void getChunksSentSinceStart()const;
-    void sendQueuedChunks();
-    void _sendQueuedChunk(ChunkPos const&, ClientBlobCache::Server::TransferBuilder *);
-//  void _serializeAndCache(LevelChunkPacket &, ClientBlobCache::Server::TransferBuilder &, std::function<void (BinaryDataOutput &)> &&); //TODO: incomplete function definition
+    ~NetworkChunkPublisher(); // _ZN21NetworkChunkPublisherD2Ev
+    NetworkChunkPublisher(Level &, NetworkHandler &, ClientBlobCache::Server::ActiveTransfersManager &, NetworkIdentifier const&, unsigned char); // _ZN21NetworkChunkPublisherC2ER5LevelR14NetworkHandlerRN15ClientBlobCache6Server22ActiveTransfersManagerERK17NetworkIdentifierh
+    void prepareRegion(ChunkSource &, ChunkPos &); // _ZN21NetworkChunkPublisher13prepareRegionER11ChunkSourceR8ChunkPos
+    void destroyRegion(); // _ZN21NetworkChunkPublisher13destroyRegionEv
+    void clearRegion(); // _ZN21NetworkChunkPublisher11clearRegionEv
+    void moveRegion(BlockPos const&, unsigned int, float); // _ZN21NetworkChunkPublisher10moveRegionERK8BlockPosjf
+    void getChunksSentSinceStart()const; // _ZNK21NetworkChunkPublisher23getChunksSentSinceStartEv
+    void sendQueuedChunks(); // _ZN21NetworkChunkPublisher16sendQueuedChunksEv
+    void _sendQueuedChunk(ChunkPos const&, ClientBlobCache::Server::TransferBuilder *); // _ZN21NetworkChunkPublisher16_sendQueuedChunkERK8ChunkPosPN15ClientBlobCache6Server15TransferBuilderE
+    void _serializeAndCache(LevelChunkPacket &, ClientBlobCache::Server::TransferBuilder &, std::function<void (BinaryDataOutput &)> &&); // _ZN21NetworkChunkPublisher18_serializeAndCacheER16LevelChunkPacketRN15ClientBlobCache6Server15TransferBuilderEOSt8functionIFvR16BinaryDataOutputEE
 };

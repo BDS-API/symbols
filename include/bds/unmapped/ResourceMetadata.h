@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./ResourceMetadata.h"
 
 
 class ResourceMetadata {
 
 public:
-
-    ResourceMetadata();
-    ~ResourceMetadata();
-    ResourceMetadata(ResourceMetadata const&);
+    ResourceMetadata(); // _ZN16ResourceMetadataC2Ev
+    ~ResourceMetadata(); // _ZN16ResourceMetadataD2Ev
+    ResourceMetadata(ResourceMetadata const&); // _ZN16ResourceMetadataC2ERKS_
 };

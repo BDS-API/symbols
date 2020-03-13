@@ -1,21 +1,18 @@
 #pragma once
 
-#include "../../actor/unmapped/ActorRuntimeID.h"
-#include "../../io/BinaryStream.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "./Packet.h"
 #include <string>
+#include "Packet.h"
+#include "../../actor/unmapped/ActorRuntimeID.h"
 
 
 class MobEffectPacket : Packet {
 
 public:
-    virtual ~MobEffectPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    MobEffectPacket();
-//  MobEffectPacket(ActorRuntimeID, MobEffectPacket::Event, int, int, int, bool); //TODO: incomplete function definition
+    ~MobEffectPacket(); // _ZN15MobEffectPacketD2Ev
+    virtual void getId()const; // _ZNK15MobEffectPacket5getIdEv
+    virtual std::string getName()const; // _ZNK15MobEffectPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK15MobEffectPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN15MobEffectPacket4readER20ReadOnlyBinaryStream
+    MobEffectPacket(); // _ZN15MobEffectPacketC2Ev
+//  MobEffectPacket(ActorRuntimeID, MobEffectPacket::Event, int, int, int, bool); //TODO: incomplete function definition // _ZN15MobEffectPacketC2E14ActorRuntimeIDNS_5EventEiiib
 };

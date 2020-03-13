@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./DamageCondition.h"
 
 
 class DamageCondition {
 
 public:
-
-    ~DamageCondition();
-    DamageCondition();
-    DamageCondition(DamageCondition const&);
+    ~DamageCondition(); // _ZN15DamageConditionD2Ev
+    DamageCondition(); // _ZN15DamageConditionC2Ev
+    DamageCondition(DamageCondition const&); // _ZN15DamageConditionC2ERKS_
 };

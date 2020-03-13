@@ -1,30 +1,24 @@
 #pragma once
 
-#include "./ItemDescriptor.h"
-#include "../../actor/Actor.h"
-#include "../../actor/Player.h"
-#include "../ItemInstance.h"
-#include "../ItemStack.h"
 #include <string>
 
 
 class ItemEventCoordinator {
 
 public:
-
-    void onInventoryItemOpened(bool);
-    void onInventoryItemClosed();
-    void onItemTransferredFromContainer(ItemInstance const&, std::string const&);
-    void onItemTransferredToContainer(ItemInstance const&, std::string const&);
-    void onPreviewItemPopulatedInContainer(ItemInstance const&, std::string const&);
-    void onInventoryLayoutSelected(int, int);
-    void onInventoryItemCraftedAutomaticallyByRecipe(ItemStack const&);
-    void onRecipeSelected(ItemStack const&);
-    void onItemSmelted(Player &, ItemDescriptor const&, ItemDescriptor const&);
-    void onItemSpawnedActor(ItemInstance const&, Actor const&);
-    void onItemModifiedActor(ItemInstance const&, Actor const&);
-    void onItemSelectedSlot(int);
-    void onItemSelected(ItemInstance const&);
-    ~ItemEventCoordinator();
-    ItemEventCoordinator();
+    void onInventoryItemOpened(bool); // _ZN20ItemEventCoordinator21onInventoryItemOpenedEb
+    void onInventoryItemClosed(); // _ZN20ItemEventCoordinator21onInventoryItemClosedEv
+    void onItemTransferredFromContainer(ItemInstance const&, std::string const&); // _ZN20ItemEventCoordinator30onItemTransferredFromContainerERK12ItemInstanceRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    void onItemTransferredToContainer(ItemInstance const&, std::string const&); // _ZN20ItemEventCoordinator28onItemTransferredToContainerERK12ItemInstanceRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    void onPreviewItemPopulatedInContainer(ItemInstance const&, std::string const&); // _ZN20ItemEventCoordinator33onPreviewItemPopulatedInContainerERK12ItemInstanceRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    void onInventoryLayoutSelected(int, int); // _ZN20ItemEventCoordinator25onInventoryLayoutSelectedEii
+    void onInventoryItemCraftedAutomaticallyByRecipe(ItemStack const&); // _ZN20ItemEventCoordinator43onInventoryItemCraftedAutomaticallyByRecipeERK9ItemStack
+    void onRecipeSelected(ItemStack const&); // _ZN20ItemEventCoordinator16onRecipeSelectedERK9ItemStack
+    void onItemSmelted(Player &, ItemDescriptor const&, ItemDescriptor const&); // _ZN20ItemEventCoordinator13onItemSmeltedER6PlayerRK14ItemDescriptorS4_
+    void onItemSpawnedActor(ItemInstance const&, Actor const&); // _ZN20ItemEventCoordinator18onItemSpawnedActorERK12ItemInstanceRK5Actor
+    void onItemModifiedActor(ItemInstance const&, Actor const&); // _ZN20ItemEventCoordinator19onItemModifiedActorERK12ItemInstanceRK5Actor
+    void onItemSelectedSlot(int); // _ZN20ItemEventCoordinator18onItemSelectedSlotEi
+    void onItemSelected(ItemInstance const&); // _ZN20ItemEventCoordinator14onItemSelectedERK12ItemInstance
+    ~ItemEventCoordinator(); // _ZN20ItemEventCoordinatorD2Ev
+    ItemEventCoordinator(); // _ZN20ItemEventCoordinatorC2Ev
 };

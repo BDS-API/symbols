@@ -1,13 +1,12 @@
 #pragma once
 
-#include "./Item.h"
 #include <string>
+#include "Item.h"
 
 
 class AirBlockItem : Item {
 
 public:
-    virtual ~AirBlockItem();
-
-    AirBlockItem(std::string const&, int);
+    ~AirBlockItem(); // _ZN12AirBlockItemD2Ev
+    AirBlockItem(std::string const&, int); // _ZN12AirBlockItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
 };

@@ -1,21 +1,15 @@
 #pragma once
 
 #include <string>
-#include "../../unmapped/Material.h"
-#include "./ActorBlock.h"
-#include "../util/BlockPos.h"
-#include "../util/Vec3.h"
-#include "../actor/Actor.h"
-#include "../../unmapped/Block.h"
+#include "ActorBlock.h"
 
 
 class FaceDirectionalActorBlock : ActorBlock {
 
 public:
-    virtual ~FaceDirectionalActorBlock();
-    virtual void getPlacementBlock(Actor &, BlockPos const&, unsigned char, Vec3 const&, int)const;
-    virtual void getMappedFace(unsigned char, Block const&)const;
-    virtual void getFaceFlip(unsigned char, Block const&)const;
-
-    FaceDirectionalActorBlock(std::string const&, int, Material const&, bool, float);
+    ~FaceDirectionalActorBlock(); // _ZN25FaceDirectionalActorBlockD2Ev
+    virtual void getPlacementBlock(Actor &, BlockPos const&, unsigned char, Vec3 const&, int)const; // _ZNK25FaceDirectionalActorBlock17getPlacementBlockER5ActorRK8BlockPoshRK4Vec3i
+    virtual void getMappedFace(unsigned char, Block const&)const; // _ZNK25FaceDirectionalActorBlock13getMappedFaceEhRK5Block
+    virtual void getFaceFlip(unsigned char, Block const&)const; // _ZNK25FaceDirectionalActorBlock11getFaceFlipEhRK5Block
+    FaceDirectionalActorBlock(std::string const&, int, Material const&, bool, float); // _ZN25FaceDirectionalActorBlockC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiRK8Materialbf
 };

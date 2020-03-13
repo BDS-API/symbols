@@ -1,17 +1,13 @@
 #pragma once
 
-#include "./MessagingCommand.h"
-#include "../CommandRegistry.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
+#include "MessagingCommand.h"
 
 
 class SayCommand : MessagingCommand {
 
 public:
-    virtual ~SayCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    SayCommand();
+    ~SayCommand(); // _ZN10SayCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK10SayCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN10SayCommand5setupER15CommandRegistry
+    SayCommand(); // _ZN10SayCommandC2Ev
 };

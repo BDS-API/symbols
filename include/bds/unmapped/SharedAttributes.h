@@ -1,17 +1,10 @@
 #pragma once
 
-#include "../bedrock/actor/attribute/AttributeInstance.h"
-#include "./BaseAttributeMap.h"
-#include "../bedrock/nbt/ListTag.h"
-#include "../bedrock/actor/attribute/TemporalAttributeBuff.h"
-#include "../bedrock/nbt/CompoundTag.h"
-#include "../bedrock/actor/attribute/AttributeModifier.h"
 #include <string>
 
 
-class SharedAttributes {
+namespace SharedAttributes {
 
-public:
     static long HEALTH;
     static long FOLLOW_RANGE;
     static long KNOCKBACK_RESISTANCE;
@@ -22,16 +15,15 @@ public:
     static long LUCK;
     static long JUMP_STRENGTH;
 
-
-    void saveAttributes(BaseAttributeMap *);
-    void _saveAttribute(AttributeInstance const&);
-    void _saveAttributeModifier(AttributeModifier const&);
-    void _saveAttributeBuff(TemporalAttributeBuff const&);
-    void loadAttributes(BaseAttributeMap *, ListTag const*);
-    void checkIsDeprecated(std::string &);
-    void _legacyGetName(std::string const&);
-    void _legacyGetInstance(BaseAttributeMap *, std::string const&);
-    void _loadAttribute(AttributeInstance &, CompoundTag const*);
-    void loadAttributeModifier(CompoundTag const*);
-    void loadAttributeBuff(CompoundTag const*);
+    void saveAttributes(BaseAttributeMap *); // _ZN16SharedAttributes14saveAttributesEP16BaseAttributeMap
+    void _saveAttribute(AttributeInstance const&); // _ZN16SharedAttributes14_saveAttributeERK17AttributeInstance
+    void _saveAttributeModifier(AttributeModifier const&); // _ZN16SharedAttributes22_saveAttributeModifierERK17AttributeModifier
+    void _saveAttributeBuff(TemporalAttributeBuff const&); // _ZN16SharedAttributes18_saveAttributeBuffERK21TemporalAttributeBuff
+    void loadAttributes(BaseAttributeMap *, ListTag const*); // _ZN16SharedAttributes14loadAttributesEP16BaseAttributeMapPK7ListTag
+    void checkIsDeprecated(std::string &); // _ZN16SharedAttributes17checkIsDeprecatedERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    void _legacyGetName(std::string const&); // _ZN16SharedAttributes14_legacyGetNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    void _legacyGetInstance(BaseAttributeMap *, std::string const&); // _ZN16SharedAttributes18_legacyGetInstanceEP16BaseAttributeMapRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    void _loadAttribute(AttributeInstance &, CompoundTag const*); // _ZN16SharedAttributes14_loadAttributeER17AttributeInstancePK11CompoundTag
+    void loadAttributeModifier(CompoundTag const*); // _ZN16SharedAttributes21loadAttributeModifierEPK11CompoundTag
+    void loadAttributeBuff(CompoundTag const*); // _ZN16SharedAttributes17loadAttributeBuffEPK11CompoundTag
 };

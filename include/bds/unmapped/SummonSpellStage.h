@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./SummonSpellStage.h"
 
 
 class SummonSpellStage {
 
 public:
-
-    ~SummonSpellStage();
-    SummonSpellStage(SummonSpellStage const&);
-    SummonSpellStage();
+    ~SummonSpellStage(); // _ZN16SummonSpellStageD2Ev
+    SummonSpellStage(SummonSpellStage const&); // _ZN16SummonSpellStageC2ERKS_
+    SummonSpellStage(); // _ZN16SummonSpellStageC2Ev
 };

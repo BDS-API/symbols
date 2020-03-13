@@ -1,19 +1,7 @@
 #pragma once
 
-#include "../../util/Random.h"
 #include <string>
-#include "../../../unmapped/WellKnownTagID.h"
-#include "../../nbt/CompoundTag.h"
-#include "../../../unmapped/BiomeHeight.h"
 #include "../../../unmapped/HashString.h"
-#include "../../util/BlockPos.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "../../../json/Value.h"
-#include "../LevelChunk.h"
-#include "./Biome.h"
-#include "../../util/Color.h"
-#include "../../../unmapped/TagRegistry.h"
-#include "../../../unmapped/EntityRegistryOwned.h"
 
 
 class Biome {
@@ -24,66 +12,65 @@ public:
     static long DEFAULT_WATER_COLOR;
     static long DEFAULT_UNDERWATER_COLOR;
 
-    virtual ~Biome();
-
-    void getEntity()const;
-    void operator!=(Biome const&)const;
-    std::string getName()const;
-    void getMaxSnowLayers()const;
-    void writePacketData(CompoundTag &, TagRegistry &);
-    void initFromPacketData(CompoundTag const&, TagRegistry &);
-    void setTemperatureAndDownfall(float, float);
-    void addTag(Util::HashString, TagRegistry &);
-    void initEntity(EntityRegistryOwned &);
-    void initBiomeDefault(Json::Value &);
-    void initBiome(Json::Value &);
-    Biome(int);
-    void setDepthAndScale(BiomeHeight const&);
-    void setName(std::string const&);
-    void setColor(int);
-    void setColor(int, bool);
-    void setMapWaterColor(int);
-    void setOddColor(int);
-    void setWaterColors(Color const&, float, Color const&, float);
-    void setFogDist(float);
-    void setNoRain();
-    void setSnowCovered();
-    void setSnowAccumulation(float, float);
-//  void setOceanRuinConfig(OceanRuinConfiguration const&); //TODO: incomplete function definition
-    void getSnowAccumulationLayers()const;
-//  bool hasTag(IDType<TagIDType> const&, TagRegistry const&)const; //TODO: incomplete function definition
-    bool hasTag(WellKnownTagID const&)const;
-    void getSkyColor(float);
-    void getMobs()const;
-    void getMobsMutable();
-    void getFoliageColor(BlockPos const&)const;
-    void getDefaultBiomeTemperature()const;
-    void getDownfall()const;
-    void getBirchFoliageColor(BlockPos const&)const;
-    void getEvergreenFoliageColor(BlockPos const&)const;
-    void getMapFoliageColor(BlockPos const&)const;
-    void getMapBirchFoliageColor(BlockPos const&)const;
-    void getMapEvergreenFoliageColor(BlockPos const&)const;
-    void buildWaterColor(BlockPos const&, BlockPos const&, BlockSource &, Random &);
-    void getWaterColor(BlockSource &, BlockPos const&);
-    void getWaterNoise();
-    void getGrassColor(BlockPos const&)const;
-    void getMapGrassColor(BlockPos const&)const;
-    void getDebugMapColor()const;
-    void getDebugMapOddColor()const;
-    void getBiomeInfoNoise()const;
-    void getBiomeType()const;
-    void getTemperatureCategory()const;
-    void getDownfallInt();
-    bool isSnowCovered()const;
-    bool isHumid()const;
-    void getTemperature(BlockSource const&, BlockPos const&)const;
-    void getTemperatureWorldGen(BlockPos const&)const;
-    void buildCachedTemperatureNoise(LevelChunk &);
-    void getFreezingHeight(BlockSource const&, BlockPos const&)const;
-    bool canHaveSnowfall(BlockSource const&, BlockPos const&)const;
-    void setDebugMapOddColor(int);
-    void operator==(Biome const&)const;
-    void getMinSnowLayers()const;
-    bool canHaveSnowfall()const;
+    ~Biome(); // _ZN5BiomeD2Ev
+    void getEntity()const; // _ZNK5Biome9getEntityEv
+    void operator!=(Biome const&)const; // _ZNK5BiomeneERKS_
+    std::string getName()const; // _ZNK5Biome7getNameB5cxx11Ev
+    void getMaxSnowLayers()const; // _ZNK5Biome16getMaxSnowLayersEv
+    void writePacketData(CompoundTag &, TagRegistry &); // _ZN5Biome15writePacketDataER11CompoundTagR11TagRegistry
+    void initFromPacketData(CompoundTag const&, TagRegistry &); // _ZN5Biome18initFromPacketDataERK11CompoundTagR11TagRegistry
+    void setTemperatureAndDownfall(float, float); // _ZN5Biome25setTemperatureAndDownfallEff
+    void addTag(Util::HashString, TagRegistry &); // _ZN5Biome6addTagEN4Util10HashStringER11TagRegistry
+    void initEntity(EntityRegistryOwned &); // _ZN5Biome10initEntityER19EntityRegistryOwned
+    void initBiomeDefault(Json::Value &); // _ZN5Biome16initBiomeDefaultERN4Json5ValueE
+    void initBiome(Json::Value &); // _ZN5Biome9initBiomeERN4Json5ValueE
+    Biome(int); // _ZN5BiomeC2Ei
+    void setDepthAndScale(BiomeHeight const&); // _ZN5Biome16setDepthAndScaleERK11BiomeHeight
+    void setName(std::string const&); // _ZN5Biome7setNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    void setColor(int); // _ZN5Biome8setColorEi
+    void setColor(int, bool); // _ZN5Biome8setColorEib
+    void setMapWaterColor(int); // _ZN5Biome16setMapWaterColorEi
+    void setOddColor(int); // _ZN5Biome11setOddColorEi
+    void setWaterColors(Color const&, float, Color const&, float); // _ZN5Biome14setWaterColorsERK5ColorfS2_f
+    void setFogDist(float); // _ZN5Biome10setFogDistEf
+    void setNoRain(); // _ZN5Biome9setNoRainEv
+    void setSnowCovered(); // _ZN5Biome14setSnowCoveredEv
+    void setSnowAccumulation(float, float); // _ZN5Biome19setSnowAccumulationEff
+//  void setOceanRuinConfig(OceanRuinConfiguration const&); //TODO: incomplete function definition // _ZN5Biome18setOceanRuinConfigERK22OceanRuinConfiguration
+    void getSnowAccumulationLayers()const; // _ZNK5Biome25getSnowAccumulationLayersEv
+//  bool hasTag(IDType<TagIDType> const&, TagRegistry const&)const; //TODO: incomplete function definition // _ZNK5Biome6hasTagERK6IDTypeI9TagIDTypeERK11TagRegistry
+    bool hasTag(WellKnownTagID const&)const; // _ZNK5Biome6hasTagERK14WellKnownTagID
+    void getSkyColor(float); // _ZN5Biome11getSkyColorEf
+    void getMobs()const; // _ZNK5Biome7getMobsEv
+    void getMobsMutable(); // _ZN5Biome14getMobsMutableEv
+    void getFoliageColor(BlockPos const&)const; // _ZNK5Biome15getFoliageColorERK8BlockPos
+    void getDefaultBiomeTemperature()const; // _ZNK5Biome26getDefaultBiomeTemperatureEv
+    void getDownfall()const; // _ZNK5Biome11getDownfallEv
+    void getBirchFoliageColor(BlockPos const&)const; // _ZNK5Biome20getBirchFoliageColorERK8BlockPos
+    void getEvergreenFoliageColor(BlockPos const&)const; // _ZNK5Biome24getEvergreenFoliageColorERK8BlockPos
+    void getMapFoliageColor(BlockPos const&)const; // _ZNK5Biome18getMapFoliageColorERK8BlockPos
+    void getMapBirchFoliageColor(BlockPos const&)const; // _ZNK5Biome23getMapBirchFoliageColorERK8BlockPos
+    void getMapEvergreenFoliageColor(BlockPos const&)const; // _ZNK5Biome27getMapEvergreenFoliageColorERK8BlockPos
+    void buildWaterColor(BlockPos const&, BlockPos const&, BlockSource &, Random &); // _ZN5Biome15buildWaterColorERK8BlockPosS2_R11BlockSourceR6Random
+    void getWaterColor(BlockSource &, BlockPos const&); // _ZN5Biome13getWaterColorER11BlockSourceRK8BlockPos
+    void getWaterNoise(); // _ZN5Biome13getWaterNoiseEv
+    void getGrassColor(BlockPos const&)const; // _ZNK5Biome13getGrassColorERK8BlockPos
+    void getMapGrassColor(BlockPos const&)const; // _ZNK5Biome16getMapGrassColorERK8BlockPos
+    void getDebugMapColor()const; // _ZNK5Biome16getDebugMapColorEv
+    void getDebugMapOddColor()const; // _ZNK5Biome19getDebugMapOddColorEv
+    void getBiomeInfoNoise()const; // _ZNK5Biome17getBiomeInfoNoiseEv
+    void getBiomeType()const; // _ZNK5Biome12getBiomeTypeEv
+    void getTemperatureCategory()const; // _ZNK5Biome22getTemperatureCategoryEv
+    void getDownfallInt(); // _ZN5Biome14getDownfallIntEv
+    bool isSnowCovered()const; // _ZNK5Biome13isSnowCoveredEv
+    bool isHumid()const; // _ZNK5Biome7isHumidEv
+    void getTemperature(BlockSource const&, BlockPos const&)const; // _ZNK5Biome14getTemperatureERK11BlockSourceRK8BlockPos
+    void getTemperatureWorldGen(BlockPos const&)const; // _ZNK5Biome22getTemperatureWorldGenERK8BlockPos
+    void buildCachedTemperatureNoise(LevelChunk &); // _ZN5Biome27buildCachedTemperatureNoiseER10LevelChunk
+    void getFreezingHeight(BlockSource const&, BlockPos const&)const; // _ZNK5Biome17getFreezingHeightERK11BlockSourceRK8BlockPos
+    bool canHaveSnowfall(BlockSource const&, BlockPos const&)const; // _ZNK5Biome15canHaveSnowfallERK11BlockSourceRK8BlockPos
+    void setDebugMapOddColor(int); // _ZN5Biome19setDebugMapOddColorEi
+    void operator==(Biome const&)const; // _ZNK5BiomeeqERKS_
+    void getMinSnowLayers()const; // _ZNK5Biome16getMinSnowLayersEv
+    bool canHaveSnowfall()const; // _ZNK5Biome15canHaveSnowfallEv
 };

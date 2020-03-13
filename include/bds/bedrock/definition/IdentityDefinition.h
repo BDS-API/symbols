@@ -1,11 +1,7 @@
 #pragma once
 
-#include "./IdentityDefinition.h"
-#include "../../unmapped/PlayerScoreboardId.h"
-#include "../actor/unmapped/ActorUniqueID.h"
-#include "../../unmapped/ScoreboardId.h"
-#include <functional>
 #include <string>
+#include <functional>
 
 
 class IdentityDefinition {
@@ -13,26 +9,25 @@ class IdentityDefinition {
 public:
     static long Invalid;
 
-
-    void _init();
-    IdentityDefinition();
-    IdentityDefinition(ScoreboardId const&, PlayerScoreboardId const&);
-    IdentityDefinition(ScoreboardId const&, ActorUniqueID const&);
-    IdentityDefinition(ScoreboardId const&, std::string const&);
-    bool isHiddenFakePlayerNameString(std::string const&);
-    IdentityDefinition(IdentityDefinition const&);
-    IdentityDefinition(IdentityDefinition &&);
-    bool isValid()const;
-    void getScoreboardId()const;
-    void getPlayerId()const;
-    void getEntityId()const;
-    std::string getFakePlayerName()const;
-    void getName(std::function<std::string const& (ActorUniqueID)> const&)const;
-    bool isPlayerType()const;
-    void getIdentityType()const;
-    bool isEntityType()const;
-    bool isFakeType()const;
-    bool isHiddenFakePlayerType()const;
-    void convertFakeToReal(IdentityDefinition &, PlayerScoreboardId const&);
-    ~IdentityDefinition();
+    void _init(); // _ZN18IdentityDefinition5_initEv
+    IdentityDefinition(); // _ZN18IdentityDefinitionC2Ev
+    IdentityDefinition(ScoreboardId const&, PlayerScoreboardId const&); // _ZN18IdentityDefinitionC2ERK12ScoreboardIdRK18PlayerScoreboardId
+    IdentityDefinition(ScoreboardId const&, ActorUniqueID const&); // _ZN18IdentityDefinitionC2ERK12ScoreboardIdRK13ActorUniqueID
+    IdentityDefinition(ScoreboardId const&, std::string const&); // _ZN18IdentityDefinitionC2ERK12ScoreboardIdRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    bool isHiddenFakePlayerNameString(std::string const&); // _ZN18IdentityDefinition28isHiddenFakePlayerNameStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    IdentityDefinition(IdentityDefinition const&); // _ZN18IdentityDefinitionC2ERKS_
+    IdentityDefinition(IdentityDefinition &&); // _ZN18IdentityDefinitionC2EOS_
+    bool isValid()const; // _ZNK18IdentityDefinition7isValidEv
+    void getScoreboardId()const; // _ZNK18IdentityDefinition15getScoreboardIdEv
+    void getPlayerId()const; // _ZNK18IdentityDefinition11getPlayerIdEv
+    void getEntityId()const; // _ZNK18IdentityDefinition11getEntityIdEv
+    std::string getFakePlayerName()const; // _ZNK18IdentityDefinition17getFakePlayerNameB5cxx11Ev
+    void getName(std::function<std::string const& (ActorUniqueID)> const&)const; // _ZNK18IdentityDefinition7getNameERKSt8functionIFRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE13ActorUniqueIDEE
+    bool isPlayerType()const; // _ZNK18IdentityDefinition12isPlayerTypeEv
+    void getIdentityType()const; // _ZNK18IdentityDefinition15getIdentityTypeEv
+    bool isEntityType()const; // _ZNK18IdentityDefinition12isEntityTypeEv
+    bool isFakeType()const; // _ZNK18IdentityDefinition10isFakeTypeEv
+    bool isHiddenFakePlayerType()const; // _ZNK18IdentityDefinition22isHiddenFakePlayerTypeEv
+    void convertFakeToReal(IdentityDefinition &, PlayerScoreboardId const&); // _ZN18IdentityDefinition17convertFakeToRealERS_RK18PlayerScoreboardId
+    ~IdentityDefinition(); // _ZN18IdentityDefinitionD2Ev
 };

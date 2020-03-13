@@ -1,17 +1,14 @@
 #pragma once
 
-#include "./Storage.h"
 
 
 namespace LayerDetails {
 
-class Storage {
+    class Storage {
 
-public:
-
-    Storage(unsigned long);
-    ~Storage();
-    Storage(LayerDetails::Storage &&);
-};
-
+    public:
+        Storage(unsigned long); // _ZN12LayerDetails7StorageC2Em
+        ~Storage(); // _ZN12LayerDetails7StorageD2Ev
+        Storage(LayerDetails::Storage &&); // _ZN12LayerDetails7StorageC2EOS0_
+    };
 }

@@ -1,14 +1,12 @@
 #pragma once
 
 #include "../../level/LevelEventListener.h"
-#include "../../../unmapped/MinecraftServerScriptEngine.h"
 
 
 class ScriptServerLevelEventListener : LevelEventListener {
 
 public:
-    virtual ~ScriptServerLevelEventListener();
-    virtual void onLevelTick();
-
-    ScriptServerLevelEventListener(MinecraftServerScriptEngine &);
+    ~ScriptServerLevelEventListener(); // _ZN30ScriptServerLevelEventListenerD2Ev
+    virtual void onLevelTick(); // _ZN30ScriptServerLevelEventListener11onLevelTickEv
+    ScriptServerLevelEventListener(MinecraftServerScriptEngine &); // _ZN30ScriptServerLevelEventListenerC2ER27MinecraftServerScriptEngine
 };

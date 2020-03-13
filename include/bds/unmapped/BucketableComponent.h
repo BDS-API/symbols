@@ -1,17 +1,12 @@
 #pragma once
 
-#include "../bedrock/actor/unmapped/ActorInteraction.h"
-#include "../bedrock/actor/Actor.h"
-#include "./BucketableComponent.h"
-#include "../bedrock/actor/Player.h"
 
 
 class BucketableComponent {
 
 public:
-
-    BucketableComponent(BucketableComponent &&);
-    BucketableComponent();
-    void initFromDefinition(Actor &);
-    void getInteraction(Actor &, Player &, ActorInteraction &);
+    BucketableComponent(BucketableComponent &&); // _ZN19BucketableComponentC2EOS_
+    BucketableComponent(); // _ZN19BucketableComponentC2Ev
+    void initFromDefinition(Actor &); // _ZN19BucketableComponent18initFromDefinitionER5Actor
+    void getInteraction(Actor &, Player &, ActorInteraction &); // _ZN19BucketableComponent14getInteractionER5ActorR6PlayerR16ActorInteraction
 };

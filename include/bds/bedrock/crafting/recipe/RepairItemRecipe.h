@@ -1,10 +1,7 @@
 #pragma once
 
-#include "../../../mce/UUID.h"
-#include "./MultiRecipe.h"
-#include "../../container/CraftingContainer.h"
-#include "../../level/Level.h"
 #include <string>
+#include "MultiRecipe.h"
 
 
 class RepairItemRecipe : MultiRecipe {
@@ -12,14 +9,13 @@ class RepairItemRecipe : MultiRecipe {
 public:
     static long ID;
 
-    virtual ~RepairItemRecipe();
-    virtual void assemble(CraftingContainer &)const;
-    virtual void getCraftingSize()const;
-    virtual void getIngredient(int, int)const;
-    virtual void getResultItem()const;
-    virtual void matches(CraftingContainer &, Level &)const;
-    virtual void size()const;
-    virtual bool isExperimental()const;
-
-    RepairItemRecipe(std::string, mce::UUID const*);
+    ~RepairItemRecipe(); // _ZN16RepairItemRecipeD2Ev
+    virtual void assemble(CraftingContainer &)const; // _ZNK16RepairItemRecipe8assembleER17CraftingContainer
+    virtual void getCraftingSize()const; // _ZNK16RepairItemRecipe15getCraftingSizeEv
+    virtual void getIngredient(int, int)const; // _ZNK16RepairItemRecipe13getIngredientEii
+    virtual void getResultItem()const; // _ZNK16RepairItemRecipe13getResultItemEv
+    virtual void matches(CraftingContainer &, Level &)const; // _ZNK16RepairItemRecipe7matchesER17CraftingContainerR5Level
+    virtual void size()const; // _ZNK16RepairItemRecipe4sizeEv
+    virtual bool isExperimental()const; // _ZNK16RepairItemRecipe14isExperimentalEv
+    RepairItemRecipe(std::string, mce::UUID const*); // _ZN16RepairItemRecipeC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKN3mce4UUIDE
 };

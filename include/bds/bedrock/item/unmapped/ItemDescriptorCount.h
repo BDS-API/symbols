@@ -1,24 +1,18 @@
 #pragma once
 
-#include "../../../unmapped/Block.h"
-#include "./ItemDescriptor.h"
-#include "../Item.h"
-#include "./ItemDescriptorCount.h"
-#include "../../block/BlockLegacy.h"
 
 
 class ItemDescriptorCount {
 
 public:
-
-    ~ItemDescriptorCount();
-    ItemDescriptorCount(ItemDescriptorCount const&);
-    ItemDescriptorCount(ItemDescriptorCount &&);
-    ItemDescriptorCount();
-    ItemDescriptorCount(ItemDescriptor const&, unsigned short);
-    ItemDescriptorCount(Block const&, unsigned short);
-    ItemDescriptorCount(BlockLegacy const&, unsigned short);
-    ItemDescriptorCount(Item const&, int, unsigned short);
-    void getStackSize()const;
-    void setStackSize(short);
+    ~ItemDescriptorCount(); // _ZN19ItemDescriptorCountD2Ev
+    ItemDescriptorCount(ItemDescriptorCount const&); // _ZN19ItemDescriptorCountC2ERKS_
+    ItemDescriptorCount(ItemDescriptorCount &&); // _ZN19ItemDescriptorCountC2EOS_
+    ItemDescriptorCount(); // _ZN19ItemDescriptorCountC2Ev
+    ItemDescriptorCount(ItemDescriptor const&, unsigned short); // _ZN19ItemDescriptorCountC2ERK14ItemDescriptort
+    ItemDescriptorCount(Block const&, unsigned short); // _ZN19ItemDescriptorCountC2ERK5Blockt
+    ItemDescriptorCount(BlockLegacy const&, unsigned short); // _ZN19ItemDescriptorCountC2ERK11BlockLegacyt
+    ItemDescriptorCount(Item const&, int, unsigned short); // _ZN19ItemDescriptorCountC2ERK4Itemit
+    void getStackSize()const; // _ZNK19ItemDescriptorCount12getStackSizeEv
+    void setStackSize(short); // _ZN19ItemDescriptorCount12setStackSizeEs
 };

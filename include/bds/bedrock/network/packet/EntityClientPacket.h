@@ -1,19 +1,15 @@
 #pragma once
 
-#include "../../../unmapped/NetworkComponent.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "../../io/BinaryStream.h"
-#include "./Packet.h"
+#include "Packet.h"
 
 
 class EntityClientPacket : Packet {
 
 public:
-    virtual ~EntityClientPacket();
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    EntityClientPacket();
-    EntityClientPacket(NetworkComponent &);
-    void getEntityNetId()const;
+    ~EntityClientPacket(); // _ZN18EntityClientPacketD2Ev
+    virtual void write(BinaryStream &)const; // _ZNK18EntityClientPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN18EntityClientPacket4readER20ReadOnlyBinaryStream
+    EntityClientPacket(); // _ZN18EntityClientPacketC2Ev
+    EntityClientPacket(NetworkComponent &); // _ZN18EntityClientPacketC2ER16NetworkComponent
+    void getEntityNetId()const; // _ZNK18EntityClientPacket14getEntityNetIdEv
 };

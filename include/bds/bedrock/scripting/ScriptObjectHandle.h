@@ -4,11 +4,9 @@
 
 namespace ScriptApi {
 
-class ScriptObjectHandle {
+    class ScriptObjectHandle {
 
-public:
-
-    bool isEmpty()const;
-};
-
+    public:
+        bool isEmpty()const; // _ZNK9ScriptApi18ScriptObjectHandle7isEmptyEv
+    };
 }

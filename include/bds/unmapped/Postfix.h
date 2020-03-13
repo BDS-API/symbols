@@ -4,11 +4,9 @@
 
 namespace commands {
 
-class Postfix {
+    class Postfix {
 
-public:
-
-    Postfix(char const*);
-};
-
+    public:
+        Postfix(char const*); // _ZN8commands7PostfixC2EPKc
+    };
 }

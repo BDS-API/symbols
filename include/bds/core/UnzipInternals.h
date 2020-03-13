@@ -4,15 +4,13 @@
 
 namespace Core {
 
-class UnzipInternals {
+    class UnzipInternals {
 
-public:
-
-//  UnzipInternals(void *); //TODO: incomplete function definition
-    ~UnzipInternals();
-//  void set(void *); //TODO: incomplete function definition
-    void get();
-    void get()const;
-};
-
+    public:
+        UnzipInternals(void *); // _ZN4Core14UnzipInternalsC2EPv
+        ~UnzipInternals(); // _ZN4Core14UnzipInternalsD2Ev
+        void set(void *); // _ZN4Core14UnzipInternals3setEPv
+        void get(); // _ZN4Core14UnzipInternals3getEv
+        void get()const; // _ZNK4Core14UnzipInternals3getEv
+    };
 }

@@ -1,18 +1,14 @@
 #pragma once
 
-#include "./ProjectileComponent.h"
-#include "../bedrock/actor/Actor.h"
-#include "./MobEffectSubcomponent.h"
-#include "../json/Value.h"
+#include "MobEffectSubcomponent.h"
 
 
 class ArrowEffectSubcomponent : MobEffectSubcomponent {
 
 public:
-    virtual ~ArrowEffectSubcomponent();
-    virtual void writetoJSON(Json::Value &)const;
-    virtual void doOnHitEffect(Actor &, ProjectileComponent &);
-
-    void getSubcomponentName();
-    ArrowEffectSubcomponent();
+    ~ArrowEffectSubcomponent(); // _ZN23ArrowEffectSubcomponentD2Ev
+    virtual void writetoJSON(Json::Value &)const; // _ZNK23ArrowEffectSubcomponent11writetoJSONERN4Json5ValueE
+    virtual void doOnHitEffect(Actor &, ProjectileComponent &); // _ZN23ArrowEffectSubcomponent13doOnHitEffectER5ActorR19ProjectileComponent
+    void getSubcomponentName(); // _ZN23ArrowEffectSubcomponent19getSubcomponentNameEv
+    ArrowEffectSubcomponent(); // _ZN23ArrowEffectSubcomponentC2Ev
 };

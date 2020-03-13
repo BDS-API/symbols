@@ -1,11 +1,8 @@
 #pragma once
 
-#include "./LevelChunk.h"
 
 
-class LevelChunkFinalDeleter {
+namespace LevelChunkFinalDeleter {
 
-public:
-
-    void operator()(LevelChunk *);
+    void operator()(LevelChunk *); // _ZN22LevelChunkFinalDeleterclEP10LevelChunk
 };

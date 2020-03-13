@@ -1,14 +1,11 @@
 #pragma once
 
-#include "./AnimationValueCurveKeyFrame.h"
-#include "../json/Value.h"
 
 
 class AnimationValueCurveKeyFrame {
 
 public:
-
-    void toJson(Json::Value &)const;
-    AnimationValueCurveKeyFrame(float, float);
-    void operator<(AnimationValueCurveKeyFrame const&)const;
+    void toJson(Json::Value &)const; // _ZNK27AnimationValueCurveKeyFrame6toJsonERN4Json5ValueE
+    AnimationValueCurveKeyFrame(float, float); // _ZN27AnimationValueCurveKeyFrameC2Eff
+    void operator<(AnimationValueCurveKeyFrame const&)const; // _ZNK27AnimationValueCurveKeyFrameltERKS_
 };

@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./MobDescriptor.h"
 
 
 class MobDescriptor {
 
 public:
-
-    ~MobDescriptor();
-    MobDescriptor(MobDescriptor const&);
-    MobDescriptor();
+    ~MobDescriptor(); // _ZN13MobDescriptorD2Ev
+    MobDescriptor(MobDescriptor const&); // _ZN13MobDescriptorC2ERKS_
+    MobDescriptor(); // _ZN13MobDescriptorC2Ev
 };

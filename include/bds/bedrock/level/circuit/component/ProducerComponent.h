@@ -1,25 +1,20 @@
 #pragma once
 
-#include "../../../util/BlockPos.h"
-#include "../../../../unmapped/CircuitSceneGraph.h"
-#include "../../../../unmapped/CircuitSystem.h"
-#include "../../../../unmapped/CircuitTrackingInfo.h"
-#include "./BaseCircuitComponent.h"
+#include "BaseCircuitComponent.h"
 
 
 class ProducerComponent : BaseCircuitComponent {
 
 public:
-    virtual ~ProducerComponent();
-    virtual void setStrength(int);
-    virtual bool canStopPower();
-    virtual void setStopPower(bool);
-    virtual void getBaseType()const;
-    virtual void getInstanceType()const;
-    virtual void allowConnection(CircuitSceneGraph &, CircuitTrackingInfo const&, bool &);
-    virtual void evaluate(CircuitSystem &, BlockPos const&);
-
-    bool doesAllowAttachments();
-    ProducerComponent();
-    void allowAttachments(bool);
+    ~ProducerComponent(); // _ZN17ProducerComponentD2Ev
+    virtual void setStrength(int); // _ZN17ProducerComponent11setStrengthEi
+    virtual bool canStopPower(); // _ZN17ProducerComponent12canStopPowerEv
+    virtual void setStopPower(bool); // _ZN17ProducerComponent12setStopPowerEb
+    virtual void getBaseType()const; // _ZNK17ProducerComponent11getBaseTypeEv
+    virtual void getInstanceType()const; // _ZNK17ProducerComponent15getInstanceTypeEv
+    virtual void allowConnection(CircuitSceneGraph &, CircuitTrackingInfo const&, bool &); // _ZN17ProducerComponent15allowConnectionER17CircuitSceneGraphRK19CircuitTrackingInfoRb
+    virtual void evaluate(CircuitSystem &, BlockPos const&); // _ZN17ProducerComponent8evaluateER13CircuitSystemRK8BlockPos
+    bool doesAllowAttachments(); // _ZN17ProducerComponent20doesAllowAttachmentsEv
+    ProducerComponent(); // _ZN17ProducerComponentC2Ev
+    void allowAttachments(bool); // _ZN17ProducerComponent16allowAttachmentsEb
 };

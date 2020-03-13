@@ -1,15 +1,12 @@
 #pragma once
 
-#include "./MobSpawnerPermutation.h"
-#include "../bedrock/actor/unmapped/ActorDefinitionIdentifier.h"
 
 
 class MobSpawnerPermutation {
 
 public:
-
-    ~MobSpawnerPermutation();
-    MobSpawnerPermutation(MobSpawnerPermutation const&);
-    void getIdentifier()const;
-    MobSpawnerPermutation(int, ActorDefinitionIdentifier const&);
+    ~MobSpawnerPermutation(); // _ZN21MobSpawnerPermutationD2Ev
+    MobSpawnerPermutation(MobSpawnerPermutation const&); // _ZN21MobSpawnerPermutationC2ERKS_
+    void getIdentifier()const; // _ZNK21MobSpawnerPermutation13getIdentifierEv
+    MobSpawnerPermutation(int, ActorDefinitionIdentifier const&); // _ZN21MobSpawnerPermutationC2EiRK25ActorDefinitionIdentifier
 };

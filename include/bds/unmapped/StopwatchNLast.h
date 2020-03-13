@@ -1,15 +1,14 @@
 #pragma once
 
-#include "./Stopwatch.h"
 #include <string>
+#include "Stopwatch.h"
 
 
 class StopwatchNLast : Stopwatch {
 
 public:
-    virtual ~StopwatchNLast();
-    virtual void stop();
-    virtual void print(std::string const&);
-
-    StopwatchNLast(int);
+    ~StopwatchNLast(); // _ZN14StopwatchNLastD2Ev
+    virtual void stop(); // _ZN14StopwatchNLast4stopEv
+    virtual void print(std::string const&); // _ZN14StopwatchNLast5printERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    StopwatchNLast(int); // _ZN14StopwatchNLastC2Ei
 };

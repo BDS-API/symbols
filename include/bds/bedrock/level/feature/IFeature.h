@@ -5,7 +5,6 @@
 class IFeature {
 
 public:
-    virtual ~IFeature();
-
-    IFeature();
+    ~IFeature(); // _ZN8IFeatureD2Ev
+    IFeature(); // _ZN8IFeatureC2Ev
 };

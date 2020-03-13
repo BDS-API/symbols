@@ -1,24 +1,21 @@
 #pragma once
 
-#include "./SubChunkLightIndex.h"
-#include "../../../unmapped/Pos.h"
 
 
 class SubChunkLightIndex {
 
 public:
-
-    SubChunkLightIndex(SubChunkLightIndex const&);
-    SubChunkLightIndex(unsigned int);
-    SubChunkLightIndex(Pos const&);
-    void computeInternalIndexFromPos(Pos const&);
-    void nextX()const;
-    void prevX()const;
-    void nextY()const;
-    void prevY()const;
-    void nextZ()const;
-    void prevZ()const;
-    void computeSubChunkIndex()const;
-    void computeSubChunkCoordinates(unsigned int &, unsigned int &, unsigned int &)const;
-    void computeSubChunkIndexAndCoordinates(unsigned int &, unsigned int &, unsigned int &)const;
+    SubChunkLightIndex(SubChunkLightIndex const&); // _ZN18SubChunkLightIndexC2ERKS_
+    SubChunkLightIndex(unsigned int); // _ZN18SubChunkLightIndexC2Ej
+    SubChunkLightIndex(Pos const&); // _ZN18SubChunkLightIndexC2ERK3Pos
+    void computeInternalIndexFromPos(Pos const&); // _ZN18SubChunkLightIndex27computeInternalIndexFromPosERK3Pos
+    void nextX()const; // _ZNK18SubChunkLightIndex5nextXEv
+    void prevX()const; // _ZNK18SubChunkLightIndex5prevXEv
+    void nextY()const; // _ZNK18SubChunkLightIndex5nextYEv
+    void prevY()const; // _ZNK18SubChunkLightIndex5prevYEv
+    void nextZ()const; // _ZNK18SubChunkLightIndex5nextZEv
+    void prevZ()const; // _ZNK18SubChunkLightIndex5prevZEv
+    void computeSubChunkIndex()const; // _ZNK18SubChunkLightIndex20computeSubChunkIndexEv
+    void computeSubChunkCoordinates(unsigned int &, unsigned int &, unsigned int &)const; // _ZNK18SubChunkLightIndex26computeSubChunkCoordinatesERjS0_S0_
+    void computeSubChunkIndexAndCoordinates(unsigned int &, unsigned int &, unsigned int &)const; // _ZNK18SubChunkLightIndex34computeSubChunkIndexAndCoordinatesERjS0_S0_
 };

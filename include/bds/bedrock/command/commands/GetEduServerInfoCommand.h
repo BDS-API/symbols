@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class GetEduServerInfoCommand : Command {
 
 public:
-    virtual ~GetEduServerInfoCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    GetEduServerInfoCommand();
+    ~GetEduServerInfoCommand(); // _ZN23GetEduServerInfoCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK23GetEduServerInfoCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN23GetEduServerInfoCommand5setupER15CommandRegistry
+    GetEduServerInfoCommand(); // _ZN23GetEduServerInfoCommandC2Ev
 };

@@ -2,10 +2,8 @@
 
 
 
-class AttributeInstanceHandle {
+namespace AttributeInstanceHandle {
 
-public:
-
-    void getInstance()const;
-    void getMutableInstance()const;
+    void getInstance()const; // _ZNK23AttributeInstanceHandle11getInstanceEv
+    void getMutableInstance()const; // _ZNK23AttributeInstanceHandle18getMutableInstanceEv
 };

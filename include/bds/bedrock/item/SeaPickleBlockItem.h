@@ -1,18 +1,15 @@
 #pragma once
 
-#include "./BlockItem.h"
-#include "../util/BlockPos.h"
-#include "../actor/Actor.h"
-#include "./ItemStack.h"
 #include <string>
+#include "../util/BlockPos.h"
+#include "BlockItem.h"
 
 
 class SeaPickleBlockItem : BlockItem {
 
 public:
-    virtual ~SeaPickleBlockItem();
-    virtual void getLevelDataForAuxValue(int)const;
-    virtual void _useOn(ItemStack &, Actor &, BlockPos, unsigned char, float, float, float)const;
-
-    SeaPickleBlockItem(std::string const&, int);
+    ~SeaPickleBlockItem(); // _ZN18SeaPickleBlockItemD2Ev
+    virtual void getLevelDataForAuxValue(int)const; // _ZNK18SeaPickleBlockItem23getLevelDataForAuxValueEi
+    virtual void _useOn(ItemStack &, Actor &, BlockPos, unsigned char, float, float, float)const; // _ZNK18SeaPickleBlockItem6_useOnER9ItemStackR5Actor8BlockPoshfff
+    SeaPickleBlockItem(std::string const&, int); // _ZN18SeaPickleBlockItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
 };

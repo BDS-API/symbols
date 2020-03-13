@@ -1,15 +1,12 @@
 #pragma once
 
-#include "./BlockActor.h"
-#include "../../util/BlockPos.h"
-#include "../unmapped/BlockSource.h"
+#include "BlockActor.h"
 
 
 class DaylightDetectorBlockActor : BlockActor {
 
 public:
-    virtual ~DaylightDetectorBlockActor();
-    virtual void tick(BlockSource &);
-
-    DaylightDetectorBlockActor(BlockPos const&);
+    ~DaylightDetectorBlockActor(); // _ZN26DaylightDetectorBlockActorD2Ev
+    virtual void tick(BlockSource &); // _ZN26DaylightDetectorBlockActor4tickER11BlockSource
+    DaylightDetectorBlockActor(BlockPos const&); // _ZN26DaylightDetectorBlockActorC2ERK8BlockPos
 };

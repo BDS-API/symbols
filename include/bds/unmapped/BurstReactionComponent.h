@@ -1,17 +1,12 @@
 #pragma once
 
-#include "../bedrock/util/Vec3.h"
-#include "./LabTableReactionComponent.h"
-#include "./HashedString.h"
-#include "../bedrock/block/unmapped/BlockSource.h"
-#include "./LabTableReaction.h"
+#include "LabTableReactionComponent.h"
 
 
 class BurstReactionComponent : LabTableReactionComponent {
 
 public:
-    virtual ~BurstReactionComponent();
-    virtual void _onEnd(LabTableReaction &, BlockSource &);
-
-//  BurstReactionComponent(ParticleType, Vec3 const&, Vec3 const&, int, int, int, bool, HashedString const&); //TODO: incomplete function definition
+    ~BurstReactionComponent(); // _ZN22BurstReactionComponentD2Ev
+    virtual void _onEnd(LabTableReaction &, BlockSource &); // _ZN22BurstReactionComponent6_onEndER16LabTableReactionR11BlockSource
+//  BurstReactionComponent(ParticleType, Vec3 const&, Vec3 const&, int, int, int, bool, HashedString const&); //TODO: incomplete function definition // _ZN22BurstReactionComponentC2E12ParticleTypeRK4Vec3S3_iiibRK12HashedString
 };

@@ -1,15 +1,11 @@
 #pragma once
 
-#include "./MobSpawnerData.h"
-#include "./MobSpawnRules.h"
-#include "../bedrock/actor/unmapped/ActorDefinitionIdentifier.h"
 
 
 class MobSpawnerData {
 
 public:
-
-    ~MobSpawnerData();
-    MobSpawnerData(ActorDefinitionIdentifier const&, int, MobSpawnRules &);
-    MobSpawnerData(MobSpawnerData const&);
+    ~MobSpawnerData(); // _ZN14MobSpawnerDataD2Ev
+    MobSpawnerData(ActorDefinitionIdentifier const&, int, MobSpawnRules &); // _ZN14MobSpawnerDataC2ERK25ActorDefinitionIdentifieriR13MobSpawnRules
+    MobSpawnerData(MobSpawnerData const&); // _ZN14MobSpawnerDataC2ERKS_
 };

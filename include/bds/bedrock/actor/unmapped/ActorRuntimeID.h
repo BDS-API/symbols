@@ -1,15 +1,13 @@
 #pragma once
 
-#include "./ActorRuntimeID.h"
 
 
 class ActorRuntimeID {
 
 public:
-
-    void operator!=(ActorRuntimeID const&)const;
-    void operator==(ActorRuntimeID const&)const;
-    ActorRuntimeID();
-    ActorRuntimeID(unsigned long);
-    void getHash()const;
+    void operator!=(ActorRuntimeID const&)const; // _ZNK14ActorRuntimeIDneERKS_
+    void operator==(ActorRuntimeID const&)const; // _ZNK14ActorRuntimeIDeqERKS_
+    ActorRuntimeID(); // _ZN14ActorRuntimeIDC2Ev
+    ActorRuntimeID(unsigned long); // _ZN14ActorRuntimeIDC2Em
+    void getHash()const; // _ZNK14ActorRuntimeID7getHashEv
 };

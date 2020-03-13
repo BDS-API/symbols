@@ -1,23 +1,21 @@
 #pragma once
 
-#include <memory>
-#include "./Path.h"
 #include <vector>
-#include <string>
 
 
-namespace Core::ZipUtils {
+namespace Core {
 
-class ZipFileRestrictions {
+    namespace ZipUtils {
 
-public:
+        class ZipFileRestrictions {
 
-    ZipFileRestrictions();
-    ~ZipFileRestrictions();
-    void allowFile(Core::Path const&)const;
-    void addForbiddenExtensions(std::vector<std::string, std::allocator<std::string>> const&);
-    void addRestrictedExtensions(std::vector<std::string, std::allocator<std::string>> const&);
-    void addForbiddenFilenames(std::vector<std::string, std::allocator<std::string>> const&);
-};
-
+        public:
+            ZipFileRestrictions(); // _ZN4Core8ZipUtils19ZipFileRestrictionsC2Ev
+            ~ZipFileRestrictions(); // _ZN4Core8ZipUtils19ZipFileRestrictionsD2Ev
+            void allowFile(Core::Path const&)const; // _ZNK4Core8ZipUtils19ZipFileRestrictions9allowFileERKNS_4PathE
+            void addForbiddenExtensions(std::vector<std::string> const&); // _ZN4Core8ZipUtils19ZipFileRestrictions22addForbiddenExtensionsERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE
+            void addRestrictedExtensions(std::vector<std::string> const&); // _ZN4Core8ZipUtils19ZipFileRestrictions23addRestrictedExtensionsERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE
+            void addForbiddenFilenames(std::vector<std::string> const&); // _ZN4Core8ZipUtils19ZipFileRestrictions21addForbiddenFilenamesERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EE
+        };
+    }
 }

@@ -1,23 +1,18 @@
 #pragma once
 
 #include <string>
-#include "./ItemStackBase.h"
 #include <memory>
-#include "./Item.h"
-#include "../level/Level.h"
-#include "../nbt/CompoundTag.h"
-#include "unmapped/ItemDescriptor.h"
+#include "Item.h"
 
 
 class RecordItem : Item {
 
 public:
-    virtual ~RecordItem();
-    virtual void appendFormattedHovertext(ItemStackBase const&, Level &, std::string &, bool)const;
-    virtual std::string buildDescriptionId(ItemDescriptor const&, std::unique_ptr<CompoundTag, std::default_delete<CompoundTag>> const&)const;
-
-//  RecordItem(std::string const&, int, LevelSoundEvent); //TODO: incomplete function definition
-    void getSound()const;
-    bool isMusicDisc(Item const&);
-    void getDuration()const;
+    ~RecordItem(); // _ZN10RecordItemD2Ev
+    virtual void appendFormattedHovertext(ItemStackBase const&, Level &, std::string &, bool)const; // _ZNK10RecordItem24appendFormattedHovertextERK13ItemStackBaseR5LevelRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEb
+    virtual std::string buildDescriptionId(ItemDescriptor const&, std::unique_ptr<CompoundTag> const&)const; // _ZNK10RecordItem18buildDescriptionIdB5cxx11ERK14ItemDescriptorRKSt10unique_ptrI11CompoundTagSt14default_deleteIS4_EE
+//  RecordItem(std::string const&, int, LevelSoundEvent); //TODO: incomplete function definition // _ZN10RecordItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi15LevelSoundEvent
+    void getSound()const; // _ZNK10RecordItem8getSoundEv
+    bool isMusicDisc(Item const&); // _ZN10RecordItem11isMusicDiscERK4Item
+    void getDuration()const; // _ZNK10RecordItem11getDurationEv
 };

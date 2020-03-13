@@ -1,25 +1,18 @@
 #pragma once
 
-#include "./DataLoadHelper.h"
-#include "../bedrock/nbt/CompoundTag.h"
-#include "../bedrock/actor/Actor.h"
-#include "./BribeableComponent.h"
-#include "../bedrock/actor/Player.h"
-#include "../bedrock/actor/unmapped/ActorInteraction.h"
 
 
 class BribeableComponent {
 
 public:
-
-    BribeableComponent(BribeableComponent &&);
-    BribeableComponent();
-    void clientBribeCheck(Actor &);
-    void setBribed(Actor &);
-    void resetBribe(Actor &);
-    void getBribeTimer();
-    void getBribeCooldown();
-    void getInteraction(Actor &, Player &, ActorInteraction &);
-    void addAdditionalSaveData(CompoundTag &);
-    void readAdditionalSaveData(Actor &, CompoundTag const&, DataLoadHelper &);
+    BribeableComponent(BribeableComponent &&); // _ZN18BribeableComponentC2EOS_
+    BribeableComponent(); // _ZN18BribeableComponentC2Ev
+    void clientBribeCheck(Actor &); // _ZN18BribeableComponent16clientBribeCheckER5Actor
+    void setBribed(Actor &); // _ZN18BribeableComponent9setBribedER5Actor
+    void resetBribe(Actor &); // _ZN18BribeableComponent10resetBribeER5Actor
+    void getBribeTimer(); // _ZN18BribeableComponent13getBribeTimerEv
+    void getBribeCooldown(); // _ZN18BribeableComponent16getBribeCooldownEv
+    void getInteraction(Actor &, Player &, ActorInteraction &); // _ZN18BribeableComponent14getInteractionER5ActorR6PlayerR16ActorInteraction
+    void addAdditionalSaveData(CompoundTag &); // _ZN18BribeableComponent21addAdditionalSaveDataER11CompoundTag
+    void readAdditionalSaveData(Actor &, CompoundTag const&, DataLoadHelper &); // _ZN18BribeableComponent22readAdditionalSaveDataER5ActorRK11CompoundTagR14DataLoadHelper
 };

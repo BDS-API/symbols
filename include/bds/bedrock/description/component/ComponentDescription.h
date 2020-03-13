@@ -1,14 +1,12 @@
 #pragma once
 
 #include "../Description.h"
-#include "./ComponentDescription.h"
 
 
 class ComponentDescription : Description {
 
 public:
-    virtual ~ComponentDescription();
-
-    ComponentDescription();
-    ComponentDescription(ComponentDescription &&);
+    ~ComponentDescription(); // _ZN20ComponentDescriptionD2Ev
+    ComponentDescription(); // _ZN20ComponentDescriptionC2Ev
+    ComponentDescription(ComponentDescription &&); // _ZN20ComponentDescriptionC2EOS_
 };

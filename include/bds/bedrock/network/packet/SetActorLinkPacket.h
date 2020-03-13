@@ -1,21 +1,17 @@
 #pragma once
 
-#include "../../io/BinaryStream.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "./Packet.h"
-#include "../../actor/unmapped/ActorLink.h"
 #include <string>
+#include "Packet.h"
 
 
 class SetActorLinkPacket : Packet {
 
 public:
-    virtual ~SetActorLinkPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    SetActorLinkPacket();
-    SetActorLinkPacket(ActorLink const&);
+    ~SetActorLinkPacket(); // _ZN18SetActorLinkPacketD2Ev
+    virtual void getId()const; // _ZNK18SetActorLinkPacket5getIdEv
+    virtual std::string getName()const; // _ZNK18SetActorLinkPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK18SetActorLinkPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN18SetActorLinkPacket4readER20ReadOnlyBinaryStream
+    SetActorLinkPacket(); // _ZN18SetActorLinkPacketC2Ev
+    SetActorLinkPacket(ActorLink const&); // _ZN18SetActorLinkPacketC2ERK9ActorLink
 };

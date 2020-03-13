@@ -1,24 +1,19 @@
 #pragma once
 
-#include "../../io/BinaryStream.h"
-#include "../../actor/unmapped/ActorInfo.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include <memory>
-#include "./Packet.h"
-#include <vector>
 #include <string>
+#include "Packet.h"
+#include <vector>
 
 
 class AvailableActorIdentifiersPacket : Packet {
 
 public:
-    virtual ~AvailableActorIdentifiersPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    AvailableActorIdentifiersPacket();
-    AvailableActorIdentifiersPacket(std::vector<ActorInfo, std::allocator<ActorInfo>> const&);
-    void getIdentifiers()const;
+    ~AvailableActorIdentifiersPacket(); // _ZN31AvailableActorIdentifiersPacketD2Ev
+    virtual void getId()const; // _ZNK31AvailableActorIdentifiersPacket5getIdEv
+    virtual std::string getName()const; // _ZNK31AvailableActorIdentifiersPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK31AvailableActorIdentifiersPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN31AvailableActorIdentifiersPacket4readER20ReadOnlyBinaryStream
+    AvailableActorIdentifiersPacket(); // _ZN31AvailableActorIdentifiersPacketC2Ev
+    AvailableActorIdentifiersPacket(std::vector<ActorInfo> const&); // _ZN31AvailableActorIdentifiersPacketC2ERKSt6vectorI9ActorInfoSaIS1_EE
+    void getIdentifiers()const; // _ZNK31AvailableActorIdentifiersPacket14getIdentifiersEv
 };

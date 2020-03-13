@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./ScorePacketInfo.h"
 
 
 class ScorePacketInfo {
 
 public:
-
-    ~ScorePacketInfo();
-    ScorePacketInfo(ScorePacketInfo const&);
-    ScorePacketInfo(ScorePacketInfo &&);
+    ~ScorePacketInfo(); // _ZN15ScorePacketInfoD2Ev
+    ScorePacketInfo(ScorePacketInfo const&); // _ZN15ScorePacketInfoC2ERKS_
+    ScorePacketInfo(ScorePacketInfo &&); // _ZN15ScorePacketInfoC2EOS_
 };

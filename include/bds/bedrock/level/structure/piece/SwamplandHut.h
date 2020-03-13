@@ -1,21 +1,16 @@
 #pragma once
 
-#include "../../LevelChunk.h"
-#include "../../../util/Random.h"
-#include "../../../block/unmapped/BlockSource.h"
-#include "./ScatteredFeaturePiece.h"
-#include "../../../../unmapped/BoundingBox.h"
+#include "ScatteredFeaturePiece.h"
 
 
 class SwamplandHut : ScatteredFeaturePiece {
 
 public:
-    virtual ~SwamplandHut();
-    virtual void getType()const;
-    virtual void postProcess(BlockSource *, Random &, BoundingBox const&);
-    virtual void postProcessMobsAt(BlockSource *, Random &, BoundingBox const&);
-    virtual void addHardcodedSpawnAreas(LevelChunk &)const;
-
-    SwamplandHut(int, int);
-    void placeCauldron(BlockSource *, Random &, int, int, int, BoundingBox const&);
+    ~SwamplandHut(); // _ZN12SwamplandHutD2Ev
+    virtual void getType()const; // _ZNK12SwamplandHut7getTypeEv
+    virtual void postProcess(BlockSource *, Random &, BoundingBox const&); // _ZN12SwamplandHut11postProcessEP11BlockSourceR6RandomRK11BoundingBox
+    virtual void postProcessMobsAt(BlockSource *, Random &, BoundingBox const&); // _ZN12SwamplandHut17postProcessMobsAtEP11BlockSourceR6RandomRK11BoundingBox
+    virtual void addHardcodedSpawnAreas(LevelChunk &)const; // _ZNK12SwamplandHut22addHardcodedSpawnAreasER10LevelChunk
+    SwamplandHut(int, int); // _ZN12SwamplandHutC2Eii
+    void placeCauldron(BlockSource *, Random &, int, int, int, BoundingBox const&); // _ZN12SwamplandHut13placeCauldronEP11BlockSourceR6RandomiiiRK11BoundingBox
 };

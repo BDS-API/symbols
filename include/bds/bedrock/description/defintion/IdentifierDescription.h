@@ -1,17 +1,15 @@
 #pragma once
 
-#include "./DefintionDescription.h"
-#include "./IdentifierDescription.h"
 #include <string>
+#include "DefintionDescription.h"
 
 
 class IdentifierDescription : DefintionDescription {
 
 public:
-    virtual ~IdentifierDescription();
-    virtual void getJsonName()const;
-
-    IdentifierDescription(std::string const&);
-    IdentifierDescription(char const*);
-    IdentifierDescription(IdentifierDescription &&);
+    ~IdentifierDescription(); // _ZN21IdentifierDescriptionD2Ev
+    virtual void getJsonName()const; // _ZNK21IdentifierDescription11getJsonNameEv
+    IdentifierDescription(std::string const&); // _ZN21IdentifierDescriptionC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    IdentifierDescription(char const*); // _ZN21IdentifierDescriptionC2EPKc
+    IdentifierDescription(IdentifierDescription &&); // _ZN21IdentifierDescriptionC2EOS_
 };

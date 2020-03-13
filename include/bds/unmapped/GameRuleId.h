@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./GameRuleId.h"
 
 
 class GameRuleId {
 
 public:
-
-    GameRuleId(int);
-    GameRuleId(GameRuleId const&);
-    GameRuleId(GameRuleId &&);
+    GameRuleId(int); // _ZN10GameRuleIdC2Ei
+    GameRuleId(GameRuleId const&); // _ZN10GameRuleIdC2ERKS_
+    GameRuleId(GameRuleId &&); // _ZN10GameRuleIdC2EOS_
 };

@@ -1,20 +1,15 @@
 #pragma once
 
-#include "./EquippableDefinition.h"
 #include <memory>
-#include "../../unmapped/EntityContext.h"
-#include "../../unmapped/EquippableComponent.h"
-#include "../../json/Value.h"
 
 
 class EquippableDefinition {
 
 public:
-
-    EquippableDefinition();
-    ~EquippableDefinition();
-//  void buildSchema(std::shared_ptr<JsonUtil::JsonSchemaObjectNode<JsonUtil::EmptyClass, EquippableDefinition>> &); //TODO: incomplete function definition
-    void initialize(EntityContext &, EquippableComponent &);
-    void deserializeData(Json::Value &);
-    void serializeData(Json::Value &)const;
+    EquippableDefinition(); // _ZN20EquippableDefinitionC2Ev
+    ~EquippableDefinition(); // _ZN20EquippableDefinitionD2Ev
+    void buildSchema(std::shared_ptr<JsonUtil::JsonSchemaObjectNode<JsonUtil::EmptyClass, EquippableDefinition>> &); // _ZN20EquippableDefinition11buildSchemaERSt10shared_ptrIN8JsonUtil20JsonSchemaObjectNodeINS1_10EmptyClassES_EEE
+    void initialize(EntityContext &, EquippableComponent &); // _ZN20EquippableDefinition10initializeER13EntityContextR19EquippableComponent
+    void deserializeData(Json::Value &); // _ZN20EquippableDefinition15deserializeDataERN4Json5ValueE
+    void serializeData(Json::Value &)const; // _ZNK20EquippableDefinition13serializeDataERN4Json5ValueE
 };

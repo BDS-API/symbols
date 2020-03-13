@@ -1,15 +1,12 @@
 #pragma once
 
-#include "../json/Value.h"
-#include "../bedrock/block/unmapped/BlockPalette.h"
 
 
 class FlatWorldGeneratorOptions {
 
 public:
-
-    ~FlatWorldGeneratorOptions();
-    void getDefault();
-    void _load(Json::Value const&, BlockPalette const&);
-    FlatWorldGeneratorOptions(Json::Value const&, BlockPalette const&);
+    ~FlatWorldGeneratorOptions(); // _ZN25FlatWorldGeneratorOptionsD2Ev
+    void getDefault(); // _ZN25FlatWorldGeneratorOptions10getDefaultEv
+    void _load(Json::Value const&, BlockPalette const&); // _ZN25FlatWorldGeneratorOptions5_loadERKN4Json5ValueERK12BlockPalette
+    FlatWorldGeneratorOptions(Json::Value const&, BlockPalette const&); // _ZN25FlatWorldGeneratorOptionsC2ERKN4Json5ValueERK12BlockPalette
 };

@@ -1,27 +1,17 @@
 #pragma once
 
-#include <utility>
-#include <unordered_map>
-#include "./StructureManager.h"
+#include "StructurePoolElement.h"
+#include "BoundingBox.h"
 #include "../bedrock/util/BlockPos.h"
-#include "../bedrock/util/Random.h"
-#include <memory>
-#include "../bedrock/block/unmapped/BlockSource.h"
-#include "./LegacyStructureSettings.h"
-#include "./BoundingBox.h"
-#include "../bedrock/actor/unmapped/ActorDefinitionIdentifier.h"
-#include "./StructurePoolElement.h"
-#include <functional>
-#include "../bedrock/level/feature/Feature.h"
+#include <unordered_map>
 
 
 class FeaturePoolElement : StructurePoolElement {
 
 public:
-//  virtual void getSize(Rotation)const; //TODO: incomplete function definition
-    virtual void getJigsawMarkers(BlockPos, LegacyStructureSettings &, BlockSource *)const;
-//  virtual void place(BlockSource *, BlockPos, Rotation, BoundingBox, Random &, std::unordered_map<BlockPos, ActorDefinitionIdentifier, std::hash<BlockPos>, std::equal_to<BlockPos>, std::allocator<std::pair<BlockPos const, ActorDefinitionIdentifier>>> &)const; //TODO: incomplete function definition
-    virtual ~FeaturePoolElement();
-
-    FeaturePoolElement(StructureManager &, Feature const*);
+//  virtual void getSize(Rotation)const; //TODO: incomplete function definition // _ZNK18FeaturePoolElement7getSizeE8Rotation
+    virtual void getJigsawMarkers(BlockPos, LegacyStructureSettings &, BlockSource *)const; // _ZNK18FeaturePoolElement16getJigsawMarkersE8BlockPosR23LegacyStructureSettingsP11BlockSource
+//  virtual void place(BlockSource *, BlockPos, Rotation, BoundingBox, Random &, std::unordered_map<BlockPos, ActorDefinitionIdentifier, std::hash<BlockPos>, std::equal_to<BlockPos>, std::allocator<std::pair<BlockPos const, ActorDefinitionIdentifier>>> &)const; //TODO: incomplete function definition // _ZNK18FeaturePoolElement5placeEP11BlockSource8BlockPos8Rotation11BoundingBoxR6RandomRSt13unordered_mapIS2_25ActorDefinitionIdentifierSt4hashIS2_ESt8equal_toIS2_ESaISt4pairIKS2_S8_EEE
+    ~FeaturePoolElement(); // _ZN18FeaturePoolElementD2Ev
+    FeaturePoolElement(StructureManager &, Feature const*); // _ZN18FeaturePoolElementC2ER16StructureManagerPK7Feature
 };

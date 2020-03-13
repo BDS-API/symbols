@@ -1,11 +1,7 @@
 #pragma once
 
-#include "../../../item/ItemInstance.h"
-#include "../../unmapped/ScriptEngine.h"
-#include "./ScriptEventData.h"
-#include "../../../actor/unmapped/ActorUniqueID.h"
-#include "../../ScriptObjectHandle.h"
 #include <string>
+#include "ScriptEventData.h"
 
 
 class ScriptServerActorAcquiredItemEvent : ScriptEventData {
@@ -13,15 +9,14 @@ class ScriptServerActorAcquiredItemEvent : ScriptEventData {
 public:
     static long mHash;
 
-    virtual ~ScriptServerActorAcquiredItemEvent();
-    virtual void _serialize(ScriptEngine &, ScriptApi::ScriptObjectHandle &)const;
-
-    void getHash();
-    ScriptServerActorAcquiredItemEvent();
-    void setActorId(ActorUniqueID const&);
-    void setItemStack(ItemInstance const&);
-    void setAcquiredAmount(unsigned int);
-//  void setAcquisitionMethod(ItemAcquisitionMethod); //TODO: incomplete function definition
-    void setSecondaryActorId(ActorUniqueID const&);
-    std::string getName();
+    ~ScriptServerActorAcquiredItemEvent(); // _ZN34ScriptServerActorAcquiredItemEventD2Ev
+    virtual void _serialize(ScriptEngine &, ScriptApi::ScriptObjectHandle &)const; // _ZNK34ScriptServerActorAcquiredItemEvent10_serializeER12ScriptEngineRN9ScriptApi18ScriptObjectHandleE
+    void getHash(); // _ZN34ScriptServerActorAcquiredItemEvent7getHashEv
+    ScriptServerActorAcquiredItemEvent(); // _ZN34ScriptServerActorAcquiredItemEventC2Ev
+    void setActorId(ActorUniqueID const&); // _ZN34ScriptServerActorAcquiredItemEvent10setActorIdERK13ActorUniqueID
+    void setItemStack(ItemInstance const&); // _ZN34ScriptServerActorAcquiredItemEvent12setItemStackERK12ItemInstance
+    void setAcquiredAmount(unsigned int); // _ZN34ScriptServerActorAcquiredItemEvent17setAcquiredAmountEj
+//  void setAcquisitionMethod(ItemAcquisitionMethod); //TODO: incomplete function definition // _ZN34ScriptServerActorAcquiredItemEvent20setAcquisitionMethodE21ItemAcquisitionMethod
+    void setSecondaryActorId(ActorUniqueID const&); // _ZN34ScriptServerActorAcquiredItemEvent19setSecondaryActorIdERK13ActorUniqueID
+    std::string getName(); // _ZN34ScriptServerActorAcquiredItemEvent7getNameB5cxx11Ev
 };

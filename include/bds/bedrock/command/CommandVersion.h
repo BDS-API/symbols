@@ -1,7 +1,5 @@
 #pragma once
 
-#include "./CommandVersion.h"
-#include "../../unmapped/SemVersion.h"
 
 
 class CommandVersion {
@@ -9,9 +7,8 @@ class CommandVersion {
 public:
     static long CurrentVersion;
 
-
-    void getVersionMapping(SemVersion const&);
-    CommandVersion(int, int);
-    bool isCompatible(int)const;
-    void overlaps(CommandVersion const&)const;
+    void getVersionMapping(SemVersion const&); // _ZN14CommandVersion17getVersionMappingERK10SemVersion
+    CommandVersion(int, int); // _ZN14CommandVersionC2Eii
+    bool isCompatible(int)const; // _ZNK14CommandVersion12isCompatibleEi
+    void overlaps(CommandVersion const&)const; // _ZNK14CommandVersion8overlapsERKS_
 };

@@ -1,16 +1,12 @@
 #pragma once
 
-#include "../../core/Path.h"
-#include "../file/access/IFileAccess.h"
+#include "ZipPackAccessStrategy.h"
 #include <memory>
-#include "../../unmapped/ResourceLocation.h"
-#include "./ZipPackAccessStrategy.h"
 
 
 class ZipPackAccessStrategyOwningFileAcccess : ZipPackAccessStrategy {
 
 public:
-    virtual ~ZipPackAccessStrategyOwningFileAcccess();
-
-    ZipPackAccessStrategyOwningFileAcccess(std::shared_ptr<IFileAccess>, ResourceLocation const&, Core::Path const&);
+    ~ZipPackAccessStrategyOwningFileAcccess(); // _ZN38ZipPackAccessStrategyOwningFileAcccessD2Ev
+    ZipPackAccessStrategyOwningFileAcccess(std::shared_ptr<IFileAccess>, ResourceLocation const&, Core::Path const&); // _ZN38ZipPackAccessStrategyOwningFileAcccessC2ESt10shared_ptrI11IFileAccessERK16ResourceLocationRKN4Core4PathE
 };

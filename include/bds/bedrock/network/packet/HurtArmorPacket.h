@@ -1,20 +1,17 @@
 #pragma once
 
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "./Packet.h"
-#include "../../io/BinaryStream.h"
 #include <string>
+#include "Packet.h"
 
 
 class HurtArmorPacket : Packet {
 
 public:
-    virtual ~HurtArmorPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    HurtArmorPacket();
-    HurtArmorPacket(int);
+    ~HurtArmorPacket(); // _ZN15HurtArmorPacketD2Ev
+    virtual void getId()const; // _ZNK15HurtArmorPacket5getIdEv
+    virtual std::string getName()const; // _ZNK15HurtArmorPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK15HurtArmorPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN15HurtArmorPacket4readER20ReadOnlyBinaryStream
+    HurtArmorPacket(); // _ZN15HurtArmorPacketC2Ev
+    HurtArmorPacket(int); // _ZN15HurtArmorPacketC2Ei
 };

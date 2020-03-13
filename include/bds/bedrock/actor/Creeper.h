@@ -1,26 +1,22 @@
 #pragma once
 
-#include "./Monster.h"
-#include "damagesource/ActorDamageSource.h"
-#include "unmapped/ActorDefinitionGroup.h"
-#include "unmapped/ActorDefinitionIdentifier.h"
+#include "Monster.h"
 
 
 class Creeper : Monster {
 
 public:
-    virtual ~Creeper();
-    virtual void normalTick();
-    virtual void die(ActorDamageSource const&);
-    virtual void _onSizeUpdated();
-    virtual void useNewAi()const;
-
-    Creeper(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
-    void _getSwell()const;
-    void _setOldSwell(int);
-    void _setSwellDir(int);
-    void getSwellDir();
-    void _setSwell(int);
-    void _getOldSwell()const;
-    void getSwelling(float)const;
+    ~Creeper(); // _ZN7CreeperD2Ev
+    virtual void normalTick(); // _ZN7Creeper10normalTickEv
+    virtual void die(ActorDamageSource const&); // _ZN7Creeper3dieERK17ActorDamageSource
+    virtual void _onSizeUpdated(); // _ZN7Creeper14_onSizeUpdatedEv
+    virtual void useNewAi()const; // _ZNK7Creeper8useNewAiEv
+    Creeper(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN7CreeperC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
+    void _getSwell()const; // _ZNK7Creeper9_getSwellEv
+    void _setOldSwell(int); // _ZN7Creeper12_setOldSwellEi
+    void _setSwellDir(int); // _ZN7Creeper12_setSwellDirEi
+    void getSwellDir(); // _ZN7Creeper11getSwellDirEv
+    void _setSwell(int); // _ZN7Creeper9_setSwellEi
+    void _getOldSwell()const; // _ZNK7Creeper12_getOldSwellEv
+    void getSwelling(float)const; // _ZNK7Creeper11getSwellingEf
 };

@@ -1,6 +1,5 @@
 #pragma once
 
-#include "../../Minecraft.h"
 #include "../Command.h"
 
 
@@ -9,8 +8,7 @@ class ServerCommand : Command {
 public:
     static long mGame;
 
-    virtual ~ServerCommand();
-
-    ServerCommand();
-    void setup(Minecraft &);
+    ~ServerCommand(); // _ZN13ServerCommandD2Ev
+    ServerCommand(); // _ZN13ServerCommandC2Ev
+    void setup(Minecraft &); // _ZN13ServerCommand5setupER9Minecraft
 };

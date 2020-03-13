@@ -1,13 +1,9 @@
 #pragma once
 
-#include "../bedrock/io/ReadOnlyBinaryStream.h"
-#include "../bedrock/io/BinaryStream.h"
 
 
-class ContainerMixDataEntry {
+namespace ContainerMixDataEntry {
 
-public:
-
-    void write(BinaryStream &)const;
-    void read(ReadOnlyBinaryStream &);
+    void write(BinaryStream &)const; // _ZNK21ContainerMixDataEntry5writeER12BinaryStream
+    void read(ReadOnlyBinaryStream &); // _ZN21ContainerMixDataEntry4readER20ReadOnlyBinaryStream
 };

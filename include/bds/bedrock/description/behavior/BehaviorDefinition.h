@@ -1,9 +1,5 @@
 #pragma once
 
-#include "../../../unmapped/BehaviorFactory.h"
-#include "../../actor/Actor.h"
-#include "../../../unmapped/BehaviorData.h"
-#include "../../actor/behavior/BehaviorNode.h"
 #include "../../../json/Value.h"
 #include <string>
 
@@ -11,11 +7,10 @@
 class BehaviorDefinition {
 
 public:
-    virtual ~BehaviorDefinition();
-    virtual void load(Json::Value, BehaviorFactory const&);
-    virtual void createNode(Actor &, BehaviorFactory const&, BehaviorNode *, BehaviorData *)const;
-
-    BehaviorDefinition();
-    std::string getName()const;
-    void getTreeDefinition()const;
+    ~BehaviorDefinition(); // _ZN18BehaviorDefinitionD2Ev
+    virtual void load(Json::Value, BehaviorFactory const&); // _ZN18BehaviorDefinition4loadEN4Json5ValueERK15BehaviorFactory
+    virtual void createNode(Actor &, BehaviorFactory const&, BehaviorNode *, BehaviorData *)const; // _ZNK18BehaviorDefinition10createNodeER5ActorRK15BehaviorFactoryP12BehaviorNodeP12BehaviorData
+    BehaviorDefinition(); // _ZN18BehaviorDefinitionC2Ev
+    std::string getName()const; // _ZNK18BehaviorDefinition7getNameB5cxx11Ev
+    void getTreeDefinition()const; // _ZNK18BehaviorDefinition17getTreeDefinitionEv
 };

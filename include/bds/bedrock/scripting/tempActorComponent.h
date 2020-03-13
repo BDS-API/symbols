@@ -1,15 +1,15 @@
 #pragma once
 
-#include "../actor/unmapped/ActorUniqueID.h"
 
 
-namespace ScriptApi::WORKAROUNDS {
+namespace ScriptApi {
 
-class tempActorComponent {
+    namespace WORKAROUNDS {
 
-public:
+        class tempActorComponent {
 
-    tempActorComponent(ActorUniqueID const&);
-};
-
+        public:
+            tempActorComponent(ActorUniqueID const&); // _ZN9ScriptApi11WORKAROUNDS18tempActorComponentC2ERK13ActorUniqueID
+        };
+    }
 }

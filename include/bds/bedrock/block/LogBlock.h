@@ -1,20 +1,15 @@
 #pragma once
 
+#include "RotatedPillarBlock.h"
 #include <string>
-#include "unmapped/BlockSource.h"
-#include "./RotatedPillarBlock.h"
-#include "../util/BlockPos.h"
-#include "../util/Random.h"
-#include "../../unmapped/Block.h"
 
 
 class LogBlock : RotatedPillarBlock {
 
 public:
-    virtual ~LogBlock();
-    virtual void onRemove(BlockSource &, BlockPos const&)const;
-    virtual void getResourceCount(Random &, Block const&, int)const;
-    virtual bool isAuxValueRelevantForPicking()const;
-
-    LogBlock(std::string const&, int);
+    ~LogBlock(); // _ZN8LogBlockD2Ev
+    virtual void onRemove(BlockSource &, BlockPos const&)const; // _ZNK8LogBlock8onRemoveER11BlockSourceRK8BlockPos
+    virtual void getResourceCount(Random &, Block const&, int)const; // _ZNK8LogBlock16getResourceCountER6RandomRK5Blocki
+    virtual bool isAuxValueRelevantForPicking()const; // _ZNK8LogBlock28isAuxValueRelevantForPickingEv
+    LogBlock(std::string const&, int); // _ZN8LogBlockC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
 };

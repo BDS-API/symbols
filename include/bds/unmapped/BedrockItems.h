@@ -2,12 +2,10 @@
 
 
 
-class BedrockItems {
+namespace BedrockItems {
 
-public:
     static long mAir;
 
-
-    void registerItems();
-    void unregisterItems();
+    void registerItems(); // _ZN12BedrockItems13registerItemsEv
+    void unregisterItems(); // _ZN12BedrockItems15unregisterItemsEv
 };

@@ -5,7 +5,6 @@
 class IContainerManager {
 
 public:
-    virtual ~IContainerManager();
-
-    IContainerManager();
+    ~IContainerManager(); // _ZN17IContainerManagerD2Ev
+    IContainerManager(); // _ZN17IContainerManagerC2Ev
 };

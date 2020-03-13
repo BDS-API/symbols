@@ -1,25 +1,19 @@
 #pragma once
 
-#include "../../unmapped/RenderParams.h"
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "./Animal.h"
-#include "../util/BlockPos.h"
-#include "unmapped/ActorDefinitionGroup.h"
-#include "../../unmapped/Block.h"
+#include "Animal.h"
 
 
 class Chicken : Animal {
 
 public:
-    virtual ~Chicken();
-    virtual void updateEntitySpecificMolangVariables(RenderParams &);
-    virtual void _playStepSound(BlockPos const&, Block const&);
-    virtual void aiStep();
-    virtual void useNewAi()const;
-
-    Chicken(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
-    void getFlap()const;
-    void getOFlap()const;
-    void getFlapSpeed()const;
-    void getOFlapSpeed()const;
+    ~Chicken(); // _ZN7ChickenD2Ev
+    virtual void updateEntitySpecificMolangVariables(RenderParams &); // _ZN7Chicken35updateEntitySpecificMolangVariablesER12RenderParams
+    virtual void _playStepSound(BlockPos const&, Block const&); // _ZN7Chicken14_playStepSoundERK8BlockPosRK5Block
+    virtual void aiStep(); // _ZN7Chicken6aiStepEv
+    virtual void useNewAi()const; // _ZNK7Chicken8useNewAiEv
+    Chicken(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN7ChickenC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
+    void getFlap()const; // _ZNK7Chicken7getFlapEv
+    void getOFlap()const; // _ZNK7Chicken8getOFlapEv
+    void getFlapSpeed()const; // _ZNK7Chicken12getFlapSpeedEv
+    void getOFlapSpeed()const; // _ZNK7Chicken13getOFlapSpeedEv
 };

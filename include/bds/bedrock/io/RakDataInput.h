@@ -1,15 +1,13 @@
 #pragma once
 
-#include "./BytesDataInput.h"
-#include "../../raknet/BitStream.h"
+#include "BytesDataInput.h"
 
 
 class RakDataInput : BytesDataInput {
 
 public:
-    virtual ~RakDataInput();
-//  virtual void readBytes(void *, unsigned long); //TODO: incomplete function definition
-    virtual void numBytesLeft()const;
-
-    RakDataInput(RakNet::BitStream &);
+    ~RakDataInput(); // _ZN12RakDataInputD2Ev
+    virtual void readBytes(void *, unsigned long); // _ZN12RakDataInput9readBytesEPvm
+    virtual void numBytesLeft()const; // _ZNK12RakDataInput12numBytesLeftEv
+    RakDataInput(RakNet::BitStream &); // _ZN12RakDataInputC2ERN6RakNet9BitStreamE
 };

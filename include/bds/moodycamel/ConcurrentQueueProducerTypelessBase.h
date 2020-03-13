@@ -2,13 +2,14 @@
 
 
 
-namespace moodycamel::details {
+namespace moodycamel {
 
-class ConcurrentQueueProducerTypelessBase {
+    namespace details {
 
-public:
+        class ConcurrentQueueProducerTypelessBase {
 
-    ConcurrentQueueProducerTypelessBase();
-};
-
+        public:
+            ConcurrentQueueProducerTypelessBase(); // _ZN10moodycamel7details35ConcurrentQueueProducerTypelessBaseC2Ev
+        };
+    }
 }

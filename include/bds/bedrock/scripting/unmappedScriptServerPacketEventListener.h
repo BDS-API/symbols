@@ -1,16 +1,12 @@
 #pragma once
 
 #include "../../../unmapped/NetworkPacketEventListener.h"
-#include "../../network/packet/Packet.h"
-#include "../../../unmapped/PacketHeader.h"
-#include "../../../unmapped/MinecraftServerScriptEngine.h"
 
 
 class ScriptServerPacketEventListener : NetworkPacketEventListener {
 
 public:
-    virtual ~ScriptServerPacketEventListener();
-    virtual void onPacketReceivedFrom(PacketHeader const&, Packet const&);
-
-    ScriptServerPacketEventListener(MinecraftServerScriptEngine &);
+    ~ScriptServerPacketEventListener(); // _ZN31ScriptServerPacketEventListenerD2Ev
+    virtual void onPacketReceivedFrom(PacketHeader const&, Packet const&); // _ZN31ScriptServerPacketEventListener20onPacketReceivedFromERK12PacketHeaderRK6Packet
+    ScriptServerPacketEventListener(MinecraftServerScriptEngine &); // _ZN31ScriptServerPacketEventListenerC2ER27MinecraftServerScriptEngine
 };

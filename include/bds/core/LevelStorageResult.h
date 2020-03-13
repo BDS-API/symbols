@@ -1,16 +1,13 @@
 #pragma once
 
-#include "./LevelStorageResult.h"
 
 
 namespace Core {
 
-class LevelStorageResult {
+    class LevelStorageResult {
 
-public:
-
-    ~LevelStorageResult();
-    LevelStorageResult(Core::LevelStorageResult const&);
-};
-
+    public:
+        ~LevelStorageResult(); // _ZN4Core18LevelStorageResultD2Ev
+        LevelStorageResult(Core::LevelStorageResult const&); // _ZN4Core18LevelStorageResultC2ERKS0_
+    };
 }

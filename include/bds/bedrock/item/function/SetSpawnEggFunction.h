@@ -1,24 +1,16 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../condition/LootItemCondition.h"
-#include "../../../unmapped/LootTableContext.h"
-#include <memory>
-#include "./LootItemFunction.h"
 #include "../../../json/Value.h"
+#include "LootItemFunction.h"
 #include <vector>
-#include "../../actor/unmapped/ActorDefinitionIdentifier.h"
-#include "../ItemStack.h"
-#include "../ItemInstance.h"
 
 
 class SetSpawnEggFunction : LootItemFunction {
 
 public:
-    virtual ~SetSpawnEggFunction();
-    virtual void apply(ItemStack &, Random &, LootTableContext &);
-    virtual void apply(ItemInstance &, Random &, LootTableContext &);
-
-    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &);
-    SetSpawnEggFunction(std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &, ActorDefinitionIdentifier const&);
+    ~SetSpawnEggFunction(); // _ZN19SetSpawnEggFunctionD2Ev
+    virtual void apply(ItemStack &, Random &, LootTableContext &); // _ZN19SetSpawnEggFunction5applyER9ItemStackR6RandomR16LootTableContext
+    virtual void apply(ItemInstance &, Random &, LootTableContext &); // _ZN19SetSpawnEggFunction5applyER12ItemInstanceR6RandomR16LootTableContext
+    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition>> &); // _ZN19SetSpawnEggFunction11deserializeEN4Json5ValueERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS4_EESaIS7_EE
+    SetSpawnEggFunction(std::vector<std::unique_ptr<LootItemCondition>> &, ActorDefinitionIdentifier const&); // _ZN19SetSpawnEggFunctionC2ERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS2_EESaIS5_EERK25ActorDefinitionIdentifier
 };

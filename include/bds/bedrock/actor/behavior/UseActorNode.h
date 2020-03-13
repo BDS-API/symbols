@@ -1,14 +1,12 @@
 #pragma once
 
-#include "../Actor.h"
-#include "./BehaviorNode.h"
+#include "BehaviorNode.h"
 
 
 class UseActorNode : BehaviorNode {
 
 public:
-    virtual ~UseActorNode();
-    virtual void tick(Actor &);
-
-    UseActorNode();
+    ~UseActorNode(); // _ZN12UseActorNodeD2Ev
+    virtual void tick(Actor &); // _ZN12UseActorNode4tickER5Actor
+    UseActorNode(); // _ZN12UseActorNodeC2Ev
 };

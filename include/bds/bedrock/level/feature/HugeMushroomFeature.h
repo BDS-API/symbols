@@ -1,10 +1,6 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../../unmapped/Block.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
-#include "../../block/unmapped/BlockSource.h"
+#include "Feature.h"
 
 
 class HugeMushroomFeature : Feature {
@@ -13,11 +9,10 @@ public:
     static long mMushroomTypes;
     static long mHugeMushroomTypes;
 
-    virtual ~HugeMushroomFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    HugeMushroomFeature();
-    HugeMushroomFeature(int);
-    void shutdown();
-    void _canSurvive(Block const&)const;
+    ~HugeMushroomFeature(); // _ZN19HugeMushroomFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK19HugeMushroomFeature5placeER11BlockSourceRK8BlockPosR6Random
+    HugeMushroomFeature(); // _ZN19HugeMushroomFeatureC2Ev
+    HugeMushroomFeature(int); // _ZN19HugeMushroomFeatureC2Ei
+    void shutdown(); // _ZN19HugeMushroomFeature8shutdownEv
+    void _canSurvive(Block const&)const; // _ZNK19HugeMushroomFeature11_canSurviveERK5Block
 };

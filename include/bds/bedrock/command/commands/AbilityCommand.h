@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class AbilityCommand : Command {
 
 public:
-    virtual ~AbilityCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    AbilityCommand();
+    ~AbilityCommand(); // _ZN14AbilityCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK14AbilityCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN14AbilityCommand5setupER15CommandRegistry
+    AbilityCommand(); // _ZN14AbilityCommandC2Ev
 };

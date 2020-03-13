@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./BlockID.h"
 
 
 class BlockID {
 
 public:
-
-    BlockID(BlockID const&);
-    BlockID();
-    BlockID(unsigned char const&);
+    BlockID(BlockID const&); // _ZN7BlockIDC2ERKS_
+    BlockID(); // _ZN7BlockIDC2Ev
+    BlockID(unsigned char const&); // _ZN7BlockIDC2ERKh
 };

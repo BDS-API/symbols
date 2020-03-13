@@ -1,40 +1,34 @@
 #pragma once
 
-#include "./FlatFileManifestInfo.h"
-#include "../bedrock/io/ReadOnlyBinaryStream.h"
-#include "../bedrock/io/BinaryStream.h"
-#include "./Path.h"
 #include <string>
 
 
 namespace Core {
 
-class FlatFileManifestInfo {
+    class FlatFileManifestInfo {
 
-public:
-
-    ~FlatFileManifestInfo();
-    FlatFileManifestInfo();
-    void setPath(Core::Path const&);
-    std::string getPath()const;
-    void setSeekPos(unsigned long);
-    void getSeekPos()const;
-    void setFileSize(unsigned long);
-    void getFileSize()const;
-    void setFlags(unsigned char);
-    void getFlags()const;
-    void getFileType()const;
-    bool isFile()const;
-//  void setFileType(Core::FileType); //TODO: incomplete function definition
-    bool isDirectory()const;
-    bool isDeleted()const;
-    void setDeleted(bool);
-//  void setAttributes(Core::FileType, bool); //TODO: incomplete function definition
-    void readFromStream(ReadOnlyBinaryStream &);
-    void writeToStream(BinaryStream &)const;
-    void operator==(Core::FlatFileManifestInfo const&)const;
-    FlatFileManifestInfo(Core::FlatFileManifestInfo const&);
-    FlatFileManifestInfo(Core::FlatFileManifestInfo &&);
-};
-
+    public:
+        ~FlatFileManifestInfo(); // _ZN4Core20FlatFileManifestInfoD2Ev
+        FlatFileManifestInfo(); // _ZN4Core20FlatFileManifestInfoC2Ev
+        void setPath(Core::Path const&); // _ZN4Core20FlatFileManifestInfo7setPathERKNS_4PathE
+        std::string getPath()const; // _ZNK4Core20FlatFileManifestInfo7getPathB5cxx11Ev
+        void setSeekPos(unsigned long); // _ZN4Core20FlatFileManifestInfo10setSeekPosEm
+        void getSeekPos()const; // _ZNK4Core20FlatFileManifestInfo10getSeekPosEv
+        void setFileSize(unsigned long); // _ZN4Core20FlatFileManifestInfo11setFileSizeEm
+        void getFileSize()const; // _ZNK4Core20FlatFileManifestInfo11getFileSizeEv
+        void setFlags(unsigned char); // _ZN4Core20FlatFileManifestInfo8setFlagsEh
+        void getFlags()const; // _ZNK4Core20FlatFileManifestInfo8getFlagsEv
+        void getFileType()const; // _ZNK4Core20FlatFileManifestInfo11getFileTypeEv
+        bool isFile()const; // _ZNK4Core20FlatFileManifestInfo6isFileEv
+//      void setFileType(Core::FileType); //TODO: incomplete function definition // _ZN4Core20FlatFileManifestInfo11setFileTypeENS_8FileTypeE
+        bool isDirectory()const; // _ZNK4Core20FlatFileManifestInfo11isDirectoryEv
+        bool isDeleted()const; // _ZNK4Core20FlatFileManifestInfo9isDeletedEv
+        void setDeleted(bool); // _ZN4Core20FlatFileManifestInfo10setDeletedEb
+//      void setAttributes(Core::FileType, bool); //TODO: incomplete function definition // _ZN4Core20FlatFileManifestInfo13setAttributesENS_8FileTypeEb
+        void readFromStream(ReadOnlyBinaryStream &); // _ZN4Core20FlatFileManifestInfo14readFromStreamER20ReadOnlyBinaryStream
+        void writeToStream(BinaryStream &)const; // _ZNK4Core20FlatFileManifestInfo13writeToStreamER12BinaryStream
+        void operator==(Core::FlatFileManifestInfo const&)const; // _ZNK4Core20FlatFileManifestInfoeqERKS0_
+        FlatFileManifestInfo(Core::FlatFileManifestInfo const&); // _ZN4Core20FlatFileManifestInfoC2ERKS0_
+        FlatFileManifestInfo(Core::FlatFileManifestInfo &&); // _ZN4Core20FlatFileManifestInfoC2EOS0_
+    };
 }

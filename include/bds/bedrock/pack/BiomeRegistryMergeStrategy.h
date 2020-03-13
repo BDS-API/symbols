@@ -1,18 +1,13 @@
 #pragma once
 
-#include "../../unmapped/LoadedResourceData.h"
-#include "../../core/Path.h"
-#include <memory>
-#include "./ResourcePackMergeStrategy.h"
+#include "ResourcePackMergeStrategy.h"
 #include <vector>
-#include "../../json/Value.h"
 
 
 class BiomeRegistryMergeStrategy : ResourcePackMergeStrategy {
 
 public:
-    virtual ~BiomeRegistryMergeStrategy();
-    virtual void mergeFiles(std::vector<LoadedResourceData, std::allocator<LoadedResourceData>> const&);
-
-    BiomeRegistryMergeStrategy(Core::Path const&, Json::Value &);
+    ~BiomeRegistryMergeStrategy(); // _ZN26BiomeRegistryMergeStrategyD2Ev
+    virtual void mergeFiles(std::vector<LoadedResourceData> const&); // _ZN26BiomeRegistryMergeStrategy10mergeFilesERKSt6vectorI18LoadedResourceDataSaIS1_EE
+    BiomeRegistryMergeStrategy(Core::Path const&, Json::Value &); // _ZN26BiomeRegistryMergeStrategyC2ERKN4Core4PathERN4Json5ValueE
 };

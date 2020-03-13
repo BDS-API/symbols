@@ -1,12 +1,10 @@
 #pragma once
 
-#include "./WorldTemplateManagerProxyCallbacks.h"
 
 
 class WorldTemplateManagerProxyCallbacks {
 
 public:
-
-    ~WorldTemplateManagerProxyCallbacks();
-    WorldTemplateManagerProxyCallbacks(WorldTemplateManagerProxyCallbacks const&);
+    ~WorldTemplateManagerProxyCallbacks(); // _ZN34WorldTemplateManagerProxyCallbacksD2Ev
+    WorldTemplateManagerProxyCallbacks(WorldTemplateManagerProxyCallbacks const&); // _ZN34WorldTemplateManagerProxyCallbacksC2ERKS_
 };

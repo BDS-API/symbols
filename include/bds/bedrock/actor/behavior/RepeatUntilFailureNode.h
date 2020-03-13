@@ -1,15 +1,13 @@
 #pragma once
 
-#include "../Actor.h"
-#include "./BehaviorNode.h"
+#include "BehaviorNode.h"
 
 
 class RepeatUntilFailureNode : BehaviorNode {
 
 public:
-    virtual ~RepeatUntilFailureNode();
-    virtual void tick(Actor &);
-    virtual void initializeFromDefinition(Actor &);
-
-    RepeatUntilFailureNode();
+    ~RepeatUntilFailureNode(); // _ZN22RepeatUntilFailureNodeD2Ev
+    virtual void tick(Actor &); // _ZN22RepeatUntilFailureNode4tickER5Actor
+    virtual void initializeFromDefinition(Actor &); // _ZN22RepeatUntilFailureNode24initializeFromDefinitionER5Actor
+    RepeatUntilFailureNode(); // _ZN22RepeatUntilFailureNodeC2Ev
 };

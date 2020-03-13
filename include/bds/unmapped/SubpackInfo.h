@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./SubpackInfo.h"
 
 
 class SubpackInfo {
 
 public:
-
-    SubpackInfo();
-    ~SubpackInfo();
-    SubpackInfo(SubpackInfo const&);
-    SubpackInfo(SubpackInfo &&);
+    SubpackInfo(); // _ZN11SubpackInfoC2Ev
+    ~SubpackInfo(); // _ZN11SubpackInfoD2Ev
+    SubpackInfo(SubpackInfo const&); // _ZN11SubpackInfoC2ERKS_
+    SubpackInfo(SubpackInfo &&); // _ZN11SubpackInfoC2EOS_
 };

@@ -1,11 +1,9 @@
 #pragma once
 
-#include "../ItemStack.h"
 
 
 class ItemIndexPair {
 
 public:
-
-    ItemIndexPair(ItemStack const&, int);
+    ItemIndexPair(ItemStack const&, int); // _ZN13ItemIndexPairC2ERK9ItemStacki
 };

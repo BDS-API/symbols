@@ -1,16 +1,13 @@
 #pragma once
 
-#include "../../item/ItemInstance.h"
 #include <memory>
-#include "../model/ContainerModel.h"
-#include "./ContainerController.h"
+#include "ContainerController.h"
 
 
 class MaterialReducerOutputContainerController : ContainerController {
 
 public:
-    virtual ~MaterialReducerOutputContainerController();
-    virtual bool isItemAllowed(ItemInstance const&)const;
-
-    MaterialReducerOutputContainerController(std::shared_ptr<ContainerModel>);
+    ~MaterialReducerOutputContainerController(); // _ZN40MaterialReducerOutputContainerControllerD2Ev
+    virtual bool isItemAllowed(ItemInstance const&)const; // _ZNK40MaterialReducerOutputContainerController13isItemAllowedERK12ItemInstance
+    MaterialReducerOutputContainerController(std::shared_ptr<ContainerModel>); // _ZN40MaterialReducerOutputContainerControllerC2ESt10shared_ptrI14ContainerModelE
 };

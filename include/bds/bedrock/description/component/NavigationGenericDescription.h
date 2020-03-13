@@ -1,13 +1,12 @@
 #pragma once
 
-#include "./NavigationDescription.h"
+#include "NavigationDescription.h"
 
 
 class NavigationGenericDescription : NavigationDescription {
 
 public:
-    virtual void getJsonName()const;
-    virtual ~NavigationGenericDescription();
-
-    NavigationGenericDescription();
+    virtual void getJsonName()const; // _ZNK28NavigationGenericDescription11getJsonNameEv
+    ~NavigationGenericDescription(); // _ZN28NavigationGenericDescriptionD2Ev
+    NavigationGenericDescription(); // _ZN28NavigationGenericDescriptionC2Ev
 };

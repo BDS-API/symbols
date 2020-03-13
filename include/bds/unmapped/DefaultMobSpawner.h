@@ -1,14 +1,12 @@
 #pragma once
 
-#include "../bedrock/block/actor/MobSpawnerBlockActor.h"
-#include "./BaseMobSpawner.h"
+#include "BaseMobSpawner.h"
 
 
 class DefaultMobSpawner : BaseMobSpawner {
 
 public:
-    virtual ~DefaultMobSpawner();
-    virtual void getPos();
-
-    DefaultMobSpawner(MobSpawnerBlockActor *);
+    ~DefaultMobSpawner(); // _ZN17DefaultMobSpawnerD2Ev
+    virtual void getPos(); // _ZN17DefaultMobSpawner6getPosEv
+    DefaultMobSpawner(MobSpawnerBlockActor *); // _ZN17DefaultMobSpawnerC2EP20MobSpawnerBlockActor
 };

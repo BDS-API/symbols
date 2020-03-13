@@ -5,7 +5,6 @@
 class RelativeFloat {
 
 public:
-
-    RelativeFloat();
-    void getValue(float)const;
+    RelativeFloat(); // _ZN13RelativeFloatC2Ev
+    void getValue(float)const; // _ZNK13RelativeFloat8getValueEf
 };

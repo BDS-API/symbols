@@ -1,13 +1,11 @@
 #pragma once
 
-#include "../bedrock/file/access/IFileAccess.h"
 
 
 class ZlibFileAccessWrapper {
 
 public:
-
-    ZlibFileAccessWrapper(IFileAccess *);
-    void getZipFunctions()const;
-    ~ZlibFileAccessWrapper();
+    ZlibFileAccessWrapper(IFileAccess *); // _ZN21ZlibFileAccessWrapperC2EP11IFileAccess
+    void getZipFunctions()const; // _ZNK21ZlibFileAccessWrapper15getZipFunctionsEv
+    ~ZlibFileAccessWrapper(); // _ZN21ZlibFileAccessWrapperD2Ev
 };

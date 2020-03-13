@@ -1,21 +1,21 @@
 #pragma once
 
-#include "./ITickingSystem.h"
-#include "../../actor/Actor.h"
-#include "../../util/Vec3.h"
-#include "../../actor/unmapped/ActorComponent.h"
-#include "../../../unmapped/TrailComponent.h"
-#include "../../../unmapped/EntityRegistry.h"
-#include "../../../unmapped/EntityContext.h"
+#include "ITickingSystem.h"
 
 
 class TrailSystem : ITickingSystem {
 
 public:
-    virtual ~TrailSystem();
-    virtual void tick(EntityRegistry &);
+    class BlockPositions;
 
-    TrailSystem();
-//  void _tickComponent(EntityContext &, FlagComponent<ActorTickedFlag> &, ActorComponent &, TrailComponent &); //TODO: incomplete function definition
-    void _calculateBlockSpawnPositions(Actor &, Vec3 &);
+    ~TrailSystem(); // _ZN11TrailSystemD2Ev
+    virtual void tick(EntityRegistry &); // _ZN11TrailSystem4tickER14EntityRegistry
+    TrailSystem(); // _ZN11TrailSystemC2Ev
+//  void _tickComponent(EntityContext &, FlagComponent<ActorTickedFlag> &, ActorComponent &, TrailComponent &); //TODO: incomplete function definition // _ZN11TrailSystem14_tickComponentER13EntityContextR13FlagComponentI15ActorTickedFlagER14ActorComponentR14TrailComponent
+    void _calculateBlockSpawnPositions(Actor &, Vec3 &); // _ZN11TrailSystem29_calculateBlockSpawnPositionsER5ActorR4Vec3
+    class BlockPositions {
+
+    public:
+        BlockPositions(); // _ZN11TrailSystem14BlockPositionsC2Ev
+    };
 };

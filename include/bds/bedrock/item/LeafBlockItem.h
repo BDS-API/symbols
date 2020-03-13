@@ -1,23 +1,17 @@
 #pragma once
 
-#include "./BlockItem.h"
 #include <string>
-#include "./ItemStackBase.h"
 #include <memory>
-#include "../level/Level.h"
-#include "unmapped/ItemDescriptor.h"
-#include "../nbt/CompoundTag.h"
-#include "../../unmapped/Block.h"
+#include "BlockItem.h"
 
 
 class LeafBlockItem : BlockItem {
 
 public:
-    virtual ~LeafBlockItem();
-    virtual void getLevelDataForAuxValue(int)const;
-    virtual std::string buildDescriptionId(ItemDescriptor const&, std::unique_ptr<CompoundTag, std::default_delete<CompoundTag>> const&)const;
-    virtual void fixupOnLoad(ItemStackBase &)const;
-    virtual void fixupOnLoad(ItemStackBase &, Level &)const;
-
-    LeafBlockItem(std::string const&, int, Block const*);
+    ~LeafBlockItem(); // _ZN13LeafBlockItemD2Ev
+    virtual void getLevelDataForAuxValue(int)const; // _ZNK13LeafBlockItem23getLevelDataForAuxValueEi
+    virtual std::string buildDescriptionId(ItemDescriptor const&, std::unique_ptr<CompoundTag> const&)const; // _ZNK13LeafBlockItem18buildDescriptionIdB5cxx11ERK14ItemDescriptorRKSt10unique_ptrI11CompoundTagSt14default_deleteIS4_EE
+    virtual void fixupOnLoad(ItemStackBase &)const; // _ZNK13LeafBlockItem11fixupOnLoadER13ItemStackBase
+    virtual void fixupOnLoad(ItemStackBase &, Level &)const; // _ZNK13LeafBlockItem11fixupOnLoadER13ItemStackBaseR5Level
+    LeafBlockItem(std::string const&, int, Block const*); // _ZN13LeafBlockItemC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiPK5Block
 };

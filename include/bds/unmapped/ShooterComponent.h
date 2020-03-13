@@ -1,19 +1,15 @@
 #pragma once
 
-#include "../bedrock/actor/Actor.h"
-#include "../bedrock/description/component/ShooterDescription.h"
-#include "./ShooterComponent.h"
 
 
 class ShooterComponent {
 
 public:
-
-    ~ShooterComponent();
-    ShooterComponent(ShooterComponent &&);
-    ShooterComponent();
-    void initFromDefinition(Actor &);
-    void initFromDefinition(Actor &, ShooterDescription const&);
-    void onShoot(Actor &);
-    void getAuxValue();
+    ~ShooterComponent(); // _ZN16ShooterComponentD2Ev
+    ShooterComponent(ShooterComponent &&); // _ZN16ShooterComponentC2EOS_
+    ShooterComponent(); // _ZN16ShooterComponentC2Ev
+    void initFromDefinition(Actor &); // _ZN16ShooterComponent18initFromDefinitionER5Actor
+    void initFromDefinition(Actor &, ShooterDescription const&); // _ZN16ShooterComponent18initFromDefinitionER5ActorRK18ShooterDescription
+    void onShoot(Actor &); // _ZN16ShooterComponent7onShootER5Actor
+    void getAuxValue(); // _ZN16ShooterComponent11getAuxValueEv
 };

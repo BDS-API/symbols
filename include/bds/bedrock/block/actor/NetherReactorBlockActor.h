@@ -1,18 +1,13 @@
 #pragma once
 
-#include "../../nbt/CompoundTag.h"
-#include "./BlockActor.h"
-#include "../../util/BlockPos.h"
-#include "../../../unmapped/DataLoadHelper.h"
-#include "../../level/Level.h"
+#include "BlockActor.h"
 
 
 class NetherReactorBlockActor : BlockActor {
 
 public:
-    virtual ~NetherReactorBlockActor();
-    virtual void load(Level &, CompoundTag const&, DataLoadHelper &);
-    virtual void save(CompoundTag &)const;
-
-    NetherReactorBlockActor(BlockPos const&);
+    ~NetherReactorBlockActor(); // _ZN23NetherReactorBlockActorD2Ev
+    virtual void load(Level &, CompoundTag const&, DataLoadHelper &); // _ZN23NetherReactorBlockActor4loadER5LevelRK11CompoundTagR14DataLoadHelper
+    virtual void save(CompoundTag &)const; // _ZNK23NetherReactorBlockActor4saveER11CompoundTag
+    NetherReactorBlockActor(BlockPos const&); // _ZN23NetherReactorBlockActorC2ERK8BlockPos
 };

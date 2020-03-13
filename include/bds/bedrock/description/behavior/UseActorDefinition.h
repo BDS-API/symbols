@@ -1,12 +1,11 @@
 #pragma once
 
-#include "./BehaviorDefinition.h"
+#include "BehaviorDefinition.h"
 
 
 class UseActorDefinition : BehaviorDefinition {
 
 public:
-    virtual ~UseActorDefinition();
-
-    UseActorDefinition();
+    ~UseActorDefinition(); // _ZN18UseActorDefinitionD2Ev
+    UseActorDefinition(); // _ZN18UseActorDefinitionC2Ev
 };

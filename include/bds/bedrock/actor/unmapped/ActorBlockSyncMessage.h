@@ -1,12 +1,10 @@
 #pragma once
 
-#include "./ActorUniqueID.h"
 
 
 class ActorBlockSyncMessage {
 
 public:
-
-    ActorBlockSyncMessage();
-//  ActorBlockSyncMessage(ActorUniqueID const&, ActorBlockSyncMessage::MessageId const&); //TODO: incomplete function definition
+    ActorBlockSyncMessage(); // _ZN21ActorBlockSyncMessageC2Ev
+//  ActorBlockSyncMessage(ActorUniqueID const&, ActorBlockSyncMessage::MessageId const&); //TODO: incomplete function definition // _ZN21ActorBlockSyncMessageC2ERK13ActorUniqueIDRKNS_9MessageIdE
 };

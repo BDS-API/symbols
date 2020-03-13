@@ -1,18 +1,13 @@
 #pragma once
 
-#include "./ITickingSystem.h"
-#include "../../actor/unmapped/ActorComponent.h"
-#include "../../../unmapped/EntityRegistry.h"
-#include "../../../unmapped/EntityContext.h"
-#include "../../../unmapped/EntitySensorComponent.h"
+#include "ITickingSystem.h"
 
 
 class EntitySensorSystem : ITickingSystem {
 
 public:
-    virtual ~EntitySensorSystem();
-    virtual void tick(EntityRegistry &);
-
-    EntitySensorSystem();
-//  void _tickComponent(EntityContext &, FlagComponent<ActorTickedFlag> &, ActorComponent &, EntitySensorComponent &); //TODO: incomplete function definition
+    ~EntitySensorSystem(); // _ZN18EntitySensorSystemD2Ev
+    virtual void tick(EntityRegistry &); // _ZN18EntitySensorSystem4tickER14EntityRegistry
+    EntitySensorSystem(); // _ZN18EntitySensorSystemC2Ev
+//  void _tickComponent(EntityContext &, FlagComponent<ActorTickedFlag> &, ActorComponent &, EntitySensorComponent &); //TODO: incomplete function definition // _ZN18EntitySensorSystem14_tickComponentER13EntityContextR13FlagComponentI15ActorTickedFlagER14ActorComponentR21EntitySensorComponent
 };

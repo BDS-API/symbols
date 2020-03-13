@@ -2,14 +2,15 @@
 
 
 
-namespace Core::Profile {
+namespace Core {
 
-class ProfileThread {
+    namespace Profile {
 
-public:
+        class ProfileThread {
 
-    ProfileThread(char const*);
-    ~ProfileThread();
-};
-
+        public:
+            ProfileThread(char const*); // _ZN4Core7Profile13ProfileThreadC2EPKc
+            ~ProfileThread(); // _ZN4Core7Profile13ProfileThreadD2Ev
+        };
+    }
 }

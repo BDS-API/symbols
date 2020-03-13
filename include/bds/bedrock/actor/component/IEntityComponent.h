@@ -1,11 +1,9 @@
 #pragma once
 
-#include "./IEntityComponent.h"
 
 
 class IEntityComponent {
 
 public:
-
-    IEntityComponent(IEntityComponent &&);
+    IEntityComponent(IEntityComponent &&); // _ZN16IEntityComponentC2EOS_
 };

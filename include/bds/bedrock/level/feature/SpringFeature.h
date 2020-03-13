@@ -1,17 +1,12 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../../unmapped/Block.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
-#include "../../block/unmapped/BlockSource.h"
+#include "Feature.h"
 
 
 class SpringFeature : Feature {
 
 public:
-    virtual ~SpringFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    SpringFeature(Block const&);
+    ~SpringFeature(); // _ZN13SpringFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK13SpringFeature5placeER11BlockSourceRK8BlockPosR6Random
+    SpringFeature(Block const&); // _ZN13SpringFeatureC2ERK5Block
 };

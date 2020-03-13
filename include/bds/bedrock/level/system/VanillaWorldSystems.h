@@ -1,13 +1,9 @@
 #pragma once
 
-#include "../../pack/ResourcePackManager.h"
-#include "../../block/unmapped/BlockDefinitionGroup.h"
 
 
-class VanillaWorldSystems {
+namespace VanillaWorldSystems {
 
-public:
-
-    void init(ResourcePackManager *, BlockDefinitionGroup *);
-    void shutdown();
+    void init(ResourcePackManager *, BlockDefinitionGroup *); // _ZN19VanillaWorldSystems4initEP19ResourcePackManagerP20BlockDefinitionGroup
+    void shutdown(); // _ZN19VanillaWorldSystems8shutdownEv
 };

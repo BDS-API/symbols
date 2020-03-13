@@ -1,18 +1,14 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class EffectCommand : Command {
 
 public:
-    virtual ~EffectCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    EffectCommand();
-    void clear(CommandOrigin const&, CommandOutput &)const;
+    ~EffectCommand(); // _ZN13EffectCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK13EffectCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN13EffectCommand5setupER15CommandRegistry
+    EffectCommand(); // _ZN13EffectCommandC2Ev
+    void clear(CommandOrigin const&, CommandOutput &)const; // _ZNK13EffectCommand5clearERK13CommandOriginR13CommandOutput
 };

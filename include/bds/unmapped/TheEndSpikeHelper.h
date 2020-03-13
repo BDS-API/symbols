@@ -1,11 +1,8 @@
 #pragma once
 
-#include "../bedrock/level/Level.h"
 
 
-class TheEndSpikeHelper {
+namespace TheEndSpikeHelper {
 
-public:
-
-    void getSpikesForLevel(Level &);
+    void getSpikesForLevel(Level &); // _ZN17TheEndSpikeHelper17getSpikesForLevelER5Level
 };

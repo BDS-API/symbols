@@ -1,14 +1,11 @@
 #pragma once
 
-#include "../bedrock/network/packet/Packet.h"
-#include "./PacketHeader.h"
 
 
 class NetworkPacketEventListener {
 
 public:
-    virtual ~NetworkPacketEventListener();
-    virtual void onPacketReceivedFrom(PacketHeader const&, Packet const&);
-
-    NetworkPacketEventListener();
+    ~NetworkPacketEventListener(); // _ZN26NetworkPacketEventListenerD2Ev
+    virtual void onPacketReceivedFrom(PacketHeader const&, Packet const&); // _ZN26NetworkPacketEventListener20onPacketReceivedFromERK12PacketHeaderRK6Packet
+    NetworkPacketEventListener(); // _ZN26NetworkPacketEventListenerC2Ev
 };

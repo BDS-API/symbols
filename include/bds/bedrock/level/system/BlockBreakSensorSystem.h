@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./ITickingSystem.h"
-#include "../../../unmapped/EntityRegistry.h"
+#include "ITickingSystem.h"
 
 
 class BlockBreakSensorSystem : ITickingSystem {
 
 public:
-    virtual ~BlockBreakSensorSystem();
-    virtual void tick(EntityRegistry &);
-
-    BlockBreakSensorSystem();
+    ~BlockBreakSensorSystem(); // _ZN22BlockBreakSensorSystemD2Ev
+    virtual void tick(EntityRegistry &); // _ZN22BlockBreakSensorSystem4tickER14EntityRegistry
+    BlockBreakSensorSystem(); // _ZN22BlockBreakSensorSystemC2Ev
 };

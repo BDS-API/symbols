@@ -1,23 +1,17 @@
 #pragma once
 
-#include "../../nbt/CompoundTag.h"
-#include "./BlockActor.h"
-#include "../../util/BlockPos.h"
-#include "../../../unmapped/DataLoadHelper.h"
-#include "../../level/Level.h"
-#include "../unmapped/BlockSource.h"
+#include "BlockActor.h"
 
 
 class MobSpawnerBlockActor : BlockActor {
 
 public:
-    virtual ~MobSpawnerBlockActor();
-    virtual void load(Level &, CompoundTag const&, DataLoadHelper &);
-    virtual void save(CompoundTag &)const;
-    virtual void tick(BlockSource &);
-    virtual void getUpdatePacket(BlockSource &);
-    virtual void _onUpdatePacket(CompoundTag const&, BlockSource &);
-
-    MobSpawnerBlockActor(BlockPos const&);
-    void getSpawner();
+    ~MobSpawnerBlockActor(); // _ZN20MobSpawnerBlockActorD2Ev
+    virtual void load(Level &, CompoundTag const&, DataLoadHelper &); // _ZN20MobSpawnerBlockActor4loadER5LevelRK11CompoundTagR14DataLoadHelper
+    virtual void save(CompoundTag &)const; // _ZNK20MobSpawnerBlockActor4saveER11CompoundTag
+    virtual void tick(BlockSource &); // _ZN20MobSpawnerBlockActor4tickER11BlockSource
+    virtual void getUpdatePacket(BlockSource &); // _ZN20MobSpawnerBlockActor15getUpdatePacketER11BlockSource
+    virtual void _onUpdatePacket(CompoundTag const&, BlockSource &); // _ZN20MobSpawnerBlockActor15_onUpdatePacketERK11CompoundTagR11BlockSource
+    MobSpawnerBlockActor(BlockPos const&); // _ZN20MobSpawnerBlockActorC2ERK8BlockPos
+    void getSpawner(); // _ZN20MobSpawnerBlockActor10getSpawnerEv
 };

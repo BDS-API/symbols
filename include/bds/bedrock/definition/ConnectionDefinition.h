@@ -5,6 +5,5 @@
 class ConnectionDefinition {
 
 public:
-
-    ConnectionDefinition();
+    ConnectionDefinition(); // _ZN20ConnectionDefinitionC2Ev
 };

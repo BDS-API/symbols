@@ -1,26 +1,22 @@
 #pragma once
 
-#include "../io/IDataInput.h"
-#include "../io/IDataOutput.h"
-#include "./Tag.h"
-#include "./IntArrayTag.h"
-#include "../../unmapped/TagMemoryChunk.h"
 #include <string>
+#include "../../unmapped/TagMemoryChunk.h"
+#include "Tag.h"
 
 
 class IntArrayTag : Tag {
 
 public:
-    virtual ~IntArrayTag();
-    virtual void write(IDataOutput &)const;
-    virtual void load(IDataInput &);
-    virtual std::string toString()const;
-    virtual void getId()const;
-    virtual void equals(Tag const&)const;
-    virtual void copy()const;
-    virtual void hash()const;
-
-    IntArrayTag(IntArrayTag &&);
-    IntArrayTag();
-    IntArrayTag(TagMemoryChunk);
+    ~IntArrayTag(); // _ZN11IntArrayTagD2Ev
+    virtual void write(IDataOutput &)const; // _ZNK11IntArrayTag5writeER11IDataOutput
+    virtual void load(IDataInput &); // _ZN11IntArrayTag4loadER10IDataInput
+    virtual std::string toString()const; // _ZNK11IntArrayTag8toStringB5cxx11Ev
+    virtual void getId()const; // _ZNK11IntArrayTag5getIdEv
+    virtual void equals(Tag const&)const; // _ZNK11IntArrayTag6equalsERK3Tag
+    virtual void copy()const; // _ZNK11IntArrayTag4copyEv
+    virtual void hash()const; // _ZNK11IntArrayTag4hashEv
+    IntArrayTag(IntArrayTag &&); // _ZN11IntArrayTagC2EOS_
+    IntArrayTag(); // _ZN11IntArrayTagC2Ev
+    IntArrayTag(TagMemoryChunk); // _ZN11IntArrayTagC2E14TagMemoryChunk
 };

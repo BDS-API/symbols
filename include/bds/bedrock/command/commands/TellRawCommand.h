@@ -1,17 +1,13 @@
 #pragma once
 
-#include "./MessagingCommand.h"
-#include "../CommandRegistry.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
+#include "MessagingCommand.h"
 
 
 class TellRawCommand : MessagingCommand {
 
 public:
-    virtual ~TellRawCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    TellRawCommand();
+    ~TellRawCommand(); // _ZN14TellRawCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK14TellRawCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN14TellRawCommand5setupER15CommandRegistry
+    TellRawCommand(); // _ZN14TellRawCommandC2Ev
 };

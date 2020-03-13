@@ -1,16 +1,12 @@
 #pragma once
 
-#include "./LegacyStructureActorInfo.h"
-#include "../bedrock/util/Vec3.h"
 #include "../bedrock/nbt/CompoundTag.h"
-#include "../bedrock/util/BlockPos.h"
 
 
 class LegacyStructureActorInfo {
 
 public:
-
-    ~LegacyStructureActorInfo();
-    LegacyStructureActorInfo(LegacyStructureActorInfo &&);
-    LegacyStructureActorInfo(Vec3 const&, BlockPos const&, CompoundTag);
+    ~LegacyStructureActorInfo(); // _ZN24LegacyStructureActorInfoD2Ev
+    LegacyStructureActorInfo(LegacyStructureActorInfo &&); // _ZN24LegacyStructureActorInfoC2EOS_
+    LegacyStructureActorInfo(Vec3 const&, BlockPos const&, CompoundTag); // _ZN24LegacyStructureActorInfoC2ERK4Vec3RK8BlockPos11CompoundTag
 };

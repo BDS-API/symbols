@@ -2,9 +2,7 @@
 
 
 
-class CreativeItemCategoryEnumHasher {
+namespace CreativeItemCategoryEnumHasher {
 
-public:
-
-//  void operator()(CreativeItemCategory const&)const; //TODO: incomplete function definition
+//  void operator()(CreativeItemCategory const&)const; //TODO: incomplete function definition // _ZNK30CreativeItemCategoryEnumHasherclERK20CreativeItemCategory
 };

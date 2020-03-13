@@ -1,17 +1,12 @@
 #pragma once
 
-#include "../bedrock/level/LevelChunk.h"
-#include "../bedrock/util/ChunkPos.h"
-#include "./Dimension.h"
-#include "../bedrock/block/unmapped/BlockSource.h"
 
 
 class Seasons {
 
 public:
-
-    Seasons(Dimension &);
-    ~Seasons();
-    void tick();
-    void postProcess(LevelChunk &, BlockSource &, ChunkPos const&);
+    Seasons(Dimension &); // _ZN7SeasonsC2ER9Dimension
+    ~Seasons(); // _ZN7SeasonsD2Ev
+    void tick(); // _ZN7Seasons4tickEv
+    void postProcess(LevelChunk &, BlockSource &, ChunkPos const&); // _ZN7Seasons11postProcessER10LevelChunkR11BlockSourceRK8ChunkPos
 };

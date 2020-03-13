@@ -5,7 +5,6 @@
 class IFunctionEntry {
 
 public:
-    virtual ~IFunctionEntry();
-
-    IFunctionEntry();
+    ~IFunctionEntry(); // _ZN14IFunctionEntryD2Ev
+    IFunctionEntry(); // _ZN14IFunctionEntryC2Ev
 };

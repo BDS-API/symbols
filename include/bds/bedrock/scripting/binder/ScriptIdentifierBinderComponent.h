@@ -1,13 +1,7 @@
 #pragma once
 
-#include "../../../unmapped/Block.h"
-#include "./ScriptBinderComponent.h"
-#include "../../actor/ItemActor.h"
-#include "../unmapped/ScriptEngine.h"
-#include "../../actor/Actor.h"
-#include "../ScriptObjectHandle.h"
-#include "../../item/ItemInstance.h"
 #include <string>
+#include "ScriptBinderComponent.h"
 
 
 class ScriptIdentifierBinderComponent : ScriptBinderComponent {
@@ -15,15 +9,14 @@ class ScriptIdentifierBinderComponent : ScriptBinderComponent {
 public:
     static std::string TAG;
 
-    virtual ~ScriptIdentifierBinderComponent();
-    virtual void serialize(ScriptEngine &, ScriptApi::ScriptObjectHandle const&)const;
-    virtual void deserialize(ScriptEngine &, ScriptApi::ScriptObjectHandle const&);
-
-    ScriptIdentifierBinderComponent();
-    ScriptIdentifierBinderComponent(std::string const&);
-    ScriptIdentifierBinderComponent(Actor const&);
-    ScriptIdentifierBinderComponent(ItemActor const&);
-    ScriptIdentifierBinderComponent(ItemInstance const&);
-    ScriptIdentifierBinderComponent(Block const&);
-    std::string getIdentifier()const;
+    ~ScriptIdentifierBinderComponent(); // _ZN31ScriptIdentifierBinderComponentD2Ev
+    virtual void serialize(ScriptEngine &, ScriptApi::ScriptObjectHandle const&)const; // _ZNK31ScriptIdentifierBinderComponent9serializeER12ScriptEngineRKN9ScriptApi18ScriptObjectHandleE
+    virtual void deserialize(ScriptEngine &, ScriptApi::ScriptObjectHandle const&); // _ZN31ScriptIdentifierBinderComponent11deserializeER12ScriptEngineRKN9ScriptApi18ScriptObjectHandleE
+    ScriptIdentifierBinderComponent(); // _ZN31ScriptIdentifierBinderComponentC2Ev
+    ScriptIdentifierBinderComponent(std::string const&); // _ZN31ScriptIdentifierBinderComponentC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    ScriptIdentifierBinderComponent(Actor const&); // _ZN31ScriptIdentifierBinderComponentC2ERK5Actor
+    ScriptIdentifierBinderComponent(ItemActor const&); // _ZN31ScriptIdentifierBinderComponentC2ERK9ItemActor
+    ScriptIdentifierBinderComponent(ItemInstance const&); // _ZN31ScriptIdentifierBinderComponentC2ERK12ItemInstance
+    ScriptIdentifierBinderComponent(Block const&); // _ZN31ScriptIdentifierBinderComponentC2ERK5Block
+    std::string getIdentifier()const; // _ZNK31ScriptIdentifierBinderComponent13getIdentifierB5cxx11Ev
 };

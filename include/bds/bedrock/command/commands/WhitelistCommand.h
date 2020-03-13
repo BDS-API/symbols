@@ -1,9 +1,5 @@
 #pragma once
 
-#include "../CommandRegistry.h"
-#include "../CommandOutput.h"
-#include "../orgin/CommandOrigin.h"
-#include "../../../unmapped/WhitelistFile.h"
 #include "../Command.h"
 
 
@@ -12,9 +8,8 @@ class WhitelistCommand : Command {
 public:
     static long mWhitelistFile;
 
-    virtual ~WhitelistCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &, WhitelistFile &);
-    WhitelistCommand();
+    ~WhitelistCommand(); // _ZN16WhitelistCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK16WhitelistCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &, WhitelistFile &); // _ZN16WhitelistCommand5setupER15CommandRegistryR13WhitelistFile
+    WhitelistCommand(); // _ZN16WhitelistCommandC2Ev
 };

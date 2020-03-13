@@ -1,23 +1,14 @@
 #pragma once
 
-#include <utility>
 #include <unordered_map>
-#include "../../../unmapped/HashedString.h"
-#include <memory>
-#include "../../../unmapped/ExpressionNode.h"
-#include "../../../unmapped/AnimationComponent.h"
-#include "../../../unmapped/StringKey.h"
-#include <functional>
-#include <string>
 
 
 class ActorAnimationPlayer {
 
 public:
-    virtual ~ActorAnimationPlayer();
-    virtual void buildBoneToPartMapping(AnimationComponent &);
-//  virtual void bindParticleEffects(std::unordered_map<StringKey, ParticleEffectPtr, std::hash<StringKey>, std::equal_to<StringKey>, std::allocator<std::pair<StringKey const, ParticleEffectPtr>>> const&); //TODO: incomplete function definition
-//  virtual void bindSoundEffects(std::unordered_map<StringKey, std::string, std::hash<StringKey>, std::equal_to<StringKey>, std::allocator<std::pair<StringKey const, std::string>>> const&); //TODO: incomplete function definition
-
-    ActorAnimationPlayer(HashedString const&, ExpressionNode const&);
+    ~ActorAnimationPlayer(); // _ZN20ActorAnimationPlayerD2Ev
+    virtual void buildBoneToPartMapping(AnimationComponent &); // _ZN20ActorAnimationPlayer22buildBoneToPartMappingER18AnimationComponent
+    virtual void bindParticleEffects(std::unordered_map<StringKey, ParticleEffectPtr, std::hash<StringKey>, std::equal_to<StringKey>, std::allocator<std::pair<StringKey const, ParticleEffectPtr>>> const&); // _ZN20ActorAnimationPlayer19bindParticleEffectsERKSt13unordered_mapI9StringKey17ParticleEffectPtrSt4hashIS1_ESt8equal_toIS1_ESaISt4pairIKS1_S2_EEE
+    virtual void bindSoundEffects(std::unordered_map<StringKey, std::string, std::hash<StringKey>, std::equal_to<StringKey>, std::allocator<std::pair<StringKey const, std::string>>> const&); // _ZN20ActorAnimationPlayer16bindSoundEffectsERKSt13unordered_mapI9StringKeyNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4hashIS1_ESt8equal_toIS1_ESaISt4pairIKS1_S7_EEE
+    ActorAnimationPlayer(HashedString const&, ExpressionNode const&); // _ZN20ActorAnimationPlayerC2ERK12HashedStringRK14ExpressionNode
 };

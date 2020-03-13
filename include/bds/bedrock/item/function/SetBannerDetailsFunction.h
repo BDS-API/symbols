@@ -1,23 +1,16 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../condition/LootItemCondition.h"
-#include "../../../unmapped/LootTableContext.h"
-#include <memory>
-#include "./LootItemFunction.h"
 #include "../../../json/Value.h"
+#include "LootItemFunction.h"
 #include <vector>
-#include "../ItemInstance.h"
-#include "../ItemStack.h"
 
 
 class SetBannerDetailsFunction : LootItemFunction {
 
 public:
-    virtual ~SetBannerDetailsFunction();
-    virtual void apply(ItemStack &, Random &, LootTableContext &);
-    virtual void apply(ItemInstance &, Random &, LootTableContext &);
-
-//  SetBannerDetailsFunction(std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &, BannerBlockType); //TODO: incomplete function definition
-    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>, std::allocator<std::unique_ptr<LootItemCondition, std::default_delete<LootItemCondition>>>> &);
+    ~SetBannerDetailsFunction(); // _ZN24SetBannerDetailsFunctionD2Ev
+    virtual void apply(ItemStack &, Random &, LootTableContext &); // _ZN24SetBannerDetailsFunction5applyER9ItemStackR6RandomR16LootTableContext
+    virtual void apply(ItemInstance &, Random &, LootTableContext &); // _ZN24SetBannerDetailsFunction5applyER12ItemInstanceR6RandomR16LootTableContext
+//  SetBannerDetailsFunction(std::vector<std::unique_ptr<LootItemCondition>> &, BannerBlockType); //TODO: incomplete function definition // _ZN24SetBannerDetailsFunctionC2ERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS2_EESaIS5_EE15BannerBlockType
+    void deserialize(Json::Value, std::vector<std::unique_ptr<LootItemCondition>> &); // _ZN24SetBannerDetailsFunction11deserializeEN4Json5ValueERSt6vectorISt10unique_ptrI17LootItemConditionSt14default_deleteIS4_EESaIS7_EE
 };

@@ -3,9 +3,8 @@
 #include <string>
 
 
-class VanillaStates {
+namespace VanillaStates {
 
-public:
     static long AgeBit;
     static long Age;
     static long AttachedBit;
@@ -112,8 +111,7 @@ public:
     static long BlockLightLevel;
     static long BeehiveHoneyLevel;
 
-
-    void registerStates();
-    void unregisterStates();
-    void getState(std::string const&);
+    void registerStates(); // _ZN13VanillaStates14registerStatesEv
+    void unregisterStates(); // _ZN13VanillaStates16unregisterStatesEv
+    void getState(std::string const&); // _ZN13VanillaStates8getStateERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 };

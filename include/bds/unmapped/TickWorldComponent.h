@@ -1,25 +1,21 @@
 #pragma once
 
-#include "./TickWorldComponent.h"
-#include "../bedrock/actor/Actor.h"
-#include "../bedrock/level/tickingarea/ITickingArea.h"
 #include <memory>
 
 
 class TickWorldComponent {
 
 public:
-
-    TickWorldComponent();
-    TickWorldComponent(TickWorldComponent &&);
-    void removeArea();
-    ~TickWorldComponent();
-    void initFromDefinition(Actor &);
-    void getChunkRadius()const;
-    void getMaxDistToPlayers()const;
-    bool isAlwaysActive()const;
-    bool hasTickingArea()const;
-    void getTickingArea();
-    void setTickingArea(Actor &, std::shared_ptr<ITickingArea>);
-    void updateArea(Actor &);
+    TickWorldComponent(); // _ZN18TickWorldComponentC2Ev
+    TickWorldComponent(TickWorldComponent &&); // _ZN18TickWorldComponentC2EOS_
+    void removeArea(); // _ZN18TickWorldComponent10removeAreaEv
+    ~TickWorldComponent(); // _ZN18TickWorldComponentD2Ev
+    void initFromDefinition(Actor &); // _ZN18TickWorldComponent18initFromDefinitionER5Actor
+    void getChunkRadius()const; // _ZNK18TickWorldComponent14getChunkRadiusEv
+    void getMaxDistToPlayers()const; // _ZNK18TickWorldComponent19getMaxDistToPlayersEv
+    bool isAlwaysActive()const; // _ZNK18TickWorldComponent14isAlwaysActiveEv
+    bool hasTickingArea()const; // _ZNK18TickWorldComponent14hasTickingAreaEv
+    void getTickingArea(); // _ZN18TickWorldComponent14getTickingAreaEv
+    void setTickingArea(Actor &, std::shared_ptr<ITickingArea>); // _ZN18TickWorldComponent14setTickingAreaER5ActorSt10shared_ptrI12ITickingAreaE
+    void updateArea(Actor &); // _ZN18TickWorldComponent10updateAreaER5Actor
 };

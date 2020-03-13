@@ -1,11 +1,8 @@
 #pragma once
 
-#include "../../../unmapped/Block.h"
 
 
-class BlockUtils {
+namespace BlockUtils {
 
-public:
-
-    bool isFullFlowingWater(Block const&);
+    bool isFullFlowingWater(Block const&); // _ZN10BlockUtils18isFullFlowingWaterERK5Block
 };

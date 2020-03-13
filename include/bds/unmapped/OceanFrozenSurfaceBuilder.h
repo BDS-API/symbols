@@ -1,23 +1,16 @@
 #pragma once
 
-#include "./ISurfaceBuilder.h"
-#include "../bedrock/util/Random.h"
-#include "../bedrock/block/unmapped/BlockVolume.h"
-#include "./EntityContext.h"
-#include "../bedrock/util/BlockPos.h"
-#include "../bedrock/level/biome/Biome.h"
+#include "ISurfaceBuilder.h"
 
 
 namespace VanillaSurfaceBuilders {
 
-class OceanFrozenSurfaceBuilder : ISurfaceBuilder {
+    class OceanFrozenSurfaceBuilder : ISurfaceBuilder {
 
-public:
-    virtual ~OceanFrozenSurfaceBuilder();
-    virtual void init(EntityContext &, unsigned int);
-    virtual void buildSurfaceAt(Biome &, Random &, BlockVolume &, BlockPos const&, float, short);
-
-    OceanFrozenSurfaceBuilder();
-};
-
+    public:
+        ~OceanFrozenSurfaceBuilder(); // _ZN22VanillaSurfaceBuilders25OceanFrozenSurfaceBuilderD2Ev
+        virtual void init(EntityContext &, unsigned int); // _ZN22VanillaSurfaceBuilders25OceanFrozenSurfaceBuilder4initER13EntityContextj
+        virtual void buildSurfaceAt(Biome &, Random &, BlockVolume &, BlockPos const&, float, short); // _ZN22VanillaSurfaceBuilders25OceanFrozenSurfaceBuilder14buildSurfaceAtER5BiomeR6RandomR11BlockVolumeRK8BlockPosfs
+        OceanFrozenSurfaceBuilder(); // _ZN22VanillaSurfaceBuilders25OceanFrozenSurfaceBuilderC2Ev
+    };
 }

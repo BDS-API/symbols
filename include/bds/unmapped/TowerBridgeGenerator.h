@@ -1,24 +1,16 @@
 #pragma once
 
-#include "./StructureManager.h"
-#include "../bedrock/util/Random.h"
-#include <memory>
-#include "./SectionGenerator.h"
-#include "../bedrock/level/structure/piece/StructurePiece.h"
 #include <vector>
-#include "../bedrock/level/structure/piece/EndCityPiece.h"
-#include "../bedrock/util/BlockPos.h"
+#include "SectionGenerator.h"
 
 
 namespace EndCityPieces {
 
-class TowerBridgeGenerator : EndCityPieces::SectionGenerator {
+    class TowerBridgeGenerator : EndCityPieces::SectionGenerator {
 
-public:
-    virtual void generate(StructureManager &, std::vector<std::unique_ptr<EndCityPieces::SectionGenerator, std::default_delete<EndCityPieces::SectionGenerator>>, std::allocator<std::unique_ptr<EndCityPieces::SectionGenerator, std::default_delete<EndCityPieces::SectionGenerator>>>> const&, int, EndCityPieces::EndCityPiece *, BlockPos const&, std::vector<std::unique_ptr<StructurePiece, std::default_delete<std::vector &>>, std::allocator<std::default_delete<std::vector &>>> &, Random &);
-    virtual ~TowerBridgeGenerator();
-
-    TowerBridgeGenerator();
-};
-
+    public:
+        virtual void generate(StructureManager &, std::vector<std::unique_ptr<EndCityPieces::SectionGenerator>> const&, int, EndCityPieces::EndCityPiece *, BlockPos const&, std::vector<std::unique_ptr<StructurePiece>> &, Random &); // _ZN13EndCityPieces20TowerBridgeGenerator8generateER16StructureManagerRKSt6vectorISt10unique_ptrINS_16SectionGeneratorESt14default_deleteIS5_EESaIS8_EEiPNS_12EndCityPieceERK8BlockPosRS3_IS4_I14StructurePieceS6_ISI_EESaISK_EER6Random
+        ~TowerBridgeGenerator(); // _ZN13EndCityPieces20TowerBridgeGeneratorD2Ev
+        TowerBridgeGenerator(); // _ZN13EndCityPieces20TowerBridgeGeneratorC2Ev
+    };
 }

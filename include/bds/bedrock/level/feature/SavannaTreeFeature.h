@@ -1,18 +1,13 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../actor/Actor.h"
-#include "../../util/BlockPos.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./TreeFeature.h"
+#include "TreeFeature.h"
 
 
 class SavannaTreeFeature : TreeFeature {
 
 public:
-    virtual ~SavannaTreeFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    SavannaTreeFeature(Actor *);
-    void _placeLeafAt(BlockSource &, BlockPos const&)const;
+    ~SavannaTreeFeature(); // _ZN18SavannaTreeFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK18SavannaTreeFeature5placeER11BlockSourceRK8BlockPosR6Random
+    SavannaTreeFeature(Actor *); // _ZN18SavannaTreeFeatureC2EP5Actor
+    void _placeLeafAt(BlockSource &, BlockPos const&)const; // _ZNK18SavannaTreeFeature12_placeLeafAtER11BlockSourceRK8BlockPos
 };

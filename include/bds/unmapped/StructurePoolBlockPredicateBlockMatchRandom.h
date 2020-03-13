@@ -1,15 +1,12 @@
 #pragma once
 
-#include "./Block.h"
-#include "../bedrock/util/Random.h"
-#include "./IStructurePoolBlockPredicate.h"
+#include "IStructurePoolBlockPredicate.h"
 
 
 class StructurePoolBlockPredicateBlockMatchRandom : IStructurePoolBlockPredicate {
 
 public:
-    virtual ~StructurePoolBlockPredicateBlockMatchRandom();
-    virtual void test(Block const&, Random &)const;
-
-    StructurePoolBlockPredicateBlockMatchRandom(Block const&, float);
+    ~StructurePoolBlockPredicateBlockMatchRandom(); // _ZN43StructurePoolBlockPredicateBlockMatchRandomD2Ev
+    virtual void test(Block const&, Random &)const; // _ZNK43StructurePoolBlockPredicateBlockMatchRandom4testERK5BlockR6Random
+    StructurePoolBlockPredicateBlockMatchRandom(Block const&, float); // _ZN43StructurePoolBlockPredicateBlockMatchRandomC2ERK5Blockf
 };

@@ -4,11 +4,9 @@
 
 namespace BlockGeometry {
 
-class Model {
+    class Model {
 
-public:
-
-    ~Model();
-};
-
+    public:
+        ~Model(); // _ZN13BlockGeometry5ModelD2Ev
+    };
 }

@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../../actor/unmapped/ActorUniqueID.h"
-#include "./LevelContainerManagerModel.h"
-#include "../../util/BlockPos.h"
-#include "../../actor/Player.h"
+#include "LevelContainerManagerModel.h"
 
 
 class HopperContainerManagerModel : LevelContainerManagerModel {
 
 public:
-    virtual ~HopperContainerManagerModel();
-    virtual void init();
-
-//  HopperContainerManagerModel(ContainerID, Player &, BlockPos const&); //TODO: incomplete function definition
-//  HopperContainerManagerModel(ContainerID, Player &, ActorUniqueID const&); //TODO: incomplete function definition
+    ~HopperContainerManagerModel(); // _ZN27HopperContainerManagerModelD2Ev
+    virtual void init(); // _ZN27HopperContainerManagerModel4initEv
+//  HopperContainerManagerModel(ContainerID, Player &, BlockPos const&); //TODO: incomplete function definition // _ZN27HopperContainerManagerModelC2E11ContainerIDR6PlayerRK8BlockPos
+//  HopperContainerManagerModel(ContainerID, Player &, ActorUniqueID const&); //TODO: incomplete function definition // _ZN27HopperContainerManagerModelC2E11ContainerIDR6PlayerRK13ActorUniqueID
 };

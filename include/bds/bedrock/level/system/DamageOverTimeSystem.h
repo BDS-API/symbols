@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./ITickingSystem.h"
-#include "../../../unmapped/EntityRegistry.h"
+#include "ITickingSystem.h"
 
 
 class DamageOverTimeSystem : ITickingSystem {
 
 public:
-    virtual ~DamageOverTimeSystem();
-    virtual void tick(EntityRegistry &);
-
-    DamageOverTimeSystem();
+    ~DamageOverTimeSystem(); // _ZN20DamageOverTimeSystemD2Ev
+    virtual void tick(EntityRegistry &); // _ZN20DamageOverTimeSystem4tickER14EntityRegistry
+    DamageOverTimeSystem(); // _ZN20DamageOverTimeSystemC2Ev
 };

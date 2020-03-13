@@ -1,13 +1,11 @@
 #pragma once
 
-#include "../../../unmapped/HashedString.h"
 
 
 class ActorAnimationControllerInfo {
 
 public:
-
-    ActorAnimationControllerInfo(HashedString const&);
-    ActorAnimationControllerInfo();
-    ~ActorAnimationControllerInfo();
+    ActorAnimationControllerInfo(HashedString const&); // _ZN28ActorAnimationControllerInfoC2ERK12HashedString
+    ActorAnimationControllerInfo(); // _ZN28ActorAnimationControllerInfoC2Ev
+    ~ActorAnimationControllerInfo(); // _ZN28ActorAnimationControllerInfoD2Ev
 };

@@ -1,20 +1,16 @@
 #pragma once
 
-#include "../../../actor/Player.h"
-#include "../../../item/ItemStack.h"
 #include "../../Command.h"
 
 
 namespace AgentCommands {
 
-class PlaceCommand : AgentCommands::Command {
+    class PlaceCommand : AgentCommands::Command {
 
-public:
-    virtual ~PlaceCommand();
-    virtual void execute();
-    virtual bool isDone();
-
-//  PlaceCommand(Player &, ItemStack const&, int, AgentCommands::Direction); //TODO: incomplete function definition
-};
-
+    public:
+        ~PlaceCommand(); // _ZN13AgentCommands12PlaceCommandD2Ev
+        virtual void execute(); // _ZN13AgentCommands12PlaceCommand7executeEv
+        virtual bool isDone(); // _ZN13AgentCommands12PlaceCommand6isDoneEv
+//      PlaceCommand(Player &, ItemStack const&, int, AgentCommands::Direction); //TODO: incomplete function definition // _ZN13AgentCommands12PlaceCommandC2ER6PlayerRK9ItemStackiNS_9DirectionE
+    };
 }

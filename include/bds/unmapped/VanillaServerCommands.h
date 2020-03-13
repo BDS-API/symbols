@@ -1,11 +1,8 @@
 #pragma once
 
-#include "../bedrock/command/CommandRegistry.h"
 
 
-class VanillaServerCommands {
+namespace VanillaServerCommands {
 
-public:
-
-    void setup(CommandRegistry &);
+    void setup(CommandRegistry &); // _ZN21VanillaServerCommands5setupER15CommandRegistry
 };

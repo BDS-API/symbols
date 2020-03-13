@@ -1,17 +1,14 @@
 #pragma once
 
-#include "./DefintionDescription.h"
-#include "./IsExperimentalDescription.h"
-#include "../../../json/Value.h"
+#include "DefintionDescription.h"
 
 
 class IsExperimentalDescription : DefintionDescription {
 
 public:
-    virtual ~IsExperimentalDescription();
-    virtual void getJsonName()const;
-
-    IsExperimentalDescription();
-    IsExperimentalDescription(IsExperimentalDescription &&);
-    void parse(Json::Value &);
+    ~IsExperimentalDescription(); // _ZN25IsExperimentalDescriptionD2Ev
+    virtual void getJsonName()const; // _ZNK25IsExperimentalDescription11getJsonNameEv
+    IsExperimentalDescription(); // _ZN25IsExperimentalDescriptionC2Ev
+    IsExperimentalDescription(IsExperimentalDescription &&); // _ZN25IsExperimentalDescriptionC2EOS_
+    void parse(Json::Value &); // _ZN25IsExperimentalDescription5parseERN4Json5ValueE
 };

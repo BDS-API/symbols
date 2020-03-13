@@ -1,19 +1,15 @@
 #pragma once
 
-#include "../../../../block/unmapped/BlockSource.h"
-#include "../../../../../unmapped/BoundingBox.h"
 #include "../OceanMonumentPiece.h"
-#include "../../../../util/Random.h"
 
 
 class OceanMonumentWingRoom : OceanMonumentPiece {
 
 public:
-    virtual ~OceanMonumentWingRoom();
-    virtual void getType()const;
-    virtual void postProcess(BlockSource *, Random &, BoundingBox const&);
-    virtual void postProcessMobsAt(BlockSource *, Random &, BoundingBox const&);
-
-    OceanMonumentWingRoom();
-    OceanMonumentWingRoom(int &, BoundingBox &, int, bool);
+    ~OceanMonumentWingRoom(); // _ZN21OceanMonumentWingRoomD2Ev
+    virtual void getType()const; // _ZNK21OceanMonumentWingRoom7getTypeEv
+    virtual void postProcess(BlockSource *, Random &, BoundingBox const&); // _ZN21OceanMonumentWingRoom11postProcessEP11BlockSourceR6RandomRK11BoundingBox
+    virtual void postProcessMobsAt(BlockSource *, Random &, BoundingBox const&); // _ZN21OceanMonumentWingRoom17postProcessMobsAtEP11BlockSourceR6RandomRK11BoundingBox
+    OceanMonumentWingRoom(); // _ZN21OceanMonumentWingRoomC2Ev
+    OceanMonumentWingRoom(int &, BoundingBox &, int, bool); // _ZN21OceanMonumentWingRoomC2ERiR11BoundingBoxib
 };

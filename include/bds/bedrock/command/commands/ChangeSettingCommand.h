@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
-#include "./ServerCommand.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
+#include "ServerCommand.h"
 
 
 class ChangeSettingCommand : ServerCommand {
 
 public:
-    virtual ~ChangeSettingCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    ChangeSettingCommand();
+    ~ChangeSettingCommand(); // _ZN20ChangeSettingCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK20ChangeSettingCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN20ChangeSettingCommand5setupER15CommandRegistry
+    ChangeSettingCommand(); // _ZN20ChangeSettingCommandC2Ev
 };

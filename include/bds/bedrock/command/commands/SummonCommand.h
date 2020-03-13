@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../CommandRegistry.h"
 #include "../Command.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
 
 
 class SummonCommand : Command {
 
 public:
-    virtual ~SummonCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    SummonCommand();
+    ~SummonCommand(); // _ZN13SummonCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK13SummonCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN13SummonCommand5setupER15CommandRegistry
+    SummonCommand(); // _ZN13SummonCommandC2Ev
 };

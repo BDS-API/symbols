@@ -2,9 +2,7 @@
 
 
 
-class PackSettingsJsonValidator {
+namespace PackSettingsJsonValidator {
 
-public:
-
-    void getValidator();
+    void getValidator(); // _ZN25PackSettingsJsonValidator12getValidatorEv
 };

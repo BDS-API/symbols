@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./WorldGenClimateMappingAttributes.h"
 
 
 class WorldGenClimateMappingAttributes {
 
 public:
-
-    ~WorldGenClimateMappingAttributes();
-    WorldGenClimateMappingAttributes(WorldGenClimateMappingAttributes &&);
-    WorldGenClimateMappingAttributes();
+    ~WorldGenClimateMappingAttributes(); // _ZN32WorldGenClimateMappingAttributesD2Ev
+    WorldGenClimateMappingAttributes(WorldGenClimateMappingAttributes &&); // _ZN32WorldGenClimateMappingAttributesC2EOS_
+    WorldGenClimateMappingAttributes(); // _ZN32WorldGenClimateMappingAttributesC2Ev
 };

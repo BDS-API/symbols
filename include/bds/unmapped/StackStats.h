@@ -5,6 +5,5 @@
 class StackStats {
 
 public:
-
-    StackStats();
+    StackStats(); // _ZN10StackStatsC2Ev
 };

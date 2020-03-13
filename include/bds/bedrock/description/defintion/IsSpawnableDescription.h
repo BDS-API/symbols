@@ -1,17 +1,14 @@
 #pragma once
 
-#include "./DefintionDescription.h"
-#include "./IsSpawnableDescription.h"
-#include "../../../json/Value.h"
+#include "DefintionDescription.h"
 
 
 class IsSpawnableDescription : DefintionDescription {
 
 public:
-    virtual ~IsSpawnableDescription();
-    virtual void getJsonName()const;
-
-    IsSpawnableDescription();
-    IsSpawnableDescription(IsSpawnableDescription &&);
-    void parse(Json::Value &);
+    ~IsSpawnableDescription(); // _ZN22IsSpawnableDescriptionD2Ev
+    virtual void getJsonName()const; // _ZNK22IsSpawnableDescription11getJsonNameEv
+    IsSpawnableDescription(); // _ZN22IsSpawnableDescriptionC2Ev
+    IsSpawnableDescription(IsSpawnableDescription &&); // _ZN22IsSpawnableDescriptionC2EOS_
+    void parse(Json::Value &); // _ZN22IsSpawnableDescription5parseERN4Json5ValueE
 };

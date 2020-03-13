@@ -1,17 +1,13 @@
 #pragma once
 
-#include "./MessagingCommand.h"
-#include "../CommandRegistry.h"
-#include "../orgin/CommandOrigin.h"
-#include "../CommandOutput.h"
+#include "MessagingCommand.h"
 
 
 class TitleCommand : MessagingCommand {
 
 public:
-    virtual ~TitleCommand();
-    virtual void execute(CommandOrigin const&, CommandOutput &)const;
-
-    void setup(CommandRegistry &);
-    TitleCommand();
+    ~TitleCommand(); // _ZN12TitleCommandD2Ev
+    virtual void execute(CommandOrigin const&, CommandOutput &)const; // _ZNK12TitleCommand7executeERK13CommandOriginR13CommandOutput
+    void setup(CommandRegistry &); // _ZN12TitleCommand5setupER15CommandRegistry
+    TitleCommand(); // _ZN12TitleCommandC2Ev
 };

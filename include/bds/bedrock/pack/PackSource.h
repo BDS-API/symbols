@@ -1,19 +1,14 @@
 #pragma once
 
-#include "../../unmapped/IContentKeyProvider.h"
-#include "../../unmapped/PackIdVersion.h"
-#include "../../unmapped/Pack.h"
 
 
 class PackSource {
 
 public:
-    virtual void getPackOrigin()const;
-    virtual void getPackType()const;
-
-    ~PackSource();
-    ~PackSource();
-    void resolveUpgradeDependencies(Pack &, IContentKeyProvider const&);
-    void fetchPack(PackIdVersion const&);
-    PackSource();
+    virtual void getPackOrigin()const; // _ZNK10PackSource13getPackOriginEv
+    virtual void getPackType()const; // _ZNK10PackSource11getPackTypeEv
+    ~PackSource(); // _ZN10PackSourceD2Ev
+    void resolveUpgradeDependencies(Pack &, IContentKeyProvider const&); // _ZN10PackSource26resolveUpgradeDependenciesER4PackRK19IContentKeyProvider
+    void fetchPack(PackIdVersion const&); // _ZN10PackSource9fetchPackERK13PackIdVersion
+    PackSource(); // _ZN10PackSourceC2Ev
 };

@@ -6,7 +6,6 @@
 class PropertyDescription : Description {
 
 public:
-    virtual ~PropertyDescription();
-
-    PropertyDescription();
+    ~PropertyDescription(); // _ZN19PropertyDescriptionD2Ev
+    PropertyDescription(); // _ZN19PropertyDescriptionC2Ev
 };

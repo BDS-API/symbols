@@ -5,7 +5,6 @@
 class ServerMetrics {
 
 public:
-    virtual ~ServerMetrics();
-
-    ServerMetrics();
+    ~ServerMetrics(); // _ZN13ServerMetricsD2Ev
+    ServerMetrics(); // _ZN13ServerMetricsC2Ev
 };

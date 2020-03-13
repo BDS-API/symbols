@@ -1,11 +1,8 @@
 #pragma once
 
-#include "./ScheduledCallback.h"
 
 
-class CompareScheduledCallback {
+namespace CompareScheduledCallback {
 
-public:
-
-    void operator()(ScheduledCallback const&, ScheduledCallback const&);
+    void operator()(ScheduledCallback const&, ScheduledCallback const&); // _ZN24CompareScheduledCallbackclERK17ScheduledCallbackS2_
 };

@@ -5,7 +5,6 @@
 class IBlockPlacementTarget {
 
 public:
-    virtual ~IBlockPlacementTarget();
-
-    IBlockPlacementTarget();
+    ~IBlockPlacementTarget(); // _ZN21IBlockPlacementTargetD2Ev
+    IBlockPlacementTarget(); // _ZN21IBlockPlacementTargetC2Ev
 };

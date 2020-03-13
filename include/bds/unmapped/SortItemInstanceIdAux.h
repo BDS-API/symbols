@@ -1,11 +1,8 @@
 #pragma once
 
-#include "../bedrock/item/ItemInstance.h"
 
 
-class SortItemInstanceIdAux {
+namespace SortItemInstanceIdAux {
 
-public:
-
-    void operator()(ItemInstance const&, ItemInstance const&)const;
+    void operator()(ItemInstance const&, ItemInstance const&)const; // _ZNK21SortItemInstanceIdAuxclERK12ItemInstanceS2_
 };

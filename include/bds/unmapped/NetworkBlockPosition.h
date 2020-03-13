@@ -1,15 +1,12 @@
 #pragma once
 
-#include "./NetworkBlockPosition.h"
-#include "../bedrock/util/BlockPos.h"
 
 
 class NetworkBlockPosition {
 
 public:
-
-    NetworkBlockPosition(BlockPos const&);
-    NetworkBlockPosition(NetworkBlockPosition const&);
-    NetworkBlockPosition(int, int, int);
-    NetworkBlockPosition();
+    NetworkBlockPosition(BlockPos const&); // _ZN20NetworkBlockPositionC2ERK8BlockPos
+    NetworkBlockPosition(NetworkBlockPosition const&); // _ZN20NetworkBlockPositionC2ERKS_
+    NetworkBlockPosition(int, int, int); // _ZN20NetworkBlockPositionC2Eiii
+    NetworkBlockPosition(); // _ZN20NetworkBlockPositionC2Ev
 };

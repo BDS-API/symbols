@@ -1,17 +1,14 @@
 #pragma once
 
-#include "../util/BlockPos.h"
-#include "../actor/Player.h"
-#include "./FaceDirectionalBlock.h"
 #include <string>
+#include "FaceDirectionalBlock.h"
 
 
 class LoomBlock : FaceDirectionalBlock {
 
 public:
-    virtual ~LoomBlock();
-    virtual bool isCraftingBlock()const;
-    virtual void use(Player &, BlockPos const&)const;
-
-    LoomBlock(std::string const&, int);
+    ~LoomBlock(); // _ZN9LoomBlockD2Ev
+    virtual bool isCraftingBlock()const; // _ZNK9LoomBlock15isCraftingBlockEv
+    virtual void use(Player &, BlockPos const&)const; // _ZNK9LoomBlock3useER6PlayerRK8BlockPos
+    LoomBlock(std::string const&, int); // _ZN9LoomBlockC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
 };

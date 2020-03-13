@@ -1,15 +1,13 @@
 #pragma once
 
-#include "../../unmapped/Block.h"
-#include "./ShulkerBoxBlock.h"
 #include <string>
+#include "ShulkerBoxBlock.h"
 
 
 class UndyedShulkerBoxBlock : ShulkerBoxBlock {
 
 public:
-    virtual ~UndyedShulkerBoxBlock();
-    virtual void getColor(Block const&)const;
-
-    UndyedShulkerBoxBlock(std::string const&, int);
+    ~UndyedShulkerBoxBlock(); // _ZN21UndyedShulkerBoxBlockD2Ev
+    virtual void getColor(Block const&)const; // _ZNK21UndyedShulkerBoxBlock8getColorERK5Block
+    UndyedShulkerBoxBlock(std::string const&, int); // _ZN21UndyedShulkerBoxBlockC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi
 };

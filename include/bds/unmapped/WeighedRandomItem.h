@@ -4,13 +4,11 @@
 
 namespace WeighedRandom {
 
-class WeighedRandomItem {
+    class WeighedRandomItem {
 
-public:
-
-    WeighedRandomItem(int);
-    WeighedRandomItem();
-    void getWeight()const;
-};
-
+    public:
+        WeighedRandomItem(int); // _ZN13WeighedRandom17WeighedRandomItemC2Ei
+        WeighedRandomItem(); // _ZN13WeighedRandom17WeighedRandomItemC2Ev
+        void getWeight()const; // _ZNK13WeighedRandom17WeighedRandomItem9getWeightEv
+    };
 }

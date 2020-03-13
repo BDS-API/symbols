@@ -2,9 +2,8 @@
 
 
 
-class VanillaBlocks {
+namespace VanillaBlocks {
 
-public:
     static long mStone;
     static long mGrass;
     static long mDirt;
@@ -478,7 +477,6 @@ public:
     static long mHoneyBlock;
     static long mHoneycombBlock;
 
-
-    void assignBlocks();
-    void unassignBlocks();
+    void assignBlocks(); // _ZN13VanillaBlocks12assignBlocksEv
+    void unassignBlocks(); // _ZN13VanillaBlocks14unassignBlocksEv
 };

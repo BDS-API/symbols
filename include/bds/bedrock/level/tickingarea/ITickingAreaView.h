@@ -5,7 +5,6 @@
 class ITickingAreaView {
 
 public:
-    virtual ~ITickingAreaView();
-
-    ITickingAreaView();
+    ~ITickingAreaView(); // _ZN16ITickingAreaViewD2Ev
+    ITickingAreaView(); // _ZN16ITickingAreaViewC2Ev
 };

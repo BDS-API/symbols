@@ -1,19 +1,15 @@
 #pragma once
 
-#include "./ProjectileComponent.h"
-#include "../bedrock/actor/Actor.h"
-#include "../json/Value.h"
-#include "./OnHitSubcomponent.h"
+#include "OnHitSubcomponent.h"
 
 
 class CatchFireSubcomponent : OnHitSubcomponent {
 
 public:
-    virtual ~CatchFireSubcomponent();
-    virtual void readfromJSON(Json::Value &);
-    virtual void writetoJSON(Json::Value &)const;
-    virtual void doOnHitEffect(Actor &, ProjectileComponent &);
-
-    void getSubcomponentName();
-    CatchFireSubcomponent();
+    ~CatchFireSubcomponent(); // _ZN21CatchFireSubcomponentD2Ev
+    virtual void readfromJSON(Json::Value &); // _ZN21CatchFireSubcomponent12readfromJSONERN4Json5ValueE
+    virtual void writetoJSON(Json::Value &)const; // _ZNK21CatchFireSubcomponent11writetoJSONERN4Json5ValueE
+    virtual void doOnHitEffect(Actor &, ProjectileComponent &); // _ZN21CatchFireSubcomponent13doOnHitEffectER5ActorR19ProjectileComponent
+    void getSubcomponentName(); // _ZN21CatchFireSubcomponent19getSubcomponentNameEv
+    CatchFireSubcomponent(); // _ZN21CatchFireSubcomponentC2Ev
 };

@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./BodyControlComponent.h"
 
 
 class BodyControlComponent {
 
 public:
-
-    ~BodyControlComponent();
-    BodyControlComponent(BodyControlComponent &&);
-    BodyControlComponent();
+    ~BodyControlComponent(); // _ZN20BodyControlComponentD2Ev
+    BodyControlComponent(BodyControlComponent &&); // _ZN20BodyControlComponentC2EOS_
+    BodyControlComponent(); // _ZN20BodyControlComponentC2Ev
 };

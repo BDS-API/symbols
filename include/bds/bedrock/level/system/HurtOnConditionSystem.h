@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./ITickingSystem.h"
-#include "../../../unmapped/EntityRegistry.h"
+#include "ITickingSystem.h"
 
 
 class HurtOnConditionSystem : ITickingSystem {
 
 public:
-    virtual ~HurtOnConditionSystem();
-    virtual void tick(EntityRegistry &);
-
-    HurtOnConditionSystem();
+    ~HurtOnConditionSystem(); // _ZN21HurtOnConditionSystemD2Ev
+    virtual void tick(EntityRegistry &); // _ZN21HurtOnConditionSystem4tickER14EntityRegistry
+    HurtOnConditionSystem(); // _ZN21HurtOnConditionSystemC2Ev
 };

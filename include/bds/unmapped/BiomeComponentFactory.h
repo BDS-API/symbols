@@ -1,19 +1,14 @@
 #pragma once
 
-#include "./IWorldRegistriesProvider.h"
-#include "../bedrock/nbt/CompoundTag.h"
-#include "../bedrock/level/biome/Biome.h"
-#include "../json/Value.h"
 
 
 class BiomeComponentFactory {
 
 public:
-
-    ~BiomeComponentFactory();
-//  void _shouldPopulateSchema(BiomeComponentFactory::ComponentScope); //TODO: incomplete function definition
-//  BiomeComponentFactory(BiomeComponentFactory::FactoryScope); //TODO: incomplete function definition
-    bool processDataComponents(Biome &, IWorldRegistriesProvider &, Json::Value &)const;
-    bool processDataComponents(Biome &, IWorldRegistriesProvider &, CompoundTag &)const;
-    void registrationFinished();
+    ~BiomeComponentFactory(); // _ZN21BiomeComponentFactoryD2Ev
+//  void _shouldPopulateSchema(BiomeComponentFactory::ComponentScope); //TODO: incomplete function definition // _ZN21BiomeComponentFactory21_shouldPopulateSchemaENS_14ComponentScopeE
+//  BiomeComponentFactory(BiomeComponentFactory::FactoryScope); //TODO: incomplete function definition // _ZN21BiomeComponentFactoryC2ENS_12FactoryScopeE
+    bool processDataComponents(Biome &, IWorldRegistriesProvider &, Json::Value &)const; // _ZNK21BiomeComponentFactory21processDataComponentsER5BiomeR24IWorldRegistriesProviderRN4Json5ValueE
+    bool processDataComponents(Biome &, IWorldRegistriesProvider &, CompoundTag &)const; // _ZNK21BiomeComponentFactory21processDataComponentsER5BiomeR24IWorldRegistriesProviderR11CompoundTag
+    void registrationFinished(); // _ZN21BiomeComponentFactory20registrationFinishedEv
 };

@@ -1,14 +1,12 @@
 #pragma once
 
-#include "./PingedCompatibleServer.h"
 
 
 class PingedCompatibleServer {
 
 public:
-
-    PingedCompatibleServer();
-    ~PingedCompatibleServer();
-    PingedCompatibleServer(PingedCompatibleServer const&);
-    PingedCompatibleServer(PingedCompatibleServer &&);
+    PingedCompatibleServer(); // _ZN22PingedCompatibleServerC2Ev
+    ~PingedCompatibleServer(); // _ZN22PingedCompatibleServerD2Ev
+    PingedCompatibleServer(PingedCompatibleServer const&); // _ZN22PingedCompatibleServerC2ERKS_
+    PingedCompatibleServer(PingedCompatibleServer &&); // _ZN22PingedCompatibleServerC2EOS_
 };

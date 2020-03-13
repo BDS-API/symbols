@@ -1,14 +1,11 @@
 #pragma once
 
-#include "../../pack/ResourcePackManager.h"
 
 
-class WorldSystems {
+namespace WorldSystems {
 
-public:
     static long mInitialized;
 
-
-    void init(ResourcePackManager *);
-    void shutdown();
+    void init(ResourcePackManager *); // _ZN12WorldSystems4initEP19ResourcePackManager
+    void shutdown(); // _ZN12WorldSystems8shutdownEv
 };

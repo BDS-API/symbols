@@ -1,8 +1,5 @@
 #pragma once
 
-#include "../bedrock/util/Vec3.h"
-#include "../bedrock/util/Random.h"
-#include "../bedrock/util/Vec2.h"
 
 
 class SimplexNoise {
@@ -13,13 +10,12 @@ public:
     static long F2;
     static long G2;
 
-
-    SimplexNoise(Random &);
-    void _getValue(Vec2 const&)const;
-    void _getValue(Vec3 const&)const;
-    void _add(float *, float, float, int, int, float, float, float)const;
-    void _add(float *, Vec3 const&, int, int, int, Vec3 const&, float)const;
-    void _fastFloor(float);
-    void _dot(int const*, float, float);
-    void _dot(int const*, float, float, float);
+    SimplexNoise(Random &); // _ZN12SimplexNoiseC2ER6Random
+    void _getValue(Vec2 const&)const; // _ZNK12SimplexNoise9_getValueERK4Vec2
+    void _getValue(Vec3 const&)const; // _ZNK12SimplexNoise9_getValueERK4Vec3
+    void _add(float *, float, float, int, int, float, float, float)const; // _ZNK12SimplexNoise4_addEPfffiifff
+    void _add(float *, Vec3 const&, int, int, int, Vec3 const&, float)const; // _ZNK12SimplexNoise4_addEPfRK4Vec3iiiS3_f
+    void _fastFloor(float); // _ZN12SimplexNoise10_fastFloorEf
+    void _dot(int const*, float, float); // _ZN12SimplexNoise4_dotEPKiff
+    void _dot(int const*, float, float, float); // _ZN12SimplexNoise4_dotEPKifff
 };

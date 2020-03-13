@@ -5,6 +5,5 @@
 class WellKnownBiomeTags {
 
 public:
-
-    WellKnownBiomeTags();
+    WellKnownBiomeTags(); // _ZN18WellKnownBiomeTagsC2Ev
 };

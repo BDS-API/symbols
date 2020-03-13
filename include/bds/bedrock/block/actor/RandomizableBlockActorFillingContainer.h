@@ -1,20 +1,15 @@
 #pragma once
 
-#include "../../util/Vec3.h"
-#include "../../container/FillingContainer.h"
-#include "../../actor/Player.h"
-#include "../../util/BlockPos.h"
-#include "./RandomizableBlockActorContainerBase.h"
-#include "../unmapped/BlockSource.h"
 #include <string>
+#include "../../container/FillingContainer.h"
+#include "RandomizableBlockActorContainerBase.h"
 
 
 class RandomizableBlockActorFillingContainer : RandomizableBlockActorContainerBase, FillingContainer {
 
 public:
-    virtual ~RandomizableBlockActorFillingContainer();
-    virtual void startOpen(Player &);
-    virtual void dropContents(BlockSource &, Vec3 const&, bool);
-
-//  RandomizableBlockActorFillingContainer(BlockActorType, std::string const&, BlockPos const&, int, ContainerType); //TODO: incomplete function definition
+    ~RandomizableBlockActorFillingContainer(); // _ZN38RandomizableBlockActorFillingContainerD2Ev
+    virtual void startOpen(Player &); // _ZN38RandomizableBlockActorFillingContainer9startOpenER6Player
+    virtual void dropContents(BlockSource &, Vec3 const&, bool); // _ZN38RandomizableBlockActorFillingContainer12dropContentsER11BlockSourceRK4Vec3b
+//  RandomizableBlockActorFillingContainer(BlockActorType, std::string const&, BlockPos const&, int, ContainerType); //TODO: incomplete function definition // _ZN38RandomizableBlockActorFillingContainerC2E14BlockActorTypeRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERK8BlockPosi13ContainerType
 };

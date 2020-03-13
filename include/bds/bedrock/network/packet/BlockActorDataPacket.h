@@ -1,24 +1,19 @@
 #pragma once
 
-#include "../../nbt/CompoundTag.h"
-#include "../../io/BinaryStream.h"
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "../../util/BlockPos.h"
-#include "./Packet.h"
-#include "./BlockActorDataPacket.h"
 #include <string>
+#include "../../nbt/CompoundTag.h"
+#include "Packet.h"
 
 
 class BlockActorDataPacket : Packet {
 
 public:
-    virtual ~BlockActorDataPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    BlockActorDataPacket();
-    BlockActorDataPacket(BlockActorDataPacket const&);
-    BlockActorDataPacket(BlockPos const&, CompoundTag);
+    ~BlockActorDataPacket(); // _ZN20BlockActorDataPacketD2Ev
+    virtual void getId()const; // _ZNK20BlockActorDataPacket5getIdEv
+    virtual std::string getName()const; // _ZNK20BlockActorDataPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK20BlockActorDataPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN20BlockActorDataPacket4readER20ReadOnlyBinaryStream
+    BlockActorDataPacket(); // _ZN20BlockActorDataPacketC2Ev
+    BlockActorDataPacket(BlockActorDataPacket const&); // _ZN20BlockActorDataPacketC2ERKS_
+    BlockActorDataPacket(BlockPos const&, CompoundTag); // _ZN20BlockActorDataPacketC2ERK8BlockPos11CompoundTag
 };

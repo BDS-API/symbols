@@ -1,13 +1,11 @@
 #pragma once
 
-#include "./GeneticVariant.h"
 
 
 class GeneticVariant {
 
 public:
-
-    GeneticVariant();
-    ~GeneticVariant();
-    GeneticVariant(GeneticVariant const&);
+    GeneticVariant(); // _ZN14GeneticVariantC2Ev
+    ~GeneticVariant(); // _ZN14GeneticVariantD2Ev
+    GeneticVariant(GeneticVariant const&); // _ZN14GeneticVariantC2ERKS_
 };

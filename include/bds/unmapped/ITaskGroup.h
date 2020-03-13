@@ -5,7 +5,6 @@
 class ITaskGroup {
 
 public:
-    virtual ~ITaskGroup();
-
-    ITaskGroup();
+    ~ITaskGroup(); // _ZN10ITaskGroupD2Ev
+    ITaskGroup(); // _ZN10ITaskGroupC2Ev
 };

@@ -4,12 +4,10 @@
 
 namespace RakNet {
 
-class SocketDescriptor {
+    class SocketDescriptor {
 
-public:
-
-    SocketDescriptor();
-    SocketDescriptor(unsigned short, char const*);
-};
-
+    public:
+        SocketDescriptor(); // _ZN6RakNet16SocketDescriptorC2Ev
+        SocketDescriptor(unsigned short, char const*); // _ZN6RakNet16SocketDescriptorC2EtPKc
+    };
 }

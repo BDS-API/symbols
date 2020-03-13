@@ -1,22 +1,15 @@
 #pragma once
 
-#include "../../../../unmapped/HardcodedSpawnAreaRegistry.h"
-#include "./StructureFeature.h"
-#include "../../../util/BlockPos.h"
-#include "../../../../unmapped/Dimension.h"
-#include "../../../util/Random.h"
-#include "../../../../unmapped/BiomeSource.h"
-#include "../../../util/ChunkPos.h"
+#include "StructureFeature.h"
 
 
 class RandomScatteredLargeFeature : StructureFeature {
 
 public:
-    virtual ~RandomScatteredLargeFeature();
-    virtual void initMobSpawnTypes(HardcodedSpawnAreaRegistry &);
-    virtual void getNearestGeneratedFeature(Dimension &, BiomeSource &, BlockPos const&, BlockPos &);
-    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int);
-    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&);
-
-    RandomScatteredLargeFeature(unsigned int);
+    ~RandomScatteredLargeFeature(); // _ZN27RandomScatteredLargeFeatureD2Ev
+    virtual void initMobSpawnTypes(HardcodedSpawnAreaRegistry &); // _ZN27RandomScatteredLargeFeature17initMobSpawnTypesER26HardcodedSpawnAreaRegistry
+    virtual void getNearestGeneratedFeature(Dimension &, BiomeSource &, BlockPos const&, BlockPos &); // _ZN27RandomScatteredLargeFeature26getNearestGeneratedFeatureER9DimensionR11BiomeSourceRK8BlockPosRS4_
+    virtual bool isFeatureChunk(BiomeSource const&, Random &, ChunkPos const&, unsigned int); // _ZN27RandomScatteredLargeFeature14isFeatureChunkERK11BiomeSourceR6RandomRK8ChunkPosj
+    virtual void createStructureStart(Dimension &, BiomeSource &, Random &, ChunkPos const&); // _ZN27RandomScatteredLargeFeature20createStructureStartER9DimensionR11BiomeSourceR6RandomRK8ChunkPos
+    RandomScatteredLargeFeature(unsigned int); // _ZN27RandomScatteredLargeFeatureC2Ej
 };

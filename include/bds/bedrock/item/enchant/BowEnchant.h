@@ -1,16 +1,15 @@
 #pragma once
 
-#include "./Enchant.h"
 #include <string>
+#include "Enchant.h"
 
 
 class BowEnchant : Enchant {
 
 public:
-    virtual ~BowEnchant();
-    virtual void getMinCost(int)const;
-    virtual void getMaxCost(int)const;
-    virtual void getMaxLevel()const;
-
-//  BowEnchant(Enchant::Type, Enchant::Frequency, std::string const&, std::string const&, int, int); //TODO: incomplete function definition
+    ~BowEnchant(); // _ZN10BowEnchantD2Ev
+    virtual void getMinCost(int)const; // _ZNK10BowEnchant10getMinCostEi
+    virtual void getMaxCost(int)const; // _ZNK10BowEnchant10getMaxCostEi
+    virtual void getMaxLevel()const; // _ZNK10BowEnchant11getMaxLevelEv
+//  BowEnchant(Enchant::Type, Enchant::Frequency, std::string const&, std::string const&, int, int); //TODO: incomplete function definition // _ZN10BowEnchantC2EN7Enchant4TypeENS0_9FrequencyERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESA_ii
 };

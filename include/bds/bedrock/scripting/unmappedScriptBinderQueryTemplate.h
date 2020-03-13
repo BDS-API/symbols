@@ -1,17 +1,15 @@
 #pragma once
 
-#include "./ScriptBinderTemplate.h"
-#include "./ScriptObjectBinder.h"
 #include <string>
+#include "ScriptBinderTemplate.h"
 
 
 class ScriptBinderQueryTemplate : ScriptBinderTemplate {
 
 public:
-    virtual ~ScriptBinderQueryTemplate();
-    virtual std::string getTemplateIdentifier()const;
-    virtual void applyTemplate(ScriptObjectBinder &)const;
-
-    void build(unsigned int);
-    ScriptBinderQueryTemplate();
+    ~ScriptBinderQueryTemplate(); // _ZN25ScriptBinderQueryTemplateD2Ev
+    virtual std::string getTemplateIdentifier()const; // _ZNK25ScriptBinderQueryTemplate21getTemplateIdentifierB5cxx11Ev
+    virtual void applyTemplate(ScriptObjectBinder &)const; // _ZNK25ScriptBinderQueryTemplate13applyTemplateER18ScriptObjectBinder
+    void build(unsigned int); // _ZN25ScriptBinderQueryTemplate5buildEj
+    ScriptBinderQueryTemplate(); // _ZN25ScriptBinderQueryTemplateC2Ev
 };

@@ -5,7 +5,6 @@
 class IPackTelemetry {
 
 public:
-    virtual ~IPackTelemetry();
-
-    IPackTelemetry();
+    ~IPackTelemetry(); // _ZN14IPackTelemetryD2Ev
+    IPackTelemetry(); // _ZN14IPackTelemetryC2Ev
 };

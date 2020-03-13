@@ -1,16 +1,13 @@
 #pragma once
 
-#include "orgin/CommandOrigin.h"
-#include "../util/Vec3.h"
 
 
 class CommandPosition {
 
 public:
-
-    CommandPosition();
-    void getPosition(CommandOrigin const&, Vec3 const&)const;
-    void getPosition(Vec3 const&, Vec3 const&)const;
-    void getBlockPos(CommandOrigin const&, Vec3 const&)const;
-    void getBlockPos(Vec3 const&, Vec3 const&)const;
+    CommandPosition(); // _ZN15CommandPositionC2Ev
+    void getPosition(CommandOrigin const&, Vec3 const&)const; // _ZNK15CommandPosition11getPositionERK13CommandOriginRK4Vec3
+    void getPosition(Vec3 const&, Vec3 const&)const; // _ZNK15CommandPosition11getPositionERK4Vec3S2_
+    void getBlockPos(CommandOrigin const&, Vec3 const&)const; // _ZNK15CommandPosition11getBlockPosERK13CommandOriginRK4Vec3
+    void getBlockPos(Vec3 const&, Vec3 const&)const; // _ZNK15CommandPosition11getBlockPosERK4Vec3S2_
 };

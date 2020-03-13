@@ -1,20 +1,17 @@
 #pragma once
 
-#include "../../io/ReadOnlyBinaryStream.h"
 #include <string>
-#include "../../io/BinaryStream.h"
-#include "./Packet.h"
+#include "Packet.h"
 
 
 class SetDisplayObjectivePacket : Packet {
 
 public:
-    virtual ~SetDisplayObjectivePacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    SetDisplayObjectivePacket();
-//  SetDisplayObjectivePacket(std::string const&, std::string const&, std::string const&, std::string const&, ObjectiveSortOrder); //TODO: incomplete function definition
+    ~SetDisplayObjectivePacket(); // _ZN25SetDisplayObjectivePacketD2Ev
+    virtual void getId()const; // _ZNK25SetDisplayObjectivePacket5getIdEv
+    virtual std::string getName()const; // _ZNK25SetDisplayObjectivePacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK25SetDisplayObjectivePacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN25SetDisplayObjectivePacket4readER20ReadOnlyBinaryStream
+    SetDisplayObjectivePacket(); // _ZN25SetDisplayObjectivePacketC2Ev
+//  SetDisplayObjectivePacket(std::string const&, std::string const&, std::string const&, std::string const&, ObjectiveSortOrder); //TODO: incomplete function definition // _ZN25SetDisplayObjectivePacketC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_S7_18ObjectiveSortOrder
 };

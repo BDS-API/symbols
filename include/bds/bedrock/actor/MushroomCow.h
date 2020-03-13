@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../util/BlockPos.h"
-#include "unmapped/ActorDefinitionGroup.h"
-#include "unmapped/ActorDefinitionIdentifier.h"
-#include "./Animal.h"
+#include "Animal.h"
 
 
 class MushroomCow : Animal {
 
 public:
-    virtual ~MushroomCow();
-    virtual void checkSpawnRules(bool);
-
-    MushroomCow(ActorDefinitionGroup *, ActorDefinitionIdentifier const&);
-    void _isFloorMycelium(BlockPos const&);
+    ~MushroomCow(); // _ZN11MushroomCowD2Ev
+    virtual void checkSpawnRules(bool); // _ZN11MushroomCow15checkSpawnRulesEb
+    MushroomCow(ActorDefinitionGroup *, ActorDefinitionIdentifier const&); // _ZN11MushroomCowC2EP20ActorDefinitionGroupRK25ActorDefinitionIdentifier
+    void _isFloorMycelium(BlockPos const&); // _ZN11MushroomCow16_isFloorMyceliumERK8BlockPos
 };

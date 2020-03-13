@@ -1,19 +1,16 @@
 #pragma once
 
-#include "../../io/ReadOnlyBinaryStream.h"
-#include "./Packet.h"
-#include "../../io/BinaryStream.h"
 #include <string>
+#include "Packet.h"
 
 
 class GameRulesChangedPacket : Packet {
 
 public:
-    virtual ~GameRulesChangedPacket();
-    virtual void getId()const;
-    virtual std::string getName()const;
-    virtual void write(BinaryStream &)const;
-    virtual void read(ReadOnlyBinaryStream &);
-
-    GameRulesChangedPacket();
+    ~GameRulesChangedPacket(); // _ZN22GameRulesChangedPacketD2Ev
+    virtual void getId()const; // _ZNK22GameRulesChangedPacket5getIdEv
+    virtual std::string getName()const; // _ZNK22GameRulesChangedPacket7getNameB5cxx11Ev
+    virtual void write(BinaryStream &)const; // _ZNK22GameRulesChangedPacket5writeER12BinaryStream
+    virtual void read(ReadOnlyBinaryStream &); // _ZN22GameRulesChangedPacket4readER20ReadOnlyBinaryStream
+    GameRulesChangedPacket(); // _ZN22GameRulesChangedPacketC2Ev
 };

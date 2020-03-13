@@ -1,17 +1,13 @@
 #pragma once
 
-#include "../../util/Random.h"
-#include "../../block/unmapped/BlockSource.h"
-#include "./Feature.h"
-#include "../../util/BlockPos.h"
+#include "Feature.h"
 
 
 class EndGatewayFeature : Feature {
 
 public:
-    virtual ~EndGatewayFeature();
-    virtual void place(BlockSource &, BlockPos const&, Random &)const;
-
-    EndGatewayFeature();
-    void testEnd(BlockSource &, BlockPos const&, Random &)const;
+    ~EndGatewayFeature(); // _ZN17EndGatewayFeatureD2Ev
+    virtual void place(BlockSource &, BlockPos const&, Random &)const; // _ZNK17EndGatewayFeature5placeER11BlockSourceRK8BlockPosR6Random
+    EndGatewayFeature(); // _ZN17EndGatewayFeatureC2Ev
+    void testEnd(BlockSource &, BlockPos const&, Random &)const; // _ZNK17EndGatewayFeature7testEndER11BlockSourceRK8BlockPosR6Random
 };

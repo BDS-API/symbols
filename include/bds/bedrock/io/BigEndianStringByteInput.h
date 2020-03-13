@@ -1,20 +1,19 @@
 #pragma once
 
-#include "./StringByteInput.h"
 #include <string>
+#include "StringByteInput.h"
 
 
 class BigEndianStringByteInput : StringByteInput {
 
 public:
-    virtual ~BigEndianStringByteInput();
-    virtual void readFloat();
-    virtual void readDouble();
-    virtual void readShort();
-    virtual void readInt();
-    virtual void readLongLong();
-//  virtual void readBytes(void *, unsigned long); //TODO: incomplete function definition
-//  virtual void readBigEndianBytes(void *, unsigned long); //TODO: incomplete function definition
-
-    BigEndianStringByteInput(std::string const&);
+    ~BigEndianStringByteInput(); // _ZN24BigEndianStringByteInputD2Ev
+    virtual void readFloat(); // _ZN24BigEndianStringByteInput9readFloatEv
+    virtual void readDouble(); // _ZN24BigEndianStringByteInput10readDoubleEv
+    virtual void readShort(); // _ZN24BigEndianStringByteInput9readShortEv
+    virtual void readInt(); // _ZN24BigEndianStringByteInput7readIntEv
+    virtual void readLongLong(); // _ZN24BigEndianStringByteInput12readLongLongEv
+    virtual void readBytes(void *, unsigned long); // _ZN24BigEndianStringByteInput9readBytesEPvm
+    virtual void readBigEndianBytes(void *, unsigned long); // _ZN24BigEndianStringByteInput18readBigEndianBytesEPvm
+    BigEndianStringByteInput(std::string const&); // _ZN24BigEndianStringByteInputC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 };

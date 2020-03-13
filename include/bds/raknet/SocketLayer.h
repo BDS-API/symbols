@@ -1,24 +1,19 @@
 #pragma once
 
-#include "./RakString.h"
-#include "./SystemAddress.h"
-#include "./NetworkAdapter.h"
+#include "RakString.h"
 
 
 namespace RakNet {
 
-class SocketLayer {
+    namespace SocketLayer {
 
-public:
-
-    void SetSocketOptions(int, bool, bool);
-    void GetSubNetForSocketAndIp(RakNet::RakString);
-    void GetMyAdapters(RakNet::NetworkAdapter *);
-    void GetMyIP(RakNet::SystemAddress *);
-    void GetLocalPort(int);
-    void GetSystemAddress(int, RakNet::SystemAddress *);
-    void GetSystemAddress_Old(int, RakNet::SystemAddress *);
-    void GetFirstBindableIP(char *, int);
-};
-
+        void SetSocketOptions(int, bool, bool); // _ZN6RakNet11SocketLayer16SetSocketOptionsEibb
+        void GetSubNetForSocketAndIp(RakNet::RakString); // _ZN6RakNet11SocketLayer23GetSubNetForSocketAndIpENS_9RakStringE
+        void GetMyAdapters(RakNet::NetworkAdapter *); // _ZN6RakNet11SocketLayer13GetMyAdaptersEPNS_14NetworkAdapterE
+        void GetMyIP(RakNet::SystemAddress *); // _ZN6RakNet11SocketLayer7GetMyIPEPNS_13SystemAddressE
+        void GetLocalPort(int); // _ZN6RakNet11SocketLayer12GetLocalPortEi
+        void GetSystemAddress(int, RakNet::SystemAddress *); // _ZN6RakNet11SocketLayer16GetSystemAddressEiPNS_13SystemAddressE
+        void GetSystemAddress_Old(int, RakNet::SystemAddress *); // _ZN6RakNet11SocketLayer20GetSystemAddress_OldEiPNS_13SystemAddressE
+        void GetFirstBindableIP(char *, int); // _ZN6RakNet11SocketLayer18GetFirstBindableIPEPci
+    };
 }
