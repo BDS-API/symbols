@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class NpcDescription : ComponentDescription {
+class NpcDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK14NpcDescription11getJsonNameEv

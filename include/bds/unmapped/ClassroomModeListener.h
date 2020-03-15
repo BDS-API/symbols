@@ -3,7 +3,7 @@
 #include "../bedrock/level/LevelListener.h"
 
 
-class ClassroomModeListener : LevelListener {
+class ClassroomModeListener : public LevelListener {
 
 public:
     ~ClassroomModeListener(); // _ZN21ClassroomModeListenerD2Ev

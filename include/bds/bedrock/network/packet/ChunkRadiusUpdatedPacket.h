@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ChunkRadiusUpdatedPacket : Packet {
+class ChunkRadiusUpdatedPacket : public Packet {
 
 public:
     ~ChunkRadiusUpdatedPacket(); // _ZN24ChunkRadiusUpdatedPacketD2Ev

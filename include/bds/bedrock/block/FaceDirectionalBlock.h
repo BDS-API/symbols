@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class FaceDirectionalBlock : BlockLegacy {
+class FaceDirectionalBlock : public BlockLegacy {
 
 public:
     ~FaceDirectionalBlock(); // _ZN20FaceDirectionalBlockD2Ev

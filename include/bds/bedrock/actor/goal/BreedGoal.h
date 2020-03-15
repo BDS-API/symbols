@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include "../../util/Vec3.h"
 #include "Goal.h"
+#include "../../util/Vec3.h"
 #include "../../util/Vec2.h"
 
 
-class BreedGoal : Goal {
+class BreedGoal : public Goal {
 
 public:
     ~BreedGoal(); // _ZN9BreedGoalD2Ev

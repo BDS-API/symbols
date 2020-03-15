@@ -1,11 +1,11 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
 #include "../../item/unmapped/ItemTransferAmount.h"
+#include <memory>
 
 
-class MaterialReducerInputContainerController : ContainerController {
+class MaterialReducerInputContainerController : public ContainerController {
 
 public:
     ~MaterialReducerInputContainerController(); // _ZN39MaterialReducerInputContainerControllerD2Ev

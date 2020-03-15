@@ -3,7 +3,7 @@
 #include "ServerCommand.h"
 
 
-class ChangeSettingCommand : ServerCommand {
+class ChangeSettingCommand : public ServerCommand {
 
 public:
     ~ChangeSettingCommand(); // _ZN20ChangeSettingCommandD2Ev

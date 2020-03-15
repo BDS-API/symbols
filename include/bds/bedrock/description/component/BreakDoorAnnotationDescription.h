@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class BreakDoorAnnotationDescription : ComponentDescription {
+class BreakDoorAnnotationDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK30BreakDoorAnnotationDescription11getJsonNameEv

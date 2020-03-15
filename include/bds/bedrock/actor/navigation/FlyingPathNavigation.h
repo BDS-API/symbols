@@ -3,7 +3,7 @@
 #include "PathNavigation.h"
 
 
-class FlyingPathNavigation : PathNavigation {
+class FlyingPathNavigation : public PathNavigation {
 
 public:
     ~FlyingPathNavigation(); // _ZN20FlyingPathNavigationD2Ev

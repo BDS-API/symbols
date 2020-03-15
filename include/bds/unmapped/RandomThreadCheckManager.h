@@ -3,7 +3,7 @@
 #include "AppPlatformListener.h"
 
 
-class RandomThreadCheckManager : AppPlatformListener {
+class RandomThreadCheckManager : public AppPlatformListener {
 
 public:
     static long mInstance;

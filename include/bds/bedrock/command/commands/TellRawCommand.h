@@ -3,7 +3,7 @@
 #include "MessagingCommand.h"
 
 
-class TellRawCommand : MessagingCommand {
+class TellRawCommand : public MessagingCommand {
 
 public:
     ~TellRawCommand(); // _ZN14TellRawCommandD2Ev

@@ -3,7 +3,7 @@
 #include "ITickingAreaView.h"
 
 
-class TickingAreaView : ITickingAreaView {
+class TickingAreaView : public ITickingAreaView {
 
 public:
     ~TickingAreaView(); // _ZN15TickingAreaViewD2Ev

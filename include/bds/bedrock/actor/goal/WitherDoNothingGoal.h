@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class WitherDoNothingGoal : Goal {
+class WitherDoNothingGoal : public Goal {
 
 public:
     ~WitherDoNothingGoal(); // _ZN19WitherDoNothingGoalD2Ev

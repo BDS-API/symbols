@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class LabTableInputContainerController : ContainerController {
+class LabTableInputContainerController : public ContainerController {
 
 public:
     ~LabTableInputContainerController(); // _ZN32LabTableInputContainerControllerD2Ev

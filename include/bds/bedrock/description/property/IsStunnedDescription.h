@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class IsStunnedDescription : PropertyDescription {
+class IsStunnedDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK20IsStunnedDescription11getJsonNameEv

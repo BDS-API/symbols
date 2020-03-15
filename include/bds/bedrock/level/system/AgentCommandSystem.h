@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class AgentCommandSystem : ITickingSystem {
+class AgentCommandSystem : public ITickingSystem {
 
 public:
     ~AgentCommandSystem(); // _ZN18AgentCommandSystemD2Ev

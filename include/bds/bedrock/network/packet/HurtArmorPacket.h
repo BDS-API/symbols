@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class HurtArmorPacket : Packet {
+class HurtArmorPacket : public Packet {
 
 public:
     ~HurtArmorPacket(); // _ZN15HurtArmorPacketD2Ev

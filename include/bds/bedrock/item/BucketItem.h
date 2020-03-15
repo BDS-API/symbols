@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
-#include <memory>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
+#include <memory>
 
 
-class BucketItem : Item {
+class BucketItem : public Item {
 
 public:
     static long DRINK_DURATION;

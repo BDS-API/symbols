@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class DayLockCommand : Command {
+class DayLockCommand : public Command {
 
 public:
     ~DayLockCommand(); // _ZN14DayLockCommandD2Ev

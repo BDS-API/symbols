@@ -4,7 +4,7 @@
 #include "ScriptBinderTemplate.h"
 
 
-class ScriptBinderQueryTemplate : ScriptBinderTemplate {
+class ScriptBinderQueryTemplate : public ScriptBinderTemplate {
 
 public:
     ~ScriptBinderQueryTemplate(); // _ZN25ScriptBinderQueryTemplateD2Ev

@@ -3,7 +3,7 @@
 #include "Animal.h"
 
 
-class PolarBear : Animal {
+class PolarBear : public Animal {
 
 public:
     static long STAND_ANIMATION_TICKS;

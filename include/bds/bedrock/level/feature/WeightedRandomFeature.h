@@ -3,7 +3,7 @@
 #include "IFeature.h"
 
 
-class WeightedRandomFeature : IFeature {
+class WeightedRandomFeature : public IFeature {
 
 public:
     class WeightedFeatureReference;

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class DragonScanningGoal : Goal {
+class DragonScanningGoal : public Goal {
 
 public:
     static long SITTING_SCANNING_IDLE_TICKS;

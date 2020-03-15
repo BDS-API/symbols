@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
 
 
-class FireChargeItem : Item {
+class FireChargeItem : public Item {
 
 public:
     ~FireChargeItem(); // _ZN14FireChargeItemD2Ev

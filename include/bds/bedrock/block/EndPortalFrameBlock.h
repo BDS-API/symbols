@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "BlockLegacy.h"
 #include <vector>
+#include "BlockLegacy.h"
 
 
-class EndPortalFrameBlock : BlockLegacy {
+class EndPortalFrameBlock : public BlockLegacy {
 
 public:
     ~EndPortalFrameBlock(); // _ZN19EndPortalFrameBlockD2Ev

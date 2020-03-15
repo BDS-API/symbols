@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class ShieldItem : Item {
+class ShieldItem : public Item {
 
 public:
     static long EFFECTIVE_BLOCK_DELAY;

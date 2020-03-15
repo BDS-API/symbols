@@ -3,7 +3,7 @@
 #include "../../../unmapped/IStructureConstraint.h"
 
 
-class BlockIntersectionConstraint : IStructureConstraint {
+class BlockIntersectionConstraint : public IStructureConstraint {
 
 public:
     ~BlockIntersectionConstraint(); // _ZN27BlockIntersectionConstraintD2Ev

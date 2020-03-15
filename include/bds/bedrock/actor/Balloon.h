@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class Balloon : Actor {
+class Balloon : public Actor {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN7Balloon15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

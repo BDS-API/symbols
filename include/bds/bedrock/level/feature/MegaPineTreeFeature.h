@@ -3,7 +3,7 @@
 #include "MegaTreeFeature.h"
 
 
-class MegaPineTreeFeature : MegaTreeFeature {
+class MegaPineTreeFeature : public MegaTreeFeature {
 
 public:
     ~MegaPineTreeFeature(); // _ZN19MegaPineTreeFeatureD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
+#include <string>
 #include "ChestBlock.h"
 #include <memory>
-#include <string>
 
 
-class ShulkerBoxBlock : ChestBlock {
+class ShulkerBoxBlock : public ChestBlock {
 
 public:
     ~ShulkerBoxBlock(); // _ZN15ShulkerBoxBlockD2Ev

@@ -3,7 +3,7 @@
 #include "StructurePiece.h"
 
 
-class BuriedTreasurePiece : StructurePiece {
+class BuriedTreasurePiece : public StructurePiece {
 
 public:
     ~BuriedTreasurePiece(); // _ZN19BuriedTreasurePieceD2Ev

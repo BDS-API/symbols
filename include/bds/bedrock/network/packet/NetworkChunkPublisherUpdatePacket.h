@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class NetworkChunkPublisherUpdatePacket : Packet {
+class NetworkChunkPublisherUpdatePacket : public Packet {
 
 public:
     ~NetworkChunkPublisherUpdatePacket(); // _ZN33NetworkChunkPublisherUpdatePacketD2Ev

@@ -4,7 +4,7 @@
 #include "Sapling.h"
 
 
-class BambooSapling : Sapling {
+class BambooSapling : public Sapling {
 
 public:
     ~BambooSapling(); // _ZN13BambooSaplingD2Ev

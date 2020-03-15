@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class NoteBlock : ActorBlock {
+class NoteBlock : public ActorBlock {
 
 public:
     ~NoteBlock(); // _ZN9NoteBlockD2Ev

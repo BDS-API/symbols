@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class ImpactDamageSubcomponent : OnHitSubcomponent {
+class ImpactDamageSubcomponent : public OnHitSubcomponent {
 
 public:
     ~ImpactDamageSubcomponent(); // _ZN24ImpactDamageSubcomponentD2Ev

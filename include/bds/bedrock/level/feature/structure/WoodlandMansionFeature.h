@@ -3,7 +3,7 @@
 #include "StructureFeature.h"
 
 
-class WoodlandMansionFeature : StructureFeature {
+class WoodlandMansionFeature : public StructureFeature {
 
 public:
     ~WoodlandMansionFeature(); // _ZN22WoodlandMansionFeatureD2Ev

@@ -3,7 +3,7 @@
 #include "../../level/LevelListener.h"
 
 
-class BlockActorLevelListener : LevelListener {
+class BlockActorLevelListener : public LevelListener {
 
 public:
     ~BlockActorLevelListener(); // _ZN23BlockActorLevelListenerD2Ev

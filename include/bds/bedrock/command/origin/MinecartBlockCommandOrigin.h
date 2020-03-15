@@ -3,7 +3,7 @@
 #include "BlockCommandOrigin.h"
 
 
-class MinecartBlockCommandOrigin : BlockCommandOrigin {
+class MinecartBlockCommandOrigin : public BlockCommandOrigin {
 
 public:
     ~MinecartBlockCommandOrigin(); // _ZN26MinecartBlockCommandOriginD2Ev

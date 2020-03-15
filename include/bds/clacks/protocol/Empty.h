@@ -10,7 +10,7 @@ namespace com {
 
             namespace protocol {
 
-                class Empty /*google::protobuf::Message*/ { //TODO: incomplete class definition
+                class Empty /*public google::protobuf::Message*/ { //TODO: incomplete class definition
 
                 public:
                     ~Empty(); // _ZN3com6mojang6clacks8protocol5EmptyD2Ev

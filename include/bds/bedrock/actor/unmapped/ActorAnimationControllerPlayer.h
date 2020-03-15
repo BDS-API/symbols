@@ -1,10 +1,10 @@
 #pragma once
 
-#include "ActorAnimationPlayer.h"
 #include <unordered_map>
+#include "ActorAnimationPlayer.h"
 
 
-class ActorAnimationControllerPlayer : ActorAnimationPlayer {
+class ActorAnimationControllerPlayer : public ActorAnimationPlayer {
 
 public:
     ~ActorAnimationControllerPlayer(); // _ZN30ActorAnimationControllerPlayerD2Ev

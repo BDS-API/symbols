@@ -3,7 +3,7 @@
 #include "ConsumerComponent.h"
 
 
-class PistonConsumer : ConsumerComponent {
+class PistonConsumer : public ConsumerComponent {
 
 public:
     ~PistonConsumer(); // _ZN14PistonConsumerD2Ev

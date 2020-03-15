@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class ShareItemsGoal : Goal {
+class ShareItemsGoal : public Goal {
 
 public:
     ~ShareItemsGoal(); // _ZN14ShareItemsGoalD2Ev

@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class CampfireBlock : ActorBlock {
+class CampfireBlock : public ActorBlock {
 
 public:
     ~CampfireBlock(); // _ZN13CampfireBlockD2Ev

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class FollowMobGoal : Goal {
+class FollowMobGoal : public Goal {
 
 public:
     ~FollowMobGoal(); // _ZN13FollowMobGoalD2Ev

@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class AdventureSettingsPacket : Packet {
+class AdventureSettingsPacket : public Packet {
 
 public:
     ~AdventureSettingsPacket(); // _ZN23AdventureSettingsPacketD2Ev

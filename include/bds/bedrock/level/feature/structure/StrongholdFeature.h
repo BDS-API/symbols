@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class StrongholdFeature : StructureFeature {
+class StrongholdFeature : public StructureFeature {
 
 public:
     class StrongholdResult;

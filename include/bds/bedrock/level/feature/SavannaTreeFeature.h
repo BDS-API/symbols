@@ -3,7 +3,7 @@
 #include "TreeFeature.h"
 
 
-class SavannaTreeFeature : TreeFeature {
+class SavannaTreeFeature : public TreeFeature {
 
 public:
     ~SavannaTreeFeature(); // _ZN18SavannaTreeFeatureD2Ev

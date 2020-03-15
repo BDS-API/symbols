@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class IsIgnitedDescription : PropertyDescription {
+class IsIgnitedDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK20IsIgnitedDescription11getJsonNameEv

@@ -3,7 +3,7 @@
 #include "SimpleBoolFilterTest.h"
 
 
-class ActorInCaravanTest : SimpleBoolFilterTest {
+class ActorInCaravanTest : public SimpleBoolFilterTest {
 
 public:
     ~ActorInCaravanTest(); // _ZN18ActorInCaravanTestD2Ev

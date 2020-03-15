@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <vector>
 #include "Item.h"
+#include <vector>
 
 
-class DiggerItem : Item {
+class DiggerItem : public Item {
 
 public:
     ~DiggerItem(); // _ZN10DiggerItemD2Ev

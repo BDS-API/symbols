@@ -3,7 +3,7 @@
 #include "../../../unmapped/OnHitSubcomponent.h"
 
 
-class ActorDefinitionEventSubcomponent : OnHitSubcomponent {
+class ActorDefinitionEventSubcomponent : public OnHitSubcomponent {
 
 public:
     ~ActorDefinitionEventSubcomponent(); // _ZN32ActorDefinitionEventSubcomponentD2Ev

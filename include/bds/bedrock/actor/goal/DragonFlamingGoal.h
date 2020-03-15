@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class DragonFlamingGoal : Goal {
+class DragonFlamingGoal : public Goal {
 
 public:
     static long ROAR_DURATION;

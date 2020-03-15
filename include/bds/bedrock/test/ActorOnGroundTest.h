@@ -3,7 +3,7 @@
 #include "SimpleBoolFilterTest.h"
 
 
-class ActorOnGroundTest : SimpleBoolFilterTest {
+class ActorOnGroundTest : public SimpleBoolFilterTest {
 
 public:
     ~ActorOnGroundTest(); // _ZN17ActorOnGroundTestD2Ev

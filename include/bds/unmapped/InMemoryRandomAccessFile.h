@@ -3,7 +3,7 @@
 #include <memory>
 
 
-class InMemoryRandomAccessFile /*leveldb::RandomAccessFile*/ { //TODO: incomplete class definition
+class InMemoryRandomAccessFile /*public leveldb::RandomAccessFile*/ { //TODO: incomplete class definition
 
 public:
     ~InMemoryRandomAccessFile(); // _ZN24InMemoryRandomAccessFileD2Ev

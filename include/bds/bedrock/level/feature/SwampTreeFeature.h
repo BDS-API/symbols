@@ -4,7 +4,7 @@
 #include "../../util/BlockPos.h"
 
 
-class SwampTreeFeature : TreeFeature {
+class SwampTreeFeature : public TreeFeature {
 
 public:
     ~SwampTreeFeature(); // _ZN16SwampTreeFeatureD2Ev

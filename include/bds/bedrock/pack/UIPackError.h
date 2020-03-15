@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class UIPackError : PackError {
+class UIPackError : public PackError {
 
 public:
     ~UIPackError(); // _ZN11UIPackErrorD2Ev

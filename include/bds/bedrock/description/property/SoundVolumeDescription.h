@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class SoundVolumeDescription : PropertyDescription {
+class SoundVolumeDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK22SoundVolumeDescription11getJsonNameEv

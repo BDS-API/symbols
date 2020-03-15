@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class PrimedTnt : Actor {
+class PrimedTnt : public Actor {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN9PrimedTnt15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

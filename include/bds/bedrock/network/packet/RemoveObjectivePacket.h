@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class RemoveObjectivePacket : Packet {
+class RemoveObjectivePacket : public Packet {
 
 public:
     ~RemoveObjectivePacket(); // _ZN21RemoveObjectivePacketD2Ev

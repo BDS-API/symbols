@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class StructureBlockActor : BlockActor {
+class StructureBlockActor : public BlockActor {
 
 public:
     static long MAX_WIREFRAME_RENDER_DISTANCE;

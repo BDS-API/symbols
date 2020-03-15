@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include <functional>
+#include <memory>
 #include "IContainerManager.h"
 
 
-class ContainerManagerModel : IContainerManager {
+class ContainerManagerModel : public IContainerManager {
 
 public:
     ~ContainerManagerModel(); // _ZN21ContainerManagerModelD2Ev

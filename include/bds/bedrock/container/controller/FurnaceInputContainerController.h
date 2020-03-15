@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class FurnaceInputContainerController : ContainerController {
+class FurnaceInputContainerController : public ContainerController {
 
 public:
     ~FurnaceInputContainerController(); // _ZN31FurnaceInputContainerControllerD2Ev

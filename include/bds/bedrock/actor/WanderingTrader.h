@@ -3,7 +3,7 @@
 #include "Mob.h"
 
 
-class WanderingTrader : Mob {
+class WanderingTrader : public Mob {
 
 public:
     ~WanderingTrader(); // _ZN15WanderingTraderD2Ev

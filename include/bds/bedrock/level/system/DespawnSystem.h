@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class DespawnSystem : ITickingSystem {
+class DespawnSystem : public ITickingSystem {
 
 public:
     ~DespawnSystem(); // _ZN13DespawnSystemD2Ev

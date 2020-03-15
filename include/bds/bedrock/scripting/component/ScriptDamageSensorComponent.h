@@ -3,7 +3,7 @@
 #include <string>
 
 
-class ScriptDamageSensorComponent /*ScriptTemplateFactory<ScriptServerContext>::Component*/ { //TODO: incomplete class definition
+class ScriptDamageSensorComponent /*public ScriptTemplateFactory<ScriptServerContext>::Component*/ { //TODO: incomplete class definition
 
 public:
     static long mHash;

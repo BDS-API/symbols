@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class ChemistryTableBlock : ActorBlock {
+class ChemistryTableBlock : public ActorBlock {
 
 public:
     ~ChemistryTableBlock(); // _ZN19ChemistryTableBlockD2Ev

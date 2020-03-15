@@ -4,7 +4,7 @@
 #include "BasePressurePlateBlock.h"
 
 
-class WeightedPressurePlateBlock : BasePressurePlateBlock {
+class WeightedPressurePlateBlock : public BasePressurePlateBlock {
 
 public:
     static long MAX_WEIGHT_LIGHT;

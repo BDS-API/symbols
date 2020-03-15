@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../actor/unmapped/ActorUniqueID.h"
 #include "ActorCommandOrigin.h"
+#include "../../actor/unmapped/ActorUniqueID.h"
 
 
-class ActorServerCommandOrigin : ActorCommandOrigin {
+class ActorServerCommandOrigin : public ActorCommandOrigin {
 
 public:
     ~ActorServerCommandOrigin(); // _ZN24ActorServerCommandOriginD2Ev

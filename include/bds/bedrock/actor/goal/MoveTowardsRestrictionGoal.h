@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class MoveTowardsRestrictionGoal : Goal {
+class MoveTowardsRestrictionGoal : public Goal {
 
 public:
     ~MoveTowardsRestrictionGoal(); // _ZN26MoveTowardsRestrictionGoalD2Ev

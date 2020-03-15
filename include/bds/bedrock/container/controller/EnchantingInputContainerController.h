@@ -1,11 +1,11 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
 #include "../../item/unmapped/ItemTransferAmount.h"
+#include <memory>
 
 
-class EnchantingInputContainerController : ContainerController {
+class EnchantingInputContainerController : public ContainerController {
 
 public:
     ~EnchantingInputContainerController(); // _ZN34EnchantingInputContainerControllerD2Ev

@@ -4,7 +4,7 @@
 #include "ScriptBinderTemplate.h"
 
 
-class ScriptBinderPureEcsTemplate : ScriptBinderTemplate {
+class ScriptBinderPureEcsTemplate : public ScriptBinderTemplate {
 
 public:
     ~ScriptBinderPureEcsTemplate(); // _ZN27ScriptBinderPureEcsTemplateD2Ev

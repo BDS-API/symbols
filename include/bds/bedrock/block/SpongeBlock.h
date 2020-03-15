@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class SpongeBlock : BlockLegacy {
+class SpongeBlock : public BlockLegacy {
 
 public:
     ~SpongeBlock(); // _ZN11SpongeBlockD2Ev

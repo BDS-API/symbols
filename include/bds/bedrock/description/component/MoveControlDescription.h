@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class MoveControlDescription : ComponentDescription {
+class MoveControlDescription : public ComponentDescription {
 
 public:
     ~MoveControlDescription(); // _ZN22MoveControlDescriptionD2Ev

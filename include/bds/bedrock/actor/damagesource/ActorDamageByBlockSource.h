@@ -4,7 +4,7 @@
 #include "ActorDamageSource.h"
 
 
-class ActorDamageByBlockSource : ActorDamageSource {
+class ActorDamageByBlockSource : public ActorDamageSource {
 
 public:
     ~ActorDamageByBlockSource(); // _ZN24ActorDamageByBlockSourceD2Ev

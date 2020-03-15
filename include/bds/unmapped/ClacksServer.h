@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "../clacks/protocol/commands/Service.h"
+#include <memory>
 
 
-class ClacksServer : com::mojang::clacks::protocol::Commands::Service {
+class ClacksServer : public com::mojang::clacks::protocol::Commands::Service {
 
 public:
     class ExecutionAndResult;

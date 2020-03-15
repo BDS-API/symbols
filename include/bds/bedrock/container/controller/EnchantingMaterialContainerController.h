@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class EnchantingMaterialContainerController : ContainerController {
+class EnchantingMaterialContainerController : public ContainerController {
 
 public:
     ~EnchantingMaterialContainerController(); // _ZN37EnchantingMaterialContainerControllerD2Ev

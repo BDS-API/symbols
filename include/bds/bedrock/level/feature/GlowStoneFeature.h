@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class GlowStoneFeature : Feature {
+class GlowStoneFeature : public Feature {
 
 public:
     ~GlowStoneFeature(); // _ZN16GlowStoneFeatureD2Ev

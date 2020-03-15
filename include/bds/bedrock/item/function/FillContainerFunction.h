@@ -1,12 +1,12 @@
 #pragma once
 
+#include <string>
 #include "../../../json/Value.h"
 #include "LootItemFunction.h"
 #include <vector>
-#include <string>
 
 
-class FillContainerFunction : LootItemFunction {
+class FillContainerFunction : public LootItemFunction {
 
 public:
     ~FillContainerFunction(); // _ZN21FillContainerFunctionD2Ev

@@ -3,7 +3,7 @@
 #include "NBBridgeCrossing.h"
 
 
-class NBStartPiece : NBBridgeCrossing {
+class NBStartPiece : public NBBridgeCrossing {
 
 public:
     ~NBStartPiece(); // _ZN12NBStartPieceD2Ev

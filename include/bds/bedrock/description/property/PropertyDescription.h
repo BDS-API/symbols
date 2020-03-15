@@ -3,7 +3,7 @@
 #include "../Description.h"
 
 
-class PropertyDescription : Description {
+class PropertyDescription : public Description {
 
 public:
     ~PropertyDescription(); // _ZN19PropertyDescriptionD2Ev

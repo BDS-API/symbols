@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "MobEffect.h"
+#include <string>
 
 
-class AbsorptionMobEffect : MobEffect {
+class AbsorptionMobEffect : public MobEffect {
 
 public:
     ~AbsorptionMobEffect(); // _ZN19AbsorptionMobEffectD2Ev

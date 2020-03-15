@@ -1,10 +1,10 @@
 #pragma once
 
-#include <vector>
+#include "../../unmapped/PackInstance.h"
 #include <ostream>
+#include <vector>
 #include <istream>
 #include <functional>
-#include "../../unmapped/PackInstance.h"
 
 
 class ResourcePackStack {

@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class SuspiciousStewItem : Item {
+class SuspiciousStewItem : public Item {
 
 public:
     ~SuspiciousStewItem(); // _ZN18SuspiciousStewItemD2Ev

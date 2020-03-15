@@ -6,7 +6,7 @@
 #include <vector>
 
 
-class ExternalFileLevelStorageSource : LevelStorageSource {
+class ExternalFileLevelStorageSource : public LevelStorageSource {
 
 public:
     ~ExternalFileLevelStorageSource(); // _ZN30ExternalFileLevelStorageSourceD2Ev

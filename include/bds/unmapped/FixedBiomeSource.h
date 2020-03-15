@@ -3,7 +3,7 @@
 #include "BiomeSource.h"
 
 
-class FixedBiomeSource : BiomeSource {
+class FixedBiomeSource : public BiomeSource {
 
 public:
     ~FixedBiomeSource(); // _ZN16FixedBiomeSourceD2Ev

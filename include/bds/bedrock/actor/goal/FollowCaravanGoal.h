@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class FollowCaravanGoal : Goal {
+class FollowCaravanGoal : public Goal {
 
 public:
     ~FollowCaravanGoal(); // _ZN17FollowCaravanGoalD2Ev

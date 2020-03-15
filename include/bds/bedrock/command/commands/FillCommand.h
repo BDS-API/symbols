@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class FillCommand : Command {
+class FillCommand : public Command {
 
 public:
     ~FillCommand(); // _ZN11FillCommandD2Ev

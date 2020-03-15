@@ -1,13 +1,13 @@
 #pragma once
 
+#include "../ScriptCallbackInterface.h"
+#include <memory>
 #include <vector>
 #include "../ScriptFramework.h"
-#include <memory>
 #include <string>
-#include "../ScriptCallbackInterface.h"
 
 
-class ScriptEngine : ScriptApi::ScriptFramework, ScriptApi::ScriptCallbackInterface {
+class ScriptEngine : public ScriptApi::ScriptFramework, public ScriptApi::ScriptCallbackInterface {
 
 public:
     class ScriptQueueData;

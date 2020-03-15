@@ -3,7 +3,7 @@
 #include "Mob.h"
 
 
-class Bat : Mob {
+class Bat : public Mob {
 
 public:
     ~Bat(); // _ZN3BatD2Ev

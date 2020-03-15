@@ -4,7 +4,7 @@
 #include "FurnaceBlockActor.h"
 
 
-class SmokerBlockActor : FurnaceBlockActor {
+class SmokerBlockActor : public FurnaceBlockActor {
 
 public:
     ~SmokerBlockActor(); // _ZN16SmokerBlockActorD2Ev

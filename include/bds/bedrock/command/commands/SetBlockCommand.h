@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class SetBlockCommand : Command {
+class SetBlockCommand : public Command {
 
 public:
     ~SetBlockCommand(); // _ZN15SetBlockCommandD2Ev

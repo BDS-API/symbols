@@ -3,7 +3,7 @@
 #include "PathNavigation.h"
 
 
-class HoverPathNavigation : PathNavigation {
+class HoverPathNavigation : public PathNavigation {
 
 public:
     ~HoverPathNavigation(); // _ZN19HoverPathNavigationD2Ev

@@ -6,7 +6,7 @@
 #include <tuple>
 
 
-class EventPacket : Packet {
+class EventPacket : public Packet {
 
 public:
     class Data;

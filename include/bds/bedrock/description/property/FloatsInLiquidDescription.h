@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class FloatsInLiquidDescription : PropertyDescription {
+class FloatsInLiquidDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK25FloatsInLiquidDescription11getJsonNameEv

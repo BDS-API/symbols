@@ -5,7 +5,7 @@
 #include "AttributeBuff.h"
 
 
-class TemporalAttributeBuff : AttributeBuff {
+class TemporalAttributeBuff : public AttributeBuff {
 
 public:
     ~TemporalAttributeBuff(); // _ZN21TemporalAttributeBuffD2Ev

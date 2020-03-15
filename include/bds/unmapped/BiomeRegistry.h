@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
-#include <memory>
-#include <functional>
 #include "IEntityRegistryOwner.h"
+#include <string>
+#include <functional>
+#include <memory>
 
 
-class BiomeRegistry : IEntityRegistryOwner {
+class BiomeRegistry : public IEntityRegistryOwner {
 
 public:
     class BiomeParent;

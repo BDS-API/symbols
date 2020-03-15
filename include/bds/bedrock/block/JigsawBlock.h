@@ -4,7 +4,7 @@
 #include "FaceDirectionalActorBlock.h"
 
 
-class JigsawBlock : FaceDirectionalActorBlock {
+class JigsawBlock : public FaceDirectionalActorBlock {
 
 public:
     ~JigsawBlock(); // _ZN11JigsawBlockD2Ev

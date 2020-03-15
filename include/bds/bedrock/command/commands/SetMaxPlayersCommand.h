@@ -3,7 +3,7 @@
 #include "ServerCommand.h"
 
 
-class SetMaxPlayersCommand : ServerCommand {
+class SetMaxPlayersCommand : public ServerCommand {
 
 public:
     ~SetMaxPlayersCommand(); // _ZN20SetMaxPlayersCommandD2Ev

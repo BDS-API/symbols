@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class CarrotOnAStickItem : Item {
+class CarrotOnAStickItem : public Item {
 
 public:
     ~CarrotOnAStickItem(); // _ZN18CarrotOnAStickItemD2Ev

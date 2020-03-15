@@ -4,7 +4,7 @@
 #include "CommandOrigin.h"
 
 
-class GameArgumentCommandOrigin : CommandOrigin {
+class GameArgumentCommandOrigin : public CommandOrigin {
 
 public:
     ~GameArgumentCommandOrigin(); // _ZN25GameArgumentCommandOriginD2Ev

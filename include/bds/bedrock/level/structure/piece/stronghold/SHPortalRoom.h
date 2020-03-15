@@ -1,10 +1,10 @@
 #pragma once
 
-#include <vector>
 #include "../StrongholdPiece.h"
+#include <vector>
 
 
-class SHPortalRoom : StrongholdPiece {
+class SHPortalRoom : public StrongholdPiece {
 
 public:
     ~SHPortalRoom(); // _ZN12SHPortalRoomD2Ev

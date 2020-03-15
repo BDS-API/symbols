@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class BlockEventPacket : Packet {
+class BlockEventPacket : public Packet {
 
 public:
     ~BlockEventPacket(); // _ZN16BlockEventPacketD2Ev

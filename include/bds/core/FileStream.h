@@ -5,7 +5,7 @@
 
 namespace Core {
 
-    class FileStream : std::iostream {
+    class FileStream : public std::iostream {
 
     public:
         ~FileStream(); // _ZN4Core10FileStreamD1Ev

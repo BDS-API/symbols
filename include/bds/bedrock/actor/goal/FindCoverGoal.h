@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class FindCoverGoal : Goal {
+class FindCoverGoal : public Goal {
 
 public:
     ~FindCoverGoal(); // _ZN13FindCoverGoalD2Ev

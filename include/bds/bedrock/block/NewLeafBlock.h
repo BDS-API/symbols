@@ -4,7 +4,7 @@
 #include "LeafBlock.h"
 
 
-class NewLeafBlock : LeafBlock {
+class NewLeafBlock : public LeafBlock {
 
 public:
     ~NewLeafBlock(); // _ZN12NewLeafBlockD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "BlockItem.h"
 
 
-class ScaffoldingBlockItem : BlockItem {
+class ScaffoldingBlockItem : public BlockItem {
 
 public:
     ~ScaffoldingBlockItem(); // _ZN20ScaffoldingBlockItemD2Ev

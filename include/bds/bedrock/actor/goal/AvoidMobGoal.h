@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class AvoidMobGoal : Goal {
+class AvoidMobGoal : public Goal {
 
 public:
     ~AvoidMobGoal(); // _ZN12AvoidMobGoalD2Ev

@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class DiodeBlock : BlockLegacy {
+class DiodeBlock : public BlockLegacy {
 
 public:
     ~DiodeBlock(); // _ZN10DiodeBlockD2Ev

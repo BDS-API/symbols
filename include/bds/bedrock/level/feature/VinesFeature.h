@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class VinesFeature : Feature {
+class VinesFeature : public Feature {
 
 public:
     ~VinesFeature(); // _ZN12VinesFeatureD2Ev

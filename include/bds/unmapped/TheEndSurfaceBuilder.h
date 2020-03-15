@@ -5,7 +5,7 @@
 
 namespace VanillaSurfaceBuilders {
 
-    class TheEndSurfaceBuilder : ISurfaceBuilder {
+    class TheEndSurfaceBuilder : public ISurfaceBuilder {
 
     public:
         ~TheEndSurfaceBuilder(); // _ZN22VanillaSurfaceBuilders20TheEndSurfaceBuilderD2Ev

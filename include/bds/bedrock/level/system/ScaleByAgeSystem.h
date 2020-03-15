@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class ScaleByAgeSystem : ITickingSystem {
+class ScaleByAgeSystem : public ITickingSystem {
 
 public:
     ~ScaleByAgeSystem(); // _ZN16ScaleByAgeSystemD2Ev

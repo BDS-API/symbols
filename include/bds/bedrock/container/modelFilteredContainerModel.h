@@ -1,10 +1,10 @@
 #pragma once
 
-#include "ExpandoContainerModel.h"
 #include <functional>
+#include "ExpandoContainerModel.h"
 
 
-class FilteredContainerModel : ExpandoContainerModel {
+class FilteredContainerModel : public ExpandoContainerModel {
 
 public:
     virtual void containerContentChanged(int); // _ZN22FilteredContainerModel23containerContentChangedEi

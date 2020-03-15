@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class MaterialReducerOutputContainerController : ContainerController {
+class MaterialReducerOutputContainerController : public ContainerController {
 
 public:
     ~MaterialReducerOutputContainerController(); // _ZN40MaterialReducerOutputContainerControllerD2Ev

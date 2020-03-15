@@ -1,10 +1,10 @@
 #pragma once
 
-#include <vector>
 #include "../StrongholdPiece.h"
+#include <vector>
 
 
-class SHRightTurn : StrongholdPiece {
+class SHRightTurn : public StrongholdPiece {
 
 public:
     ~SHRightTurn(); // _ZN11SHRightTurnD2Ev

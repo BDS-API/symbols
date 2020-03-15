@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include "Item.h"
+#include <memory>
 
 
-class ArrowItem : Item {
+class ArrowItem : public Item {
 
 public:
     ~ArrowItem(); // _ZN9ArrowItemD2Ev

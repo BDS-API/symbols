@@ -5,7 +5,7 @@
 #include "BlockItem.h"
 
 
-class LeafBlockItem : BlockItem {
+class LeafBlockItem : public BlockItem {
 
 public:
     ~LeafBlockItem(); // _ZN13LeafBlockItemD2Ev

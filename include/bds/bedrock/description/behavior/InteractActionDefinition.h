@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
 
 
-class InteractActionDefinition : BehaviorDefinition {
+class InteractActionDefinition : public BehaviorDefinition {
 
 public:
     ~InteractActionDefinition(); // _ZN24InteractActionDefinitionD2Ev

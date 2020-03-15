@@ -4,7 +4,7 @@
 #include "IStructurePoolActorPredicate.h"
 
 
-class StructurePoolActorPredicateAlwaysTrue : IStructurePoolActorPredicate {
+class StructurePoolActorPredicateAlwaysTrue : public IStructurePoolActorPredicate {
 
 public:
     ~StructurePoolActorPredicateAlwaysTrue(); // _ZN37StructurePoolActorPredicateAlwaysTrueD2Ev

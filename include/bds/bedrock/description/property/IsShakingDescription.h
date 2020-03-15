@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class IsShakingDescription : PropertyDescription {
+class IsShakingDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK20IsShakingDescription11getJsonNameEv

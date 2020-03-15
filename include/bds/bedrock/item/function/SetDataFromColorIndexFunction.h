@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SetDataFromColorIndexFunction : LootItemFunction {
+class SetDataFromColorIndexFunction : public LootItemFunction {
 
 public:
     ~SetDataFromColorIndexFunction(); // _ZN29SetDataFromColorIndexFunctionD2Ev

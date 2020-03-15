@@ -3,7 +3,7 @@
 #include <string>
 
 
-class WebviewObserver /*Core::Observer<WebviewObserver, Core::SingleThreadedLock>*/ { //TODO: incomplete class definition
+class WebviewObserver /*public Core::Observer<WebviewObserver, Core::SingleThreadedLock>*/ { //TODO: incomplete class definition
 
 public:
     ~WebviewObserver(); // _ZN15WebviewObserverD2Ev

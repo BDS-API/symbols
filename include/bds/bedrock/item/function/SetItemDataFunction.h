@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SetItemDataFunction : LootItemFunction {
+class SetItemDataFunction : public LootItemFunction {
 
 public:
     ~SetItemDataFunction(); // _ZN19SetItemDataFunctionD2Ev

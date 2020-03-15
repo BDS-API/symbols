@@ -4,7 +4,7 @@
 #include "FurnaceBlock.h"
 
 
-class BlastFurnaceBlock : FurnaceBlock {
+class BlastFurnaceBlock : public FurnaceBlock {
 
 public:
     ~BlastFurnaceBlock(); // _ZN17BlastFurnaceBlockD2Ev

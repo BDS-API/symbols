@@ -3,7 +3,7 @@
 #include "Throwable.h"
 
 
-class ThrownIceBomb : Throwable {
+class ThrownIceBomb : public Throwable {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN13ThrownIceBomb15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class CampfireBlockActor : BlockActor {
+class CampfireBlockActor : public BlockActor {
 
 public:
     static long MIN_SMOKE_THRESHOLD_COUNTER;

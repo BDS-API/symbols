@@ -1,10 +1,10 @@
 #pragma once
 
-#include "IContainerManager.h"
 #include "../../../unmapped/ContainerContentChangeListener.h"
+#include "IContainerManager.h"
 
 
-class BaseContainerMenu : ContainerContentChangeListener, IContainerManager {
+class BaseContainerMenu : public ContainerContentChangeListener, public IContainerManager {
 
 public:
     virtual void containerContentChanged(int); // _ZN17BaseContainerMenu23containerContentChangedEi

@@ -10,7 +10,7 @@ namespace com {
 
             namespace protocol {
 
-                class Settings /*google::protobuf::Message*/ { //TODO: incomplete class definition
+                class Settings /*public google::protobuf::Message*/ { //TODO: incomplete class definition
 
                 public:
                     class SettingsUnion;

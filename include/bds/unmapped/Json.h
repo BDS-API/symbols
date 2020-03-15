@@ -1,8 +1,8 @@
 #pragma once
 
 #include <string>
-#include <ostream>
 #include <istream>
+#include <ostream>
 
 
 namespace Json {

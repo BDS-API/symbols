@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class BannerPatternItem : Item {
+class BannerPatternItem : public Item {
 
 public:
     ~BannerPatternItem(); // _ZN17BannerPatternItemD2Ev

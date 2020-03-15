@@ -3,7 +3,7 @@
 #include <functional>
 
 
-class CompactionListenerEnv /*leveldb::EnvWrapper*/ { //TODO: incomplete class definition
+class CompactionListenerEnv /*public leveldb::EnvWrapper*/ { //TODO: incomplete class definition
 
 public:
     ~CompactionListenerEnv(); // _ZN21CompactionListenerEnvD2Ev

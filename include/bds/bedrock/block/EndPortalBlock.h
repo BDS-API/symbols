@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class EndPortalBlock : ActorBlock {
+class EndPortalBlock : public ActorBlock {
 
 public:
     ~EndPortalBlock(); // _ZN14EndPortalBlockD2Ev

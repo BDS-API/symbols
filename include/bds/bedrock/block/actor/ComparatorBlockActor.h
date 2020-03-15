@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class ComparatorBlockActor : BlockActor {
+class ComparatorBlockActor : public BlockActor {
 
 public:
     ~ComparatorBlockActor(); // _ZN20ComparatorBlockActorD2Ev

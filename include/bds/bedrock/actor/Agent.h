@@ -4,7 +4,7 @@
 #include "Mob.h"
 
 
-class Agent : Mob {
+class Agent : public Mob {
 
 public:
 //  virtual void initializeComponents(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN5Agent20initializeComponentsEN5Actor20InitializationMethodERK20VariantParameterList

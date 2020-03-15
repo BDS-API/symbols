@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class GrindstoneBlock : BlockLegacy {
+class GrindstoneBlock : public BlockLegacy {
 
 public:
     ~GrindstoneBlock(); // _ZN15GrindstoneBlockD2Ev

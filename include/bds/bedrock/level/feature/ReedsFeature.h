@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class ReedsFeature : Feature {
+class ReedsFeature : public Feature {
 
 public:
     ~ReedsFeature(); // _ZN12ReedsFeatureD2Ev

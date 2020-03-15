@@ -3,7 +3,7 @@
 #include "SimpleIntFilterTest.h"
 
 
-class FilterTestAltitude : SimpleIntFilterTest {
+class FilterTestAltitude : public SimpleIntFilterTest {
 
 public:
     ~FilterTestAltitude(); // _ZN18FilterTestAltitudeD2Ev

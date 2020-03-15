@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class MonsterEggBlock : BlockLegacy {
+class MonsterEggBlock : public BlockLegacy {
 
 public:
     ~MonsterEggBlock(); // _ZN15MonsterEggBlockD2Ev

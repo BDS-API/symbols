@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class VideoStreamServerCommand : Command {
+class VideoStreamServerCommand : public Command {
 
 public:
     ~VideoStreamServerCommand(); // _ZN24VideoStreamServerCommandD2Ev

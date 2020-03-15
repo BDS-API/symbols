@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class NetworkSettingsPacket : Packet {
+class NetworkSettingsPacket : public Packet {
 
 public:
     ~NetworkSettingsPacket(); // _ZN21NetworkSettingsPacketD2Ev

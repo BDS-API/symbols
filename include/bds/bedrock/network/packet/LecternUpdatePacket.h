@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class LecternUpdatePacket : Packet {
+class LecternUpdatePacket : public Packet {
 
 public:
     ~LecternUpdatePacket(); // _ZN19LecternUpdatePacketD2Ev

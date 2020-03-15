@@ -3,7 +3,7 @@
 #include "SimpleIntFilterTest.h"
 
 
-class ActorRiderCountTest : SimpleIntFilterTest {
+class ActorRiderCountTest : public SimpleIntFilterTest {
 
 public:
     ~ActorRiderCountTest(); // _ZN19ActorRiderCountTestD2Ev

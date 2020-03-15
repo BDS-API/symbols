@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../../unmapped/FloatRange.h"
 #include "Goal.h"
+#include "../../../unmapped/FloatRange.h"
 
 
-class SwoopAttackGoal : Goal {
+class SwoopAttackGoal : public Goal {
 
 public:
     ~SwoopAttackGoal(); // _ZN15SwoopAttackGoalD2Ev

@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class SchedulerSystem : ITickingSystem {
+class SchedulerSystem : public ITickingSystem {
 
 public:
     ~SchedulerSystem(); // _ZN15SchedulerSystemD2Ev

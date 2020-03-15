@@ -6,7 +6,7 @@
 #include <vector>
 
 
-class BoolOption : Option {
+class BoolOption : public Option {
 
 public:
     ~BoolOption(); // _ZN10BoolOptionD2Ev

@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class MoveToNode : BehaviorNode {
+class MoveToNode : public BehaviorNode {
 
 public:
     ~MoveToNode(); // _ZN10MoveToNodeD2Ev

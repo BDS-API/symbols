@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class StainedGlassBlock : BlockLegacy {
+class StainedGlassBlock : public BlockLegacy {
 
 public:
     ~StainedGlassBlock(); // _ZN17StainedGlassBlockD2Ev

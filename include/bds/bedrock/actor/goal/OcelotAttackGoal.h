@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class OcelotAttackGoal : Goal {
+class OcelotAttackGoal : public Goal {
 
 public:
     ~OcelotAttackGoal(); // _ZN16OcelotAttackGoalD2Ev

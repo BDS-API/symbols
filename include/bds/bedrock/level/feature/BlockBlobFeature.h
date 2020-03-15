@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class BlockBlobFeature : Feature {
+class BlockBlobFeature : public Feature {
 
 public:
     ~BlockBlobFeature(); // _ZN16BlockBlobFeatureD2Ev

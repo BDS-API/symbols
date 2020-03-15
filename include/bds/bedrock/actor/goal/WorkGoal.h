@@ -4,7 +4,7 @@
 #include "MoveToPOIGoal.h"
 
 
-class WorkGoal : MoveToPOIGoal {
+class WorkGoal : public MoveToPOIGoal {
 
 public:
     static long RAIN_CHECK_MAX_COOLDOWN;

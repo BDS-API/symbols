@@ -4,7 +4,7 @@
 #include "ChestBlockActor.h"
 
 
-class EnderChestBlockActor : ChestBlockActor {
+class EnderChestBlockActor : public ChestBlockActor {
 
 public:
     static long ITEMS_SIZE;

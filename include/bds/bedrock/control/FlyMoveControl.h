@@ -3,7 +3,7 @@
 #include "MoveControl.h"
 
 
-class FlyMoveControl : MoveControl {
+class FlyMoveControl : public MoveControl {
 
 public:
     ~FlyMoveControl(); // _ZN14FlyMoveControlD2Ev

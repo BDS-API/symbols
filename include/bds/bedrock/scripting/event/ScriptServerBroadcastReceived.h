@@ -3,7 +3,7 @@
 #include <string>
 
 
-class ScriptServerBroadcastReceived /*ScriptTemplateFactory<ScriptServerContext>::ReceivedEvent*/ { //TODO: incomplete class definition
+class ScriptServerBroadcastReceived /*public ScriptTemplateFactory<ScriptServerContext>::ReceivedEvent*/ { //TODO: incomplete class definition
 
 public:
     ~ScriptServerBroadcastReceived(); // _ZN29ScriptServerBroadcastReceivedD2Ev

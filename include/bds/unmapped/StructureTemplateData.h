@@ -1,8 +1,8 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include "StructureBlockPalette.h"
+#include <memory>
 #include <vector>
 
 

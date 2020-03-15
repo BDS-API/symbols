@@ -3,7 +3,7 @@
 #include "Container.h"
 
 
-class CraftingContainer : Container {
+class CraftingContainer : public Container {
 
 public:
     ~CraftingContainer(); // _ZN17CraftingContainerD2Ev

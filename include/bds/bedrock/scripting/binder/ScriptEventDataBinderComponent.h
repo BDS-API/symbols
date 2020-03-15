@@ -3,7 +3,7 @@
 #include "ScriptBinderComponent.h"
 
 
-class ScriptEventDataBinderComponent : ScriptBinderComponent {
+class ScriptEventDataBinderComponent : public ScriptBinderComponent {
 
 public:
     static std::string TAG;

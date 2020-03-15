@@ -4,7 +4,7 @@
 #include "ScriptBinderComponent.h"
 
 
-class ScriptIdentifierBinderComponent : ScriptBinderComponent {
+class ScriptIdentifierBinderComponent : public ScriptBinderComponent {
 
 public:
     static std::string TAG;

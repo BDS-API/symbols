@@ -4,7 +4,7 @@
 #include "FindCoverGoal.h"
 
 
-class FleeSunGoal : FindCoverGoal {
+class FleeSunGoal : public FindCoverGoal {
 
 public:
     ~FleeSunGoal(); // _ZN11FleeSunGoalD2Ev

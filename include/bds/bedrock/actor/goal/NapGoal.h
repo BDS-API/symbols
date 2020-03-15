@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class NapGoal : Goal {
+class NapGoal : public Goal {
 
 public:
     static long MOB_DETECT_TIME;

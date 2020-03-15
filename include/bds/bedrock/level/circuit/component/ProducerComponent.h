@@ -3,7 +3,7 @@
 #include "BaseCircuitComponent.h"
 
 
-class ProducerComponent : BaseCircuitComponent {
+class ProducerComponent : public BaseCircuitComponent {
 
 public:
     ~ProducerComponent(); // _ZN17ProducerComponentD2Ev

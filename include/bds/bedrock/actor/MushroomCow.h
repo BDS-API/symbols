@@ -3,7 +3,7 @@
 #include "Animal.h"
 
 
-class MushroomCow : Animal {
+class MushroomCow : public Animal {
 
 public:
     ~MushroomCow(); // _ZN11MushroomCowD2Ev

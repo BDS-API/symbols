@@ -1,11 +1,11 @@
 #pragma once
 
+#include "../core/FileOpenMode.h"
 #include <vector>
 #include "../core/Result.h"
-#include "../core/FileOpenMode.h"
 #include <string>
-#include "../core/Path.h"
 #include <functional>
+#include "../core/Path.h"
 
 
 class JournaledFile {

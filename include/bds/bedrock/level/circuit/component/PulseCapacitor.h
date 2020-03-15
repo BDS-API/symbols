@@ -3,7 +3,7 @@
 #include "CapacitorComponent.h"
 
 
-class PulseCapacitor : CapacitorComponent {
+class PulseCapacitor : public CapacitorComponent {
 
 public:
     ~PulseCapacitor(); // _ZN14PulseCapacitorD2Ev

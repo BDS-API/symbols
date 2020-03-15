@@ -3,7 +3,7 @@
 #include "PathNavigation.h"
 
 
-class WallClimberPathNavigation : PathNavigation {
+class WallClimberPathNavigation : public PathNavigation {
 
 public:
     ~WallClimberPathNavigation(); // _ZN25WallClimberPathNavigationD2Ev

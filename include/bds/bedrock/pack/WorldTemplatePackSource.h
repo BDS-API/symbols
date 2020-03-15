@@ -4,7 +4,7 @@
 #include "DirectoryPackSource.h"
 
 
-class WorldTemplatePackSource : DirectoryPackSource {
+class WorldTemplatePackSource : public DirectoryPackSource {
 
 public:
     ~WorldTemplatePackSource(); // _ZN23WorldTemplatePackSourceD2Ev

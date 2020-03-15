@@ -3,7 +3,7 @@
 #include "MoveControl.h"
 
 
-class HoverMoveControl : MoveControl {
+class HoverMoveControl : public MoveControl {
 
 public:
     ~HoverMoveControl(); // _ZN16HoverMoveControlD2Ev

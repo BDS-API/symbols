@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class TripWireBlock : BlockLegacy {
+class TripWireBlock : public BlockLegacy {
 
 public:
     ~TripWireBlock(); // _ZN13TripWireBlockD2Ev

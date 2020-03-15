@@ -3,7 +3,7 @@
 #include "StructurePiece.h"
 
 
-class ScatteredFeaturePiece : StructurePiece {
+class ScatteredFeaturePiece : public StructurePiece {
 
 public:
     ~ScatteredFeaturePiece(); // _ZN21ScatteredFeaturePieceD2Ev

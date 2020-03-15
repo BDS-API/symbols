@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class PumpkinBlock : BlockLegacy {
+class PumpkinBlock : public BlockLegacy {
 
 public:
     ~PumpkinBlock(); // _ZN12PumpkinBlockD2Ev

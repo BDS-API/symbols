@@ -2,7 +2,7 @@
 
 
 
-class ScriptPositionComponent /*ScriptTemplateFactory<ScriptServerContext>::Component*/ { //TODO: incomplete class definition
+class ScriptPositionComponent /*public ScriptTemplateFactory<ScriptServerContext>::Component*/ { //TODO: incomplete class definition
 
 public:
     static long mHash;

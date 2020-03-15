@@ -4,7 +4,7 @@
 #include "../bedrock/actor/unmapped/ActorUniqueID.h"
 
 
-class DefaultDataLoadHelper : DataLoadHelper {
+class DefaultDataLoadHelper : public DataLoadHelper {
 
 public:
     ~DefaultDataLoadHelper(); // _ZN21DefaultDataLoadHelperD2Ev

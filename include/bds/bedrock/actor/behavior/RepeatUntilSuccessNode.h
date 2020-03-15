@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class RepeatUntilSuccessNode : BehaviorNode {
+class RepeatUntilSuccessNode : public BehaviorNode {
 
 public:
     ~RepeatUntilSuccessNode(); // _ZN22RepeatUntilSuccessNodeD2Ev

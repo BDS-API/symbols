@@ -1,10 +1,10 @@
 #pragma once
 
-#include "NetherFortressPiece.h"
 #include <vector>
+#include "NetherFortressPiece.h"
 
 
-class NBCastleCorridorStairsPiece : NetherFortressPiece {
+class NBCastleCorridorStairsPiece : public NetherFortressPiece {
 
 public:
     ~NBCastleCorridorStairsPiece(); // _ZN27NBCastleCorridorStairsPieceD2Ev

@@ -4,7 +4,7 @@
 #include "FilterTest.h"
 
 
-class SimpleTagIDFilterTest : FilterTest {
+class SimpleTagIDFilterTest : public FilterTest {
 
 public:
     ~SimpleTagIDFilterTest(); // _ZN21SimpleTagIDFilterTestD2Ev

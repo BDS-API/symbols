@@ -4,7 +4,7 @@
 #include "MoveToVillageGoal.h"
 
 
-class StrollTowardsVillageGoal : MoveToVillageGoal {
+class StrollTowardsVillageGoal : public MoveToVillageGoal {
 
 public:
     ~StrollTowardsVillageGoal(); // _ZN24StrollTowardsVillageGoalD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../container/FillingContainer.h"
 #include "RandomizableBlockActorContainerBase.h"
+#include "../../container/FillingContainer.h"
 
 
-class RandomizableBlockActorFillingContainer : RandomizableBlockActorContainerBase, FillingContainer {
+class RandomizableBlockActorFillingContainer : public RandomizableBlockActorContainerBase, public FillingContainer {
 
 public:
     ~RandomizableBlockActorFillingContainer(); // _ZN38RandomizableBlockActorFillingContainerD2Ev

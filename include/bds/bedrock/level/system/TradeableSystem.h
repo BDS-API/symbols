@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class TradeableSystem : ITickingSystem {
+class TradeableSystem : public ITickingSystem {
 
 public:
     ~TradeableSystem(); // _ZN15TradeableSystemD2Ev

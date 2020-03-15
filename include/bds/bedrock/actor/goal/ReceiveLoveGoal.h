@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class ReceiveLoveGoal : Goal {
+class ReceiveLoveGoal : public Goal {
 
 public:
     ~ReceiveLoveGoal(); // _ZN15ReceiveLoveGoalD2Ev

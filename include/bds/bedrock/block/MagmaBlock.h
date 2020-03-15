@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class MagmaBlock : BlockLegacy {
+class MagmaBlock : public BlockLegacy {
 
 public:
     ~MagmaBlock(); // _ZN10MagmaBlockD2Ev

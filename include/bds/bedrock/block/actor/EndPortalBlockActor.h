@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class EndPortalBlockActor : BlockActor {
+class EndPortalBlockActor : public BlockActor {
 
 public:
     ~EndPortalBlockActor(); // _ZN19EndPortalBlockActorD2Ev

@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class ServerCommand : Command {
+class ServerCommand : public Command {
 
 public:
     static long mGame;

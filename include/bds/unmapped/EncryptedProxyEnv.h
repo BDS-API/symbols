@@ -3,7 +3,7 @@
 #include <string>
 
 
-class EncryptedProxyEnv /*leveldb::EnvWrapper*/ { //TODO: incomplete class definition
+class EncryptedProxyEnv /*public leveldb::EnvWrapper*/ { //TODO: incomplete class definition
 
 public:
     ~EncryptedProxyEnv(); // _ZN17EncryptedProxyEnvD2Ev

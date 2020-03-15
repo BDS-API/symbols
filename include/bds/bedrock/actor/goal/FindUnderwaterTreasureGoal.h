@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class FindUnderwaterTreasureGoal : Goal {
+class FindUnderwaterTreasureGoal : public Goal {
 
 public:
     ~FindUnderwaterTreasureGoal(); // _ZN26FindUnderwaterTreasureGoalD2Ev

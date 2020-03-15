@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "Tag.h"
+#include <string>
 
 
-class Int64Tag : Tag {
+class Int64Tag : public Tag {
 
 public:
     ~Int64Tag(); // _ZN8Int64TagD2Ev

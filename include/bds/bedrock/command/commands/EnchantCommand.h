@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class EnchantCommand : Command {
+class EnchantCommand : public Command {
 
 public:
     ~EnchantCommand(); // _ZN14EnchantCommandD2Ev

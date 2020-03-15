@@ -1,11 +1,11 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
 #include "../../item/unmapped/ItemTransferAmount.h"
+#include <memory>
 
 
-class OffhandContainerController : ContainerController {
+class OffhandContainerController : public ContainerController {
 
 public:
     ~OffhandContainerController(); // _ZN26OffhandContainerControllerD2Ev

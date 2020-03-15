@@ -1,12 +1,12 @@
 #pragma once
 
+#include <unordered_map>
 #include <string>
 #include "IntOption.h"
-#include <unordered_map>
 #include <vector>
 
 
-class EnumOption : IntOption {
+class EnumOption : public IntOption {
 
 public:
     ~EnumOption(); // _ZN10EnumOptionD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
+#include "Tag.h"
 #include <string>
 #include <memory>
-#include "Tag.h"
 
 
-class ListTag : Tag {
+class ListTag : public Tag {
 
 public:
     ~ListTag(); // _ZN7ListTagD2Ev

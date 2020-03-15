@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class TickWorldDescription : ComponentDescription {
+class TickWorldDescription : public ComponentDescription {
 
 public:
     static long MinChunkRadius;

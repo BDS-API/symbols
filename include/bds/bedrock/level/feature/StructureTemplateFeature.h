@@ -3,7 +3,7 @@
 #include "IFeature.h"
 
 
-class StructureTemplateFeature : IFeature {
+class StructureTemplateFeature : public IFeature {
 
 public:
     class BoundingBox2D;

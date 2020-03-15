@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class FollowFlockGoal : Goal {
+class FollowFlockGoal : public Goal {
 
 public:
     ~FollowFlockGoal(); // _ZN15FollowFlockGoalD2Ev

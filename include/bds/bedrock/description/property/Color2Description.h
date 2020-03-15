@@ -3,7 +3,7 @@
 #include "ColorDescription.h"
 
 
-class Color2Description : ColorDescription {
+class Color2Description : public ColorDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK17Color2Description11getJsonNameEv

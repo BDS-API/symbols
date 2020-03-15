@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class PhotoTransferPacket : Packet {
+class PhotoTransferPacket : public Packet {
 
 public:
     ~PhotoTransferPacket(); // _ZN19PhotoTransferPacketD2Ev

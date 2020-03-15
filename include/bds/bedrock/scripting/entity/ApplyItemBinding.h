@@ -3,7 +3,7 @@
 #include <string>
 
 
-class ApplyItemBinding /*ScriptTemplateFactory<ScriptServerContext>::Entity*/ { //TODO: incomplete class definition
+class ApplyItemBinding /*public ScriptTemplateFactory<ScriptServerContext>::Entity*/ { //TODO: incomplete class definition
 
 public:
     ~ApplyItemBinding(); // _ZN16ApplyItemBindingD2Ev

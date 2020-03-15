@@ -3,7 +3,7 @@
 #include <string>
 
 
-class ScriptInteractComponent /*ScriptTemplateFactory<ScriptServerContext>::Component*/ { //TODO: incomplete class definition
+class ScriptInteractComponent /*public ScriptTemplateFactory<ScriptServerContext>::Component*/ { //TODO: incomplete class definition
 
 public:
     static long mHash;

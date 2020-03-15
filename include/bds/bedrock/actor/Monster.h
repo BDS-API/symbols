@@ -3,7 +3,7 @@
 #include "Mob.h"
 
 
-class Monster : Mob {
+class Monster : public Mob {
 
 public:
     ~Monster(); // _ZN7MonsterD2Ev

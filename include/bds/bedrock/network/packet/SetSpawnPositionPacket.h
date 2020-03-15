@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetSpawnPositionPacket : Packet {
+class SetSpawnPositionPacket : public Packet {
 
 public:
     ~SetSpawnPositionPacket(); // _ZN22SetSpawnPositionPacketD2Ev

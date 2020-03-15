@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class WorkbenchBlock : BlockLegacy {
+class WorkbenchBlock : public BlockLegacy {
 
 public:
     ~WorkbenchBlock(); // _ZN14WorkbenchBlockD2Ev

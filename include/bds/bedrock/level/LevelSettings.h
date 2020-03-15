@@ -1,9 +1,9 @@
 #pragma once
 
-#include "../../unmapped/EducationLevelSettings.h"
 #include <vector>
-#include "../../unmapped/GameRules.h"
+#include "../../unmapped/EducationLevelSettings.h"
 #include <string>
+#include "../../unmapped/GameRules.h"
 #include "../../unmapped/Abilities.h"
 
 

@@ -1,13 +1,13 @@
 #pragma once
 
 #include "Monster.h"
-#include "../util/AABB.h"
 #include <vector>
-#include "../util/BlockPos.h"
 #include "../util/Vec3.h"
+#include "../util/BlockPos.h"
+#include "../util/AABB.h"
 
 
-class EnderDragon : Monster {
+class EnderDragon : public Monster {
 
 public:
     static long GROWL_INTERVAL_MIN;

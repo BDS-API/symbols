@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class CompletedUsingItemPacket : Packet {
+class CompletedUsingItemPacket : public Packet {
 
 public:
     ~CompletedUsingItemPacket(); // _ZN24CompletedUsingItemPacketD2Ev

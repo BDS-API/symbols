@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class WitherTargetHighestDamage : TargetGoal {
+class WitherTargetHighestDamage : public TargetGoal {
 
 public:
     ~WitherTargetHighestDamage(); // _ZN25WitherTargetHighestDamageD2Ev

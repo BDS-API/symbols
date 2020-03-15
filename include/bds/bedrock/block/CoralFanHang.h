@@ -1,10 +1,10 @@
 #pragma once
 
-#include "CoralFan.h"
 #include <string>
+#include "CoralFan.h"
 
 
-class CoralFanHang : CoralFan {
+class CoralFanHang : public CoralFan {
 
 public:
     ~CoralFanHang(); // _ZN12CoralFanHangD2Ev

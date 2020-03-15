@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SimpleEventPacket : Packet {
+class SimpleEventPacket : public Packet {
 
 public:
     ~SimpleEventPacket(); // _ZN17SimpleEventPacketD2Ev

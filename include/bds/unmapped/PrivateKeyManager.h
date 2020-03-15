@@ -4,7 +4,7 @@
 #include "KeyManager.h"
 
 
-class PrivateKeyManager : KeyManager {
+class PrivateKeyManager : public KeyManager {
 
 public:
     ~PrivateKeyManager(); // _ZN17PrivateKeyManagerD2Ev

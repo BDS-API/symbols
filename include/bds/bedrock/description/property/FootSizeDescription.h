@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class FootSizeDescription : PropertyDescription {
+class FootSizeDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK19FootSizeDescription11getJsonNameEv

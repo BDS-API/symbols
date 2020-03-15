@@ -1,8 +1,8 @@
 #pragma once
 
+#include "HitResult.h"
 #include "../bedrock/util/Vec3.h"
 #include "../bedrock/actor/unmapped/ActorUniqueID.h"
-#include "HitResult.h"
 
 
 class ProjectileComponent {

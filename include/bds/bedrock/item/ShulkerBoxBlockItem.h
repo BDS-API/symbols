@@ -5,7 +5,7 @@
 #include "AuxDataBlockItem.h"
 
 
-class ShulkerBoxBlockItem : AuxDataBlockItem {
+class ShulkerBoxBlockItem : public AuxDataBlockItem {
 
 public:
     ~ShulkerBoxBlockItem(); // _ZN19ShulkerBoxBlockItemD2Ev

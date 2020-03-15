@@ -5,7 +5,7 @@
 #include "../../util/BlockPos.h"
 
 
-class StompBlockGoal : BaseMoveToBlockGoal {
+class StompBlockGoal : public BaseMoveToBlockGoal {
 
 public:
     ~StompBlockGoal(); // _ZN14StompBlockGoalD2Ev

@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "Container.h"
+#include <string>
 
 
-class SimpleContainer : Container {
+class SimpleContainer : public Container {
 
 public:
     ~SimpleContainer(); // _ZN15SimpleContainerD2Ev

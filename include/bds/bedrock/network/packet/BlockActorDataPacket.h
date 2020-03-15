@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../nbt/CompoundTag.h"
 #include "Packet.h"
+#include "../../nbt/CompoundTag.h"
 
 
-class BlockActorDataPacket : Packet {
+class BlockActorDataPacket : public Packet {
 
 public:
     ~BlockActorDataPacket(); // _ZN20BlockActorDataPacketD2Ev

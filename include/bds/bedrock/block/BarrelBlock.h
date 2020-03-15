@@ -4,7 +4,7 @@
 #include "FaceDirectionalBlock.h"
 
 
-class BarrelBlock : FaceDirectionalBlock {
+class BarrelBlock : public FaceDirectionalBlock {
 
 public:
     ~BarrelBlock(); // _ZN11BarrelBlockD2Ev

@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class EnderEyeItem : Item {
+class EnderEyeItem : public Item {
 
 public:
     ~EnderEyeItem(); // _ZN12EnderEyeItemD2Ev

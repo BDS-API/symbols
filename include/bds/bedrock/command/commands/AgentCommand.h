@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
-#include <memory>
 #include <functional>
 #include "../Command.h"
+#include <memory>
+#include <string>
 
 
-class AgentCommand : Command {
+class AgentCommand : public Command {
 
 public:
     ~AgentCommand(); // _ZN12AgentCommandD2Ev

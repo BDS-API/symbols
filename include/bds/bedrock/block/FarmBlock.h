@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class FarmBlock : BlockLegacy {
+class FarmBlock : public BlockLegacy {
 
 public:
     ~FarmBlock(); // _ZN9FarmBlockD2Ev

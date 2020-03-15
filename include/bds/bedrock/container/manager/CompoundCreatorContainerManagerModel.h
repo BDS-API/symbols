@@ -3,7 +3,7 @@
 #include "ContainerManagerModel.h"
 
 
-class CompoundCreatorContainerManagerModel : ContainerManagerModel {
+class CompoundCreatorContainerManagerModel : public ContainerManagerModel {
 
 public:
     ~CompoundCreatorContainerManagerModel(); // _ZN36CompoundCreatorContainerManagerModelD2Ev

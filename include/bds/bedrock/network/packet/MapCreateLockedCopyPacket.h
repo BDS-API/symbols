@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class MapCreateLockedCopyPacket : Packet {
+class MapCreateLockedCopyPacket : public Packet {
 
 public:
     ~MapCreateLockedCopyPacket(); // _ZN25MapCreateLockedCopyPacketD2Ev

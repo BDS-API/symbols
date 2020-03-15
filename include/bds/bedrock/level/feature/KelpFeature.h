@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class KelpFeature : Feature {
+class KelpFeature : public Feature {
 
 public:
     ~KelpFeature(); // _ZN11KelpFeatureD2Ev

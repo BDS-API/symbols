@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class MobEffectSubcomponent : OnHitSubcomponent {
+class MobEffectSubcomponent : public OnHitSubcomponent {
 
 public:
     ~MobEffectSubcomponent(); // _ZN21MobEffectSubcomponentD2Ev

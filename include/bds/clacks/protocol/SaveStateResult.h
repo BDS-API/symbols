@@ -10,7 +10,7 @@ namespace com {
 
             namespace protocol {
 
-                class SaveStateResult /*google::protobuf::Message*/ { //TODO: incomplete class definition
+                class SaveStateResult /*public google::protobuf::Message*/ { //TODO: incomplete class definition
 
                 public:
                     ~SaveStateResult(); // _ZN3com6mojang6clacks8protocol15SaveStateResultD2Ev

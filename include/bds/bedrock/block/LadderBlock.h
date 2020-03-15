@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class LadderBlock : BlockLegacy {
+class LadderBlock : public BlockLegacy {
 
 public:
     ~LadderBlock(); // _ZN11LadderBlockD2Ev

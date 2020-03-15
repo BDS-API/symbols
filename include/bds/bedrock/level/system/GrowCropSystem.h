@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class GrowCropSystem : ITickingSystem {
+class GrowCropSystem : public ITickingSystem {
 
 public:
     ~GrowCropSystem(); // _ZN14GrowCropSystemD2Ev

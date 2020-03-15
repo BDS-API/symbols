@@ -3,7 +3,7 @@
 #include "TreeFeature.h"
 
 
-class GroundBushFeature : TreeFeature {
+class GroundBushFeature : public TreeFeature {
 
 public:
     ~GroundBushFeature(); // _ZN17GroundBushFeatureD2Ev

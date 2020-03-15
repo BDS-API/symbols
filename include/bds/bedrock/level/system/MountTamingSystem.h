@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class MountTamingSystem : ITickingSystem {
+class MountTamingSystem : public ITickingSystem {
 
 public:
     ~MountTamingSystem(); // _ZN17MountTamingSystemD2Ev

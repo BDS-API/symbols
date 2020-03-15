@@ -4,7 +4,7 @@
 #include "BlockComponentDescription.h"
 
 
-class BlockDestroyTimeDescription : BlockComponentDescription {
+class BlockDestroyTimeDescription : public BlockComponentDescription {
 
 public:
     static std::string NameID;

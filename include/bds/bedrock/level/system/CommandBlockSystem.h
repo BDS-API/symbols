@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class CommandBlockSystem : ITickingSystem {
+class CommandBlockSystem : public ITickingSystem {
 
 public:
     ~CommandBlockSystem(); // _ZN18CommandBlockSystemD2Ev

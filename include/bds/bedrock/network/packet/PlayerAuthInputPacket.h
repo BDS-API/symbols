@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class PlayerAuthInputPacket : Packet {
+class PlayerAuthInputPacket : public Packet {
 
 public:
     ~PlayerAuthInputPacket(); // _ZN21PlayerAuthInputPacketD2Ev

@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class OceanMonumentStart : StructureStart {
+class OceanMonumentStart : public StructureStart {
 
 public:
     ~OceanMonumentStart(); // _ZN18OceanMonumentStartD2Ev

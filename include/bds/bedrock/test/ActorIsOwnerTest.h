@@ -3,7 +3,7 @@
 #include "SimpleBoolFilterTest.h"
 
 
-class ActorIsOwnerTest : SimpleBoolFilterTest {
+class ActorIsOwnerTest : public SimpleBoolFilterTest {
 
 public:
     ~ActorIsOwnerTest(); // _ZN16ActorIsOwnerTestD2Ev

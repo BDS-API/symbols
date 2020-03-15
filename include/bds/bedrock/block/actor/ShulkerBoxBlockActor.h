@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class ShulkerBoxBlockActor : ChestBlockActor {
+class ShulkerBoxBlockActor : public ChestBlockActor {
 
 public:
     static long ITEMS_SIZE;

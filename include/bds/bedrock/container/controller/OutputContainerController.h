@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class OutputContainerController : ContainerController {
+class OutputContainerController : public ContainerController {
 
 public:
     ~OutputContainerController(); // _ZN25OutputContainerControllerD2Ev

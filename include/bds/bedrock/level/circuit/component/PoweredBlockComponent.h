@@ -3,7 +3,7 @@
 #include "BaseCircuitComponent.h"
 
 
-class PoweredBlockComponent : BaseCircuitComponent {
+class PoweredBlockComponent : public BaseCircuitComponent {
 
 public:
     ~PoweredBlockComponent(); // _ZN21PoweredBlockComponentD2Ev

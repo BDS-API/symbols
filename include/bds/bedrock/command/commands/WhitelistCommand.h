@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class WhitelistCommand : Command {
+class WhitelistCommand : public Command {
 
 public:
     static long mWhitelistFile;

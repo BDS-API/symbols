@@ -4,7 +4,7 @@
 #include "../../container/Container.h"
 
 
-class LecternBlockActor : BlockActor, Container {
+class LecternBlockActor : public BlockActor, public Container {
 
 public:
     ~LecternBlockActor(); // _ZN17LecternBlockActorD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "Packet.h"
 #include "../../actor/unmapped/ActorRuntimeID.h"
+#include "Packet.h"
 
 
-class SetLocalPlayerAsInitializedPacket : Packet {
+class SetLocalPlayerAsInitializedPacket : public Packet {
 
 public:
     ~SetLocalPlayerAsInitializedPacket(); // _ZN33SetLocalPlayerAsInitializedPacketD2Ev

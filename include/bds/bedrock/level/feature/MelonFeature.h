@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class MelonFeature : Feature {
+class MelonFeature : public Feature {
 
 public:
     ~MelonFeature(); // _ZN12MelonFeatureD2Ev

@@ -4,7 +4,7 @@
 #include "SlabBlockItem.h"
 
 
-class WoodSlabBlockItem : SlabBlockItem {
+class WoodSlabBlockItem : public SlabBlockItem {
 
 public:
     ~WoodSlabBlockItem(); // _ZN17WoodSlabBlockItemD2Ev

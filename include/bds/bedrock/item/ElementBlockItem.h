@@ -3,7 +3,7 @@
 #include "ChemistryAuxDataBlockItem.h"
 
 
-class ElementBlockItem : ChemistryAuxDataBlockItem {
+class ElementBlockItem : public ChemistryAuxDataBlockItem {
 
 public:
     ~ElementBlockItem(); // _ZN16ElementBlockItemD2Ev

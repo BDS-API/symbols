@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class MyceliumBlock : BlockLegacy {
+class MyceliumBlock : public BlockLegacy {
 
 public:
     static long MIN_BRIGHTNESS;

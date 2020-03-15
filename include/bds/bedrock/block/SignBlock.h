@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class SignBlock : ActorBlock {
+class SignBlock : public ActorBlock {
 
 public:
     ~SignBlock(); // _ZN9SignBlockD2Ev

@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class MapInfoRequestPacket : Packet {
+class MapInfoRequestPacket : public Packet {
 
 public:
     ~MapInfoRequestPacket(); // _ZN20MapInfoRequestPacketD2Ev

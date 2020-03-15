@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class ToggleDownfallCommand : Command {
+class ToggleDownfallCommand : public Command {
 
 public:
     ~ToggleDownfallCommand(); // _ZN21ToggleDownfallCommandD2Ev

@@ -3,7 +3,7 @@
 #include "LogEndPoint.h"
 
 
-class ContentLogEndPoint : Bedrock::LogEndPoint {
+class ContentLogEndPoint : public Bedrock::LogEndPoint {
 
 public:
     ~ContentLogEndPoint(); // _ZN18ContentLogEndPointD2Ev

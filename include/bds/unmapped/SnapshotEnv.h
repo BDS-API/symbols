@@ -3,7 +3,7 @@
 #include <string>
 
 
-class SnapshotEnv /*leveldb::EnvWrapper*/ { //TODO: incomplete class definition
+class SnapshotEnv /*public leveldb::EnvWrapper*/ { //TODO: incomplete class definition
 
 public:
     class DeleteFileEntry;

@@ -4,7 +4,7 @@
 #include "BaseMoveToBlockGoal.h"
 
 
-class MoveToLandGoal : BaseMoveToBlockGoal {
+class MoveToLandGoal : public BaseMoveToBlockGoal {
 
 public:
     ~MoveToLandGoal(); // _ZN14MoveToLandGoalD2Ev

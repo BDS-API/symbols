@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class Sapling : BushBlock {
+class Sapling : public BushBlock {
 
 public:
     ~Sapling(); // _ZN7SaplingD2Ev

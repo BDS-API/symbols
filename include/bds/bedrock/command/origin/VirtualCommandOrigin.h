@@ -5,7 +5,7 @@
 #include <memory>
 
 
-class VirtualCommandOrigin : CommandOrigin {
+class VirtualCommandOrigin : public CommandOrigin {
 
 public:
     ~VirtualCommandOrigin(); // _ZN20VirtualCommandOriginD2Ev

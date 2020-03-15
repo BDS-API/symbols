@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class ChestBlock : ActorBlock {
+class ChestBlock : public ActorBlock {
 
 public:
     ~ChestBlock(); // _ZN10ChestBlockD2Ev

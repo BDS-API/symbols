@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "LootItemCondition.h"
+#include "../../../json/Value.h"
 
 
-class LootItemRandomDifficultyChanceCondition : LootItemCondition {
+class LootItemRandomDifficultyChanceCondition : public LootItemCondition {
 
 public:
     ~LootItemRandomDifficultyChanceCondition(); // _ZN39LootItemRandomDifficultyChanceConditionD2Ev

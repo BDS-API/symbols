@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ItemFrameDropItemPacket : Packet {
+class ItemFrameDropItemPacket : public Packet {
 
 public:
     ~ItemFrameDropItemPacket(); // _ZN23ItemFrameDropItemPacketD2Ev

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class EatBlockGoal : Goal {
+class EatBlockGoal : public Goal {
 
 public:
     ~EatBlockGoal(); // _ZN12EatBlockGoalD2Ev

@@ -1,9 +1,9 @@
 #pragma once
 
 #include <string>
+#include "AnimationComponentID.h"
 #include <functional>
 #include "../bedrock/actor/unmapped/ActorSkeletalAnimationPtr.h"
-#include "AnimationComponentID.h"
 
 
 class AnimationComponent {

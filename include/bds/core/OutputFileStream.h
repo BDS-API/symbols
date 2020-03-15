@@ -5,7 +5,7 @@
 
 namespace Core {
 
-    class OutputFileStream : Core::FileStream {
+    class OutputFileStream : public Core::FileStream {
 
     public:
         ~OutputFileStream(); // _ZN4Core16OutputFileStreamD1Ev

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class RiverFollowingGoal : Goal {
+class RiverFollowingGoal : public Goal {
 
 public:
     ~RiverFollowingGoal(); // _ZN18RiverFollowingGoalD2Ev

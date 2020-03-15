@@ -5,7 +5,7 @@
 
 namespace VanillaSurfaceBuilders {
 
-    class OverworldDefaultSurfaceBuilder : ISurfaceBuilder {
+    class OverworldDefaultSurfaceBuilder : public ISurfaceBuilder {
 
     public:
         ~OverworldDefaultSurfaceBuilder(); // _ZN22VanillaSurfaceBuilders30OverworldDefaultSurfaceBuilderD2Ev

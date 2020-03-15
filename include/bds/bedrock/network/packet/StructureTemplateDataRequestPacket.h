@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class StructureTemplateDataRequestPacket : Packet {
+class StructureTemplateDataRequestPacket : public Packet {
 
 public:
     ~StructureTemplateDataRequestPacket(); // _ZN34StructureTemplateDataRequestPacketD2Ev

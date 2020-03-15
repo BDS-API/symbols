@@ -6,7 +6,7 @@
 
 namespace WoodlandMansionPieces {
 
-    class WoodlandMansionPiece : TemplateStructurePiece {
+    class WoodlandMansionPiece : public TemplateStructurePiece {
 
     public:
         ~WoodlandMansionPiece(); // _ZN21WoodlandMansionPieces20WoodlandMansionPieceD2Ev

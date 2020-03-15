@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SetItemDamageFunction : LootItemFunction {
+class SetItemDamageFunction : public LootItemFunction {
 
 public:
     ~SetItemDamageFunction(); // _ZN21SetItemDamageFunctionD2Ev

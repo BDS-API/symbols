@@ -3,7 +3,7 @@
 #include "SimpleIntFilterTest.h"
 
 
-class ActorHasDamageTest : SimpleIntFilterTest {
+class ActorHasDamageTest : public SimpleIntFilterTest {
 
 public:
     ~ActorHasDamageTest(); // _ZN18ActorHasDamageTestD2Ev

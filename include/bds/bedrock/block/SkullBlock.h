@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class SkullBlock : ActorBlock {
+class SkullBlock : public ActorBlock {
 
 public:
     ~SkullBlock(); // _ZN10SkullBlockD2Ev

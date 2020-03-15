@@ -1,8 +1,8 @@
 #pragma once
 
 #include <string>
-#include <array>
 #include "../bedrock/test/FilterTest.h"
+#include <array>
 
 
 class FilterGroup {

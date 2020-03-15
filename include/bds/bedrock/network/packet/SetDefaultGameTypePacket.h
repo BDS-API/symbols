@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetDefaultGameTypePacket : Packet {
+class SetDefaultGameTypePacket : public Packet {
 
 public:
     ~SetDefaultGameTypePacket(); // _ZN24SetDefaultGameTypePacketD2Ev

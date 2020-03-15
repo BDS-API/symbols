@@ -2,7 +2,7 @@
 
 
 
-class NullLogger /*leveldb::Logger*/ { //TODO: incomplete class definition
+class NullLogger /*public leveldb::Logger*/ { //TODO: incomplete class definition
 
 public:
     static long instance;

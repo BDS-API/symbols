@@ -3,7 +3,7 @@
 #include "SimpleFloatFilterTest.h"
 
 
-class FilterTestMoonIntensity : SimpleFloatFilterTest {
+class FilterTestMoonIntensity : public SimpleFloatFilterTest {
 
 public:
     ~FilterTestMoonIntensity(); // _ZN23FilterTestMoonIntensityD2Ev

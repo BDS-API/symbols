@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class JumpControlDescription : ComponentDescription {
+class JumpControlDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK22JumpControlDescription11getJsonNameEv

@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SpawnExperienceOrbPacket : Packet {
+class SpawnExperienceOrbPacket : public Packet {
 
 public:
     ~SpawnExperienceOrbPacket(); // _ZN24SpawnExperienceOrbPacketD2Ev

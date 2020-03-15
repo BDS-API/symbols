@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class LlamaSpit : Actor {
+class LlamaSpit : public Actor {
 
 public:
     ~LlamaSpit(); // _ZN9LlamaSpitD2Ev

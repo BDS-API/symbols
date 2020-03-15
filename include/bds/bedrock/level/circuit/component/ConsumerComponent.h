@@ -3,7 +3,7 @@
 #include "BaseCircuitComponent.h"
 
 
-class ConsumerComponent : BaseCircuitComponent {
+class ConsumerComponent : public BaseCircuitComponent {
 
 public:
     ~ConsumerComponent(); // _ZN17ConsumerComponentD2Ev

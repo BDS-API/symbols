@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../util/Vec3.h"
 #include "Packet.h"
+#include "../../util/Vec3.h"
 
 
-class ChangeDimensionPacket : Packet {
+class ChangeDimensionPacket : public Packet {
 
 public:
     ~ChangeDimensionPacket(); // _ZN21ChangeDimensionPacketD2Ev

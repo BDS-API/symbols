@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class RestrictSunGoal : Goal {
+class RestrictSunGoal : public Goal {
 
 public:
     ~RestrictSunGoal(); // _ZN15RestrictSunGoalD2Ev

@@ -4,7 +4,7 @@
 #include "RandomStrollGoal.h"
 
 
-class SilverfishMergeWithStoneGoal : RandomStrollGoal {
+class SilverfishMergeWithStoneGoal : public RandomStrollGoal {
 
 public:
     ~SilverfishMergeWithStoneGoal(); // _ZN28SilverfishMergeWithStoneGoalD2Ev

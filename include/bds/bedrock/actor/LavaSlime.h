@@ -3,7 +3,7 @@
 #include "Slime.h"
 
 
-class LavaSlime : Slime {
+class LavaSlime : public Slime {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN9LavaSlime15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

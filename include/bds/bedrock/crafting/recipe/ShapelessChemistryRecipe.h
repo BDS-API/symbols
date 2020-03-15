@@ -6,7 +6,7 @@
 #include <vector>
 
 
-class ShapelessChemistryRecipe : ShapelessRecipe {
+class ShapelessChemistryRecipe : public ShapelessRecipe {
 
 public:
     static long ID;

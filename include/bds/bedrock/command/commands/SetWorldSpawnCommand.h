@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class SetWorldSpawnCommand : Command {
+class SetWorldSpawnCommand : public Command {
 
 public:
     ~SetWorldSpawnCommand(); // _ZN20SetWorldSpawnCommandD2Ev

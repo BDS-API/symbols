@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ChunkSource.h"
+#include <memory>
 
 
-class WorldLimitChunkSource : ChunkSource {
+class WorldLimitChunkSource : public ChunkSource {
 
 public:
     ~WorldLimitChunkSource(); // _ZN21WorldLimitChunkSourceD2Ev

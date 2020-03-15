@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class NavigationSystem : ITickingSystem {
+class NavigationSystem : public ITickingSystem {
 
 public:
     ~NavigationSystem(); // _ZN16NavigationSystemD2Ev

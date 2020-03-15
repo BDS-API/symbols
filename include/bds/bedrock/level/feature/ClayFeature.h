@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class ClayFeature : Feature {
+class ClayFeature : public Feature {
 
 public:
     ~ClayFeature(); // _ZN11ClayFeatureD2Ev

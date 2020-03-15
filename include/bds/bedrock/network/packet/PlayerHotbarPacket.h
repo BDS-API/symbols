@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class PlayerHotbarPacket : Packet {
+class PlayerHotbarPacket : public Packet {
 
 public:
     ~PlayerHotbarPacket(); // _ZN18PlayerHotbarPacketD2Ev

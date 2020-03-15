@@ -4,7 +4,7 @@
 #include "IAppPlatform.h"
 
 
-class AppPlatform : IAppPlatform {
+class AppPlatform : public IAppPlatform {
 
 public:
     static long HOME_PATH;

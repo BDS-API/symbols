@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class ExplorationMapFunction : LootItemFunction {
+class ExplorationMapFunction : public LootItemFunction {
 
 public:
     ~ExplorationMapFunction(); // _ZN22ExplorationMapFunctionD2Ev

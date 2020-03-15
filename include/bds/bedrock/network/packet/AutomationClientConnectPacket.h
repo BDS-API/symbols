@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "Packet.h"
 #include "../../../unmapped/WebSocketPacketData.h"
+#include "Packet.h"
 
 
-class AutomationClientConnectPacket : Packet {
+class AutomationClientConnectPacket : public Packet {
 
 public:
     ~AutomationClientConnectPacket(); // _ZN29AutomationClientConnectPacketD2Ev

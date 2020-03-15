@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class IsSaddledDescription : PropertyDescription {
+class IsSaddledDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK20IsSaddledDescription11getJsonNameEv

@@ -4,7 +4,7 @@
 #include "CommandOrigin.h"
 
 
-class PrecompiledCommandOrigin : CommandOrigin {
+class PrecompiledCommandOrigin : public CommandOrigin {
 
 public:
     ~PrecompiledCommandOrigin(); // _ZN24PrecompiledCommandOriginD2Ev

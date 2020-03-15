@@ -4,7 +4,7 @@
 #include "BlockActor.h"
 
 
-class EnchantingTableBlockActor : BlockActor {
+class EnchantingTableBlockActor : public BlockActor {
 
 public:
     ~EnchantingTableBlockActor(); // _ZN25EnchantingTableBlockActorD2Ev

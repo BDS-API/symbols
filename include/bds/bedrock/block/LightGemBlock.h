@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class LightGemBlock : BlockLegacy {
+class LightGemBlock : public BlockLegacy {
 
 public:
     ~LightGemBlock(); // _ZN13LightGemBlockD2Ev

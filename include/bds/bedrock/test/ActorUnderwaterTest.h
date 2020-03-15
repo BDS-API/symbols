@@ -3,7 +3,7 @@
 #include "SimpleBoolFilterTest.h"
 
 
-class ActorUnderwaterTest : SimpleBoolFilterTest {
+class ActorUnderwaterTest : public SimpleBoolFilterTest {
 
 public:
     ~ActorUnderwaterTest(); // _ZN19ActorUnderwaterTestD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
+#include <set>
 #include <string>
 #include "BaseMoveToBlockGoal.h"
-#include <set>
 
 
-class RaidGardenGoal : BaseMoveToBlockGoal {
+class RaidGardenGoal : public BaseMoveToBlockGoal {
 
 public:
     ~RaidGardenGoal(); // _ZN14RaidGardenGoalD2Ev

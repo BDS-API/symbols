@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class CommandBlock : ActorBlock {
+class CommandBlock : public ActorBlock {
 
 public:
     static long mCBModeMap;

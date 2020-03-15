@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../bedrock/actor/unmapped/ActorDefinitionIdentifier.h"
 #include <memory>
+#include "../bedrock/actor/unmapped/ActorDefinitionIdentifier.h"
 
 
 class BaseMobSpawner {

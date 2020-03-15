@@ -4,7 +4,7 @@
 #include "HeavyBlock.h"
 
 
-class GravelBlock : HeavyBlock {
+class GravelBlock : public HeavyBlock {
 
 public:
     ~GravelBlock(); // _ZN11GravelBlockD2Ev

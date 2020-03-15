@@ -1,10 +1,10 @@
 #pragma once
 
-#include <vector>
 #include "Spider.h"
+#include <vector>
 
 
-class CaveSpider : Spider {
+class CaveSpider : public Spider {
 
 public:
     ~CaveSpider(); // _ZN10CaveSpiderD2Ev

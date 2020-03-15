@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class InverterNode : BehaviorNode {
+class InverterNode : public BehaviorNode {
 
 public:
     ~InverterNode(); // _ZN12InverterNodeD2Ev

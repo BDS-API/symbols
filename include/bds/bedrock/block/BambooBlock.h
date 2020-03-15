@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class BambooBlock : BlockLegacy {
+class BambooBlock : public BlockLegacy {
 
 public:
     ~BambooBlock(); // _ZN11BambooBlockD2Ev

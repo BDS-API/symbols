@@ -4,7 +4,7 @@
 #include "Enchant.h"
 
 
-class LootEnchant : Enchant {
+class LootEnchant : public Enchant {
 
 public:
     ~LootEnchant(); // _ZN11LootEnchantD2Ev

@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class TallGrass : BushBlock {
+class TallGrass : public BushBlock {
 
 public:
     ~TallGrass(); // _ZN9TallGrassD2Ev

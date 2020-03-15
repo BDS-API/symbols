@@ -3,7 +3,7 @@
 #include "Monster.h"
 
 
-class Vex : Monster {
+class Vex : public Monster {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN3Vex15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

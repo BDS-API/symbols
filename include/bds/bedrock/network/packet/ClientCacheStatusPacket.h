@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ClientCacheStatusPacket : Packet {
+class ClientCacheStatusPacket : public Packet {
 
 public:
     ~ClientCacheStatusPacket(); // _ZN23ClientCacheStatusPacketD2Ev

@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class LecternBlock : ActorBlock {
+class LecternBlock : public ActorBlock {
 
 public:
     ~LecternBlock(); // _ZN12LecternBlockD2Ev

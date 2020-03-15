@@ -3,7 +3,7 @@
 #include "../bedrock/resourcepack/ResourcePackListener.h"
 
 
-class EducationOptions : ResourcePackListener {
+class EducationOptions : public ResourcePackListener {
 
 public:
     static long DEFAULT_OPTION;

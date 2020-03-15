@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class BucketableDescription : ComponentDescription {
+class BucketableDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK21BucketableDescription11getJsonNameEv

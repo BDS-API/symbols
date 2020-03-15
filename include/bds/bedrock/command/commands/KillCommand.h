@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class KillCommand : Command {
+class KillCommand : public Command {
 
 public:
     ~KillCommand(); // _ZN11KillCommandD2Ev

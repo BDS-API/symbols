@@ -3,7 +3,7 @@
 #include "Amplifier.h"
 
 
-class MultiplyValueAmplifier : Amplifier {
+class MultiplyValueAmplifier : public Amplifier {
 
 public:
     ~MultiplyValueAmplifier(); // _ZN22MultiplyValueAmplifierD2Ev

@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class DispenserBlock : ActorBlock {
+class DispenserBlock : public ActorBlock {
 
 public:
     ~DispenserBlock(); // _ZN14DispenserBlockD2Ev

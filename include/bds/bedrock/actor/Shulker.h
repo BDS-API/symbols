@@ -1,10 +1,10 @@
 #pragma once
 
-#include "Mob.h"
 #include "../util/BlockPos.h"
+#include "Mob.h"
 
 
-class Shulker : Mob {
+class Shulker : public Mob {
 
 public:
     static long COVERED_ARMOR_MODIFIER_UUID;

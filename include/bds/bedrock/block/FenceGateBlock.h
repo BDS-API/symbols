@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class FenceGateBlock : BlockLegacy {
+class FenceGateBlock : public BlockLegacy {
 
 public:
     ~FenceGateBlock(); // _ZN14FenceGateBlockD2Ev

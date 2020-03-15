@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class HurtOwnerSubcomponent : OnHitSubcomponent {
+class HurtOwnerSubcomponent : public OnHitSubcomponent {
 
 public:
     ~HurtOwnerSubcomponent(); // _ZN21HurtOwnerSubcomponentD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "BlockLegacy.h"
 #include <vector>
+#include "BlockLegacy.h"
 
 
-class ComposterBlock : BlockLegacy {
+class ComposterBlock : public BlockLegacy {
 
 public:
     static long PARTICLE_OFFSET;

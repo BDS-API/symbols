@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class MobEffectSystem : ITickingSystem {
+class MobEffectSystem : public ITickingSystem {
 
 public:
     ~MobEffectSystem(); // _ZN15MobEffectSystemD2Ev

@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class ParticleCommand : Command {
+class ParticleCommand : public Command {
 
 public:
     ~ParticleCommand(); // _ZN15ParticleCommandD2Ev

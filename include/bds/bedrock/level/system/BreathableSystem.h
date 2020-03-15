@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BreathableSystem : ITickingSystem {
+class BreathableSystem : public ITickingSystem {
 
 public:
     ~BreathableSystem(); // _ZN16BreathableSystemD2Ev

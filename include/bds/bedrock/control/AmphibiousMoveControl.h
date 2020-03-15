@@ -3,7 +3,7 @@
 #include "GenericMoveControl.h"
 
 
-class AmphibiousMoveControl : GenericMoveControl {
+class AmphibiousMoveControl : public GenericMoveControl {
 
 public:
     ~AmphibiousMoveControl(); // _ZN21AmphibiousMoveControlD2Ev

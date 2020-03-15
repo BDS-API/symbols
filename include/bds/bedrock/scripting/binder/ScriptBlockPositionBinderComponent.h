@@ -3,7 +3,7 @@
 #include "ScriptBinderComponent.h"
 
 
-class ScriptBlockPositionBinderComponent : ScriptBinderComponent {
+class ScriptBlockPositionBinderComponent : public ScriptBinderComponent {
 
 public:
     static std::string TAG;

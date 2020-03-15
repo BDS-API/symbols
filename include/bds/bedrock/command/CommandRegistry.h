@@ -1,13 +1,13 @@
 #pragma once
 
-#include "CommandVersion.h"
-#include <vector>
-#include "CommandFlag.h"
-#include <memory>
-#include <string>
 #include <set>
+#include <memory>
+#include <vector>
+#include "CommandVersion.h"
 #include <functional>
 #include <utility>
+#include <string>
+#include "CommandFlag.h"
 
 
 class CommandRegistry {

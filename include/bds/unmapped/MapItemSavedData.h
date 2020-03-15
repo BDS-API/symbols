@@ -1,11 +1,11 @@
 #pragma once
 
-#include "../bedrock/actor/unmapped/ActorUniqueID.h"
-#include <vector>
 #include <memory>
+#include <vector>
+#include "../bedrock/actor/unmapped/ActorUniqueID.h"
 #include "MapItemTrackedActor.h"
-#include <string>
 #include "../bedrock/util/Vec3.h"
+#include <string>
 
 
 class MapItemSavedData {

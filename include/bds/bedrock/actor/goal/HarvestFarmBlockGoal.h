@@ -4,7 +4,7 @@
 #include "BaseMoveToBlockGoal.h"
 
 
-class HarvestFarmBlockGoal : BaseMoveToBlockGoal {
+class HarvestFarmBlockGoal : public BaseMoveToBlockGoal {
 
 public:
     ~HarvestFarmBlockGoal(); // _ZN20HarvestFarmBlockGoalD2Ev

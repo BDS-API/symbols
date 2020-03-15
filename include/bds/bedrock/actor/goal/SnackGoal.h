@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SnackGoal : Goal {
+class SnackGoal : public Goal {
 
 public:
     static long PATH_RANGE;

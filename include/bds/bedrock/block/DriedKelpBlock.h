@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class DriedKelpBlock : BlockLegacy {
+class DriedKelpBlock : public BlockLegacy {
 
 public:
     ~DriedKelpBlock(); // _ZN14DriedKelpBlockD2Ev

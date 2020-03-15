@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class RunAroundLikeCrazyGoal : Goal {
+class RunAroundLikeCrazyGoal : public Goal {
 
 public:
     ~RunAroundLikeCrazyGoal(); // _ZN22RunAroundLikeCrazyGoalD2Ev

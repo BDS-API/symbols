@@ -3,7 +3,7 @@
 #include "MoveControl.h"
 
 
-class DolphinMoveControl : MoveControl {
+class DolphinMoveControl : public MoveControl {
 
 public:
     ~DolphinMoveControl(); // _ZN18DolphinMoveControlD2Ev

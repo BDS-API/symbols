@@ -3,7 +3,7 @@
 #include "LevelContainerManagerModel.h"
 
 
-class LabTableContainerManagerModel : LevelContainerManagerModel {
+class LabTableContainerManagerModel : public LevelContainerManagerModel {
 
 public:
     static long INPUT_SLOTS;

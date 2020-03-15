@@ -3,7 +3,7 @@
 #include "FilterTest.h"
 
 
-class ActorInWeatherTest : FilterTest {
+class ActorInWeatherTest : public FilterTest {
 
 public:
     ~ActorInWeatherTest(); // _ZN18ActorInWeatherTestD2Ev

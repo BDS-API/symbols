@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class AbilityCommand : Command {
+class AbilityCommand : public Command {
 
 public:
     ~AbilityCommand(); // _ZN14AbilityCommandD2Ev

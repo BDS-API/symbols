@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class NearestAttackableTargetGoal : TargetGoal {
+class NearestAttackableTargetGoal : public TargetGoal {
 
 public:
     ~NearestAttackableTargetGoal(); // _ZN27NearestAttackableTargetGoalD2Ev

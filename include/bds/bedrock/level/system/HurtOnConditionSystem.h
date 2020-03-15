@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class HurtOnConditionSystem : ITickingSystem {
+class HurtOnConditionSystem : public ITickingSystem {
 
 public:
     ~HurtOnConditionSystem(); // _ZN21HurtOnConditionSystemD2Ev

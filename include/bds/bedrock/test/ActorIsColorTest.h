@@ -3,7 +3,7 @@
 #include "SimpleIntFilterTest.h"
 
 
-class ActorIsColorTest : SimpleIntFilterTest {
+class ActorIsColorTest : public SimpleIntFilterTest {
 
 public:
     ~ActorIsColorTest(); // _ZN16ActorIsColorTestD2Ev

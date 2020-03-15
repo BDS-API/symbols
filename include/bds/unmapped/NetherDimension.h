@@ -3,7 +3,7 @@
 #include "Dimension.h"
 
 
-class NetherDimension : Dimension {
+class NetherDimension : public Dimension {
 
 public:
     ~NetherDimension(); // _ZN15NetherDimensionD2Ev

@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class VineBlock : BlockLegacy {
+class VineBlock : public BlockLegacy {
 
 public:
     static long VINE_SOUTH;

@@ -2,11 +2,11 @@
 
 #include <string>
 #include <memory>
-#include "ComplexItem.h"
 #include <vector>
+#include "ComplexItem.h"
 
 
-class MapItem : ComplexItem {
+class MapItem : public ComplexItem {
 
 public:
     static std::string TAG_MAP_SCALING;

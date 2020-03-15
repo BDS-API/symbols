@@ -1,10 +1,10 @@
 #pragma once
 
-#include "ChestBlock.h"
 #include <string>
+#include "ChestBlock.h"
 
 
-class EnderChestBlock : ChestBlock {
+class EnderChestBlock : public ChestBlock {
 
 public:
     ~EnderChestBlock(); // _ZN15EnderChestBlockD2Ev

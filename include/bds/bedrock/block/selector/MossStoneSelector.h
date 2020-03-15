@@ -3,7 +3,7 @@
 #include "BlockSelector.h"
 
 
-class MossStoneSelector : BlockSelector {
+class MossStoneSelector : public BlockSelector {
 
 public:
     ~MossStoneSelector(); // _ZN17MossStoneSelectorD2Ev

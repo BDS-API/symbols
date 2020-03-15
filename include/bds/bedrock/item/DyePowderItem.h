@@ -1,12 +1,12 @@
 #pragma once
 
+#include "../util/BlockPos.h"
 #include <string>
 #include <memory>
-#include "../util/BlockPos.h"
 #include "FertilizerItem.h"
 
 
-class DyePowderItem : FertilizerItem {
+class DyePowderItem : public FertilizerItem {
 
 public:
     static long mColorMap;

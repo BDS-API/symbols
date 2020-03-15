@@ -3,7 +3,7 @@
 #include "IGameModuleShared.h"
 
 
-class VanillaGameModuleDedicatedServer : IGameModuleShared {
+class VanillaGameModuleDedicatedServer : public IGameModuleShared {
 
 public:
     ~VanillaGameModuleDedicatedServer(); // _ZN32VanillaGameModuleDedicatedServerD2Ev

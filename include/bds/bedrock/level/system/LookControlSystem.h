@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class LookControlSystem : ITickingSystem {
+class LookControlSystem : public ITickingSystem {
 
 public:
     ~LookControlSystem(); // _ZN17LookControlSystemD2Ev

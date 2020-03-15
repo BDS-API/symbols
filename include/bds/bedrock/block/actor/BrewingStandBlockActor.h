@@ -5,7 +5,7 @@
 #include "../../container/Container.h"
 
 
-class BrewingStandBlockActor : BlockActor, Container {
+class BrewingStandBlockActor : public BlockActor, public Container {
 
 public:
     ~BrewingStandBlockActor(); // _ZN22BrewingStandBlockActorD2Ev

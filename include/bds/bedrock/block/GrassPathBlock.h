@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class GrassPathBlock : BlockLegacy {
+class GrassPathBlock : public BlockLegacy {
 
 public:
     ~GrassPathBlock(); // _ZN14GrassPathBlockD2Ev

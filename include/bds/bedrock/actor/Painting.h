@@ -4,7 +4,7 @@
 #include "HangingActor.h"
 
 
-class Painting : HangingActor {
+class Painting : public HangingActor {
 
 public:
     ~Painting(); // _ZN8PaintingD2Ev

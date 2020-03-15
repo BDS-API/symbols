@@ -5,7 +5,7 @@
 #include "BlockItem.h"
 
 
-class SaplingBlockItem : BlockItem {
+class SaplingBlockItem : public BlockItem {
 
 public:
     ~SaplingBlockItem(); // _ZN16SaplingBlockItemD2Ev

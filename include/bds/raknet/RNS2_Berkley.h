@@ -5,7 +5,7 @@
 
 namespace RakNet {
 
-    class RNS2_Berkley : RakNet::IRNS2_Berkley {
+    class RNS2_Berkley : public RakNet::IRNS2_Berkley {
 
     public:
         ~RNS2_Berkley(); // _ZN6RakNet12RNS2_BerkleyD2Ev

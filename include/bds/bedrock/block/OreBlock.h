@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class OreBlock : BlockLegacy {
+class OreBlock : public BlockLegacy {
 
 public:
     ~OreBlock(); // _ZN8OreBlockD2Ev

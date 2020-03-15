@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class CocoaBlock : BlockLegacy {
+class CocoaBlock : public BlockLegacy {
 
 public:
     ~CocoaBlock(); // _ZN10CocoaBlockD2Ev

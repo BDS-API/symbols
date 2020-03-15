@@ -4,7 +4,7 @@
 #include "LogBlock.h"
 
 
-class NewLogBlock : LogBlock {
+class NewLogBlock : public LogBlock {
 
 public:
     ~NewLogBlock(); // _ZN11NewLogBlockD2Ev

@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class DanceSystem : ITickingSystem {
+class DanceSystem : public ITickingSystem {
 
 public:
     ~DanceSystem(); // _ZN11DanceSystemD2Ev

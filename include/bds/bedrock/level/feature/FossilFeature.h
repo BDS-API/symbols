@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class FossilFeature : Feature {
+class FossilFeature : public Feature {
 
 public:
     static std::string STRUCTURE_LOCATION_FOSSIL;

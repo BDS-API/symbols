@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class BedrockBlock : BlockLegacy {
+class BedrockBlock : public BlockLegacy {
 
 public:
     ~BedrockBlock(); // _ZN12BedrockBlockD2Ev

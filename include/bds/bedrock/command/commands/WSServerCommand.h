@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class WSServerCommand : Command {
+class WSServerCommand : public Command {
 
 public:
     ~WSServerCommand(); // _ZN15WSServerCommandD2Ev

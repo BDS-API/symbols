@@ -3,7 +3,7 @@
 #include "BodyControl.h"
 
 
-class AgentBodyControl : BodyControl {
+class AgentBodyControl : public BodyControl {
 
 public:
     ~AgentBodyControl(); // _ZN16AgentBodyControlD2Ev

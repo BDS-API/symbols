@@ -3,7 +3,7 @@
 #include "Mob.h"
 
 
-class VillagerBase : Mob {
+class VillagerBase : public Mob {
 
 public:
 //  virtual void reloadComponents(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN12VillagerBase16reloadComponentsEN5Actor20InitializationMethodERK20VariantParameterList

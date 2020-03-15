@@ -3,7 +3,7 @@
 #include "MessagingCommand.h"
 
 
-class TitleCommand : MessagingCommand {
+class TitleCommand : public MessagingCommand {
 
 public:
     ~TitleCommand(); // _ZN12TitleCommandD2Ev

@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class AnvilDamagePacket : Packet {
+class AnvilDamagePacket : public Packet {
 
 public:
     ~AnvilDamagePacket(); // _ZN17AnvilDamagePacketD2Ev

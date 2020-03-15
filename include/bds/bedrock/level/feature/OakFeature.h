@@ -3,7 +3,7 @@
 #include "TreeFeature.h"
 
 
-class OakFeature : TreeFeature {
+class OakFeature : public TreeFeature {
 
 public:
     ~OakFeature(); // _ZN10OakFeatureD2Ev

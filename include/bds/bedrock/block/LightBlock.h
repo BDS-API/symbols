@@ -4,7 +4,7 @@
 #include "AirBlock.h"
 
 
-class LightBlock : AirBlock {
+class LightBlock : public AirBlock {
 
 public:
     ~LightBlock(); // _ZN10LightBlockD2Ev

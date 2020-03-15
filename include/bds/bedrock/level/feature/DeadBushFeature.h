@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class DeadBushFeature : Feature {
+class DeadBushFeature : public Feature {
 
 public:
     ~DeadBushFeature(); // _ZN15DeadBushFeatureD2Ev

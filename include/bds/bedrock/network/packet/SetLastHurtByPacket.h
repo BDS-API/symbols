@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetLastHurtByPacket : Packet {
+class SetLastHurtByPacket : public Packet {
 
 public:
     ~SetLastHurtByPacket(); // _ZN19SetLastHurtByPacketD2Ev

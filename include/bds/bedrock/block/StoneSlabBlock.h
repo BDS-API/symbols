@@ -4,7 +4,7 @@
 #include "SlabBlock.h"
 
 
-class StoneSlabBlock : SlabBlock {
+class StoneSlabBlock : public SlabBlock {
 
 public:
     static std::string SLAB_NAMES;

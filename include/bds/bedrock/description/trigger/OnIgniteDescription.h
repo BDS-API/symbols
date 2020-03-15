@@ -3,7 +3,7 @@
 #include "TriggerDescription.h"
 
 
-class OnIgniteDescription : TriggerDescription {
+class OnIgniteDescription : public TriggerDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK19OnIgniteDescription11getJsonNameEv

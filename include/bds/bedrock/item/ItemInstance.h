@@ -3,7 +3,7 @@
 #include "ItemStackBase.h"
 
 
-class ItemInstance : ItemStackBase {
+class ItemInstance : public ItemStackBase {
 
 public:
     static long EMPTY_ITEM;

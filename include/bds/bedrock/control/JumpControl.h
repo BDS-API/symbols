@@ -3,7 +3,7 @@
 #include "Control.h"
 
 
-class JumpControl : Control {
+class JumpControl : public Control {
 
 public:
     ~JumpControl(); // _ZN11JumpControlD2Ev

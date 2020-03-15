@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class EmptyLootItem : LootPoolEntry {
+class EmptyLootItem : public LootPoolEntry {
 
 public:
     virtual void _createItem(std::vector<ItemStack> &, Random &, LootTableContext &); // _ZN13EmptyLootItem11_createItemERSt6vectorI9ItemStackSaIS1_EER6RandomR16LootTableContext

@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class TimerDescription : ComponentDescription {
+class TimerDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK16TimerDescription11getJsonNameEv

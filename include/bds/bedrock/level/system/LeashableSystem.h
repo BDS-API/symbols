@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class LeashableSystem : ITickingSystem {
+class LeashableSystem : public ITickingSystem {
 
 public:
     ~LeashableSystem(); // _ZN15LeashableSystemD2Ev

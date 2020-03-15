@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class DaylightDetectorBlock : ActorBlock {
+class DaylightDetectorBlock : public ActorBlock {
 
 public:
     ~DaylightDetectorBlock(); // _ZN21DaylightDetectorBlockD2Ev

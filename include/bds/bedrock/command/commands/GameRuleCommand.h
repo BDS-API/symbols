@@ -4,7 +4,7 @@
 #include "../Command.h"
 
 
-class GameRuleCommand : Command {
+class GameRuleCommand : public Command {
 
 public:
     class InitProxy;

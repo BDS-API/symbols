@@ -3,7 +3,7 @@
 #include "Zombie.h"
 
 
-class ZombieVillager : Zombie {
+class ZombieVillager : public Zombie {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN14ZombieVillager15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

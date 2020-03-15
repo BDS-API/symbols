@@ -4,7 +4,7 @@
 #include "../../util/BlockPos.h"
 
 
-class ItemFrameBlockActor : BlockActor {
+class ItemFrameBlockActor : public BlockActor {
 
 public:
     static long ROTATION_DEGREES;

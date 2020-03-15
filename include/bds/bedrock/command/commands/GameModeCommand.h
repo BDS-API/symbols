@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class GameModeCommand : Command {
+class GameModeCommand : public Command {
 
 public:
     ~GameModeCommand(); // _ZN15GameModeCommandD2Ev

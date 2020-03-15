@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class MovePlayerPacket : Packet {
+class MovePlayerPacket : public Packet {
 
 public:
     ~MovePlayerPacket(); // _ZN16MovePlayerPacketD2Ev

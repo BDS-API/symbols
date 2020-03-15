@@ -4,7 +4,7 @@
 #include "Mob.h"
 
 
-class Npc : Mob {
+class Npc : public Mob {
 
 public:
     static std::string SKIN_ID_TAG;

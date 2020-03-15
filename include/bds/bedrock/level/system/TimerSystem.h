@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class TimerSystem : ITickingSystem {
+class TimerSystem : public ITickingSystem {
 
 public:
     ~TimerSystem(); // _ZN11TimerSystemD2Ev

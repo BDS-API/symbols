@@ -3,7 +3,7 @@
 #include "Mob.h"
 
 
-class TripodCamera : Mob {
+class TripodCamera : public Mob {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN12TripodCamera15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

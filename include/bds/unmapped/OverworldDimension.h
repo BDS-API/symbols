@@ -3,7 +3,7 @@
 #include "Dimension.h"
 
 
-class OverworldDimension : Dimension {
+class OverworldDimension : public Dimension {
 
 public:
     ~OverworldDimension(); // _ZN18OverworldDimensionD2Ev

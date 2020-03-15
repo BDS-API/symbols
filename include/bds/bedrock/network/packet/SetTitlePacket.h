@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetTitlePacket : Packet {
+class SetTitlePacket : public Packet {
 
 public:
     ~SetTitlePacket(); // _ZN14SetTitlePacketD2Ev

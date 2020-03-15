@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
 #include <functional>
-#include "BlockLegacy.h"
 #include <vector>
+#include <string>
+#include "BlockLegacy.h"
 
 
-class StairBlock : BlockLegacy {
+class StairBlock : public BlockLegacy {
 
 public:
     static long DEAD_SPACES;

@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class MobSpawnerBlockActor : BlockActor {
+class MobSpawnerBlockActor : public BlockActor {
 
 public:
     ~MobSpawnerBlockActor(); // _ZN20MobSpawnerBlockActorD2Ev

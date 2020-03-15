@@ -4,7 +4,7 @@
 #include "MeleeAttackGoal.h"
 
 
-class StompAttackGoal : MeleeAttackGoal {
+class StompAttackGoal : public MeleeAttackGoal {
 
 public:
     ~StompAttackGoal(); // _ZN15StompAttackGoalD2Ev

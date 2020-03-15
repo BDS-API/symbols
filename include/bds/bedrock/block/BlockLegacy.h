@@ -1,8 +1,8 @@
 #pragma once
 
 #include <string>
-#include "../util/Brightness.h"
 #include <functional>
+#include "../util/Brightness.h"
 #include <vector>
 
 

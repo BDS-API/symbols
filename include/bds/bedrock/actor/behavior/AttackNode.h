@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class AttackNode : BehaviorNode {
+class AttackNode : public BehaviorNode {
 
 public:
     ~AttackNode(); // _ZN10AttackNodeD2Ev

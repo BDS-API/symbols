@@ -3,7 +3,7 @@
 #include "IStructureConstraint.h"
 
 
-class GroundedConstraint : IStructureConstraint {
+class GroundedConstraint : public IStructureConstraint {
 
 public:
     ~GroundedConstraint(); // _ZN18GroundedConstraintD2Ev

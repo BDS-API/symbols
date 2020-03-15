@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class BeaconBlock : ActorBlock {
+class BeaconBlock : public ActorBlock {
 
 public:
     ~BeaconBlock(); // _ZN11BeaconBlockD2Ev

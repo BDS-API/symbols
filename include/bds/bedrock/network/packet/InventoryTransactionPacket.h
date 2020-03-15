@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class InventoryTransactionPacket : Packet {
+class InventoryTransactionPacket : public Packet {
 
 public:
     ~InventoryTransactionPacket(); // _ZN26InventoryTransactionPacketD2Ev

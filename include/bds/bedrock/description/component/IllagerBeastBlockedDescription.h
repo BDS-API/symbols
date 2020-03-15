@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class IllagerBeastBlockedDescription : ComponentDescription {
+class IllagerBeastBlockedDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK30IllagerBeastBlockedDescription11getJsonNameEv

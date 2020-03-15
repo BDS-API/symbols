@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class ActivateToolNode : BehaviorNode {
+class ActivateToolNode : public BehaviorNode {
 
 public:
     ~ActivateToolNode(); // _ZN16ActivateToolNodeD2Ev

@@ -3,7 +3,7 @@
 #include "IBlockPlacementTarget.h"
 
 
-class WorldBlockTarget : IBlockPlacementTarget {
+class WorldBlockTarget : public IBlockPlacementTarget {
 
 public:
     ~WorldBlockTarget(); // _ZN16WorldBlockTargetD2Ev

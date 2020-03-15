@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class LootingEnchantFunction : LootItemFunction {
+class LootingEnchantFunction : public LootItemFunction {
 
 public:
     ~LootingEnchantFunction(); // _ZN22LootingEnchantFunctionD2Ev

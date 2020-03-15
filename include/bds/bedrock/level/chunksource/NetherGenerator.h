@@ -5,7 +5,7 @@
 #include "../generator/WorldGenerator.h"
 
 
-class NetherGenerator : ChunkSource, WorldGenerator {
+class NetherGenerator : public ChunkSource, public WorldGenerator {
 
 public:
     class ThreadData;

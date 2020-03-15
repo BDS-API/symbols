@@ -4,7 +4,7 @@
 #include "ITextObject.h"
 
 
-class TextObjectText : ITextObject {
+class TextObjectText : public ITextObject {
 
 public:
     ~TextObjectText(); // _ZN14TextObjectTextD2Ev

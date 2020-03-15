@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "ItemStack.h"
 #include "Item.h"
+#include "ItemStack.h"
 
 
-class TridentItem : Item {
+class TridentItem : public Item {
 
 public:
     static long THROW_THRESHOLD_TIME;

@@ -4,7 +4,7 @@
 #include "BehaviorNode.h"
 
 
-class MoveNode : BehaviorNode {
+class MoveNode : public BehaviorNode {
 
 public:
     ~MoveNode(); // _ZN8MoveNodeD2Ev

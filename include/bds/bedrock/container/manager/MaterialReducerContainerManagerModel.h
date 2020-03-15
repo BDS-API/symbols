@@ -3,7 +3,7 @@
 #include "ContainerManagerModel.h"
 
 
-class MaterialReducerContainerManagerModel : ContainerManagerModel {
+class MaterialReducerContainerManagerModel : public ContainerManagerModel {
 
 public:
     static long OUTPUT_SLOTS;

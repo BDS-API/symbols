@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class GiveCommand : Command {
+class GiveCommand : public Command {
 
 public:
     ~GiveCommand(); // _ZN11GiveCommandD2Ev

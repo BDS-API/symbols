@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class TrailDescription : ComponentDescription {
+class TrailDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK16TrailDescription11getJsonNameEv

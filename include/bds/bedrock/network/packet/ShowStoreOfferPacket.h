@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ShowStoreOfferPacket : Packet {
+class ShowStoreOfferPacket : public Packet {
 
 public:
     ~ShowStoreOfferPacket(); // _ZN20ShowStoreOfferPacketD2Ev

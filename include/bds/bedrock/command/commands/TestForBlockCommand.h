@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class TestForBlockCommand : Command {
+class TestForBlockCommand : public Command {
 
 public:
     ~TestForBlockCommand(); // _ZN19TestForBlockCommandD2Ev

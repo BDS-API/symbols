@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class EffectCommand : Command {
+class EffectCommand : public Command {
 
 public:
     ~EffectCommand(); // _ZN13EffectCommandD2Ev

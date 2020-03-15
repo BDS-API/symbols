@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class MoveToRandomBlockGoal : Goal {
+class MoveToRandomBlockGoal : public Goal {
 
 public:
     ~MoveToRandomBlockGoal(); // _ZN21MoveToRandomBlockGoalD2Ev

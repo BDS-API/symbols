@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "DiodeBlock.h"
+#include <string>
 
 
-class RepeaterBlock : DiodeBlock {
+class RepeaterBlock : public DiodeBlock {
 
 public:
     static long DELAY_RENDER_OFFSETS;

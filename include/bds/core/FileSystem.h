@@ -1,10 +1,10 @@
 #pragma once
 
-#include "Result.h"
 #include <vector>
-#include <string>
 #include "FileOpenMode.h"
+#include <string>
 #include <functional>
+#include "Result.h"
 
 
 namespace Core {

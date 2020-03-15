@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "Packet.h"
 #include "../../actor/unmapped/ActorRuntimeID.h"
+#include "Packet.h"
 
 
-class CommandBlockUpdatePacket : Packet {
+class CommandBlockUpdatePacket : public Packet {
 
 public:
     ~CommandBlockUpdatePacket(); // _ZN24CommandBlockUpdatePacketD2Ev

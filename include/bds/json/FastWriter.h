@@ -1,12 +1,12 @@
 #pragma once
 
-#include "Writer.h"
 #include <string>
+#include "Writer.h"
 
 
 namespace Json {
 
-    class FastWriter : Json::Writer {
+    class FastWriter : public Json::Writer {
 
     public:
         ~FastWriter(); // _ZN4Json10FastWriterD2Ev

@@ -3,7 +3,7 @@
 #include "MoveControlDescription.h"
 
 
-class MoveControlSkipDescription : MoveControlDescription {
+class MoveControlSkipDescription : public MoveControlDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK26MoveControlSkipDescription11getJsonNameEv

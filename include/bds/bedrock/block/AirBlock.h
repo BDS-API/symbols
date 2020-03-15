@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "BlockLegacy.h"
 #include <vector>
+#include "BlockLegacy.h"
 
 
-class AirBlock : BlockLegacy {
+class AirBlock : public BlockLegacy {
 
 public:
     ~AirBlock(); // _ZN8AirBlockD2Ev

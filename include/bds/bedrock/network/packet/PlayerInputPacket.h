@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class PlayerInputPacket : Packet {
+class PlayerInputPacket : public Packet {
 
 public:
     ~PlayerInputPacket(); // _ZN17PlayerInputPacketD2Ev

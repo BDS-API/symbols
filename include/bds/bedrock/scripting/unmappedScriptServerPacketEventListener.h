@@ -3,7 +3,7 @@
 #include "../../../unmapped/NetworkPacketEventListener.h"
 
 
-class ScriptServerPacketEventListener : NetworkPacketEventListener {
+class ScriptServerPacketEventListener : public NetworkPacketEventListener {
 
 public:
     ~ScriptServerPacketEventListener(); // _ZN31ScriptServerPacketEventListenerD2Ev

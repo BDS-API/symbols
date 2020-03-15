@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class GetTopSolidBlockCommand : Command {
+class GetTopSolidBlockCommand : public Command {
 
 public:
     ~GetTopSolidBlockCommand(); // _ZN23GetTopSolidBlockCommandD2Ev

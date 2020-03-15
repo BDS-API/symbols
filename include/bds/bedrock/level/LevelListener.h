@@ -4,7 +4,7 @@
 #include "../block/unmapped/BlockSourceListener.h"
 
 
-class LevelListener : BlockSourceListener {
+class LevelListener : public BlockSourceListener {
 
 public:
     ~LevelListener(); // _ZN13LevelListenerD2Ev

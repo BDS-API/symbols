@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class InventoryContentPacket : Packet {
+class InventoryContentPacket : public Packet {
 
 public:
     ~InventoryContentPacket(); // _ZN22InventoryContentPacketD2Ev

@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class Fireball : Actor {
+class Fireball : public Actor {
 
 public:
     ~Fireball(); // _ZN8FireballD2Ev

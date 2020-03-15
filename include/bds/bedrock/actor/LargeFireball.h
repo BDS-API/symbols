@@ -3,7 +3,7 @@
 #include "Fireball.h"
 
 
-class LargeFireball : Fireball {
+class LargeFireball : public Fireball {
 
 public:
     ~LargeFireball(); // _ZN13LargeFireballD2Ev

@@ -3,7 +3,7 @@
 #include "SimpleFloatFilterTest.h"
 
 
-class FilterTestBrightness : SimpleFloatFilterTest {
+class FilterTestBrightness : public SimpleFloatFilterTest {
 
 public:
     ~FilterTestBrightness(); // _ZN20FilterTestBrightnessD2Ev

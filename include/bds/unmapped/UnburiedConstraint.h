@@ -3,7 +3,7 @@
 #include "IStructureConstraint.h"
 
 
-class UnburiedConstraint : IStructureConstraint {
+class UnburiedConstraint : public IStructureConstraint {
 
 public:
     ~UnburiedConstraint(); // _ZN18UnburiedConstraintD2Ev

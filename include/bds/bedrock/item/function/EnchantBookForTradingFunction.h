@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class EnchantBookForTradingFunction : LootItemFunction {
+class EnchantBookForTradingFunction : public LootItemFunction {
 
 public:
     ~EnchantBookForTradingFunction(); // _ZN29EnchantBookForTradingFunctionD2Ev

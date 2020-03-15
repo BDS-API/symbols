@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class BlueIceFeature : Feature {
+class BlueIceFeature : public Feature {
 
 public:
     ~BlueIceFeature(); // _ZN14BlueIceFeatureD2Ev

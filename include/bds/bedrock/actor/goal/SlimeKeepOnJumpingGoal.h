@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class SlimeKeepOnJumpingGoal : Goal {
+class SlimeKeepOnJumpingGoal : public Goal {
 
 public:
     ~SlimeKeepOnJumpingGoal(); // _ZN22SlimeKeepOnJumpingGoalD2Ev

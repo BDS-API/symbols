@@ -5,7 +5,7 @@
 #include "../../text/TextObjectRoot.h"
 
 
-class SignBlockActor : BlockActor {
+class SignBlockActor : public BlockActor {
 
 public:
     class CachedLineData;

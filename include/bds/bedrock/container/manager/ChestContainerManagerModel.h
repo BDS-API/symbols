@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../actor/unmapped/ActorUniqueID.h"
 #include "LevelContainerManagerModel.h"
+#include "../../actor/unmapped/ActorUniqueID.h"
 
 
-class ChestContainerManagerModel : LevelContainerManagerModel {
+class ChestContainerManagerModel : public LevelContainerManagerModel {
 
 public:
     ~ChestContainerManagerModel(); // _ZN26ChestContainerManagerModelD2Ev

@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BreakBlocksSystem : ITickingSystem {
+class BreakBlocksSystem : public ITickingSystem {
 
 public:
     ~BreakBlocksSystem(); // _ZN17BreakBlocksSystemD2Ev

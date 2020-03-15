@@ -3,7 +3,7 @@
 #include "PathNavigation.h"
 
 
-class GenericPathNavigation : PathNavigation {
+class GenericPathNavigation : public PathNavigation {
 
 public:
     ~GenericPathNavigation(); // _ZN21GenericPathNavigationD2Ev

@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class BrewingStandBlock : ActorBlock {
+class BrewingStandBlock : public ActorBlock {
 
 public:
     ~BrewingStandBlock(); // _ZN17BrewingStandBlockD2Ev

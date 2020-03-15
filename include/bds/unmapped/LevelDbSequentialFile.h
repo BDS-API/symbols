@@ -2,7 +2,7 @@
 
 
 
-class LevelDbSequentialFile /*leveldb::SequentialFile*/ { //TODO: incomplete class definition
+class LevelDbSequentialFile /*public leveldb::SequentialFile*/ { //TODO: incomplete class definition
 
 public:
     ~LevelDbSequentialFile(); // _ZN21LevelDbSequentialFileD2Ev

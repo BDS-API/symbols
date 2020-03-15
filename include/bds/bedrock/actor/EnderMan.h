@@ -3,7 +3,7 @@
 #include "Monster.h"
 
 
-class EnderMan : Monster {
+class EnderMan : public Monster {
 
 public:
     static long mMayTake;

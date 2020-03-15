@@ -3,7 +3,7 @@
 #include "MoveControlDescription.h"
 
 
-class SlimeMoveControlDescription : MoveControlDescription {
+class SlimeMoveControlDescription : public MoveControlDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK27SlimeMoveControlDescription11getJsonNameEv

@@ -4,7 +4,7 @@
 #include "Enchant.h"
 
 
-class MendingEnchant : Enchant {
+class MendingEnchant : public Enchant {
 
 public:
     ~MendingEnchant(); // _ZN14MendingEnchantD2Ev

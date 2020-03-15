@@ -4,7 +4,7 @@
 #include "Stopwatch.h"
 
 
-class StopwatchNLast : Stopwatch {
+class StopwatchNLast : public Stopwatch {
 
 public:
     ~StopwatchNLast(); // _ZN14StopwatchNLastD2Ev

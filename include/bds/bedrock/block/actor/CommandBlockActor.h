@@ -4,7 +4,7 @@
 #include "BlockActor.h"
 
 
-class CommandBlockActor : BlockActor {
+class CommandBlockActor : public BlockActor {
 
 public:
     ~CommandBlockActor(); // _ZN17CommandBlockActorD2Ev

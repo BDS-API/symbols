@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class MusicBlockActor : BlockActor {
+class MusicBlockActor : public BlockActor {
 
 public:
     ~MusicBlockActor(); // _ZN15MusicBlockActorD2Ev

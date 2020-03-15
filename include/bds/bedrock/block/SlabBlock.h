@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include <functional>
+#include <string>
 #include "BlockLegacy.h"
 
 
-class SlabBlock : BlockLegacy {
+class SlabBlock : public BlockLegacy {
 
 public:
     ~SlabBlock(); // _ZN9SlabBlockD2Ev

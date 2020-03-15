@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class AbstractArrow : Actor {
+class AbstractArrow : public Actor {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN13AbstractArrow15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

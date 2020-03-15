@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class AgeableSystem : ITickingSystem {
+class AgeableSystem : public ITickingSystem {
 
 public:
     ~AgeableSystem(); // _ZN13AgeableSystemD2Ev

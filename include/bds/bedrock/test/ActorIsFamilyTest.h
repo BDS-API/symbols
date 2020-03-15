@@ -3,7 +3,7 @@
 #include "SimpleHashStringFilterTest.h"
 
 
-class ActorIsFamilyTest : SimpleHashStringFilterTest {
+class ActorIsFamilyTest : public SimpleHashStringFilterTest {
 
 public:
     ~ActorIsFamilyTest(); // _ZN17ActorIsFamilyTestD2Ev

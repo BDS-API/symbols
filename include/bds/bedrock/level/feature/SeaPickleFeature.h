@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class SeaPickleFeature : Feature {
+class SeaPickleFeature : public Feature {
 
 public:
     ~SeaPickleFeature(); // _ZN16SeaPickleFeatureD2Ev

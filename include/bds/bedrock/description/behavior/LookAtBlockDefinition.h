@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
 
 
-class LookAtBlockDefinition : BehaviorDefinition {
+class LookAtBlockDefinition : public BehaviorDefinition {
 
 public:
     ~LookAtBlockDefinition(); // _ZN21LookAtBlockDefinitionD2Ev

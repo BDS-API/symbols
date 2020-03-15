@@ -4,7 +4,7 @@
 #include <string>
 
 
-class LogBlock : RotatedPillarBlock {
+class LogBlock : public RotatedPillarBlock {
 
 public:
     ~LogBlock(); // _ZN8LogBlockD2Ev

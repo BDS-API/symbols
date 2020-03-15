@@ -4,7 +4,7 @@
 #include "DecoratorDefinition.h"
 
 
-class RepeatUntilFailureDefinition : DecoratorDefinition {
+class RepeatUntilFailureDefinition : public DecoratorDefinition {
 
 public:
     ~RepeatUntilFailureDefinition(); // _ZN28RepeatUntilFailureDefinitionD2Ev

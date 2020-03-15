@@ -3,7 +3,7 @@
 #include "SimpleHashStringFilterTest.h"
 
 
-class BlockIsNameTest : SimpleHashStringFilterTest {
+class BlockIsNameTest : public SimpleHashStringFilterTest {
 
 public:
     ~BlockIsNameTest(); // _ZN15BlockIsNameTestD2Ev

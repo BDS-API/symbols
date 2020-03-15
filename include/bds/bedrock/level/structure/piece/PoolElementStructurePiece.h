@@ -1,13 +1,13 @@
 #pragma once
 
-#include <unordered_map>
-#include <vector>
 #include "../../../util/BlockPos.h"
+#include <vector>
+#include <unordered_map>
 #include "StructurePiece.h"
 #include "../../../../unmapped/BoundingBox.h"
 
 
-class PoolElementStructurePiece : StructurePiece {
+class PoolElementStructurePiece : public StructurePiece {
 
 public:
     ~PoolElementStructurePiece(); // _ZN25PoolElementStructurePieceD2Ev

@@ -1,8 +1,8 @@
 #pragma once
 
 #include "../mce/UUID.h"
-#include "../bedrock/actor/unmapped/ActorUniqueID.h"
 #include <string>
+#include "../bedrock/actor/unmapped/ActorUniqueID.h"
 
 
 class PendingArea {

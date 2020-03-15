@@ -3,7 +3,7 @@
 #include "AttributeDescription.h"
 
 
-class StrengthDescription : AttributeDescription {
+class StrengthDescription : public AttributeDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK19StrengthDescription11getJsonNameEv

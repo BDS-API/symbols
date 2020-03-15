@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class OfferFlowerGoal : Goal {
+class OfferFlowerGoal : public Goal {
 
 public:
     ~OfferFlowerGoal(); // _ZN15OfferFlowerGoalD2Ev

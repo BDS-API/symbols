@@ -7,7 +7,7 @@
 
 namespace Core {
 
-    class FileStdStreamBuf : std::basic_streambuf<char, std::char_traits<char>> {
+    class FileStdStreamBuf : public std::basic_streambuf<char, std::char_traits<char>> {
 
     public:
         ~FileStdStreamBuf(); // _ZN4Core16FileStdStreamBufD2Ev

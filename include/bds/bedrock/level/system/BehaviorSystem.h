@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BehaviorSystem : ITickingSystem {
+class BehaviorSystem : public ITickingSystem {
 
 public:
     ~BehaviorSystem(); // _ZN14BehaviorSystemD2Ev

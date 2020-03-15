@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class FireBlock : BlockLegacy {
+class FireBlock : public BlockLegacy {
 
 public:
     ~FireBlock(); // _ZN9FireBlockD2Ev

@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ServerSettingsResponsePacket : Packet {
+class ServerSettingsResponsePacket : public Packet {
 
 public:
     ~ServerSettingsResponsePacket(); // _ZN28ServerSettingsResponsePacketD2Ev

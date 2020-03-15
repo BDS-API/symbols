@@ -4,7 +4,7 @@
 #include "IDataInput.h"
 
 
-class BytesDataInput : IDataInput {
+class BytesDataInput : public IDataInput {
 
 public:
     ~BytesDataInput(); // _ZN14BytesDataInputD2Ev

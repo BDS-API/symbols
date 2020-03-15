@@ -3,7 +3,7 @@
 #include "ICommandDispatcher.h"
 
 
-class CommandDispatcher : ICommandDispatcher {
+class CommandDispatcher : public ICommandDispatcher {
 
 public:
     ~CommandDispatcher(); // _ZN17CommandDispatcherD2Ev

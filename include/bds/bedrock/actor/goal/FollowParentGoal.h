@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class FollowParentGoal : Goal {
+class FollowParentGoal : public Goal {
 
 public:
     ~FollowParentGoal(); // _ZN16FollowParentGoalD2Ev

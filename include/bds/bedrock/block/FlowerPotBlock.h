@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class FlowerPotBlock : ActorBlock {
+class FlowerPotBlock : public ActorBlock {
 
 public:
     ~FlowerPotBlock(); // _ZN14FlowerPotBlockD2Ev

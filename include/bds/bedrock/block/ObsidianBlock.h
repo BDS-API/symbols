@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ObsidianBlock : BlockLegacy {
+class ObsidianBlock : public BlockLegacy {
 
 public:
     ~ObsidianBlock(); // _ZN13ObsidianBlockD2Ev

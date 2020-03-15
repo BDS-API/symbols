@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class ExploreOutskirtsGoal : Goal {
+class ExploreOutskirtsGoal : public Goal {
 
 public:
     ~ExploreOutskirtsGoal(); // _ZN20ExploreOutskirtsGoalD2Ev

@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
-#include "../util/BlockPos.h"
 #include "DiggerItem.h"
+#include <string>
 #include "Item.h"
+#include "../util/BlockPos.h"
 
 
-class ShovelItem : DiggerItem {
+class ShovelItem : public DiggerItem {
 
 public:
     ~ShovelItem(); // _ZN10ShovelItemD2Ev

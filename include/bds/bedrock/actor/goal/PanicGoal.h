@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class PanicGoal : Goal {
+class PanicGoal : public Goal {
 
 public:
     ~PanicGoal(); // _ZN9PanicGoalD2Ev

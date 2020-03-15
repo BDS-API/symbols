@@ -4,7 +4,7 @@
 #include "Enchant.h"
 
 
-class CrossbowEnchant : Enchant {
+class CrossbowEnchant : public Enchant {
 
 public:
     ~CrossbowEnchant(); // _ZN15CrossbowEnchantD2Ev

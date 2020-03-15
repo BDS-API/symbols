@@ -4,7 +4,7 @@
 #include "../bedrock/util/Vec2.h"
 
 
-class RotationDescription : Description {
+class RotationDescription : public Description {
 
 public:
     virtual void getJsonName()const; // _ZNK19RotationDescription11getJsonNameEv

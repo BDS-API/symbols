@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "Packet.h"
 #include "../../../unmapped/NetworkBlockPosition.h"
+#include "Packet.h"
 
 
-class StructureBlockUpdatePacket : Packet {
+class StructureBlockUpdatePacket : public Packet {
 
 public:
     ~StructureBlockUpdatePacket(); // _ZN26StructureBlockUpdatePacketD2Ev

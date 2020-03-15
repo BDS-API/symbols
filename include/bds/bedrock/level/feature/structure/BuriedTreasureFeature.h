@@ -3,7 +3,7 @@
 #include "StructureFeature.h"
 
 
-class BuriedTreasureFeature : StructureFeature {
+class BuriedTreasureFeature : public StructureFeature {
 
 public:
     ~BuriedTreasureFeature(); // _ZN21BuriedTreasureFeatureD2Ev

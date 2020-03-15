@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class DefaultLookAngleDescription : PropertyDescription {
+class DefaultLookAngleDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK27DefaultLookAngleDescription11getJsonNameEv

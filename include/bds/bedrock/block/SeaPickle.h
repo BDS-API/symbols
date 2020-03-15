@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class SeaPickle : BushBlock {
+class SeaPickle : public BushBlock {
 
 public:
     ~SeaPickle(); // _ZN9SeaPickleD2Ev

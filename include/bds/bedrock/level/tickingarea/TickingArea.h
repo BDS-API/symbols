@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include "ITickingArea.h"
 #include "../../actor/unmapped/ActorUniqueID.h"
 #include "../../../mce/UUID.h"
+#include "ITickingArea.h"
 
 
-class TickingArea : ITickingArea {
+class TickingArea : public ITickingArea {
 
 public:
     ~TickingArea(); // _ZN11TickingAreaD2Ev

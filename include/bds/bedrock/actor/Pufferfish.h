@@ -3,7 +3,7 @@
 #include "Fish.h"
 
 
-class Pufferfish : Fish {
+class Pufferfish : public Fish {
 
 public:
     ~Pufferfish(); // _ZN10PufferfishD2Ev

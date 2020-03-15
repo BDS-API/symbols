@@ -5,7 +5,7 @@
 #include "BlockItem.h"
 
 
-class ClothBlockItem : BlockItem {
+class ClothBlockItem : public BlockItem {
 
 public:
     ~ClothBlockItem(); // _ZN14ClothBlockItemD2Ev

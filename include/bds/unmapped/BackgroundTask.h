@@ -1,11 +1,11 @@
 #pragma once
 
-#include <memory>
 #include <functional>
+#include <memory>
 #include "TaskResult.h"
 
 
-class BackgroundTask /*Bedrock::Threading::IAsyncResult<void>*/ { //TODO: incomplete class definition
+class BackgroundTask /*public Bedrock::Threading::IAsyncResult<void>*/ { //TODO: incomplete class definition
 
 public:
     ~BackgroundTask(); // _ZN14BackgroundTaskD2Ev

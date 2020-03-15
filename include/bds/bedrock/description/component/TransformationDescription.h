@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class TransformationDescription : ComponentDescription {
+class TransformationDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK25TransformationDescription11getJsonNameEv

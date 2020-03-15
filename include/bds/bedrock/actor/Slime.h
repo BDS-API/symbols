@@ -4,7 +4,7 @@
 #include "../util/ChunkPos.h"
 
 
-class Slime : Monster {
+class Slime : public Monster {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN5Slime15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

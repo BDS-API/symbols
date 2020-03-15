@@ -3,7 +3,7 @@
 #include "SimpleTagIDFilterTest.h"
 
 
-class FilterTestBiomeHasTag : SimpleTagIDFilterTest {
+class FilterTestBiomeHasTag : public SimpleTagIDFilterTest {
 
 public:
     ~FilterTestBiomeHasTag(); // _ZN21FilterTestBiomeHasTagD2Ev

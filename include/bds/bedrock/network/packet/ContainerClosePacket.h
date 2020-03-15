@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ContainerClosePacket : Packet {
+class ContainerClosePacket : public Packet {
 
 public:
     ~ContainerClosePacket(); // _ZN20ContainerClosePacketD2Ev

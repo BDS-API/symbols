@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class WaterlilyBlock : BushBlock {
+class WaterlilyBlock : public BushBlock {
 
 public:
     ~WaterlilyBlock(); // _ZN14WaterlilyBlockD2Ev

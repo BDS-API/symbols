@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include <functional>
 #include "GameMode.h"
+#include <string>
 
 
-class SurvivalMode : GameMode {
+class SurvivalMode : public GameMode {
 
 public:
     static long mTrialHasEnded;

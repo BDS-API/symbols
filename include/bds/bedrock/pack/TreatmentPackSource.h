@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include <functional>
+#include <memory>
 #include "PackSource.h"
 
 
-class TreatmentPackSource : PackSource {
+class TreatmentPackSource : public PackSource {
 
 public:
     ~TreatmentPackSource(); // _ZN19TreatmentPackSourceD2Ev

@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class BambooFeature : Feature {
+class BambooFeature : public Feature {
 
 public:
     ~BambooFeature(); // _ZN13BambooFeatureD2Ev

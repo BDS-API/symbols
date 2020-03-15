@@ -1,13 +1,13 @@
 #pragma once
 
-#include <vector>
 #include <memory>
-#include "../util/BlockPos.h"
+#include <vector>
 #include <string>
+#include "../util/BlockPos.h"
 #include "Item.h"
 
 
-class BannerItem : Item {
+class BannerItem : public Item {
 
 public:
     ~BannerItem(); // _ZN10BannerItemD2Ev

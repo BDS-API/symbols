@@ -3,7 +3,7 @@
 #include "Dimension.h"
 
 
-class TheEndDimension : Dimension {
+class TheEndDimension : public Dimension {
 
 public:
     static long AMBIENT_MULTIPLIER;

@@ -1,12 +1,12 @@
 #pragma once
 
-#include <memory>
 #include <functional>
-#include "ContainerSizeChangeListener.h"
+#include <memory>
 #include "ContainerContentChangeListener.h"
+#include "ContainerSizeChangeListener.h"
 
 
-class PlayerInventoryProxy : ContainerSizeChangeListener, ContainerContentChangeListener {
+class PlayerInventoryProxy : public ContainerSizeChangeListener, public ContainerContentChangeListener {
 
 public:
     class SlotData;

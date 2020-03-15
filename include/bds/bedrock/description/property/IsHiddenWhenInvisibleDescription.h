@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class IsHiddenWhenInvisibleDescription : PropertyDescription {
+class IsHiddenWhenInvisibleDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK32IsHiddenWhenInvisibleDescription11getJsonNameEv

@@ -4,7 +4,7 @@
 #include "ActorDamageByActorSource.h"
 
 
-class ActorDamageByChildActorSource : ActorDamageByActorSource {
+class ActorDamageByChildActorSource : public ActorDamageByActorSource {
 
 public:
     ~ActorDamageByChildActorSource(); // _ZN29ActorDamageByChildActorSourceD2Ev

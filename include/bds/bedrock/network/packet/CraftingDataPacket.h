@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class CraftingDataPacket : Packet {
+class CraftingDataPacket : public Packet {
 
 public:
     ~CraftingDataPacket(); // _ZN18CraftingDataPacketD2Ev

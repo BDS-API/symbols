@@ -4,7 +4,7 @@
 #include "CommandOrigin.h"
 
 
-class ClientAutomationCommandOrigin : CommandOrigin {
+class ClientAutomationCommandOrigin : public CommandOrigin {
 
 public:
     ~ClientAutomationCommandOrigin(); // _ZN29ClientAutomationCommandOriginD2Ev

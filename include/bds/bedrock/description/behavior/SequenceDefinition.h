@@ -4,7 +4,7 @@
 #include "CompositeDefinition.h"
 
 
-class SequenceDefinition : CompositeDefinition {
+class SequenceDefinition : public CompositeDefinition {
 
 public:
     ~SequenceDefinition(); // _ZN18SequenceDefinitionD2Ev

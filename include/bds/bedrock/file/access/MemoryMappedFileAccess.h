@@ -2,12 +2,12 @@
 
 #include <memory>
 #include "IFileWriteAccess.h"
-#include <string>
 #include "IFileReadAccess.h"
+#include <string>
 #include "IFileAccess.h"
 
 
-class MemoryMappedFileAccess : IFileAccess {
+class MemoryMappedFileAccess : public IFileAccess {
 
 public:
     class MemoryMappedFileReadAccess;
@@ -27,14 +27,14 @@ public:
     MemoryMappedFileAccess(IFileAccess &, std::unique_ptr<FileAccessTransforms>); // _ZN22MemoryMappedFileAccessC2ER11IFileAccessSt10unique_ptrI20FileAccessTransformsSt14default_deleteIS3_EE
     void _requestedOpenIsCompatibleWithOpenStream(MemoryMappedFileAccess::StreamDetails &, bool, bool)const; // _ZNK22MemoryMappedFileAccess40_requestedOpenIsCompatibleWithOpenStreamERNS_13StreamDetailsEbb
     void _getTransforms()const; // _ZNK22MemoryMappedFileAccess14_getTransformsEv
-    class MemoryMappedFileReadAccess : IFileReadAccess {
+    class MemoryMappedFileReadAccess : public IFileReadAccess {
 
     public:
         ~MemoryMappedFileReadAccess(); // _ZN22MemoryMappedFileAccess26MemoryMappedFileReadAccessD2Ev
         virtual void fread(void *, unsigned long, unsigned long, void *)const; // _ZNK22MemoryMappedFileAccess26MemoryMappedFileReadAccess5freadEPvmmS1_
         MemoryMappedFileReadAccess(); // _ZN22MemoryMappedFileAccess26MemoryMappedFileReadAccessC2Ev
     };
-    class MemoryMappedFileWriteAccess : IFileWriteAccess {
+    class MemoryMappedFileWriteAccess : public IFileWriteAccess {
 
     public:
         ~MemoryMappedFileWriteAccess(); // _ZN22MemoryMappedFileAccess27MemoryMappedFileWriteAccessD2Ev

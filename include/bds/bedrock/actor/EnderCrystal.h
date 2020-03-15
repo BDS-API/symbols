@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class EnderCrystal : Actor {
+class EnderCrystal : public Actor {
 
 public:
     static long HEAL_DISTANCE;

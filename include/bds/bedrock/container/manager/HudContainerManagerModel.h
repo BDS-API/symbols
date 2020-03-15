@@ -3,7 +3,7 @@
 #include "ContainerManagerModel.h"
 
 
-class HudContainerManagerModel : ContainerManagerModel {
+class HudContainerManagerModel : public ContainerManagerModel {
 
 public:
     ~HudContainerManagerModel(); // _ZN24HudContainerManagerModelD2Ev

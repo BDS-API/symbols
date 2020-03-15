@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetActorMotionPacket : Packet {
+class SetActorMotionPacket : public Packet {
 
 public:
     ~SetActorMotionPacket(); // _ZN20SetActorMotionPacketD2Ev

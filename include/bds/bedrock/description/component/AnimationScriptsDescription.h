@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class AnimationScriptsDescription : ComponentDescription {
+class AnimationScriptsDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK27AnimationScriptsDescription11getJsonNameEv

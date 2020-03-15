@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class SwellGoal : Goal {
+class SwellGoal : public Goal {
 
 public:
     ~SwellGoal(); // _ZN9SwellGoalD2Ev

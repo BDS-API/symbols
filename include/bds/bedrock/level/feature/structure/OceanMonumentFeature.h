@@ -3,7 +3,7 @@
 #include "StructureFeature.h"
 
 
-class OceanMonumentFeature : StructureFeature {
+class OceanMonumentFeature : public StructureFeature {
 
 public:
     ~OceanMonumentFeature(); // _ZN20OceanMonumentFeatureD2Ev

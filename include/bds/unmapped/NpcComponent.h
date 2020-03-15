@@ -1,8 +1,8 @@
 #pragma once
 
-#include "../bedrock/network/packet/NpcRequestPacket.h"
-#include <vector>
 #include <memory>
+#include <vector>
+#include "../bedrock/network/packet/NpcRequestPacket.h"
 #include <string>
 #include <functional>
 

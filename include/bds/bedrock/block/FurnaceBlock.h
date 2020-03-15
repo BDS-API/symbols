@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class FurnaceBlock : ActorBlock {
+class FurnaceBlock : public ActorBlock {
 
 public:
     ~FurnaceBlock(); // _ZN12FurnaceBlockD2Ev

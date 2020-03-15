@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class SeaAnemoneFeature : Feature {
+class SeaAnemoneFeature : public Feature {
 
 public:
     ~SeaAnemoneFeature(); // _ZN17SeaAnemoneFeatureD2Ev

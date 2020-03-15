@@ -4,7 +4,7 @@
 #include "ScriptBinderTemplate.h"
 
 
-class ScriptBinderLevelTemplate : ScriptBinderTemplate {
+class ScriptBinderLevelTemplate : public ScriptBinderTemplate {
 
 public:
     ~ScriptBinderLevelTemplate(); // _ZN25ScriptBinderLevelTemplateD2Ev

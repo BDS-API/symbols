@@ -4,7 +4,7 @@
 #include "../../actor/unmapped/ActorEventListener.h"
 
 
-class ScriptServerActorEventListener : ActorEventListener {
+class ScriptServerActorEventListener : public ActorEventListener {
 
 public:
     ~ScriptServerActorEventListener(); // _ZN30ScriptServerActorEventListenerD2Ev

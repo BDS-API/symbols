@@ -3,7 +3,7 @@
 #include "Mob.h"
 
 
-class Squid : Mob {
+class Squid : public Mob {
 
 public:
     ~Squid(); // _ZN5SquidD2Ev

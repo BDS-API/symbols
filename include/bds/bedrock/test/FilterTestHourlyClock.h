@@ -1,10 +1,10 @@
 #pragma once
 
-#include "SimpleIntFilterTest.h"
 #include "FilterTest.h"
+#include "SimpleIntFilterTest.h"
 
 
-class FilterTestHourlyClock : SimpleIntFilterTest {
+class FilterTestHourlyClock : public SimpleIntFilterTest {
 
 public:
     ~FilterTestHourlyClock(); // _ZN21FilterTestHourlyClockD2Ev

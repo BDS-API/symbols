@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "ChemistryStickItem.h"
 #include <memory>
+#include "ChemistryStickItem.h"
 
 
-class SparklerItem : ChemistryStickItem {
+class SparklerItem : public ChemistryStickItem {
 
 public:
     static long MAX_ACTIVE_TICKS;

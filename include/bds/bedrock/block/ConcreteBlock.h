@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ConcreteBlock : BlockLegacy {
+class ConcreteBlock : public BlockLegacy {
 
 public:
     ~ConcreteBlock(); // _ZN13ConcreteBlockD2Ev

@@ -4,7 +4,7 @@
 #include "../../container/Container.h"
 
 
-class ChemistryTableBlockActor : BlockActor, Container {
+class ChemistryTableBlockActor : public BlockActor, public Container {
 
 public:
     ~ChemistryTableBlockActor(); // _ZN24ChemistryTableBlockActorD2Ev

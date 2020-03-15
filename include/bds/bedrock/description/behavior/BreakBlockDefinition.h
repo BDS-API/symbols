@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
 
 
-class BreakBlockDefinition : BehaviorDefinition {
+class BreakBlockDefinition : public BehaviorDefinition {
 
 public:
     ~BreakBlockDefinition(); // _ZN20BreakBlockDefinitionD2Ev

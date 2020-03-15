@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class FaceDirectionalActorBlock : ActorBlock {
+class FaceDirectionalActorBlock : public ActorBlock {
 
 public:
     ~FaceDirectionalActorBlock(); // _ZN25FaceDirectionalActorBlockD2Ev

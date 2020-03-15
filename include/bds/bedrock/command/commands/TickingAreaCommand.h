@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class TickingAreaCommand : Command {
+class TickingAreaCommand : public Command {
 
 public:
     ~TickingAreaCommand(); // _ZN18TickingAreaCommandD2Ev

@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ResourcePackChunkRequestPacket : Packet {
+class ResourcePackChunkRequestPacket : public Packet {
 
 public:
     ~ResourcePackChunkRequestPacket(); // _ZN30ResourcePackChunkRequestPacketD2Ev

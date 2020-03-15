@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class SkullBlockActor : BlockActor {
+class SkullBlockActor : public BlockActor {
 
 public:
     ~SkullBlockActor(); // _ZN15SkullBlockActorD2Ev

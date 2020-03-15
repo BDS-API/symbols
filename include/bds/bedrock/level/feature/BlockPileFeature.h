@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class BlockPileFeature : Feature {
+class BlockPileFeature : public Feature {
 
 public:
     ~BlockPileFeature(); // _ZN16BlockPileFeatureD2Ev

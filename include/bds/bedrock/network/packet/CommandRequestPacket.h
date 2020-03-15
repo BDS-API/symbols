@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class CommandRequestPacket : Packet {
+class CommandRequestPacket : public Packet {
 
 public:
     ~CommandRequestPacket(); // _ZN20CommandRequestPacketD2Ev

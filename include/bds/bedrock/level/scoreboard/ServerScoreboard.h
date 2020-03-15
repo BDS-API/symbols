@@ -2,12 +2,12 @@
 
 #include <memory>
 #include "Scoreboard.h"
-#include "../../command/CommandSoftEnumRegistry.h"
 #include <string>
 #include <functional>
+#include "../../command/CommandSoftEnumRegistry.h"
 
 
-class ServerScoreboard : Scoreboard {
+class ServerScoreboard : public Scoreboard {
 
 public:
     ~ServerScoreboard(); // _ZN16ServerScoreboardD2Ev

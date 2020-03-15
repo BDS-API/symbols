@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "Tag.h"
+#include <string>
 
 
-class DoubleTag : Tag {
+class DoubleTag : public Tag {
 
 public:
     ~DoubleTag(); // _ZN9DoubleTagD2Ev

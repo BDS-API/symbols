@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class EnderpearlItem : Item {
+class EnderpearlItem : public Item {
 
 public:
     ~EnderpearlItem(); // _ZN14EnderpearlItemD2Ev

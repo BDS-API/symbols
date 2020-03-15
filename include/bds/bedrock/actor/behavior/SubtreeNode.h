@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class SubtreeNode : BehaviorNode {
+class SubtreeNode : public BehaviorNode {
 
 public:
     ~SubtreeNode(); // _ZN11SubtreeNodeD2Ev

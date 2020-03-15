@@ -3,7 +3,7 @@
 #include "FertilizerItem.h"
 
 
-class RapidFertilizerItem : FertilizerItem {
+class RapidFertilizerItem : public FertilizerItem {
 
 public:
     ~RapidFertilizerItem(); // _ZN19RapidFertilizerItemD2Ev

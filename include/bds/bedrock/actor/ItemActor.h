@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class ItemActor : Actor {
+class ItemActor : public Actor {
 
 public:
     static long LIFETIME;

@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class EntitySensorSystem : ITickingSystem {
+class EntitySensorSystem : public ITickingSystem {
 
 public:
     ~EntitySensorSystem(); // _ZN18EntitySensorSystemD2Ev

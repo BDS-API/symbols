@@ -1,12 +1,12 @@
 #pragma once
 
-#include "Writer.h"
 #include <string>
+#include "Writer.h"
 
 
 namespace Json {
 
-    class StyledWriter : Json::Writer {
+    class StyledWriter : public Json::Writer {
 
     public:
         ~StyledWriter(); // _ZN4Json12StyledWriterD2Ev

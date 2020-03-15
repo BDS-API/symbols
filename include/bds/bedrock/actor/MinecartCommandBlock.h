@@ -3,7 +3,7 @@
 #include "Minecart.h"
 
 
-class MinecartCommandBlock : Minecart {
+class MinecartCommandBlock : public Minecart {
 
 public:
 //  virtual void initializeComponents(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN20MinecartCommandBlock20initializeComponentsEN5Actor20InitializationMethodERK20VariantParameterList

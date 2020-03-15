@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class LightningBolt : Actor {
+class LightningBolt : public Actor {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN13LightningBolt15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

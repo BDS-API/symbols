@@ -1,11 +1,11 @@
 #pragma once
 
-#include "unmapped/ActorUniqueID.h"
 #include "../util/Random.h"
+#include "unmapped/ActorUniqueID.h"
 #include "Actor.h"
 
 
-class FireworksRocketActor : Actor {
+class FireworksRocketActor : public Actor {
 
 public:
     ~FireworksRocketActor(); // _ZN20FireworksRocketActorD2Ev

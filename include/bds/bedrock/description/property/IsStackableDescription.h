@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class IsStackableDescription : PropertyDescription {
+class IsStackableDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK22IsStackableDescription11getJsonNameEv

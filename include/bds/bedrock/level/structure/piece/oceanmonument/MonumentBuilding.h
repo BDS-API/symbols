@@ -3,7 +3,7 @@
 #include "../OceanMonumentPiece.h"
 
 
-class MonumentBuilding : OceanMonumentPiece {
+class MonumentBuilding : public OceanMonumentPiece {
 
 public:
     ~MonumentBuilding(); // _ZN16MonumentBuildingD2Ev

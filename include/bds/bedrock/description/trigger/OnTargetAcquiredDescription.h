@@ -3,7 +3,7 @@
 #include "TriggerDescription.h"
 
 
-class OnTargetAcquiredDescription : TriggerDescription {
+class OnTargetAcquiredDescription : public TriggerDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK27OnTargetAcquiredDescription11getJsonNameEv

@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class GetChunkDataCommand : Command {
+class GetChunkDataCommand : public Command {
 
 public:
     ~GetChunkDataCommand(); // _ZN19GetChunkDataCommandD2Ev

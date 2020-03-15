@@ -1,16 +1,16 @@
 #pragma once
 
-#include <vector>
-#include "GameConnectionInfo.h"
-#include <memory>
-#include <string>
-#include "RakNetInstance.h"
-#include "RakPeerHelper.h"
 #include "LocalConnector.h"
+#include <memory>
+#include <vector>
+#include <string>
 #include <functional>
+#include "GameConnectionInfo.h"
+#include "RakPeerHelper.h"
+#include "RakNetInstance.h"
 
 
-class NetworkHandler : RakNetInstance::ConnectionCallbacks, RakPeerHelper::IPSupportInterface, LocalConnector::ConnectionCallbacks {
+class NetworkHandler : public RakNetInstance::ConnectionCallbacks, public RakPeerHelper::IPSupportInterface, public LocalConnector::ConnectionCallbacks {
 
 public:
     class Connection;

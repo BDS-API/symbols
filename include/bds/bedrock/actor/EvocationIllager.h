@@ -3,7 +3,7 @@
 #include "HumanoidMonster.h"
 
 
-class EvocationIllager : HumanoidMonster {
+class EvocationIllager : public HumanoidMonster {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN16EvocationIllager15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

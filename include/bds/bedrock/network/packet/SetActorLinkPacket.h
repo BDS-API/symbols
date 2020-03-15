@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetActorLinkPacket : Packet {
+class SetActorLinkPacket : public Packet {
 
 public:
     ~SetActorLinkPacket(); // _ZN18SetActorLinkPacketD2Ev

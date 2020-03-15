@@ -1,14 +1,14 @@
 #pragma once
 
-#include "Mob.h"
-#include "unmapped/ActorUniqueID.h"
-#include "../../mce/UUID.h"
-#include <vector>
 #include <memory>
+#include "Mob.h"
+#include <vector>
+#include "unmapped/ActorUniqueID.h"
 #include <string>
+#include "../../mce/UUID.h"
 
 
-class Player : Mob {
+class Player : public Mob {
 
 public:
     class CachedSpawnData;

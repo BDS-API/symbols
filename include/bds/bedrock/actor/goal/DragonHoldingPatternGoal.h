@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class DragonHoldingPatternGoal : Goal {
+class DragonHoldingPatternGoal : public Goal {
 
 public:
     ~DragonHoldingPatternGoal(); // _ZN24DragonHoldingPatternGoalD2Ev

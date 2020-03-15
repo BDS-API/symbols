@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class TallGrassFeature : Feature {
+class TallGrassFeature : public Feature {
 
 public:
     ~TallGrassFeature(); // _ZN16TallGrassFeatureD2Ev

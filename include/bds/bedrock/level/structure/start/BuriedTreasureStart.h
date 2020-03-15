@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class BuriedTreasureStart : StructureStart {
+class BuriedTreasureStart : public StructureStart {
 
 public:
     ~BuriedTreasureStart(); // _ZN19BuriedTreasureStartD2Ev

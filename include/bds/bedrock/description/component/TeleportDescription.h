@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class TeleportDescription : ComponentDescription {
+class TeleportDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK19TeleportDescription11getJsonNameEv

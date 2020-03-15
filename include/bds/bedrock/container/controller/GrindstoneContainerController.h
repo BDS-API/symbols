@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class GrindstoneContainerController : ContainerController {
+class GrindstoneContainerController : public ContainerController {
 
 public:
     ~GrindstoneContainerController(); // _ZN29GrindstoneContainerControllerD2Ev

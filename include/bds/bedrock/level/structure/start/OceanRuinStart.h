@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class OceanRuinStart : StructureStart {
+class OceanRuinStart : public StructureStart {
 
 public:
     ~OceanRuinStart(); // _ZN14OceanRuinStartD2Ev

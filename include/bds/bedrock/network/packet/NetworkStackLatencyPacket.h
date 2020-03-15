@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class NetworkStackLatencyPacket : Packet {
+class NetworkStackLatencyPacket : public Packet {
 
 public:
     static long DEFAULT_SEND_INTERVAL;

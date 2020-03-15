@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class NetherFortressStart : StructureStart {
+class NetherFortressStart : public StructureStart {
 
 public:
     ~NetherFortressStart(); // _ZN19NetherFortressStartD2Ev

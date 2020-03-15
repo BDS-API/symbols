@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class PlaceCommand : AgentCommands::Command {
+    class PlaceCommand : public AgentCommands::Command {
 
     public:
         ~PlaceCommand(); // _ZN13AgentCommands12PlaceCommandD2Ev

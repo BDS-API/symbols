@@ -4,7 +4,7 @@
 #include "FaceDirectionalBlock.h"
 
 
-class ObserverBlock : FaceDirectionalBlock {
+class ObserverBlock : public FaceDirectionalBlock {
 
 public:
     ~ObserverBlock(); // _ZN13ObserverBlockD2Ev

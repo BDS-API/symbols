@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include "Item.h"
+#include <memory>
 
 
-class HorseArmorItem : Item {
+class HorseArmorItem : public Item {
 
 public:
     static long mHealthPerTier;

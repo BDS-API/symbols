@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class AvailableActorIdentifiersPacket : Packet {
+class AvailableActorIdentifiersPacket : public Packet {
 
 public:
     ~AvailableActorIdentifiersPacket(); // _ZN31AvailableActorIdentifiersPacketD2Ev

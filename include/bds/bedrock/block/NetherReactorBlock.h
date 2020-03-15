@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class NetherReactorBlock : ActorBlock {
+class NetherReactorBlock : public ActorBlock {
 
 public:
     ~NetherReactorBlock(); // _ZN18NetherReactorBlockD2Ev

@@ -3,7 +3,7 @@
 #include "IStructurePoolBlockPredicate.h"
 
 
-class StructurePoolBlockPredicateAlwaysTrue : IStructurePoolBlockPredicate {
+class StructurePoolBlockPredicateAlwaysTrue : public IStructurePoolBlockPredicate {
 
 public:
     ~StructurePoolBlockPredicateAlwaysTrue(); // _ZN37StructurePoolBlockPredicateAlwaysTrueD2Ev

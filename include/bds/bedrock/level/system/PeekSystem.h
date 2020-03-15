@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class PeekSystem : ITickingSystem {
+class PeekSystem : public ITickingSystem {
 
 public:
     ~PeekSystem(); // _ZN10PeekSystemD2Ev

@@ -3,7 +3,7 @@
 #include "MoveControl.h"
 
 
-class GlideMoveControl : MoveControl {
+class GlideMoveControl : public MoveControl {
 
 public:
     ~GlideMoveControl(); // _ZN16GlideMoveControlD2Ev

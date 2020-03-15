@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class CloneCommand : Command {
+class CloneCommand : public Command {
 
 public:
     ~CloneCommand(); // _ZN12CloneCommandD2Ev

@@ -3,7 +3,7 @@
 #include "IStructurePoolBlockPredicate.h"
 
 
-class StructurePoolBlockPredicateStateMatchRandom : IStructurePoolBlockPredicate {
+class StructurePoolBlockPredicateStateMatchRandom : public IStructurePoolBlockPredicate {
 
 public:
     ~StructurePoolBlockPredicateStateMatchRandom(); // _ZN43StructurePoolBlockPredicateStateMatchRandomD2Ev

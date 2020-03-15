@@ -3,7 +3,7 @@
 #include "StructurePiece.h"
 
 
-class TemplateStructurePiece : StructurePiece {
+class TemplateStructurePiece : public StructurePiece {
 
 public:
     ~TemplateStructurePiece(); // _ZN22TemplateStructurePieceD2Ev

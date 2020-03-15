@@ -3,7 +3,7 @@
 #include "JumpControl.h"
 
 
-class DynamicJumpControl : JumpControl {
+class DynamicJumpControl : public JumpControl {
 
 public:
     ~DynamicJumpControl(); // _ZN18DynamicJumpControlD2Ev

@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class CactusFeature : Feature {
+class CactusFeature : public Feature {
 
 public:
     ~CactusFeature(); // _ZN13CactusFeatureD2Ev

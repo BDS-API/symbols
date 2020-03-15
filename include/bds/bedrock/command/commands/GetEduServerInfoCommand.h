@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class GetEduServerInfoCommand : Command {
+class GetEduServerInfoCommand : public Command {
 
 public:
     ~GetEduServerInfoCommand(); // _ZN23GetEduServerInfoCommandD2Ev

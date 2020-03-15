@@ -3,7 +3,7 @@
 #include "SimpleFloatFilterTest.h"
 
 
-class FilterTestDistanceToNearestPlayer : SimpleFloatFilterTest {
+class FilterTestDistanceToNearestPlayer : public SimpleFloatFilterTest {
 
 public:
     ~FilterTestDistanceToNearestPlayer(); // _ZN33FilterTestDistanceToNearestPlayerD2Ev

@@ -3,7 +3,7 @@
 #include "ProducerComponent.h"
 
 
-class CapacitorComponent : ProducerComponent {
+class CapacitorComponent : public ProducerComponent {
 
 public:
     ~CapacitorComponent(); // _ZN18CapacitorComponentD2Ev

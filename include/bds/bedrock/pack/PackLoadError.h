@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class PackLoadError : PackError {
+class PackLoadError : public PackError {
 
 public:
     ~PackLoadError(); // _ZN13PackLoadErrorD2Ev

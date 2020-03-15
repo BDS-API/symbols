@@ -3,7 +3,7 @@
 #include "Mob.h"
 
 
-class IronGolem : Mob {
+class IronGolem : public Mob {
 
 public:
     ~IronGolem(); // _ZN9IronGolemD2Ev

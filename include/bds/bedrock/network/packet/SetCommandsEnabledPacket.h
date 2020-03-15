@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetCommandsEnabledPacket : Packet {
+class SetCommandsEnabledPacket : public Packet {
 
 public:
     ~SetCommandsEnabledPacket(); // _ZN24SetCommandsEnabledPacketD2Ev

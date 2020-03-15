@@ -3,7 +3,7 @@
 #include "ScriptContainerComponentBase.h"
 
 
-class ScriptBlockContainerComponent : ScriptContainerComponentBase {
+class ScriptBlockContainerComponent : public ScriptContainerComponentBase {
 
 public:
     static long mHash;

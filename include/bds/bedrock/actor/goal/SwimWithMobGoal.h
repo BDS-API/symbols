@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SwimWithMobGoal : Goal {
+class SwimWithMobGoal : public Goal {
 
 public:
     ~SwimWithMobGoal(); // _ZN15SwimWithMobGoalD2Ev

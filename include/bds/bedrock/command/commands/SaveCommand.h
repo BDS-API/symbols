@@ -3,7 +3,7 @@
 #include "ServerCommand.h"
 
 
-class SaveCommand : ServerCommand {
+class SaveCommand : public ServerCommand {
 
 public:
     static long mSaveAllMutex;

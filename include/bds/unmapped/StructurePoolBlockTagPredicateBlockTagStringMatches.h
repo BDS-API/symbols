@@ -4,7 +4,7 @@
 #include "IStructurePoolBlockTagPredicate.h"
 
 
-class StructurePoolBlockTagPredicateBlockTagStringMatches : IStructurePoolBlockTagPredicate {
+class StructurePoolBlockTagPredicateBlockTagStringMatches : public IStructurePoolBlockTagPredicate {
 
 public:
     ~StructurePoolBlockTagPredicateBlockTagStringMatches(); // _ZN51StructurePoolBlockTagPredicateBlockTagStringMatchesD2Ev

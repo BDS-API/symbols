@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class ShulkerPeekGoal : Goal {
+class ShulkerPeekGoal : public Goal {
 
 public:
     ~ShulkerPeekGoal(); // _ZN15ShulkerPeekGoalD2Ev

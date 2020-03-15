@@ -3,7 +3,7 @@
 #include "MoveControl.h"
 
 
-class GenericMoveControl : MoveControl {
+class GenericMoveControl : public MoveControl {
 
 public:
     ~GenericMoveControl(); // _ZN18GenericMoveControlD2Ev

@@ -5,7 +5,7 @@
 #include "StompBlockGoal.h"
 
 
-class StompEggGoal : StompBlockGoal {
+class StompEggGoal : public StompBlockGoal {
 
 public:
     ~StompEggGoal(); // _ZN12StompEggGoalD2Ev

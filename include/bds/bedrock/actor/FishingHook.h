@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../util/Vec3.h"
 #include "Actor.h"
+#include "../util/Vec3.h"
 
 
-class FishingHook : Actor {
+class FishingHook : public Actor {
 
 public:
     static long BOBBER_SIZE;

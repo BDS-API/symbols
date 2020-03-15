@@ -4,7 +4,7 @@
 #include "BaseMoveToBlockGoal.h"
 
 
-class LayEggGoal : BaseMoveToBlockGoal {
+class LayEggGoal : public BaseMoveToBlockGoal {
 
 public:
     ~LayEggGoal(); // _ZN10LayEggGoalD2Ev

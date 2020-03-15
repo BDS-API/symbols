@@ -4,7 +4,7 @@
 #include "MeleeAttackGoal.h"
 
 
-class DelayedAttackGoal : MeleeAttackGoal {
+class DelayedAttackGoal : public MeleeAttackGoal {
 
 public:
     ~DelayedAttackGoal(); // _ZN17DelayedAttackGoalD2Ev

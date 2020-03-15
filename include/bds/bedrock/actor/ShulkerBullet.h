@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class ShulkerBullet : Actor {
+class ShulkerBullet : public Actor {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN13ShulkerBullet15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

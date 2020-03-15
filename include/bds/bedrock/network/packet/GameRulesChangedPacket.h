@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class GameRulesChangedPacket : Packet {
+class GameRulesChangedPacket : public Packet {
 
 public:
     ~GameRulesChangedPacket(); // _ZN22GameRulesChangedPacketD2Ev

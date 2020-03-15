@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class PlayGoal : Goal {
+class PlayGoal : public Goal {
 
 public:
     ~PlayGoal(); // _ZN8PlayGoalD2Ev

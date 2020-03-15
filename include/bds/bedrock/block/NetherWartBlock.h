@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class NetherWartBlock : BushBlock {
+class NetherWartBlock : public BushBlock {
 
 public:
     static long MAX_AGE;

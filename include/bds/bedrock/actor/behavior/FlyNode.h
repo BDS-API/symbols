@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class FlyNode : BehaviorNode {
+class FlyNode : public BehaviorNode {
 
 public:
     ~FlyNode(); // _ZN7FlyNodeD2Ev

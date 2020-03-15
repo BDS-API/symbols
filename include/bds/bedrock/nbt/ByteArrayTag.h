@@ -1,11 +1,11 @@
 #pragma once
 
+#include "Tag.h"
 #include <string>
 #include "../../unmapped/TagMemoryChunk.h"
-#include "Tag.h"
 
 
-class ByteArrayTag : Tag {
+class ByteArrayTag : public Tag {
 
 public:
     ~ByteArrayTag(); // _ZN12ByteArrayTagD2Ev

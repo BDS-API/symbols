@@ -4,7 +4,7 @@
 #include "Actor.h"
 
 
-class Minecart : Actor {
+class Minecart : public Actor {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN8Minecart15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

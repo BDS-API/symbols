@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ClientCacheMissResponsePacket : Packet {
+class ClientCacheMissResponsePacket : public Packet {
 
 public:
     ~ClientCacheMissResponsePacket(); // _ZN29ClientCacheMissResponsePacketD2Ev

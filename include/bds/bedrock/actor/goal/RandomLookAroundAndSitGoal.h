@@ -1,10 +1,10 @@
 #pragma once
 
-#include "RandomLookAroundGoal.h"
 #include <string>
+#include "RandomLookAroundGoal.h"
 
 
-class RandomLookAroundAndSitGoal : RandomLookAroundGoal {
+class RandomLookAroundAndSitGoal : public RandomLookAroundGoal {
 
 public:
     ~RandomLookAroundAndSitGoal(); // _ZN26RandomLookAroundAndSitGoalD2Ev

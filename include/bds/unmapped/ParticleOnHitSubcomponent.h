@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class ParticleOnHitSubcomponent : OnHitSubcomponent {
+class ParticleOnHitSubcomponent : public OnHitSubcomponent {
 
 public:
     ~ParticleOnHitSubcomponent(); // _ZN25ParticleOnHitSubcomponentD2Ev

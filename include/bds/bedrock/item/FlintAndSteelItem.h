@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
 
 
-class FlintAndSteelItem : Item {
+class FlintAndSteelItem : public Item {
 
 public:
     ~FlintAndSteelItem(); // _ZN17FlintAndSteelItemD2Ev

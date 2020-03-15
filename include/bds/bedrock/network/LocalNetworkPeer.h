@@ -1,11 +1,11 @@
 #pragma once
 
 #include "NetworkPeer.h"
-#include <memory>
 #include <string>
+#include <memory>
 
 
-class LocalNetworkPeer : NetworkPeer {
+class LocalNetworkPeer : public NetworkPeer {
 
 public:
     ~LocalNetworkPeer(); // _ZN16LocalNetworkPeerD2Ev

@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class FindBlockNode : BehaviorNode {
+class FindBlockNode : public BehaviorNode {
 
 public:
     ~FindBlockNode(); // _ZN13FindBlockNodeD2Ev

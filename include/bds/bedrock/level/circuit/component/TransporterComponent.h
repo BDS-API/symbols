@@ -3,7 +3,7 @@
 #include "BaseCircuitComponent.h"
 
 
-class TransporterComponent : BaseCircuitComponent {
+class TransporterComponent : public BaseCircuitComponent {
 
 public:
     ~TransporterComponent(); // _ZN20TransporterComponentD2Ev

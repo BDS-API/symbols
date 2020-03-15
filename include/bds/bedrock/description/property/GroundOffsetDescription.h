@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class GroundOffsetDescription : PropertyDescription {
+class GroundOffsetDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK23GroundOffsetDescription11getJsonNameEv

@@ -3,7 +3,7 @@
 #include "FilterTest.h"
 
 
-class SimpleBoolFilterTest : FilterTest {
+class SimpleBoolFilterTest : public FilterTest {
 
 public:
     ~SimpleBoolFilterTest(); // _ZN20SimpleBoolFilterTestD2Ev

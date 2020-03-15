@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class FlowerPotBlockActor : BlockActor {
+class FlowerPotBlockActor : public BlockActor {
 
 public:
     ~FlowerPotBlockActor(); // _ZN19FlowerPotBlockActorD2Ev

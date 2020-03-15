@@ -3,7 +3,7 @@
 #include "RandomizableBlockActorContainer.h"
 
 
-class JukeboxBlockActor : RandomizableBlockActorContainer {
+class JukeboxBlockActor : public RandomizableBlockActorContainer {
 
 public:
     ~JukeboxBlockActor(); // _ZN17JukeboxBlockActorD2Ev

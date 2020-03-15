@@ -3,7 +3,7 @@
 #include <shared_mutex>
 
 
-class SnapshotWritableFile /*leveldb::WritableFile*/ { //TODO: incomplete class definition
+class SnapshotWritableFile /*public leveldb::WritableFile*/ { //TODO: incomplete class definition
 
 public:
     ~SnapshotWritableFile(); // _ZN20SnapshotWritableFileD2Ev

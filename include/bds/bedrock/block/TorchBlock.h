@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class TorchBlock : BlockLegacy {
+class TorchBlock : public BlockLegacy {
 
 public:
     static long DATA_FROM_FACING;

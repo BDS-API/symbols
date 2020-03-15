@@ -4,7 +4,7 @@
 #include "Enchant.h"
 
 
-class FrostWalkerEnchant : Enchant {
+class FrostWalkerEnchant : public Enchant {
 
 public:
     ~FrostWalkerEnchant(); // _ZN18FrostWalkerEnchantD2Ev

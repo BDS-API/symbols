@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class TagCommand : Command {
+class TagCommand : public Command {
 
 public:
     ~TagCommand(); // _ZN10TagCommandD2Ev

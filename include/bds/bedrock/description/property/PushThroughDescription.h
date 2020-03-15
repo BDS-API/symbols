@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class PushThroughDescription : PropertyDescription {
+class PushThroughDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK22PushThroughDescription11getJsonNameEv

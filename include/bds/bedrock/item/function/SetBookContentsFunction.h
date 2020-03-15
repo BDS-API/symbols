@@ -1,13 +1,13 @@
 #pragma once
 
-#include <vector>
 #include <memory>
-#include "LootItemFunction.h"
-#include <string>
+#include <vector>
 #include "../../../json/Value.h"
+#include <string>
+#include "LootItemFunction.h"
 
 
-class SetBookContentsFunction : LootItemFunction {
+class SetBookContentsFunction : public LootItemFunction {
 
 public:
     ~SetBookContentsFunction(); // _ZN23SetBookContentsFunctionD2Ev

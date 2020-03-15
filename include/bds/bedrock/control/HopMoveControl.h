@@ -3,7 +3,7 @@
 #include "MoveControl.h"
 
 
-class HopMoveControl : MoveControl {
+class HopMoveControl : public MoveControl {
 
 public:
     ~HopMoveControl(); // _ZN14HopMoveControlD2Ev

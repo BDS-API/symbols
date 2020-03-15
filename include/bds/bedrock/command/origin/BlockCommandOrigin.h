@@ -4,7 +4,7 @@
 #include "CommandOrigin.h"
 
 
-class BlockCommandOrigin : CommandOrigin {
+class BlockCommandOrigin : public CommandOrigin {
 
 public:
     ~BlockCommandOrigin(); // _ZN18BlockCommandOriginD2Ev

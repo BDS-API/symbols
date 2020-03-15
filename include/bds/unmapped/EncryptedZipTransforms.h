@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class EncryptedZipTransforms : FileAccessTransforms {
+class EncryptedZipTransforms : public FileAccessTransforms {
 
 public:
     ~EncryptedZipTransforms(); // _ZN22EncryptedZipTransformsD2Ev

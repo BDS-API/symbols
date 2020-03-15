@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class BedBlock : BlockLegacy {
+class BedBlock : public BlockLegacy {
 
 public:
     static long HEAD_DIRECTION_OFFSETS;

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class GuardianAttackGoal : Goal {
+class GuardianAttackGoal : public Goal {
 
 public:
     ~GuardianAttackGoal(); // _ZN18GuardianAttackGoalD2Ev

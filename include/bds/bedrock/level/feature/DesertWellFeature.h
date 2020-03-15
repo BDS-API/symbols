@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class DesertWellFeature : Feature {
+class DesertWellFeature : public Feature {
 
 public:
     ~DesertWellFeature(); // _ZN17DesertWellFeatureD2Ev

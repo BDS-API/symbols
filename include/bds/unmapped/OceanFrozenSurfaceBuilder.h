@@ -5,7 +5,7 @@
 
 namespace VanillaSurfaceBuilders {
 
-    class OceanFrozenSurfaceBuilder : ISurfaceBuilder {
+    class OceanFrozenSurfaceBuilder : public ISurfaceBuilder {
 
     public:
         ~OceanFrozenSurfaceBuilder(); // _ZN22VanillaSurfaceBuilders25OceanFrozenSurfaceBuilderD2Ev

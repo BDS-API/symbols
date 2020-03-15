@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SetScorePacket : Packet {
+class SetScorePacket : public Packet {
 
 public:
     ~SetScorePacket(); // _ZN14SetScorePacketD2Ev

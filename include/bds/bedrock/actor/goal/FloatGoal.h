@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class FloatGoal : Goal {
+class FloatGoal : public Goal {
 
 public:
     ~FloatGoal(); // _ZN9FloatGoalD2Ev

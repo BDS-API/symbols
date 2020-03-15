@@ -1,10 +1,10 @@
 #pragma once
 
-#include "NetherFortressPiece.h"
 #include <vector>
+#include "NetherFortressPiece.h"
 
 
-class NBBridgeEndFiller : NetherFortressPiece {
+class NBBridgeEndFiller : public NetherFortressPiece {
 
 public:
     ~NBBridgeEndFiller(); // _ZN17NBBridgeEndFillerD2Ev

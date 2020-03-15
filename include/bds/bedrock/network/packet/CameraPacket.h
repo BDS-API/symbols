@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class CameraPacket : Packet {
+class CameraPacket : public Packet {
 
 public:
     ~CameraPacket(); // _ZN12CameraPacketD2Ev

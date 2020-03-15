@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../../unmapped/FloatRange.h"
 #include "Goal.h"
+#include "../../../unmapped/FloatRange.h"
 
 
-class FloatWanderGoal : Goal {
+class FloatWanderGoal : public Goal {
 
 public:
     ~FloatWanderGoal(); // _ZN15FloatWanderGoalD2Ev

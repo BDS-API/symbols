@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class HoverGoal : Goal {
+class HoverGoal : public Goal {
 
 public:
     ~HoverGoal(); // _ZN9HoverGoalD2Ev

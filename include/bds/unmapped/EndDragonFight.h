@@ -1,9 +1,9 @@
 #pragma once
 
-#include <memory>
 #include "../bedrock/util/BlockPos.h"
-#include <vector>
+#include <memory>
 #include <tuple>
+#include <vector>
 
 
 class EndDragonFight {

@@ -5,7 +5,7 @@
 #include <memory>
 
 
-class BannerBlockActor : BlockActor {
+class BannerBlockActor : public BlockActor {
 
 public:
     static long MAX_PATTERNS;

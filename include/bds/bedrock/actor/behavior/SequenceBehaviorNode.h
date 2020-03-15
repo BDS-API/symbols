@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class SequenceBehaviorNode : BehaviorNode {
+class SequenceBehaviorNode : public BehaviorNode {
 
 public:
     ~SequenceBehaviorNode(); // _ZN20SequenceBehaviorNodeD2Ev

@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class ManagedWanderingTraderDescription : ComponentDescription {
+class ManagedWanderingTraderDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK33ManagedWanderingTraderDescription11getJsonNameEv

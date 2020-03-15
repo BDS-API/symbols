@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class CauldronBlock : ActorBlock {
+class CauldronBlock : public ActorBlock {
 
 public:
     static long BASE_WATER_PIXEL;

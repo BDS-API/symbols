@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class TargetGoal : Goal {
+class TargetGoal : public Goal {
 
 public:
     ~TargetGoal(); // _ZN10TargetGoalD2Ev

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class SilverfishWakeUpFriendsGoal : Goal {
+class SilverfishWakeUpFriendsGoal : public Goal {
 
 public:
     ~SilverfishWakeUpFriendsGoal(); // _ZN27SilverfishWakeUpFriendsGoalD2Ev

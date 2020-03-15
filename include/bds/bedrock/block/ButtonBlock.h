@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ButtonBlock : BlockLegacy {
+class ButtonBlock : public BlockLegacy {
 
 public:
     ~ButtonBlock(); // _ZN11ButtonBlockD2Ev

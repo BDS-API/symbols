@@ -3,7 +3,7 @@
 #include "ServerCommand.h"
 
 
-class GlobalPauseCommand : ServerCommand {
+class GlobalPauseCommand : public ServerCommand {
 
 public:
     ~GlobalPauseCommand(); // _ZN18GlobalPauseCommandD2Ev

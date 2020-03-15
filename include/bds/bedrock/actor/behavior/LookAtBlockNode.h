@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class LookAtBlockNode : BehaviorNode {
+class LookAtBlockNode : public BehaviorNode {
 
 public:
     ~LookAtBlockNode(); // _ZN15LookAtBlockNodeD2Ev

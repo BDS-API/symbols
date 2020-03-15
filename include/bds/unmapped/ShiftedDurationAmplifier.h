@@ -3,7 +3,7 @@
 #include "Amplifier.h"
 
 
-class ShiftedDurationAmplifier : Amplifier {
+class ShiftedDurationAmplifier : public Amplifier {
 
 public:
     ~ShiftedDurationAmplifier(); // _ZN24ShiftedDurationAmplifierD2Ev

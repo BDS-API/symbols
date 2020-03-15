@@ -3,7 +3,7 @@
 #include "ServerCommand.h"
 
 
-class ListDCommand : ServerCommand {
+class ListDCommand : public ServerCommand {
 
 public:
     ~ListDCommand(); // _ZN12ListDCommandD2Ev

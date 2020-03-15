@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class TrustingDescription : ComponentDescription {
+class TrustingDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK19TrustingDescription11getJsonNameEv

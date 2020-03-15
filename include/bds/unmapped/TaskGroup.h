@@ -1,14 +1,14 @@
 #pragma once
 
-#include "ITaskGroup.h"
 #include <memory>
-#include <mutex>
+#include "ITaskGroup.h"
+#include "TaskResult.h"
 #include <string>
 #include <functional>
-#include "TaskResult.h"
+#include <mutex>
 
 
-class TaskGroup : ITaskGroup {
+class TaskGroup : public ITaskGroup {
 
 public:
     ~TaskGroup(); // _ZN9TaskGroupD2Ev

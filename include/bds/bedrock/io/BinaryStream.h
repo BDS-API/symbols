@@ -4,7 +4,7 @@
 #include "ReadOnlyBinaryStream.h"
 
 
-class BinaryStream : ReadOnlyBinaryStream {
+class BinaryStream : public ReadOnlyBinaryStream {
 
 public:
     ~BinaryStream(); // _ZN12BinaryStreamD2Ev

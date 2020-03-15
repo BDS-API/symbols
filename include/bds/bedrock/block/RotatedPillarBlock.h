@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class RotatedPillarBlock : BlockLegacy {
+class RotatedPillarBlock : public BlockLegacy {
 
 public:
     static long mRotatedX;

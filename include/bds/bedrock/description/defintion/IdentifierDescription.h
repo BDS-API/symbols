@@ -4,7 +4,7 @@
 #include "DefintionDescription.h"
 
 
-class IdentifierDescription : DefintionDescription {
+class IdentifierDescription : public DefintionDescription {
 
 public:
     ~IdentifierDescription(); // _ZN21IdentifierDescriptionD2Ev

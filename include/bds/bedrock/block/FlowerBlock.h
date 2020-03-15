@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class FlowerBlock : BushBlock {
+class FlowerBlock : public BushBlock {
 
 public:
     ~FlowerBlock(); // _ZN11FlowerBlockD2Ev

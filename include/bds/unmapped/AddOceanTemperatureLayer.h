@@ -2,7 +2,7 @@
 
 
 
-class AddOceanTemperatureLayer /*RootLayer<BiomeTemperatureCategory>*/ { //TODO: incomplete class definition
+class AddOceanTemperatureLayer /*public RootLayer<BiomeTemperatureCategory>*/ { //TODO: incomplete class definition
 
 public:
     ~AddOceanTemperatureLayer(); // _ZN24AddOceanTemperatureLayerD2Ev

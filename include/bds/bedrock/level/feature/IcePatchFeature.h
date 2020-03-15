@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class IcePatchFeature : Feature {
+class IcePatchFeature : public Feature {
 
 public:
     ~IcePatchFeature(); // _ZN15IcePatchFeatureD2Ev

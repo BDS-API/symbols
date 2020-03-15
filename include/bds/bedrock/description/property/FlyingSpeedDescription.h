@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class FlyingSpeedDescription : PropertyDescription {
+class FlyingSpeedDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK22FlyingSpeedDescription11getJsonNameEv

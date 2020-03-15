@@ -4,7 +4,7 @@
 #include "StructurePiece.h"
 
 
-class OceanMonumentPiece : StructurePiece {
+class OceanMonumentPiece : public StructurePiece {
 
 public:
     static long mLeftWingIndex;

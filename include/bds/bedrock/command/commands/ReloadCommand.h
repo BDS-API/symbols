@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class ReloadCommand : Command {
+class ReloadCommand : public Command {
 
 public:
     ~ReloadCommand(); // _ZN13ReloadCommandD2Ev

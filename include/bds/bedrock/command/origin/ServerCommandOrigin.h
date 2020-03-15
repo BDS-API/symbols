@@ -4,7 +4,7 @@
 #include "CommandOrigin.h"
 
 
-class ServerCommandOrigin : CommandOrigin {
+class ServerCommandOrigin : public CommandOrigin {
 
 public:
     ~ServerCommandOrigin(); // _ZN19ServerCommandOriginD2Ev

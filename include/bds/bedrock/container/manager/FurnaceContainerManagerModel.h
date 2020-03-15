@@ -4,7 +4,7 @@
 #include "ContainerManagerModel.h"
 
 
-class FurnaceContainerManagerModel : ContainerManagerModel {
+class FurnaceContainerManagerModel : public ContainerManagerModel {
 
 public:
     ~FurnaceContainerManagerModel(); // _ZN28FurnaceContainerManagerModelD2Ev

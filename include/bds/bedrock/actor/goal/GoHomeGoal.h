@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class GoHomeGoal : Goal {
+class GoHomeGoal : public Goal {
 
 public:
     static long GIVE_UP_TICKS;

@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class BossEventPacket : Packet {
+class BossEventPacket : public Packet {
 
 public:
     ~BossEventPacket(); // _ZN15BossEventPacketD2Ev

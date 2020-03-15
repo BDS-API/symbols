@@ -3,7 +3,7 @@
 #include "Monster.h"
 
 
-class Spider : Monster {
+class Spider : public Monster {
 
 public:
     ~Spider(); // _ZN6SpiderD2Ev

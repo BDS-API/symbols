@@ -3,7 +3,7 @@
 #include "Monster.h"
 
 
-class HumanoidMonster : Monster {
+class HumanoidMonster : public Monster {
 
 public:
     static long MAX_WEARING_ARMOR_CHANCE;

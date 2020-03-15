@@ -2,7 +2,7 @@
 
 
 
-class ExecCtxNext /*grpc_core::ExecCtx*/ { //TODO: incomplete class definition
+class ExecCtxNext /*public grpc_core::ExecCtx*/ { //TODO: incomplete class definition
 
 public:
     ~ExecCtxNext(); // _ZN11ExecCtxNextD2Ev

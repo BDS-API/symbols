@@ -1,15 +1,15 @@
 #pragma once
 
-#include <unordered_map>
-#include <vector>
-#include "../../mce/UUID.h"
-#include "IMinecraftEventing.h"
 #include <memory>
+#include <vector>
+#include <unordered_map>
+#include "IMinecraftEventing.h"
 #include <string>
+#include "../../mce/UUID.h"
 #include <optional>
 
 
-class MinecraftEventing : IMinecraftEventing {
+class MinecraftEventing : public IMinecraftEventing {
 
 public:
     static long sMutex;

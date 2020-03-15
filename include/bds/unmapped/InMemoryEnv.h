@@ -1,11 +1,11 @@
 #pragma once
 
+#include <string>
 #include "FlushableEnv.h"
 #include <vector>
-#include <string>
 
 
-class InMemoryEnv : FlushableEnv {
+class InMemoryEnv : public FlushableEnv {
 
 public:
     ~InMemoryEnv(); // _ZN11InMemoryEnvD2Ev

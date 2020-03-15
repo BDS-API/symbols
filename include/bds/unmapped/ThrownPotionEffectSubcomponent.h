@@ -3,7 +3,7 @@
 #include "SplashPotionEffectSubcomponent.h"
 
 
-class ThrownPotionEffectSubcomponent : SplashPotionEffectSubcomponent {
+class ThrownPotionEffectSubcomponent : public SplashPotionEffectSubcomponent {
 
 public:
     ~ThrownPotionEffectSubcomponent(); // _ZN30ThrownPotionEffectSubcomponentD2Ev

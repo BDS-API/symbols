@@ -1,10 +1,10 @@
 #pragma once
 
-#include "ThinFenceBlock.h"
 #include <string>
+#include "ThinFenceBlock.h"
 
 
-class StainedGlassPaneBlock : ThinFenceBlock {
+class StainedGlassPaneBlock : public ThinFenceBlock {
 
 public:
     ~StainedGlassPaneBlock(); // _ZN21StainedGlassPaneBlockD2Ev

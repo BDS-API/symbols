@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class TickSyncPacket : Packet {
+class TickSyncPacket : public Packet {
 
 public:
     ~TickSyncPacket(); // _ZN14TickSyncPacketD2Ev

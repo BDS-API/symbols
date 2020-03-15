@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class DamageOverTimeSystem : ITickingSystem {
+class DamageOverTimeSystem : public ITickingSystem {
 
 public:
     ~DamageOverTimeSystem(); // _ZN20DamageOverTimeSystemD2Ev

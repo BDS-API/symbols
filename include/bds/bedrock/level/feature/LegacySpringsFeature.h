@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class LegacySpringsFeature : Feature {
+class LegacySpringsFeature : public Feature {
 
 public:
     ~LegacySpringsFeature(); // _ZN20LegacySpringsFeatureD2Ev

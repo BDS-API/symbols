@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
 
 
-class WaitDefinition : BehaviorDefinition {
+class WaitDefinition : public BehaviorDefinition {
 
 public:
     ~WaitDefinition(); // _ZN14WaitDefinitionD2Ev

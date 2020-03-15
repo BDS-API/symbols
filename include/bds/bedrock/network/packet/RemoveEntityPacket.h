@@ -4,7 +4,7 @@
 #include "EntityServerPacket.h"
 
 
-class RemoveEntityPacket : EntityServerPacket {
+class RemoveEntityPacket : public EntityServerPacket {
 
 public:
     ~RemoveEntityPacket(); // _ZN18RemoveEntityPacketD2Ev

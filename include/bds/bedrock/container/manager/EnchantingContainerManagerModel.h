@@ -4,7 +4,7 @@
 #include "ContainerManagerModel.h"
 
 
-class EnchantingContainerManagerModel : ContainerManagerModel {
+class EnchantingContainerManagerModel : public ContainerManagerModel {
 
 public:
     static long NUM_OPTIONS;

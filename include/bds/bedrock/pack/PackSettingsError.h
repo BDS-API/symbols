@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class PackSettingsError : PackError {
+class PackSettingsError : public PackError {
 
 public:
     ~PackSettingsError(); // _ZN17PackSettingsErrorD2Ev

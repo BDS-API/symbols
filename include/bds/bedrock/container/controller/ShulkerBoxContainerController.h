@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class ShulkerBoxContainerController : ContainerController {
+class ShulkerBoxContainerController : public ContainerController {
 
 public:
     ~ShulkerBoxContainerController(); // _ZN29ShulkerBoxContainerControllerD2Ev

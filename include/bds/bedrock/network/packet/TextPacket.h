@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class TextPacket : Packet {
+class TextPacket : public Packet {
 
 public:
     ~TextPacket(); // _ZN10TextPacketD2Ev

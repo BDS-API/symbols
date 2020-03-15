@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ServerSettingsRequestPacket : Packet {
+class ServerSettingsRequestPacket : public Packet {
 
 public:
     ~ServerSettingsRequestPacket(); // _ZN27ServerSettingsRequestPacketD2Ev

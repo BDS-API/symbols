@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class SandStoneBlock : BlockLegacy {
+class SandStoneBlock : public BlockLegacy {
 
 public:
     ~SandStoneBlock(); // _ZN14SandStoneBlockD2Ev

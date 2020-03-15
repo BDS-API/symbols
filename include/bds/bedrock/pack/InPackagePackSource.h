@@ -1,11 +1,11 @@
 #pragma once
 
-#include <memory>
 #include <functional>
+#include <memory>
 #include "PackSource.h"
 
 
-class InPackagePackSource : PackSource {
+class InPackagePackSource : public PackSource {
 
 public:
     ~InPackagePackSource(); // _ZN19InPackagePackSourceD2Ev

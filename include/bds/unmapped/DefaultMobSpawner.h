@@ -3,7 +3,7 @@
 #include "BaseMobSpawner.h"
 
 
-class DefaultMobSpawner : BaseMobSpawner {
+class DefaultMobSpawner : public BaseMobSpawner {
 
 public:
     ~DefaultMobSpawner(); // _ZN17DefaultMobSpawnerD2Ev

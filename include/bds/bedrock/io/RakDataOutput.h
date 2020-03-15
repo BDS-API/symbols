@@ -3,7 +3,7 @@
 #include "BytesDataOutput.h"
 
 
-class RakDataOutput : BytesDataOutput {
+class RakDataOutput : public BytesDataOutput {
 
 public:
     ~RakDataOutput(); // _ZN13RakDataOutputD2Ev

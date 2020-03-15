@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class SpringFeature : Feature {
+class SpringFeature : public Feature {
 
 public:
     ~SpringFeature(); // _ZN13SpringFeatureD2Ev

@@ -1,12 +1,12 @@
 #pragma once
 
+#include <string>
 #include "../../../json/Value.h"
 #include "LootItemFunction.h"
 #include <vector>
-#include <string>
 
 
-class RandomBlockStateFunction : LootItemFunction {
+class RandomBlockStateFunction : public LootItemFunction {
 
 public:
     ~RandomBlockStateFunction(); // _ZN24RandomBlockStateFunctionD2Ev

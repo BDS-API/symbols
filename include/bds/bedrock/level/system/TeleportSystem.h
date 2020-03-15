@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class TeleportSystem : ITickingSystem {
+class TeleportSystem : public ITickingSystem {
 
 public:
     ~TeleportSystem(); // _ZN14TeleportSystemD2Ev

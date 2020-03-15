@@ -1,12 +1,12 @@
 #pragma once
 
+#include <unordered_map>
 #include <string>
 #include "../../../unmapped/MobSpawnRules.h"
 #include "ActorSpawnRuleBase.h"
-#include <unordered_map>
 
 
-class ActorSpawnRuleGroup : ActorSpawnRuleBase {
+class ActorSpawnRuleGroup : public ActorSpawnRuleBase {
 
 public:
     ~ActorSpawnRuleGroup(); // _ZN19ActorSpawnRuleGroupD2Ev

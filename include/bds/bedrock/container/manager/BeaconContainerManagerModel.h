@@ -4,7 +4,7 @@
 #include "LevelContainerManagerModel.h"
 
 
-class BeaconContainerManagerModel : LevelContainerManagerModel {
+class BeaconContainerManagerModel : public LevelContainerManagerModel {
 
 public:
     static long PAYMENT_SLOT;

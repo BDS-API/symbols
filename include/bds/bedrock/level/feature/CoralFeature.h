@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class CoralFeature : Feature {
+class CoralFeature : public Feature {
 
 public:
     ~CoralFeature(); // _ZN12CoralFeatureD2Ev

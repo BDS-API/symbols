@@ -3,7 +3,7 @@
 #include "../../level/LevelEventListener.h"
 
 
-class ScriptServerLevelEventListener : LevelEventListener {
+class ScriptServerLevelEventListener : public LevelEventListener {
 
 public:
     ~ScriptServerLevelEventListener(); // _ZN30ScriptServerLevelEventListenerD2Ev

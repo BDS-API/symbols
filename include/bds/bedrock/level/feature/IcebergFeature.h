@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class IcebergFeature : Feature {
+class IcebergFeature : public Feature {
 
 public:
     ~IcebergFeature(); // _ZN14IcebergFeatureD2Ev

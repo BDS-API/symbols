@@ -4,7 +4,7 @@
 #include "HeavyBlock.h"
 
 
-class AnvilBlock : HeavyBlock {
+class AnvilBlock : public HeavyBlock {
 
 public:
     ~AnvilBlock(); // _ZN10AnvilBlockD2Ev

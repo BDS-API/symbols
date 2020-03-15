@@ -3,7 +3,7 @@
 #include "IFeature.h"
 
 
-class ScatterFeature : IFeature {
+class ScatterFeature : public IFeature {
 
 public:
     ~ScatterFeature(); // _ZN14ScatterFeatureD2Ev

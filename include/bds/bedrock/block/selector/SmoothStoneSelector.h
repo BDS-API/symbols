@@ -3,7 +3,7 @@
 #include "BlockSelector.h"
 
 
-class SmoothStoneSelector : BlockSelector {
+class SmoothStoneSelector : public BlockSelector {
 
 public:
     ~SmoothStoneSelector(); // _ZN19SmoothStoneSelectorD2Ev

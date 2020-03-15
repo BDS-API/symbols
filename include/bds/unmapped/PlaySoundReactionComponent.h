@@ -3,7 +3,7 @@
 #include "LabTableReactionComponent.h"
 
 
-class PlaySoundReactionComponent : LabTableReactionComponent {
+class PlaySoundReactionComponent : public LabTableReactionComponent {
 
 public:
     ~PlaySoundReactionComponent(); // _ZN26PlaySoundReactionComponentD2Ev

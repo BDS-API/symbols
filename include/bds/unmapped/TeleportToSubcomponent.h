@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class TeleportToSubcomponent : OnHitSubcomponent {
+class TeleportToSubcomponent : public OnHitSubcomponent {
 
 public:
     ~TeleportToSubcomponent(); // _ZN22TeleportToSubcomponentD2Ev

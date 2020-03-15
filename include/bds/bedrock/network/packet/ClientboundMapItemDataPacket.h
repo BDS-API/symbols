@@ -6,7 +6,7 @@
 #include <vector>
 
 
-class ClientboundMapItemDataPacket : Packet {
+class ClientboundMapItemDataPacket : public Packet {
 
 public:
     ~ClientboundMapItemDataPacket(); // _ZN28ClientboundMapItemDataPacketD2Ev

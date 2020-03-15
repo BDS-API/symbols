@@ -4,7 +4,7 @@
 #include <string>
 
 
-class HayBlockBlock : RotatedPillarBlock {
+class HayBlockBlock : public RotatedPillarBlock {
 
 public:
     ~HayBlockBlock(); // _ZN13HayBlockBlockD2Ev

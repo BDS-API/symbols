@@ -1,13 +1,13 @@
 #pragma once
 
-#include <vector>
 #include <memory>
 #include "IFileChunkUploader.h"
+#include <vector>
 #include <string>
 #include <functional>
 
 
-class ServerFileChunkUploader : IFileChunkUploader, std::enable_shared_from_this<ServerFileChunkUploader> {
+class ServerFileChunkUploader : public IFileChunkUploader, public std::enable_shared_from_this<ServerFileChunkUploader> {
 
 public:
     ~ServerFileChunkUploader(); // _ZN23ServerFileChunkUploaderD2Ev

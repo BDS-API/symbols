@@ -10,7 +10,7 @@ namespace com {
 
             namespace protocol {
 
-                class MetricReport /*google::protobuf::Message*/ { //TODO: incomplete class definition
+                class MetricReport /*public google::protobuf::Message*/ { //TODO: incomplete class definition
 
                 public:
                     class MetricUnion;

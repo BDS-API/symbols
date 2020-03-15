@@ -4,7 +4,7 @@
 #include "../../actor/unmapped/ActorUniqueID.h"
 
 
-class GameMasterEntityServerCommandOrigin : ActorServerCommandOrigin {
+class GameMasterEntityServerCommandOrigin : public ActorServerCommandOrigin {
 
 public:
     ~GameMasterEntityServerCommandOrigin(); // _ZN35GameMasterEntityServerCommandOriginD2Ev

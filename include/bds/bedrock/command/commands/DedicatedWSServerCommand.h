@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class DedicatedWSServerCommand : Command {
+class DedicatedWSServerCommand : public Command {
 
 public:
     static long mApp;

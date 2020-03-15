@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class UpdateBlockPropertiesPacket : Packet {
+class UpdateBlockPropertiesPacket : public Packet {
 
 public:
     ~UpdateBlockPropertiesPacket(); // _ZN27UpdateBlockPropertiesPacketD2Ev

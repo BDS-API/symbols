@@ -2,7 +2,7 @@
 
 
 
-class LevelDbFileLock /*leveldb::FileLock*/ { //TODO: incomplete class definition
+class LevelDbFileLock /*public leveldb::FileLock*/ { //TODO: incomplete class definition
 
 public:
     ~LevelDbFileLock(); // _ZN15LevelDbFileLockD2Ev

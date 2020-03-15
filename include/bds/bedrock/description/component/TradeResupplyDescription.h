@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class TradeResupplyDescription : ComponentDescription {
+class TradeResupplyDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK24TradeResupplyDescription11getJsonNameEv

@@ -1,11 +1,11 @@
 #pragma once
 
+#include "Packet.h"
 #include <string>
 #include <memory>
-#include "Packet.h"
 
 
-class StructureTemplateDataResponsePacket : Packet {
+class StructureTemplateDataResponsePacket : public Packet {
 
 public:
     ~StructureTemplateDataResponsePacket(); // _ZN35StructureTemplateDataResponsePacketD2Ev

@@ -3,7 +3,7 @@
 #include "ContentLogEndPoint.h"
 
 
-class WorldSessionEndPoint : ContentLogEndPoint {
+class WorldSessionEndPoint : public ContentLogEndPoint {
 
 public:
     ~WorldSessionEndPoint(); // _ZN20WorldSessionEndPointD2Ev

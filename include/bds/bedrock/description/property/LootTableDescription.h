@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class LootTableDescription : PropertyDescription {
+class LootTableDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK20LootTableDescription11getJsonNameEv

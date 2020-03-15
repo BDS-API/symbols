@@ -4,7 +4,7 @@
 #include "ScriptEventData.h"
 
 
-class CustomScriptEventData : ScriptEventData {
+class CustomScriptEventData : public ScriptEventData {
 
 public:
     ~CustomScriptEventData(); // _ZN21CustomScriptEventDataD2Ev

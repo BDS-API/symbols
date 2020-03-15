@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class HangingActor : Actor {
+class HangingActor : public Actor {
 
 public:
     static long HANGING_OFFSET;

@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "CraftingContainerController.h"
+#include <memory>
 
 
-class CraftingInputContainerController : CraftingContainerController {
+class CraftingInputContainerController : public CraftingContainerController {
 
 public:
     ~CraftingInputContainerController(); // _ZN32CraftingInputContainerControllerD2Ev

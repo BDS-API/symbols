@@ -4,7 +4,7 @@
 #include "FaceDirectionalBlock.h"
 
 
-class LoomBlock : FaceDirectionalBlock {
+class LoomBlock : public FaceDirectionalBlock {
 
 public:
     ~LoomBlock(); // _ZN9LoomBlockD2Ev

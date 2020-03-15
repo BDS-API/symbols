@@ -3,7 +3,7 @@
 #include "GameModuleServer.h"
 
 
-class VanillaGameModuleServer : GameModuleServer {
+class VanillaGameModuleServer : public GameModuleServer {
 
 public:
     ~VanillaGameModuleServer(); // _ZN23VanillaGameModuleServerD2Ev

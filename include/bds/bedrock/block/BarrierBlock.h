@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class BarrierBlock : BlockLegacy {
+class BarrierBlock : public BlockLegacy {
 
 public:
     ~BarrierBlock(); // _ZN12BarrierBlockD2Ev

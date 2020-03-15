@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class ExperiencePotionItem : Item {
+class ExperiencePotionItem : public Item {
 
 public:
     ~ExperiencePotionItem(); // _ZN20ExperiencePotionItemD2Ev

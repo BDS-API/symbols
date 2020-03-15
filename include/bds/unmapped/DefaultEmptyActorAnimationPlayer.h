@@ -4,7 +4,7 @@
 #include "../bedrock/actor/unmapped/ActorAnimationPlayer.h"
 
 
-class DefaultEmptyActorAnimationPlayer : ActorAnimationPlayer {
+class DefaultEmptyActorAnimationPlayer : public ActorAnimationPlayer {
 
 public:
     ~DefaultEmptyActorAnimationPlayer(); // _ZN32DefaultEmptyActorAnimationPlayerD2Ev

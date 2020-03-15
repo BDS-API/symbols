@@ -2,7 +2,7 @@
 
 
 
-class LevelDbRandomAccessFile /*leveldb::RandomAccessFile*/ { //TODO: incomplete class definition
+class LevelDbRandomAccessFile /*public leveldb::RandomAccessFile*/ { //TODO: incomplete class definition
 
 public:
     ~LevelDbRandomAccessFile(); // _ZN23LevelDbRandomAccessFileD2Ev

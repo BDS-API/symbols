@@ -1,11 +1,11 @@
 #pragma once
 
+#include <unordered_map>
 #include <string>
 #include "../bedrock/actor/unmapped/ActorSpawnRuleBase.h"
-#include <unordered_map>
 
 
-class SpawnGroupRegistry : ActorSpawnRuleBase {
+class SpawnGroupRegistry : public ActorSpawnRuleBase {
 
 public:
     ~SpawnGroupRegistry(); // _ZN18SpawnGroupRegistryD2Ev

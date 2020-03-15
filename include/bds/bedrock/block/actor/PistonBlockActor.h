@@ -1,11 +1,11 @@
 #pragma once
 
 #include "BlockActor.h"
-#include "../../util/Vec3.h"
 #include "../../util/BlockPos.h"
+#include "../../util/Vec3.h"
 
 
-class PistonBlockActor : BlockActor {
+class PistonBlockActor : public BlockActor {
 
 public:
     static long ARM_ANIMATION_SPEED;

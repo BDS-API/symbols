@@ -3,7 +3,7 @@
 #include "BytesDataInput.h"
 
 
-class StringByteInput : BytesDataInput {
+class StringByteInput : public BytesDataInput {
 
 public:
     ~StringByteInput(); // _ZN15StringByteInputD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
 
 
-class EndCrystalItem : Item {
+class EndCrystalItem : public Item {
 
 public:
     ~EndCrystalItem(); // _ZN14EndCrystalItemD2Ev

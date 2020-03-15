@@ -3,7 +3,7 @@
 #include "FurnaceContainerManagerModel.h"
 
 
-class BlastFurnaceContainerManagerModel : FurnaceContainerManagerModel {
+class BlastFurnaceContainerManagerModel : public FurnaceContainerManagerModel {
 
 public:
     ~BlastFurnaceContainerManagerModel(); // _ZN33BlastFurnaceContainerManagerModelD2Ev

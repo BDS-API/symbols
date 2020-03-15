@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class FillingContainer : Container {
+class FillingContainer : public Container {
 
 public:
     ~FillingContainer(); // _ZN16FillingContainerD2Ev

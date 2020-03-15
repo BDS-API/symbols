@@ -2,7 +2,7 @@
 
 
 
-class ExecCtxPluck /*grpc_core::ExecCtx*/ { //TODO: incomplete class definition
+class ExecCtxPluck /*public grpc_core::ExecCtx*/ { //TODO: incomplete class definition
 
 public:
     ~ExecCtxPluck(); // _ZN12ExecCtxPluckD2Ev

@@ -4,7 +4,7 @@
 #include "SecureStorage.h"
 
 
-class NullSecureStorage : SecureStorage {
+class NullSecureStorage : public SecureStorage {
 
 public:
     ~NullSecureStorage(); // _ZN17NullSecureStorageD2Ev

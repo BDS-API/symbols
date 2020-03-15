@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class HoldGroundGoal : Goal {
+class HoldGroundGoal : public Goal {
 
 public:
     ~HoldGroundGoal(); // _ZN14HoldGroundGoalD2Ev

@@ -3,7 +3,7 @@
 #include "Mob.h"
 
 
-class Ghast : Mob {
+class Ghast : public Mob {
 
 public:
     ~Ghast(); // _ZN5GhastD2Ev

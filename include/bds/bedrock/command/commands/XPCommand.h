@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class XPCommand : Command {
+class XPCommand : public Command {
 
 public:
     ~XPCommand(); // _ZN9XPCommandD2Ev

@@ -3,7 +3,7 @@
 #include "Monster.h"
 
 
-class Endermite : Monster {
+class Endermite : public Monster {
 
 public:
     ~Endermite(); // _ZN9EndermiteD2Ev

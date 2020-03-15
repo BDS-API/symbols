@@ -3,7 +3,7 @@
 #include "DefintionDescription.h"
 
 
-class IsSummonableDescription : DefintionDescription {
+class IsSummonableDescription : public DefintionDescription {
 
 public:
     ~IsSummonableDescription(); // _ZN23IsSummonableDescriptionD2Ev

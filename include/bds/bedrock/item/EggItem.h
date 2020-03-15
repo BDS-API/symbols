@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class EggItem : Item {
+class EggItem : public Item {
 
 public:
     ~EggItem(); // _ZN7EggItemD2Ev

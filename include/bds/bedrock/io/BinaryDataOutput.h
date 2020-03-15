@@ -3,7 +3,7 @@
 #include "BytesDataOutput.h"
 
 
-class BinaryDataOutput : BytesDataOutput {
+class BinaryDataOutput : public BytesDataOutput {
 
 public:
     ~BinaryDataOutput(); // _ZN16BinaryDataOutputD2Ev

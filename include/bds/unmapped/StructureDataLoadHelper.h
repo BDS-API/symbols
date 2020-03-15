@@ -1,12 +1,12 @@
 #pragma once
 
 #include "DataLoadHelper.h"
-#include "../bedrock/util/Vec3.h"
 #include "../bedrock/util/BlockPos.h"
+#include "../bedrock/util/Vec3.h"
 #include "../bedrock/actor/unmapped/ActorUniqueID.h"
 
 
-class StructureDataLoadHelper : DataLoadHelper {
+class StructureDataLoadHelper : public DataLoadHelper {
 
 public:
     ~StructureDataLoadHelper(); // _ZN23StructureDataLoadHelperD2Ev

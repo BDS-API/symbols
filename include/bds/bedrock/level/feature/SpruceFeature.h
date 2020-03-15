@@ -3,7 +3,7 @@
 #include "TreeFeature.h"
 
 
-class SpruceFeature : TreeFeature {
+class SpruceFeature : public TreeFeature {
 
 public:
     ~SpruceFeature(); // _ZN13SpruceFeatureD2Ev

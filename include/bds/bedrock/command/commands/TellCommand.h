@@ -3,7 +3,7 @@
 #include "MessagingCommand.h"
 
 
-class TellCommand : MessagingCommand {
+class TellCommand : public MessagingCommand {
 
 public:
     ~TellCommand(); // _ZN11TellCommandD2Ev

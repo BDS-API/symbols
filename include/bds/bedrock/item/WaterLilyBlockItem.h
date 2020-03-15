@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "BlockItem.h"
 
 
-class WaterLilyBlockItem : BlockItem {
+class WaterLilyBlockItem : public BlockItem {
 
 public:
     ~WaterLilyBlockItem(); // _ZN18WaterLilyBlockItemD2Ev

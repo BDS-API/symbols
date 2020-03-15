@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class PlaySoundCommand : Command {
+class PlaySoundCommand : public Command {
 
 public:
     ~PlaySoundCommand(); // _ZN16PlaySoundCommandD2Ev

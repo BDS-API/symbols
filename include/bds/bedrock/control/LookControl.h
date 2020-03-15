@@ -3,7 +3,7 @@
 #include "Control.h"
 
 
-class LookControl : Control {
+class LookControl : public Control {
 
 public:
     ~LookControl(); // _ZN11LookControlD2Ev

@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class MoveActorAbsolutePacket : Packet {
+class MoveActorAbsolutePacket : public Packet {
 
 public:
     ~MoveActorAbsolutePacket(); // _ZN23MoveActorAbsolutePacketD2Ev

@@ -3,7 +3,7 @@
 #include "FilterGroup.h"
 
 
-class BiomeFilterGroup : FilterGroup {
+class BiomeFilterGroup : public FilterGroup {
 
 public:
     ~BiomeFilterGroup(); // _ZN16BiomeFilterGroupD2Ev

@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class LoopbackPacketSender : PacketSender {
+class LoopbackPacketSender : public PacketSender {
 
 public:
     ~LoopbackPacketSender(); // _ZN20LoopbackPacketSenderD2Ev

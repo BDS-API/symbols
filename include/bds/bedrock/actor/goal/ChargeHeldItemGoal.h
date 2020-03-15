@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class ChargeHeldItemGoal : Goal {
+class ChargeHeldItemGoal : public Goal {
 
 public:
     ~ChargeHeldItemGoal(); // _ZN18ChargeHeldItemGoalD2Ev

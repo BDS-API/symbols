@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class DisconnectPacket : Packet {
+class DisconnectPacket : public Packet {
 
 public:
     ~DisconnectPacket(); // _ZN16DisconnectPacketD2Ev

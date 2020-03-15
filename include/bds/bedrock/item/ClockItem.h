@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class ClockItem : Item {
+class ClockItem : public Item {
 
 public:
     ~ClockItem(); // _ZN9ClockItemD2Ev

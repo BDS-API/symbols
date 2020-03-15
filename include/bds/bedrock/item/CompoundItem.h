@@ -5,7 +5,7 @@
 #include "ChemistryItem.h"
 
 
-class CompoundItem : ChemistryItem {
+class CompoundItem : public ChemistryItem {
 
 public:
     static long mIdToSpecialCompound;

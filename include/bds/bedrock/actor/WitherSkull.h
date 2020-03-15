@@ -3,7 +3,7 @@
 #include "Fireball.h"
 
 
-class WitherSkull : Fireball {
+class WitherSkull : public Fireball {
 
 public:
 //  virtual void initializeComponents(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN11WitherSkull20initializeComponentsEN5Actor20InitializationMethodERK20VariantParameterList

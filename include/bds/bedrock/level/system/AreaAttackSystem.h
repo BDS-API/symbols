@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class AreaAttackSystem : ITickingSystem {
+class AreaAttackSystem : public ITickingSystem {
 
 public:
     ~AreaAttackSystem(); // _ZN16AreaAttackSystemD2Ev

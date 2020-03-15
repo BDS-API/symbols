@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class AgentCommandExecutionGoal : Goal {
+class AgentCommandExecutionGoal : public Goal {
 
 public:
     ~AgentCommandExecutionGoal(); // _ZN25AgentCommandExecutionGoalD2Ev

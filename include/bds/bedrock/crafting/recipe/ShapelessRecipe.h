@@ -2,11 +2,11 @@
 
 #include <string>
 #include <memory>
-#include "Recipe.h"
 #include <vector>
+#include "Recipe.h"
 
 
-class ShapelessRecipe : Recipe {
+class ShapelessRecipe : public Recipe {
 
 public:
     ~ShapelessRecipe(); // _ZN15ShapelessRecipeD2Ev

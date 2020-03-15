@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class HugeMushroomFeature : Feature {
+class HugeMushroomFeature : public Feature {
 
 public:
     static long mMushroomTypes;

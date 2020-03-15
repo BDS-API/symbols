@@ -4,7 +4,7 @@
 #include "TorchBlock.h"
 
 
-class ColoredTorchBlock : TorchBlock {
+class ColoredTorchBlock : public TorchBlock {
 
 public:
     ~ColoredTorchBlock(); // _ZN17ColoredTorchBlockD2Ev

@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class JigsawBlockActor : BlockActor {
+class JigsawBlockActor : public BlockActor {
 
 public:
     ~JigsawBlockActor(); // _ZN16JigsawBlockActorD2Ev

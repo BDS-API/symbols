@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class CakeBlock : BlockLegacy {
+class CakeBlock : public BlockLegacy {
 
 public:
     ~CakeBlock(); // _ZN9CakeBlockD2Ev

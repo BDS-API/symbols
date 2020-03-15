@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class NavigationDescription : ComponentDescription {
+class NavigationDescription : public ComponentDescription {
 
 public:
     ~NavigationDescription(); // _ZN21NavigationDescriptionD2Ev

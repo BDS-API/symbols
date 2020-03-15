@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BossSystem : ITickingSystem {
+class BossSystem : public ITickingSystem {
 
 public:
     ~BossSystem(); // _ZN10BossSystemD2Ev

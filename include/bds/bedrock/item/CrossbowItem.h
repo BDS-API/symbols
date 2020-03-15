@@ -4,7 +4,7 @@
 #include "RangedWeaponItem.h"
 
 
-class CrossbowItem : RangedWeaponItem {
+class CrossbowItem : public RangedWeaponItem {
 
 public:
     static long DEFAULT_USE_DURATION;

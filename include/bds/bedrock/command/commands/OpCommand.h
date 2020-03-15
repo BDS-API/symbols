@@ -3,7 +3,7 @@
 #include "ServerCommand.h"
 
 
-class OpCommand : ServerCommand {
+class OpCommand : public ServerCommand {
 
 public:
     ~OpCommand(); // _ZN9OpCommandD2Ev

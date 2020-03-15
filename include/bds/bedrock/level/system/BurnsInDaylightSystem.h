@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BurnsInDaylightSystem : ITickingSystem {
+class BurnsInDaylightSystem : public ITickingSystem {
 
 public:
     ~BurnsInDaylightSystem(); // _ZN21BurnsInDaylightSystemD2Ev

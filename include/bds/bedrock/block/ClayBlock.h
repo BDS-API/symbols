@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ClayBlock : BlockLegacy {
+class ClayBlock : public BlockLegacy {
 
 public:
     ~ClayBlock(); // _ZN9ClayBlockD2Ev

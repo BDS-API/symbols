@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class DynamicJumpControlDescription : ComponentDescription {
+class DynamicJumpControlDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK29DynamicJumpControlDescription11getJsonNameEv

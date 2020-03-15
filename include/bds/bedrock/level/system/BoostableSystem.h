@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BoostableSystem : ITickingSystem {
+class BoostableSystem : public ITickingSystem {
 
 public:
     ~BoostableSystem(); // _ZN15BoostableSystemD2Ev

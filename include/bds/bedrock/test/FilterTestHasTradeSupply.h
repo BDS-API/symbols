@@ -3,7 +3,7 @@
 #include "SimpleBoolFilterTest.h"
 
 
-class FilterTestHasTradeSupply : SimpleBoolFilterTest {
+class FilterTestHasTradeSupply : public SimpleBoolFilterTest {
 
 public:
     ~FilterTestHasTradeSupply(); // _ZN24FilterTestHasTradeSupplyD2Ev

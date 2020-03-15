@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class UpdateSoftEnumPacket : Packet {
+class UpdateSoftEnumPacket : public Packet {
 
 public:
     ~UpdateSoftEnumPacket(); // _ZN20UpdateSoftEnumPacketD2Ev

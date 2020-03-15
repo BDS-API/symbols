@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "Tag.h"
+#include <string>
 
 
-class ShortTag : Tag {
+class ShortTag : public Tag {
 
 public:
     ~ShortTag(); // _ZN8ShortTagD2Ev

@@ -4,7 +4,7 @@
 #include "BytesDataOutput.h"
 
 
-class StringByteOutput : BytesDataOutput {
+class StringByteOutput : public BytesDataOutput {
 
 public:
     ~StringByteOutput(); // _ZN16StringByteOutputD2Ev

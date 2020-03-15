@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class FishingRodItem : Item {
+class FishingRodItem : public Item {
 
 public:
     ~FishingRodItem(); // _ZN14FishingRodItemD2Ev

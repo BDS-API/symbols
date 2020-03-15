@@ -1,11 +1,11 @@
 #pragma once
 
+#include "LootItemCondition.h"
 #include "../../../json/Value.h"
 #include "../../actor/unmapped/ActorDefinitionIdentifier.h"
-#include "LootItemCondition.h"
 
 
-class LootItemKilledByActorCondition : LootItemCondition {
+class LootItemKilledByActorCondition : public LootItemCondition {
 
 public:
     ~LootItemKilledByActorCondition(); // _ZN30LootItemKilledByActorConditionD2Ev

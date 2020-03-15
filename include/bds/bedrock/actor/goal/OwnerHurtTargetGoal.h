@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class OwnerHurtTargetGoal : TargetGoal {
+class OwnerHurtTargetGoal : public TargetGoal {
 
 public:
     ~OwnerHurtTargetGoal(); // _ZN19OwnerHurtTargetGoalD2Ev

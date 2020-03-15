@@ -4,7 +4,7 @@
 #include "BasePressurePlateBlock.h"
 
 
-class PressurePlateBlock : BasePressurePlateBlock {
+class PressurePlateBlock : public BasePressurePlateBlock {
 
 public:
     ~PressurePlateBlock(); // _ZN18PressurePlateBlockD2Ev

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class SlimeFloatGoal : Goal {
+class SlimeFloatGoal : public Goal {
 
 public:
     ~SlimeFloatGoal(); // _ZN14SlimeFloatGoalD2Ev

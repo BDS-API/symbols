@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class LayDownGoal : Goal {
+class LayDownGoal : public Goal {
 
 public:
     ~LayDownGoal(); // _ZN11LayDownGoalD2Ev

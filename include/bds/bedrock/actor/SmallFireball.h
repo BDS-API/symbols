@@ -3,7 +3,7 @@
 #include "Fireball.h"
 
 
-class SmallFireball : Fireball {
+class SmallFireball : public Fireball {
 
 public:
     ~SmallFireball(); // _ZN13SmallFireballD2Ev

@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class SpikeFeature : Feature {
+class SpikeFeature : public Feature {
 
 public:
     class EndSpike;

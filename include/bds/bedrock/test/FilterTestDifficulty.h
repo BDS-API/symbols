@@ -3,7 +3,7 @@
 #include "SimpleIntFilterTest.h"
 
 
-class FilterTestDifficulty : SimpleIntFilterTest {
+class FilterTestDifficulty : public SimpleIntFilterTest {
 
 public:
     ~FilterTestDifficulty(); // _ZN20FilterTestDifficultyD2Ev

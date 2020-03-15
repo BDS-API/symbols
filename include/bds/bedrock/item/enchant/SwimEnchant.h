@@ -4,7 +4,7 @@
 #include "Enchant.h"
 
 
-class SwimEnchant : Enchant {
+class SwimEnchant : public Enchant {
 
 public:
     ~SwimEnchant(); // _ZN11SwimEnchantD2Ev

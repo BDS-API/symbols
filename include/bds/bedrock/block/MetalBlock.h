@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class MetalBlock : BlockLegacy {
+class MetalBlock : public BlockLegacy {
 
 public:
     ~MetalBlock(); // _ZN10MetalBlockD2Ev

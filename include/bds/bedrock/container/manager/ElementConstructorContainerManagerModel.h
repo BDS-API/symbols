@@ -3,7 +3,7 @@
 #include "ContainerManagerModel.h"
 
 
-class ElementConstructorContainerManagerModel : ContainerManagerModel {
+class ElementConstructorContainerManagerModel : public ContainerManagerModel {
 
 public:
     ~ElementConstructorContainerManagerModel(); // _ZN39ElementConstructorContainerManagerModelD2Ev

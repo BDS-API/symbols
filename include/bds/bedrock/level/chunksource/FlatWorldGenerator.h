@@ -4,7 +4,7 @@
 #include "../generator/WorldGenerator.h"
 
 
-class FlatWorldGenerator : ChunkSource, WorldGenerator {
+class FlatWorldGenerator : public ChunkSource, public WorldGenerator {
 
 public:
     ~FlatWorldGenerator(); // _ZN18FlatWorldGeneratorD2Ev

@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetHealthPacket : Packet {
+class SetHealthPacket : public Packet {
 
 public:
     ~SetHealthPacket(); // _ZN15SetHealthPacketD2Ev

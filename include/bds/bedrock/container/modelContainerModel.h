@@ -5,7 +5,7 @@
 #include "../../../unmapped/ContainerContentChangeListener.h"
 
 
-class ContainerModel : ContainerContentChangeListener {
+class ContainerModel : public ContainerContentChangeListener {
 
 public:
     virtual void containerContentChanged(int); // _ZN14ContainerModel23containerContentChangedEi

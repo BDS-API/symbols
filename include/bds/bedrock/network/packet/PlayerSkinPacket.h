@@ -5,7 +5,7 @@
 #include "../../../mce/UUID.h"
 
 
-class PlayerSkinPacket : Packet {
+class PlayerSkinPacket : public Packet {
 
 public:
     ~PlayerSkinPacket(); // _ZN16PlayerSkinPacketD2Ev

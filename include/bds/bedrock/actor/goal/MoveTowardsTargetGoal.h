@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class MoveTowardsTargetGoal : Goal {
+class MoveTowardsTargetGoal : public Goal {
 
 public:
     ~MoveTowardsTargetGoal(); // _ZN21MoveTowardsTargetGoalD2Ev

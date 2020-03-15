@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class LevelDbEnv /*leveldb::Env*/ { //TODO: incomplete class definition
+class LevelDbEnv /*public leveldb::Env*/ { //TODO: incomplete class definition
 
 public:
     static long sSingleton;

@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class NetherReactorBlockActor : BlockActor {
+class NetherReactorBlockActor : public BlockActor {
 
 public:
     ~NetherReactorBlockActor(); // _ZN23NetherReactorBlockActorD2Ev

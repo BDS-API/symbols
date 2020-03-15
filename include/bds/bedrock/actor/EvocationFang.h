@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class EvocationFang : Actor {
+class EvocationFang : public Actor {
 
 public:
     ~EvocationFang(); // _ZN13EvocationFangD2Ev

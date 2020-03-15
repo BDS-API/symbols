@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class InvisibleBlock : BlockLegacy {
+class InvisibleBlock : public BlockLegacy {
 
 public:
     ~InvisibleBlock(); // _ZN14InvisibleBlockD2Ev

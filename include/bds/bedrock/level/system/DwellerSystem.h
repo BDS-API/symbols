@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class DwellerSystem : ITickingSystem {
+class DwellerSystem : public ITickingSystem {
 
 public:
     ~DwellerSystem(); // _ZN13DwellerSystemD2Ev

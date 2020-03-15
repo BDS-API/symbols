@@ -1,13 +1,13 @@
 #pragma once
 
-#include "ResourceLoader.h"
-#include <vector>
 #include <memory>
+#include <vector>
 #include <string>
 #include <functional>
+#include "ResourceLoader.h"
 
 
-class ResourcePackManager : ResourceLoader {
+class ResourcePackManager : public ResourceLoader {
 
 public:
     ~ResourcePackManager(); // _ZN19ResourcePackManagerD2Ev

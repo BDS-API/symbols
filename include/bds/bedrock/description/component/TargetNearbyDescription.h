@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class TargetNearbyDescription : ComponentDescription {
+class TargetNearbyDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK23TargetNearbyDescription11getJsonNameEv

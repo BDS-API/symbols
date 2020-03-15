@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "BlockLegacy.h"
 #include <vector>
+#include "BlockLegacy.h"
 
 
-class ThinFenceBlock : BlockLegacy {
+class ThinFenceBlock : public BlockLegacy {
 
 public:
     ~ThinFenceBlock(); // _ZN14ThinFenceBlockD2Ev

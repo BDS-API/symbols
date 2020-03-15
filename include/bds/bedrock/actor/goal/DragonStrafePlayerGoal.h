@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class DragonStrafePlayerGoal : Goal {
+class DragonStrafePlayerGoal : public Goal {
 
 public:
     static long FIREBALL_CHARGE_AMOUNT;

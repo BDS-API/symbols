@@ -3,7 +3,7 @@
 #include "Goal.h"
 
 
-class BaseMoveToGoal : Goal {
+class BaseMoveToGoal : public Goal {
 
 public:
     ~BaseMoveToGoal(); // _ZN14BaseMoveToGoalD2Ev

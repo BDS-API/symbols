@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class MobSpawnerBlock : ActorBlock {
+class MobSpawnerBlock : public ActorBlock {
 
 public:
     ~MobSpawnerBlock(); // _ZN15MobSpawnerBlockD2Ev

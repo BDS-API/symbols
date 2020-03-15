@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class LegacyFlowerFeature : Feature {
+class LegacyFlowerFeature : public Feature {
 
 public:
     ~LegacyFlowerFeature(); // _ZN19LegacyFlowerFeatureD2Ev

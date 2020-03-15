@@ -4,7 +4,7 @@
 #include "ShulkerBoxBlock.h"
 
 
-class UndyedShulkerBoxBlock : ShulkerBoxBlock {
+class UndyedShulkerBoxBlock : public ShulkerBoxBlock {
 
 public:
     ~UndyedShulkerBoxBlock(); // _ZN21UndyedShulkerBoxBlockD2Ev

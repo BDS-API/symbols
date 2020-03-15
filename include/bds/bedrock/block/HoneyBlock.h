@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class HoneyBlock : BlockLegacy {
+class HoneyBlock : public BlockLegacy {
 
 public:
     ~HoneyBlock(); // _ZN10HoneyBlockD2Ev

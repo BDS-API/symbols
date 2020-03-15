@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetDifficultyPacket : Packet {
+class SetDifficultyPacket : public Packet {
 
 public:
     ~SetDifficultyPacket(); // _ZN19SetDifficultyPacketD2Ev

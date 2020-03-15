@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ChemicalHeatBlock : BlockLegacy {
+class ChemicalHeatBlock : public BlockLegacy {
 
 public:
     ~ChemicalHeatBlock(); // _ZN17ChemicalHeatBlockD2Ev

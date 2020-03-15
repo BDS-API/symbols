@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class EndGatewayFeature : Feature {
+class EndGatewayFeature : public Feature {
 
 public:
     ~EndGatewayFeature(); // _ZN17EndGatewayFeatureD2Ev

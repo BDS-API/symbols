@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class PlayerRideTamedGoal : Goal {
+class PlayerRideTamedGoal : public Goal {
 
 public:
     ~PlayerRideTamedGoal(); // _ZN19PlayerRideTamedGoalD2Ev

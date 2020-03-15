@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class WoodlandMansionStart : StructureStart {
+class WoodlandMansionStart : public StructureStart {
 
 public:
     ~WoodlandMansionStart(); // _ZN20WoodlandMansionStartD2Ev

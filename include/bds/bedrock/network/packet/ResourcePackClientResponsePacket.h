@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class ResourcePackClientResponsePacket : Packet {
+class ResourcePackClientResponsePacket : public Packet {
 
 public:
     ~ResourcePackClientResponsePacket(); // _ZN32ResourcePackClientResponsePacketD2Ev

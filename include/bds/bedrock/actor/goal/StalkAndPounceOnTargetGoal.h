@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../util/BlockPos.h"
 #include "Goal.h"
+#include "../../util/BlockPos.h"
 
 
-class StalkAndPounceOnTargetGoal : Goal {
+class StalkAndPounceOnTargetGoal : public Goal {
 
 public:
     ~StalkAndPounceOnTargetGoal(); // _ZN26StalkAndPounceOnTargetGoalD2Ev

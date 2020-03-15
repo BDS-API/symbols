@@ -4,7 +4,7 @@
 #include "SimpleContainer.h"
 
 
-class PlayerUIContainer : SimpleContainer {
+class PlayerUIContainer : public SimpleContainer {
 
 public:
     ~PlayerUIContainer(); // _ZN17PlayerUIContainerD2Ev

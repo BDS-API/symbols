@@ -1,7 +1,7 @@
 #pragma once
 
-#include <memory>
 #include <functional>
+#include <memory>
 #include "StubInterface.h"
 
 
@@ -15,7 +15,7 @@ namespace com {
 
                 namespace Commands {
 
-                    class Stub : com::mojang::clacks::protocol::Commands::StubInterface {
+                    class Stub : public com::mojang::clacks::protocol::Commands::StubInterface {
 
                     public:
                         class experimental_async;
@@ -65,7 +65,7 @@ namespace com {
 //                      virtual void AsyncsubscribeToMetricsRaw(grpc::ClientContext *, com::mojang::clacks::protocol::Empty const&, grpc::CompletionQueue *, void *); //TODO: incomplete function definition // _ZN3com6mojang6clacks8protocol8Commands4Stub26AsyncsubscribeToMetricsRawEPN4grpc13ClientContextERKNS2_5EmptyEPNS5_15CompletionQueueEPv
 //                      virtual void PrepareAsyncsubscribeToMetricsRaw(grpc::ClientContext *, com::mojang::clacks::protocol::Empty const&, grpc::CompletionQueue *); //TODO: incomplete function definition // _ZN3com6mojang6clacks8protocol8Commands4Stub33PrepareAsyncsubscribeToMetricsRawEPN4grpc13ClientContextERKNS2_5EmptyEPNS5_15CompletionQueueE
                         Stub(std::shared_ptr<grpc::ChannelInterface> const&); // _ZN3com6mojang6clacks8protocol8Commands4StubC2ERKSt10shared_ptrIN4grpc16ChannelInterfaceEE
-                        class experimental_async : com::mojang::clacks::protocol::Commands::StubInterface::experimental_async_interface {
+                        class experimental_async : public com::mojang::clacks::protocol::Commands::StubInterface::experimental_async_interface {
 
                         public:
                             ~experimental_async(); // _ZN3com6mojang6clacks8protocol8Commands4Stub18experimental_asyncD2Ev

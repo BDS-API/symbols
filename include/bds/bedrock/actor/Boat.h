@@ -4,7 +4,7 @@
 #include "Actor.h"
 
 
-class Boat : Actor {
+class Boat : public Actor {
 
 public:
     class Paddle;

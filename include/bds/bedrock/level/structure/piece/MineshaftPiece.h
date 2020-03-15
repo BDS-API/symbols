@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class MineshaftPiece : StructurePiece {
+class MineshaftPiece : public StructurePiece {
 
 public:
     ~MineshaftPiece(); // _ZN14MineshaftPieceD2Ev

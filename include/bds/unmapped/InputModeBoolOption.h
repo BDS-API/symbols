@@ -1,12 +1,12 @@
 #pragma once
 
-#include <map>
-#include "Option.h"
-#include <vector>
 #include <string>
+#include <vector>
+#include "Option.h"
+#include <map>
 
 
-class InputModeBoolOption : Option {
+class InputModeBoolOption : public Option {
 
 public:
     ~InputModeBoolOption(); // _ZN19InputModeBoolOptionD2Ev

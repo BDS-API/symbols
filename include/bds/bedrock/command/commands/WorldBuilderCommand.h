@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class WorldBuilderCommand : Command {
+class WorldBuilderCommand : public Command {
 
 public:
     ~WorldBuilderCommand(); // _ZN19WorldBuilderCommandD2Ev

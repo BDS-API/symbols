@@ -3,7 +3,7 @@
 #include "AttributeInstanceDelegate.h"
 
 
-class ExhaustionAttributeDelegate : AttributeInstanceDelegate {
+class ExhaustionAttributeDelegate : public AttributeInstanceDelegate {
 
 public:
     ~ExhaustionAttributeDelegate(); // _ZN27ExhaustionAttributeDelegateD2Ev

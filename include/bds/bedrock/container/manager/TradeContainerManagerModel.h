@@ -4,7 +4,7 @@
 #include "LevelContainerManagerModel.h"
 
 
-class TradeContainerManagerModel : LevelContainerManagerModel {
+class TradeContainerManagerModel : public LevelContainerManagerModel {
 
 public:
     ~TradeContainerManagerModel(); // _ZN26TradeContainerManagerModelD2Ev

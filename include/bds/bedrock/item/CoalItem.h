@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include "Item.h"
+#include <memory>
 
 
-class CoalItem : Item {
+class CoalItem : public Item {
 
 public:
     ~CoalItem(); // _ZN8CoalItemD2Ev

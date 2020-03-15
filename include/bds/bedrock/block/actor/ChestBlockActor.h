@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class ChestBlockActor : RandomizableBlockActorFillingContainer {
+class ChestBlockActor : public RandomizableBlockActorFillingContainer {
 
 public:
     ~ChestBlockActor(); // _ZN15ChestBlockActorD2Ev

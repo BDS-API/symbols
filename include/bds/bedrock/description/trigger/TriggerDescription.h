@@ -3,7 +3,7 @@
 #include "../Description.h"
 
 
-class TriggerDescription : Description {
+class TriggerDescription : public Description {
 
 public:
     ~TriggerDescription(); // _ZN18TriggerDescriptionD2Ev

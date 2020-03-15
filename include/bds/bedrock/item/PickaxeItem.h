@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "DiggerItem.h"
+#include <string>
 #include "Item.h"
 
 
-class PickaxeItem : DiggerItem {
+class PickaxeItem : public DiggerItem {
 
 public:
     ~PickaxeItem(); // _ZN11PickaxeItemD2Ev

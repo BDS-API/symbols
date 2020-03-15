@@ -3,7 +3,7 @@
 #include <string>
 
 
-class ScriptServerPlaySoundEvent /*ScriptTemplateFactory<ScriptServerContext>::ReceivedEvent*/ { //TODO: incomplete class definition
+class ScriptServerPlaySoundEvent /*public ScriptTemplateFactory<ScriptServerContext>::ReceivedEvent*/ { //TODO: incomplete class definition
 
 public:
     static long mHash;

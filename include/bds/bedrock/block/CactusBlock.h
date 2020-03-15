@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class CactusBlock : BlockLegacy {
+class CactusBlock : public BlockLegacy {
 
 public:
     ~CactusBlock(); // _ZN11CactusBlockD2Ev

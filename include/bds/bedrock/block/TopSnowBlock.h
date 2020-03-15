@@ -4,7 +4,7 @@
 #include "HeavyBlock.h"
 
 
-class TopSnowBlock : HeavyBlock {
+class TopSnowBlock : public HeavyBlock {
 
 public:
     static long MAX_HEIGHT;

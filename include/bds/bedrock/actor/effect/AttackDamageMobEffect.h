@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "MobEffect.h"
+#include <string>
 
 
-class AttackDamageMobEffect : MobEffect {
+class AttackDamageMobEffect : public MobEffect {
 
 public:
     ~AttackDamageMobEffect(); // _ZN21AttackDamageMobEffectD2Ev

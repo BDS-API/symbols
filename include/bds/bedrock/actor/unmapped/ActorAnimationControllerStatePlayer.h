@@ -1,13 +1,13 @@
 #pragma once
 
-#include <unordered_map>
 #include <memory>
-#include <string>
 #include "ActorSkeletalAnimationPtr.h"
 #include "ActorAnimationPlayer.h"
+#include <unordered_map>
+#include <string>
 
 
-class ActorAnimationControllerStatePlayer : ActorAnimationPlayer {
+class ActorAnimationControllerStatePlayer : public ActorAnimationPlayer {
 
 public:
     ~ActorAnimationControllerStatePlayer(); // _ZN35ActorAnimationControllerStatePlayerD2Ev

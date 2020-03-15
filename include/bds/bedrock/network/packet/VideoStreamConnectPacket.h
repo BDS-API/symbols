@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "Packet.h"
 #include "../../../unmapped/WebSocketPacketData.h"
+#include "Packet.h"
 
 
-class VideoStreamConnectPacket : Packet {
+class VideoStreamConnectPacket : public Packet {
 
 public:
     ~VideoStreamConnectPacket(); // _ZN24VideoStreamConnectPacketD2Ev

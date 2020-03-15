@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class Coral : BlockLegacy {
+class Coral : public BlockLegacy {
 
 public:
     ~Coral(); // _ZN5CoralD2Ev

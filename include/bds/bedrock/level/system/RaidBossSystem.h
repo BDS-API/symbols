@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class RaidBossSystem : ITickingSystem {
+class RaidBossSystem : public ITickingSystem {
 
 public:
     ~RaidBossSystem(); // _ZN14RaidBossSystemD2Ev

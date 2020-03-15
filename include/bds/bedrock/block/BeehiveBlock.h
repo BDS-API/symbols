@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "ActorBlock.h"
 
 
-class BeehiveBlock : ActorBlock {
+class BeehiveBlock : public ActorBlock {
 
 public:
     ~BeehiveBlock(); // _ZN12BeehiveBlockD2Ev

@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class HoneycombBlock : BlockLegacy {
+class HoneycombBlock : public BlockLegacy {
 
 public:
     ~HoneycombBlock(); // _ZN14HoneycombBlockD2Ev

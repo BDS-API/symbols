@@ -3,7 +3,7 @@
 #include "HumanoidMonster.h"
 
 
-class Pillager : HumanoidMonster {
+class Pillager : public HumanoidMonster {
 
 public:
     ~Pillager(); // _ZN8PillagerD2Ev

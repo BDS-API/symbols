@@ -3,7 +3,7 @@
 #include "Minecart.h"
 
 
-class MinecartChest : Minecart {
+class MinecartChest : public Minecart {
 
 public:
     static long ITEMS_SIZE;

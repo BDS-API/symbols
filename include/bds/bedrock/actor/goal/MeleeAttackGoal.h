@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../definition/DefinitionTrigger.h"
 #include "Goal.h"
+#include "../../definition/DefinitionTrigger.h"
 
 
-class MeleeAttackGoal : Goal {
+class MeleeAttackGoal : public Goal {
 
 public:
     static long ATTACK_LOOK_DISTANCE;

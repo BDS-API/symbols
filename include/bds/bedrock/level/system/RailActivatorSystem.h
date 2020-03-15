@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class RailActivatorSystem : ITickingSystem {
+class RailActivatorSystem : public ITickingSystem {
 
 public:
     ~RailActivatorSystem(); // _ZN19RailActivatorSystemD2Ev

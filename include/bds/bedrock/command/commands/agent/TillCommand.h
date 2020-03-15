@@ -6,7 +6,7 @@
 
 namespace AgentCommands {
 
-    class TillCommand : AgentCommands::Command {
+    class TillCommand : public AgentCommands::Command {
 
     public:
         ~TillCommand(); // _ZN13AgentCommands11TillCommandD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
 
 
-class FertilizerItem : Item {
+class FertilizerItem : public Item {
 
 public:
     ~FertilizerItem(); // _ZN14FertilizerItemD2Ev

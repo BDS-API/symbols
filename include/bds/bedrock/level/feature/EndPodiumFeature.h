@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class EndPodiumFeature : Feature {
+class EndPodiumFeature : public Feature {
 
 public:
     static long PODIUM_RADIUS;

@@ -4,7 +4,7 @@
 #include <memory>
 
 
-class CommandFunctionEntry : IFunctionEntry {
+class CommandFunctionEntry : public IFunctionEntry {
 
 public:
     ~CommandFunctionEntry(); // _ZN20CommandFunctionEntryD2Ev

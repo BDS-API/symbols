@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class FloatOption : Option {
+class FloatOption : public Option {
 
 public:
     ~FloatOption(); // _ZN11FloatOptionD2Ev

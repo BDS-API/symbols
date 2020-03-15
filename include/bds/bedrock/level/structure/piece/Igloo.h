@@ -3,7 +3,7 @@
 #include "ScatteredFeaturePiece.h"
 
 
-class Igloo : ScatteredFeaturePiece {
+class Igloo : public ScatteredFeaturePiece {
 
 public:
     static std::string STRUCTURE_LOCATION_IGLOO_TRAPDOOR;

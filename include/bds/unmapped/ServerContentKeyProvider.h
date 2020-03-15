@@ -1,11 +1,11 @@
 #pragma once
 
+#include <unordered_map>
 #include <string>
 #include "IContentAccessibilityProvider.h"
-#include <unordered_map>
 
 
-class ServerContentKeyProvider : IContentAccessibilityProvider {
+class ServerContentKeyProvider : public IContentAccessibilityProvider {
 
 public:
     ~ServerContentKeyProvider(); // _ZN24ServerContentKeyProviderD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "BlockItem.h"
 
 
-class SeaPickleBlockItem : BlockItem {
+class SeaPickleBlockItem : public BlockItem {
 
 public:
     ~SeaPickleBlockItem(); // _ZN18SeaPickleBlockItemD2Ev

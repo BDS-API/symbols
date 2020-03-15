@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class GrassBlock : BlockLegacy {
+class GrassBlock : public BlockLegacy {
 
 public:
     static long MIN_BRIGHTNESS;

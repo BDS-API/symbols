@@ -1,11 +1,11 @@
 #pragma once
 
+#include "../../test/FilterTest.h"
 #include <string>
 #include "../../../unmapped/FilterGroup.h"
-#include "../../test/FilterTest.h"
 
 
-class ActorFilterGroup : FilterGroup {
+class ActorFilterGroup : public FilterGroup {
 
 public:
     class LegacyMapping;

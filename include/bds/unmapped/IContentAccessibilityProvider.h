@@ -3,7 +3,7 @@
 #include "IContentKeyProvider.h"
 
 
-class IContentAccessibilityProvider : IContentKeyProvider {
+class IContentAccessibilityProvider : public IContentKeyProvider {
 
 public:
     ~IContentAccessibilityProvider(); // _ZN29IContentAccessibilityProviderD2Ev

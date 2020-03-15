@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class RestrictOpenDoorGoal : Goal {
+class RestrictOpenDoorGoal : public Goal {
 
 public:
     ~RestrictOpenDoorGoal(); // _ZN20RestrictOpenDoorGoalD2Ev

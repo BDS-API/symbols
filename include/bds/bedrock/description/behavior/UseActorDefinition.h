@@ -3,7 +3,7 @@
 #include "BehaviorDefinition.h"
 
 
-class UseActorDefinition : BehaviorDefinition {
+class UseActorDefinition : public BehaviorDefinition {
 
 public:
     ~UseActorDefinition(); // _ZN18UseActorDefinitionD2Ev

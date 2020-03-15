@@ -3,7 +3,7 @@
 #include "SimpleFloatFilterTest.h"
 
 
-class FilterTestClock : SimpleFloatFilterTest {
+class FilterTestClock : public SimpleFloatFilterTest {
 
 public:
     ~FilterTestClock(); // _ZN15FilterTestClockD2Ev

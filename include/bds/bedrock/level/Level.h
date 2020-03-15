@@ -1,20 +1,20 @@
 #pragma once
 
-#include "../../unmapped/EducationLevelSettings.h"
-#include "../block/unmapped/BlockSourceListener.h"
-#include "../../unmapped/EntityNetId.h"
-#include <vector>
-#include <memory>
-#include "../util/ChunkPos.h"
-#include "../../unmapped/IWorldRegistriesProvider.h"
-#include <string>
 #include "../actor/unmapped/ActorRuntimeID.h"
-#include <functional>
-#include "../../unmapped/Abilities.h"
+#include <memory>
+#include "../block/unmapped/BlockSourceListener.h"
+#include <vector>
 #include "../actor/unmapped/ActorUniqueID.h"
+#include "../../unmapped/EducationLevelSettings.h"
+#include "../../unmapped/IWorldRegistriesProvider.h"
+#include <functional>
+#include <string>
+#include "../../unmapped/EntityNetId.h"
+#include "../../unmapped/Abilities.h"
+#include "../util/ChunkPos.h"
 
 
-class Level : BlockSourceListener, IWorldRegistriesProvider {
+class Level : public BlockSourceListener, public IWorldRegistriesProvider {
 
 public:
     class CompareLevelChunkQueuedSavingElement;

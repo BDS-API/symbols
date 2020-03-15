@@ -1,12 +1,12 @@
 #pragma once
 
-#include <memory>
 #include <functional>
 #include "IFilePicker.h"
+#include <memory>
 #include <vector>
 
 
-class SystemFilePicker : IFilePicker, std::enable_shared_from_this<SystemFilePicker> {
+class SystemFilePicker : public IFilePicker, public std::enable_shared_from_this<SystemFilePicker> {
 
 public:
     ~SystemFilePicker(); // _ZN16SystemFilePickerD2Ev

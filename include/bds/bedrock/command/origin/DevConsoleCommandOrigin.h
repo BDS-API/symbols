@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
+#include "../../actor/unmapped/ActorUniqueID.h"
 #include "CommandOrigin.h"
 #include "../../../unmapped/NetworkIdentifier.h"
-#include "../../actor/unmapped/ActorUniqueID.h"
 
 
-class DevConsoleCommandOrigin : CommandOrigin {
+class DevConsoleCommandOrigin : public CommandOrigin {
 
 public:
     ~DevConsoleCommandOrigin(); // _ZN23DevConsoleCommandOriginD2Ev

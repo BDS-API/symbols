@@ -3,7 +3,7 @@
 #include "LabTableReactionComponent.h"
 
 
-class SetBlockReactionComponent : LabTableReactionComponent {
+class SetBlockReactionComponent : public LabTableReactionComponent {
 
 public:
     ~SetBlockReactionComponent(); // _ZN25SetBlockReactionComponentD2Ev

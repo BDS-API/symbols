@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class IceBlock : BlockLegacy {
+class IceBlock : public BlockLegacy {
 
 public:
     ~IceBlock(); // _ZN8IceBlockD2Ev

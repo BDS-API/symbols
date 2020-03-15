@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class LevelChunkPacket : Packet {
+class LevelChunkPacket : public Packet {
 
 public:
     class SubChunkMetadata;

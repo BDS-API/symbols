@@ -3,7 +3,7 @@
 #include "CapacitorComponent.h"
 
 
-class ComparatorCapacitor : CapacitorComponent {
+class ComparatorCapacitor : public CapacitorComponent {
 
 public:
     ~ComparatorCapacitor(); // _ZN19ComparatorCapacitorD2Ev

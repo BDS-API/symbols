@@ -4,7 +4,7 @@
 #include "BlockActor.h"
 
 
-class RandomizableBlockActorContainerBase : BlockActor {
+class RandomizableBlockActorContainerBase : public BlockActor {
 
 public:
     ~RandomizableBlockActorContainerBase(); // _ZN35RandomizableBlockActorContainerBaseD2Ev

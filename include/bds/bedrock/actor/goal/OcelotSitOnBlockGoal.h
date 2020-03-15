@@ -4,7 +4,7 @@
 #include "BaseMoveToBlockGoal.h"
 
 
-class OcelotSitOnBlockGoal : BaseMoveToBlockGoal {
+class OcelotSitOnBlockGoal : public BaseMoveToBlockGoal {
 
 public:
     ~OcelotSitOnBlockGoal(); // _ZN20OcelotSitOnBlockGoalD2Ev

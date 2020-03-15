@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class HeavyBlock : BlockLegacy {
+class HeavyBlock : public BlockLegacy {
 
 public:
     ~HeavyBlock(); // _ZN10HeavyBlockD2Ev

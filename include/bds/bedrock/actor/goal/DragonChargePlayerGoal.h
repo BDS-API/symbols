@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class DragonChargePlayerGoal : Goal {
+class DragonChargePlayerGoal : public Goal {
 
 public:
     static long CHARGE_RECOVERY_TIME;

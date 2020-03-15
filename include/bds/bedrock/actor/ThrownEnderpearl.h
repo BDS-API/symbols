@@ -3,7 +3,7 @@
 #include "Throwable.h"
 
 
-class ThrownEnderpearl : Throwable {
+class ThrownEnderpearl : public Throwable {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN16ThrownEnderpearl15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

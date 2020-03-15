@@ -1,10 +1,10 @@
 #pragma once
 
-#include "AttributeInstanceDelegate.h"
 #include "AttributeBuffInfo.h"
+#include "AttributeInstanceDelegate.h"
 
 
-class HealthAttributeDelegate : AttributeInstanceDelegate {
+class HealthAttributeDelegate : public AttributeInstanceDelegate {
 
 public:
     ~HealthAttributeDelegate(); // _ZN23HealthAttributeDelegateD2Ev

@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class ItemControlDescription : PropertyDescription {
+class ItemControlDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK22ItemControlDescription11getJsonNameEv

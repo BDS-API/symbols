@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class TntBlock : BlockLegacy {
+class TntBlock : public BlockLegacy {
 
 public:
     ~TntBlock(); // _ZN8TntBlockD2Ev

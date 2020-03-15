@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "BlockLegacy.h"
 #include <vector>
+#include "BlockLegacy.h"
 
 
-class StructureVoid : BlockLegacy {
+class StructureVoid : public BlockLegacy {
 
 public:
     ~StructureVoid(); // _ZN13StructureVoidD2Ev

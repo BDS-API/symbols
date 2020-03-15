@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class LabTablePacket : Packet {
+class LabTablePacket : public Packet {
 
 public:
     ~LabTablePacket(); // _ZN14LabTablePacketD2Ev

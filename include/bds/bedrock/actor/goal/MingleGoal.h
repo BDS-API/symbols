@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include "../unmapped/ActorDefinitionIdentifier.h"
 #include "../unmapped/ActorUniqueID.h"
 #include "MoveToPOIGoal.h"
+#include "../unmapped/ActorDefinitionIdentifier.h"
 
 
-class MingleGoal : MoveToPOIGoal {
+class MingleGoal : public MoveToPOIGoal {
 
 public:
     static long FIND_PARTNER_INTERVAL_TICKS;

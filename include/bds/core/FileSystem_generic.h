@@ -1,15 +1,15 @@
 #pragma once
 
-#include "Result.h"
-#include "FileSystemImpl.h"
 #include <memory>
 #include "FileOpenMode.h"
 #include <functional>
+#include "Result.h"
+#include "FileSystemImpl.h"
 
 
 namespace Core {
 
-    class FileSystem_generic : Core::FileSystemImpl {
+    class FileSystem_generic : public Core::FileSystemImpl {
 
     public:
         ~FileSystem_generic(); // _ZN4Core18FileSystem_genericD2Ev

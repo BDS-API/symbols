@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class EnchantWithLevelsFunction : LootItemFunction {
+class EnchantWithLevelsFunction : public LootItemFunction {
 
 public:
     ~EnchantWithLevelsFunction(); // _ZN25EnchantWithLevelsFunctionD2Ev

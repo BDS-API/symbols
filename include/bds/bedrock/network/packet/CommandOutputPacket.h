@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class CommandOutputPacket : Packet {
+class CommandOutputPacket : public Packet {
 
 public:
     ~CommandOutputPacket(); // _ZN19CommandOutputPacketD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../../unmapped/FloatRange.h"
 #include "Goal.h"
+#include "../../../unmapped/FloatRange.h"
 
 
-class CircleAroundAnchorGoal : Goal {
+class CircleAroundAnchorGoal : public Goal {
 
 public:
     ~CircleAroundAnchorGoal(); // _ZN22CircleAroundAnchorGoalD2Ev

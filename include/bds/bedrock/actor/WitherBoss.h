@@ -1,10 +1,10 @@
 #pragma once
 
-#include "Monster.h"
 #include "unmapped/ActorUniqueID.h"
+#include "Monster.h"
 
 
-class WitherBoss : Monster {
+class WitherBoss : public Monster {
 
 public:
     static long TIME_BEFORE_MOVING;

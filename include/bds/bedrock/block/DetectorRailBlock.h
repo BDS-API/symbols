@@ -1,11 +1,11 @@
 #pragma once
 
+#include "../util/BlockPos.h"
 #include <string>
 #include "BaseRailBlock.h"
-#include "../util/BlockPos.h"
 
 
-class DetectorRailBlock : BaseRailBlock {
+class DetectorRailBlock : public BaseRailBlock {
 
 public:
     ~DetectorRailBlock(); // _ZN17DetectorRailBlockD2Ev

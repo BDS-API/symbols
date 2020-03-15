@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class AddPaintingPacket : Packet {
+class AddPaintingPacket : public Packet {
 
 public:
     ~AddPaintingPacket(); // _ZN17AddPaintingPacketD2Ev

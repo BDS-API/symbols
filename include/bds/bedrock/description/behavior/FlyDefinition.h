@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
 
 
-class FlyDefinition : BehaviorDefinition {
+class FlyDefinition : public BehaviorDefinition {
 
 public:
     ~FlyDefinition(); // _ZN13FlyDefinitionD2Ev

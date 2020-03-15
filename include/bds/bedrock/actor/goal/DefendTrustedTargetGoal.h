@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "NearestAttackableTargetGoal.h"
+#include <string>
 #include <vector>
 
 
-class DefendTrustedTargetGoal : NearestAttackableTargetGoal {
+class DefendTrustedTargetGoal : public NearestAttackableTargetGoal {
 
 public:
     ~DefendTrustedTargetGoal(); // _ZN23DefendTrustedTargetGoalD2Ev

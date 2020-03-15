@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ContainerSetDataPacket : Packet {
+class ContainerSetDataPacket : public Packet {
 
 public:
     ~ContainerSetDataPacket(); // _ZN22ContainerSetDataPacketD2Ev

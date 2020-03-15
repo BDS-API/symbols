@@ -1,9 +1,9 @@
 #pragma once
 
 #include "../bedrock/util/AABB.h"
+#include <string>
 #include <memory>
 #include "../bedrock/actor/unmapped/ActorUniqueID.h"
-#include <string>
 
 
 class RaidBossComponent {

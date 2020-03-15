@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class MineshaftCrossing : MineshaftPiece {
+class MineshaftCrossing : public MineshaftPiece {
 
 public:
     ~MineshaftCrossing(); // _ZN17MineshaftCrossingD2Ev

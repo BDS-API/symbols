@@ -3,7 +3,7 @@
 #include "PathNavigation.h"
 
 
-class WaterBoundPathNavigation : PathNavigation {
+class WaterBoundPathNavigation : public PathNavigation {
 
 public:
     ~WaterBoundPathNavigation(); // _ZN24WaterBoundPathNavigationD2Ev

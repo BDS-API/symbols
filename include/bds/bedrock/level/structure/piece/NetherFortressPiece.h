@@ -6,7 +6,7 @@
 #include <vector>
 
 
-class NetherFortressPiece : StructurePiece {
+class NetherFortressPiece : public StructurePiece {
 
 public:
     ~NetherFortressPiece(); // _ZN19NetherFortressPieceD2Ev

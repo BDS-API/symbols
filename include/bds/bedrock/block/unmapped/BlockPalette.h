@@ -1,8 +1,8 @@
 #pragma once
 
 #include <string>
-#include "../../../unmapped/NewBlockID.h"
 #include "BlockID.h"
+#include "../../../unmapped/NewBlockID.h"
 
 
 class BlockPalette {

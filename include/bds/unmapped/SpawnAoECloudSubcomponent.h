@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class SpawnAoECloudSubcomponent : OnHitSubcomponent {
+class SpawnAoECloudSubcomponent : public OnHitSubcomponent {
 
 public:
     ~SpawnAoECloudSubcomponent(); // _ZN25SpawnAoECloudSubcomponentD2Ev

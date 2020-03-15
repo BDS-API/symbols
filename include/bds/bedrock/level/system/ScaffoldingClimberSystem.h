@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class ScaffoldingClimberSystem : ITickingSystem {
+class ScaffoldingClimberSystem : public ITickingSystem {
 
 public:
     ~ScaffoldingClimberSystem(); // _ZN24ScaffoldingClimberSystemD2Ev

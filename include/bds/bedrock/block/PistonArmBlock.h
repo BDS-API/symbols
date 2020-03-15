@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "BlockLegacy.h"
 #include <vector>
+#include "BlockLegacy.h"
 
 
-class PistonArmBlock : BlockLegacy {
+class PistonArmBlock : public BlockLegacy {
 
 public:
     ~PistonArmBlock(); // _ZN14PistonArmBlockD2Ev

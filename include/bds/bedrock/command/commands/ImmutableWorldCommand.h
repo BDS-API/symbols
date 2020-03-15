@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class ImmutableWorldCommand : Command {
+class ImmutableWorldCommand : public Command {
 
 public:
     ~ImmutableWorldCommand(); // _ZN21ImmutableWorldCommandD2Ev

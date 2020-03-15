@@ -4,7 +4,7 @@
 #include "Enchant.h"
 
 
-class TridentChannelingEnchant : Enchant {
+class TridentChannelingEnchant : public Enchant {
 
 public:
     ~TridentChannelingEnchant(); // _ZN24TridentChannelingEnchantD2Ev

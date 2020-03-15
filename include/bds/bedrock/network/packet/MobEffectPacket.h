@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "Packet.h"
 #include "../../actor/unmapped/ActorRuntimeID.h"
+#include "Packet.h"
 
 
-class MobEffectPacket : Packet {
+class MobEffectPacket : public Packet {
 
 public:
     ~MobEffectPacket(); // _ZN15MobEffectPacketD2Ev

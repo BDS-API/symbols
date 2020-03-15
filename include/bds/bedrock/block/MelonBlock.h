@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class MelonBlock : BlockLegacy {
+class MelonBlock : public BlockLegacy {
 
 public:
     ~MelonBlock(); // _ZN10MelonBlockD2Ev

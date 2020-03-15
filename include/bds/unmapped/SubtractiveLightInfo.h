@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../bedrock/level/chunk/SubChunkLightIndex.h"
 #include "../bedrock/util/Brightness.h"
+#include "../bedrock/level/chunk/SubChunkLightIndex.h"
 
 
 class SubtractiveLightInfo {

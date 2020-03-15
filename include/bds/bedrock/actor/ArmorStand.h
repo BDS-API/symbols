@@ -3,7 +3,7 @@
 #include "Mob.h"
 
 
-class ArmorStand : Mob {
+class ArmorStand : public Mob {
 
 public:
     class Pose;

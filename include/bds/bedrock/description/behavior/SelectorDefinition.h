@@ -4,7 +4,7 @@
 #include "CompositeDefinition.h"
 
 
-class SelectorDefinition : CompositeDefinition {
+class SelectorDefinition : public CompositeDefinition {
 
 public:
     ~SelectorDefinition(); // _ZN18SelectorDefinitionD2Ev

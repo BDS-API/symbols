@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class OnScreenTextureAnimationPacket : Packet {
+class OnScreenTextureAnimationPacket : public Packet {
 
 public:
     ~OnScreenTextureAnimationPacket(); // _ZN30OnScreenTextureAnimationPacketD2Ev

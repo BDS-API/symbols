@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class TransferToCommand : AgentCommands::Command {
+    class TransferToCommand : public AgentCommands::Command {
 
     public:
         ~TransferToCommand(); // _ZN13AgentCommands17TransferToCommandD2Ev

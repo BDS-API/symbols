@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class EndCityStart : StructureStart {
+class EndCityStart : public StructureStart {
 
 public:
     ~EndCityStart(); // _ZN12EndCityStartD2Ev

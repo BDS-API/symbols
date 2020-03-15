@@ -3,7 +3,7 @@
 #include "Animal.h"
 
 
-class Panda : Animal {
+class Panda : public Animal {
 
 public:
     ~Panda(); // _ZN5PandaD2Ev

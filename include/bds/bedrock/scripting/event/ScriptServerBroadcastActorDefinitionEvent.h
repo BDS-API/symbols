@@ -3,7 +3,7 @@
 #include <string>
 
 
-class ScriptServerBroadcastActorDefinitionEvent /*ScriptTemplateFactory<ScriptServerContext>::ReceivedEvent*/ { //TODO: incomplete class definition
+class ScriptServerBroadcastActorDefinitionEvent /*public ScriptTemplateFactory<ScriptServerContext>::ReceivedEvent*/ { //TODO: incomplete class definition
 
 public:
     static long mHash;

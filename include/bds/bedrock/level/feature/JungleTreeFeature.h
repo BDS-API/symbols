@@ -3,7 +3,7 @@
 #include "TreeFeature.h"
 
 
-class JungleTreeFeature : TreeFeature {
+class JungleTreeFeature : public TreeFeature {
 
 public:
     ~JungleTreeFeature(); // _ZN17JungleTreeFeatureD2Ev

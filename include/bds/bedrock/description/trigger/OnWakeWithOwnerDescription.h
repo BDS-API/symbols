@@ -3,7 +3,7 @@
 #include "TriggerDescription.h"
 
 
-class OnWakeWithOwnerDescription : TriggerDescription {
+class OnWakeWithOwnerDescription : public TriggerDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK26OnWakeWithOwnerDescription11getJsonNameEv

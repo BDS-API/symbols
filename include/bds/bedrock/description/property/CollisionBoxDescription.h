@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class CollisionBoxDescription : PropertyDescription {
+class CollisionBoxDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK23CollisionBoxDescription11getJsonNameEv

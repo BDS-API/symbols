@@ -3,7 +3,7 @@
 #include "HumanoidMonster.h"
 
 
-class Witch : HumanoidMonster {
+class Witch : public HumanoidMonster {
 
 public:
     static long SPEED_MODIFIER_DRINKING_UUID;

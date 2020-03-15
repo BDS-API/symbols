@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetDisplayObjectivePacket : Packet {
+class SetDisplayObjectivePacket : public Packet {
 
 public:
     ~SetDisplayObjectivePacket(); // _ZN25SetDisplayObjectivePacketD2Ev

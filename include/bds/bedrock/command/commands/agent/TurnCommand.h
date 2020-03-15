@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class TurnCommand : AgentCommands::Command {
+    class TurnCommand : public AgentCommands::Command {
 
     public:
         ~TurnCommand(); // _ZN13AgentCommands11TurnCommandD2Ev

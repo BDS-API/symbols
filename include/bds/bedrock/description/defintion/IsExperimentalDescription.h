@@ -3,7 +3,7 @@
 #include "DefintionDescription.h"
 
 
-class IsExperimentalDescription : DefintionDescription {
+class IsExperimentalDescription : public DefintionDescription {
 
 public:
     ~IsExperimentalDescription(); // _ZN25IsExperimentalDescriptionD2Ev

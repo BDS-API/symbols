@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class BellBlock : ActorBlock {
+class BellBlock : public ActorBlock {
 
 public:
     ~BellBlock(); // _ZN9BellBlockD2Ev

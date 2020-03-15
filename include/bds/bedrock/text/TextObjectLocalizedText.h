@@ -4,7 +4,7 @@
 #include "ITextObject.h"
 
 
-class TextObjectLocalizedText : ITextObject {
+class TextObjectLocalizedText : public ITextObject {
 
 public:
     ~TextObjectLocalizedText(); // _ZN23TextObjectLocalizedTextD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
-#include <memory>
 #include <functional>
 #include "ChunkSource.h"
+#include <memory>
 
 
-class DBChunkStorage : ChunkSource {
+class DBChunkStorage : public ChunkSource {
 
 public:
     static long threadBatch;

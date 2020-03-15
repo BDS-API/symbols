@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class GetSpawnPointCommand : Command {
+class GetSpawnPointCommand : public Command {
 
 public:
     ~GetSpawnPointCommand(); // _ZN20GetSpawnPointCommandD2Ev

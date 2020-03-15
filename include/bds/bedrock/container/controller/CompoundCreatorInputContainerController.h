@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class CompoundCreatorInputContainerController : ContainerController {
+class CompoundCreatorInputContainerController : public ContainerController {
 
 public:
     ~CompoundCreatorInputContainerController(); // _ZN39CompoundCreatorInputContainerControllerD2Ev

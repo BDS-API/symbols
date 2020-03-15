@@ -3,7 +3,7 @@
 #include "IDataOutput.h"
 
 
-class BytesDataOutput : IDataOutput {
+class BytesDataOutput : public IDataOutput {
 
 public:
     ~BytesDataOutput(); // _ZN15BytesDataOutputD2Ev

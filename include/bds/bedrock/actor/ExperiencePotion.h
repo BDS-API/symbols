@@ -3,7 +3,7 @@
 #include "Throwable.h"
 
 
-class ExperiencePotion : Throwable {
+class ExperiencePotion : public Throwable {
 
 public:
     ~ExperiencePotion(); // _ZN16ExperiencePotionD2Ev

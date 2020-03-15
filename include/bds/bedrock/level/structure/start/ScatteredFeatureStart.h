@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class ScatteredFeatureStart : StructureStart {
+class ScatteredFeatureStart : public StructureStart {
 
 public:
     ~ScatteredFeatureStart(); // _ZN21ScatteredFeatureStartD2Ev

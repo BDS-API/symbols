@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class AngryDescription : ComponentDescription {
+class AngryDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK16AngryDescription11getJsonNameEv

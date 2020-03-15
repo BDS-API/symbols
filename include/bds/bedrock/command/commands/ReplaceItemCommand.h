@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class ReplaceItemCommand : Command {
+class ReplaceItemCommand : public Command {
 
 public:
     ~ReplaceItemCommand(); // _ZN18ReplaceItemCommandD2Ev

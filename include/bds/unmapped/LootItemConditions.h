@@ -1,7 +1,7 @@
 #pragma once
 
-#include <vector>
 #include "../json/Value.h"
+#include <vector>
 
 
 namespace LootItemConditions {

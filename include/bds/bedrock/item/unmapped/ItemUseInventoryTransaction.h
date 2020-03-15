@@ -3,7 +3,7 @@
 #include "../../../unmapped/ComplexInventoryTransaction.h"
 
 
-class ItemUseInventoryTransaction : ComplexInventoryTransaction {
+class ItemUseInventoryTransaction : public ComplexInventoryTransaction {
 
 public:
     ~ItemUseInventoryTransaction(); // _ZN27ItemUseInventoryTransactionD2Ev

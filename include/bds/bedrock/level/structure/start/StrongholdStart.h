@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class StrongholdStart : StructureStart {
+class StrongholdStart : public StructureStart {
 
 public:
     ~StrongholdStart(); // _ZN15StrongholdStartD2Ev

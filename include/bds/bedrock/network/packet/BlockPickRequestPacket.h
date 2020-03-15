@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class BlockPickRequestPacket : Packet {
+class BlockPickRequestPacket : public Packet {
 
 public:
     ~BlockPickRequestPacket(); // _ZN22BlockPickRequestPacketD2Ev

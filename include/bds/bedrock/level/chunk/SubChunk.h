@@ -1,10 +1,10 @@
 #pragma once
 
-#include <vector>
 #include <memory>
-#include <mutex>
+#include <vector>
 #include "SubChunkBrightnessStorage.h"
 #include <functional>
+#include <mutex>
 
 
 class SubChunk {

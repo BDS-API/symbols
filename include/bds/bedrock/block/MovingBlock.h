@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class MovingBlock : ActorBlock {
+class MovingBlock : public ActorBlock {
 
 public:
     ~MovingBlock(); // _ZN11MovingBlockD2Ev

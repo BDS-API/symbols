@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class GrantXPSubcomponent : OnHitSubcomponent {
+class GrantXPSubcomponent : public OnHitSubcomponent {
 
 public:
     ~GrantXPSubcomponent(); // _ZN19GrantXPSubcomponentD2Ev

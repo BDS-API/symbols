@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include "Item.h"
+#include <memory>
 
 
-class WrittenBookItem : Item {
+class WrittenBookItem : public Item {
 
 public:
     static long MAX_TITLE_LENGTH;

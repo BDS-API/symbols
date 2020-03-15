@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class ConduitBlockActor : BlockActor {
+class ConduitBlockActor : public BlockActor {
 
 public:
     ~ConduitBlockActor(); // _ZN17ConduitBlockActorD2Ev

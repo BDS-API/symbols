@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "LootItemCondition.h"
+#include "../../../json/Value.h"
 
 
-class LootItemKilledByPlayerCondition : LootItemCondition {
+class LootItemKilledByPlayerCondition : public LootItemCondition {
 
 public:
     ~LootItemKilledByPlayerCondition(); // _ZN31LootItemKilledByPlayerConditionD2Ev

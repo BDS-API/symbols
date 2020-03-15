@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class RiderJumpPacket : Packet {
+class RiderJumpPacket : public Packet {
 
 public:
     ~RiderJumpPacket(); // _ZN15RiderJumpPacketD2Ev

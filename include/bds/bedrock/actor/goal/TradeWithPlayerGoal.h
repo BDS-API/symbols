@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class TradeWithPlayerGoal : Goal {
+class TradeWithPlayerGoal : public Goal {
 
 public:
     ~TradeWithPlayerGoal(); // _ZN19TradeWithPlayerGoalD2Ev

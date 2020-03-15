@@ -3,7 +3,7 @@
 #include "SimpleBoolFilterTest.h"
 
 
-class ActorIsImmobileTest : SimpleBoolFilterTest {
+class ActorIsImmobileTest : public SimpleBoolFilterTest {
 
 public:
     ~ActorIsImmobileTest(); // _ZN19ActorIsImmobileTestD2Ev

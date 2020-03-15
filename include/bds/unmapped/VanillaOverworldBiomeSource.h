@@ -1,10 +1,10 @@
 #pragma once
 
-#include "LayerBiomeSource.h"
 #include <memory>
+#include "LayerBiomeSource.h"
 
 
-class VanillaOverworldBiomeSource : LayerBiomeSource {
+class VanillaOverworldBiomeSource : public LayerBiomeSource {
 
 public:
     ~VanillaOverworldBiomeSource(); // _ZN27VanillaOverworldBiomeSourceD2Ev

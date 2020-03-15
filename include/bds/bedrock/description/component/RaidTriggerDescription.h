@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class RaidTriggerDescription : ComponentDescription {
+class RaidTriggerDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK22RaidTriggerDescription11getJsonNameEv

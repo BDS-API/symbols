@@ -5,7 +5,7 @@
 
 namespace VanillaSurfaceBuilders {
 
-    class MesaSurfaceBuilder : ISurfaceBuilder {
+    class MesaSurfaceBuilder : public ISurfaceBuilder {
 
     public:
         ~MesaSurfaceBuilder(); // _ZN22VanillaSurfaceBuilders18MesaSurfaceBuilderD2Ev

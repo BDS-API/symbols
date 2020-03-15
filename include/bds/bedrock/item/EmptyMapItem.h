@@ -5,7 +5,7 @@
 #include "ComplexItem.h"
 
 
-class EmptyMapItem : ComplexItem {
+class EmptyMapItem : public ComplexItem {
 
 public:
     ~EmptyMapItem(); // _ZN12EmptyMapItemD2Ev

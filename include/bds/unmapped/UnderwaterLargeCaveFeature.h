@@ -3,7 +3,7 @@
 #include "LargeCaveFeature.h"
 
 
-class UnderwaterLargeCaveFeature : LargeCaveFeature {
+class UnderwaterLargeCaveFeature : public LargeCaveFeature {
 
 public:
     ~UnderwaterLargeCaveFeature(); // _ZN26UnderwaterLargeCaveFeatureD2Ev

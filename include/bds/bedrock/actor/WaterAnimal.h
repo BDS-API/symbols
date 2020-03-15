@@ -3,7 +3,7 @@
 #include "Mob.h"
 
 
-class WaterAnimal : Mob {
+class WaterAnimal : public Mob {
 
 public:
     ~WaterAnimal(); // _ZN11WaterAnimalD2Ev

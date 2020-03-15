@@ -1,11 +1,11 @@
 #pragma once
 
-#include "../../../json/Value.h"
-#include "BehaviorDefinition.h"
 #include "../../../unmapped/BehaviorTreeDefinitionPtr.h"
+#include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
 
 
-class DecoratorDefinition : BehaviorDefinition {
+class DecoratorDefinition : public BehaviorDefinition {
 
 public:
     ~DecoratorDefinition(); // _ZN19DecoratorDefinitionD2Ev

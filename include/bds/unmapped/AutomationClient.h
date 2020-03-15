@@ -5,7 +5,7 @@
 
 namespace Automation {
 
-    class AutomationClient : UriListener {
+    class AutomationClient : public UriListener {
 
     public:
         ~AutomationClient(); // _ZN10Automation16AutomationClientD2Ev

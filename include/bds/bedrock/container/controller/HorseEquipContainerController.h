@@ -1,12 +1,12 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
 #include "../../item/unmapped/ItemTransferAmount.h"
+#include <memory>
 #include <vector>
 
 
-class HorseEquipContainerController : ContainerController {
+class HorseEquipContainerController : public ContainerController {
 
 public:
     ~HorseEquipContainerController(); // _ZN29HorseEquipContainerControllerD2Ev

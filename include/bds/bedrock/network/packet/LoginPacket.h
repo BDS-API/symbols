@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class LoginPacket : Packet {
+class LoginPacket : public Packet {
 
 public:
     ~LoginPacket(); // _ZN11LoginPacketD2Ev

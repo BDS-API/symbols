@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "ContentLogEndPoint.h"
 #include "../core/Path.h"
+#include "ContentLogEndPoint.h"
 
 
-class ContentLogFileEndPoint : ContentLogEndPoint {
+class ContentLogFileEndPoint : public ContentLogEndPoint {
 
 public:
     static long FILE_NAME;

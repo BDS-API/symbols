@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
 
 
-class ShootBowDefinition : BehaviorDefinition {
+class ShootBowDefinition : public BehaviorDefinition {
 
 public:
     ~ShootBowDefinition(); // _ZN18ShootBowDefinitionD2Ev

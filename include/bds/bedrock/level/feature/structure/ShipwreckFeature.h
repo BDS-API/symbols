@@ -3,7 +3,7 @@
 #include "StructureFeature.h"
 
 
-class ShipwreckFeature : StructureFeature {
+class ShipwreckFeature : public StructureFeature {
 
 public:
     ~ShipwreckFeature(); // _ZN16ShipwreckFeatureD2Ev

@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include "Level.h"
+#include <memory>
 
 
-class ServerLevel : Level {
+class ServerLevel : public Level {
 
 public:
     ~ServerLevel(); // _ZN11ServerLevelD2Ev

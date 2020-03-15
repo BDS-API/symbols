@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
+#include "Item.h"
 #include <memory>
 #include <vector>
-#include "Item.h"
 
 
-class FireworkChargeItem : Item {
+class FireworkChargeItem : public Item {
 
 public:
     static std::string TAG_EXPLOSION;

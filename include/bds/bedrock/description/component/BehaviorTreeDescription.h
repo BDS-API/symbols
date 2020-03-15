@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class BehaviorTreeDescription : ComponentDescription {
+class BehaviorTreeDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK23BehaviorTreeDescription11getJsonNameEv

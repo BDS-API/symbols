@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "BytesDataInput.h"
+#include <string>
 
 
-class BinaryDataInput : BytesDataInput {
+class BinaryDataInput : public BytesDataInput {
 
 public:
     ~BinaryDataInput(); // _ZN15BinaryDataInputD2Ev

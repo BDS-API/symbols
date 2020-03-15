@@ -3,7 +3,7 @@
 #include "../bedrock/level/LevelListener.h"
 
 
-class DanceComponentListener : LevelListener {
+class DanceComponentListener : public LevelListener {
 
 public:
     ~DanceComponentListener(); // _ZN22DanceComponentListenerD2Ev

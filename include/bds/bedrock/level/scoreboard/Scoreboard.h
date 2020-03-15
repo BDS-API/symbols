@@ -1,10 +1,10 @@
 #pragma once
 
-#include <vector>
 #include <memory>
-#include "../../command/CommandSoftEnumRegistry.h"
-#include <string>
+#include <vector>
 #include <functional>
+#include <string>
+#include "../../command/CommandSoftEnumRegistry.h"
 
 
 class Scoreboard {

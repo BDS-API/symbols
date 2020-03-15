@@ -3,7 +3,7 @@
 #include <string>
 
 
-class ScriptServerCommandReceived /*ScriptTemplateFactory<ScriptServerContext>::ReceivedEvent*/ { //TODO: incomplete class definition
+class ScriptServerCommandReceived /*public ScriptTemplateFactory<ScriptServerContext>::ReceivedEvent*/ { //TODO: incomplete class definition
 
 public:
     static long mHash;

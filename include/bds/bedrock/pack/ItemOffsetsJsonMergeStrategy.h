@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include <functional>
 #include "ResourcePackMergeStrategy.h"
+#include <functional>
 #include <vector>
 
 
-class ItemOffsetsJsonMergeStrategy : ResourcePackMergeStrategy {
+class ItemOffsetsJsonMergeStrategy : public ResourcePackMergeStrategy {
 
 public:
     ~ItemOffsetsJsonMergeStrategy(); // _ZN28ItemOffsetsJsonMergeStrategyD2Ev

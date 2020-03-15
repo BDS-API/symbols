@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "MultiRecipe.h"
+#include <string>
 
 
-class MapCloningRecipe : MultiRecipe {
+class MapCloningRecipe : public MultiRecipe {
 
 public:
     static long CraftingTableID;

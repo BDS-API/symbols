@@ -3,7 +3,7 @@
 #include "Zombie.h"
 
 
-class PigZombie : Zombie {
+class PigZombie : public Zombie {
 
 public:
     static long SPEED_MODIFIER_ATTACK_UUID;

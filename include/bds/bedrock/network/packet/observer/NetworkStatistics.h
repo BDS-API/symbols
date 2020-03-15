@@ -1,12 +1,12 @@
 #pragma once
 
+#include "PacketObserver.h"
 #include <string>
 #include <functional>
-#include "PacketObserver.h"
 #include <vector>
 
 
-class NetworkStatistics : PacketObserver {
+class NetworkStatistics : public PacketObserver {
 
 public:
     class PacketStats;

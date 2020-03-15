@@ -1,13 +1,13 @@
 #pragma once
 
-#include <vector>
 #include <memory>
-#include "../../unmapped/TagMemoryChunk.h"
-#include <string>
+#include <vector>
 #include "Tag.h"
+#include <string>
+#include "../../unmapped/TagMemoryChunk.h"
 
 
-class CompoundTag : Tag {
+class CompoundTag : public Tag {
 
 public:
     ~CompoundTag(); // _ZN11CompoundTagD2Ev

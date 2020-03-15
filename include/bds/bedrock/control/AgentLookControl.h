@@ -3,7 +3,7 @@
 #include "LookControl.h"
 
 
-class AgentLookControl : LookControl {
+class AgentLookControl : public LookControl {
 
 public:
     static long sBaseYMax;

@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class StonecutterBlock : BlockLegacy {
+class StonecutterBlock : public BlockLegacy {
 
 public:
     ~StonecutterBlock(); // _ZN16StonecutterBlockD2Ev

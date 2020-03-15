@@ -5,7 +5,7 @@
 #include "../generator/WorldGenerator.h"
 
 
-class TheEndGenerator : ChunkSource, WorldGenerator {
+class TheEndGenerator : public ChunkSource, public WorldGenerator {
 
 public:
     ~TheEndGenerator(); // _ZN15TheEndGeneratorD2Ev

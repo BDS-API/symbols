@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class HurtByTargetGoal : TargetGoal {
+class HurtByTargetGoal : public TargetGoal {
 
 public:
     ~HurtByTargetGoal(); // _ZN16HurtByTargetGoalD2Ev

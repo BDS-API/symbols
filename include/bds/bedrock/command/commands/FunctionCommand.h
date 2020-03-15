@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class FunctionCommand : Command {
+class FunctionCommand : public Command {
 
 public:
     ~FunctionCommand(); // _ZN15FunctionCommandD2Ev

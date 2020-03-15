@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class LanternBlock : BlockLegacy {
+class LanternBlock : public BlockLegacy {
 
 public:
     ~LanternBlock(); // _ZN12LanternBlockD2Ev

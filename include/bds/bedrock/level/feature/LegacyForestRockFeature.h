@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class LegacyForestRockFeature : Feature {
+class LegacyForestRockFeature : public Feature {
 
 public:
     ~LegacyForestRockFeature(); // _ZN23LegacyForestRockFeatureD2Ev

@@ -5,7 +5,7 @@
 #include "../generator/WorldGenerator.h"
 
 
-class OverworldGenerator : ChunkSource, WorldGenerator {
+class OverworldGenerator : public ChunkSource, public WorldGenerator {
 
 public:
     class ThreadData;

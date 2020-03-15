@@ -3,7 +3,7 @@
 #include "Animal.h"
 
 
-class Llama : Animal {
+class Llama : public Animal {
 
 public:
     ~Llama(); // _ZN5LlamaD2Ev

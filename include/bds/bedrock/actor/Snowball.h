@@ -3,7 +3,7 @@
 #include "Throwable.h"
 
 
-class Snowball : Throwable {
+class Snowball : public Throwable {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN8Snowball15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

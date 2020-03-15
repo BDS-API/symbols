@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class EndermanLeaveBlockGoal : Goal {
+class EndermanLeaveBlockGoal : public Goal {
 
 public:
     ~EndermanLeaveBlockGoal(); // _ZN22EndermanLeaveBlockGoalD2Ev

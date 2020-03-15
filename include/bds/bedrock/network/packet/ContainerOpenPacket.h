@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ContainerOpenPacket : Packet {
+class ContainerOpenPacket : public Packet {
 
 public:
     ~ContainerOpenPacket(); // _ZN19ContainerOpenPacketD2Ev

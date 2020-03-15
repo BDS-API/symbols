@@ -3,7 +3,7 @@
 #include "MobEffectSubcomponent.h"
 
 
-class ArrowEffectSubcomponent : MobEffectSubcomponent {
+class ArrowEffectSubcomponent : public MobEffectSubcomponent {
 
 public:
     ~ArrowEffectSubcomponent(); // _ZN23ArrowEffectSubcomponentD2Ev

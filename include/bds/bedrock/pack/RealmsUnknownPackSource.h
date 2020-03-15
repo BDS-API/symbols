@@ -1,11 +1,11 @@
 #pragma once
 
-#include <memory>
 #include <functional>
+#include <memory>
 #include "PackSource.h"
 
 
-class RealmsUnknownPackSource : PackSource {
+class RealmsUnknownPackSource : public PackSource {
 
 public:
     ~RealmsUnknownPackSource(); // _ZN23RealmsUnknownPackSourceD2Ev

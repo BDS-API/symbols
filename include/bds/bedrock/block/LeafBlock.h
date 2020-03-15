@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class LeafBlock : BlockLegacy {
+class LeafBlock : public BlockLegacy {
 
 public:
     ~LeafBlock(); // _ZN9LeafBlockD2Ev

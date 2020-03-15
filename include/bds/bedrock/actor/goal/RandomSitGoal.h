@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class RandomSitGoal : Goal {
+class RandomSitGoal : public Goal {
 
 public:
     ~RandomSitGoal(); // _ZN13RandomSitGoalD2Ev

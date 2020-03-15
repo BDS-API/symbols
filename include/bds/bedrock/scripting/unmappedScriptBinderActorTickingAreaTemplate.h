@@ -4,7 +4,7 @@
 #include "ScriptBinderTemplate.h"
 
 
-class ScriptBinderActorTickingAreaTemplate : ScriptBinderTemplate {
+class ScriptBinderActorTickingAreaTemplate : public ScriptBinderTemplate {
 
 public:
     ~ScriptBinderActorTickingAreaTemplate(); // _ZN36ScriptBinderActorTickingAreaTemplateD2Ev

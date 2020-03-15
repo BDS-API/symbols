@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class SquidFleeGoal : Goal {
+class SquidFleeGoal : public Goal {
 
 public:
     ~SquidFleeGoal(); // _ZN13SquidFleeGoalD2Ev

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class ControlledByPlayerGoal : Goal {
+class ControlledByPlayerGoal : public Goal {
 
 public:
     ~ControlledByPlayerGoal(); // _ZN22ControlledByPlayerGoalD2Ev

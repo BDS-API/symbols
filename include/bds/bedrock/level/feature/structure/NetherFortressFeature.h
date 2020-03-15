@@ -3,7 +3,7 @@
 #include "StructureFeature.h"
 
 
-class NetherFortressFeature : StructureFeature {
+class NetherFortressFeature : public StructureFeature {
 
 public:
     ~NetherFortressFeature(); // _ZN21NetherFortressFeatureD2Ev

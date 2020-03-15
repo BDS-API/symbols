@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
-#include "../../unmapped/IJsonSerializable.h"
 #include <functional>
+#include "../../unmapped/IJsonSerializable.h"
+#include <string>
 
 
-class Whitelist : IJsonSerializable {
+class Whitelist : public IJsonSerializable {
 
 public:
     class WhitelistEntryMatcher;

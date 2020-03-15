@@ -1,14 +1,14 @@
 #pragma once
 
+#include "FileImpl.h"
 #include <string>
 #include <memory>
 #include "FileOpenMode.h"
-#include "FileImpl.h"
 
 
 namespace Core {
 
-    class File_c : Core::FileImpl {
+    class File_c : public Core::FileImpl {
 
     public:
         ~File_c(); // _ZN4Core6File_cD2Ev

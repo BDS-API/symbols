@@ -3,7 +3,7 @@
 #include "SimpleIntFilterTest.h"
 
 
-class FilterTestTemperatureType : SimpleIntFilterTest {
+class FilterTestTemperatureType : public SimpleIntFilterTest {
 
 public:
     ~FilterTestTemperatureType(); // _ZN25FilterTestTemperatureTypeD2Ev

@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class RangedWeaponItem : Item {
+class RangedWeaponItem : public Item {
 
 public:
     ~RangedWeaponItem(); // _ZN16RangedWeaponItemD2Ev

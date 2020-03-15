@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class EnchantedBookItem : Item {
+class EnchantedBookItem : public Item {
 
 public:
     ~EnchantedBookItem(); // _ZN17EnchantedBookItemD2Ev

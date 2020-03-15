@@ -4,7 +4,7 @@
 #include "SlabBlock.h"
 
 
-class WoodSlabBlock : SlabBlock {
+class WoodSlabBlock : public SlabBlock {
 
 public:
     ~WoodSlabBlock(); // _ZN13WoodSlabBlockD2Ev

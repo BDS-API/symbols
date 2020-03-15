@@ -1,9 +1,9 @@
 #pragma once
 
 #include <string>
+#include "../bedrock/util/BlockPos.h"
 #include <memory>
 #include "../bedrock/util/Vec3.h"
-#include "../bedrock/util/BlockPos.h"
 
 
 class LegacyStructureTemplate {

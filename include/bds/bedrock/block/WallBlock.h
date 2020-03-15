@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class WallBlock : BlockLegacy {
+class WallBlock : public BlockLegacy {
 
 public:
     static long WALL_WIDTH;

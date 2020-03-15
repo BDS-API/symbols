@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BreakDoorAnnotationSystem : ITickingSystem {
+class BreakDoorAnnotationSystem : public ITickingSystem {
 
 public:
     ~BreakDoorAnnotationSystem(); // _ZN25BreakDoorAnnotationSystemD2Ev

@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class EndGatewayBlockActor : BlockActor {
+class EndGatewayBlockActor : public BlockActor {
 
 public:
     static long SPAWN_TIME;

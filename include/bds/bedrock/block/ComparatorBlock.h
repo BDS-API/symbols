@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class ComparatorBlock : ActorBlock {
+class ComparatorBlock : public ActorBlock {
 
 public:
     ~ComparatorBlock(); // _ZN15ComparatorBlockD2Ev

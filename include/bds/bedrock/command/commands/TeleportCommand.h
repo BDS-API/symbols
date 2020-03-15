@@ -4,7 +4,7 @@
 #include "../../util/Vec3.h"
 
 
-class TeleportCommand : Command {
+class TeleportCommand : public Command {
 
 public:
     ~TeleportCommand(); // _ZN15TeleportCommandD2Ev

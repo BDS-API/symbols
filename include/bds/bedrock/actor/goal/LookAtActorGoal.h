@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class LookAtActorGoal : Goal {
+class LookAtActorGoal : public Goal {
 
 public:
     ~LookAtActorGoal(); // _ZN15LookAtActorGoalD2Ev

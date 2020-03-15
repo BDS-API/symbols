@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../../../unmapped/ContainerContentChangeListener.h"
+#include <string>
 #include "IEntityComponent.h"
 
 
-class ContainerComponent : ContainerContentChangeListener, IEntityComponent {
+class ContainerComponent : public ContainerContentChangeListener, public IEntityComponent {
 
 public:
     virtual void containerContentChanged(int); // _ZN18ContainerComponent23containerContentChangedEi

@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class VexCopyOwnerTargetGoal : TargetGoal {
+class VexCopyOwnerTargetGoal : public TargetGoal {
 
 public:
     ~VexCopyOwnerTargetGoal(); // _ZN22VexCopyOwnerTargetGoalD2Ev

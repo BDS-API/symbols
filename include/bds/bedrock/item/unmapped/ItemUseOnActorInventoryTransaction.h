@@ -4,7 +4,7 @@
 #include "../../actor/unmapped/ActorRuntimeID.h"
 
 
-class ItemUseOnActorInventoryTransaction : ComplexInventoryTransaction {
+class ItemUseOnActorInventoryTransaction : public ComplexInventoryTransaction {
 
 public:
     ~ItemUseOnActorInventoryTransaction(); // _ZN34ItemUseOnActorInventoryTransactionD2Ev

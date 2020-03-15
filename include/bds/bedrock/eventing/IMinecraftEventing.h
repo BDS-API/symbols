@@ -4,7 +4,7 @@
 #include "../../unmapped/IPackTelemetry.h"
 
 
-class IMinecraftEventing : IPackTelemetry, IWebviewTelemetry {
+class IMinecraftEventing : public IPackTelemetry, public IWebviewTelemetry {
 
 public:
     ~IMinecraftEventing(); // _ZN18IMinecraftEventingD2Ev

@@ -5,7 +5,7 @@
 
 namespace VanillaSurfaceBuilders {
 
-    class SwampSurfaceBuilder : ISurfaceBuilder {
+    class SwampSurfaceBuilder : public ISurfaceBuilder {
 
     public:
         ~SwampSurfaceBuilder(); // _ZN22VanillaSurfaceBuilders19SwampSurfaceBuilderD2Ev

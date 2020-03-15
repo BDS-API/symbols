@@ -3,7 +3,7 @@
 #include "Control.h"
 
 
-class MoveControl : Control {
+class MoveControl : public Control {
 
 public:
     static long MIN_SPEED;

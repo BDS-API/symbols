@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class Throwable : Actor {
+class Throwable : public Actor {
 
 public:
 //  virtual void initializeComponents(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN9Throwable20initializeComponentsEN5Actor20InitializationMethodERK20VariantParameterList

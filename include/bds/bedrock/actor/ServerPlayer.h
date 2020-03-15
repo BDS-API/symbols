@@ -1,14 +1,14 @@
 #pragma once
 
-#include "../../mce/UUID.h"
-#include "Player.h"
-#include <vector>
 #include <memory>
+#include <vector>
+#include "Player.h"
 #include <string>
 #include <functional>
+#include "../../mce/UUID.h"
 
 
-class ServerPlayer : Player {
+class ServerPlayer : public Player {
 
 public:
     class NearbyActor;

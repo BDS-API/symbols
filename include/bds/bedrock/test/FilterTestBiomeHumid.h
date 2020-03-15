@@ -3,7 +3,7 @@
 #include "SimpleBoolFilterTest.h"
 
 
-class FilterTestBiomeHumid : SimpleBoolFilterTest {
+class FilterTestBiomeHumid : public SimpleBoolFilterTest {
 
 public:
     ~FilterTestBiomeHumid(); // _ZN20FilterTestBiomeHumidD2Ev

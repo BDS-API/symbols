@@ -4,7 +4,7 @@
 #include "Enchant.h"
 
 
-class ProtectionEnchant : Enchant {
+class ProtectionEnchant : public Enchant {
 
 public:
     static long THORNS_CHANCE_PER_LEVEL;

@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include <functional>
 #include "AppPlatform.h"
+#include <string>
 
 
-class AppPlatform_linux : AppPlatform {
+class AppPlatform_linux : public AppPlatform {
 
 public:
     ~AppPlatform_linux(); // _ZN17AppPlatform_linuxD2Ev

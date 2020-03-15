@@ -3,7 +3,7 @@
 #include "SimpleFloatFilterTest.h"
 
 
-class FilterTestTemperatureValue : SimpleFloatFilterTest {
+class FilterTestTemperatureValue : public SimpleFloatFilterTest {
 
 public:
     ~FilterTestTemperatureValue(); // _ZN26FilterTestTemperatureValueD2Ev

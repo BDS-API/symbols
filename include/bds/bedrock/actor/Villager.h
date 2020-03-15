@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "VillagerBase.h"
+#include <string>
 
 
-class Villager : VillagerBase {
+class Villager : public VillagerBase {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN8Villager15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

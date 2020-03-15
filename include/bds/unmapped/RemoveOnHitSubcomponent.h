@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class RemoveOnHitSubcomponent : OnHitSubcomponent {
+class RemoveOnHitSubcomponent : public OnHitSubcomponent {
 
 public:
     ~RemoveOnHitSubcomponent(); // _ZN23RemoveOnHitSubcomponentD2Ev

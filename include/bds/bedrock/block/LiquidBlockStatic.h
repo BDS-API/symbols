@@ -4,7 +4,7 @@
 #include "LiquidBlock.h"
 
 
-class LiquidBlockStatic : LiquidBlock {
+class LiquidBlockStatic : public LiquidBlock {
 
 public:
     ~LiquidBlockStatic(); // _ZN17LiquidBlockStaticD2Ev

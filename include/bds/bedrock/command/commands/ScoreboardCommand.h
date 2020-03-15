@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include <functional>
 #include "../Command.h"
+#include <functional>
 #include <vector>
 
 
-class ScoreboardCommand : Command {
+class ScoreboardCommand : public Command {
 
 public:
     class InitProxy;

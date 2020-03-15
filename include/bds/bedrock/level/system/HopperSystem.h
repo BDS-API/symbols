@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class HopperSystem : ITickingSystem {
+class HopperSystem : public ITickingSystem {
 
 public:
     ~HopperSystem(); // _ZN12HopperSystemD2Ev

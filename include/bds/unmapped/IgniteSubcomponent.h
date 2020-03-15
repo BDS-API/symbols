@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class IgniteSubcomponent : OnHitSubcomponent {
+class IgniteSubcomponent : public OnHitSubcomponent {
 
 public:
     ~IgniteSubcomponent(); // _ZN18IgniteSubcomponentD2Ev

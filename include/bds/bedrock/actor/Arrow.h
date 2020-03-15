@@ -1,10 +1,10 @@
 #pragma once
 
-#include "AbstractArrow.h"
 #include "../../unmapped/MobEffectInstance.h"
+#include "AbstractArrow.h"
 
 
-class Arrow : AbstractArrow {
+class Arrow : public AbstractArrow {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN5Arrow15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

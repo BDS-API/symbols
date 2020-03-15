@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class FrictionModifierDescription : PropertyDescription {
+class FrictionModifierDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK27FrictionModifierDescription11getJsonNameEv

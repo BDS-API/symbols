@@ -3,7 +3,7 @@
 #include "Monster.h"
 
 
-class IllagerBeast : Monster {
+class IllagerBeast : public Monster {
 
 public:
     ~IllagerBeast(); // _ZN12IllagerBeastD2Ev

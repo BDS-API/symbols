@@ -4,7 +4,7 @@
 #include "ScriptEventData.h"
 
 
-class ScriptServerBlockDestructionStoppedEvent : ScriptEventData {
+class ScriptServerBlockDestructionStoppedEvent : public ScriptEventData {
 
 public:
     static long mHash;

@@ -5,7 +5,7 @@
 #include "../../container/Container.h"
 
 
-class FurnaceBlockActor : BlockActor, Container {
+class FurnaceBlockActor : public BlockActor, public Container {
 
 public:
     static std::string ITEMS_LIST_KEY;

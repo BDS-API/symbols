@@ -1,11 +1,11 @@
 #pragma once
 
+#include "GameConnectionInfo.h"
 #include <string>
 #include "Connector.h"
-#include "GameConnectionInfo.h"
 
 
-class LocalConnector : Connector {
+class LocalConnector : public Connector {
 
 public:
     class ConnectionCallbacks;

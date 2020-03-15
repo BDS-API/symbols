@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class MonsterRoomFeature : Feature {
+class MonsterRoomFeature : public Feature {
 
 public:
     ~MonsterRoomFeature(); // _ZN18MonsterRoomFeatureD2Ev

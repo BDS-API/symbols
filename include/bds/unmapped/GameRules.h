@@ -1,8 +1,8 @@
 #pragma once
 
 #include <string>
-#include "GameRuleId.h"
 #include "GameRule.h"
+#include "GameRuleId.h"
 
 
 class GameRules {

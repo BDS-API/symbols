@@ -4,7 +4,7 @@
 #include "HeavyBlock.h"
 
 
-class DragonEggBlock : HeavyBlock {
+class DragonEggBlock : public HeavyBlock {
 
 public:
     ~DragonEggBlock(); // _ZN14DragonEggBlockD2Ev

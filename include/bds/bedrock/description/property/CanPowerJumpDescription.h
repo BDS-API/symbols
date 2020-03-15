@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class CanPowerJumpDescription : PropertyDescription {
+class CanPowerJumpDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK23CanPowerJumpDescription11getJsonNameEv

@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include "Item.h"
+#include <memory>
 
 
-class ArmorItem : Item {
+class ArmorItem : public Item {
 
 public:
     class ArmorMaterial;

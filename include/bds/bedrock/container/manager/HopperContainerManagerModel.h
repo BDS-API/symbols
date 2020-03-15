@@ -3,7 +3,7 @@
 #include "LevelContainerManagerModel.h"
 
 
-class HopperContainerManagerModel : LevelContainerManagerModel {
+class HopperContainerManagerModel : public LevelContainerManagerModel {
 
 public:
     ~HopperContainerManagerModel(); // _ZN27HopperContainerManagerModelD2Ev

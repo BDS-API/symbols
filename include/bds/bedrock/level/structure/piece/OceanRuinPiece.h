@@ -6,7 +6,7 @@
 
 namespace OceanRuinPieces {
 
-    class OceanRuinPiece : TemplateStructurePiece {
+    class OceanRuinPiece : public TemplateStructurePiece {
 
     public:
         ~OceanRuinPiece(); // _ZN15OceanRuinPieces14OceanRuinPieceD2Ev

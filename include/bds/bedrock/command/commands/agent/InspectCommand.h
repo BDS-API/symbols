@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class InspectCommand : AgentCommands::Command {
+    class InspectCommand : public AgentCommands::Command {
 
     public:
         ~InspectCommand(); // _ZN13AgentCommands14InspectCommandD2Ev

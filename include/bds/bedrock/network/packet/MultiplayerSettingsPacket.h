@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class MultiplayerSettingsPacket : Packet {
+class MultiplayerSettingsPacket : public Packet {
 
 public:
     ~MultiplayerSettingsPacket(); // _ZN25MultiplayerSettingsPacketD2Ev

@@ -10,7 +10,7 @@ namespace com {
 
             namespace protocol {
 
-                class MetricReport_LatencyMetric /*google::protobuf::Message*/ { //TODO: incomplete class definition
+                class MetricReport_LatencyMetric /*public google::protobuf::Message*/ { //TODO: incomplete class definition
 
                 public:
                     ~MetricReport_LatencyMetric(); // _ZN3com6mojang6clacks8protocol26MetricReport_LatencyMetricD2Ev

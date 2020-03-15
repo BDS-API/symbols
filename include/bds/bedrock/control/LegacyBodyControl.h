@@ -3,7 +3,7 @@
 #include "BodyControl.h"
 
 
-class LegacyBodyControl : BodyControl {
+class LegacyBodyControl : public BodyControl {
 
 public:
     ~LegacyBodyControl(); // _ZN17LegacyBodyControlD2Ev

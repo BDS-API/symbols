@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class FunctionEntry : IFunctionEntry {
+class FunctionEntry : public IFunctionEntry {
 
 public:
     ~FunctionEntry(); // _ZN13FunctionEntryD2Ev

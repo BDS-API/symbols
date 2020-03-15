@@ -1,11 +1,11 @@
 #pragma once
 
-#include <memory>
 #include "OnHitSubcomponent.h"
+#include <memory>
 #include <vector>
 
 
-class SplashPotionEffectSubcomponent : OnHitSubcomponent {
+class SplashPotionEffectSubcomponent : public OnHitSubcomponent {
 
 public:
     ~SplashPotionEffectSubcomponent(); // _ZN30SplashPotionEffectSubcomponentD2Ev

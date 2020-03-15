@@ -4,7 +4,7 @@
 #include "ITaskGroup.h"
 
 
-class InternalTaskGroup : ITaskGroup {
+class InternalTaskGroup : public ITaskGroup {
 
 public:
     ~InternalTaskGroup(); // _ZN17InternalTaskGroupD2Ev

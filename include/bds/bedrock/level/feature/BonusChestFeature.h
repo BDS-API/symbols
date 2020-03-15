@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class BonusChestFeature : Feature {
+class BonusChestFeature : public Feature {
 
 public:
     ~BonusChestFeature(); // _ZN17BonusChestFeatureD2Ev

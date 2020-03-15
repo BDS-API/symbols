@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class FireImmuneDescription : PropertyDescription {
+class FireImmuneDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK21FireImmuneDescription11getJsonNameEv

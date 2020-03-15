@@ -3,7 +3,7 @@
 #include "DefintionDescription.h"
 
 
-class RuntimeIdentifierDescription : DefintionDescription {
+class RuntimeIdentifierDescription : public DefintionDescription {
 
 public:
     ~RuntimeIdentifierDescription(); // _ZN28RuntimeIdentifierDescriptionD2Ev

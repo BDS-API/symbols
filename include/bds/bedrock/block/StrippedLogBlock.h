@@ -4,7 +4,7 @@
 #include <string>
 
 
-class StrippedLogBlock : RotatedPillarBlock {
+class StrippedLogBlock : public RotatedPillarBlock {
 
 public:
     ~StrippedLogBlock(); // _ZN16StrippedLogBlockD2Ev

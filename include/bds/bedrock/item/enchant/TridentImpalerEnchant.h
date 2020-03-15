@@ -4,7 +4,7 @@
 #include "Enchant.h"
 
 
-class TridentImpalerEnchant : Enchant {
+class TridentImpalerEnchant : public Enchant {
 
 public:
     ~TridentImpalerEnchant(); // _ZN21TridentImpalerEnchantD2Ev

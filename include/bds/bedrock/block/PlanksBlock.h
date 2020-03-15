@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class PlanksBlock : BlockLegacy {
+class PlanksBlock : public BlockLegacy {
 
 public:
     static std::string WOOD_NAMES;

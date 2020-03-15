@@ -3,7 +3,7 @@
 #include "../Description.h"
 
 
-class ComponentDescription : Description {
+class ComponentDescription : public Description {
 
 public:
     ~ComponentDescription(); // _ZN20ComponentDescriptionD2Ev

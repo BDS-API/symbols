@@ -3,7 +3,7 @@
 #include "BehaviorDefinition.h"
 
 
-class ConsumeItemDefinition : BehaviorDefinition {
+class ConsumeItemDefinition : public BehaviorDefinition {
 
 public:
     ~ConsumeItemDefinition(); // _ZN21ConsumeItemDefinitionD2Ev

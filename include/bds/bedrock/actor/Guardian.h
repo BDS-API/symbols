@@ -3,7 +3,7 @@
 #include "Monster.h"
 
 
-class Guardian : Monster {
+class Guardian : public Monster {
 
 public:
     static long ATTACK_TIME;

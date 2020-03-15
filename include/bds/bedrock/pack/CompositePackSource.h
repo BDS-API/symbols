@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class CompositePackSource : PackSource {
+class CompositePackSource : public PackSource {
 
 public:
     ~CompositePackSource(); // _ZN19CompositePackSourceD2Ev

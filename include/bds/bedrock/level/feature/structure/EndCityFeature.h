@@ -3,7 +3,7 @@
 #include "StructureFeature.h"
 
 
-class EndCityFeature : StructureFeature {
+class EndCityFeature : public StructureFeature {
 
 public:
     ~EndCityFeature(); // _ZN14EndCityFeatureD2Ev

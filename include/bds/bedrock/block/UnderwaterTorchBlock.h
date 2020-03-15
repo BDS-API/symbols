@@ -4,7 +4,7 @@
 #include "TorchBlock.h"
 
 
-class UnderwaterTorchBlock : TorchBlock {
+class UnderwaterTorchBlock : public TorchBlock {
 
 public:
     ~UnderwaterTorchBlock(); // _ZN20UnderwaterTorchBlockD2Ev

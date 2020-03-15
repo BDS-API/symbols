@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class ResourcePackStackPacket : Packet {
+class ResourcePackStackPacket : public Packet {
 
 public:
     ~ResourcePackStackPacket(); // _ZN23ResourcePackStackPacketD2Ev

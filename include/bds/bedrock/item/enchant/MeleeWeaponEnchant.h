@@ -4,7 +4,7 @@
 #include "Enchant.h"
 
 
-class MeleeWeaponEnchant : Enchant {
+class MeleeWeaponEnchant : public Enchant {
 
 public:
     ~MeleeWeaponEnchant(); // _ZN18MeleeWeaponEnchantD2Ev

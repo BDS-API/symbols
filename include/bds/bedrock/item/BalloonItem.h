@@ -1,12 +1,12 @@
 #pragma once
 
+#include "../util/BlockPos.h"
 #include <string>
 #include <memory>
-#include "../util/BlockPos.h"
 #include "ChemistryItem.h"
 
 
-class BalloonItem : ChemistryItem {
+class BalloonItem : public ChemistryItem {
 
 public:
     ~BalloonItem(); // _ZN11BalloonItemD2Ev

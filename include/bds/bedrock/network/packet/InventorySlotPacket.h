@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class InventorySlotPacket : Packet {
+class InventorySlotPacket : public Packet {
 
 public:
     ~InventorySlotPacket(); // _ZN19InventorySlotPacketD2Ev

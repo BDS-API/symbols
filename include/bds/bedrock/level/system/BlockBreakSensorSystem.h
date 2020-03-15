@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BlockBreakSensorSystem : ITickingSystem {
+class BlockBreakSensorSystem : public ITickingSystem {
 
 public:
     ~BlockBreakSensorSystem(); // _ZN22BlockBreakSensorSystemD2Ev

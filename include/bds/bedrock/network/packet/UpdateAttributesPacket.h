@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class UpdateAttributesPacket : Packet {
+class UpdateAttributesPacket : public Packet {
 
 public:
     class AttributeData;

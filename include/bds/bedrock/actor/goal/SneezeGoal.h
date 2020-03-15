@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SneezeGoal : Goal {
+class SneezeGoal : public Goal {
 
 public:
     ~SneezeGoal(); // _ZN10SneezeGoalD2Ev

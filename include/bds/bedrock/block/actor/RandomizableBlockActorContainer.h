@@ -5,7 +5,7 @@
 #include "../../container/Container.h"
 
 
-class RandomizableBlockActorContainer : RandomizableBlockActorContainerBase, Container {
+class RandomizableBlockActorContainer : public RandomizableBlockActorContainerBase, public Container {
 
 public:
     ~RandomizableBlockActorContainer(); // _ZN31RandomizableBlockActorContainerD2Ev

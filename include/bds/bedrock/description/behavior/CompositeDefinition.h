@@ -1,12 +1,12 @@
 #pragma once
 
-#include "../../../json/Value.h"
-#include "BehaviorDefinition.h"
-#include <vector>
 #include "../../../unmapped/BehaviorTreeDefinitionPtr.h"
+#include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
+#include <vector>
 
 
-class CompositeDefinition : BehaviorDefinition {
+class CompositeDefinition : public BehaviorDefinition {
 
 public:
     ~CompositeDefinition(); // _ZN19CompositeDefinitionD2Ev

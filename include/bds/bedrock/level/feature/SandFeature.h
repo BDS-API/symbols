@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class SandFeature : Feature {
+class SandFeature : public Feature {
 
 public:
     ~SandFeature(); // _ZN11SandFeatureD2Ev

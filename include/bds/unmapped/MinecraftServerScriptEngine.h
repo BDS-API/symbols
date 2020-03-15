@@ -3,7 +3,7 @@
 #include "ServerInstanceEventListener.h"
 
 
-class MinecraftServerScriptEngine : ServerInstanceEventListener /*ScriptEngineWithContext<ScriptServerContext>*/ { //TODO: incomplete class definition
+class MinecraftServerScriptEngine : public ServerInstanceEventListener /*public ScriptEngineWithContext<ScriptServerContext>*/ { //TODO: incomplete class definition
 
 public:
     ~MinecraftServerScriptEngine(); // _ZN27MinecraftServerScriptEngineD2Ev

@@ -3,7 +3,7 @@
 #include "Monster.h"
 
 
-class Blaze : Monster {
+class Blaze : public Monster {
 
 public:
     ~Blaze(); // _ZN5BlazeD2Ev

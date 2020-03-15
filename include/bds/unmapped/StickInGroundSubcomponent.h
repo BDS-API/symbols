@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class StickInGroundSubcomponent : OnHitSubcomponent {
+class StickInGroundSubcomponent : public OnHitSubcomponent {
 
 public:
     ~StickInGroundSubcomponent(); // _ZN25StickInGroundSubcomponentD2Ev

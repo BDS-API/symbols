@@ -1,18 +1,18 @@
 #pragma once
 
-#include "../../unmapped/MultiplayerServiceObserver.h"
-#include <unordered_map>
-#include "../../mce/UUID.h"
-#include "../../unmapped/XboxLiveUserObserver.h"
-#include <vector>
 #include <memory>
-#include "../level/LevelListener.h"
+#include <vector>
+#include <unordered_map>
+#include "../../unmapped/XboxLiveUserObserver.h"
+#include "../../unmapped/MultiplayerServiceObserver.h"
 #include <string>
-#include "NetEventCallback.h"
 #include <functional>
+#include "NetEventCallback.h"
+#include "../level/LevelListener.h"
+#include "../../mce/UUID.h"
 
 
-class ServerNetworkHandler : NetEventCallback, LevelListener, Social::MultiplayerServiceObserver, Social::XboxLiveUserObserver {
+class ServerNetworkHandler : public NetEventCallback, public LevelListener, public Social::MultiplayerServiceObserver, public Social::XboxLiveUserObserver {
 
 public:
     class Client;

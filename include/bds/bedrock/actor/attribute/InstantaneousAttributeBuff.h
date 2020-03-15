@@ -3,7 +3,7 @@
 #include "AttributeBuff.h"
 
 
-class InstantaneousAttributeBuff : AttributeBuff {
+class InstantaneousAttributeBuff : public AttributeBuff {
 
 public:
     ~InstantaneousAttributeBuff(); // _ZN26InstantaneousAttributeBuffD2Ev

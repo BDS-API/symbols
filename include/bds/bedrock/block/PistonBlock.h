@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class PistonBlock : ActorBlock {
+class PistonBlock : public ActorBlock {
 
 public:
     static long ARM_DIRECTION_OFFSETS;

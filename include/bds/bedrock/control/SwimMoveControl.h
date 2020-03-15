@@ -3,7 +3,7 @@
 #include "MoveControl.h"
 
 
-class SwimMoveControl : MoveControl {
+class SwimMoveControl : public MoveControl {
 
 public:
     ~SwimMoveControl(); // _ZN15SwimMoveControlD2Ev

@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class CartographyInputContainerController : ContainerController {
+class CartographyInputContainerController : public ContainerController {
 
 public:
     ~CartographyInputContainerController(); // _ZN35CartographyInputContainerControllerD2Ev

@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class PillagerOutpostStart : StructureStart {
+class PillagerOutpostStart : public StructureStart {
 
 public:
     ~PillagerOutpostStart(); // _ZN20PillagerOutpostStartD2Ev

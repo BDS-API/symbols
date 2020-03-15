@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ResourcePackDataInfoPacket : Packet {
+class ResourcePackDataInfoPacket : public Packet {
 
 public:
     ~ResourcePackDataInfoPacket(); // _ZN26ResourcePackDataInfoPacketD2Ev

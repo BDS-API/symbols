@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class MoveCommand : AgentCommands::Command {
+    class MoveCommand : public AgentCommands::Command {
 
     public:
         ~MoveCommand(); // _ZN13AgentCommands11MoveCommandD2Ev

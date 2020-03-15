@@ -1,8 +1,8 @@
 #pragma once
 
 #include <string>
-#include <vector>
 #include "../json/Value.h"
+#include <vector>
 
 
 class LootTable {

@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class UseActorNode : BehaviorNode {
+class UseActorNode : public BehaviorNode {
 
 public:
     ~UseActorNode(); // _ZN12UseActorNodeD2Ev

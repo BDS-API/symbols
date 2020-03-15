@@ -3,7 +3,7 @@
 #include "FillingContainer.h"
 
 
-class EnderChestContainer : FillingContainer {
+class EnderChestContainer : public FillingContainer {
 
 public:
     static long ITEMS_SIZE;

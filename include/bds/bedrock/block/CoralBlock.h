@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class CoralBlock : BlockLegacy {
+class CoralBlock : public BlockLegacy {
 
 public:
     static long DEAD_CORAL_OFFSET;

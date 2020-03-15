@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class ComplexItem : Item {
+class ComplexItem : public Item {
 
 public:
     ~ComplexItem(); // _ZN11ComplexItemD2Ev

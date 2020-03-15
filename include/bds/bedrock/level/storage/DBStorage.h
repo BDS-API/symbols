@@ -1,15 +1,15 @@
 #pragma once
 
-#include "../../../unmapped/DBStorageConfig.h"
 #include "LevelStorage.h"
 #include <memory>
-#include "../../../unmapped/TaskResult.h"
+#include "../../../unmapped/DBStorageConfig.h"
+#include <atomic>
 #include <string>
 #include <functional>
-#include <atomic>
+#include "../../../unmapped/TaskResult.h"
 
 
-class DBStorage : LevelStorage {
+class DBStorage : public LevelStorage {
 
 public:
     class DBStorageToken;

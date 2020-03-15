@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "BlockActor.h"
+#include <memory>
 
 
-class MovingBlockActor : BlockActor {
+class MovingBlockActor : public BlockActor {
 
 public:
     ~MovingBlockActor(); // _ZN16MovingBlockActorD2Ev

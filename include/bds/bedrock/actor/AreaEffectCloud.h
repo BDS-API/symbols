@@ -1,11 +1,11 @@
 #pragma once
 
+#include "Actor.h"
 #include "unmapped/ActorUniqueID.h"
 #include "../../unmapped/MobEffectInstance.h"
-#include "Actor.h"
 
 
-class AreaEffectCloud : Actor {
+class AreaEffectCloud : public Actor {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN15AreaEffectCloud15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

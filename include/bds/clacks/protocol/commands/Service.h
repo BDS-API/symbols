@@ -12,7 +12,7 @@ namespace com {
 
                 namespace Commands {
 
-                    class Service /*grpc::Service*/ { //TODO: incomplete class definition
+                    class Service /*public grpc::Service*/ { //TODO: incomplete class definition
 
                     public:
                         ~Service(); // _ZN3com6mojang6clacks8protocol8Commands7ServiceD2Ev

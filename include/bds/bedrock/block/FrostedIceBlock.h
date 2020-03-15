@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class FrostedIceBlock : BlockLegacy {
+class FrostedIceBlock : public BlockLegacy {
 
 public:
     static long MIN_NEIGHBORS;

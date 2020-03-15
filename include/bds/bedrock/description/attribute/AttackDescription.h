@@ -3,7 +3,7 @@
 #include "AttributeDescription.h"
 
 
-class AttackDescription : AttributeDescription {
+class AttackDescription : public AttributeDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK17AttackDescription11getJsonNameEv

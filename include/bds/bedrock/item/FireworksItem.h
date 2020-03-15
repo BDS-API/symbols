@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
-#include <vector>
+#include <string>
 #include "Item.h"
+#include <vector>
 
 
-class FireworksItem : Item {
+class FireworksItem : public Item {
 
 public:
     static std::string TAG_FIREWORKS;

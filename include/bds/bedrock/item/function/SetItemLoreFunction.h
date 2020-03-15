@@ -1,12 +1,12 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include <memory>
 #include "LootItemFunction.h"
+#include "../../../json/Value.h"
 #include <vector>
 
 
-class SetItemLoreFunction : LootItemFunction {
+class SetItemLoreFunction : public LootItemFunction {
 
 public:
     ~SetItemLoreFunction(); // _ZN19SetItemLoreFunctionD2Ev

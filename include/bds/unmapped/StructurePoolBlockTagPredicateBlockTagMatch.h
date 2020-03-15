@@ -3,7 +3,7 @@
 #include "IStructurePoolBlockTagPredicate.h"
 
 
-class StructurePoolBlockTagPredicateBlockTagMatch : IStructurePoolBlockTagPredicate {
+class StructurePoolBlockTagPredicateBlockTagMatch : public IStructurePoolBlockTagPredicate {
 
 public:
     ~StructurePoolBlockTagPredicateBlockTagMatch(); // _ZN43StructurePoolBlockTagPredicateBlockTagMatchD2Ev

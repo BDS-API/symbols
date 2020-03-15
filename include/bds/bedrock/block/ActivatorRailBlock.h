@@ -4,7 +4,7 @@
 #include "BaseRailBlock.h"
 
 
-class ActivatorRailBlock : BaseRailBlock {
+class ActivatorRailBlock : public BaseRailBlock {
 
 public:
     ~ActivatorRailBlock(); // _ZN18ActivatorRailBlockD2Ev

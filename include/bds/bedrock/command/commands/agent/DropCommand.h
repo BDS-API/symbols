@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class DropCommand : AgentCommands::Command {
+    class DropCommand : public AgentCommands::Command {
 
     public:
         ~DropCommand(); // _ZN13AgentCommands11DropCommandD2Ev

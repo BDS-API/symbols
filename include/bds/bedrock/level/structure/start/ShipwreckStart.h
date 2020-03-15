@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class ShipwreckStart : StructureStart {
+class ShipwreckStart : public StructureStart {
 
 public:
     ~ShipwreckStart(); // _ZN14ShipwreckStartD2Ev

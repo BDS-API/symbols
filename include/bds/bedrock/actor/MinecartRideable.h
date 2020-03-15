@@ -3,7 +3,7 @@
 #include "Minecart.h"
 
 
-class MinecartRideable : Minecart {
+class MinecartRideable : public Minecart {
 
 public:
     ~MinecartRideable(); // _ZN16MinecartRideableD2Ev

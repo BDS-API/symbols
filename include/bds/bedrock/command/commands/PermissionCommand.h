@@ -3,7 +3,7 @@
 #include "ServerCommand.h"
 
 
-class PermissionCommand : ServerCommand {
+class PermissionCommand : public ServerCommand {
 
 public:
     static long mPermissionsFile;

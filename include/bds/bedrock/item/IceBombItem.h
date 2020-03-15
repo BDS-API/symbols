@@ -4,7 +4,7 @@
 #include "ChemistryItem.h"
 
 
-class IceBombItem : ChemistryItem {
+class IceBombItem : public ChemistryItem {
 
 public:
     ~IceBombItem(); // _ZN11IceBombItemD2Ev

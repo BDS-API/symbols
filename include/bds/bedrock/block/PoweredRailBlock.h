@@ -4,7 +4,7 @@
 #include "BaseRailBlock.h"
 
 
-class PoweredRailBlock : BaseRailBlock {
+class PoweredRailBlock : public BaseRailBlock {
 
 public:
     ~PoweredRailBlock(); // _ZN16PoweredRailBlockD2Ev

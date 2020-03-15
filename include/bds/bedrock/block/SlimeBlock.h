@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class SlimeBlock : BlockLegacy {
+class SlimeBlock : public BlockLegacy {
 
 public:
     ~SlimeBlock(); // _ZN10SlimeBlockD2Ev

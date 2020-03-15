@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class PrismarineBlock : BlockLegacy {
+class PrismarineBlock : public BlockLegacy {
 
 public:
     ~PrismarineBlock(); // _ZN15PrismarineBlockD2Ev

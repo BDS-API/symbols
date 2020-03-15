@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class SeaGrass : BlockLegacy {
+class SeaGrass : public BlockLegacy {
 
 public:
     ~SeaGrass(); // _ZN8SeaGrassD2Ev

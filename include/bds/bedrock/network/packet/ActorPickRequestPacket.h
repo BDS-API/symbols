@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ActorPickRequestPacket : Packet {
+class ActorPickRequestPacket : public Packet {
 
 public:
     ~ActorPickRequestPacket(); // _ZN22ActorPickRequestPacketD2Ev

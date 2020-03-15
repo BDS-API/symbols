@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class TransformationSystem : ITickingSystem {
+class TransformationSystem : public ITickingSystem {
 
 public:
     ~TransformationSystem(); // _ZN20TransformationSystemD2Ev

@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class CoralHangFeature : Feature {
+class CoralHangFeature : public Feature {
 
 public:
     ~CoralHangFeature(); // _ZN16CoralHangFeatureD2Ev

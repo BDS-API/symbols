@@ -4,7 +4,7 @@
 #include "HeavyBlock.h"
 
 
-class SandBlock : HeavyBlock {
+class SandBlock : public HeavyBlock {
 
 public:
     ~SandBlock(); // _ZN9SandBlockD2Ev

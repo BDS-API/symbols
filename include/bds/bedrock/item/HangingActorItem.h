@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
 
 
-class HangingActorItem : Item {
+class HangingActorItem : public Item {
 
 public:
     ~HangingActorItem(); // _ZN16HangingActorItemD2Ev

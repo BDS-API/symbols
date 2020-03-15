@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class Skeleton : HumanoidMonster {
+class Skeleton : public HumanoidMonster {
 
 public:
     static long SPEED_MODIFIER_ATTACK_UUID;

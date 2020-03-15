@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class EatCarriedItemGoal : Goal {
+class EatCarriedItemGoal : public Goal {
 
 public:
     static long EATING_TIME;

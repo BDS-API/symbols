@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class FreezeOnHitSubcomponent : OnHitSubcomponent {
+class FreezeOnHitSubcomponent : public OnHitSubcomponent {
 
 public:
     ~FreezeOnHitSubcomponent(); // _ZN23FreezeOnHitSubcomponentD2Ev

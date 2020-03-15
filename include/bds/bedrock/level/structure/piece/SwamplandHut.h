@@ -3,7 +3,7 @@
 #include "ScatteredFeaturePiece.h"
 
 
-class SwamplandHut : ScatteredFeaturePiece {
+class SwamplandHut : public ScatteredFeaturePiece {
 
 public:
     ~SwamplandHut(); // _ZN12SwamplandHutD2Ev

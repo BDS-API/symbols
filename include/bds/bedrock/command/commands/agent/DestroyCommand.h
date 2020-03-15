@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class DestroyCommand : AgentCommands::Command {
+    class DestroyCommand : public AgentCommands::Command {
 
     public:
         ~DestroyCommand(); // _ZN13AgentCommands14DestroyCommandD2Ev

@@ -3,7 +3,7 @@
 #include "RandomStrollGoal.h"
 
 
-class WitherRandomAttackPosGoal : RandomStrollGoal {
+class WitherRandomAttackPosGoal : public RandomStrollGoal {
 
 public:
     ~WitherRandomAttackPosGoal(); // _ZN25WitherRandomAttackPosGoalD2Ev

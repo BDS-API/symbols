@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class WeaponItem : Item {
+class WeaponItem : public Item {
 
 public:
     ~WeaponItem(); // _ZN10WeaponItemD2Ev

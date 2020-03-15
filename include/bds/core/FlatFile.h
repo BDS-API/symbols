@@ -1,14 +1,14 @@
 #pragma once
 
+#include "FileImpl.h"
 #include <string>
 #include <memory>
 #include "FileOpenMode.h"
-#include "FileImpl.h"
 
 
 namespace Core {
 
-    class FlatFile : Core::FileImpl {
+    class FlatFile : public Core::FileImpl {
 
     public:
         ~FlatFile(); // _ZN4Core8FlatFileD2Ev

@@ -3,7 +3,7 @@
 #include <string>
 
 
-class ScriptServerSpawnParticleInWorldEvent /*ScriptTemplateFactory<ScriptServerContext>::ReceivedEvent*/ { //TODO: incomplete class definition
+class ScriptServerSpawnParticleInWorldEvent /*public ScriptTemplateFactory<ScriptServerContext>::ReceivedEvent*/ { //TODO: incomplete class definition
 
 public:
     static long mHash;

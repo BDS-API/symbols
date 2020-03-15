@@ -5,7 +5,7 @@
 
 namespace Core {
 
-    class InputFileStream : Core::FileStream {
+    class InputFileStream : public Core::FileStream {
 
     public:
         ~InputFileStream(); // _ZN4Core15InputFileStreamD1Ev

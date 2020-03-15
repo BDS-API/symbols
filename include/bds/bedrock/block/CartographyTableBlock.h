@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class CartographyTableBlock : BlockLegacy {
+class CartographyTableBlock : public BlockLegacy {
 
 public:
     ~CartographyTableBlock(); // _ZN21CartographyTableBlockD2Ev

@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class GetItemSpaceCommand : AgentCommands::Command {
+    class GetItemSpaceCommand : public AgentCommands::Command {
 
     public:
         ~GetItemSpaceCommand(); // _ZN13AgentCommands19GetItemSpaceCommandD2Ev

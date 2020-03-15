@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class PickupItemsGoal : Goal {
+class PickupItemsGoal : public Goal {
 
 public:
     ~PickupItemsGoal(); // _ZN15PickupItemsGoalD2Ev

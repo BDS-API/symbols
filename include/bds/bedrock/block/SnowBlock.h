@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class SnowBlock : BlockLegacy {
+class SnowBlock : public BlockLegacy {
 
 public:
     ~SnowBlock(); // _ZN9SnowBlockD2Ev

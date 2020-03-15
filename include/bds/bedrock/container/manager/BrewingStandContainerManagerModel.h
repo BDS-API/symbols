@@ -3,7 +3,7 @@
 #include "ContainerManagerModel.h"
 
 
-class BrewingStandContainerManagerModel : ContainerManagerModel {
+class BrewingStandContainerManagerModel : public ContainerManagerModel {
 
 public:
     ~BrewingStandContainerManagerModel(); // _ZN33BrewingStandContainerManagerModelD2Ev

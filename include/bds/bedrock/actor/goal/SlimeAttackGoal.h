@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class SlimeAttackGoal : Goal {
+class SlimeAttackGoal : public Goal {
 
 public:
     ~SlimeAttackGoal(); // _ZN15SlimeAttackGoalD2Ev

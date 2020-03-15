@@ -3,7 +3,7 @@
 #include "Control.h"
 
 
-class BodyControl : Control {
+class BodyControl : public Control {
 
 public:
     static long MAX_CLAMP_ANGLE;

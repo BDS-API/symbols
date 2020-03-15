@@ -4,7 +4,7 @@
 #include "DecoratorDefinition.h"
 
 
-class InverterDefinition : DecoratorDefinition {
+class InverterDefinition : public DecoratorDefinition {
 
 public:
     ~InverterDefinition(); // _ZN18InverterDefinitionD2Ev

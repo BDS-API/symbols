@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class StopCommand : Command {
+class StopCommand : public Command {
 
 public:
     static long mServer;

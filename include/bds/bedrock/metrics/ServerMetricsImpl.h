@@ -5,7 +5,7 @@
 #include "ServerMetrics.h"
 
 
-class ServerMetricsImpl : ServerMetrics {
+class ServerMetricsImpl : public ServerMetrics {
 
 public:
     ~ServerMetricsImpl(); // _ZN17ServerMetricsImplD2Ev

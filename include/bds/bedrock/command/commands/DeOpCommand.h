@@ -3,7 +3,7 @@
 #include "ServerCommand.h"
 
 
-class DeOpCommand : ServerCommand {
+class DeOpCommand : public ServerCommand {
 
 public:
     ~DeOpCommand(); // _ZN11DeOpCommandD2Ev

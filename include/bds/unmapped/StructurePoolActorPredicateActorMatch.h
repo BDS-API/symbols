@@ -4,7 +4,7 @@
 #include "IStructurePoolActorPredicate.h"
 
 
-class StructurePoolActorPredicateActorMatch : IStructurePoolActorPredicate {
+class StructurePoolActorPredicateActorMatch : public IStructurePoolActorPredicate {
 
 public:
     ~StructurePoolActorPredicateActorMatch(); // _ZN37StructurePoolActorPredicateActorMatchD2Ev

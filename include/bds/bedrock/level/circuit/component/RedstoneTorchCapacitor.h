@@ -3,7 +3,7 @@
 #include "CapacitorComponent.h"
 
 
-class RedstoneTorchCapacitor : CapacitorComponent {
+class RedstoneTorchCapacitor : public CapacitorComponent {
 
 public:
     ~RedstoneTorchCapacitor(); // _ZN22RedstoneTorchCapacitorD2Ev

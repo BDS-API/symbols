@@ -3,7 +3,7 @@
 #include "SimpleBoolFilterTest.h"
 
 
-class FilterTestDaytime : SimpleBoolFilterTest {
+class FilterTestDaytime : public SimpleBoolFilterTest {
 
 public:
     ~FilterTestDaytime(); // _ZN17FilterTestDaytimeD2Ev

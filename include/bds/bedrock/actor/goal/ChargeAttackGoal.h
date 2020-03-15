@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class ChargeAttackGoal : Goal {
+class ChargeAttackGoal : public Goal {
 
 public:
     ~ChargeAttackGoal(); // _ZN16ChargeAttackGoalD2Ev

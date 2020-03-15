@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class InteractActionNode : BehaviorNode {
+class InteractActionNode : public BehaviorNode {
 
 public:
     ~InteractActionNode(); // _ZN18InteractActionNodeD2Ev

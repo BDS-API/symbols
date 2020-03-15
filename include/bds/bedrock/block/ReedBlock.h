@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ReedBlock : BlockLegacy {
+class ReedBlock : public BlockLegacy {
 
 public:
     ~ReedBlock(); // _ZN9ReedBlockD2Ev

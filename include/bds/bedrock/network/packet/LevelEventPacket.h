@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class LevelEventPacket : Packet {
+class LevelEventPacket : public Packet {
 
 public:
     ~LevelEventPacket(); // _ZN16LevelEventPacketD2Ev

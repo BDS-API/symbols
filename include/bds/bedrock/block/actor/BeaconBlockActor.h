@@ -5,7 +5,7 @@
 #include "../../container/Container.h"
 
 
-class BeaconBlockActor : BlockActor, Container {
+class BeaconBlockActor : public BlockActor, public Container {
 
 public:
     ~BeaconBlockActor(); // _ZN16BeaconBlockActorD2Ev

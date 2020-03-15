@@ -1,12 +1,12 @@
 #pragma once
 
-#include <map>
-#include "Option.h"
-#include <vector>
 #include <string>
+#include <vector>
+#include "Option.h"
+#include <map>
 
 
-class InputModeFloatOption : Option {
+class InputModeFloatOption : public Option {
 
 public:
     ~InputModeFloatOption(); // _ZN20InputModeFloatOptionD2Ev

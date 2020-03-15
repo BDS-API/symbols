@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class HugeMushroomBlock : BlockLegacy {
+class HugeMushroomBlock : public BlockLegacy {
 
 public:
     ~HugeMushroomBlock(); // _ZN17HugeMushroomBlockD2Ev

@@ -5,7 +5,7 @@
 #include "../../container/Container.h"
 
 
-class CauldronBlockActor : BlockActor, Container {
+class CauldronBlockActor : public BlockActor, public Container {
 
 public:
     static long WATER_COLOR;

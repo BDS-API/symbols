@@ -3,7 +3,7 @@
 #include <memory>
 
 
-class InMemorySequentialFile /*leveldb::SequentialFile*/ { //TODO: incomplete class definition
+class InMemorySequentialFile /*public leveldb::SequentialFile*/ { //TODO: incomplete class definition
 
 public:
     ~InMemorySequentialFile(); // _ZN22InMemorySequentialFileD2Ev

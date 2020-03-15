@@ -6,7 +6,7 @@
 
 namespace RakNet {
 
-    class RNS2_Linux : RakNet::RNS2_Berkley, RakNet::RNS2_Windows_Linux_360 {
+    class RNS2_Linux : public RakNet::RNS2_Berkley, public RakNet::RNS2_Windows_Linux_360 {
 
     public:
         ~RNS2_Linux(); // _ZN6RakNet10RNS2_LinuxD2Ev

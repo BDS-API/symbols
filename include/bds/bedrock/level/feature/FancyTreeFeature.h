@@ -1,11 +1,11 @@
 #pragma once
 
-#include "../../util/BlockPos.h"
 #include "TreeFeature.h"
+#include "../../util/BlockPos.h"
 #include <vector>
 
 
-class FancyTreeFeature : TreeFeature {
+class FancyTreeFeature : public TreeFeature {
 
 public:
     class FoliageCoords;

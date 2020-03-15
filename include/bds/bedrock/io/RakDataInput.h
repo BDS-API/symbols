@@ -3,7 +3,7 @@
 #include "BytesDataInput.h"
 
 
-class RakDataInput : BytesDataInput {
+class RakDataInput : public BytesDataInput {
 
 public:
     ~RakDataInput(); // _ZN12RakDataInputD2Ev

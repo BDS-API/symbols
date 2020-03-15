@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class BushBlock : BlockLegacy {
+class BushBlock : public BlockLegacy {
 
 public:
     static long MAX_GROWTH;

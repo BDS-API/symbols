@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class ResourcePackChunkDataPacket : Packet {
+class ResourcePackChunkDataPacket : public Packet {
 
 public:
     ~ResourcePackChunkDataPacket(); // _ZN27ResourcePackChunkDataPacketD2Ev

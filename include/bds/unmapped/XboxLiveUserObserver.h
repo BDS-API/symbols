@@ -4,7 +4,7 @@
 
 namespace Social {
 
-    class XboxLiveUserObserver /*Core::Observer<Social::XboxLiveUserObserver, Core::SingleThreadedLock>*/ { //TODO: incomplete class definition
+    class XboxLiveUserObserver /*public Core::Observer<Social::XboxLiveUserObserver, Core::SingleThreadedLock>*/ { //TODO: incomplete class definition
 
     public:
         ~XboxLiveUserObserver(); // _ZN6Social20XboxLiveUserObserverD2Ev

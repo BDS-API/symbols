@@ -1,13 +1,13 @@
 #pragma once
 
 #include <string>
-#include <vector>
 #include "TemplateStructurePiece.h"
+#include <vector>
 
 
 namespace PillagerOutpostPieces {
 
-    class PillagerOutpostPiece : TemplateStructurePiece {
+    class PillagerOutpostPiece : public TemplateStructurePiece {
 
     public:
         ~PillagerOutpostPiece(); // _ZN21PillagerOutpostPieces20PillagerOutpostPieceD2Ev

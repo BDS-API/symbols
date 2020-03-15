@@ -3,7 +3,7 @@
 #include "PackManifest.h"
 
 
-class WorldTemplatePackManifest : PackManifest {
+class WorldTemplatePackManifest : public PackManifest {
 
 public:
     ~WorldTemplatePackManifest(); // _ZN25WorldTemplatePackManifestD2Ev

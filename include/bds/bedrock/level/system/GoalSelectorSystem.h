@@ -1,10 +1,10 @@
 #pragma once
 
-#include "ITickingSystem.h"
 #include <vector>
+#include "ITickingSystem.h"
 
 
-class GoalSelectorSystem : ITickingSystem {
+class GoalSelectorSystem : public ITickingSystem {
 
 public:
     ~GoalSelectorSystem(); // _ZN18GoalSelectorSystemD2Ev

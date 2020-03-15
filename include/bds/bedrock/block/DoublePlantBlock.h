@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class DoublePlantBlock : BushBlock {
+class DoublePlantBlock : public BushBlock {
 
 public:
     ~DoublePlantBlock(); // _ZN16DoublePlantBlockD2Ev

@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "MonumentRoomFitter.h"
+#include <memory>
 
 
-class FitSimpleRoom : MonumentRoomFitter {
+class FitSimpleRoom : public MonumentRoomFitter {
 
 public:
     ~FitSimpleRoom(); // _ZN13FitSimpleRoomD2Ev

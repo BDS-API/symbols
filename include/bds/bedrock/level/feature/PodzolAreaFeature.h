@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class PodzolAreaFeature : Feature {
+class PodzolAreaFeature : public Feature {
 
 public:
     ~PodzolAreaFeature(); // _ZN17PodzolAreaFeatureD2Ev

@@ -4,7 +4,7 @@
 #include "ScriptEventData.h"
 
 
-class ScriptServerActorSneakChangedEvent : ScriptEventData {
+class ScriptServerActorSneakChangedEvent : public ScriptEventData {
 
 public:
     static long mHash;

@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class ProjectileSystem : ITickingSystem {
+class ProjectileSystem : public ITickingSystem {
 
 public:
     ~ProjectileSystem(); // _ZN16ProjectileSystemD2Ev

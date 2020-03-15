@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class WASDControlledDescription : PropertyDescription {
+class WASDControlledDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK25WASDControlledDescription11getJsonNameEv

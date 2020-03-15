@@ -3,7 +3,7 @@
 #include "Monster.h"
 
 
-class Silverfish : Monster {
+class Silverfish : public Monster {
 
 public:
     ~Silverfish(); // _ZN10SilverfishD2Ev

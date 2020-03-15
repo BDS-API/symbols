@@ -4,7 +4,7 @@
 #include "BaseMoveToBlockGoal.h"
 
 
-class InspectBookshelfGoal : BaseMoveToBlockGoal {
+class InspectBookshelfGoal : public BaseMoveToBlockGoal {
 
 public:
     ~InspectBookshelfGoal(); // _ZN20InspectBookshelfGoalD2Ev

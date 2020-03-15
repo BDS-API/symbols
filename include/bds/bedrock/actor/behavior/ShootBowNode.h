@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class ShootBowNode : BehaviorNode {
+class ShootBowNode : public BehaviorNode {
 
 public:
     ~ShootBowNode(); // _ZN12ShootBowNodeD2Ev

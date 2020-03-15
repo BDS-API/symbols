@@ -1,8 +1,8 @@
 #pragma once
 
-#include <memory>
 #include <functional>
 #include "../unmapped/HashedString.h"
+#include <memory>
 
 
 namespace Core {

@@ -3,7 +3,7 @@
 #include "Actor.h"
 
 
-class ExperienceOrb : Actor {
+class ExperienceOrb : public Actor {
 
 public:
     static long LIFETIME;

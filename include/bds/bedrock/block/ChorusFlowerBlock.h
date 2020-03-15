@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ChorusFlowerBlock : BlockLegacy {
+class ChorusFlowerBlock : public BlockLegacy {
 
 public:
     static long DEAD_AGE;

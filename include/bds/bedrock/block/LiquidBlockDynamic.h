@@ -4,7 +4,7 @@
 #include "LiquidBlock.h"
 
 
-class LiquidBlockDynamic : LiquidBlock {
+class LiquidBlockDynamic : public LiquidBlock {
 
 public:
     ~LiquidBlockDynamic(); // _ZN18LiquidBlockDynamicD2Ev

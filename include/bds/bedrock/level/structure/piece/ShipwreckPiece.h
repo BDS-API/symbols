@@ -3,7 +3,7 @@
 #include "StructurePiece.h"
 
 
-class ShipwreckPiece : StructurePiece {
+class ShipwreckPiece : public StructurePiece {
 
 public:
     static std::string STRUCTURE_SHIPWRECK_TYPES;

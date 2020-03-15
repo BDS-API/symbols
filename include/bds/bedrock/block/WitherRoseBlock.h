@@ -4,7 +4,7 @@
 #include "FlowerBlock.h"
 
 
-class WitherRoseBlock : FlowerBlock {
+class WitherRoseBlock : public FlowerBlock {
 
 public:
     ~WitherRoseBlock(); // _ZN15WitherRoseBlockD2Ev

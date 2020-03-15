@@ -4,7 +4,7 @@
 #include "DispenserBlock.h"
 
 
-class DropperBlock : DispenserBlock {
+class DropperBlock : public DispenserBlock {
 
 public:
     ~DropperBlock(); // _ZN12DropperBlockD2Ev

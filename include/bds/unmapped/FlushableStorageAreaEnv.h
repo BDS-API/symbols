@@ -4,7 +4,7 @@
 #include <memory>
 
 
-class FlushableStorageAreaEnv : FlushableEnv {
+class FlushableStorageAreaEnv : public FlushableEnv {
 
 public:
     ~FlushableStorageAreaEnv(); // _ZN23FlushableStorageAreaEnvD2Ev

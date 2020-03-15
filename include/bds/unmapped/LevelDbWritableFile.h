@@ -3,7 +3,7 @@
 #include <string>
 
 
-class LevelDbWritableFile /*leveldb::WritableFile*/ { //TODO: incomplete class definition
+class LevelDbWritableFile /*public leveldb::WritableFile*/ { //TODO: incomplete class definition
 
 public:
     ~LevelDbWritableFile(); // _ZN19LevelDbWritableFileD2Ev

@@ -3,7 +3,7 @@
 #include "FillingContainer.h"
 
 
-class Inventory : FillingContainer {
+class Inventory : public FillingContainer {
 
 public:
     ~Inventory(); // _ZN9InventoryD2Ev

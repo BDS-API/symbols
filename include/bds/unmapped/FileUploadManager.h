@@ -1,9 +1,9 @@
 #pragma once
 
-#include <string>
-#include <memory>
 #include "FileChunkInfo.h"
+#include <string>
 #include <functional>
+#include <memory>
 
 
 class FileUploadManager {

@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class BannerBlock : ActorBlock {
+class BannerBlock : public ActorBlock {
 
 public:
     static long STANDING_AABB;

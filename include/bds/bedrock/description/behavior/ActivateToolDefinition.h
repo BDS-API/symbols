@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
 
 
-class ActivateToolDefinition : BehaviorDefinition {
+class ActivateToolDefinition : public BehaviorDefinition {
 
 public:
     ~ActivateToolDefinition(); // _ZN22ActivateToolDefinitionD2Ev

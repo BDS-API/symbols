@@ -3,7 +3,7 @@
 #include "StructureFeature.h"
 
 
-class PillagerOutpostFeature : StructureFeature {
+class PillagerOutpostFeature : public StructureFeature {
 
 public:
     ~PillagerOutpostFeature(); // _ZN22PillagerOutpostFeatureD2Ev

@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class HellFireFeature : Feature {
+class HellFireFeature : public Feature {
 
 public:
     ~HellFireFeature(); // _ZN15HellFireFeatureD2Ev

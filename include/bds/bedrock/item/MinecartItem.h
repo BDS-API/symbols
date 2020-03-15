@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
 
 
-class MinecartItem : Item {
+class MinecartItem : public Item {
 
 public:
     ~MinecartItem(); // _ZN12MinecartItemD2Ev

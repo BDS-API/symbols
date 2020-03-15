@@ -3,7 +3,7 @@
 #include "Minecart.h"
 
 
-class MinecartTNT : Minecart {
+class MinecartTNT : public Minecart {
 
 public:
     static long DEFAULT_FUSE_LENGTH;

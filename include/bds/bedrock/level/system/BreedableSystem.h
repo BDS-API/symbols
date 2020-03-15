@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BreedableSystem : ITickingSystem {
+class BreedableSystem : public ITickingSystem {
 
 public:
     ~BreedableSystem(); // _ZN15BreedableSystemD2Ev

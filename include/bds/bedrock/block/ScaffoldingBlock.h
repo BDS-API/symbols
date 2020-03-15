@@ -4,7 +4,7 @@
 #include "HeavyBlock.h"
 
 
-class ScaffoldingBlock : HeavyBlock {
+class ScaffoldingBlock : public HeavyBlock {
 
 public:
     static long MAX_STABILITY;

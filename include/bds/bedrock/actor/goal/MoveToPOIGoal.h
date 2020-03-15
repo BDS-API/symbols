@@ -4,7 +4,7 @@
 #include "BaseMoveToGoal.h"
 
 
-class MoveToPOIGoal : BaseMoveToGoal {
+class MoveToPOIGoal : public BaseMoveToGoal {
 
 public:
     ~MoveToPOIGoal(); // _ZN13MoveToPOIGoalD2Ev

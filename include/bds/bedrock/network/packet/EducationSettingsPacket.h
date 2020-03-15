@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../../unmapped/EducationLevelSettings.h"
 #include "Packet.h"
+#include "../../../unmapped/EducationLevelSettings.h"
 
 
-class EducationSettingsPacket : Packet {
+class EducationSettingsPacket : public Packet {
 
 public:
     ~EducationSettingsPacket(); // _ZN23EducationSettingsPacketD2Ev

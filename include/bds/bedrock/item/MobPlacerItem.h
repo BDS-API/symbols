@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
-#include <memory>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
+#include <memory>
 
 
-class MobPlacerItem : Item {
+class MobPlacerItem : public Item {
 
 public:
     ~MobPlacerItem(); // _ZN13MobPlacerItemD2Ev

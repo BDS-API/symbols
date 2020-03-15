@@ -6,7 +6,7 @@
 #include <vector>
 
 
-class StringOption : Option {
+class StringOption : public Option {
 
 public:
     ~StringOption(); // _ZN12StringOptionD2Ev

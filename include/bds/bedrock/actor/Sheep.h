@@ -3,7 +3,7 @@
 #include "Animal.h"
 
 
-class Sheep : Animal {
+class Sheep : public Animal {
 
 public:
     static long EAT_ANIMATION_TICKS;

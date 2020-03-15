@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "Recipe.h"
 #include "../../../unmapped/HashString.h"
+#include "Recipe.h"
 
 
-class MultiRecipe : Recipe {
+class MultiRecipe : public Recipe {
 
 public:
     ~MultiRecipe(); // _ZN11MultiRecipeD2Ev

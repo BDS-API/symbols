@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class DirtBlock : BlockLegacy {
+class DirtBlock : public BlockLegacy {
 
 public:
     ~DirtBlock(); // _ZN9DirtBlockD2Ev

@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class SpawnChanceSubcomponent : OnHitSubcomponent {
+class SpawnChanceSubcomponent : public OnHitSubcomponent {
 
 public:
     ~SpawnChanceSubcomponent(); // _ZN23SpawnChanceSubcomponentD2Ev

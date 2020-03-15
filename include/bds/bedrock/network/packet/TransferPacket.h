@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class TransferPacket : Packet {
+class TransferPacket : public Packet {
 
 public:
     ~TransferPacket(); // _ZN14TransferPacketD2Ev

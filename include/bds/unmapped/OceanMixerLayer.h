@@ -3,7 +3,7 @@
 #include <memory>
 
 
-class OceanMixerLayer /*MixerLayer<Biome *, Biome *, BiomeTemperatureCategory>*/ { //TODO: incomplete class definition
+class OceanMixerLayer /*public MixerLayer<Biome *, Biome *, BiomeTemperatureCategory>*/ { //TODO: incomplete class definition
 
 public:
     ~OceanMixerLayer(); // _ZN15OceanMixerLayerD2Ev

@@ -1,9 +1,9 @@
 #pragma once
 
-#include <string>
-#include "../util/Vec3.h"
 #include "../util/BlockPos.h"
+#include <string>
 #include <vector>
+#include "../util/Vec3.h"
 
 
 class CommandOutputParameter {

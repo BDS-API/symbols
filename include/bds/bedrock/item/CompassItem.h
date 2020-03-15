@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class CompassItem : Item {
+class CompassItem : public Item {
 
 public:
     ~CompassItem(); // _ZN11CompassItemD2Ev

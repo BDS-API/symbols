@@ -3,7 +3,7 @@
 #include "ContainerManagerModel.h"
 
 
-class AnvilContainerManagerModel : ContainerManagerModel {
+class AnvilContainerManagerModel : public ContainerManagerModel {
 
 public:
     static long INPUT_SLOT;

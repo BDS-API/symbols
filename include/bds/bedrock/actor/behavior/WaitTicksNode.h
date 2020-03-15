@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class WaitTicksNode : BehaviorNode {
+class WaitTicksNode : public BehaviorNode {
 
 public:
     ~WaitTicksNode(); // _ZN13WaitTicksNodeD2Ev

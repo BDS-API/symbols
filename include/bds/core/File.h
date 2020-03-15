@@ -1,8 +1,8 @@
 #pragma once
 
+#include <vector>
 #include <memory>
 #include "Path.h"
-#include <vector>
 #include "FileOpenMode.h"
 
 

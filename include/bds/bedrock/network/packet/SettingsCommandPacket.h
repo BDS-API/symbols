@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SettingsCommandPacket : Packet {
+class SettingsCommandPacket : public Packet {
 
 public:
     ~SettingsCommandPacket(); // _ZN21SettingsCommandPacketD2Ev

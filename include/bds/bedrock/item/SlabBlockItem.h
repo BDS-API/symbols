@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "BlockItem.h"
 
 
-class SlabBlockItem : BlockItem {
+class SlabBlockItem : public BlockItem {
 
 public:
     ~SlabBlockItem(); // _ZN13SlabBlockItemD2Ev

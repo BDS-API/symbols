@@ -4,7 +4,7 @@
 #include "ContainerModel.h"
 
 
-class LevelContainerModel : ContainerModel {
+class LevelContainerModel : public ContainerModel {
 
 public:
     virtual void containerContentChanged(int); // _ZN19LevelContainerModel23containerContentChangedEi

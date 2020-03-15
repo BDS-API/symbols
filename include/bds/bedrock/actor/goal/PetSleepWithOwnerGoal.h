@@ -4,7 +4,7 @@
 #include "BaseMoveToBlockGoal.h"
 
 
-class PetSleepWithOwnerGoal : BaseMoveToBlockGoal {
+class PetSleepWithOwnerGoal : public BaseMoveToBlockGoal {
 
 public:
     static long SETTLE_TICKS;

@@ -4,7 +4,7 @@
 #include "BlockComponentDescription.h"
 
 
-class BlockFrictionDescription : BlockComponentDescription {
+class BlockFrictionDescription : public BlockComponentDescription {
 
 public:
     static std::string NameID;

@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class AmbientSoundIntervalDescription : PropertyDescription {
+class AmbientSoundIntervalDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK31AmbientSoundIntervalDescription11getJsonNameEv

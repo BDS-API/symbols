@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class VillageStart : StructureStart {
+class VillageStart : public StructureStart {
 
 public:
     ~VillageStart(); // _ZN12VillageStartD2Ev

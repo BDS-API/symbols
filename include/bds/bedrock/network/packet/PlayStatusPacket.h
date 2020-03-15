@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class PlayStatusPacket : Packet {
+class PlayStatusPacket : public Packet {
 
 public:
     ~PlayStatusPacket(); // _ZN16PlayStatusPacketD2Ev

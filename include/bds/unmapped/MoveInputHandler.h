@@ -3,7 +3,7 @@
 #include "MoveInput.h"
 
 
-class MoveInputHandler : MoveInput {
+class MoveInputHandler : public MoveInput {
 
 public:
     ~MoveInputHandler(); // _ZN16MoveInputHandlerD2Ev

@@ -3,7 +3,7 @@
 #include "SHStairsDown.h"
 
 
-class SHStartPiece : SHStairsDown {
+class SHStartPiece : public SHStairsDown {
 
 public:
     ~SHStartPiece(); // _ZN12SHStartPieceD2Ev

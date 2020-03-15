@@ -3,7 +3,7 @@
 #include "AttributeInstanceDelegate.h"
 
 
-class HungerAttributeDelegate : AttributeInstanceDelegate {
+class HungerAttributeDelegate : public AttributeInstanceDelegate {
 
 public:
     ~HungerAttributeDelegate(); // _ZN23HungerAttributeDelegateD2Ev

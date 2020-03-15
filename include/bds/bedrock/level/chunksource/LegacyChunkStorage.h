@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ChunkSource.h"
+#include <memory>
 
 
-class LegacyChunkStorage : ChunkSource {
+class LegacyChunkStorage : public ChunkSource {
 
 public:
     ~LegacyChunkStorage(); // _ZN18LegacyChunkStorageD2Ev

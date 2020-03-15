@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SendEventGoal : Goal {
+class SendEventGoal : public Goal {
 
 public:
     ~SendEventGoal(); // _ZN13SendEventGoalD2Ev

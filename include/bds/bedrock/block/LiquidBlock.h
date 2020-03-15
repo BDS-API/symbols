@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class LiquidBlock : BlockLegacy {
+class LiquidBlock : public BlockLegacy {
 
 public:
     ~LiquidBlock(); // _ZN11LiquidBlockD2Ev

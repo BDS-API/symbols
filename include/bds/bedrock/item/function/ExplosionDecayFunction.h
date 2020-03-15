@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class ExplosionDecayFunction : LootItemFunction {
+class ExplosionDecayFunction : public LootItemFunction {
 
 public:
     ~ExplosionDecayFunction(); // _ZN22ExplosionDecayFunctionD2Ev

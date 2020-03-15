@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../nbt/CompoundTag.h"
 #include "Packet.h"
+#include "../../nbt/CompoundTag.h"
 
 
-class BiomeDefinitionListPacket : Packet {
+class BiomeDefinitionListPacket : public Packet {
 
 public:
     ~BiomeDefinitionListPacket(); // _ZN25BiomeDefinitionListPacketD2Ev

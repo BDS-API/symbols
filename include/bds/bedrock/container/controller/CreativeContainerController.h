@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class CreativeContainerController : ContainerController {
+class CreativeContainerController : public ContainerController {
 
 public:
     ~CreativeContainerController(); // _ZN27CreativeContainerControllerD2Ev

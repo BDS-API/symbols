@@ -3,7 +3,7 @@
 #include "PlayerUIContainerModelBase.h"
 
 
-class PlayerUIContainerModel : PlayerUIContainerModelBase {
+class PlayerUIContainerModel : public PlayerUIContainerModelBase {
 
 public:
     ~PlayerUIContainerModel(); // _ZN22PlayerUIContainerModelD2Ev

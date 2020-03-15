@@ -1,10 +1,10 @@
 #pragma once
 
-#include "ScriptBinderComponent.h"
 #include "../../actor/unmapped/ActorUniqueID.h"
+#include "ScriptBinderComponent.h"
 
 
-class ScriptActorAreaBinderComponent : ScriptBinderComponent {
+class ScriptActorAreaBinderComponent : public ScriptBinderComponent {
 
 public:
     static std::string TAG;

@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class FlowerFeature : Feature {
+class FlowerFeature : public Feature {
 
 public:
     ~FlowerFeature(); // _ZN13FlowerFeatureD2Ev

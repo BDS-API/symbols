@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class AngrySystem : ITickingSystem {
+class AngrySystem : public ITickingSystem {
 
 public:
     ~AngrySystem(); // _ZN11AngrySystemD2Ev

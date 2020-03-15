@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../../unmapped/IntRange.h"
 #include "Goal.h"
+#include "../../../unmapped/IntRange.h"
 
 
-class RandomHoverGoal : Goal {
+class RandomHoverGoal : public Goal {
 
 public:
     ~RandomHoverGoal(); // _ZN15RandomHoverGoalD2Ev

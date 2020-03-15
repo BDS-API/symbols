@@ -4,7 +4,7 @@
 #include "FurnaceBlockActor.h"
 
 
-class BlastFurnaceBlockActor : FurnaceBlockActor {
+class BlastFurnaceBlockActor : public FurnaceBlockActor {
 
 public:
     ~BlastFurnaceBlockActor(); // _ZN22BlastFurnaceBlockActorD2Ev

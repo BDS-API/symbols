@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "AvoidMobGoal.h"
+#include <string>
 #include <vector>
 
 
-class AvoidMobTypeGoal : AvoidMobGoal {
+class AvoidMobTypeGoal : public AvoidMobGoal {
 
 public:
     ~AvoidMobTypeGoal(); // _ZN16AvoidMobTypeGoalD2Ev

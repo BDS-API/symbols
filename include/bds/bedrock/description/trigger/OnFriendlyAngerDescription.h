@@ -3,7 +3,7 @@
 #include "TriggerDescription.h"
 
 
-class OnFriendlyAngerDescription : TriggerDescription {
+class OnFriendlyAngerDescription : public TriggerDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK26OnFriendlyAngerDescription11getJsonNameEv

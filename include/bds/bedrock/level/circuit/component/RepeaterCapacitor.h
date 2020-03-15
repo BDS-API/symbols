@@ -3,7 +3,7 @@
 #include "CapacitorComponent.h"
 
 
-class RepeaterCapacitor : CapacitorComponent {
+class RepeaterCapacitor : public CapacitorComponent {
 
 public:
     ~RepeaterCapacitor(); // _ZN17RepeaterCapacitorD2Ev

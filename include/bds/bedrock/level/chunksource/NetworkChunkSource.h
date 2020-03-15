@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ChunkSource.h"
+#include <memory>
 
 
-class NetworkChunkSource : ChunkSource {
+class NetworkChunkSource : public ChunkSource {
 
 public:
     ~NetworkChunkSource(); // _ZN18NetworkChunkSourceD2Ev

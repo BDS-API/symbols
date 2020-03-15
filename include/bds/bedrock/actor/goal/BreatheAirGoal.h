@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class BreatheAirGoal : Goal {
+class BreatheAirGoal : public Goal {
 
 public:
     ~BreatheAirGoal(); // _ZN14BreatheAirGoalD2Ev

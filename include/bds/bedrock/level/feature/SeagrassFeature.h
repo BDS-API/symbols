@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class SeagrassFeature : Feature {
+class SeagrassFeature : public Feature {
 
 public:
     ~SeagrassFeature(); // _ZN15SeagrassFeatureD2Ev

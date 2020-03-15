@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class InteractSystem : ITickingSystem {
+class InteractSystem : public ITickingSystem {
 
 public:
     ~InteractSystem(); // _ZN14InteractSystemD2Ev

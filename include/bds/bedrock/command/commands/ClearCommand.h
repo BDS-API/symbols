@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class ClearCommand : Command {
+class ClearCommand : public Command {
 
 public:
     ~ClearCommand(); // _ZN12ClearCommandD2Ev

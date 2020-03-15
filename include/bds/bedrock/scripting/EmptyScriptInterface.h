@@ -7,7 +7,7 @@
 
 namespace ScriptApi {
 
-    class EmptyScriptInterface : ScriptApi::ScriptLanguageInterface {
+    class EmptyScriptInterface : public ScriptApi::ScriptLanguageInterface {
 
     public:
         ~EmptyScriptInterface(); // _ZN9ScriptApi20EmptyScriptInterfaceD2Ev

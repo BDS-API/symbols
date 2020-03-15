@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class SummonCommand : Command {
+class SummonCommand : public Command {
 
 public:
     ~SummonCommand(); // _ZN13SummonCommandD2Ev

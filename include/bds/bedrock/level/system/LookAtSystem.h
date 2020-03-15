@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class LookAtSystem : ITickingSystem {
+class LookAtSystem : public ITickingSystem {
 
 public:
     ~LookAtSystem(); // _ZN12LookAtSystemD2Ev

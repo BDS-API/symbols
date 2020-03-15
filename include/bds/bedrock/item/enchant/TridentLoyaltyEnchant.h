@@ -4,7 +4,7 @@
 #include "Enchant.h"
 
 
-class TridentLoyaltyEnchant : Enchant {
+class TridentLoyaltyEnchant : public Enchant {
 
 public:
     ~TridentLoyaltyEnchant(); // _ZN21TridentLoyaltyEnchantD2Ev

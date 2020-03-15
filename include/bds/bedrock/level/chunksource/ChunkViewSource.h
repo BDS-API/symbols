@@ -1,11 +1,11 @@
 #pragma once
 
-#include <memory>
 #include <functional>
 #include "ChunkSource.h"
+#include <memory>
 
 
-class ChunkViewSource : ChunkSource {
+class ChunkViewSource : public ChunkSource {
 
 public:
     ~ChunkViewSource(); // _ZN15ChunkViewSourceD2Ev

@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class StemBlock : BushBlock {
+class StemBlock : public BushBlock {
 
 public:
     ~StemBlock(); // _ZN9StemBlockD2Ev

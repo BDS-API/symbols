@@ -3,7 +3,7 @@
 #include "Fish.h"
 
 
-class Salmon : Fish {
+class Salmon : public Fish {
 
 public:
     ~Salmon(); // _ZN6SalmonD2Ev

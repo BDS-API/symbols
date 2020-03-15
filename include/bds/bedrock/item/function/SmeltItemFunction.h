@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SmeltItemFunction : LootItemFunction {
+class SmeltItemFunction : public LootItemFunction {
 
 public:
     ~SmeltItemFunction(); // _ZN17SmeltItemFunctionD2Ev

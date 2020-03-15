@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class SelectorBehaviorNode : BehaviorNode {
+class SelectorBehaviorNode : public BehaviorNode {
 
 public:
     ~SelectorBehaviorNode(); // _ZN20SelectorBehaviorNodeD2Ev

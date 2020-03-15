@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class BookEditPacket : Packet {
+class BookEditPacket : public Packet {
 
 public:
     ~BookEditPacket(); // _ZN14BookEditPacketD2Ev

@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class UpdateTradePacket : Packet {
+class UpdateTradePacket : public Packet {
 
 public:
     ~UpdateTradePacket(); // _ZN17UpdateTradePacketD2Ev

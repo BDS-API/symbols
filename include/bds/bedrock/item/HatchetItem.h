@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
-#include "../util/BlockPos.h"
 #include "DiggerItem.h"
+#include <string>
 #include "Item.h"
+#include "../util/BlockPos.h"
 
 
-class HatchetItem : DiggerItem {
+class HatchetItem : public DiggerItem {
 
 public:
     ~HatchetItem(); // _ZN11HatchetItemD2Ev

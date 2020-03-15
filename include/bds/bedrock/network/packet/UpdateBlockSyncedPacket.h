@@ -4,7 +4,7 @@
 #include "UpdateBlockPacket.h"
 
 
-class UpdateBlockSyncedPacket : UpdateBlockPacket {
+class UpdateBlockSyncedPacket : public UpdateBlockPacket {
 
 public:
     ~UpdateBlockSyncedPacket(); // _ZN23UpdateBlockSyncedPacketD2Ev

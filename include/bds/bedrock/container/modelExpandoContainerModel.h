@@ -5,7 +5,7 @@
 #include "ContainerModel.h"
 
 
-class ExpandoContainerModel : ContainerModel {
+class ExpandoContainerModel : public ContainerModel {
 
 public:
     virtual void containerContentChanged(int); // _ZN21ExpandoContainerModel23containerContentChangedEi

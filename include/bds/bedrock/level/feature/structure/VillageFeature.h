@@ -3,7 +3,7 @@
 #include "StructureFeature.h"
 
 
-class VillageFeature : StructureFeature {
+class VillageFeature : public StructureFeature {
 
 public:
     ~VillageFeature(); // _ZN14VillageFeatureD2Ev

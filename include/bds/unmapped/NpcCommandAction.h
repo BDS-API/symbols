@@ -6,7 +6,7 @@
 #include <vector>
 
 
-class NpcCommandAction : NpcAction {
+class NpcCommandAction : public NpcAction {
 
 public:
     class SavedCommand;

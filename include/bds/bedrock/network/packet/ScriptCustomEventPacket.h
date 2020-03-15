@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ScriptCustomEventPacket : Packet {
+class ScriptCustomEventPacket : public Packet {
 
 public:
     ~ScriptCustomEventPacket(); // _ZN23ScriptCustomEventPacketD2Ev

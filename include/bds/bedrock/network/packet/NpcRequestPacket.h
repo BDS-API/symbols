@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "Packet.h"
 #include "../../actor/unmapped/ActorRuntimeID.h"
+#include "Packet.h"
 
 
-class NpcRequestPacket : Packet {
+class NpcRequestPacket : public Packet {
 
 public:
     ~NpcRequestPacket(); // _ZN16NpcRequestPacketD2Ev

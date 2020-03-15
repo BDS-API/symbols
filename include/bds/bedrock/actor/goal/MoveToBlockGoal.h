@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include "../../util/Vec3.h"
 #include "Goal.h"
+#include "../../util/Vec3.h"
 #include <vector>
 
 
-class MoveToBlockGoal : Goal {
+class MoveToBlockGoal : public Goal {
 
 public:
     ~MoveToBlockGoal(); // _ZN15MoveToBlockGoalD2Ev

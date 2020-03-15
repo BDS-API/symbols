@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SubClientLoginPacket : Packet {
+class SubClientLoginPacket : public Packet {
 
 public:
     ~SubClientLoginPacket(); // _ZN20SubClientLoginPacketD2Ev

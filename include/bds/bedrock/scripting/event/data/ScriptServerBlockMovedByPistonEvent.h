@@ -4,7 +4,7 @@
 #include "ScriptEventData.h"
 
 
-class ScriptServerBlockMovedByPistonEvent : ScriptEventData {
+class ScriptServerBlockMovedByPistonEvent : public ScriptEventData {
 
 public:
     static long mHash;

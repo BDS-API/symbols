@@ -3,7 +3,7 @@
 #include "ContainerModel.h"
 
 
-class PlayerUIContainerModelBase : ContainerModel {
+class PlayerUIContainerModelBase : public ContainerModel {
 
 public:
     virtual void containerContentChanged(int); // _ZN26PlayerUIContainerModelBase23containerContentChangedEi

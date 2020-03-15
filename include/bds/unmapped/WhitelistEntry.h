@@ -1,11 +1,11 @@
 #pragma once
 
 #include "../mce/UUID.h"
-#include "IJsonSerializable.h"
 #include <string>
+#include "IJsonSerializable.h"
 
 
-class WhitelistEntry : IJsonSerializable {
+class WhitelistEntry : public IJsonSerializable {
 
 public:
     ~WhitelistEntry(); // _ZN14WhitelistEntryD2Ev

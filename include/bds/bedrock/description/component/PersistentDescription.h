@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class PersistentDescription : ComponentDescription {
+class PersistentDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK21PersistentDescription11getJsonNameEv

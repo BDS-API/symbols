@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class InsomniaSystem : ITickingSystem {
+class InsomniaSystem : public ITickingSystem {
 
 public:
     ~InsomniaSystem(); // _ZN14InsomniaSystemD2Ev

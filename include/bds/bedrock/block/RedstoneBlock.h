@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class RedstoneBlock : BlockLegacy {
+class RedstoneBlock : public BlockLegacy {
 
 public:
     ~RedstoneBlock(); // _ZN13RedstoneBlockD2Ev

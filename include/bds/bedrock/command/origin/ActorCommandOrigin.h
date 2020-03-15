@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "CommandOrigin.h"
 #include "../../actor/unmapped/ActorUniqueID.h"
+#include "CommandOrigin.h"
 
 
-class ActorCommandOrigin : CommandOrigin {
+class ActorCommandOrigin : public CommandOrigin {
 
 public:
     ~ActorCommandOrigin(); // _ZN18ActorCommandOriginD2Ev

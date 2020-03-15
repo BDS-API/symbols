@@ -3,7 +3,7 @@
 #include "HangingActor.h"
 
 
-class LeashFenceKnotActor : HangingActor {
+class LeashFenceKnotActor : public HangingActor {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN19LeashFenceKnotActor15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

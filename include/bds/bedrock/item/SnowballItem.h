@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class SnowballItem : Item {
+class SnowballItem : public Item {
 
 public:
     ~SnowballItem(); // _ZN12SnowballItemD2Ev

@@ -3,7 +3,7 @@
 #include "TriggerDescription.h"
 
 
-class OnHurtByPlayerDescription : TriggerDescription {
+class OnHurtByPlayerDescription : public TriggerDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK25OnHurtByPlayerDescription11getJsonNameEv

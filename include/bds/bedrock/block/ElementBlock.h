@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ElementBlock : BlockLegacy {
+class ElementBlock : public BlockLegacy {
 
 public:
     static long mElements;

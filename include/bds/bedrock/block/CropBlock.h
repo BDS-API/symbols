@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class CropBlock : BushBlock {
+class CropBlock : public BushBlock {
 
 public:
     ~CropBlock(); // _ZN9CropBlockD2Ev

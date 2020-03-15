@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "ScriptEventListener.h"
+#include <string>
 
 
-class ScriptTelemetryEventListener : ScriptEventListener {
+class ScriptTelemetryEventListener : public ScriptEventListener {
 
 public:
     ~ScriptTelemetryEventListener(); // _ZN28ScriptTelemetryEventListenerD2Ev

@@ -10,7 +10,7 @@ namespace com {
 
             namespace protocol {
 
-                class MetricReport_BandwithMetric /*google::protobuf::Message*/ { //TODO: incomplete class definition
+                class MetricReport_BandwithMetric /*public google::protobuf::Message*/ { //TODO: incomplete class definition
 
                 public:
                     ~MetricReport_BandwithMetric(); // _ZN3com6mojang6clacks8protocol27MetricReport_BandwithMetricD2Ev

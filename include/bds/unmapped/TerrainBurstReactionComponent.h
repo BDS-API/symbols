@@ -3,7 +3,7 @@
 #include "LabTableReactionComponent.h"
 
 
-class TerrainBurstReactionComponent : LabTableReactionComponent {
+class TerrainBurstReactionComponent : public LabTableReactionComponent {
 
 public:
     ~TerrainBurstReactionComponent(); // _ZN29TerrainBurstReactionComponentD2Ev

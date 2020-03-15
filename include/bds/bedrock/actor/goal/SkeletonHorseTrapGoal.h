@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class SkeletonHorseTrapGoal : Goal {
+class SkeletonHorseTrapGoal : public Goal {
 
 public:
     ~SkeletonHorseTrapGoal(); // _ZN21SkeletonHorseTrapGoalD2Ev

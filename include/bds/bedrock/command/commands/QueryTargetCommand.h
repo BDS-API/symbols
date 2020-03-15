@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class QueryTargetCommand : Command {
+class QueryTargetCommand : public Command {
 
 public:
     ~QueryTargetCommand(); // _ZN18QueryTargetCommandD2Ev

@@ -3,7 +3,7 @@
 #include "ContainerModel.h"
 
 
-class HudContainerModel : ContainerModel {
+class HudContainerModel : public ContainerModel {
 
 public:
     virtual void containerContentChanged(int); // _ZN17HudContainerModel23containerContentChangedEi

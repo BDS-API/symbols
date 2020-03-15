@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
+#include "ShapedRecipe.h"
 #include <memory>
 #include <vector>
-#include "ShapedRecipe.h"
 
 
-class ShapedChemistryRecipe : ShapedRecipe {
+class ShapedChemistryRecipe : public ShapedRecipe {
 
 public:
     static long ID;

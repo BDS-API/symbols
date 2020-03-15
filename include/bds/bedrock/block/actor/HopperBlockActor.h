@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
-#include "../../../unmapped/Hopper.h"
-#include "BlockActor.h"
 #include "../../container/Container.h"
+#include <string>
+#include "BlockActor.h"
+#include "../../../unmapped/Hopper.h"
 
 
-class HopperBlockActor : BlockActor, Container, Hopper {
+class HopperBlockActor : public BlockActor, public Container, public Hopper {
 
 public:
     ~HopperBlockActor(); // _ZN16HopperBlockActorD2Ev

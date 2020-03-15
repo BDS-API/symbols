@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class StrongholdPiece : StructurePiece {
+class StrongholdPiece : public StructurePiece {
 
 public:
     ~StrongholdPiece(); // _ZN15StrongholdPieceD2Ev

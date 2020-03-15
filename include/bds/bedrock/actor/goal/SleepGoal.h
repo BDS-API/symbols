@@ -4,7 +4,7 @@
 #include "MoveToPOIGoal.h"
 
 
-class SleepGoal : MoveToPOIGoal {
+class SleepGoal : public MoveToPOIGoal {
 
 public:
     ~SleepGoal(); // _ZN9SleepGoalD2Ev

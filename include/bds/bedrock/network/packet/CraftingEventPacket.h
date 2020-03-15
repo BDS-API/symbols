@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class CraftingEventPacket : Packet {
+class CraftingEventPacket : public Packet {
 
 public:
     ~CraftingEventPacket(); // _ZN19CraftingEventPacketD2Ev

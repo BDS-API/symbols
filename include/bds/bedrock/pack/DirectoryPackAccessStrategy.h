@@ -5,7 +5,7 @@
 #include "PackAccessStrategy.h"
 
 
-class DirectoryPackAccessStrategy : PackAccessStrategy {
+class DirectoryPackAccessStrategy : public PackAccessStrategy {
 
 public:
     ~DirectoryPackAccessStrategy(); // _ZN27DirectoryPackAccessStrategyD2Ev

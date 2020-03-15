@@ -3,7 +3,7 @@
 #include "ScatteredFeaturePiece.h"
 
 
-class DesertPyramidPiece : ScatteredFeaturePiece {
+class DesertPyramidPiece : public ScatteredFeaturePiece {
 
 public:
     ~DesertPyramidPiece(); // _ZN18DesertPyramidPieceD2Ev

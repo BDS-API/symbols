@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BalloonSystem : ITickingSystem {
+class BalloonSystem : public ITickingSystem {
 
 public:
     ~BalloonSystem(); // _ZN13BalloonSystemD2Ev

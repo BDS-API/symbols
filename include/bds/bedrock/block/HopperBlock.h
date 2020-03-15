@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <vector>
 #include "ActorBlock.h"
+#include <vector>
 
 
-class HopperBlock : ActorBlock {
+class HopperBlock : public ActorBlock {
 
 public:
     ~HopperBlock(); // _ZN11HopperBlockD2Ev

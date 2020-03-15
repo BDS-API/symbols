@@ -1,12 +1,12 @@
 #pragma once
 
 #include "NetworkPeer.h"
-#include <memory>
-#include <functional>
 #include <string>
+#include <functional>
+#include <memory>
 
 
-class BatchedNetworkPeer : NetworkPeer {
+class BatchedNetworkPeer : public NetworkPeer {
 
 public:
     class DataCallback;

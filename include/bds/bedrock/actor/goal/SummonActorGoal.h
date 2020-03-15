@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include "../unmapped/ActorDefinitionIdentifier.h"
 #include "Goal.h"
 #include <vector>
+#include "../unmapped/ActorDefinitionIdentifier.h"
 
 
-class SummonActorGoal : Goal {
+class SummonActorGoal : public Goal {
 
 public:
     ~SummonActorGoal(); // _ZN15SummonActorGoalD2Ev

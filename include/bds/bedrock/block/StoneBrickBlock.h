@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class StoneBrickBlock : BlockLegacy {
+class StoneBrickBlock : public BlockLegacy {
 
 public:
     ~StoneBrickBlock(); // _ZN15StoneBrickBlockD2Ev

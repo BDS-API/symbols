@@ -1,11 +1,11 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
 #include "../../item/unmapped/ItemTransferAmount.h"
+#include <memory>
 
 
-class BeaconPaymentContainerController : ContainerController {
+class BeaconPaymentContainerController : public ContainerController {
 
 public:
     ~BeaconPaymentContainerController(); // _ZN32BeaconPaymentContainerControllerD2Ev

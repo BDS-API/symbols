@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class LeverBlock : BlockLegacy {
+class LeverBlock : public BlockLegacy {
 
 public:
     ~LeverBlock(); // _ZN10LeverBlockD2Ev

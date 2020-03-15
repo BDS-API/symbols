@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class RangedAttackGoal : Goal {
+class RangedAttackGoal : public Goal {
 
 public:
     ~RangedAttackGoal(); // _ZN16RangedAttackGoalD2Ev

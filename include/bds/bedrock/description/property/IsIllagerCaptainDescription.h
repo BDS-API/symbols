@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class IsIllagerCaptainDescription : PropertyDescription {
+class IsIllagerCaptainDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK27IsIllagerCaptainDescription11getJsonNameEv

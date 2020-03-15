@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class LevelSoundEventPacketV1 : Packet {
+class LevelSoundEventPacketV1 : public Packet {
 
 public:
     ~LevelSoundEventPacketV1(); // _ZN23LevelSoundEventPacketV1D2Ev

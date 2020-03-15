@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class RandomAuxValueFunction : LootItemFunction {
+class RandomAuxValueFunction : public LootItemFunction {
 
 public:
     ~RandomAuxValueFunction(); // _ZN22RandomAuxValueFunctionD2Ev

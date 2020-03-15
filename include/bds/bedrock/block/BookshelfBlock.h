@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class BookshelfBlock : BlockLegacy {
+class BookshelfBlock : public BlockLegacy {
 
 public:
     ~BookshelfBlock(); // _ZN14BookshelfBlockD2Ev

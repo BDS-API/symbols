@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <optional>
 #include "HeavyBlock.h"
+#include <optional>
 
 
-class ConcretePowderBlock : HeavyBlock {
+class ConcretePowderBlock : public HeavyBlock {
 
 public:
     ~ConcretePowderBlock(); // _ZN19ConcretePowderBlockD2Ev

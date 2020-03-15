@@ -2,7 +2,7 @@
 
 
 
-class LevelDbLogger /*leveldb::Logger*/ { //TODO: incomplete class definition
+class LevelDbLogger /*public leveldb::Logger*/ { //TODO: incomplete class definition
 
 public:
     ~LevelDbLogger(); // _ZN13LevelDbLoggerD2Ev

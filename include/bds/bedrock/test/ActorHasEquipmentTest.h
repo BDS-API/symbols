@@ -3,7 +3,7 @@
 #include "FilterTest.h"
 
 
-class ActorHasEquipmentTest : FilterTest {
+class ActorHasEquipmentTest : public FilterTest {
 
 public:
     ~ActorHasEquipmentTest(); // _ZN21ActorHasEquipmentTestD2Ev

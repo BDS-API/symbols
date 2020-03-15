@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class HelpCommand : Command {
+class HelpCommand : public Command {
 
 public:
     ~HelpCommand(); // _ZN11HelpCommandD2Ev

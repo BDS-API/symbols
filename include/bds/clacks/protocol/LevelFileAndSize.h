@@ -11,7 +11,7 @@ namespace com {
 
             namespace protocol {
 
-                class LevelFileAndSize /*google::protobuf::Message*/ { //TODO: incomplete class definition
+                class LevelFileAndSize /*public google::protobuf::Message*/ { //TODO: incomplete class definition
 
                 public:
                     ~LevelFileAndSize(); // _ZN3com6mojang6clacks8protocol16LevelFileAndSizeD2Ev

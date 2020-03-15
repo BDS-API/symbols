@@ -3,7 +3,7 @@
 #include "BaseContainerMenu.h"
 
 
-class InventoryMenu : BaseContainerMenu {
+class InventoryMenu : public BaseContainerMenu {
 
 public:
     ~InventoryMenu(); // _ZN13InventoryMenuD2Ev

@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class BasePressurePlateBlock : BlockLegacy {
+class BasePressurePlateBlock : public BlockLegacy {
 
 public:
     ~BasePressurePlateBlock(); // _ZN22BasePressurePlateBlockD2Ev

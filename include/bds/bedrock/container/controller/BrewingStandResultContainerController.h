@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class BrewingStandResultContainerController : ContainerController {
+class BrewingStandResultContainerController : public ContainerController {
 
 public:
     ~BrewingStandResultContainerController(); // _ZN37BrewingStandResultContainerControllerD2Ev

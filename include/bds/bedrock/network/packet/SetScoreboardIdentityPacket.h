@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetScoreboardIdentityPacket : Packet {
+class SetScoreboardIdentityPacket : public Packet {
 
 public:
     ~SetScoreboardIdentityPacket(); // _ZN27SetScoreboardIdentityPacketD2Ev

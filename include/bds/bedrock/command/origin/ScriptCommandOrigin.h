@@ -4,7 +4,7 @@
 #include "CommandOrigin.h"
 
 
-class ScriptCommandOrigin : CommandOrigin {
+class ScriptCommandOrigin : public CommandOrigin {
 
 public:
     ~ScriptCommandOrigin(); // _ZN19ScriptCommandOriginD2Ev

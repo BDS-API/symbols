@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../mce/Radian.h"
 #include "../mce/Degree.h"
+#include "../mce/Radian.h"
 
 
 namespace mce {

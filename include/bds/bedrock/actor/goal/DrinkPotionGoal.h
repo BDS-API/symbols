@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class DrinkPotionGoal : Goal {
+class DrinkPotionGoal : public Goal {
 
 public:
     static long THROTTLE_COOLDOWN;

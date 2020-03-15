@@ -4,7 +4,7 @@
 #include "BehaviorNode.h"
 
 
-class GetInteractionPositionForBlockNode : BehaviorNode {
+class GetInteractionPositionForBlockNode : public BehaviorNode {
 
 public:
     ~GetInteractionPositionForBlockNode(); // _ZN34GetInteractionPositionForBlockNodeD2Ev

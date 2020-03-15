@@ -3,7 +3,7 @@
 #include "FilterTest.h"
 
 
-class FilterTestGameRule : FilterTest {
+class FilterTestGameRule : public FilterTest {
 
 public:
     ~FilterTestGameRule(); // _ZN18FilterTestGameRuleD2Ev

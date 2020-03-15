@@ -6,7 +6,7 @@
 #include <vector>
 
 
-class IntOption : Option {
+class IntOption : public Option {
 
 public:
     ~IntOption(); // _ZN9IntOptionD2Ev

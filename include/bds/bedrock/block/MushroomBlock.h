@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class MushroomBlock : BushBlock {
+class MushroomBlock : public BushBlock {
 
 public:
     ~MushroomBlock(); // _ZN13MushroomBlockD2Ev

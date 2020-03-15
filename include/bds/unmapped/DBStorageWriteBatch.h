@@ -4,7 +4,7 @@
 #include "../bedrock/level/storage/LevelStorage.h"
 
 
-class DBStorageWriteBatch : LevelStorage::Batch {
+class DBStorageWriteBatch : public LevelStorage::Batch {
 
 public:
     class PerfContext;

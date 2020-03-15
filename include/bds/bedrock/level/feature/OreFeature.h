@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class OreFeature : IFeature {
+class OreFeature : public IFeature {
 
 public:
     ~OreFeature(); // _ZN10OreFeatureD2Ev

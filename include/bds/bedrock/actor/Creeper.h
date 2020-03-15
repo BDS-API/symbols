@@ -3,7 +3,7 @@
 #include "Monster.h"
 
 
-class Creeper : Monster {
+class Creeper : public Monster {
 
 public:
     ~Creeper(); // _ZN7CreeperD2Ev

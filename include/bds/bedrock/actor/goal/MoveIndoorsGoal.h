@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class MoveIndoorsGoal : Goal {
+class MoveIndoorsGoal : public Goal {
 
 public:
     ~MoveIndoorsGoal(); // _ZN15MoveIndoorsGoalD2Ev

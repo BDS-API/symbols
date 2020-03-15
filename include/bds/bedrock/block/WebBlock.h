@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class WebBlock : BlockLegacy {
+class WebBlock : public BlockLegacy {
 
 public:
     ~WebBlock(); // _ZN8WebBlockD2Ev

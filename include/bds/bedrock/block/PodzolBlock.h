@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class PodzolBlock : BlockLegacy {
+class PodzolBlock : public BlockLegacy {
 
 public:
     ~PodzolBlock(); // _ZN11PodzolBlockD2Ev

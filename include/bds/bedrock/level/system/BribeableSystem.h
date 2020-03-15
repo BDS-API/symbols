@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class BribeableSystem : ITickingSystem {
+class BribeableSystem : public ITickingSystem {
 
 public:
     ~BribeableSystem(); // _ZN15BribeableSystemD2Ev

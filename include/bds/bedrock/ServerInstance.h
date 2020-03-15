@@ -1,16 +1,16 @@
 #pragma once
 
-#include "../unmapped/GameCallbacks.h"
 #include "definition/ConnectionDefinition.h"
-#include <vector>
 #include <memory>
-#include <string>
-#include "../unmapped/AppPlatformListener.h"
+#include <vector>
 #include "level/LevelSettings.h"
+#include <string>
 #include <functional>
+#include "../unmapped/AppPlatformListener.h"
+#include "../unmapped/GameCallbacks.h"
 
 
-class ServerInstance : AppPlatformListener, GameCallbacks {
+class ServerInstance : public AppPlatformListener, public GameCallbacks {
 
 public:
     static long SERVER_MAX_DELAY_BEFORE_SLOWDOWN;

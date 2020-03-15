@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ClothBlock : BlockLegacy {
+class ClothBlock : public BlockLegacy {
 
 public:
     ~ClothBlock(); // _ZN10ClothBlockD2Ev

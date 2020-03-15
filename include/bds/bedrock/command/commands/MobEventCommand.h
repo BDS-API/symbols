@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class MobEventCommand : Command {
+class MobEventCommand : public Command {
 
 public:
     class InitProxy;

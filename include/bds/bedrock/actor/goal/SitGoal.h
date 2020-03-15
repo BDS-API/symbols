@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class SitGoal : Goal {
+class SitGoal : public Goal {
 
 public:
     ~SitGoal(); // _ZN7SitGoalD2Ev

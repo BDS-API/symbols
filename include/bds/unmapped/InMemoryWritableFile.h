@@ -3,7 +3,7 @@
 #include <memory>
 
 
-class InMemoryWritableFile /*leveldb::WritableFile*/ { //TODO: incomplete class definition
+class InMemoryWritableFile /*public leveldb::WritableFile*/ { //TODO: incomplete class definition
 
 public:
     ~InMemoryWritableFile(); // _ZN20InMemoryWritableFileD2Ev

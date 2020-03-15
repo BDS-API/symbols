@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class EndIslandFeature : Feature {
+class EndIslandFeature : public Feature {
 
 public:
     ~EndIslandFeature(); // _ZN16EndIslandFeatureD2Ev

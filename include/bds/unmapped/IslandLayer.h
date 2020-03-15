@@ -2,7 +2,7 @@
 
 
 
-class IslandLayer /*RootLayer<LayerValues::Terrain>*/ { //TODO: incomplete class definition
+class IslandLayer /*public RootLayer<LayerValues::Terrain>*/ { //TODO: incomplete class definition
 
 public:
     ~IslandLayer(); // _ZN11IslandLayerD2Ev

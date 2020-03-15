@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class DyeableDescription : PropertyDescription {
+class DyeableDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK18DyeableDescription11getJsonNameEv

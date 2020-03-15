@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class EducationMetadataError : PackError {
+class EducationMetadataError : public PackError {
 
 public:
     ~EducationMetadataError(); // _ZN22EducationMetadataErrorD2Ev

@@ -2,13 +2,13 @@
 
 #include <vector>
 #include "../raknet/RakNetGUID.h"
-#include <string>
-#include "RakPeerHelper.h"
-#include <functional>
 #include "ServerLocator.h"
+#include <string>
+#include <functional>
+#include "RakPeerHelper.h"
 
 
-class RakNetServerLocator : ServerLocator {
+class RakNetServerLocator : public ServerLocator {
 
 public:
     class PingRateRecorder;

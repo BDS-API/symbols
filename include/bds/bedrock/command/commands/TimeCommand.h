@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class TimeCommand : Command {
+class TimeCommand : public Command {
 
 public:
     ~TimeCommand(); // _ZN11TimeCommandD2Ev

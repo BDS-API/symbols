@@ -5,7 +5,7 @@
 #include "../../unmapped/FileUploadManager.h"
 
 
-class ResourcePackFileUploadManager : FileUploadManager {
+class ResourcePackFileUploadManager : public FileUploadManager {
 
 public:
     ~ResourcePackFileUploadManager(); // _ZN29ResourcePackFileUploadManagerD2Ev

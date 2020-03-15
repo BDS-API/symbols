@@ -3,7 +3,7 @@
 #include "StructureFeature.h"
 
 
-class MineshaftFeature : StructureFeature {
+class MineshaftFeature : public StructureFeature {
 
 public:
     ~MineshaftFeature(); // _ZN16MineshaftFeatureD2Ev

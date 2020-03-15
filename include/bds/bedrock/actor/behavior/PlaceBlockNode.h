@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class PlaceBlockNode : BehaviorNode {
+class PlaceBlockNode : public BehaviorNode {
 
 public:
     ~PlaceBlockNode(); // _ZN14PlaceBlockNodeD2Ev

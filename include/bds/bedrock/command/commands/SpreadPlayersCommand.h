@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class SpreadPlayersCommand : Command {
+class SpreadPlayersCommand : public Command {
 
 public:
     ~SpreadPlayersCommand(); // _ZN20SpreadPlayersCommandD2Ev

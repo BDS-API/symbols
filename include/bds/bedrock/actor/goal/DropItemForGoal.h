@@ -5,7 +5,7 @@
 #include "../../../unmapped/FloatRange.h"
 
 
-class DropItemForGoal : BaseMoveToBlockGoal {
+class DropItemForGoal : public BaseMoveToBlockGoal {
 
 public:
     static long COOLDOWN_TICKS;

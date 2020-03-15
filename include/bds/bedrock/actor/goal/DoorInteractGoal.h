@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class DoorInteractGoal : Goal {
+class DoorInteractGoal : public Goal {
 
 public:
     ~DoorInteractGoal(); // _ZN16DoorInteractGoalD2Ev

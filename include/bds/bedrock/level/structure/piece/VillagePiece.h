@@ -1,12 +1,12 @@
 #pragma once
 
+#include "../../../../unmapped/BoundingBox.h"
 #include "PoolElementStructurePiece.h"
 #include "../../../util/BlockPos.h"
-#include "../../../../unmapped/BoundingBox.h"
 #include <vector>
 
 
-class VillagePiece : PoolElementStructurePiece {
+class VillagePiece : public PoolElementStructurePiece {
 
 public:
     ~VillagePiece(); // _ZN12VillagePieceD2Ev

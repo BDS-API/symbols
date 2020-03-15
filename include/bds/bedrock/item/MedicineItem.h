@@ -5,7 +5,7 @@
 #include "ChemistryItem.h"
 
 
-class MedicineItem : ChemistryItem {
+class MedicineItem : public ChemistryItem {
 
 public:
     ~MedicineItem(); // _ZN12MedicineItemD2Ev

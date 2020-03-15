@@ -5,7 +5,7 @@
 #include "ITextObject.h"
 
 
-class TextObjectRoot : ITextObject {
+class TextObjectRoot : public ITextObject {
 
 public:
     ~TextObjectRoot(); // _ZN14TextObjectRootD2Ev

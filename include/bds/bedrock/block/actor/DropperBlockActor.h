@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "DispenserBlockActor.h"
 #include "../../util/BlockPos.h"
+#include "DispenserBlockActor.h"
 
 
-class DropperBlockActor : DispenserBlockActor {
+class DropperBlockActor : public DispenserBlockActor {
 
 public:
     ~DropperBlockActor(); // _ZN17DropperBlockActorD2Ev

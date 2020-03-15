@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class LocateCommand : Command {
+class LocateCommand : public Command {
 
 public:
     ~LocateCommand(); // _ZN13LocateCommandD2Ev

@@ -1,13 +1,13 @@
 #pragma once
 
-#include <unordered_map>
-#include <vector>
 #include <memory>
+#include <vector>
+#include <unordered_map>
 #include "../unmapped/IEntityRegistryOwner.h"
 #include <string>
 
 
-class Minecraft : IEntityRegistryOwner {
+class Minecraft : public IEntityRegistryOwner {
 
 public:
     virtual void getEntityRegistry(); // _ZN9Minecraft17getEntityRegistryEv

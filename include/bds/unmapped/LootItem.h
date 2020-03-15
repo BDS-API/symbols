@@ -1,11 +1,11 @@
 #pragma once
 
+#include "../json/Value.h"
 #include "LootPoolEntry.h"
 #include <vector>
-#include "../json/Value.h"
 
 
-class LootItem : LootPoolEntry {
+class LootItem : public LootPoolEntry {
 
 public:
     virtual void _createItem(std::vector<ItemStack> &, Random &, LootTableContext &); // _ZN8LootItem11_createItemERSt6vectorI9ItemStackSaIS1_EER6RandomR16LootTableContext

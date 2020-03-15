@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include <functional>
+#include <string>
 #include "PackSource.h"
 
 
-class WorldHistoryPackSource : PackSource {
+class WorldHistoryPackSource : public PackSource {
 
 public:
     ~WorldHistoryPackSource(); // _ZN22WorldHistoryPackSourceD2Ev

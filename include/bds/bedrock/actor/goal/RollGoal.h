@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class RollGoal : Goal {
+class RollGoal : public Goal {
 
 public:
     ~RollGoal(); // _ZN8RollGoalD2Ev

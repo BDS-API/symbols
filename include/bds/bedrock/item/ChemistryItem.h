@@ -3,7 +3,7 @@
 #include "Item.h"
 
 
-class ChemistryItem : Item {
+class ChemistryItem : public Item {
 
 public:
     ~ChemistryItem(); // _ZN13ChemistryItemD2Ev

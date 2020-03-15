@@ -6,7 +6,7 @@
 #include <vector>
 
 
-class ChalkboardBlockActor : BlockActor {
+class ChalkboardBlockActor : public BlockActor {
 
 public:
     class CachedLineData;

@@ -1,9 +1,9 @@
 #pragma once
 
-#include "Result.h"
-#include <functional>
 #include <initializer_list>
+#include <functional>
 #include "StringSpan.h"
+#include "Result.h"
 
 
 namespace Core {

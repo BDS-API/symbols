@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class LegacyIceFeature : Feature {
+class LegacyIceFeature : public Feature {
 
 public:
     ~LegacyIceFeature(); // _ZN16LegacyIceFeatureD2Ev

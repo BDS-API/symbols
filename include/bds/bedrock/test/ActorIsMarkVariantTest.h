@@ -3,7 +3,7 @@
 #include "SimpleIntFilterTest.h"
 
 
-class ActorIsMarkVariantTest : SimpleIntFilterTest {
+class ActorIsMarkVariantTest : public SimpleIntFilterTest {
 
 public:
     ~ActorIsMarkVariantTest(); // _ZN22ActorIsMarkVariantTestD2Ev

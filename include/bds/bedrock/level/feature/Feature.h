@@ -3,7 +3,7 @@
 #include "IFeature.h"
 
 
-class Feature : IFeature {
+class Feature : public IFeature {
 
 public:
     ~Feature(); // _ZN7FeatureD2Ev

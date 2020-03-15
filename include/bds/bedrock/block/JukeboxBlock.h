@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class JukeboxBlock : ActorBlock {
+class JukeboxBlock : public ActorBlock {
 
 public:
     ~JukeboxBlock(); // _ZN12JukeboxBlockD2Ev

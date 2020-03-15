@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <functional>
 #include "NetEventCallback.h"
+#include <functional>
 
 
-class ClassroomModeNetworkHandler : NetEventCallback {
+class ClassroomModeNetworkHandler : public NetEventCallback {
 
 public:
     ~ClassroomModeNetworkHandler(); // _ZN27ClassroomModeNetworkHandlerD2Ev

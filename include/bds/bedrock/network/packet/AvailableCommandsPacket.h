@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class AvailableCommandsPacket : Packet {
+class AvailableCommandsPacket : public Packet {
 
 public:
     class CommandData;

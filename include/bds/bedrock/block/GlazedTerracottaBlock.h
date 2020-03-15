@@ -4,7 +4,7 @@
 #include "FaceDirectionalBlock.h"
 
 
-class GlazedTerracottaBlock : FaceDirectionalBlock {
+class GlazedTerracottaBlock : public FaceDirectionalBlock {
 
 public:
     ~GlazedTerracottaBlock(); // _ZN21GlazedTerracottaBlockD2Ev

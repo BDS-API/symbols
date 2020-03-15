@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class CameraItem : Item {
+class CameraItem : public Item {
 
 public:
     ~CameraItem(); // _ZN10CameraItemD2Ev

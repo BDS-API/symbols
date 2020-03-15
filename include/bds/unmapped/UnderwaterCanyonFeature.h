@@ -3,7 +3,7 @@
 #include "CanyonFeature.h"
 
 
-class UnderwaterCanyonFeature : CanyonFeature {
+class UnderwaterCanyonFeature : public CanyonFeature {
 
 public:
     ~UnderwaterCanyonFeature(); // _ZN23UnderwaterCanyonFeatureD2Ev

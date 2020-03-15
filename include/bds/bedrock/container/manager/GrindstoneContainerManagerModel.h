@@ -3,7 +3,7 @@
 #include "ContainerManagerModel.h"
 
 
-class GrindstoneContainerManagerModel : ContainerManagerModel {
+class GrindstoneContainerManagerModel : public ContainerManagerModel {
 
 public:
     static long INPUT_SLOT;

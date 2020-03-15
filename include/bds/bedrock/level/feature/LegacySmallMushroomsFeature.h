@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class LegacySmallMushroomsFeature : Feature {
+class LegacySmallMushroomsFeature : public Feature {
 
 public:
     ~LegacySmallMushroomsFeature(); // _ZN27LegacySmallMushroomsFeatureD2Ev

@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "CropBlock.h"
+#include <string>
 
 
-class CarrotBlock : CropBlock {
+class CarrotBlock : public CropBlock {
 
 public:
     ~CarrotBlock(); // _ZN11CarrotBlockD2Ev

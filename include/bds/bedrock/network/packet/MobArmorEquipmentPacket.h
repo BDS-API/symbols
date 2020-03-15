@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class MobArmorEquipmentPacket : Packet {
+class MobArmorEquipmentPacket : public Packet {
 
 public:
     ~MobArmorEquipmentPacket(); // _ZN23MobArmorEquipmentPacketD2Ev

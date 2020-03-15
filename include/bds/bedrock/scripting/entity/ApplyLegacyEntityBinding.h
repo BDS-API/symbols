@@ -3,7 +3,7 @@
 #include <string>
 
 
-class ApplyLegacyEntityBinding /*ScriptTemplateFactory<ScriptServerContext>::Entity*/ { //TODO: incomplete class definition
+class ApplyLegacyEntityBinding /*public ScriptTemplateFactory<ScriptServerContext>::Entity*/ { //TODO: incomplete class definition
 
 public:
     ~ApplyLegacyEntityBinding(); // _ZN24ApplyLegacyEntityBindingD2Ev

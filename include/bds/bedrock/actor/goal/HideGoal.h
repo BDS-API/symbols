@@ -4,7 +4,7 @@
 #include "MoveToPOIGoal.h"
 
 
-class HideGoal : MoveToPOIGoal {
+class HideGoal : public MoveToPOIGoal {
 
 public:
     ~HideGoal(); // _ZN8HideGoalD2Ev

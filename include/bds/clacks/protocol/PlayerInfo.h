@@ -10,7 +10,7 @@ namespace com {
 
             namespace protocol {
 
-                class PlayerInfo /*google::protobuf::Message*/ { //TODO: incomplete class definition
+                class PlayerInfo /*public google::protobuf::Message*/ { //TODO: incomplete class definition
 
                 public:
                     ~PlayerInfo(); // _ZN3com6mojang6clacks8protocol10PlayerInfoD2Ev

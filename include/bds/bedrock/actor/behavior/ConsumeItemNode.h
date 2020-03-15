@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class ConsumeItemNode : BehaviorNode {
+class ConsumeItemNode : public BehaviorNode {
 
 public:
     ~ConsumeItemNode(); // _ZN15ConsumeItemNodeD2Ev

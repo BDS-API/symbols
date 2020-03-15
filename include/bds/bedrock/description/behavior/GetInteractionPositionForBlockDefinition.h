@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
 
 
-class GetInteractionPositionForBlockDefinition : BehaviorDefinition {
+class GetInteractionPositionForBlockDefinition : public BehaviorDefinition {
 
 public:
     ~GetInteractionPositionForBlockDefinition(); // _ZN40GetInteractionPositionForBlockDefinitionD2Ev

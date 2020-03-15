@@ -5,7 +5,7 @@
 #include "../../nbt/CompoundTag.h"
 
 
-class BeehiveBlockActor : BlockActor {
+class BeehiveBlockActor : public BlockActor {
 
 public:
     class Occupant;

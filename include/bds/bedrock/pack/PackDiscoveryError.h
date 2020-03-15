@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class PackDiscoveryError : PackError {
+class PackDiscoveryError : public PackError {
 
 public:
     ~PackDiscoveryError(); // _ZN18PackDiscoveryErrorD2Ev

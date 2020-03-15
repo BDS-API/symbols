@@ -4,7 +4,7 @@
 #include "ScriptEventData.h"
 
 
-class ScriptServerActorStopRidingEvent : ScriptEventData {
+class ScriptServerActorStopRidingEvent : public ScriptEventData {
 
 public:
     static long mHash;

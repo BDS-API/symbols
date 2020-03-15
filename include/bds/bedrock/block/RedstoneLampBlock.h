@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class RedstoneLampBlock : BlockLegacy {
+class RedstoneLampBlock : public BlockLegacy {
 
 public:
     ~RedstoneLampBlock(); // _ZN17RedstoneLampBlockD2Ev

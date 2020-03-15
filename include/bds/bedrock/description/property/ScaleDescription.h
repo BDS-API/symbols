@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class ScaleDescription : PropertyDescription {
+class ScaleDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK16ScaleDescription11getJsonNameEv

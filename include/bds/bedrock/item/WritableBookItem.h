@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class WritableBookItem : Item {
+class WritableBookItem : public Item {
 
 public:
     ~WritableBookItem(); // _ZN16WritableBookItemD2Ev

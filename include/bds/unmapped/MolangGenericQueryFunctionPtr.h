@@ -1,7 +1,7 @@
 #pragma once
 
-#include "MolangScriptArg.h"
 #include <functional>
+#include "MolangScriptArg.h"
 
 
 class MolangGenericQueryFunctionPtr {

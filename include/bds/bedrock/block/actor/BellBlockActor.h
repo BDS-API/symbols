@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class BellBlockActor : BlockActor {
+class BellBlockActor : public BlockActor {
 
 public:
     ~BellBlockActor(); // _ZN14BellBlockActorD2Ev

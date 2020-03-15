@@ -1,12 +1,12 @@
 #pragma once
 
-#include "StructurePoolElement.h"
-#include "BoundingBox.h"
-#include "../bedrock/util/BlockPos.h"
 #include <unordered_map>
+#include "../bedrock/util/BlockPos.h"
+#include "BoundingBox.h"
+#include "StructurePoolElement.h"
 
 
-class FeaturePoolElement : StructurePoolElement {
+class FeaturePoolElement : public StructurePoolElement {
 
 public:
 //  virtual void getSize(Rotation)const; //TODO: incomplete function definition // _ZNK18FeaturePoolElement7getSizeE8Rotation

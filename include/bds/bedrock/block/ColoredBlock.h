@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ColoredBlock : BlockLegacy {
+class ColoredBlock : public BlockLegacy {
 
 public:
     ~ColoredBlock(); // _ZN12ColoredBlockD2Ev

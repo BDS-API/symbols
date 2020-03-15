@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include "Item.h"
+#include <memory>
 
 
-class PotionItem : Item {
+class PotionItem : public Item {
 
 public:
     ~PotionItem(); // _ZN10PotionItemD2Ev

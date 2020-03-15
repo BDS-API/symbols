@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "BlockItem.h"
 
 
-class TopSnowBlockItem : BlockItem {
+class TopSnowBlockItem : public BlockItem {
 
 public:
     ~TopSnowBlockItem(); // _ZN16TopSnowBlockItemD2Ev

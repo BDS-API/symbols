@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class TurtleEggBlock : BlockLegacy {
+class TurtleEggBlock : public BlockLegacy {
 
 public:
     ~TurtleEggBlock(); // _ZN14TurtleEggBlockD2Ev

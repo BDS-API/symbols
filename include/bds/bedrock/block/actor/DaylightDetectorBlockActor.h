@@ -3,7 +3,7 @@
 #include "BlockActor.h"
 
 
-class DaylightDetectorBlockActor : BlockActor {
+class DaylightDetectorBlockActor : public BlockActor {
 
 public:
     ~DaylightDetectorBlockActor(); // _ZN26DaylightDetectorBlockActorD2Ev

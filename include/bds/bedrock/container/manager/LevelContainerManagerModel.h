@@ -5,7 +5,7 @@
 #include "ContainerManagerModel.h"
 
 
-class LevelContainerManagerModel : ContainerManagerModel {
+class LevelContainerManagerModel : public ContainerManagerModel {
 
 public:
     ~LevelContainerManagerModel(); // _ZN26LevelContainerManagerModelD2Ev

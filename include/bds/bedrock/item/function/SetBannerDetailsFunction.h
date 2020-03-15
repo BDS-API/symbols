@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SetBannerDetailsFunction : LootItemFunction {
+class SetBannerDetailsFunction : public LootItemFunction {
 
 public:
     ~SetBannerDetailsFunction(); // _ZN24SetBannerDetailsFunctionD2Ev

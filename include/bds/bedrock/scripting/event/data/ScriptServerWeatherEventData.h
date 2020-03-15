@@ -4,7 +4,7 @@
 #include "ScriptEventData.h"
 
 
-class ScriptServerWeatherEventData : ScriptEventData {
+class ScriptServerWeatherEventData : public ScriptEventData {
 
 public:
     static long mHash;

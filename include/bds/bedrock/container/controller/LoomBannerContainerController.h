@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "ContainerController.h"
+#include <memory>
 
 
-class LoomBannerContainerController : ContainerController {
+class LoomBannerContainerController : public ContainerController {
 
 public:
     ~LoomBannerContainerController(); // _ZN29LoomBannerContainerControllerD2Ev

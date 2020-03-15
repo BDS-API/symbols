@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class SpawnActorSystem : ITickingSystem {
+class SpawnActorSystem : public ITickingSystem {
 
 public:
     ~SpawnActorSystem(); // _ZN16SpawnActorSystemD2Ev

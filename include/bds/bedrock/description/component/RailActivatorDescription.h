@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class RailActivatorDescription : ComponentDescription {
+class RailActivatorDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK24RailActivatorDescription11getJsonNameEv

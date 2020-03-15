@@ -11,7 +11,7 @@ namespace com {
 
             namespace protocol {
 
-                class PlayerName /*google::protobuf::Message*/ { //TODO: incomplete class definition
+                class PlayerName /*public google::protobuf::Message*/ { //TODO: incomplete class definition
 
                 public:
                     ~PlayerName(); // _ZN3com6mojang6clacks8protocol10PlayerNameD2Ev

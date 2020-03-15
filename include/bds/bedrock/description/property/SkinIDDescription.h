@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class SkinIDDescription : PropertyDescription {
+class SkinIDDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK17SkinIDDescription11getJsonNameEv

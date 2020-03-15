@@ -4,7 +4,7 @@
 #include "SavedData.h"
 
 
-class PortalForcer : SavedData {
+class PortalForcer : public SavedData {
 
 public:
     static std::string PORTAL_FILE_ID;

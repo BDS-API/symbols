@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
 
 
-class BottleItem : Item {
+class BottleItem : public Item {
 
 public:
     ~BottleItem(); // _ZN10BottleItemD2Ev

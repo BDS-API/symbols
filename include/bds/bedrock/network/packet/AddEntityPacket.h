@@ -4,7 +4,7 @@
 #include "EntityServerPacket.h"
 
 
-class AddEntityPacket : EntityServerPacket {
+class AddEntityPacket : public EntityServerPacket {
 
 public:
     ~AddEntityPacket(); // _ZN15AddEntityPacketD2Ev

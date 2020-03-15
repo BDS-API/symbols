@@ -3,7 +3,7 @@
 #include "AttributeDescription.h"
 
 
-class MobEffectChangeDescription : AttributeDescription {
+class MobEffectChangeDescription : public AttributeDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK26MobEffectChangeDescription11getJsonNameEv

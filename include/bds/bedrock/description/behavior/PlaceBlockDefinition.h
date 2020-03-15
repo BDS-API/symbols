@@ -3,7 +3,7 @@
 #include "BehaviorDefinition.h"
 
 
-class PlaceBlockDefinition : BehaviorDefinition {
+class PlaceBlockDefinition : public BehaviorDefinition {
 
 public:
     ~PlaceBlockDefinition(); // _ZN20PlaceBlockDefinitionD2Ev

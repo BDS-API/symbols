@@ -3,7 +3,7 @@
 #include "NpcAction.h"
 
 
-class NpcUrlAction : NpcAction {
+class NpcUrlAction : public NpcAction {
 
 public:
     ~NpcUrlAction(); // _ZN12NpcUrlActionD2Ev

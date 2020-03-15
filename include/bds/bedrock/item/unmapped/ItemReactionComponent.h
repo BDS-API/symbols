@@ -3,7 +3,7 @@
 #include "../../../unmapped/LabTableReactionComponent.h"
 
 
-class ItemReactionComponent : LabTableReactionComponent {
+class ItemReactionComponent : public LabTableReactionComponent {
 
 public:
     ~ItemReactionComponent(); // _ZN21ItemReactionComponentD2Ev

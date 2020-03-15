@@ -3,7 +3,7 @@
 #include "LevelContainerManagerModel.h"
 
 
-class HorseContainerManagerModel : LevelContainerManagerModel {
+class HorseContainerManagerModel : public LevelContainerManagerModel {
 
 public:
     ~HorseContainerManagerModel(); // _ZN26HorseContainerManagerModelD2Ev

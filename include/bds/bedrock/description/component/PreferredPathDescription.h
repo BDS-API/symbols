@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class PreferredPathDescription : ComponentDescription {
+class PreferredPathDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK24PreferredPathDescription11getJsonNameEv

@@ -3,7 +3,7 @@
 #include "PathNavigation.h"
 
 
-class FloatNavigation : PathNavigation {
+class FloatNavigation : public PathNavigation {
 
 public:
     ~FloatNavigation(); // _ZN15FloatNavigationD2Ev

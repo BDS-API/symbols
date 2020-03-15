@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class SwimIdleGoal : Goal {
+class SwimIdleGoal : public Goal {
 
 public:
     ~SwimIdleGoal(); // _ZN12SwimIdleGoalD2Ev

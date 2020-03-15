@@ -3,7 +3,7 @@
 #include "WebviewObserver.h"
 
 
-class IWebviewTelemetry : WebviewObserver {
+class IWebviewTelemetry : public WebviewObserver {
 
 public:
     ~IWebviewTelemetry(); // _ZN17IWebviewTelemetryD2Ev

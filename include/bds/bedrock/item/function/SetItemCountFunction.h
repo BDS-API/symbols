@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SetItemCountFunction : LootItemFunction {
+class SetItemCountFunction : public LootItemFunction {
 
 public:
     ~SetItemCountFunction(); // _ZN20SetItemCountFunctionD2Ev

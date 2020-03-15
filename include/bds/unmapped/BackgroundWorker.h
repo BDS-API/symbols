@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include <optional>
 #include "ITaskExecutionContext.h"
 #include <memory>
+#include <optional>
 
 
-class BackgroundWorker : ITaskExecutionContext {
+class BackgroundWorker : public ITaskExecutionContext {
 
 public:
     static long gLocalWorkerMappingSingleton;

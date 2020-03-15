@@ -3,7 +3,7 @@
 #include "HumanoidMonster.h"
 
 
-class Zombie : HumanoidMonster {
+class Zombie : public HumanoidMonster {
 
 public:
     static long SPAWN_BONUS_UUID;

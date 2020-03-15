@@ -3,7 +3,7 @@
 #include "IStructurePoolBlockPredicate.h"
 
 
-class StructurePoolBlockPredicateStateMatch : IStructurePoolBlockPredicate {
+class StructurePoolBlockPredicateStateMatch : public IStructurePoolBlockPredicate {
 
 public:
     ~StructurePoolBlockPredicateStateMatch(); // _ZN37StructurePoolBlockPredicateStateMatchD2Ev

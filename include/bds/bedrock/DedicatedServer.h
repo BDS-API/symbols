@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../unmapped/AppIsland.h"
 #include "IMinecraftApp.h"
+#include "../unmapped/AppIsland.h"
 
 
-class DedicatedServer : IMinecraftApp, BedrockEngine::AppIsland {
+class DedicatedServer : public IMinecraftApp, public BedrockEngine::AppIsland {
 
 public:
     ~DedicatedServer(); // _ZN15DedicatedServerD2Ev

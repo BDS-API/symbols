@@ -4,7 +4,7 @@
 #include <memory>
 
 
-class ZipPackAccessStrategyOwningFileAcccess : ZipPackAccessStrategy {
+class ZipPackAccessStrategyOwningFileAcccess : public ZipPackAccessStrategy {
 
 public:
     ~ZipPackAccessStrategyOwningFileAcccess(); // _ZN38ZipPackAccessStrategyOwningFileAcccessD2Ev

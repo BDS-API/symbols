@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class WeatherCommand : Command {
+class WeatherCommand : public Command {
 
 public:
     ~WeatherCommand(); // _ZN14WeatherCommandD2Ev

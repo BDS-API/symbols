@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class SeaLanternBlock : BlockLegacy {
+class SeaLanternBlock : public BlockLegacy {
 
 public:
     ~SeaLanternBlock(); // _ZN15SeaLanternBlockD2Ev

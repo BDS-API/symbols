@@ -3,7 +3,7 @@
 #include "FurnaceContainerManagerModel.h"
 
 
-class SmokerContainerManagerModel : FurnaceContainerManagerModel {
+class SmokerContainerManagerModel : public FurnaceContainerManagerModel {
 
 public:
     ~SmokerContainerManagerModel(); // _ZN27SmokerContainerManagerModelD2Ev

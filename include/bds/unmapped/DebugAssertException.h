@@ -3,7 +3,7 @@
 #include <exception>
 
 
-class DebugAssertException : std::exception {
+class DebugAssertException : public std::exception {
 
 public:
     static long WHAT;

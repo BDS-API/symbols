@@ -3,7 +3,7 @@
 #include "IFeature.h"
 
 
-class SingleBlockFeature : IFeature {
+class SingleBlockFeature : public IFeature {
 
 public:
     ~SingleBlockFeature(); // _ZN18SingleBlockFeatureD2Ev

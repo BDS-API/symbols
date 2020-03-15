@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "BehaviorDefinition.h"
+#include "../../../json/Value.h"
 
 
-class WaitTicksDefinition : BehaviorDefinition {
+class WaitTicksDefinition : public BehaviorDefinition {
 
 public:
     ~WaitTicksDefinition(); // _ZN19WaitTicksDefinitionD2Ev

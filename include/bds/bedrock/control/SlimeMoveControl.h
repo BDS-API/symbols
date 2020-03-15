@@ -3,7 +3,7 @@
 #include "MoveControl.h"
 
 
-class SlimeMoveControl : MoveControl {
+class SlimeMoveControl : public MoveControl {
 
 public:
     ~SlimeMoveControl(); // _ZN16SlimeMoveControlD2Ev

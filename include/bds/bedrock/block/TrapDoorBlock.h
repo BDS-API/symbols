@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class TrapDoorBlock : BlockLegacy {
+class TrapDoorBlock : public BlockLegacy {
 
 public:
     ~TrapDoorBlock(); // _ZN13TrapDoorBlockD2Ev

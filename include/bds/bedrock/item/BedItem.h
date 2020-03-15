@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
-#include <memory>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
+#include <memory>
 
 
-class BedItem : Item {
+class BedItem : public Item {
 
 public:
     ~BedItem(); // _ZN7BedItemD2Ev

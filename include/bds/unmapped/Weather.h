@@ -3,7 +3,7 @@
 #include "../bedrock/level/LevelListener.h"
 
 
-class Weather : LevelListener {
+class Weather : public LevelListener {
 
 public:
     ~Weather(); // _ZN7WeatherD2Ev

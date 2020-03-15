@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class GetItemCountCommand : AgentCommands::Command {
+    class GetItemCountCommand : public AgentCommands::Command {
 
     public:
         ~GetItemCountCommand(); // _ZN13AgentCommands19GetItemCountCommandD2Ev

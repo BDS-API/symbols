@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class AddItemActorPacket : Packet {
+class AddItemActorPacket : public Packet {
 
 public:
     ~AddItemActorPacket(); // _ZN18AddItemActorPacketD2Ev

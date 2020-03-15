@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class TargetNearbySystem : ITickingSystem {
+class TargetNearbySystem : public ITickingSystem {
 
 public:
     ~TargetNearbySystem(); // _ZN18TargetNearbySystemD2Ev

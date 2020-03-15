@@ -3,7 +3,7 @@
 #include "Fireball.h"
 
 
-class DragonFireball : Fireball {
+class DragonFireball : public Fireball {
 
 public:
     static long SPLASH_RANGE;

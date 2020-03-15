@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class PlayerListPacket : Packet {
+class PlayerListPacket : public Packet {
 
 public:
     ~PlayerListPacket(); // _ZN16PlayerListPacketD2Ev

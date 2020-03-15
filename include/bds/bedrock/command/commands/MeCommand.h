@@ -3,7 +3,7 @@
 #include "MessagingCommand.h"
 
 
-class MeCommand : MessagingCommand {
+class MeCommand : public MessagingCommand {
 
 public:
     ~MeCommand(); // _ZN9MeCommandD2Ev

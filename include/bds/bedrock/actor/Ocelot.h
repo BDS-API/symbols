@@ -3,7 +3,7 @@
 #include "Animal.h"
 
 
-class Ocelot : Animal {
+class Ocelot : public Animal {
 
 public:
     static long SNEAK_SPEED_MOD;

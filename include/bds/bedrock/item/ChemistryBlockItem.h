@@ -3,7 +3,7 @@
 #include "BlockItem.h"
 
 
-class ChemistryBlockItem : BlockItem {
+class ChemistryBlockItem : public BlockItem {
 
 public:
     ~ChemistryBlockItem(); // _ZN18ChemistryBlockItemD2Ev

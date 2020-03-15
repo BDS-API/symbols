@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "Item.h"
 
 
-class RedStoneDustItem : Item {
+class RedStoneDustItem : public Item {
 
 public:
     ~RedStoneDustItem(); // _ZN16RedStoneDustItemD2Ev

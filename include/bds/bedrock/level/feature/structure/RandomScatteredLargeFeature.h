@@ -3,7 +3,7 @@
 #include "StructureFeature.h"
 
 
-class RandomScatteredLargeFeature : StructureFeature {
+class RandomScatteredLargeFeature : public StructureFeature {
 
 public:
     ~RandomScatteredLargeFeature(); // _ZN27RandomScatteredLargeFeatureD2Ev

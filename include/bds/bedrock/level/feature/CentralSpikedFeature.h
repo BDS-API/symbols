@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class CentralSpikedFeature : Feature {
+class CentralSpikedFeature : public Feature {
 
 public:
     ~CentralSpikedFeature(); // _ZN20CentralSpikedFeatureD2Ev

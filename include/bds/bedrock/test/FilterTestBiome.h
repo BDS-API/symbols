@@ -3,7 +3,7 @@
 #include "SimpleIntFilterTest.h"
 
 
-class FilterTestBiome : SimpleIntFilterTest {
+class FilterTestBiome : public SimpleIntFilterTest {
 
 public:
     ~FilterTestBiome(); // _ZN15FilterTestBiomeD2Ev

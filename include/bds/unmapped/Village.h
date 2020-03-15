@@ -1,14 +1,14 @@
 #pragma once
 
 #include "../bedrock/util/Tick.h"
-#include "../bedrock/actor/unmapped/ActorUniqueID.h"
-#include <unordered_map>
-#include <vector>
 #include <memory>
+#include <unordered_set>
+#include "../bedrock/actor/unmapped/ActorUniqueID.h"
+#include <vector>
+#include <unordered_map>
+#include "../bedrock/util/Vec3.h"
 #include <string>
 #include "../mce/UUID.h"
-#include "../bedrock/util/Vec3.h"
-#include <unordered_set>
 
 
 class Village {

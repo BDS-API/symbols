@@ -3,7 +3,7 @@
 #include "Packet.h"
 
 
-class EntityServerPacket : Packet {
+class EntityServerPacket : public Packet {
 
 public:
     ~EntityServerPacket(); // _ZN18EntityServerPacketD2Ev

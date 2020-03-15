@@ -1,10 +1,10 @@
 #pragma once
 
-#include <memory>
 #include "../OceanMonumentPiece.h"
+#include <memory>
 
 
-class OceanMonumentDoubleXRoom : OceanMonumentPiece {
+class OceanMonumentDoubleXRoom : public OceanMonumentPiece {
 
 public:
     ~OceanMonumentDoubleXRoom(); // _ZN24OceanMonumentDoubleXRoomD2Ev

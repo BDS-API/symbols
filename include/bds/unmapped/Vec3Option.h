@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class Vec3Option : Option {
+class Vec3Option : public Option {
 
 public:
     ~Vec3Option(); // _ZN10Vec3OptionD2Ev

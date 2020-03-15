@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class SpawnParticleEffectPacket : Packet {
+class SpawnParticleEffectPacket : public Packet {
 
 public:
     ~SpawnParticleEffectPacket(); // _ZN25SpawnParticleEffectPacketD2Ev

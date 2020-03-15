@@ -3,7 +3,7 @@
 #include <memory>
 
 
-class RegionHillsLayer /*MixerLayer<Biome *, Biome *>*/ { //TODO: incomplete class definition
+class RegionHillsLayer /*public MixerLayer<Biome *, Biome *>*/ { //TODO: incomplete class definition
 
 public:
     ~RegionHillsLayer(); // _ZN16RegionHillsLayerD2Ev

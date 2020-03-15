@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class DropAllCommand : AgentCommands::Command {
+    class DropAllCommand : public AgentCommands::Command {
 
     public:
         ~DropAllCommand(); // _ZN13AgentCommands14DropAllCommandD2Ev

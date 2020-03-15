@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class ItemFrameBlock : ActorBlock {
+class ItemFrameBlock : public ActorBlock {
 
 public:
     ~ItemFrameBlock(); // _ZN14ItemFrameBlockD2Ev

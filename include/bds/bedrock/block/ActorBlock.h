@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ActorBlock : BlockLegacy {
+class ActorBlock : public BlockLegacy {
 
 public:
     ~ActorBlock(); // _ZN10ActorBlockD2Ev

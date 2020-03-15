@@ -1,12 +1,12 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include <memory>
 #include "LootItemFunction.h"
+#include "../../../json/Value.h"
 #include <vector>
 
 
-class SpecificEnchantFunction : LootItemFunction {
+class SpecificEnchantFunction : public LootItemFunction {
 
 public:
     ~SpecificEnchantFunction(); // _ZN23SpecificEnchantFunctionD2Ev

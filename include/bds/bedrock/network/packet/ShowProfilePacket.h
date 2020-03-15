@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ShowProfilePacket : Packet {
+class ShowProfilePacket : public Packet {
 
 public:
     ~ShowProfilePacket(); // _ZN17ShowProfilePacketD2Ev

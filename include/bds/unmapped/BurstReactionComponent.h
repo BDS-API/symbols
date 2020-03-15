@@ -3,7 +3,7 @@
 #include "LabTableReactionComponent.h"
 
 
-class BurstReactionComponent : LabTableReactionComponent {
+class BurstReactionComponent : public LabTableReactionComponent {
 
 public:
     ~BurstReactionComponent(); // _ZN22BurstReactionComponentD2Ev

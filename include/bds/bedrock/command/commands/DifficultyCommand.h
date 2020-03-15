@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class DifficultyCommand : Command {
+class DifficultyCommand : public Command {
 
 public:
     ~DifficultyCommand(); // _ZN17DifficultyCommandD2Ev

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class MountPathingGoal : Goal {
+class MountPathingGoal : public Goal {
 
 public:
     ~MountPathingGoal(); // _ZN16MountPathingGoalD2Ev

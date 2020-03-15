@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class StopSoundCommand : Command {
+class StopSoundCommand : public Command {
 
 public:
     ~StopSoundCommand(); // _ZN16StopSoundCommandD2Ev

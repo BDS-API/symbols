@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class SetTimePacket : Packet {
+class SetTimePacket : public Packet {
 
 public:
     ~SetTimePacket(); // _ZN13SetTimePacketD2Ev

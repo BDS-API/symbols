@@ -3,7 +3,7 @@
 #include "NavigationDescription.h"
 
 
-class NavigationSwimDescription : NavigationDescription {
+class NavigationSwimDescription : public NavigationDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK25NavigationSwimDescription11getJsonNameEv

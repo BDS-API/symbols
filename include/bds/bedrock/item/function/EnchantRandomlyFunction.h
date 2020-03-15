@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class EnchantRandomlyFunction : LootItemFunction {
+class EnchantRandomlyFunction : public LootItemFunction {
 
 public:
     ~EnchantRandomlyFunction(); // _ZN23EnchantRandomlyFunctionD2Ev

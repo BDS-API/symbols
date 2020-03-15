@@ -3,7 +3,7 @@
 #include "ChunkBuildOrderPolicyBase.h"
 
 
-class ChunkBuildOrderPolicy : ChunkBuildOrderPolicyBase {
+class ChunkBuildOrderPolicy : public ChunkBuildOrderPolicyBase {
 
 public:
     ~ChunkBuildOrderPolicy(); // _ZN21ChunkBuildOrderPolicyD2Ev

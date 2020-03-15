@@ -3,7 +3,7 @@
 #include "AbstractArrow.h"
 
 
-class ThrownTrident : AbstractArrow {
+class ThrownTrident : public AbstractArrow {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN13ThrownTrident15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

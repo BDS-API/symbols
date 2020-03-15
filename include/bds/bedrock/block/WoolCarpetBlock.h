@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class WoolCarpetBlock : BlockLegacy {
+class WoolCarpetBlock : public BlockLegacy {
 
 public:
     ~WoolCarpetBlock(); // _ZN15WoolCarpetBlockD2Ev

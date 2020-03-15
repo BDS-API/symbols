@@ -6,7 +6,7 @@
 
 namespace EndCityPieces {
 
-    class EndCityPiece : TemplateStructurePiece {
+    class EndCityPiece : public TemplateStructurePiece {
 
     public:
         ~EndCityPiece(); // _ZN13EndCityPieces12EndCityPieceD2Ev

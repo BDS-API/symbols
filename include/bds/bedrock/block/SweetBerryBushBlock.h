@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class SweetBerryBushBlock : BushBlock {
+class SweetBerryBushBlock : public BushBlock {
 
 public:
     ~SweetBerryBushBlock(); // _ZN19SweetBerryBushBlockD2Ev

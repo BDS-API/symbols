@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class TextObjectLocalizedTextWithParams : ITextObject {
+class TextObjectLocalizedTextWithParams : public ITextObject {
 
 public:
     ~TextObjectLocalizedTextWithParams(); // _ZN33TextObjectLocalizedTextWithParamsD2Ev

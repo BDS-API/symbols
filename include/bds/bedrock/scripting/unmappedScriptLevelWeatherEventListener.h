@@ -4,7 +4,7 @@
 #include "../../level/LevelEventListener.h"
 
 
-class ScriptLevelWeatherEventListener : LevelEventListener {
+class ScriptLevelWeatherEventListener : public LevelEventListener {
 
 public:
     ~ScriptLevelWeatherEventListener(); // _ZN31ScriptLevelWeatherEventListenerD2Ev

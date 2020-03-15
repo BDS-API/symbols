@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class StructureBlock : ActorBlock {
+class StructureBlock : public ActorBlock {
 
 public:
     ~StructureBlock(); // _ZN14StructureBlockD2Ev

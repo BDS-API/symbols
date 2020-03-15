@@ -5,7 +5,7 @@
 #include "BlockItem.h"
 
 
-class AuxDataBlockItem : BlockItem {
+class AuxDataBlockItem : public BlockItem {
 
 public:
     ~AuxDataBlockItem(); // _ZN16AuxDataBlockItemD2Ev

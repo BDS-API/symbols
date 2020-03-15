@@ -3,7 +3,7 @@
 #include "PropertyDescription.h"
 
 
-class IsShearedDescription : PropertyDescription {
+class IsShearedDescription : public PropertyDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK20IsShearedDescription11getJsonNameEv

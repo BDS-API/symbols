@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../../../json/Value.h"
 #include "LootItemCondition.h"
+#include "../../../json/Value.h"
 
 
-class LootItemActorHasMarkVariantCondition : LootItemCondition {
+class LootItemActorHasMarkVariantCondition : public LootItemCondition {
 
 public:
     ~LootItemActorHasMarkVariantCondition(); // _ZN36LootItemActorHasMarkVariantConditionD2Ev

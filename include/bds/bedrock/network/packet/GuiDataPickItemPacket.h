@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class GuiDataPickItemPacket : Packet {
+class GuiDataPickItemPacket : public Packet {
 
 public:
     ~GuiDataPickItemPacket(); // _ZN21GuiDataPickItemPacketD2Ev

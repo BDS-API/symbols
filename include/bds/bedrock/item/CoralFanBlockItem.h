@@ -1,11 +1,11 @@
 #pragma once
 
-#include <string>
 #include "../util/BlockPos.h"
+#include <string>
 #include "BlockItem.h"
 
 
-class CoralFanBlockItem : BlockItem {
+class CoralFanBlockItem : public BlockItem {
 
 public:
     ~CoralFanBlockItem(); // _ZN17CoralFanBlockItemD2Ev

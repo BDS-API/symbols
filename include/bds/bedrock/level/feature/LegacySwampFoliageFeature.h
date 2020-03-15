@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class LegacySwampFoliageFeature : Feature {
+class LegacySwampFoliageFeature : public Feature {
 
 public:
     ~LegacySwampFoliageFeature(); // _ZN25LegacySwampFoliageFeatureD2Ev

@@ -11,7 +11,7 @@ namespace com {
 
             namespace protocol {
 
-                class Xuid /*google::protobuf::Message*/ { //TODO: incomplete class definition
+                class Xuid /*public google::protobuf::Message*/ { //TODO: incomplete class definition
 
                 public:
                     ~Xuid(); // _ZN3com6mojang6clacks8protocol4XuidD2Ev

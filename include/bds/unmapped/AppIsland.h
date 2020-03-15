@@ -5,7 +5,7 @@
 
 namespace BedrockEngine {
 
-    class AppIsland : BedrockEngine::IIslandCore {
+    class AppIsland : public BedrockEngine::IIslandCore {
 
     public:
         ~AppIsland(); // _ZN13BedrockEngine9AppIslandD2Ev

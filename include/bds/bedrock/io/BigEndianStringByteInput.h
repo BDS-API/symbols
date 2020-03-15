@@ -4,7 +4,7 @@
 #include "StringByteInput.h"
 
 
-class BigEndianStringByteInput : StringByteInput {
+class BigEndianStringByteInput : public StringByteInput {
 
 public:
     ~BigEndianStringByteInput(); // _ZN24BigEndianStringByteInputD2Ev

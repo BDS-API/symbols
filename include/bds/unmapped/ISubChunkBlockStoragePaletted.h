@@ -3,7 +3,7 @@
 #include "../bedrock/level/chunk/SubChunkBlockStorage.h"
 
 
-class ISubChunkBlockStoragePaletted : SubChunkBlockStorage {
+class ISubChunkBlockStoragePaletted : public SubChunkBlockStorage {
 
 public:
     ~ISubChunkBlockStoragePaletted(); // _ZN29ISubChunkBlockStoragePalettedD2Ev

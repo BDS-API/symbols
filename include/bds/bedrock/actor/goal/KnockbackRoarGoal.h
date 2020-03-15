@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "../../definition/DefinitionTrigger.h"
 #include "Goal.h"
+#include "../../definition/DefinitionTrigger.h"
 
 
-class KnockbackRoarGoal : Goal {
+class KnockbackRoarGoal : public Goal {
 
 public:
     ~KnockbackRoarGoal(); // _ZN17KnockbackRoarGoalD2Ev

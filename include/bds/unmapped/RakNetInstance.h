@@ -1,15 +1,15 @@
 #pragma once
 
-#include "GameConnectionInfo.h"
-#include <string>
-#include "RakPeerHelper.h"
-#include "../bedrock/network/NetworkPeer.h"
 #include "../bedrock/definition/ConnectionDefinition.h"
-#include <functional>
+#include "../bedrock/network/NetworkPeer.h"
 #include "Connector.h"
+#include <string>
+#include <functional>
+#include "GameConnectionInfo.h"
+#include "RakPeerHelper.h"
 
 
-class RakNetInstance : Connector {
+class RakNetInstance : public Connector {
 
 public:
     class ConnectionCallbacks;
@@ -72,7 +72,7 @@ public:
         ~PingCallbackData(); // _ZN14RakNetInstance16PingCallbackDataD2Ev
         PingCallbackData(RakNetInstance::PingCallbackData &&); // _ZN14RakNetInstance16PingCallbackDataC2EOS0_
     };
-    class RakNetNetworkPeer : NetworkPeer {
+    class RakNetNetworkPeer : public NetworkPeer {
 
     public:
         ~RakNetNetworkPeer(); // _ZN14RakNetInstance17RakNetNetworkPeerD2Ev

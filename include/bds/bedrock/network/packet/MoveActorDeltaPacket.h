@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class MoveActorDeltaPacket : Packet {
+class MoveActorDeltaPacket : public Packet {
 
 public:
     ~MoveActorDeltaPacket(); // _ZN20MoveActorDeltaPacketD2Ev

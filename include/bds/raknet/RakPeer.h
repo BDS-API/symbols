@@ -1,15 +1,15 @@
 #pragma once
 
+#include "SystemAddress.h"
 #include "AddressOrGUID.h"
 #include "RakNetGUID.h"
 #include "RakPeerInterface.h"
 #include "RNS2EventHandler.h"
-#include "SystemAddress.h"
 
 
 namespace RakNet {
 
-    class RakPeer : RakNet::RakPeerInterface, RakNet::RNS2EventHandler {
+    class RakPeer : public RakNet::RakPeerInterface, public RakNet::RNS2EventHandler {
 
     public:
         class BufferedCommandStruct;

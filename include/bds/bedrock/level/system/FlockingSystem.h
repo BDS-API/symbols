@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class FlockingSystem : ITickingSystem {
+class FlockingSystem : public ITickingSystem {
 
 public:
     ~FlockingSystem(); // _ZN14FlockingSystemD2Ev

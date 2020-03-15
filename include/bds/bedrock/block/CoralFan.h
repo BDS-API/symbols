@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class CoralFan : BushBlock {
+class CoralFan : public BushBlock {
 
 public:
     static long CORAL_FAN_NAMES_COUNT;

@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
 #include "FloorRoomCollection.h"
+#include <string>
 
 
 namespace WoodlandMansionPieces {
 
-    class SecondFloorRoomCollection : WoodlandMansionPieces::FloorRoomCollection {
+    class SecondFloorRoomCollection : public WoodlandMansionPieces::FloorRoomCollection {
 
     public:
         ~SecondFloorRoomCollection(); // _ZN21WoodlandMansionPieces25SecondFloorRoomCollectionD2Ev

@@ -3,7 +3,7 @@
 #include "Throwable.h"
 
 
-class ThrownPotion : Throwable {
+class ThrownPotion : public Throwable {
 
 public:
     static long SPLASH_RANGE;

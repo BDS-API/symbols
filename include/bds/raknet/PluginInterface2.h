@@ -1,8 +1,8 @@
 #pragma once
 
 #include "RakNetGUID.h"
-#include "AddressOrGUID.h"
 #include "SystemAddress.h"
+#include "AddressOrGUID.h"
 
 
 namespace RakNet {

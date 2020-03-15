@@ -5,7 +5,7 @@
 
 namespace WoodlandMansionPieces {
 
-    class ThirdFloorRoomCollection : WoodlandMansionPieces::SecondFloorRoomCollection {
+    class ThirdFloorRoomCollection : public WoodlandMansionPieces::SecondFloorRoomCollection {
 
     public:
         ~ThirdFloorRoomCollection(); // _ZN21WoodlandMansionPieces24ThirdFloorRoomCollectionD2Ev

@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class ConduitBlock : ActorBlock {
+class ConduitBlock : public ActorBlock {
 
 public:
     ~ConduitBlock(); // _ZN12ConduitBlockD2Ev

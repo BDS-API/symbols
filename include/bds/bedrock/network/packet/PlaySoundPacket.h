@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class PlaySoundPacket : Packet {
+class PlaySoundPacket : public Packet {
 
 public:
     ~PlaySoundPacket(); // _ZN15PlaySoundPacketD2Ev

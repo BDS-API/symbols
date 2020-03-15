@@ -1,12 +1,12 @@
 #pragma once
 
-#include "PlayerEventListener.h"
 #include "../bedrock/block/unmapped/BlockEventListener.h"
-#include "../bedrock/level/LevelEventListener.h"
+#include "PlayerEventListener.h"
 #include "../bedrock/actor/unmapped/ActorEventListener.h"
+#include "../bedrock/level/LevelEventListener.h"
 
 
-class VanillaServerGameplayEventListener : ActorEventListener, BlockEventListener, PlayerEventListener, LevelEventListener {
+class VanillaServerGameplayEventListener : public ActorEventListener, public BlockEventListener, public PlayerEventListener, public LevelEventListener {
 
 public:
     ~VanillaServerGameplayEventListener(); // _ZN34VanillaServerGameplayEventListenerD2Ev

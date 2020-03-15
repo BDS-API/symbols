@@ -3,7 +3,7 @@
 #include "StructureStart.h"
 
 
-class MineshaftStart : StructureStart {
+class MineshaftStart : public StructureStart {
 
 public:
     ~MineshaftStart(); // _ZN14MineshaftStartD2Ev

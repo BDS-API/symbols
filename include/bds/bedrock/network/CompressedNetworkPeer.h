@@ -1,11 +1,11 @@
 #pragma once
 
 #include "NetworkPeer.h"
-#include <memory>
 #include <string>
+#include <memory>
 
 
-class CompressedNetworkPeer : NetworkPeer {
+class CompressedNetworkPeer : public NetworkPeer {
 
 public:
     ~CompressedNetworkPeer(); // _ZN21CompressedNetworkPeerD2Ev

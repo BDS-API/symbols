@@ -5,7 +5,7 @@
 
 namespace VanillaSurfaceBuilders {
 
-    class NetherSurfaceBuilder : ISurfaceBuilder {
+    class NetherSurfaceBuilder : public ISurfaceBuilder {
 
     public:
         ~NetherSurfaceBuilder(); // _ZN22VanillaSurfaceBuilders20NetherSurfaceBuilderD2Ev

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class MoveThroughVillageGoal : Goal {
+class MoveThroughVillageGoal : public Goal {
 
 public:
     ~MoveThroughVillageGoal(); // _ZN22MoveThroughVillageGoalD2Ev

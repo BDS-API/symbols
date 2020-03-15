@@ -5,7 +5,7 @@
 #include "SoundPlayer.h"
 
 
-class NullSoundPlayer : SoundPlayer {
+class NullSoundPlayer : public SoundPlayer {
 
 public:
     ~NullSoundPlayer(); // _ZN15NullSoundPlayerD2Ev

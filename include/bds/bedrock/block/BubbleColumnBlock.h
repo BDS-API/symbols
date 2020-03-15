@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "BlockLegacy.h"
 #include <vector>
+#include "BlockLegacy.h"
 
 
-class BubbleColumnBlock : BlockLegacy {
+class BubbleColumnBlock : public BlockLegacy {
 
 public:
     ~BubbleColumnBlock(); // _ZN17BubbleColumnBlockD2Ev

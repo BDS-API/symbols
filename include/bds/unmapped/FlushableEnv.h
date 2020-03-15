@@ -2,7 +2,7 @@
 
 
 
-class FlushableEnv /*leveldb::EnvWrapper*/ { //TODO: incomplete class definition
+class FlushableEnv /*public leveldb::EnvWrapper*/ { //TODO: incomplete class definition
 
 public:
     ~FlushableEnv(); // _ZN12FlushableEnvD2Ev

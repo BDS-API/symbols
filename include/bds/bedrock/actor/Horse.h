@@ -4,7 +4,7 @@
 #include "Animal.h"
 
 
-class Horse : Animal {
+class Horse : public Animal {
 
 public:
     static long DATA_AGE;

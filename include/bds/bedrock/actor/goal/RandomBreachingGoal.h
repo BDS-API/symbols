@@ -4,7 +4,7 @@
 #include "RandomStrollGoal.h"
 
 
-class RandomBreachingGoal : RandomStrollGoal {
+class RandomBreachingGoal : public RandomStrollGoal {
 
 public:
     ~RandomBreachingGoal(); // _ZN19RandomBreachingGoalD2Ev

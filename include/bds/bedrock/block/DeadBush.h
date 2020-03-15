@@ -4,7 +4,7 @@
 #include "BushBlock.h"
 
 
-class DeadBush : BushBlock {
+class DeadBush : public BushBlock {
 
 public:
     ~DeadBush(); // _ZN8DeadBushD2Ev

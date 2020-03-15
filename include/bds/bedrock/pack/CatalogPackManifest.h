@@ -4,7 +4,7 @@
 #include "PackManifest.h"
 
 
-class CatalogPackManifest : PackManifest {
+class CatalogPackManifest : public PackManifest {
 
 public:
     ~CatalogPackManifest(); // _ZN19CatalogPackManifestD2Ev

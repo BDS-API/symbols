@@ -3,7 +3,7 @@
 #include "TriggerDescription.h"
 
 
-class OnDeathDescription : TriggerDescription {
+class OnDeathDescription : public TriggerDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK18OnDeathDescription11getJsonNameEv

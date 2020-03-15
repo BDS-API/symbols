@@ -4,7 +4,7 @@
 #include "ActorBlock.h"
 
 
-class EnchantingTableBlock : ActorBlock {
+class EnchantingTableBlock : public ActorBlock {
 
 public:
     ~EnchantingTableBlock(); // _ZN20EnchantingTableBlockD2Ev

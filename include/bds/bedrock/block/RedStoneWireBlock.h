@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class RedStoneWireBlock : BlockLegacy {
+class RedStoneWireBlock : public BlockLegacy {
 
 public:
     ~RedStoneWireBlock(); // _ZN17RedStoneWireBlockD2Ev

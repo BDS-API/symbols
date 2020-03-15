@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class CameraBlock : BlockLegacy {
+class CameraBlock : public BlockLegacy {
 
 public:
     ~CameraBlock(); // _ZN11CameraBlockD2Ev

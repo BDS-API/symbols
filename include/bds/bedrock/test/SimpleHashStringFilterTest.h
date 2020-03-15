@@ -3,7 +3,7 @@
 #include "FilterTest.h"
 
 
-class SimpleHashStringFilterTest : FilterTest {
+class SimpleHashStringFilterTest : public FilterTest {
 
 public:
     ~SimpleHashStringFilterTest(); // _ZN26SimpleHashStringFilterTestD2Ev

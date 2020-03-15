@@ -4,7 +4,7 @@
 #include "TorchBlock.h"
 
 
-class RedstoneTorchBlock : TorchBlock {
+class RedstoneTorchBlock : public TorchBlock {
 
 public:
     ~RedstoneTorchBlock(); // _ZN18RedstoneTorchBlockD2Ev

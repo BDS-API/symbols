@@ -1,9 +1,9 @@
 #pragma once
 
-#include <string>
-#include <functional>
 #include "../util/BlockPos.h"
+#include <string>
 #include "CommandPosition.h"
+#include <functional>
 
 
 class CommandSelectorBase {

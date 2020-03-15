@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "../../block/unmapped/BlockEventListener.h"
+#include <string>
 
 
-class ScriptServerBlockEventListener : BlockEventListener {
+class ScriptServerBlockEventListener : public BlockEventListener {
 
 public:
     ~ScriptServerBlockEventListener(); // _ZN30ScriptServerBlockEventListenerD2Ev

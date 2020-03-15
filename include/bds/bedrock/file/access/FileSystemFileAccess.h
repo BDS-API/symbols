@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
-#include "IFileReadAccess.h"
-#include "IFileAccess.h"
 #include "IFileWriteAccess.h"
+#include <string>
+#include "IFileAccess.h"
+#include "IFileReadAccess.h"
 
 
-class FileSystemFileAccess : IFileAccess {
+class FileSystemFileAccess : public IFileAccess {
 
 public:
     class FileSystemFileReadAccess;
@@ -21,14 +21,14 @@ public:
     virtual void getWriteInterface(); // _ZN20FileSystemFileAccess17getWriteInterfaceEv
     virtual void unload(); // _ZN20FileSystemFileAccess6unloadEv
 //  FileSystemFileAccess(FileSystemMode); //TODO: incomplete function definition // _ZN20FileSystemFileAccessC2E14FileSystemMode
-    class FileSystemFileReadAccess : IFileReadAccess {
+    class FileSystemFileReadAccess : public IFileReadAccess {
 
     public:
         ~FileSystemFileReadAccess(); // _ZN20FileSystemFileAccess24FileSystemFileReadAccessD2Ev
         virtual void fread(void *, unsigned long, unsigned long, void *)const; // _ZNK20FileSystemFileAccess24FileSystemFileReadAccess5freadEPvmmS1_
         FileSystemFileReadAccess(); // _ZN20FileSystemFileAccess24FileSystemFileReadAccessC2Ev
     };
-    class FileSystemFileWriteAccess : IFileWriteAccess {
+    class FileSystemFileWriteAccess : public IFileWriteAccess {
 
     public:
         ~FileSystemFileWriteAccess(); // _ZN20FileSystemFileAccess25FileSystemFileWriteAccessD2Ev

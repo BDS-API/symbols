@@ -3,7 +3,7 @@
 #include "BehaviorNode.h"
 
 
-class BreakBlockNode : BehaviorNode {
+class BreakBlockNode : public BehaviorNode {
 
 public:
     ~BreakBlockNode(); // _ZN14BreakBlockNodeD2Ev

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class EndermanTakeBlockGoal : Goal {
+class EndermanTakeBlockGoal : public Goal {
 
 public:
     ~EndermanTakeBlockGoal(); // _ZN21EndermanTakeBlockGoalD2Ev

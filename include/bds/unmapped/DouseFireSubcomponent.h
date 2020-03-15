@@ -3,7 +3,7 @@
 #include "OnHitSubcomponent.h"
 
 
-class DouseFireSubcomponent : OnHitSubcomponent {
+class DouseFireSubcomponent : public OnHitSubcomponent {
 
 public:
     ~DouseFireSubcomponent(); // _ZN21DouseFireSubcomponentD2Ev

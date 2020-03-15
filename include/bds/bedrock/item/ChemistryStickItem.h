@@ -4,7 +4,7 @@
 #include "ChemistryItem.h"
 
 
-class ChemistryStickItem : ChemistryItem {
+class ChemistryStickItem : public ChemistryItem {
 
 public:
     static long COLOR_BITS;

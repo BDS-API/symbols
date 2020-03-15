@@ -4,7 +4,7 @@
 #include <string>
 
 
-class WoodBlock : RotatedPillarBlock {
+class WoodBlock : public RotatedPillarBlock {
 
 public:
     ~WoodBlock(); // _ZN9WoodBlockD2Ev

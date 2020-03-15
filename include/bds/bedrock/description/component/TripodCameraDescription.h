@@ -3,7 +3,7 @@
 #include "ComponentDescription.h"
 
 
-class TripodCameraDescription : ComponentDescription {
+class TripodCameraDescription : public ComponentDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK23TripodCameraDescription11getJsonNameEv

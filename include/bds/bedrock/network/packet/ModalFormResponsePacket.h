@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ModalFormResponsePacket : Packet {
+class ModalFormResponsePacket : public Packet {
 
 public:
     ~ModalFormResponsePacket(); // _ZN23ModalFormResponsePacketD2Ev

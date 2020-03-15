@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class DetectRedstoneCommand : AgentCommands::Command {
+    class DetectRedstoneCommand : public AgentCommands::Command {
 
     public:
         ~DetectRedstoneCommand(); // _ZN13AgentCommands21DetectRedstoneCommandD2Ev

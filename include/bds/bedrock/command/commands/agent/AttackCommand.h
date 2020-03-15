@@ -5,7 +5,7 @@
 
 namespace AgentCommands {
 
-    class AttackCommand : AgentCommands::Command {
+    class AttackCommand : public AgentCommands::Command {
 
     public:
         ~AttackCommand(); // _ZN13AgentCommands13AttackCommandD2Ev

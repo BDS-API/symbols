@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class ServerToClientHandshakePacket : Packet {
+class ServerToClientHandshakePacket : public Packet {
 
 public:
     ~ServerToClientHandshakePacket(); // _ZN29ServerToClientHandshakePacketD2Ev

@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class VexRandomMoveGoal : Goal {
+class VexRandomMoveGoal : public Goal {
 
 public:
     ~VexRandomMoveGoal(); // _ZN17VexRandomMoveGoalD2Ev

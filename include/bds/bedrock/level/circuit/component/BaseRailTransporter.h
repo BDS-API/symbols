@@ -3,7 +3,7 @@
 #include "BaseCircuitComponent.h"
 
 
-class BaseRailTransporter : BaseCircuitComponent {
+class BaseRailTransporter : public BaseCircuitComponent {
 
 public:
     ~BaseRailTransporter(); // _ZN19BaseRailTransporterD2Ev

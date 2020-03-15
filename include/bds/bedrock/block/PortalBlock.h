@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class PortalBlock : BlockLegacy {
+class PortalBlock : public BlockLegacy {
 
 public:
     ~PortalBlock(); // _ZN11PortalBlockD2Ev

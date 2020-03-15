@@ -3,7 +3,7 @@
 #include "WaterAnimal.h"
 
 
-class Fish : WaterAnimal {
+class Fish : public WaterAnimal {
 
 public:
 //  virtual void initializeComponents(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN4Fish20initializeComponentsEN5Actor20InitializationMethodERK20VariantParameterList

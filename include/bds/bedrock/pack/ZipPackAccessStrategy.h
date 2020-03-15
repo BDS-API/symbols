@@ -5,7 +5,7 @@
 #include "PackAccessStrategy.h"
 
 
-class ZipPackAccessStrategy : PackAccessStrategy {
+class ZipPackAccessStrategy : public PackAccessStrategy {
 
 public:
     ~ZipPackAccessStrategy(); // _ZN21ZipPackAccessStrategyD2Ev

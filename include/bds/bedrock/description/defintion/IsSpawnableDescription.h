@@ -3,7 +3,7 @@
 #include "DefintionDescription.h"
 
 
-class IsSpawnableDescription : DefintionDescription {
+class IsSpawnableDescription : public DefintionDescription {
 
 public:
     ~IsSpawnableDescription(); // _ZN22IsSpawnableDescriptionD2Ev

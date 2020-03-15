@@ -1,11 +1,11 @@
 #pragma once
 
 #include <string>
-#include "BlockLegacy.h"
 #include <vector>
+#include "BlockLegacy.h"
 
 
-class EndRodBlock : BlockLegacy {
+class EndRodBlock : public BlockLegacy {
 
 public:
     ~EndRodBlock(); // _ZN11EndRodBlockD2Ev

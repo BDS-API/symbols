@@ -4,7 +4,7 @@
 #include <string>
 
 
-class QuartzBlockBlock : RotatedPillarBlock {
+class QuartzBlockBlock : public RotatedPillarBlock {
 
 public:
     ~QuartzBlockBlock(); // _ZN16QuartzBlockBlockD2Ev

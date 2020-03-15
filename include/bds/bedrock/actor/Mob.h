@@ -1,13 +1,13 @@
 #pragma once
 
-#include "unmapped/ActorUniqueID.h"
 #include <vector>
-#include "../util/BlockPos.h"
+#include "unmapped/ActorUniqueID.h"
 #include "Actor.h"
 #include <string>
+#include "../util/BlockPos.h"
 
 
-class Mob : Actor {
+class Mob : public Actor {
 
 public:
     static long PLAYER_HURT_EXPERIENCE_TIME;

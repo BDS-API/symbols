@@ -3,7 +3,7 @@
 #include "ITickingSystem.h"
 
 
-class TrailSystem : ITickingSystem {
+class TrailSystem : public ITickingSystem {
 
 public:
     class BlockPositions;

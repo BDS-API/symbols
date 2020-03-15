@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class BaseRailBlock : BlockLegacy {
+class BaseRailBlock : public BlockLegacy {
 
 public:
     class Rail;

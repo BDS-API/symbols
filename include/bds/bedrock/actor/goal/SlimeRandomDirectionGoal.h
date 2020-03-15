@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class SlimeRandomDirectionGoal : Goal {
+class SlimeRandomDirectionGoal : public Goal {
 
 public:
     ~SlimeRandomDirectionGoal(); // _ZN24SlimeRandomDirectionGoalD2Ev

@@ -3,7 +3,7 @@
 #include "MoveInputHandler.h"
 
 
-class ServerMoveInputHandler : MoveInputHandler {
+class ServerMoveInputHandler : public MoveInputHandler {
 
 public:
     ~ServerMoveInputHandler(); // _ZN22ServerMoveInputHandlerD2Ev

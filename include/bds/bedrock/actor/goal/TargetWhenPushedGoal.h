@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class TargetWhenPushedGoal : Goal {
+class TargetWhenPushedGoal : public Goal {
 
 public:
     ~TargetWhenPushedGoal(); // _ZN20TargetWhenPushedGoalD2Ev

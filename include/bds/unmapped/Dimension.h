@@ -1,17 +1,17 @@
 #pragma once
 
-#include "../bedrock/actor/unmapped/ActorUniqueID.h"
-#include <memory>
 #include "../bedrock/util/Brightness.h"
-#include <string>
-#include "../bedrock/level/LevelListener.h"
-#include "SavedData.h"
-#include "../bedrock/util/BlockPos.h"
-#include <functional>
+#include <memory>
+#include "../bedrock/actor/unmapped/ActorUniqueID.h"
 #include "../bedrock/util/Vec3.h"
+#include <string>
+#include "SavedData.h"
+#include <functional>
+#include "../bedrock/level/LevelListener.h"
+#include "../bedrock/util/BlockPos.h"
 
 
-class Dimension : LevelListener, SavedData {
+class Dimension : public LevelListener, public SavedData {
 
 public:
     static long MOON_BRIGHTNESS_PER_PHASE;

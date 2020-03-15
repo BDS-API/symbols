@@ -3,7 +3,7 @@
 #include "Animal.h"
 
 
-class Parrot : Animal {
+class Parrot : public Animal {
 
 public:
 //  virtual void reloadHardcodedClient(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN6Parrot21reloadHardcodedClientEN5Actor20InitializationMethodERK20VariantParameterList

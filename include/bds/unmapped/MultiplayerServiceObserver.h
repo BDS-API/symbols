@@ -5,7 +5,7 @@
 
 namespace Social {
 
-    class MultiplayerServiceObserver /*Core::Observer<Social::MultiplayerServiceObserver, Core::SingleThreadedLock>*/ { //TODO: incomplete class definition
+    class MultiplayerServiceObserver /*public Core::Observer<Social::MultiplayerServiceObserver, Core::SingleThreadedLock>*/ { //TODO: incomplete class definition
 
     public:
         ~MultiplayerServiceObserver(); // _ZN6Social26MultiplayerServiceObserverD2Ev

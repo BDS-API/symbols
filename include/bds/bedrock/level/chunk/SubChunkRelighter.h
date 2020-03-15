@@ -1,8 +1,8 @@
 #pragma once
 
+#include <vector>
 #include "../../util/Brightness.h"
 #include "SubChunkLightIndex.h"
-#include <vector>
 
 
 class SubChunkRelighter {

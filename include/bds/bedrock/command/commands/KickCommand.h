@@ -3,7 +3,7 @@
 #include "ServerCommand.h"
 
 
-class KickCommand : ServerCommand {
+class KickCommand : public ServerCommand {
 
 public:
     ~KickCommand(); // _ZN11KickCommandD2Ev

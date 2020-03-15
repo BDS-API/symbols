@@ -4,7 +4,7 @@
 #include "ChestBlockActor.h"
 
 
-class BarrelBlockActor : ChestBlockActor {
+class BarrelBlockActor : public ChestBlockActor {
 
 public:
     ~BarrelBlockActor(); // _ZN16BarrelBlockActorD2Ev

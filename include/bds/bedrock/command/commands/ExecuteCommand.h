@@ -3,7 +3,7 @@
 #include "../Command.h"
 
 
-class ExecuteCommand : Command {
+class ExecuteCommand : public Command {
 
 public:
     ~ExecuteCommand(); // _ZN14ExecuteCommandD2Ev

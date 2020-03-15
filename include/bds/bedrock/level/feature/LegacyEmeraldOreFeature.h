@@ -3,7 +3,7 @@
 #include "Feature.h"
 
 
-class LegacyEmeraldOreFeature : Feature {
+class LegacyEmeraldOreFeature : public Feature {
 
 public:
     ~LegacyEmeraldOreFeature(); // _ZN23LegacyEmeraldOreFeatureD2Ev

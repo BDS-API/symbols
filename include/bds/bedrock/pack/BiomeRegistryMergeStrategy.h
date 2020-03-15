@@ -4,7 +4,7 @@
 #include <vector>
 
 
-class BiomeRegistryMergeStrategy : ResourcePackMergeStrategy {
+class BiomeRegistryMergeStrategy : public ResourcePackMergeStrategy {
 
 public:
     ~BiomeRegistryMergeStrategy(); // _ZN26BiomeRegistryMergeStrategyD2Ev

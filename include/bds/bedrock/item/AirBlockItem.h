@@ -4,7 +4,7 @@
 #include "Item.h"
 
 
-class AirBlockItem : Item {
+class AirBlockItem : public Item {
 
 public:
     ~AirBlockItem(); // _ZN12AirBlockItemD2Ev

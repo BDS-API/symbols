@@ -1,10 +1,10 @@
 #pragma once
 
-#include <string>
 #include "ButtonBlock.h"
+#include <string>
 
 
-class StoneButtonBlock : ButtonBlock {
+class StoneButtonBlock : public ButtonBlock {
 
 public:
     ~StoneButtonBlock(); // _ZN16StoneButtonBlockD2Ev

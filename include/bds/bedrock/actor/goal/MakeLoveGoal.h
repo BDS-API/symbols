@@ -4,7 +4,7 @@
 #include "Goal.h"
 
 
-class MakeLoveGoal : Goal {
+class MakeLoveGoal : public Goal {
 
 public:
     ~MakeLoveGoal(); // _ZN12MakeLoveGoalD2Ev

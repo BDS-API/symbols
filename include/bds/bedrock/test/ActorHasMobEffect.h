@@ -3,7 +3,7 @@
 #include "FilterTest.h"
 
 
-class ActorHasMobEffect : FilterTest {
+class ActorHasMobEffect : public FilterTest {
 
 public:
     ~ActorHasMobEffect(); // _ZN17ActorHasMobEffectD2Ev

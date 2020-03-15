@@ -5,7 +5,7 @@
 #include "../../actor/unmapped/ActorUniqueID.h"
 
 
-class BedBlockActor : BlockActor {
+class BedBlockActor : public BlockActor {
 
 public:
     ~BedBlockActor(); // _ZN13BedBlockActorD2Ev

@@ -3,7 +3,7 @@
 #include "IInPackagePacks.h"
 
 
-class VanillaInPackagePacks : IInPackagePacks {
+class VanillaInPackagePacks : public IInPackagePacks {
 
 public:
     ~VanillaInPackagePacks(); // _ZN21VanillaInPackagePacksD2Ev

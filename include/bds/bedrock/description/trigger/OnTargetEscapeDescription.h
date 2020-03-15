@@ -3,7 +3,7 @@
 #include "TriggerDescription.h"
 
 
-class OnTargetEscapeDescription : TriggerDescription {
+class OnTargetEscapeDescription : public TriggerDescription {
 
 public:
     virtual void getJsonName()const; // _ZNK25OnTargetEscapeDescription11getJsonNameEv

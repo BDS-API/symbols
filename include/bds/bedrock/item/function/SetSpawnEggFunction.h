@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class SetSpawnEggFunction : LootItemFunction {
+class SetSpawnEggFunction : public LootItemFunction {
 
 public:
     ~SetSpawnEggFunction(); // _ZN19SetSpawnEggFunctionD2Ev

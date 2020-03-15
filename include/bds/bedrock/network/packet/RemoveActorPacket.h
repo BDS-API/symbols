@@ -5,7 +5,7 @@
 #include "Packet.h"
 
 
-class RemoveActorPacket : Packet {
+class RemoveActorPacket : public Packet {
 
 public:
     ~RemoveActorPacket(); // _ZN17RemoveActorPacketD2Ev

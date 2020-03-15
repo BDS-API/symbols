@@ -1,9 +1,9 @@
 #pragma once
 
-#include <string>
-#include <memory>
-#include <functional>
 #include "../util/BlockPos.h"
+#include <string>
+#include <functional>
+#include <memory>
 
 
 class Item {

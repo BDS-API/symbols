@@ -1,8 +1,8 @@
 #pragma once
 
 #include <string>
-#include "../../unmapped/FilterStringMap.h"
 #include "../../unmapped/FilterInput.h"
+#include "../../unmapped/FilterStringMap.h"
 
 
 class FilterParamDefinition {

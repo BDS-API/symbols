@@ -3,7 +3,7 @@
 #include "Throwable.h"
 
 
-class ThrownEgg : Throwable {
+class ThrownEgg : public Throwable {
 
 public:
 //  virtual void reloadHardcoded(Actor::InitializationMethod, VariantParameterList const&); //TODO: incomplete function definition // _ZN9ThrownEgg15reloadHardcodedEN5Actor20InitializationMethodERK20VariantParameterList

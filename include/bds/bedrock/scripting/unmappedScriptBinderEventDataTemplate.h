@@ -4,7 +4,7 @@
 #include "ScriptBinderTemplate.h"
 
 
-class ScriptBinderEventDataTemplate : ScriptBinderTemplate {
+class ScriptBinderEventDataTemplate : public ScriptBinderTemplate {
 
 public:
     ~ScriptBinderEventDataTemplate(); // _ZN29ScriptBinderEventDataTemplateD2Ev

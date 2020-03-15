@@ -1,8 +1,8 @@
 #pragma once
 
 #include "../../util/BlockPos.h"
-#include <vector>
 #include <memory>
+#include <vector>
 #include "../../util/Brightness.h"
 #include <functional>
 

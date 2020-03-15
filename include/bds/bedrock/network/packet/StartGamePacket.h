@@ -1,12 +1,12 @@
 #pragma once
 
 #include <string>
-#include "Packet.h"
-#include "../../actor/unmapped/ActorUniqueID.h"
 #include "../../actor/unmapped/ActorRuntimeID.h"
+#include "../../actor/unmapped/ActorUniqueID.h"
+#include "Packet.h"
 
 
-class StartGamePacket : Packet {
+class StartGamePacket : public Packet {
 
 public:
     ~StartGamePacket(); // _ZN15StartGamePacketD2Ev

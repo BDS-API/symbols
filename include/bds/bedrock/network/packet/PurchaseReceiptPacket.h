@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class PurchaseReceiptPacket : Packet {
+class PurchaseReceiptPacket : public Packet {
 
 public:
     ~PurchaseReceiptPacket(); // _ZN21PurchaseReceiptPacketD2Ev

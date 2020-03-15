@@ -4,7 +4,7 @@
 #include "Packet.h"
 
 
-class AddBehaviorTreePacket : Packet {
+class AddBehaviorTreePacket : public Packet {
 
 public:
     ~AddBehaviorTreePacket(); // _ZN21AddBehaviorTreePacketD2Ev

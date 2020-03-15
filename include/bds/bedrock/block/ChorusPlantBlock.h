@@ -4,7 +4,7 @@
 #include "BlockLegacy.h"
 
 
-class ChorusPlantBlock : BlockLegacy {
+class ChorusPlantBlock : public BlockLegacy {
 
 public:
     static long PLANT_WIDTH;
